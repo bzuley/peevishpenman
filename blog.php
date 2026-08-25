@@ -12,6 +12,8 @@ $blog_items = ppm_get_blog_posts();
   <title>Blog – Peevish Penman</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/styles/main.css">
+
+  <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/analytics.php'; ?>
 </head>
 
 <body>

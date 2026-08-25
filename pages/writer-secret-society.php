@@ -238,6 +238,8 @@ img { max-width: 100%; height: auto; display: block; }
   opacity: .6;
 }
 </style>
+
+<?php include $_SERVER['DOCUMENT_ROOT'].'/partials/analytics.php'; ?>
 </head>
 
 <body>
