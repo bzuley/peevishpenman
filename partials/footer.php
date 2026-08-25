@@ -1,5 +1,6 @@
 <!-- Site scripts -->
 <script src="/js/main.js"></script>
+<script src="/js/jump-nav.js"></script>
 
 <script>
   (function () {
