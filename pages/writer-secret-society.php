@@ -154,7 +154,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 .book img {
   margin: 14px auto 8px;
-  max-width: 420px;
+  max-width: min(420px, 100%);
   border-radius: 6px;
   box-shadow: 0 6px 18px rgba(0,0,0,.16);
 }
