@@ -40,6 +40,8 @@
 
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="styles/main.css">
+
+  <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/analytics.php'; ?>
 </head>
 
 <body>
