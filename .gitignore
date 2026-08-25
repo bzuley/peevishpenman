@@ -1,0 +1,5 @@
+video/
+error_log
+*.zip
+.well-known/
+Thumbs.db
