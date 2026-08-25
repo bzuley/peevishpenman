@@ -50,7 +50,7 @@
     <h3>Get the Drops First</h3>
     <p class="ppm-footer-newsletter-lede">Chapters, secret extras, and release dates—straight from the studio. No filler. No delay.</p>
 
-    <form action="/newsletter-signup.php" method="POST" id="newsletter-form">
+    <form action="/partials/newsletter-signup.php" method="POST" id="newsletter-form">
       <div class="ppm-footer-newsletter-form">
         <input type="email" name="email" placeholder="Your email" required aria-label="Email address">
         <button type="submit" aria-label="Join the newsletter now">Join Now</button>
@@ -70,10 +70,10 @@
 
   <!-- Footer Links -->
   <nav class="ppm-footer-links" aria-label="Footer">
-    <a href="/about">About</a>
+    <a href="/pages/about.php">About</a>
     <a href="/books">Books</a>
-    <a href="/blog">Blog</a>
-    <a href="/contact">Contact</a>
+    <a href="/blog.php">Blog</a>
+    <a href="/pages/contact.php">Contact</a>
     <a href="/privacy">Privacy Policy</a>
   </nav>
 
