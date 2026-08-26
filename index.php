@@ -52,7 +52,7 @@
 
       <!-- Site Title with Logo -->
       <h1 class="ppm-hero-site-title">
-        <img src="/img/logo-ppm.webp"
+        <img src="/img/logos/logo-ppm.webp"
              alt="Peevish Penman typewriter logo"
              class="ppm-hero-logo"
              width="200" height="201">

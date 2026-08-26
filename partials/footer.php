@@ -42,7 +42,7 @@
 <footer class="ppm-footer">
   <!-- Logo -->
   <section class="ppm-footer-logo">
-    <img src="/img/logo-ppm.webp" alt="Peevish Penman" width="200" height="201" loading="lazy">
+    <img src="/img/logos/logo-ppm.webp" alt="Peevish Penman" width="200" height="201" loading="lazy">
   </section>
 
   <!-- Newsletter -->
