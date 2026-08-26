@@ -69,7 +69,9 @@
       if (activeLink) activeLink.classList.remove('is-active');
       if (link) {
         link.classList.add('is-active');
-        link.scrollIntoView({ block: 'nearest', inline: 'center', behavior: 'smooth' });
+        var target = link.offsetLeft - (inner.clientWidth - link.offsetWidth) / 2;
+        target = Math.max(0, Math.min(target, inner.scrollWidth - inner.clientWidth));
+        inner.scrollTo({ left: target, behavior: 'smooth' });
       }
       activeLink = link;
     }
