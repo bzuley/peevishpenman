@@ -47,7 +47,13 @@ function ppm_get_blog_posts() {
                 if (preg_match("/'image'\s*=>\s*'([^']+)'/", $array_string, $m)) {
                     $meta['image'] = $m[1];
                 }
-                
+                if (preg_match("/'tags'\s*=>\s*\[([^\]]*)\]/", $array_string, $m)) {
+                    preg_match_all("/'([^']+)'/", $m[1], $tag_matches);
+                    $meta['tags'] = $tag_matches[1];
+                } else {
+                    $meta['tags'] = [];
+                }
+
                 if (!empty($meta['slug']) && !empty($meta['title']) && !empty($meta['date'])) {
                     $blog_items[] = $meta;
                 }

@@ -4,7 +4,8 @@ $post_meta = [
   'slug'    => 'post-slug-here',
   'title'   => 'Post Title Here',
   'excerpt' => 'Brief excerpt or description of the post content goes here.',
-  'date'    => 'YYYY-MM-DD'
+  'date'    => 'YYYY-MM-DD',
+  'tags'    => ['sciencefiction'] // any of: selfpublishing, archetypes, sciencefiction
 ];
 ?>
 <!DOCTYPE html>

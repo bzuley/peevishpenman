@@ -87,14 +87,14 @@
       <!-- Quicklinks Section -->
       <section class="ppm-quicklinks">
         <div class="ppm-quicklinks-buttons">
-          <a class="ppm-button ppm-button--ghost" 
-            href="/blogs/peevish-penman/tagged/selfpublishing">Self-Publishing</a>
+          <a class="ppm-button ppm-button--ghost"
+            href="/blog-tagged.php?tag=selfpublishing">Self-Publishing</a>
 
-          <a class="ppm-button ppm-button--ghost" 
-            href="/blogs/peevish-penman/tagged/archetypes">Character Archetypes</a>
+          <a class="ppm-button ppm-button--ghost"
+            href="/blog-tagged.php?tag=archetypes">Character Archetypes</a>
 
-          <a class="ppm-button" 
-            href="/blogs/peevish-penman/tagged/sciencefiction">Science Fiction</a>
+          <a class="ppm-button"
+            href="/blog-tagged.php?tag=sciencefiction">Science Fiction</a>
         </div>
 
         <div class="ppm-quicklinks-description">
