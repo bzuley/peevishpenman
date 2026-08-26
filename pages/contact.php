@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Get in touch with OA Allen / Peevish Penman.">
   <meta name="author" content="OA Allen">
-  <meta name="robots" content="noindex, nofollow">
 
   <link rel="stylesheet" href="/styles/main.css">
 

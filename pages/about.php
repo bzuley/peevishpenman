@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="About OA Allen, creative home of Peevish Penman. Full bio coming soon.">
   <meta name="author" content="OA Allen">
-  <meta name="robots" content="noindex, nofollow">
 
   <link rel="stylesheet" href="/styles/main.css">
 
