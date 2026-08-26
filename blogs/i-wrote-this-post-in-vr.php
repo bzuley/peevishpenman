@@ -4,7 +4,8 @@ $post_meta = [
   'slug'    => 'i-wrote-this-post-in-vr',
   'title'   => 'I Wrote This Post in Virtual Reality',
   'excerpt' => 'A sci-fi author tries to write inside a Meta Quest 3, fails through every "obvious" input method, and ends up with a grudging respect for the tech—plus a blunt take on AI, ethics, and accessibility.',
-  'date'    => '2025-12-29'
+  'date'    => '2025-12-29',
+  'tags'    => 'selfpublishing'
 ];
 ?>
 <!DOCTYPE html>
