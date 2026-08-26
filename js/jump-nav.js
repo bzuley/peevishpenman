@@ -69,6 +69,7 @@
       if (activeLink) activeLink.classList.remove('is-active');
       if (link) {
         link.classList.add('is-active');
+        link.scrollIntoView({ block: 'nearest', inline: 'center', behavior: 'smooth' });
       }
       activeLink = link;
     }
