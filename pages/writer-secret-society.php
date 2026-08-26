@@ -253,7 +253,7 @@ img { max-width: 100%; height: auto; display: block; }
       <h1>The Third Edition of the Handbook</h1>
 
       <div class="top-mockup">
-        <img src="/img/wss-hardcover.png" alt="Writer Secret Society book mockup" loading="lazy">
+        <img src="/img/wss-hardcover.webp" alt="Writer Secret Society book mockup" width="480" height="720" loading="lazy">
       </div>
 
       <div class="rule"></div>
@@ -265,7 +265,7 @@ img { max-width: 100%; height: auto; display: block; }
         <p><strong>For Every Writer.</strong> "As writers we are no strangers to setbacks… each dismissal carrying within it the seeds for renewal, refinement, and eventually success."</p>
       </div>
       <div class="image">
-        <img src="/img/whirlwind.png" alt="Writer in a whirlwind of pages">
+        <img src="/img/whirlwind.jpg" alt="Writer in a whirlwind of pages" width="640" height="640" loading="lazy">
       </div>
     </section>
 
@@ -274,7 +274,7 @@ img { max-width: 100%; height: auto; display: block; }
         <p><strong>Timeless Methods.</strong> "To cultivate the elusive condition known as luck, venture into uncharted territories… it's about recognizing the potential in every opportunity."</p>
       </div>
       <div class="image">
-        <img src="/img/book-boy.png" alt="Boy reading a book">
+        <img src="/img/book-boy.jpg" alt="Boy reading a book" width="960" height="960" loading="lazy">
       </div>
     </section>
 
@@ -283,7 +283,7 @@ img { max-width: 100%; height: auto; display: block; }
         <p><strong>Practical Wisdom.</strong> "The first one hundred thousand words should be expelled from the mind rapidly then set aside so the education of the writer can begin."</p>
       </div>
       <div class="image">
-        <img src="/img/librarian.png" alt="Austere librarian portrait">
+        <img src="/img/librarian.jpg" alt="Austere librarian portrait" width="960" height="960" loading="lazy">
       </div>
     </section>
 
@@ -298,7 +298,7 @@ img { max-width: 100%; height: auto; display: block; }
 
     <section class="book">
       <p>Here, you are not just learning to write, but are being written into the very fabric of a writer's journey. Welcome to the society.</p>
-      <img src="/img/wss-cover.jpg" alt="The Handbook of the Writer Secret Society — cover">
+      <img src="/img/wss-cover.jpg" alt="The Handbook of the Writer Secret Society — cover" width="720" height="720" loading="lazy">
     </section>
 
     <section class="cta">

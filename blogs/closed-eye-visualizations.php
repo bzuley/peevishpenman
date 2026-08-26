@@ -1,6 +1,6 @@
 <?php
 $post_meta = [
-  'image'   => '/img/cev-hero.png',
+  'image'   => '/img/cev-hero.jpg',
   'slug'    => 'closed-eye-visualizations',
   'title'   => 'Meditation - Closed Eye Visualizations',
   'excerpt' => 'Exploring the phenomenon of closed-eye visualizations in meditation—from subtle patterns to vivid imagery. A personal account of CEVs, their neuroscience, and their role in inner alchemy.',
@@ -183,20 +183,20 @@ $post_meta = [
 
       <p><strong>2 Light or Dark Flashes:</strong> As relaxation deepens, flashes of light or dark patterns may overlay the visual noise. These flashes, also called phosphenes, are thought to reflect the spontaneous firing of neurons in the visual cortex. .</p>
 
-<div style="text-align: center;"><img src="/img/cev-noise-wild.gif"></div>
+<div style="text-align: center;"><video width="480" height="270" autoplay loop muted playsinline preload="none"><source src="/video/cev-noise-wild.webm" type="video/webm"><source src="/video/cev-noise-wild.mp4" type="video/mp4"></video></div>
       <div style="text-align: center;"><br></div>
 
       <p><strong>3 Patterns, Motion, and Color:</strong> Intricate geometric shapes, spirals, and vibrant colors emerge at this stage. The patterns often move rhythmically, resembling mandalas or tessellations, which can hold symbolic meaning in many spiritual traditions.</p>
 
       <p>Even my best reproduction of what I regularly see in longer meditation, cannot do the imagery justice. These 2D pictures lack form. The 3D visualizations move gracefully. I do not perceive much color, but they have depth and feel like a lidar image in virtual reality.</p>
 
-      <div style="text-align: center;"><img src="/img/cev-level-three.gif"></div>
-      <div style="text-align: center;"><img src="/img/cev-fractals.gif"></div>
+      <div style="text-align: center;"><video width="480" height="270" autoplay loop muted playsinline preload="none"><source src="/video/cev-level-three.webm" type="video/webm"><source src="/video/cev-level-three.mp4" type="video/mp4"></video></div>
+      <div style="text-align: center;"><video width="480" height="269" autoplay loop muted playsinline preload="none"><source src="/video/cev-fractals.webm" type="video/webm"><source src="/video/cev-fractals.mp4" type="video/mp4"></video></div>
       <div style="text-align: center;"><br></div>
 
       <p><strong>4 Objects and Scenes:</strong> Recognizable images or scenarios materialize, often carrying personal or archetypal significance. These visuals may feel like glimpses into the subconscious or symbolic narratives tied to the meditator's journey.</p>
 
- <div style="text-align: center;"><img src="/img/cev-rabbit.gif"></div>
+ <div style="text-align: center;"><video width="480" height="270" autoplay loop muted playsinline preload="none"><source src="/video/cev-rabbit.webm" type="video/webm"><source src="/video/cev-rabbit.mp4" type="video/mp4"></video></div>
       <div style="text-align: center;"><br></div>
 
       <p><strong>5 Overriding Sensory Perception:</strong> In rare cases, closed-eye visualizations become immersive, temporarily overriding physical perception. E<span>xternal factors like sound or environmental vibrations can amplify the intensity of these visualizations. Chanting, rhythmic music, or binaural beats are known to influence the patterns and depth of imagery, creating a synergy between external stimuli and inner perception. </span></p>

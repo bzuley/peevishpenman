@@ -53,9 +53,10 @@
 
       <!-- Site Title with Logo -->
       <h1 class="ppm-hero-site-title">
-        <img src="/img/logo-ppm.png" 
-             alt="Peevish Penman typewriter logo" 
-             class="ppm-hero-logo">
+        <img src="/img/logo-ppm.webp"
+             alt="Peevish Penman typewriter logo"
+             class="ppm-hero-logo"
+             width="200" height="201">
         <div class="ppm-hero-title-text">
           <span class="ppm-hero-site-title-outline">PEEVISH</span>
           <span class="ppm-hero-site-title-solid">PENMAN</span>
@@ -75,8 +76,9 @@
       <!-- Typewriter Image -->
       <div class="ppm-hero-image">
         <div class="ppm-hero-image-gradient"></div>
-        <img src="/img/typewriter-green.png"
-             alt="Hermes teal typewriter with cosmic glow">
+        <img src="/img/typewriter-green.webp"
+             alt="Hermes teal typewriter with cosmic glow"
+             width="560" height="306">
       </div>
 
       <!-- Stories logline -->
