@@ -4,7 +4,10 @@ $post_meta = [
   'slug'    => 'post-slug-here',
   'title'   => 'Post Title Here',
   'excerpt' => 'Brief excerpt or description of the post content goes here.',
-  'date'    => 'YYYY-MM-DD'
+  'date'    => 'YYYY-MM-DD',
+  // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
+  // Powers the quicklink buttons on index.php (see /blog-tag.php).
+  'tags'    => ''
 ];
 ?>
 <!DOCTYPE html>
