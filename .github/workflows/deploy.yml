@@ -25,4 +25,9 @@ jobs:
             **/.git*
             **/.git*/**
             **/video/**
-            **/img/**
+            img/*.png
+            img/*.jpg
+            img/*.jpeg
+            img/*.gif
+            img/*.webp
+            img/archetype/**
