@@ -4,6 +4,27 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Third Edition of The Handbook of the Writer Secret Society</title>
+<meta name="description" content="Download the free Handbook of the Writer Secret Society — mystic wisdom, timeless methods, and practical inspiration for writers, from OA Allen. Free PDF and EPUB.">
+<meta name="author" content="OA Allen">
+<link rel="canonical" href="https://peevishpenman.com/pages/writer-secret-society.php">
+
+<!-- Open Graph -->
+<meta property="og:site_name" content="Peevish Penman">
+<meta property="og:title" content="The Handbook of the Writer Secret Society — Free Download">
+<meta property="og:description" content="Mystic wisdom, timeless methods, and practical inspiration for writers, from OA Allen. Free PDF and EPUB.">
+<meta property="og:url" content="https://peevishpenman.com/pages/writer-secret-society.php">
+<meta property="og:type" content="book">
+<meta property="og:image" content="https://peevishpenman.com/img/wss-cover.jpg">
+<meta property="og:image:width" content="720">
+<meta property="og:image:height" content="720">
+<meta property="og:image:alt" content="The Handbook of the Writer Secret Society — book cover">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Handbook of the Writer Secret Society — Free Download">
+<meta name="twitter:description" content="Mystic wisdom, timeless methods, and practical inspiration for writers, from OA Allen. Free PDF and EPUB.">
+<meta name="twitter:image" content="https://peevishpenman.com/img/wss-cover.jpg">
+
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 
 <style>
