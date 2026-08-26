@@ -39,7 +39,8 @@ $blog_items = ppm_get_blog_posts();
                 <?php if (!empty($post['image'])): ?>
                   <img class="bp-img"
                        src="<?php echo htmlspecialchars($post['image']); ?>"
-                       alt="<?php echo htmlspecialchars($post['title']); ?>">
+                       alt="<?php echo htmlspecialchars($post['title']); ?>"
+                       loading="lazy">
                 <?php endif; ?>
 
                 <h2><?php echo htmlspecialchars($post['title']); ?></h2>

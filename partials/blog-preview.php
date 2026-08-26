@@ -43,7 +43,8 @@ function ppm_truncate($text, $limit) {
                 <?php if (!empty($post['image'])) : ?>
                   <img class="bp-img"
                        src="<?= htmlspecialchars($post['image']) ?>"
-                       alt="<?= htmlspecialchars($post['title']) ?>">
+                       alt="<?= htmlspecialchars($post['title']) ?>"
+                       loading="lazy">
                 <?php endif; ?>
                 <h2><?= htmlspecialchars($post['title']) ?></h2>
                 <?php if ($ppm_show_excerpt && !empty($post['excerpt'])) : ?>
