@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Join the Peevish Penman newsletter for chapters, secret extras, and release dates from OA Allen.">
   <meta name="author" content="OA Allen">
-  <meta name="robots" content="noindex, nofollow">
 
   <link rel="stylesheet" href="/styles/main.css">
 

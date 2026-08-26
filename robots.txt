@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /pages/thought-engines.php
+Disallow: /pages/delcath-series.php
+Disallow: /pages/ghost-trucker.php
+Disallow: /pages/coloring-book.php
+Disallow: /blog-slug.php
+
+Sitemap: https://peevishpenman.com/sitemap.xml
