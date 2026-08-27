@@ -8,7 +8,7 @@
     // via inline onclick handlers in partials/nav.php.
     document.addEventListener('keydown', function (e) {
       if (e.key === 'Escape') {
-        document.body.classList.remove('ppm-nav-open');
+        document.documentElement.classList.remove('ppm-nav-open');
       }
     });
   })();
@@ -51,8 +51,6 @@
   <nav class="ppm-footer-links" aria-label="Footer">
     <a href="/pages/about.php">About</a>
     <a href="/pages/books.php">Books</a>
-    <a href="/blog.php">Blog</a>
-    <a href="/pages/privacy.php">Privacy Policy</a>
   </nav>
 
   <div class="ppm-footer-bottom">

@@ -1,3 +1,3 @@
 document.getElementById('ppm-menu-toggle')?.addEventListener('click', () => {
-    document.body.classList.toggle('ppm-nav-open');
+    document.documentElement.classList.toggle('ppm-nav-open');
 });
