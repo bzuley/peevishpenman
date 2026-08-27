@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# Redirect /page.php to /page
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.php[\s?] [NC]
+RewriteRule ^(.+)\.php$ /$1 [R=301,L]
+
+# Internally load /page as /page.php
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.+?)/?$ $1.php [L]
