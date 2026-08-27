@@ -1150,8 +1150,13 @@ body.ppm-nav-open {
 }
 
 .ppm-article-hero-content .ppm-article-kicker {
-  margin-bottom: 1rem;
+  margin: 0 auto 1rem;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+  font-size: 1.05rem;
+  letter-spacing: 0.12em;
+  line-height: 1.4;
+  max-width: 16ch;
+  text-wrap: balance;
 }
 
 .ppm-article-hero-content h1 {
