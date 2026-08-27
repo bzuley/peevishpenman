@@ -16,9 +16,9 @@
       </a>
 
       <!-- Hamburger Menu -->
-      <button class="ppm-hamburger" 
+      <button class="ppm-hamburger"
               aria-label="Open menu"
-              onclick="document.body.classList.add('ppm-nav-open')">
+              onclick="ppmOpenNav()">
         <span></span>
         <span></span>
         <span></span>
@@ -29,8 +29,16 @@
 </nav>
 
 <!-- Navigation Drawer Overlay -->
-<div class="ppm-nav-overlay" 
+<div class="ppm-nav-overlay"
      onclick="document.body.classList.remove('ppm-nav-open')"></div>
+
+<script>
+  function ppmOpenNav() {
+    var scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+    document.body.style.setProperty('--ppm-scrollbar-width', scrollbarWidth + 'px');
+    document.body.classList.add('ppm-nav-open');
+  }
+</script>
 
 <!-- Navigation Drawer -->
 <aside class="ppm-drawer">
