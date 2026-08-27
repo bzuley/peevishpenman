@@ -55,9 +55,6 @@ function ppm_truncate($text, $limit) {
           <?php endforeach; ?>
         </ul>
       </div>
-      <div class="bp-more">
-        <a class="ppm-link" href="/blog.php">Browse all articles →</a>
-      </div>
     <?php endif; ?>
   </div>
 </section>
