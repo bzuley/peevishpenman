@@ -55,6 +55,7 @@
     <div class="ppm-drawer-section">
       <h3 class="ppm-drawer-heading">Writing Projects</h3>
       <ul>
+        <li><a href="/pages/books.php">All Books</a></li>
         <li><a href="/pages/bright-dark.php">The Bright Dark</a></li>
         <li><a href="/pages/delcath-series.php">Delcath Series</a></li>
         <li><a href="/pages/ghost-trucker.php">Ghost Trucker</a></li>

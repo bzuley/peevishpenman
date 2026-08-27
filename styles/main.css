@@ -9,6 +9,7 @@
 html {
   -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -19,6 +20,7 @@ body {
   line-height: 1.6;
   color: #e6edf5;
   background-color: #050608;
+  overflow-x: hidden;
 }
 
 img, picture, video, canvas, svg {
@@ -509,6 +511,68 @@ small {
   opacity: 0.92;
   color: var(--ppm-text-main);
   font-family: "IBM Plex Sans", system-ui, sans-serif;
+}
+
+/* Desktop hero: two-column layout instead of a stretched mobile column,
+   so the typewriter art doesn't crowd out the CTAs into the books/blog. */
+@media (min-width: 901px) {
+  .ppm-hero-inner {
+    max-width: 1200px;
+  }
+
+  .ppm-hero-content {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    column-gap: var(--ppm-spacing-xl);
+    row-gap: var(--ppm-spacing-sm);
+    text-align: left;
+    grid-template-areas:
+      "title   title"
+      "tagline image"
+      "logline image"
+      "caption image"
+      "cta     image";
+  }
+
+  .ppm-hero-site-title {
+    grid-area: title;
+    justify-content: flex-start;
+  }
+
+  .ppm-hero-gradient-line {
+    grid-area: tagline;
+  }
+
+  div.ppm-hero-logline {
+    grid-area: logline;
+  }
+
+  h2.ppm-hero-logline {
+    grid-area: caption;
+    align-self: end;
+  }
+
+  .ppm-hero-image {
+    grid-area: image;
+    align-self: start;
+    max-width: 420px;
+    margin: 0 0 0 auto;
+  }
+
+  .ppm-quicklinks {
+    grid-area: cta;
+    padding: var(--ppm-spacing-sm) 0 0;
+    text-align: left;
+  }
+
+  .ppm-quicklinks .ppm-quicklinks-buttons {
+    justify-content: flex-start;
+  }
+
+  .ppm-quicklinks .ppm-quicklinks-description {
+    margin: 0;
+    text-align: left;
+  }
 }
 
 /* ================================
@@ -1042,6 +1106,11 @@ body.ppm-nav-open {
   opacity: 0.9;
   line-height: 1.55;
   font-size: 0.98rem;
+}
+
+.bp-more {
+  margin-top: clamp(20px, 3vw, 32px);
+  text-align: center;
 }
 
 /* Responsive adjustments */

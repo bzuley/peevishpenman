@@ -88,13 +88,19 @@
       <!-- Quicklinks Section -->
       <section class="ppm-quicklinks">
         <div class="ppm-quicklinks-buttons">
+          <a class="ppm-button"
+            href="/pages/books.php">Explore the Books</a>
+
+          <a class="ppm-button ppm-button--ghost"
+            href="/blog.php">Read the Blog</a>
+
           <a class="ppm-button ppm-button--ghost"
             href="/blog-tag.php?tag=selfpublishing">Self-Publishing</a>
 
           <a class="ppm-button ppm-button--ghost"
             href="/blog-tag.php?tag=archetypes">Character Archetypes</a>
 
-          <a class="ppm-button"
+          <a class="ppm-button ppm-button--ghost"
             href="/blog-tag.php?tag=sciencefiction">Science Fiction</a>
         </div>
 
