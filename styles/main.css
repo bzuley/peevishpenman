@@ -761,6 +761,14 @@ small {
     object-fit: cover;
   }
 
+  .ppm-home-book-cover--inset {
+    padding: 0.85rem;
+  }
+
+  .ppm-home-book-cover--inset img {
+    object-fit: contain;
+  }
+
   .ppm-home-book-title {
     margin: 0.75rem 0 0;
     font-family: "IBM Plex Sans", system-ui, sans-serif;

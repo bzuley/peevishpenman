@@ -134,7 +134,7 @@
     <section class="ppm-home-books">
       <div class="ppm-home-books-grid">
         <a class="ppm-home-book" href="/pages/delcath-series.php">
-          <div class="ppm-home-book-cover">
+          <div class="ppm-home-book-cover ppm-home-book-cover--inset">
             <img src="/img/covers/wod-cover-3d.webp" alt="Waiting on Delcath — book cover" loading="lazy">
           </div>
           <p class="ppm-home-book-title">The Delcath Series</p>
@@ -148,7 +148,7 @@
         </a>
 
         <a class="ppm-home-book" href="/pages/coloring-book.php">
-          <div class="ppm-home-book-cover">
+          <div class="ppm-home-book-cover ppm-home-book-cover--inset">
             <img src="/img/covers/reptilian-cover-3d.webp" alt="Reptilian Conspiracy Coloring Book cover" loading="lazy">
           </div>
           <p class="ppm-home-book-title">Reptilian Conspiracy Coloring Book</p>
