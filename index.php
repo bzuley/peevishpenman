@@ -92,9 +92,6 @@
             href="/pages/books.php">Explore the Books</a>
 
           <a class="ppm-button ppm-button--ghost"
-            href="/blog.php">Read the Blog</a>
-
-          <a class="ppm-button ppm-button--ghost"
             href="/blog-tag.php?tag=selfpublishing">Self-Publishing</a>
 
           <a class="ppm-button ppm-button--ghost"
