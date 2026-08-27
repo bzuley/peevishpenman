@@ -75,9 +75,9 @@
       <!-- Typewriter Image -->
       <div class="ppm-hero-image">
         <div class="ppm-hero-image-gradient"></div>
-        <img src="/img/typewriter-green.webp"
-             alt="Hermes teal typewriter with cosmic glow"
-             width="560" height="306">
+        <img src="/img/logos/hermes_3000.webp"
+             alt="Hermes 3000 typewriter"
+             width="1236" height="1273">
       </div>
 
       <!-- Stories logline -->
