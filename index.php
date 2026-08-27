@@ -135,7 +135,6 @@
   <div class="ppm-home-main">
     <!-- Books row -->
     <section class="ppm-home-books">
-      <h2 class="ppm-home-books-heading">The Books</h2>
       <div class="ppm-home-books-grid">
         <a class="ppm-home-book" href="/pages/delcath-series.php">
           <div class="ppm-home-book-cover">
