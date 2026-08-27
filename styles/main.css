@@ -818,6 +818,7 @@ body.ppm-nav-open .ppm-nav-overlay {
 /* Prevent background scroll when open */
 body.ppm-nav-open {
   overflow: hidden;
+  padding-right: var(--ppm-scrollbar-width, 0px);
 }
 
 /* ================================
