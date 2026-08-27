@@ -1286,8 +1286,8 @@ body.ppm-nav-open {
 }
 
 .ppm-article p {
-  font-family: "IBM Plex Sans", system-ui, sans-serif;
-  font-size: 1.3125rem;
+  font-family: Georgia, "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 1.375rem;
   line-height: 1.75;
   color: var(--ppm-text-main);
   margin: 0 0 1.25rem;
@@ -1328,8 +1328,8 @@ body.ppm-nav-open {
 /* Lists in articles */
 .ppm-article ul,
 .ppm-article ol {
-  font-family: "IBM Plex Sans", system-ui, sans-serif;
-  font-size: 1.3125rem;
+  font-family: Georgia, "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 1.375rem;
   line-height: 1.75;
   color: var(--ppm-text-main);
   margin: 0 0 1.25rem;
@@ -1465,7 +1465,7 @@ body.ppm-nav-open {
   .ppm-article p,
   .ppm-article ul,
   .ppm-article ol {
-    font-size: 1.3125rem;
+    font-size: 1.375rem;
   }
 
   .ppm-article table {
