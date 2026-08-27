@@ -310,13 +310,6 @@ img { max-width: 100%; height: auto; display: block; }
 
     <aside class="quote">"No one can validate a writer and so, no one can invalidate them."</aside>
 
-    <section class="video">
-      <video controls preload="metadata" playsinline>
-        <source src="/video/wss-booktrailer.mp4" type="video/mp4">
-        <source src="/video/wss-booktrailer.webm" type="video/webm">
-      </video>
-    </section>
-
     <section class="book">
       <p>Here, you are not just learning to write, but are being written into the very fabric of a writer's journey. Welcome to the society.</p>
       <img src="/img/wss-cover.jpg" alt="The Handbook of the Writer Secret Society — cover" width="720" height="720" loading="lazy">

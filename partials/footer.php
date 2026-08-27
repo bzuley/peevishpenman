@@ -4,35 +4,11 @@
 
 <script>
   (function () {
-    const body    = document.body;
-    const toggle  = document.getElementById('ppm-nav-toggle');
-    const close   = document.getElementById('ppm-drawer-close');
-    const overlay = document.getElementById('ppm-nav-overlay');
-
-    function openNav() {
-      body.classList.add('ppm-nav-open');
-    }
-
-    function closeNav() {
-      body.classList.remove('ppm-nav-open');
-    }
-
-    if (toggle) {
-      toggle.addEventListener('click', openNav);
-    }
-
-    if (close) {
-      close.addEventListener('click', closeNav);
-    }
-
-    if (overlay) {
-      overlay.addEventListener('click', closeNav);
-    }
-
-    // Optional: close on ESC
+    // Close the nav drawer on ESC. Opening/closing on click is wired
+    // via inline onclick handlers in partials/nav.php.
     document.addEventListener('keydown', function (e) {
       if (e.key === 'Escape') {
-        closeNav();
+        document.body.classList.remove('ppm-nav-open');
       }
     });
   })();
@@ -74,10 +50,10 @@
   <!-- Footer Links -->
   <nav class="ppm-footer-links" aria-label="Footer">
     <a href="/pages/about.php">About</a>
-    <a href="/books">Books</a>
+    <a href="/pages/books.php">Books</a>
     <a href="/blog.php">Blog</a>
     <a href="/pages/contact.php">Contact</a>
-    <a href="/privacy">Privacy Policy</a>
+    <a href="/pages/privacy.php">Privacy Policy</a>
   </nav>
 
   <div class="ppm-footer-bottom">
