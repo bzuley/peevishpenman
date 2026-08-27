@@ -513,65 +513,318 @@ small {
   font-family: "IBM Plex Sans", system-ui, sans-serif;
 }
 
-/* Desktop hero: two-column layout instead of a stretched mobile column,
-   so the typewriter art doesn't crowd out the CTAs into the books/blog. */
+/* Site brand in the nav — desktop only; hidden on mobile, where the
+   homepage's own title line still carries the branding. */
+.ppm-nav-brand {
+  display: none;
+}
+
+/* Desktop hero: a small centered masthead, out of the way — no typewriter
+   art, no bio paragraph, no button row (the sidebar nav below covers that),
+   so the three-column layout that follows lands above the fold. */
 @media (min-width: 901px) {
+  .ppm-hero {
+    padding: var(--ppm-spacing-md) 5%;
+  }
+
   .ppm-hero-inner {
     max-width: 1200px;
   }
 
   .ppm-hero-content {
-    display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
-    column-gap: var(--ppm-spacing-xl);
-    row-gap: var(--ppm-spacing-sm);
-    text-align: left;
-    grid-template-areas:
-      "title   title"
-      "tagline image"
-      "logline image"
-      "caption image"
-      "cta     image";
-  }
-
-  .ppm-hero-site-title {
-    grid-area: title;
-    justify-content: flex-start;
-  }
-
-  .ppm-hero-gradient-line {
-    grid-area: tagline;
-  }
-
-  div.ppm-hero-logline {
-    grid-area: logline;
-  }
-
-  h2.ppm-hero-logline {
-    grid-area: caption;
-    align-self: end;
+    gap: var(--ppm-spacing-xs);
   }
 
   .ppm-hero-image {
-    grid-area: image;
-    align-self: start;
-    max-width: 420px;
-    margin: 0 0 0 auto;
+    display: none;
   }
 
   .ppm-quicklinks {
-    grid-area: cta;
-    padding: var(--ppm-spacing-sm) 0 0;
-    text-align: left;
+    display: none;
   }
 
-  .ppm-quicklinks .ppm-quicklinks-buttons {
-    justify-content: flex-start;
+  /* The title line now lives inline in the nav (see .ppm-nav-brand) */
+  .ppm-hero-site-title {
+    display: none;
   }
 
-  .ppm-quicklinks .ppm-quicklinks-description {
+  .ppm-nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    text-decoration: none;
+  }
+
+  .ppm-nav-brand-logo {
+    height: 32px;
+    width: auto;
+    display: block;
+  }
+
+  .ppm-nav-brand-text {
+    font-family: "Space Grotesk", system-ui, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    display: flex;
+    gap: 0.4rem;
+  }
+
+  .ppm-nav-brand-outline {
+    color: transparent;
+    font-weight: 500;
+    -webkit-text-stroke: 1px #ffffff;
+    text-stroke: 1px #ffffff;
+  }
+
+  .ppm-nav-brand-solid {
+    color: #ffffff;
+    font-weight: 700;
+  }
+}
+
+/* ================================
+   8b) HOME THREE-COLUMN LAYOUT (desktop only) —
+   sidebar nav / wide center column / widget sidebar.
+   Mobile keeps the single-column flow and reaches books
+   and topics via the quicklinks buttons in the hero above.
+   ================================ */
+
+.ppm-home-books {
+  display: none;
+}
+
+.ppm-home-sidebar {
+  display: none;
+}
+
+@media (min-width: 901px) {
+  .ppm-home-columns {
+    display: grid;
+    grid-template-columns: 200px minmax(0, 1fr) 240px;
+    gap: var(--ppm-spacing-xl);
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5% var(--ppm-spacing-xl);
+    align-items: start;
+  }
+
+  .ppm-home-main {
+    min-width: 0;
+  }
+
+  .ppm-home-sidebar {
+    display: block;
+    position: sticky;
+    top: var(--ppm-spacing-lg);
+  }
+
+  .ppm-home-nav-heading {
+    margin: 0 0 var(--ppm-spacing-sm);
+    font-family: "Space Grotesk", system-ui, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    color: var(--ppm-hermes);
+  }
+
+  .ppm-home-nav ul {
+    list-style: none;
     margin: 0;
-    text-align: left;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .ppm-home-nav a {
+    font-family: "IBM Plex Sans", system-ui, sans-serif;
+    font-size: 0.95rem;
+    color: var(--ppm-text-main);
+    text-decoration: none;
+    opacity: 0.85;
+    transition: opacity var(--ppm-transition-fast), color var(--ppm-transition-fast);
+  }
+
+  .ppm-home-nav a:hover {
+    opacity: 1;
+    color: var(--ppm-hermes);
+  }
+
+  .ppm-home-widget {
+    background: var(--ppm-surface);
+    border: 1px solid var(--ppm-border-soft);
+    border-radius: var(--ppm-radius-md);
+    padding: var(--ppm-spacing-md);
+  }
+
+  .ppm-home-widget + .ppm-home-widget {
+    margin-top: var(--ppm-spacing-md);
+  }
+
+  .ppm-home-widget-label {
+    margin: 0 0 0.4em;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ppm-hermes-shadow);
+  }
+
+  .ppm-home-widget-title {
+    margin: 0 0 0.5em;
+    font-family: "Space Grotesk", system-ui, sans-serif;
+    font-size: 1.05rem;
+    color: #ffffff;
+  }
+
+  .ppm-home-widget-text {
+    margin: 0 0 var(--ppm-spacing-sm);
+    font-family: "IBM Plex Sans", system-ui, sans-serif;
+    font-size: 0.88rem;
+    color: var(--ppm-text-main);
+    opacity: 0.85;
+    line-height: 1.5;
+  }
+
+  .ppm-home-widget .ppm-button {
+    width: 100%;
+    padding: 0.7rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .ppm-home-widget-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .ppm-home-widget-form input {
+    padding: 0.65rem 0.9rem;
+    border-radius: var(--ppm-radius-pill);
+    border: 1px solid var(--ppm-border-soft);
+    background: var(--ppm-obsidian);
+    color: #ffffff;
+    font-family: "IBM Plex Sans", system-ui, sans-serif;
+    font-size: 0.88rem;
+  }
+
+  .ppm-home-widget-form button {
+    padding: 0.7rem 1rem;
+    border-radius: var(--ppm-radius-pill);
+    border: none;
+    background: var(--ppm-hermes);
+    color: #000;
+    font-family: "Space Grotesk", system-ui, sans-serif;
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  /* Books row, now living in the center column rather than full page width */
+  .ppm-home-books {
+    display: block;
+  }
+
+  .ppm-home-books-heading {
+    margin: 0 0 var(--ppm-spacing-md);
+    font-family: "Space Grotesk", system-ui, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-size: clamp(1.1rem, 1.2vw + 1rem, 1.5rem);
+    color: var(--ppm-hermes);
+  }
+
+  .ppm-home-books-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: var(--ppm-spacing-md);
+  }
+
+  .ppm-home-book {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    transition: transform var(--ppm-transition-fast);
+  }
+
+  .ppm-home-book:hover {
+    transform: translateY(-4px);
+  }
+
+  .ppm-home-book:hover .ppm-home-book-cover {
+    border-color: rgba(117, 255, 232, 0.55);
+  }
+
+  .ppm-home-book-cover {
+    aspect-ratio: 2 / 3;
+    border-radius: var(--ppm-radius-md);
+    overflow: hidden;
+    border: 1px solid var(--ppm-border-soft);
+    box-shadow: var(--ppm-shadow-soft);
+    transition: border-color var(--ppm-transition-fast);
+  }
+
+  .ppm-home-book-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ppm-home-book-cover--placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    text-align: center;
+    background: linear-gradient(160deg, rgba(117, 255, 232, 0.12), rgba(199, 108, 255, 0.18));
+  }
+
+  .ppm-home-book-cover--placeholder span {
+    font-family: "Space Grotesk", system-ui, sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    font-size: 0.95rem;
+    line-height: 1.3;
+  }
+
+  .ppm-home-book-title {
+    margin: 0.75rem 0 0;
+    font-family: "IBM Plex Sans", system-ui, sans-serif;
+    font-size: 0.9rem;
+    text-align: center;
+    color: var(--ppm-text-main);
+  }
+
+  .ppm-home-books-more {
+    margin-top: var(--ppm-spacing-md);
+    text-align: center;
+  }
+
+  /* The blog preview partial carries its own full-page-width padding;
+     zero out the horizontal half so it lines up with the center column. */
+  .ppm-home-main .ppm-blog-preview,
+  .ppm-home-main .blog-preview {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .ppm-home-main .blog-container ul {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1150px) {
+  .ppm-home-columns {
+    grid-template-columns: 170px minmax(0, 1fr) 200px;
+    gap: var(--ppm-spacing-lg);
   }
 }
 
@@ -699,12 +952,18 @@ small {
   justify-content: flex-end;
 }
 
-/* Remove unused logo/monogram styles */
+@media (min-width: 901px) {
+  .ppm-nav-inner {
+    justify-content: space-between;
+  }
+}
 
 /* ICON GROUP */
 .ppm-nav-icons {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: flex-end;
   gap: 12px;
 }
 
@@ -981,6 +1240,11 @@ body.ppm-nav-open {
 
   .ppm-nav-icons {
     gap: 8px;
+  }
+
+  .ppm-nav-cta {
+    padding: 0.45rem 0.85rem;
+    font-size: 0.72rem;
   }
 
   .ppm-icon-btn {
