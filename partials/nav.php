@@ -75,15 +75,8 @@
     <div class="ppm-drawer-section">
       <h3 class="ppm-drawer-heading">Peevish Penman</h3>
       <ul>
+        <li><a href="/pages/about.php">About OA Allen</a></li>
         <li><a href="/pages/newsletter.php">Email Sign-Up</a></li>
-      </ul>
-    </div>
-
-    <!-- About Section -->
-    <div class="ppm-drawer-section">
-      <h3 class="ppm-drawer-heading">About</h3>
-      <ul>
-        <li><a href="/pages/about.php">About</a></li>
       </ul>
     </div>
 
