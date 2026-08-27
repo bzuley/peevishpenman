@@ -1287,7 +1287,7 @@ body.ppm-nav-open {
 
 .ppm-article p {
   font-family: "IBM Plex Sans", system-ui, sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.3125rem;
   line-height: 1.75;
   color: var(--ppm-text-main);
   margin: 0 0 1.25rem;
@@ -1329,7 +1329,7 @@ body.ppm-nav-open {
 .ppm-article ul,
 .ppm-article ol {
   font-family: "IBM Plex Sans", system-ui, sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.3125rem;
   line-height: 1.75;
   color: var(--ppm-text-main);
   margin: 0 0 1.25rem;
@@ -1465,7 +1465,7 @@ body.ppm-nav-open {
   .ppm-article p,
   .ppm-article ul,
   .ppm-article ol {
-    font-size: 1.125rem;
+    font-size: 1.3125rem;
   }
 
   .ppm-article table {
