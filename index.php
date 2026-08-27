@@ -163,7 +163,7 @@
 
         <a class="ppm-home-book" href="/pages/coloring-book.php">
           <div class="ppm-home-book-cover">
-            <img src="/img/reptilian-cover.jpg" alt="Reptilian Conspiracy Coloring Book cover" loading="lazy">
+            <img src="/img/covers/reptilian-cover-3d.webp" alt="Reptilian Conspiracy Coloring Book cover" loading="lazy">
           </div>
           <p class="ppm-home-book-title">Reptilian Conspiracy Coloring Book</p>
         </a>

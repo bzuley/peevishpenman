@@ -23,7 +23,7 @@
       <h1>Reptilian Conspiracy Coloring Book</h1>
 
       <figure class="ppm-article-hero">
-        <img src="/img/reptilian-cover.jpg" alt="Reptilian Conspiracy Coloring Book cover">
+        <img src="/img/covers/reptilian-cover-3d.webp" alt="Reptilian Conspiracy Coloring Book cover">
       </figure>
     </header>
 
