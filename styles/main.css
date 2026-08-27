@@ -1155,7 +1155,7 @@ body.ppm-nav-open {
   font-size: 1.05rem;
   letter-spacing: 0.12em;
   line-height: 1.4;
-  max-width: 16ch;
+  max-width: 24ch;
   text-wrap: balance;
 }
 
