@@ -255,6 +255,18 @@
       margin: 0 auto 2rem;
       line-height: 1.7;
     }
+
+    .ab-cta-sub a {
+      color: var(--ppm-hermes);
+      text-decoration: underline;
+      text-decoration-color: rgba(117, 255, 232, 0.4);
+      text-underline-offset: 2px;
+      transition: text-decoration-color var(--ppm-transition-fast);
+    }
+
+    .ab-cta-sub a:hover {
+      text-decoration-color: var(--ppm-hermes);
+    }
   </style>
 
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/analytics.php'; ?>
@@ -381,6 +393,10 @@
       explanation.
     </p>
     <a class="ppm-button" href="/pages/newsletter.php">Join the Newsletter</a>
+    <p class="ab-cta-sub">
+      Questions or press inquiries? Reach out at
+      <a href="mailto:editor@peevishpenman.com">editor@peevishpenman.com</a>.
+    </p>
   </section>
 
 </main>

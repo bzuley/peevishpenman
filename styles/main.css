@@ -1100,17 +1100,20 @@ small {
 }
 
 /* When nav is open */
-body.ppm-nav-open .ppm-drawer {
+html.ppm-nav-open .ppm-drawer {
   transform: translateX(0%);
 }
 
-body.ppm-nav-open .ppm-nav-overlay {
+html.ppm-nav-open .ppm-nav-overlay {
   opacity: 1;
   pointer-events: auto;
 }
 
-/* Prevent background scroll when open */
-body.ppm-nav-open {
+/* Prevent background scroll when open.
+   Targets html, not body: html's overflow-x: clip (see RESET above) means
+   it governs the viewport's scrollbar directly instead of propagating from
+   body, so toggling overflow on body here would have no visible effect. */
+html.ppm-nav-open {
   overflow: hidden;
   padding-right: var(--ppm-scrollbar-width, 0px);
 }

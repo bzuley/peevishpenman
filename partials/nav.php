@@ -39,13 +39,13 @@
 
 <!-- Navigation Drawer Overlay -->
 <div class="ppm-nav-overlay"
-     onclick="document.body.classList.remove('ppm-nav-open')"></div>
+     onclick="document.documentElement.classList.remove('ppm-nav-open')"></div>
 
 <script>
   function ppmOpenNav() {
     var scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
-    document.body.style.setProperty('--ppm-scrollbar-width', scrollbarWidth + 'px');
-    document.body.classList.add('ppm-nav-open');
+    document.documentElement.style.setProperty('--ppm-scrollbar-width', scrollbarWidth + 'px');
+    document.documentElement.classList.add('ppm-nav-open');
   }
 </script>
 
@@ -54,9 +54,9 @@
   <div class="ppm-drawer-inner">
     
     <!-- Close Button -->
-    <button class="ppm-drawer-close" 
+    <button class="ppm-drawer-close"
             aria-label="Close menu"
-            onclick="document.body.classList.remove('ppm-nav-open')">
+            onclick="document.documentElement.classList.remove('ppm-nav-open')">
       &times;
     </button>
 
@@ -64,7 +64,6 @@
     <div class="ppm-drawer-section">
       <h3 class="ppm-drawer-heading">Writing Projects</h3>
       <ul>
-        <li><a href="/pages/books.php">All Books</a></li>
         <li><a href="/pages/bright-dark.php">The Bright Dark</a></li>
         <li><a href="/pages/delcath-series.php">Delcath Series</a></li>
         <li><a href="/pages/ghost-trucker.php">Ghost Trucker</a></li>
@@ -76,7 +75,6 @@
     <div class="ppm-drawer-section">
       <h3 class="ppm-drawer-heading">Peevish Penman</h3>
       <ul>
-        <li><a href="/blog.php">Blog</a></li>
         <li><a href="/pages/newsletter.php">Email Sign-Up</a></li>
       </ul>
     </div>
