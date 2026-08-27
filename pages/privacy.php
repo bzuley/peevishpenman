@@ -73,8 +73,9 @@
     <section>
       <h2>Contact</h2>
       <p>
-        Questions about this policy or your data can be sent through any of
-        the social channels linked in the footer below.
+        Questions about this policy or your data can be sent to
+        <a href="mailto:editor@peevishpenman.com">editor@peevishpenman.com</a>
+        or through any of the social channels linked in the footer below.
       </p>
     </section>
   </article>
