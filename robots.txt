@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
-Disallow: /pages/thought-engines.php
+Disallow: /pages/bright-dark.php
 Disallow: /pages/delcath-series.php
 Disallow: /pages/ghost-trucker.php
 Disallow: /pages/coloring-book.php
