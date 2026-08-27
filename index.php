@@ -116,7 +116,7 @@
 <div class="ppm-home-columns">
 
   <aside class="ppm-home-sidebar ppm-home-sidebar--left">
-    <nav class="ppm-home-nav" aria-label="Explore">
+    <nav class="ppm-home-nav ppm-home-widget" aria-label="Explore">
       <h3 class="ppm-home-nav-heading">Explore</h3>
       <ul>
         <li><a href="/pages/books.php">Books</a></li>
