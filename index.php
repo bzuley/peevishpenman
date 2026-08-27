@@ -88,10 +88,10 @@
       <!-- Quicklinks Section -->
       <section class="ppm-quicklinks">
         <div class="ppm-quicklinks-buttons">
-          <a class="ppm-button"
+          <a class="ppm-button ppm-quicklinks-primary"
             href="/pages/books.php">Explore the Books</a>
 
-          <a class="ppm-button ppm-button--ghost"
+          <a class="ppm-button ppm-button--ghost ppm-quicklinks-primary"
             href="/blog.php">Read the Blog</a>
 
           <a class="ppm-button ppm-button--ghost"
@@ -113,6 +113,52 @@
 
     </div> <!-- /.ppm-hero-content -->
   </div> <!-- /.ppm-hero-inner -->
+
+  <!-- Books row (desktop only; mobile reaches books via the quicklinks buttons above) -->
+  <section class="ppm-home-books">
+    <h2 class="ppm-home-books-heading">The Books</h2>
+    <div class="ppm-home-books-grid">
+      <a class="ppm-home-book" href="/pages/delcath-series.php">
+        <div class="ppm-home-book-cover">
+          <img src="/img/covers/wod-cover-3d.webp" alt="Waiting on Delcath — book cover" loading="lazy">
+        </div>
+        <p class="ppm-home-book-title">The Delcath Series</p>
+      </a>
+
+      <a class="ppm-home-book" href="/pages/writer-secret-society.php">
+        <div class="ppm-home-book-cover">
+          <img src="/img/wss-hardcover.webp" alt="The Handbook of the Writer Secret Society — book cover" loading="lazy">
+        </div>
+        <p class="ppm-home-book-title">Writer Secret Society</p>
+      </a>
+
+      <a class="ppm-home-book" href="/pages/bright-dark.php">
+        <div class="ppm-home-book-cover ppm-home-book-cover--placeholder">
+          <span>The Bright Dark</span>
+        </div>
+        <p class="ppm-home-book-title">The Bright Dark</p>
+      </a>
+
+      <a class="ppm-home-book" href="/pages/ghost-trucker.php">
+        <div class="ppm-home-book-cover ppm-home-book-cover--placeholder">
+          <span>Ghost Trucker</span>
+        </div>
+        <p class="ppm-home-book-title">Ghost Trucker</p>
+      </a>
+
+      <a class="ppm-home-book" href="/pages/coloring-book.php">
+        <div class="ppm-home-book-cover">
+          <img src="/img/reptilian-cover.jpg" alt="Reptilian Conspiracy Coloring Book cover" loading="lazy">
+        </div>
+        <p class="ppm-home-book-title">Reptilian Conspiracy Coloring Book</p>
+      </a>
+    </div>
+
+    <div class="ppm-home-books-more">
+      <a class="ppm-link" href="/pages/books.php">See all books →</a>
+    </div>
+  </section>
+
   <?php include $_SERVER['DOCUMENT_ROOT'] . '/partials/blog-preview.php'; ?>
 </header>
 

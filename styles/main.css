@@ -513,54 +513,32 @@ small {
   font-family: "IBM Plex Sans", system-ui, sans-serif;
 }
 
-/* Desktop hero: two-column layout instead of a stretched mobile column,
-   so the typewriter art doesn't crowd out the CTAs into the books/blog. */
+/* Desktop hero: a compact left-aligned masthead instead of a big centered
+   mobile-style hero — no typewriter art, no bio paragraph, so the books
+   and blog sections that follow land above the fold. */
 @media (min-width: 901px) {
+  .ppm-hero {
+    padding: var(--ppm-spacing-lg) 5% var(--ppm-spacing-md);
+  }
+
   .ppm-hero-inner {
     max-width: 1200px;
   }
 
   .ppm-hero-content {
-    display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
-    column-gap: var(--ppm-spacing-xl);
-    row-gap: var(--ppm-spacing-sm);
     text-align: left;
-    grid-template-areas:
-      "title   title"
-      "tagline image"
-      "logline image"
-      "caption image"
-      "cta     image";
+    gap: var(--ppm-spacing-xs);
   }
 
   .ppm-hero-site-title {
-    grid-area: title;
     justify-content: flex-start;
   }
 
-  .ppm-hero-gradient-line {
-    grid-area: tagline;
-  }
-
-  div.ppm-hero-logline {
-    grid-area: logline;
-  }
-
-  h2.ppm-hero-logline {
-    grid-area: caption;
-    align-self: end;
-  }
-
   .ppm-hero-image {
-    grid-area: image;
-    align-self: start;
-    max-width: 420px;
-    margin: 0 0 0 auto;
+    display: none;
   }
 
   .ppm-quicklinks {
-    grid-area: cta;
     padding: var(--ppm-spacing-sm) 0 0;
     text-align: left;
   }
@@ -570,8 +548,113 @@ small {
   }
 
   .ppm-quicklinks .ppm-quicklinks-description {
-    margin: 0;
-    text-align: left;
+    display: none;
+  }
+
+  /* Redundant with the Books row and Blog preview sections just below */
+  .ppm-quicklinks-primary {
+    display: none;
+  }
+}
+
+/* ================================
+   8b) HOME BOOKS ROW (desktop only —
+   mobile already reaches books via the quicklinks buttons)
+   ================================ */
+
+.ppm-home-books {
+  display: none;
+}
+
+@media (min-width: 901px) {
+  .ppm-home-books {
+    display: block;
+    padding: var(--ppm-spacing-md) 5% 0;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .ppm-home-books-heading {
+    margin: 0 0 var(--ppm-spacing-md);
+    font-family: "Space Grotesk", system-ui, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-size: clamp(1.1rem, 1.2vw + 1rem, 1.5rem);
+    color: var(--ppm-hermes);
+  }
+
+  .ppm-home-books-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: var(--ppm-spacing-md);
+  }
+
+  .ppm-home-book {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    transition: transform var(--ppm-transition-fast);
+  }
+
+  .ppm-home-book:hover {
+    transform: translateY(-4px);
+  }
+
+  .ppm-home-book:hover .ppm-home-book-cover {
+    border-color: rgba(117, 255, 232, 0.55);
+  }
+
+  .ppm-home-book-cover {
+    aspect-ratio: 2 / 3;
+    border-radius: var(--ppm-radius-md);
+    overflow: hidden;
+    border: 1px solid var(--ppm-border-soft);
+    box-shadow: var(--ppm-shadow-soft);
+    transition: border-color var(--ppm-transition-fast);
+  }
+
+  .ppm-home-book-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ppm-home-book-cover--placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    text-align: center;
+    background: linear-gradient(160deg, rgba(117, 255, 232, 0.12), rgba(199, 108, 255, 0.18));
+  }
+
+  .ppm-home-book-cover--placeholder span {
+    font-family: "Space Grotesk", system-ui, sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    font-size: 0.95rem;
+    line-height: 1.3;
+  }
+
+  .ppm-home-book-title {
+    margin: 0.75rem 0 0;
+    font-family: "IBM Plex Sans", system-ui, sans-serif;
+    font-size: 0.9rem;
+    text-align: center;
+    color: var(--ppm-text-main);
+  }
+
+  .ppm-home-books-more {
+    margin-top: var(--ppm-spacing-md);
+    text-align: center;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1100px) {
+  .ppm-home-books-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
