@@ -556,14 +556,14 @@ small {
   }
 
   .ppm-nav-brand-logo {
-    height: 32px;
+    height: 40px;
     width: auto;
     display: block;
   }
 
   .ppm-nav-brand-text {
     font-family: "Space Grotesk", system-ui, sans-serif;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-weight: 600;
     letter-spacing: 0.05em;
     text-transform: uppercase;
@@ -732,14 +732,15 @@ small {
   }
 
   .ppm-home-books-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(130px, 200px));
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: var(--ppm-spacing-md);
   }
 
   .ppm-home-book {
     display: block;
+    flex: 0 1 160px;
     text-decoration: none;
     color: inherit;
     transition: transform var(--ppm-transition-fast);
