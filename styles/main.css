@@ -513,6 +513,12 @@ small {
   font-family: "IBM Plex Sans", system-ui, sans-serif;
 }
 
+/* Site brand in the nav — desktop only; hidden on mobile, where the
+   homepage's own title line still carries the branding. */
+.ppm-nav-brand {
+  display: none;
+}
+
 /* Desktop hero: a small centered masthead, out of the way — no typewriter
    art, no bio paragraph, no button row (the sidebar nav below covers that),
    so the three-column layout that follows lands above the fold. */
@@ -535,6 +541,46 @@ small {
 
   .ppm-quicklinks {
     display: none;
+  }
+
+  /* The title line now lives inline in the nav (see .ppm-nav-brand) */
+  .ppm-hero-site-title {
+    display: none;
+  }
+
+  .ppm-nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    text-decoration: none;
+  }
+
+  .ppm-nav-brand-logo {
+    height: 32px;
+    width: auto;
+    display: block;
+  }
+
+  .ppm-nav-brand-text {
+    font-family: "Space Grotesk", system-ui, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    display: flex;
+    gap: 0.4rem;
+  }
+
+  .ppm-nav-brand-outline {
+    color: transparent;
+    font-weight: 500;
+    -webkit-text-stroke: 1px #ffffff;
+    text-stroke: 1px #ffffff;
+  }
+
+  .ppm-nav-brand-solid {
+    color: #ffffff;
+    font-weight: 700;
   }
 }
 
@@ -906,7 +952,11 @@ small {
   justify-content: flex-end;
 }
 
-/* Remove unused logo/monogram styles */
+@media (min-width: 901px) {
+  .ppm-nav-inner {
+    justify-content: space-between;
+  }
+}
 
 /* ICON GROUP */
 .ppm-nav-icons {

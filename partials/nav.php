@@ -2,6 +2,15 @@
 <nav class="ppm-nav">
   <div class="ppm-nav-inner">
 
+    <!-- Site brand (desktop only; the homepage's own title line covers mobile) -->
+    <a href="/" class="ppm-nav-brand" aria-label="Peevish Penman home">
+      <img src="/img/logos/logo-ppm.webp" alt="" class="ppm-nav-brand-logo" width="36" height="36">
+      <span class="ppm-nav-brand-text">
+        <span class="ppm-nav-brand-outline">PEEVISH</span>
+        <span class="ppm-nav-brand-solid">PENMAN</span>
+      </span>
+    </a>
+
     <!-- CTA Buttons (right side) -->
     <div class="ppm-nav-icons">
       
