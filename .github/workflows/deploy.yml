@@ -24,10 +24,3 @@ jobs:
           exclude: |
             **/.git*
             **/.git*/**
-            **/video/**
-            img/*.png
-            img/*.jpg
-            img/*.jpeg
-            img/*.gif
-            img/*.webp
-            img/archetype/**

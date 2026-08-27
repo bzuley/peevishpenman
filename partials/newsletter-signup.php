@@ -45,8 +45,7 @@ $headers = "From: noreply@peevishpenman.com\r\n" .
            "Reply-To: noreply@peevishpenman.com\r\n" .
            "X-Mailer: PHP/" . phpversion();
 
-// Uncomment to enable email notifications:
-// mail($to, $subject, $message, $headers);
+mail($to, $subject, $message, $headers);
 
 // --- OPTION 3: Integration with email service (Mailchimp, ConvertKit, etc.) ---
 // Example for Mailchimp API (requires API key and list ID)
