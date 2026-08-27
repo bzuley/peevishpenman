@@ -147,30 +147,12 @@
           <p class="ppm-home-book-title">Writer Secret Society</p>
         </a>
 
-        <a class="ppm-home-book" href="/pages/bright-dark.php">
-          <div class="ppm-home-book-cover ppm-home-book-cover--placeholder">
-            <span>The Bright Dark</span>
-          </div>
-          <p class="ppm-home-book-title">The Bright Dark</p>
-        </a>
-
-        <a class="ppm-home-book" href="/pages/ghost-trucker.php">
-          <div class="ppm-home-book-cover ppm-home-book-cover--placeholder">
-            <span>Ghost Trucker</span>
-          </div>
-          <p class="ppm-home-book-title">Ghost Trucker</p>
-        </a>
-
         <a class="ppm-home-book" href="/pages/coloring-book.php">
           <div class="ppm-home-book-cover">
             <img src="/img/covers/reptilian-cover-3d.webp" alt="Reptilian Conspiracy Coloring Book cover" loading="lazy">
           </div>
           <p class="ppm-home-book-title">Reptilian Conspiracy Coloring Book</p>
         </a>
-      </div>
-
-      <div class="ppm-home-books-more">
-        <a class="ppm-link" href="/pages/books.php">See all books →</a>
       </div>
     </section>
 
