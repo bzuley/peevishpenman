@@ -504,8 +504,8 @@ small {
 .ppm-quicklinks .ppm-quicklinks-description {
   margin: 0 auto;
   max-width: 64ch;
-  line-height: 1.5;
-  font-size: clamp(0.95rem, 1vw + 0.82rem, 1.08rem);
+  line-height: 1.6;
+  font-size: clamp(1rem, 1vw + 0.85rem, 1.15rem);
   opacity: 0.92;
   color: var(--ppm-text-main);
   font-family: "IBM Plex Sans", system-ui, sans-serif;
@@ -548,8 +548,8 @@ small {
   font-family: "IBM Plex Sans", system-ui, sans-serif;
   color: var(--ppm-text-main);
   opacity: 0.9;
-  line-height: 1.55;
-  font-size: 0.98rem;
+  line-height: 1.6;
+  font-size: 1.05rem;
 }
 
 /* BLOG GRID */
@@ -613,8 +613,8 @@ small {
   font-family: "IBM Plex Sans", system-ui, sans-serif;
   color: var(--ppm-text-main);
   opacity: 0.85;
-  font-size: 0.9rem;
-  line-height: 1.45;
+  font-size: 1rem;
+  line-height: 1.6;
   margin: 0 auto;
   padding: 0 1.2em 1.2em;
   text-align: center;
@@ -1009,8 +1009,8 @@ body.ppm-nav-open {
   font-family: "IBM Plex Sans", system-ui, sans-serif;
   color: var(--ppm-text-main);
   opacity: 0.85;
-  font-size: 0.9rem;
-  line-height: 1.45;
+  font-size: 1rem;
+  line-height: 1.6;
   margin: 0 auto;
   max-width: 90%;
   text-align: center;
@@ -1039,8 +1039,8 @@ body.ppm-nav-open {
   font-family: "IBM Plex Sans", system-ui, sans-serif;
   color: var(--ppm-text-main);
   opacity: 0.9;
-  line-height: 1.55;
-  font-size: 0.98rem;
+  line-height: 1.6;
+  font-size: 1.05rem;
 }
 
 /* Responsive adjustments */
@@ -1245,7 +1245,7 @@ body.ppm-nav-open {
   padding: 1rem 1.25rem;
   margin: 1.5rem 0;
   border-radius: var(--ppm-radius-sm);
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   line-height: 1.6;
 }
 
@@ -1536,7 +1536,7 @@ body.ppm-nav-open {
   opacity: 0.85;
   line-height: 1.6;
   margin: 0 auto 1.5rem;
-  font-size: clamp(0.98rem, 0.5vw, 1.06rem);
+  font-size: clamp(1.05rem, 0.5vw, 1.15rem);
 }
 
 /* Newsletter Form */
