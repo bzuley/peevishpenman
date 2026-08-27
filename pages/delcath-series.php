@@ -382,7 +382,7 @@
     <article class="dc-book" id="waiting-on-delcath">
       <div class="dc-book-cover">
         <div class="dc-book-cover-frame">
-          <img src="/img/wod-cover-3d.webp" alt="Waiting on Delcath — book cover" width="1086" height="1448">
+          <img src="/img/covers/wod-cover-3d.webp" alt="Waiting on Delcath — book cover" width="1086" height="1448">
         </div>
       </div>
       <div class="dc-book-copy">
@@ -424,7 +424,7 @@
     <article class="dc-book dc-book--alt" id="children-of-delcath">
       <div class="dc-book-cover">
         <div class="dc-book-cover-frame">
-          <img src="/img/cod-cover-3d.webp" alt="Children of Delcath — book cover" width="1086" height="1448">
+          <img src="/img/covers/cod-cover-3d.webp" alt="Children of Delcath — book cover" width="1086" height="1448">
         </div>
       </div>
       <div class="dc-book-copy">
