@@ -1,8 +1,8 @@
 <?php
 require_once __DIR__ . '/../blog-config.php';
 
-$ppm_blog_heading    = 'From the Blog';
-$ppm_blog_subheading = 'Fresh dispatches on plasmoid physics, inner alchemy, and the craft of self-publishing.';
+$ppm_blog_heading    = '';
+$ppm_blog_subheading = '';
 $ppm_post_limit      = 3;
 $ppm_show_excerpt    = true;
 $ppm_excerpt_len     = 100;
