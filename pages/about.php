@@ -162,6 +162,18 @@
 
     .ab-panel--shaded p { color: var(--ppm-text-muted); }
 
+    .ab-panel p a {
+      color: var(--ppm-hermes);
+      text-decoration: underline;
+      text-decoration-color: rgba(117, 255, 232, 0.4);
+      text-underline-offset: 2px;
+      transition: text-decoration-color var(--ppm-transition-fast);
+    }
+
+    .ab-panel p a:hover {
+      text-decoration-color: var(--ppm-hermes);
+    }
+
     /* ---------- The work list ---------- */
     .ab-works {
       padding: clamp(1rem, 4vw, 2rem) 5% clamp(3rem, 7vw, 5rem);
@@ -300,7 +312,7 @@
     <div class="ab-panel-inner">
       <h2>The Work</h2>
       <p>
-        Her science-fiction novel <em>The Bright Dark</em> grew out of those
+        Her science-fiction novel <a href="/pages/bright-dark.php"><em>The Bright Dark</em></a> grew out of those
         interests, imagining a future shaped not just by catastrophe and
         technology but by the myths, institutions, class systems, and
         assumptions people build afterward. She asked what it might have
@@ -308,12 +320,12 @@
         civilizations.
       </p>
       <p>
-        The Delcath series started as a tribute to <em>No Exit</em> by
+        <a href="/pages/delcath-series.php">The Delcath series</a> started as a tribute to <em>No Exit</em> by
         Jean-Paul Sartre. Carrie asked what hell could look like for workers
         isolated in space.
       </p>
       <p>
-        Her current work in progress, <em>Ghost Trucker</em>, moves further
+        Her current work in progress, <a href="/pages/ghost-trucker.php"><em>Ghost Trucker</em></a>, moves further
         into the territory between the rational and the uncanny. After
         three years on the road with her husband, who worked as a long-haul
         truck driver during COVID, she returned with a miniature schnauzer
