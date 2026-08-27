@@ -85,13 +85,13 @@
         stories for a technognostic world
       </h2>
 
-      <!-- Quicklinks Section -->
+      <!-- Quicklinks Section (mobile only — desktop uses the sidebar nav below) -->
       <section class="ppm-quicklinks">
         <div class="ppm-quicklinks-buttons">
-          <a class="ppm-button ppm-quicklinks-primary"
+          <a class="ppm-button"
             href="/pages/books.php">Explore the Books</a>
 
-          <a class="ppm-button ppm-button--ghost ppm-quicklinks-primary"
+          <a class="ppm-button ppm-button--ghost"
             href="/blog.php">Read the Blog</a>
 
           <a class="ppm-button ppm-button--ghost"
@@ -113,54 +113,101 @@
 
     </div> <!-- /.ppm-hero-content -->
   </div> <!-- /.ppm-hero-inner -->
-
-  <!-- Books row (desktop only; mobile reaches books via the quicklinks buttons above) -->
-  <section class="ppm-home-books">
-    <h2 class="ppm-home-books-heading">The Books</h2>
-    <div class="ppm-home-books-grid">
-      <a class="ppm-home-book" href="/pages/delcath-series.php">
-        <div class="ppm-home-book-cover">
-          <img src="/img/covers/wod-cover-3d.webp" alt="Waiting on Delcath — book cover" loading="lazy">
-        </div>
-        <p class="ppm-home-book-title">The Delcath Series</p>
-      </a>
-
-      <a class="ppm-home-book" href="/pages/writer-secret-society.php">
-        <div class="ppm-home-book-cover">
-          <img src="/img/wss-hardcover.webp" alt="The Handbook of the Writer Secret Society — book cover" loading="lazy">
-        </div>
-        <p class="ppm-home-book-title">Writer Secret Society</p>
-      </a>
-
-      <a class="ppm-home-book" href="/pages/bright-dark.php">
-        <div class="ppm-home-book-cover ppm-home-book-cover--placeholder">
-          <span>The Bright Dark</span>
-        </div>
-        <p class="ppm-home-book-title">The Bright Dark</p>
-      </a>
-
-      <a class="ppm-home-book" href="/pages/ghost-trucker.php">
-        <div class="ppm-home-book-cover ppm-home-book-cover--placeholder">
-          <span>Ghost Trucker</span>
-        </div>
-        <p class="ppm-home-book-title">Ghost Trucker</p>
-      </a>
-
-      <a class="ppm-home-book" href="/pages/coloring-book.php">
-        <div class="ppm-home-book-cover">
-          <img src="/img/reptilian-cover.jpg" alt="Reptilian Conspiracy Coloring Book cover" loading="lazy">
-        </div>
-        <p class="ppm-home-book-title">Reptilian Conspiracy Coloring Book</p>
-      </a>
-    </div>
-
-    <div class="ppm-home-books-more">
-      <a class="ppm-link" href="/pages/books.php">See all books →</a>
-    </div>
-  </section>
-
-  <?php include $_SERVER['DOCUMENT_ROOT'] . '/partials/blog-preview.php'; ?>
 </header>
+
+<!-- Three-column layout (desktop only): sidebar nav, wide center column, widgets -->
+<div class="ppm-home-columns">
+
+  <aside class="ppm-home-sidebar ppm-home-sidebar--left">
+    <nav class="ppm-home-nav" aria-label="Explore">
+      <h3 class="ppm-home-nav-heading">Explore</h3>
+      <ul>
+        <li><a href="/pages/books.php">Books</a></li>
+        <li><a href="/blog.php">Blog</a></li>
+        <li><a href="/blog-tag.php?tag=selfpublishing">Self-Publishing</a></li>
+        <li><a href="/blog-tag.php?tag=archetypes">Character Archetypes</a></li>
+        <li><a href="/blog-tag.php?tag=sciencefiction">Science Fiction</a></li>
+        <li><a href="/pages/about.php">About</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <div class="ppm-home-main">
+    <!-- Books row -->
+    <section class="ppm-home-books">
+      <h2 class="ppm-home-books-heading">The Books</h2>
+      <div class="ppm-home-books-grid">
+        <a class="ppm-home-book" href="/pages/delcath-series.php">
+          <div class="ppm-home-book-cover">
+            <img src="/img/covers/wod-cover-3d.webp" alt="Waiting on Delcath — book cover" loading="lazy">
+          </div>
+          <p class="ppm-home-book-title">The Delcath Series</p>
+        </a>
+
+        <a class="ppm-home-book" href="/pages/writer-secret-society.php">
+          <div class="ppm-home-book-cover">
+            <img src="/img/wss-hardcover.webp" alt="The Handbook of the Writer Secret Society — book cover" loading="lazy">
+          </div>
+          <p class="ppm-home-book-title">Writer Secret Society</p>
+        </a>
+
+        <a class="ppm-home-book" href="/pages/bright-dark.php">
+          <div class="ppm-home-book-cover ppm-home-book-cover--placeholder">
+            <span>The Bright Dark</span>
+          </div>
+          <p class="ppm-home-book-title">The Bright Dark</p>
+        </a>
+
+        <a class="ppm-home-book" href="/pages/ghost-trucker.php">
+          <div class="ppm-home-book-cover ppm-home-book-cover--placeholder">
+            <span>Ghost Trucker</span>
+          </div>
+          <p class="ppm-home-book-title">Ghost Trucker</p>
+        </a>
+
+        <a class="ppm-home-book" href="/pages/coloring-book.php">
+          <div class="ppm-home-book-cover">
+            <img src="/img/reptilian-cover.jpg" alt="Reptilian Conspiracy Coloring Book cover" loading="lazy">
+          </div>
+          <p class="ppm-home-book-title">Reptilian Conspiracy Coloring Book</p>
+        </a>
+      </div>
+
+      <div class="ppm-home-books-more">
+        <a class="ppm-link" href="/pages/books.php">See all books →</a>
+      </div>
+    </section>
+
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/partials/blog-preview.php'; ?>
+  </div>
+
+  <aside class="ppm-home-sidebar ppm-home-sidebar--right">
+    <div class="ppm-home-widget">
+      <p class="ppm-home-widget-label">Free Download</p>
+      <h3 class="ppm-home-widget-title">Writer Secret Society Handbook</h3>
+      <p class="ppm-home-widget-text">Mystic wisdom and practical inspiration for writers. Free PDF and EPUB.</p>
+      <a class="ppm-button" href="/pages/writer-secret-society.php">Get the Handbook</a>
+    </div>
+
+    <div class="ppm-home-widget">
+      <p class="ppm-home-widget-label">Early Access &middot; Launch Alerts</p>
+      <h3 class="ppm-home-widget-title">Get the Drops First</h3>
+      <form action="/partials/newsletter-signup.php" method="POST" class="ppm-home-widget-form">
+        <input type="email" name="email" placeholder="Your email" required aria-label="Email address">
+        <button type="submit" aria-label="Join the newsletter now">Join Now</button>
+      </form>
+
+      <?php if (isset($_GET['status']) && $_GET['status'] === 'success'): ?>
+        <p class="ppm-footer-message ppm-footer-message-success">Thanks—check your inbox.</p>
+      <?php endif; ?>
+
+      <?php if (isset($_GET['status']) && $_GET['status'] === 'error'): ?>
+        <p class="ppm-footer-message ppm-footer-message-error">Something went wrong. Please try again.</p>
+      <?php endif; ?>
+    </div>
+  </aside>
+
+</div>
 
 <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/footer.php'; ?>
 </body>
