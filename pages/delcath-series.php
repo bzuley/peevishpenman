@@ -195,14 +195,27 @@
       position: relative;
       display: flex;
       justify-content: center;
+      padding: 1rem 0;
+    }
+
+    .dc-book-cover::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 78%;
+      aspect-ratio: 1;
+      transform: translate(-50%, -50%);
+      background: radial-gradient(circle, rgba(117, 255, 232, 0.18), transparent 70%);
+      filter: blur(16px);
+      z-index: 0;
     }
 
     .dc-book-cover-frame {
       position: relative;
-      width: min(340px, 100%);
-      border-radius: var(--ppm-radius-md);
-      overflow: hidden;
-      box-shadow: 0 0 0 1px var(--ppm-border-soft), 0 25px 60px rgba(0, 0, 0, 0.6), 0 0 50px rgba(117, 255, 232, 0.08);
+      z-index: 1;
+      width: min(300px, 100%);
+      filter: drop-shadow(0 30px 40px rgba(0, 0, 0, 0.55));
     }
 
     .dc-book-cover-frame img {
@@ -369,7 +382,7 @@
     <article class="dc-book" id="waiting-on-delcath">
       <div class="dc-book-cover">
         <div class="dc-book-cover-frame">
-          <img src="/img/wod-cover.jpg" alt="Waiting on Delcath — book cover" width="1948" height="2800">
+          <img src="/img/wod-cover-3d.webp" alt="Waiting on Delcath — book cover" width="1086" height="1448">
         </div>
       </div>
       <div class="dc-book-copy">
@@ -411,7 +424,7 @@
     <article class="dc-book dc-book--alt" id="children-of-delcath">
       <div class="dc-book-cover">
         <div class="dc-book-cover-frame">
-          <img src="/img/cod-cover.jpg" alt="Children of Delcath — book cover" width="1470" height="2138">
+          <img src="/img/cod-cover-3d.webp" alt="Children of Delcath — book cover" width="1086" height="1448">
         </div>
       </div>
       <div class="dc-book-copy">
