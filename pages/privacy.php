@@ -74,7 +74,7 @@
       <h2>Contact</h2>
       <p>
         Questions about this policy or your data can be sent through any of
-        the social channels listed on the <a href="/pages/contact.php">Contact page</a>.
+        the social channels linked in the footer below.
       </p>
     </section>
   </article>

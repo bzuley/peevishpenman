@@ -58,7 +58,6 @@
         <li><a href="/pages/bright-dark.php">The Bright Dark</a></li>
         <li><a href="/pages/delcath-series.php">Delcath Series</a></li>
         <li><a href="/pages/ghost-trucker.php">Ghost Trucker</a></li>
-        <li><a href="/pages/writer-secret-society.php">Writer Secret Society Handbook</a></li>
         <li><a href="/pages/coloring-book.php">Reptilian Conspiracy Coloring Book</a></li>
       </ul>
     </div>
@@ -76,8 +75,7 @@
     <div class="ppm-drawer-section">
       <h3 class="ppm-drawer-heading">About</h3>
       <ul>
-        <li><a href="/pages/about.php">About OA Allen</a></li>
-        <li><a href="/pages/contact.php">Contact</a></li>
+        <li><a href="/pages/about.php">About</a></li>
       </ul>
     </div>
 
