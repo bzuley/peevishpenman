@@ -1,3 +1,9 @@
+# Force PHP 8.2 execution (EasyApache 4 handler) in case the server
+# isn't picking up the account's PHP Selector setting for this domain
+<FilesMatch "\.php$">
+  SetHandler application/x-httpd-ea-php82
+</FilesMatch>
+
 Options -Indexes
 
 <FilesMatch "^\.">
