@@ -640,9 +640,7 @@ small {
 /* ICON GROUP */
 .ppm-nav-icons {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: flex-end;
   gap: 12px;
 }
 
@@ -918,11 +916,6 @@ body.ppm-nav-open {
 
   .ppm-nav-icons {
     gap: 8px;
-  }
-
-  .ppm-nav-cta {
-    padding: 0.45rem 0.85rem;
-    font-size: 0.72rem;
   }
 
   .ppm-icon-btn {
