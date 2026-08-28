@@ -11,28 +11,47 @@
   <link rel="stylesheet" href="/styles/main.css">
 
   <style>
-    .ppm-article-header .rcb-hero {
+    .rcb-title-block {
       position: relative;
-      width: min(300px, 80%);
-      margin: 0 auto 2rem;
+      padding: 0.5rem 0 1rem;
     }
 
-    .rcb-hero::before {
+    .rcb-hero-art {
+      position: absolute;
+      inset: -1.5rem -10% 0;
+      z-index: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    .rcb-hero-art img {
+      width: min(380px, 100%);
+      height: auto;
+      opacity: 0.5;
+      filter: saturate(0.9);
+    }
+
+    .rcb-hero-art::after {
       content: '';
       position: absolute;
-      inset: -14%;
-      background: radial-gradient(circle, rgba(117, 255, 232, 0.24), transparent 70%);
-      filter: blur(28px);
-      z-index: 0;
+      inset: 0;
+      background: radial-gradient(
+        ellipse 65% 65% at 50% 45%,
+        rgba(5, 6, 8, 0.1) 0%,
+        rgba(5, 6, 8, 0.55) 55%,
+        rgba(5, 6, 8, 0.88) 78%,
+        var(--ppm-obsidian) 100%
+      );
     }
 
-    .rcb-hero img {
+    .rcb-title-block .ppm-article-kicker,
+    .rcb-title-block h1 {
       position: relative;
       z-index: 1;
-      display: block;
-      width: 100%;
-      height: auto;
-      filter: drop-shadow(0 20px 36px rgba(0, 0, 0, 0.55));
+      text-shadow: 0 4px 18px rgba(5, 6, 8, 0.85);
     }
   </style>
 
@@ -45,12 +64,13 @@
 <main class="ppm-article">
   <article class="ppm-article-inner">
     <header class="ppm-article-header">
-      <p class="ppm-article-kicker">Writing Project</p>
-      <h1>Reptilian Conspiracy Coloring Book</h1>
-
-      <figure class="rcb-hero">
-        <img src="/img/reptilian_coloringbook_cover_dynamic.png" alt="Reptilian Conspiracy: A Coloring Book cover, featuring a reptilian White House press secretary among other coloring pages" width="1086" height="1448">
-      </figure>
+      <div class="rcb-title-block">
+        <div class="rcb-hero-art" aria-hidden="true">
+          <img src="/img/reptilian_coloringbook_cover_dynamic.webp" alt="" width="1086" height="1448">
+        </div>
+        <p class="ppm-article-kicker">Writing Project</p>
+        <h1>Reptilian Conspiracy Coloring Book</h1>
+      </div>
     </header>
 
     <section>
