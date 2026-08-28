@@ -51,6 +51,7 @@
   <nav class="ppm-footer-links" aria-label="Footer">
     <a href="/pages/about.php">About</a>
     <a href="/pages/books.php">Books</a>
+    <a href="/pages/privacy.php">Privacy</a>
   </nav>
 
   <div class="ppm-footer-bottom">

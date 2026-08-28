@@ -1,7 +1,4 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-
 require_once __DIR__ . '/blog-config.php';
 $blog_items = ppm_get_blog_posts();
 ?>
@@ -11,6 +8,18 @@ $blog_items = ppm_get_blog_posts();
   <meta charset="UTF-8">
   <title>Blog – Peevish Penman</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Essays and dispatches from OA Allen on self-publishing, character archetypes, and metaphysical science fiction.">
+  <meta name="author" content="OA Allen">
+
+  <link rel="canonical" href="https://peevishpenman.com/blog.php">
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Peevish Penman">
+  <meta property="og:title" content="Blog – Peevish Penman">
+  <meta property="og:description" content="Essays and dispatches from OA Allen on self-publishing, character archetypes, and metaphysical science fiction.">
+  <meta property="og:url" content="https://peevishpenman.com/blog.php">
+  <meta property="og:type" content="website">
+
   <link rel="stylesheet" href="/styles/main.css">
 
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/analytics.php'; ?>
@@ -19,9 +28,6 @@ $blog_items = ppm_get_blog_posts();
 <body>
 
 <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/nav.php'; ?>
-
-<!-- DEBUG INFO (view source to see) -->
-<!-- POSTS FOUND: <?php echo count($blog_items); ?> -->
 
 <section class="ppm-blog-preview">
   <div class="blog-preview">
