@@ -382,6 +382,11 @@
         labour rather than conquest, and the unsettling intimacy of living
         inside systems intelligent enough to know exactly what you need.
       </p>
+      <p>
+        Start with <em>Waiting on Delcath</em>, then <em>Children of
+        Delcath</em>&mdash;though neither book unfolds in a straight line.
+        Each is written to read out of order.
+      </p>
     </div>
   </section>
 

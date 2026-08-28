@@ -30,11 +30,7 @@ function ppm_truncate($text, $limit) {
       </div>
     <?php endif; ?>
 
-    <?php if (empty($blog_items)) : ?>
-      <p style="text-align:center;color:#B8C9C6;font-family:'IBM Plex Sans',system-ui,sans-serif;">
-        Blog posts coming soon.
-      </p>
-    <?php else : ?>
+    <?php if (!empty($blog_items)) : ?>
       <div class="blog-container">
         <ul>
           <?php foreach ($blog_items as $post) : ?>
