@@ -74,31 +74,45 @@
       z-index: 1;
     }
 
-    .dc-hero-art {
+    .dc-hero-title-block {
       position: relative;
-      width: min(320px, 70vw);
-      margin: 0 auto 1.75rem;
+      padding: 0.5rem 0 1rem;
     }
 
-    .dc-hero-art::before {
-      content: '';
+    .dc-hero-art {
       position: absolute;
-      inset: -18%;
-      background: radial-gradient(circle, rgba(117, 255, 232, 0.32), transparent 70%);
-      filter: blur(32px);
+      inset: -2rem -10% 0;
       z-index: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      pointer-events: none;
     }
 
     .dc-hero-art img {
-      position: relative;
-      z-index: 1;
-      display: block;
-      width: 100%;
+      width: min(680px, 100%);
       height: auto;
-      filter: drop-shadow(0 24px 40px rgba(0, 0, 0, 0.55));
+      opacity: 0.5;
+      filter: saturate(0.9);
+    }
+
+    .dc-hero-art::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(
+        ellipse 65% 65% at 50% 45%,
+        rgba(5, 6, 8, 0.1) 0%,
+        rgba(5, 6, 8, 0.55) 55%,
+        rgba(5, 6, 8, 0.88) 78%,
+        var(--ppm-obsidian) 100%
+      );
     }
 
     .dc-kicker {
+      position: relative;
+      z-index: 1;
       display: inline-flex;
       align-items: center;
       gap: 0.6em;
@@ -121,6 +135,8 @@
     }
 
     .dc-hero h1 {
+      position: relative;
+      z-index: 1;
       font-family: "Oswald", "Space Grotesk", system-ui, sans-serif;
       font-weight: 700;
       text-transform: uppercase;
@@ -129,16 +145,19 @@
       line-height: 1.05;
       margin: 0 0 1.1rem;
       color: #ffffff;
-      text-shadow: 0 0 40px rgba(117, 255, 232, 0.25);
+      text-shadow: 0 0 40px rgba(117, 255, 232, 0.25), 0 4px 18px rgba(5, 6, 8, 0.85);
     }
 
     .dc-tagline {
+      position: relative;
+      z-index: 1;
       font-family: "Oswald", "Space Grotesk", system-ui, sans-serif;
       font-weight: 500;
       font-size: clamp(1.1rem, 2.4vw, 1.5rem);
       letter-spacing: 0.06em;
       color: var(--ppm-hermes-lumen);
       margin: 0 0 2.25rem;
+      text-shadow: 0 2px 10px rgba(5, 6, 8, 0.85);
     }
 
     .dc-hero-lede {
@@ -369,12 +388,14 @@
 
   <section class="dc-hero">
     <div class="dc-hero-content">
-      <div class="dc-hero-art">
-        <img src="/img/delcath_geo_dome.png" alt="A glass geodesic dome habitat glowing beneath a starlit sky on Delcath's rocky red frontier" width="1254" height="1254">
+      <div class="dc-hero-title-block">
+        <div class="dc-hero-art" aria-hidden="true">
+          <img src="/img/delcath_geo_dome.webp" alt="" width="1254" height="1254">
+        </div>
+        <p class="dc-kicker">OA Allen &middot; Science Fiction</p>
+        <h1>The Delcath Series</h1>
+        <p class="dc-tagline">Asteroid Dominion. Human Cost.</p>
       </div>
-      <p class="dc-kicker">OA Allen &middot; Science Fiction</p>
-      <h1>The Delcath Series</h1>
-      <p class="dc-tagline">Asteroid Dominion. Human Cost.</p>
 
       <div class="dc-hero-lede">
         <p>Delcath is a corporate nation built for the extraction of worlds.</p>

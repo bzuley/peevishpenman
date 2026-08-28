@@ -58,7 +58,7 @@
       position: absolute;
       left: 0;
       right: 0;
-      bottom: 12%;
+      bottom: 1.5rem;
       height: 2px;
       background-image: repeating-linear-gradient(
         to right,
@@ -75,31 +75,45 @@
       z-index: 1;
     }
 
-    .gt-hero-art {
+    .gt-hero-title-block {
       position: relative;
-      width: min(320px, 70vw);
-      margin: 0 auto 1.75rem;
+      padding: 0.5rem 0 1rem;
     }
 
-    .gt-hero-art::before {
-      content: '';
+    .gt-hero-art {
       position: absolute;
-      inset: -18%;
-      background: radial-gradient(circle, rgba(255, 180, 84, 0.4), transparent 70%);
-      filter: blur(32px);
+      inset: -2rem -10% 0;
       z-index: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      pointer-events: none;
     }
 
     .gt-hero-art img {
-      position: relative;
-      z-index: 1;
-      display: block;
-      width: 100%;
+      width: min(680px, 100%);
       height: auto;
-      filter: drop-shadow(0 24px 40px rgba(0, 0, 0, 0.55));
+      opacity: 0.5;
+      filter: saturate(0.9);
+    }
+
+    .gt-hero-art::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(
+        ellipse 65% 65% at 50% 45%,
+        rgba(5, 6, 8, 0.1) 0%,
+        rgba(5, 6, 8, 0.55) 55%,
+        rgba(5, 6, 8, 0.88) 78%,
+        var(--ppm-obsidian) 100%
+      );
     }
 
     .gt-kicker {
+      position: relative;
+      z-index: 1;
       display: inline-flex;
       align-items: center;
       gap: 0.6em;
@@ -122,6 +136,8 @@
     }
 
     .gt-hero h1 {
+      position: relative;
+      z-index: 1;
       font-family: "Oswald", "Space Grotesk", system-ui, sans-serif;
       font-weight: 700;
       text-transform: uppercase;
@@ -130,10 +146,12 @@
       line-height: 1.02;
       margin: 0 0 1.1rem;
       color: #ffffff;
-      text-shadow: 0 0 40px rgba(255, 180, 84, 0.3);
+      text-shadow: 0 0 40px rgba(255, 180, 84, 0.3), 0 4px 18px rgba(5, 6, 8, 0.85);
     }
 
     .gt-tagline {
+      position: relative;
+      z-index: 1;
       font-family: "Oswald", "Space Grotesk", system-ui, sans-serif;
       font-weight: 500;
       font-size: clamp(1.1rem, 2.4vw, 1.5rem);
@@ -141,9 +159,12 @@
       font-style: italic;
       color: var(--gt-amber-lumen);
       margin: 0 0 2rem;
+      text-shadow: 0 2px 10px rgba(5, 6, 8, 0.85);
     }
 
     .gt-badge {
+      position: relative;
+      z-index: 1;
       display: inline-block;
       font-family: "IBM Plex Mono", monospace;
       font-size: 0.78rem;
@@ -156,6 +177,7 @@
       padding: 0.5em 1.1em;
       transform: rotate(-2deg);
       margin-bottom: 2.25rem;
+      background: rgba(5, 6, 8, 0.4);
     }
 
     .gt-hero-lede {
@@ -425,13 +447,15 @@
 
   <section class="gt-hero">
     <div class="gt-hero-content">
-      <div class="gt-hero-art">
-        <img src="/img/ghost_trucker_hank.png" alt="Hank, a weathered trucker in a battered cowboy hat, standing before his semi on a lonely desert highway" width="1254" height="1254">
+      <div class="gt-hero-title-block">
+        <div class="gt-hero-art" aria-hidden="true">
+          <img src="/img/ghost_trucker_hank.webp" alt="" width="1254" height="1254">
+        </div>
+        <p class="gt-kicker">OA Allen &amp; Peevish Penman &middot; Speculative Fiction</p>
+        <h1>Ghost Trucker</h1>
+        <p class="gt-tagline">The road doesn't end when you die.</p>
+        <p class="gt-badge">Coming Soon</p>
       </div>
-      <p class="gt-kicker">OA Allen &amp; Peevish Penman &middot; Speculative Fiction</p>
-      <h1>Ghost Trucker</h1>
-      <p class="gt-tagline">The road doesn't end when you die.</p>
-      <p class="gt-badge">Coming Soon</p>
 
       <div class="gt-hero-lede">
         <p>Samuel Parker has spent his adult life behind the wheel.</p>
