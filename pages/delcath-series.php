@@ -74,6 +74,30 @@
       z-index: 1;
     }
 
+    .dc-hero-art {
+      position: relative;
+      width: min(320px, 70vw);
+      margin: 0 auto 1.75rem;
+    }
+
+    .dc-hero-art::before {
+      content: '';
+      position: absolute;
+      inset: -18%;
+      background: radial-gradient(circle, rgba(117, 255, 232, 0.32), transparent 70%);
+      filter: blur(32px);
+      z-index: 0;
+    }
+
+    .dc-hero-art img {
+      position: relative;
+      z-index: 1;
+      display: block;
+      width: 100%;
+      height: auto;
+      filter: drop-shadow(0 24px 40px rgba(0, 0, 0, 0.55));
+    }
+
     .dc-kicker {
       display: inline-flex;
       align-items: center;
@@ -345,6 +369,9 @@
 
   <section class="dc-hero">
     <div class="dc-hero-content">
+      <div class="dc-hero-art">
+        <img src="/img/delcath_geo_dome.png" alt="A glass geodesic dome habitat glowing beneath a starlit sky on Delcath's rocky red frontier" width="1254" height="1254">
+      </div>
       <p class="dc-kicker">OA Allen &middot; Science Fiction</p>
       <h1>The Delcath Series</h1>
       <p class="dc-tagline">Asteroid Dominion. Human Cost.</p>
