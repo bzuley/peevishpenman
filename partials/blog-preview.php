@@ -3,7 +3,7 @@ require_once __DIR__ . '/../blog-config.php';
 
 $ppm_blog_heading    = '';
 $ppm_blog_subheading = '';
-$ppm_post_limit      = 3;
+$ppm_post_limit      = 8;
 $ppm_show_excerpt    = true;
 $ppm_excerpt_len     = 100;
 
@@ -45,13 +45,6 @@ function ppm_truncate($text, $limit) {
                 <h2><?= htmlspecialchars($post['title']) ?></h2>
                 <?php if ($ppm_show_excerpt && !empty($post['excerpt'])) : ?>
                   <p><?= htmlspecialchars(ppm_truncate($post['excerpt'], $ppm_excerpt_len)) ?></p>
-                <?php endif; ?>
-                <?php if (!empty($post['tags'])) : ?>
-                  <ul class="bp-tags">
-                    <?php foreach ($post['tags'] as $tag) : ?>
-                      <li class="bp-tag"><?= htmlspecialchars($tag) ?></li>
-                    <?php endforeach; ?>
-                  </ul>
                 <?php endif; ?>
               </a>
             </li>
