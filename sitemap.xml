@@ -35,6 +35,13 @@
   </url>
 
   <url>
+    <loc>https://peevishpenman.com/blogs/the-everyman.php</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
     <loc>https://peevishpenman.com/blogs/i-wrote-this-post-in-vr.php</loc>
     <lastmod>2025-12-29</lastmod>
     <changefreq>yearly</changefreq>
