@@ -10,6 +10,9 @@ Options -Indexes
   Require all denied
 </FilesMatch>
 
+# Block direct access to stored newsletter-signup data
+RewriteRule ^partials/data/ - [F,L]
+
 RewriteEngine On
 
 # Force HTTPS and non-www

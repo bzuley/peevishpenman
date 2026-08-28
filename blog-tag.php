@@ -17,6 +17,18 @@ $tag_label = $tag_labels[strtolower($tag)] ?? ucwords(str_replace(['-', '_'], ' 
   <meta charset="UTF-8">
   <title><?php echo htmlspecialchars($tag_label); ?> Posts – Peevish Penman</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="<?php echo htmlspecialchars($tag_label); ?> posts from OA Allen at Peevish Penman.">
+  <meta name="author" content="OA Allen">
+
+  <link rel="canonical" href="https://peevishpenman.com/blog-tag.php?tag=<?php echo urlencode($tag); ?>">
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Peevish Penman">
+  <meta property="og:title" content="<?php echo htmlspecialchars($tag_label); ?> Posts – Peevish Penman">
+  <meta property="og:description" content="<?php echo htmlspecialchars($tag_label); ?> posts from OA Allen at Peevish Penman.">
+  <meta property="og:url" content="https://peevishpenman.com/blog-tag.php?tag=<?php echo urlencode($tag); ?>">
+  <meta property="og:type" content="website">
+
   <link rel="stylesheet" href="/styles/main.css">
 
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/analytics.php'; ?>
