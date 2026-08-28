@@ -5,6 +5,7 @@ $post_meta = [
   'title'   => 'Confirmed Independent Publisher',
   'excerpt' => 'A librarian-turned-writer looks back at how a bookmobile patron, a fake reptilian finance book, and five years of false starts led to becoming a confirmed independent publisher.',
   'date'    => '2016-06-01',
+  'added'   => '2026-08-28',
   // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
   // Powers the quicklink buttons on index.php (see /blog-tag.php).
   'tags'    => 'selfpublishing'

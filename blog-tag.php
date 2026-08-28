@@ -55,6 +55,14 @@ $tag_label = $tag_labels[strtolower($tag)] ?? ucwords(str_replace(['-', '_'], ' 
                 <?php if (!empty($post['excerpt'])): ?>
                   <p><?php echo htmlspecialchars($post['excerpt']); ?></p>
                 <?php endif; ?>
+
+                <?php if (!empty($post['tags'])): ?>
+                  <ul class="bp-tags">
+                    <?php foreach ($post['tags'] as $tag): ?>
+                      <li class="bp-tag"><?php echo htmlspecialchars($tag); ?></li>
+                    <?php endforeach; ?>
+                  </ul>
+                <?php endif; ?>
               </a>
             </li>
           <?php endforeach; ?>

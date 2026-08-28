@@ -53,6 +53,15 @@ function ppm_get_blog_posts() {
                     $meta['tags'] = [];
                 }
 
+                // 'added' is when the post was added to the site, used to
+                // decide display order/recency. It defaults to 'date' (the
+                // post's own editorial date) for posts that don't set it.
+                if (preg_match("/'added'\s*=>\s*'([^']+)'/", $array_string, $m)) {
+                    $meta['added'] = $m[1];
+                } elseif (!empty($meta['date'])) {
+                    $meta['added'] = $meta['date'];
+                }
+
                 if (!empty($meta['slug']) && !empty($meta['title']) && !empty($meta['date'])) {
                     $blog_items[] = $meta;
                 }
@@ -60,7 +69,7 @@ function ppm_get_blog_posts() {
         }
 
         usort($blog_items, function($a, $b) {
-            return strtotime($b['date']) <=> strtotime($a['date']);
+            return strtotime($b['added']) <=> strtotime($a['added']);
         });
     }
 

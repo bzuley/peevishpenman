@@ -4,7 +4,8 @@ $post_meta = [
   'slug'    => 'nine-parts-of-speech-f-word',
   'title'   => 'The Nine Parts of Speech and the F Word',
   'excerpt' => 'A shamelessly profane grammar lesson proving that one very specific word can stand in for all nine parts of speech.',
-  'date'    => '2024-12-09'
+  'date'    => '2024-12-09',
+  'added'   => '2026-08-25'
 ];
 ?>
 <!DOCTYPE html>

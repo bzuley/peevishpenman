@@ -50,6 +50,13 @@ function ppm_truncate($text, $limit) {
                 <?php if ($ppm_show_excerpt && !empty($post['excerpt'])) : ?>
                   <p><?= htmlspecialchars(ppm_truncate($post['excerpt'], $ppm_excerpt_len)) ?></p>
                 <?php endif; ?>
+                <?php if (!empty($post['tags'])) : ?>
+                  <ul class="bp-tags">
+                    <?php foreach ($post['tags'] as $tag) : ?>
+                      <li class="bp-tag"><?= htmlspecialchars($tag) ?></li>
+                    <?php endforeach; ?>
+                  </ul>
+                <?php endif; ?>
               </a>
             </li>
           <?php endforeach; ?>
