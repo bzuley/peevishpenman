@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Ghost Trucker – OA Allen &amp; Peevish Penman</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Ghost Trucker: speculative fiction from the cab of a semi. A trucker dies, wakes up in the Netherverse, and discovers death hasn't freed him from employment. Coming soon from OA Allen and Peevish Penman.">
+  <meta name="description" content="Ghost Trucker: speculative fiction from the cab of a semi. A trucker dies, wakes up in the Netherverse, and discovers death hasn't freed him from employment.">
   <meta name="author" content="OA Allen">
   <meta name="robots" content="noindex, nofollow">
 

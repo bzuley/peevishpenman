@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Books – Peevish Penman</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Books and writing projects from OA Allen: the Delcath series, The Bright Dark, Ghost Trucker, the Reptilian Conspiracy Coloring Book, and the free Writer Secret Society Handbook.">
+  <meta name="description" content="Books and writing projects from OA Allen: the Delcath series, The Bright Dark, Ghost Trucker, and the free Writer Secret Society Handbook.">
   <meta name="author" content="OA Allen">
 
   <link rel="canonical" href="https://peevishpenman.com/pages/books.php">
