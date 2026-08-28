@@ -56,6 +56,13 @@
   </url>
 
   <url>
+    <loc>https://peevishpenman.com/blogs/confirmed-independent-publisher.php</loc>
+    <lastmod>2016-06-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
     <loc>https://peevishpenman.com/blog-tag.php?tag=sciencefiction</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
