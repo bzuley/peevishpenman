@@ -1320,6 +1320,28 @@ html.ppm-nav-open {
   padding-bottom: 1.2em;
 }
 
+.bp-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  list-style: none;
+  margin: -0.6em auto 1.2em;
+  padding: 0 0.8em;
+}
+
+.bp-tag {
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--ppm-hermes);
+  background: rgba(117, 255, 232, 0.1);
+  border: 1px solid rgba(117, 255, 232, 0.35);
+  border-radius: 999px;
+  padding: 0.25em 0.75em;
+}
+
 /* Optional blog preview header */
 .bp-head {
   max-width: 80ch;

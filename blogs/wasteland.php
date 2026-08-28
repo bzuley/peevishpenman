@@ -5,6 +5,7 @@ $post_meta = [
   'title'   => 'Wasteland',
   'excerpt' => 'Merriam-Webster says a wasteland is barren, ugly, and spiritually arid. So why does the word feel so good to write? A dig through etymology, Chernobyl, and the Wasteland Rules of 1838.',
   'date'    => '2016-08-01',
+  'added'   => '2026-08-28',
   // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
   // Powers the quicklink buttons on index.php (see /blog-tag.php).
   'tags'    => 'sciencefiction'
