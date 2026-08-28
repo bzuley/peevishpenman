@@ -4,9 +4,17 @@
   <meta charset="UTF-8">
   <title>The Delcath Series – OA Allen</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="The Delcath Series by OA Allen: science fiction about asteroid miners, labour and dependence, and the intelligence that watches over them. Waiting on Delcath and Children of Delcath.">
+  <meta name="description" content="The Delcath Series by OA Allen: science fiction about asteroid miners, labour and dependence, and the intelligence that watches over them.">
   <meta name="author" content="OA Allen">
-  <meta name="robots" content="noindex, nofollow">
+
+  <link rel="canonical" href="https://peevishpenman.com/pages/delcath-series.php">
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Peevish Penman">
+  <meta property="og:title" content="The Delcath Series – OA Allen">
+  <meta property="og:description" content="Science fiction about asteroid miners, labour and dependence, and the intelligence that watches over them.">
+  <meta property="og:url" content="https://peevishpenman.com/pages/delcath-series.php">
+  <meta property="og:type" content="website">
 
   <link rel="stylesheet" href="/styles/main.css">
 

@@ -20,10 +20,13 @@ $post_meta = [
   <meta name="description" content="<?php echo htmlspecialchars($post_meta['excerpt']); ?>">
   <meta name="author" content="OA Allen">
 
+  <link rel="canonical" href="https://peevishpenman.com/blogs/<?php echo htmlspecialchars($post_meta['slug']); ?>.php">
+
   <!-- Open Graph -->
   <meta property="og:title" content="<?php echo htmlspecialchars($post_meta['title']); ?>">
   <meta property="og:description" content="<?php echo htmlspecialchars($post_meta['excerpt']); ?>">
   <meta property="og:type" content="article">
+  <meta property="og:url" content="https://peevishpenman.com/blogs/<?php echo htmlspecialchars($post_meta['slug']); ?>.php">
   <meta property="og:image" content="<?php echo htmlspecialchars($post_meta['image']); ?>">
 
   <link rel="stylesheet" href="/styles/main.css">

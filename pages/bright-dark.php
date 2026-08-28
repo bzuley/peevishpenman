@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>The Bright Dark – OA Allen &amp; Peevish Penman</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="The Bright Dark: a post-apocalyptic science-fiction novel about lost technology, competing civilizations, anomalous phenomena, and one relentless truthseeker discovering that the strangest relic of the old world may be its understanding of reality itself. Coming soon from OA Allen and Peevish Penman.">
+  <meta name="description" content="The Bright Dark: a post-apocalyptic novel about lost technology, competing civilizations, and one truthseeker chasing the strangest relic of the old world.">
   <meta name="author" content="OA Allen">
   <meta name="robots" content="noindex, nofollow">
 

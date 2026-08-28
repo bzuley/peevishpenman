@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Third Edition of The Handbook of the Writer Secret Society</title>
-<meta name="description" content="Download the free Handbook of the Writer Secret Society — mystic wisdom, timeless methods, and practical inspiration for writers, from OA Allen. Free PDF and EPUB.">
+<title>Handbook of the Writer Secret Society — Third Edition</title>
+<meta name="description" content="Download the free Handbook of the Writer Secret Society — mystic wisdom and practical inspiration for writers, from OA Allen. Free PDF and EPUB.">
 <meta name="author" content="OA Allen">
 <link rel="canonical" href="https://peevishpenman.com/pages/writer-secret-society.php">
 

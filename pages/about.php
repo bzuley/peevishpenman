@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>About OA Allen – Peevish Penman</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="OA Allen is the pen name of Carrie Bailey Allen — science-fiction writer, artist, researcher, and former librarian whose work circles belief, power, technology, folklore, and conspiracy.">
+  <meta name="description" content="OA Allen is the pen name of Carrie Bailey Allen — science-fiction writer, artist, and researcher whose work circles belief, power, and technology.">
   <meta name="author" content="OA Allen">
 
   <link rel="canonical" href="https://peevishpenman.com/pages/about.php">
