@@ -75,6 +75,30 @@
       z-index: 1;
     }
 
+    .gt-hero-art {
+      position: relative;
+      width: min(320px, 70vw);
+      margin: 0 auto 1.75rem;
+    }
+
+    .gt-hero-art::before {
+      content: '';
+      position: absolute;
+      inset: -18%;
+      background: radial-gradient(circle, rgba(255, 180, 84, 0.4), transparent 70%);
+      filter: blur(32px);
+      z-index: 0;
+    }
+
+    .gt-hero-art img {
+      position: relative;
+      z-index: 1;
+      display: block;
+      width: 100%;
+      height: auto;
+      filter: drop-shadow(0 24px 40px rgba(0, 0, 0, 0.55));
+    }
+
     .gt-kicker {
       display: inline-flex;
       align-items: center;
@@ -401,6 +425,9 @@
 
   <section class="gt-hero">
     <div class="gt-hero-content">
+      <div class="gt-hero-art">
+        <img src="/img/ghost_trucker_hank.png" alt="Hank, a weathered trucker in a battered cowboy hat, standing before his semi on a lonely desert highway" width="1254" height="1254">
+      </div>
       <p class="gt-kicker">OA Allen &amp; Peevish Penman &middot; Speculative Fiction</p>
       <h1>Ghost Trucker</h1>
       <p class="gt-tagline">The road doesn't end when you die.</p>

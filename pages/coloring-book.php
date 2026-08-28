@@ -10,6 +10,32 @@
 
   <link rel="stylesheet" href="/styles/main.css">
 
+  <style>
+    .ppm-article-header .rcb-hero {
+      position: relative;
+      width: min(300px, 80%);
+      margin: 0 auto 2rem;
+    }
+
+    .rcb-hero::before {
+      content: '';
+      position: absolute;
+      inset: -14%;
+      background: radial-gradient(circle, rgba(117, 255, 232, 0.24), transparent 70%);
+      filter: blur(28px);
+      z-index: 0;
+    }
+
+    .rcb-hero img {
+      position: relative;
+      z-index: 1;
+      display: block;
+      width: 100%;
+      height: auto;
+      filter: drop-shadow(0 20px 36px rgba(0, 0, 0, 0.55));
+    }
+  </style>
+
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/analytics.php'; ?>
 </head>
 <body>
@@ -22,8 +48,8 @@
       <p class="ppm-article-kicker">Writing Project</p>
       <h1>Reptilian Conspiracy Coloring Book</h1>
 
-      <figure class="ppm-article-hero">
-        <img src="/img/covers/reptilian-cover-3d.webp" alt="Reptilian Conspiracy Coloring Book cover">
+      <figure class="rcb-hero">
+        <img src="/img/reptilian_coloringbook_cover_dynamic.png" alt="Reptilian Conspiracy: A Coloring Book cover, featuring a reptilian White House press secretary among other coloring pages" width="1086" height="1448">
       </figure>
     </header>
 
