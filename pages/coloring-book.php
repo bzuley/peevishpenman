@@ -11,47 +11,16 @@
   <link rel="stylesheet" href="/styles/main.css">
 
   <style>
-    .rcb-title-block {
-      position: relative;
-      padding: 0.5rem 0 1rem;
+    .rcb-cover {
+      text-align: center;
+      margin: 1.5rem 0 0.5rem;
     }
 
-    .rcb-hero-art {
-      position: absolute;
-      inset: -1.5rem -10% 0;
-      z-index: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-      pointer-events: none;
-    }
-
-    .rcb-hero-art img {
-      width: min(380px, 100%);
-      height: auto;
-      opacity: 0.5;
-      filter: saturate(0.9);
-    }
-
-    .rcb-hero-art::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(
-        ellipse 65% 65% at 50% 45%,
-        rgba(5, 6, 8, 0.1) 0%,
-        rgba(5, 6, 8, 0.55) 55%,
-        rgba(5, 6, 8, 0.88) 78%,
-        var(--ppm-obsidian) 100%
-      );
-    }
-
-    .rcb-title-block .ppm-article-kicker,
-    .rcb-title-block h1 {
-      position: relative;
-      z-index: 1;
-      text-shadow: 0 4px 18px rgba(5, 6, 8, 0.85);
+    .rcb-cover img {
+      width: clamp(180px, 26vw, 260px);
+      margin: 0 auto;
+      border-radius: var(--ppm-radius-sm);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45);
     }
   </style>
 
@@ -64,12 +33,11 @@
 <main class="ppm-article">
   <article class="ppm-article-inner">
     <header class="ppm-article-header">
-      <div class="rcb-title-block">
-        <div class="rcb-hero-art" aria-hidden="true">
-          <img src="/img/reptilian_coloringbook_cover_dynamic.webp" alt="" width="1086" height="1448">
-        </div>
-        <p class="ppm-article-kicker">Writing Project</p>
-        <h1>Reptilian Conspiracy Coloring Book</h1>
+      <p class="ppm-article-kicker">Writing Project</p>
+      <h1>Reptilian Conspiracy Coloring Book</h1>
+
+      <div class="rcb-cover">
+        <img src="/img/reptilian_coloringbook_cover_dynamic.webp" alt="Reptilian Conspiracy: A Coloring Book cover" width="1086" height="1448" loading="lazy">
       </div>
     </header>
 
