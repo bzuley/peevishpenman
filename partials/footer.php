@@ -52,7 +52,6 @@
     <a href="/pages/about.php">About</a>
     <a href="/pages/books.php">Books</a>
     <a href="/pages/privacy.php">Privacy</a>
-    <a href="https://bruceallenrealtor.com" target="_blank" rel="noopener">Bruce Allen Realtor</a>
   </nav>
 
   <div class="ppm-footer-bottom">
