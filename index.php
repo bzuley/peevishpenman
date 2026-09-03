@@ -17,16 +17,16 @@
   <meta property="og:description" content="Consciousness-driven science fiction, plasmoid metaphysics, and the Delcath Universe by OA Allen.">
   <meta property="og:url" content="https://peevishpenman.com/">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://peevishpenman.com/img/typewriter-green.png">
-  <meta property="og:image:width" content="619">
-  <meta property="og:image:height" content="338">
-  <meta property="og:image:alt" content="Peevish Penman cosmic plasma aesthetic">
+  <meta property="og:image" content="https://peevishpenman.com/img/peevish-penman-social-share-1200x630.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Peevish Penman — OA Allen, metaphysical science fiction">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="OA Allen | Peevish Penman">
   <meta name="twitter:description" content="Consciousness-driven science fiction, plasmoid metaphysics, and the Delcath Universe by OA Allen.">
-  <meta name="twitter:image" content="https://peevishpenman.com/img/typewriter-green.png">
+  <meta name="twitter:image" content="https://peevishpenman.com/img/peevish-penman-social-share-1200x630.png">
 
   <!-- Favicons -->
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">

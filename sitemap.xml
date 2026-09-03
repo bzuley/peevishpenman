@@ -22,6 +22,20 @@
   </url>
 
   <url>
+    <loc>https://peevishpenman.com/pages/bright-dark.php</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://peevishpenman.com/pages/ghost-trucker.php</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
     <loc>https://peevishpenman.com/pages/books.php</loc>
     <lastmod>2026-08-27</lastmod>
     <changefreq>monthly</changefreq>
