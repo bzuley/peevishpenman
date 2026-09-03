@@ -1645,14 +1645,32 @@ html.ppm-nav-open {
 }
 
 .ppm-article a {
-  color: var(--ppm-hermes);
+  color: inherit;
   text-decoration: underline;
-  text-decoration-color: rgba(117, 255, 232, 0.4);
+  text-decoration-color: rgba(117, 255, 232, 0.45);
   text-underline-offset: 2px;
-  transition: text-decoration-color var(--ppm-transition-fast);
+  transition: color var(--ppm-transition-fast), text-decoration-color var(--ppm-transition-fast);
 }
 
 .ppm-article a:hover {
+  color: var(--ppm-hermes);
+  text-decoration-color: var(--ppm-hermes);
+}
+
+/* Inline body-copy links on pages that don't otherwise style them
+   (book pages, handbook page) — same quiet underline treatment as
+   .ppm-article a, scoped as a utility class instead of a container
+   selector since these pages don't share one common wrapper. */
+.ppm-inline-link {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: rgba(117, 255, 232, 0.45);
+  text-underline-offset: 2px;
+  transition: color var(--ppm-transition-fast), text-decoration-color var(--ppm-transition-fast);
+}
+
+.ppm-inline-link:hover {
+  color: var(--ppm-hermes);
   text-decoration-color: var(--ppm-hermes);
 }
 

@@ -301,7 +301,7 @@ img { max-width: 100%; height: auto; display: block; }
 
     <section class="panel">
       <div class="text">
-        <p><strong>Practical Wisdom.</strong> "The first one hundred thousand words should be expelled from the mind rapidly then set aside so the education of the writer can begin." One member of the society <a href="/blogs/confirmed-independent-publisher.php">wrote hers off entirely</a> before figuring out what she actually had to say.</p>
+        <p><strong>Practical Wisdom.</strong> "The first one hundred thousand words should be expelled from the mind rapidly then set aside so the education of the writer can begin." One member of the society <a class="ppm-inline-link" href="/blogs/confirmed-independent-publisher.php">wrote hers off entirely</a> before figuring out what she actually had to say.</p>
       </div>
       <div class="image">
         <img src="/img/librarian.jpg" alt="Austere librarian portrait" width="960" height="960" loading="lazy">
@@ -317,7 +317,7 @@ img { max-width: 100%; height: auto; display: block; }
 
     <section class="panel s–small">
       <div class="text">
-        <p><strong>More from the society, informally.</strong> The handbook isn't the only place this gets discussed—see the archetype behind every good sidekick in <a href="/blogs/the-everyman.php">The Everyman: The Anchor of the Story</a>, or the nine parts of speech taught the way school never dared, in <a href="/blogs/nine-parts-of-speech-f-word.php">The Nine Parts of Speech and the F Word</a>.</p>
+        <p><strong>More from the society, informally.</strong> The handbook isn't the only place this gets discussed—see the archetype behind every good sidekick in <a class="ppm-inline-link" href="/blogs/the-everyman.php">The Everyman: The Anchor of the Story</a>, or the nine parts of speech taught the way school never dared, in <a class="ppm-inline-link" href="/blogs/nine-parts-of-speech-f-word.php">The Nine Parts of Speech and the F Word</a>.</p>
       </div>
     </section>
 
