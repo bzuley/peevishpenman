@@ -6,7 +6,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="The Bright Dark: a post-apocalyptic novel about lost technology, competing civilizations, and one truthseeker chasing the strangest relic of the old world.">
   <meta name="author" content="OA Allen">
-  <meta name="robots" content="noindex, nofollow">
+
+  <link rel="canonical" href="https://peevishpenman.com/pages/bright-dark.php">
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Peevish Penman">
+  <meta property="og:title" content="The Bright Dark – OA Allen &amp; Peevish Penman">
+  <meta property="og:description" content="The Bright Dark: a post-apocalyptic novel about lost technology, competing civilizations, and one truthseeker chasing the strangest relic of the old world.">
+  <meta property="og:url" content="https://peevishpenman.com/pages/bright-dark.php">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://peevishpenman.com/img/peevish-penman-social-share-1200x630.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Bright Dark – OA Allen &amp; Peevish Penman">
+  <meta name="twitter:description" content="The Bright Dark: a post-apocalyptic novel about lost technology, competing civilizations, and one truthseeker chasing the strangest relic of the old world.">
+  <meta name="twitter:image" content="https://peevishpenman.com/img/peevish-penman-social-share-1200x630.png">
 
   <link rel="stylesheet" href="/styles/main.css">
 

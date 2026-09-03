@@ -9,6 +9,22 @@
 
   <link rel="canonical" href="https://peevishpenman.com/pages/books.php">
 
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Peevish Penman">
+  <meta property="og:title" content="Books – Peevish Penman">
+  <meta property="og:description" content="Books and writing projects from OA Allen: the Delcath series, The Bright Dark, Ghost Trucker, and the free Writer Secret Society Handbook.">
+  <meta property="og:url" content="https://peevishpenman.com/pages/books.php">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://peevishpenman.com/img/peevish-penman-social-share-1200x630.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Books – Peevish Penman">
+  <meta name="twitter:description" content="Books and writing projects from OA Allen: the Delcath series, The Bright Dark, Ghost Trucker, and the free Writer Secret Society Handbook.">
+  <meta name="twitter:image" content="https://peevishpenman.com/img/peevish-penman-social-share-1200x630.png">
+
   <link rel="stylesheet" href="/styles/main.css">
 
   <style>

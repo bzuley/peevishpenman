@@ -9,6 +9,22 @@
 
   <link rel="canonical" href="https://peevishpenman.com/pages/about.php">
 
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Peevish Penman">
+  <meta property="og:title" content="About OA Allen – Peevish Penman">
+  <meta property="og:description" content="OA Allen is the pen name of Carrie Bailey Allen — science-fiction writer, artist, and researcher whose work circles belief, power, and technology.">
+  <meta property="og:url" content="https://peevishpenman.com/pages/about.php">
+  <meta property="og:type" content="profile">
+  <meta property="og:image" content="https://peevishpenman.com/img/peevish-penman-social-share-1200x630.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="About OA Allen – Peevish Penman">
+  <meta name="twitter:description" content="OA Allen is the pen name of Carrie Bailey Allen — science-fiction writer, artist, and researcher whose work circles belief, power, and technology.">
+  <meta name="twitter:image" content="https://peevishpenman.com/img/peevish-penman-social-share-1200x630.png">
+
   <link rel="stylesheet" href="/styles/main.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">

@@ -19,6 +19,13 @@ $blog_items = ppm_get_blog_posts();
   <meta property="og:description" content="Essays and dispatches from OA Allen on self-publishing, character archetypes, and metaphysical science fiction.">
   <meta property="og:url" content="https://peevishpenman.com/blog.php">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="https://peevishpenman.com/img/peevish-penman-social-share-1200x630.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Blog – Peevish Penman">
+  <meta name="twitter:description" content="Essays and dispatches from OA Allen on self-publishing, character archetypes, and metaphysical science fiction.">
+  <meta name="twitter:image" content="https://peevishpenman.com/img/peevish-penman-social-share-1200x630.png">
 
   <link rel="stylesheet" href="/styles/main.css">
 
