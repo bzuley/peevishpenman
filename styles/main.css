@@ -911,6 +911,9 @@ small {
 
 /* NAVIGATION - No logo, just icons */
 .ppm-nav {
+  position: sticky;
+  top: 0;
+  z-index: 35;
   background: linear-gradient(180deg, #050608 0%, #08090d 100%);
   padding: 14px 5% 14px 5%;
   border-bottom: none;

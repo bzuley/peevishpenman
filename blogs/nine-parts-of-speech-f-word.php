@@ -43,7 +43,7 @@ $post_meta = [
   <figure class="ppm-article-hero">
     <img
       src="<?php echo htmlspecialchars($post_meta['image']); ?>"
-      alt="Abstract placeholder artwork for grammar and language"
+      alt="Illustration of a furious writer at a typewriter, fist raised and shouting in symbols, with a whiskey bottle and crumpled pages scattered across the desk"
     >
     <div class="ppm-article-hero-content">
       <p class="ppm-article-kicker">Grammar, but make it obscene</p>

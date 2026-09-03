@@ -54,8 +54,12 @@
       article.insertBefore(nav, article.firstChild);
     }
 
+    var siteNav = document.querySelector('.ppm-nav');
+
     function updateScrollOffset() {
-      var offset = nav.offsetHeight + 16;
+      var siteNavHeight = siteNav ? siteNav.offsetHeight : 0;
+      nav.style.top = siteNavHeight + 'px';
+      var offset = siteNavHeight + nav.offsetHeight + 16;
       headings.forEach(function (h) {
         h.style.scrollMarginTop = offset + 'px';
       });
@@ -84,7 +88,7 @@
           }
         });
       }, {
-        rootMargin: '-' + (nav.offsetHeight + 8) + 'px 0px -70% 0px',
+        rootMargin: '-' + ((siteNav ? siteNav.offsetHeight : 0) + nav.offsetHeight + 8) + 'px 0px -70% 0px',
         threshold: 0
       });
 
