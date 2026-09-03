@@ -6,7 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="The Reptilian Conspiracy Coloring Book by OA Allen — a satirical adult coloring book for anyone who suspects the people in charge might not be entirely human. Available now on Amazon.">
   <meta name="author" content="OA Allen">
-  <meta name="robots" content="noindex, nofollow">
+
+  <link rel="canonical" href="https://peevishpenman.com/pages/coloring-book.php">
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Peevish Penman">
+  <meta property="og:title" content="Reptilian Conspiracy Coloring Book – Peevish Penman">
+  <meta property="og:description" content="A satirical adult coloring book for anyone who suspects the people in charge might not be entirely human. Available now on Amazon.">
+  <meta property="og:url" content="https://peevishpenman.com/pages/coloring-book.php">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://peevishpenman.com/img/covers/reptilian-cover-3d.webp">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Reptilian Conspiracy Coloring Book – Peevish Penman">
+  <meta name="twitter:description" content="A satirical adult coloring book for anyone who suspects the people in charge might not be entirely human. Available now on Amazon.">
+  <meta name="twitter:image" content="https://peevishpenman.com/img/covers/reptilian-cover-3d.webp">
 
   <link rel="stylesheet" href="/styles/main.css">
 
@@ -40,6 +55,23 @@
       max-width: min(420px, 100%);
     }
   </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Book",
+    "name": "Reptilian Conspiracy Coloring Book",
+    "author": { "@type": "Person", "name": "OA Allen" },
+    "description": "A satirical adult coloring book for anyone who suspects the people in charge might not be entirely human.",
+    "image": "https://peevishpenman.com/img/covers/reptilian-cover-3d.webp",
+    "url": "https://peevishpenman.com/pages/coloring-book.php",
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.amazon.com/dp/B09MYXZ71P",
+      "availability": "https://schema.org/InStock"
+    }
+  }
+  </script>
 
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/analytics.php'; ?>
 </head>

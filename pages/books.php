@@ -95,7 +95,7 @@
         </a>
 
         <a class="ppm-book-card" href="/pages/coloring-book.php">
-          <p class="ppm-book-card-label">Art &middot; Coming Soon</p>
+          <p class="ppm-book-card-label">Art &middot; Available Now</p>
           <h2>The Reptilian Conspiracy Coloring Book</h2>
           <p>Conspiracy culture, art, philosophy, and a sense of humor, refusing to live in separate rooms.</p>
         </a>

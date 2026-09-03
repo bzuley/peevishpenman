@@ -269,6 +269,24 @@
     }
   </style>
 
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "OA Allen",
+    "alternateName": "Carrie Bailey Allen",
+    "url": "https://peevishpenman.com/pages/about.php",
+    "description": "OA Allen is the pen name of Carrie Bailey Allen — science-fiction writer, artist, and researcher whose work circles belief, power, and technology.",
+    "sameAs": [
+      "https://www.facebook.com/PeevishPenman",
+      "https://www.instagram.com/peevishpenman/",
+      "https://www.youtube.com/@peevishpenman",
+      "https://tiktok.com/@peevishpenman",
+      "https://x.com/PeevishPenman"
+    ]
+  }
+  </script>
+
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/analytics.php'; ?>
 </head>
 <body>
