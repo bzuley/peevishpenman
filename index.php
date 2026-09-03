@@ -40,6 +40,17 @@
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="styles/main.css">
 
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Peevish Penman",
+    "url": "https://peevishpenman.com/",
+    "description": "Creative home of OA Allen: metaphysical science fiction, consciousness, and the Delcath Universe.",
+    "publisher": { "@type": "Person", "name": "OA Allen" }
+  }
+  </script>
+
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/analytics.php'; ?>
 </head>
 

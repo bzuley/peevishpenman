@@ -30,6 +30,7 @@ $post_meta = [
   <meta property="og:image" content="<?php echo htmlspecialchars($post_meta['image']); ?>">
 
   <link rel="stylesheet" href="/styles/main.css">
+  <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/blogposting-schema.php'; ?>
 
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/analytics.php'; ?>
 </head>
