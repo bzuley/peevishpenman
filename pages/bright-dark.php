@@ -442,7 +442,7 @@
           Electricity is a mystery. Germs sound like a conspiracy theory.
           Ancient technology is excavated, catalogued and occasionally
           misunderstood. Three-horned livestock wander the roads. Enormous
-          predators haunt the Wastelands. History has become religion,
+          predators haunt the <a href="/blogs/wasteland.php">Wastelands</a>. History has become religion,
           folklore and badly remembered technical documentation.
         </p>
         <p>And Ren wants to understand all of it.</p>
@@ -494,6 +494,13 @@
         Now someone is meddling with portals, and a secretive elder guard
         believes the vanished settlers may be the only ones who understand
         what is happening.
+      </p>
+      <p>
+        Rarefication is fiction's version of something I've spent years
+        chasing in my own meditation practice—shedding the body's noise
+        until whatever is left starts to look like light. I write about
+        that side of it, the non-fictional side, in
+        <a href="/blogs/closed-eye-visualizations.php">Closed-Eye Visualizations</a>.
       </p>
     </div>
   </section>

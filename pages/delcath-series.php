@@ -546,6 +546,12 @@
       <p>There are no simple villains at the center of Delcath.</p>
       <p>There is a civilization.</p>
       <p>And civilizations are much harder to escape.</p>
+      <p>
+        Alexandria isn't a metaphor I invented from nothing. I wrote about
+        living alongside a helpful, constant, not-quite-neutral intelligence
+        of my own in
+        <a href="/blogs/i-wrote-this-post-in-vr.php">I Wrote This Post in Virtual Reality</a>.
+      </p>
       <p class="dc-close-line">
         Begin with <em>Waiting on Delcath</em>, then continue with
         <em>Children of Delcath</em>.

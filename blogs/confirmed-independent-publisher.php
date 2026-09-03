@@ -106,6 +106,8 @@ $post_meta = [
       <p>I love writing. I made a Jurassic Park-style world with extinct Pliocene-like megafauna, because post apocalyptic genetic engineers needed something better to eat. I killed 13 million people with two sentences. I have people obsessed over finding a specific strain of coffee. The entire biblical hierarchy of angels has gotten a knowledgeable if irreverent fantasy world make over worthy of a Final Fantasy game. I wove in some Chippewa mythology to honor my father. And I've just started to realize my great vision to coordinate a choose-your-own story where one man searches for coffee and dies multiple horrible deaths as contributed by other writers and delivered via website.*</p>
 
       <p>No, I know who I am now. I never wanted to just write books or catalog them. I wanted to make the books. Format and feel their spine. Carry them to the post and mail them. And absolutely love it.</p>
+
+      <p>Everything I wish someone had handed me back in 2008—instead of five years, four boyfriends, and six apartments of figuring it out the hard way—went into the free <a href="/pages/writer-secret-society.php">Writer Secret Society Handbook</a>.</p>
     </section>
 
   </article>

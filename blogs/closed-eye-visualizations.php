@@ -223,6 +223,8 @@ $post_meta = [
       <p>Unlike most forms of meditation, alchemical mediators emphasize transformation. I personally keep a journal and document how my CEVs evolve. I use dream interpretation and symbolism to understand what I encounter on a deeper level. I even know when to expect amusing imagery and imagery that distresses me, because I am more aware of my own mental state.</p>
 
       <p>Sometimes I wonder where we would be as a species if we hadn't suppressed exploration of the mind.</p>
+
+      <p>It's a question I write into fiction, too. <a href="/pages/bright-dark.php">The Bright Dark</a> imagines a lost process called rarefication, where people shed their physical bodies and become luminous entities called plasmoids—a fictional exaggeration of exactly the kind of dissolving-into-light imagery I keep describing above. I didn't plan that overlap. It found me anyway.</p>
     </section>
 
   </article>

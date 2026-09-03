@@ -487,6 +487,10 @@ $post_meta = [
       </p>
     </section>
 
+    <section>
+      <p>If your grammar education left you this many gaps, the free <a href="/pages/writer-secret-society.php">Writer Secret Society Handbook</a> covers the rest of the craft—marginally more politely.</p>
+    </section>
+
   </article>
 </main>
 
