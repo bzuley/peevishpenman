@@ -174,6 +174,8 @@ $post_meta = [
       <p>And that's the allure of the wasteland, whether it's a desert or a jungle.</p>
 
       <p>They are the acres that stimulate the imagination and inspire.</p>
+
+      <p>It's the same territory—literal, this time—that I keep returning to in <a href="/pages/bright-dark.php">The Bright Dark</a>, where the Wastelands are a named place on the map, not just a mood. Enormous predators haunt them. Nobody remembers what they used to be. Miles of possibility, and most of it wants to eat you.</p>
     </section>
 
     <p class="ppm-article-disclaimer"><em>Carrie Bailey is the author of the Immortal Coffee Novels.</em></p>

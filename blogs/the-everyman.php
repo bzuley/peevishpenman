@@ -140,6 +140,8 @@ $post_meta = [
       <p>George Bailey in <em>It's a Wonderful Life</em> repeatedly sacrifices adventure for family and community, only to discover how thoroughly the lives around him have come to depend upon his presence.</p>
 
       <p>Arthur Dent begins <em>The Hitchhiker's Guide to the Galaxy</em> wanting little more than tea and to keep his house from being demolished. He spends the rest of the story carrying that stubbornly ordinary perspective into an increasingly absurd universe.</p>
+
+      <p>I lean on the same instinct in <a href="/pages/ghost-trucker.php">Ghost Trucker</a>. Parker dies, wakes up still behind the wheel, and gets pulled into a whole afterlife bureaucracy—but he never once asks to understand the metaphysics of death. He wants to know who hired him, what the contract says, and how he gets out of it. The Everyman doesn't stop being the Everyman just because the freight route now runs through the Netherverse.</p>
     </section>
 
     <section>

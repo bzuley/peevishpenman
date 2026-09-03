@@ -129,6 +129,10 @@ $post_meta = [
       <p>
         I didn't have to explain my disability and no one would have known about it if I didn't, but if writers avoid judgement for our fellow creators—focus instead on creative ethics—then it won't matter if you use a pen or a prompt.
       </p>
+
+      <p>
+        I keep circling this same tension in fiction, too. <a href="/pages/delcath-series.php">The Delcath Series</a> is built around Alexandria, a corporate intelligence that advises, corrects, and calculates for every miner under her care—helpful, constant, and never quite neutral. I didn't have to invent much to write her. I just had to pay attention to my own headset.
+      </p>
     </section>
 
   </article>
