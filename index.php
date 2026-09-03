@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="OA Allen writes consciousness-driven science fiction set in the Delcath Universe: plasmoids, mind-physics, and stories with heart. Welcome to Peevish Penman.">
   <meta name="author" content="OA Allen">
+  <meta name="google-site-verification" content="G_nNm6qUrcfYjLupL8e5BsdlUhDpi7MTdHbswkTKzJo">
 
   <link rel="canonical" href="https://peevishpenman.com/">
 
