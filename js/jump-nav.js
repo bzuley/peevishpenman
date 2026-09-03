@@ -67,6 +67,16 @@
     updateScrollOffset();
     window.addEventListener('resize', updateScrollOffset);
 
+    // The site nav's height can shift after this first measurement — e.g.
+    // once web fonts finish loading and swap in over the fallback font —
+    // so keep watching it rather than relying on a single measurement.
+    if (siteNav && 'ResizeObserver' in window) {
+      new ResizeObserver(updateScrollOffset).observe(siteNav);
+    }
+    if (document.fonts && document.fonts.ready) {
+      document.fonts.ready.then(updateScrollOffset);
+    }
+
     var activeLink = null;
     function setActive(link) {
       if (activeLink === link) return;
