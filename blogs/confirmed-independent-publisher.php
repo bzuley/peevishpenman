@@ -46,7 +46,7 @@ $post_meta = [
   <figure class="ppm-article-hero">
     <img
       src="<?php echo htmlspecialchars($post_meta['image']); ?>"
-      alt="<?php echo htmlspecialchars($post_meta['title']); ?>"
+      alt="Illustration of a librarian paging through a book beside towering shelves, under a night sky full of stars, moons, and planets"
     >
     <div class="ppm-article-hero-content">
       <p class="ppm-article-kicker">Self-Publishing & Identity</p>

@@ -43,7 +43,7 @@ $post_meta = [
   <figure class="ppm-article-hero">
     <img
       src="<?php echo htmlspecialchars($post_meta['image']); ?>"
-      alt="<?php echo htmlspecialchars($post_meta['title']); ?>"
+      alt="Illustration of a woman meditating in lotus position with eyes closed, haloed by concentric art-deco rings of light"
     >
     <div class="ppm-article-hero-content">
       <p class="ppm-article-kicker">Inner Alchemy & Meditation</p>

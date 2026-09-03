@@ -46,7 +46,7 @@ $post_meta = [
   <figure class="ppm-article-hero">
     <img
       src="<?php echo htmlspecialchars($post_meta['image']); ?>"
-      alt="<?php echo htmlspecialchars($post_meta['title']); ?>"
+      alt="Illustration of an old writer at a typewriter, his words spiraling upward into a whirlwind of flying pages against a starry sky"
     >
     <div class="ppm-article-hero-content">
       <p class="ppm-article-kicker">Post-Apocalyptic Worldbuilding</p>
