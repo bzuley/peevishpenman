@@ -550,7 +550,7 @@
         Alexandria isn't a metaphor I invented from nothing. I wrote about
         living alongside a helpful, constant, not-quite-neutral intelligence
         of my own in
-        <a href="/blogs/i-wrote-this-post-in-vr.php">I Wrote This Post in Virtual Reality</a>.
+        <a class="ppm-inline-link" href="/blogs/i-wrote-this-post-in-vr.php">I Wrote This Post in Virtual Reality</a>.
       </p>
       <p class="dc-close-line">
         Begin with <em>Waiting on Delcath</em>, then continue with
