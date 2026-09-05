@@ -1521,10 +1521,15 @@ html.ppm-nav-open {
 
 .ppm-jump-nav {
   position: sticky;
-  top: var(--nav-height, 0px);
+  /* 1px above the measured nav height, with matching top padding added below,
+     so this bar's own (blurred) background overlaps the site nav's bottom
+     edge by a hair instead of touching it exactly. Two adjacent sticky bars
+     that both use backdrop-filter can otherwise show a hairline seam at
+     their shared edge — a compositor artifact, not a layout gap. */
+  top: calc(var(--nav-height, 0px) - 1px);
   z-index: 30;
   margin: 0 0 2.5rem;
-  padding: 0.15rem 0;
+  padding: calc(0.15rem + 1px) 0 0.15rem;
   background: rgba(5, 6, 8, 0.92);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
