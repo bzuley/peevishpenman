@@ -1795,6 +1795,15 @@ html.ppm-nav-open {
   font-style: italic;
 }
 
+.ppm-archetype-wheel {
+  text-align: center;
+}
+
+.ppm-archetype-wheel img {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
 .ppm-article video {
   max-width: 100%;
   height: auto;

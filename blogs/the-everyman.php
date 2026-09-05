@@ -60,6 +60,8 @@ $post_meta = [
   </figure>
 </header>
 
+    <?php $archetype_name = 'Everyman'; include $_SERVER['DOCUMENT_ROOT'].'/partials/archetype-wheel.php'; ?>
+
     <section>
       <h2>The Archetype of Stability</h2>
 
