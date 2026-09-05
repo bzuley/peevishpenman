@@ -3,6 +3,21 @@
  * Blog Configuration & Post Loader
  */
 
+/**
+ * Extract the value of a single-quoted PHP array entry like
+ * 'key' => 'some value', correctly handling escaped quotes and
+ * backslashes inside the value (e.g. 'Pearson\'s').
+ */
+function ppm_extract_quoted_field($array_string, $key) {
+    $pattern = "/'" . preg_quote($key, '/') . "'\s*=>\s*'((?:[^'\\\\]|\\\\.)*)'/";
+    if (!preg_match($pattern, $array_string, $m)) {
+        return null;
+    }
+    return preg_replace_callback('/\\\\(.)/', function ($esc) {
+        return ($esc[1] === "'" || $esc[1] === '\\') ? $esc[1] : $esc[0];
+    }, $m[1]);
+}
+
 function ppm_get_blog_posts() {
     $candidate_dirs = [
         $_SERVER['DOCUMENT_ROOT'] . '/blogs',
@@ -31,33 +46,25 @@ function ppm_get_blog_posts() {
                 $array_string = $matches[1];
                 
                 $meta = [];
-                
-                if (preg_match("/'slug'\s*=>\s*'([^']+)'/", $array_string, $m)) {
-                    $meta['slug'] = $m[1];
+
+                foreach (['slug', 'title', 'excerpt', 'date', 'image'] as $field) {
+                    $value = ppm_extract_quoted_field($array_string, $field);
+                    if ($value !== null) {
+                        $meta[$field] = $value;
+                    }
                 }
-                if (preg_match("/'title'\s*=>\s*'([^']+)'/", $array_string, $m)) {
-                    $meta['title'] = $m[1];
-                }
-                if (preg_match("/'excerpt'\s*=>\s*'([^']+)'/", $array_string, $m)) {
-                    $meta['excerpt'] = $m[1];
-                }
-                if (preg_match("/'date'\s*=>\s*'([^']+)'/", $array_string, $m)) {
-                    $meta['date'] = $m[1];
-                }
-                if (preg_match("/'image'\s*=>\s*'([^']+)'/", $array_string, $m)) {
-                    $meta['image'] = $m[1];
-                }
-                if (preg_match("/'tags'\s*=>\s*'([^']*)'/", $array_string, $m)) {
-                    $meta['tags'] = array_filter(array_map('trim', explode(',', $m[1])));
-                } else {
-                    $meta['tags'] = [];
-                }
+
+                $tags = ppm_extract_quoted_field($array_string, 'tags');
+                $meta['tags'] = $tags !== null
+                    ? array_filter(array_map('trim', explode(',', $tags)))
+                    : [];
 
                 // 'added' is when the post was added to the site, used to
                 // decide display order/recency. It defaults to 'date' (the
                 // post's own editorial date) for posts that don't set it.
-                if (preg_match("/'added'\s*=>\s*'([^']+)'/", $array_string, $m)) {
-                    $meta['added'] = $m[1];
+                $added = ppm_extract_quoted_field($array_string, 'added');
+                if ($added !== null) {
+                    $meta['added'] = $added;
                 } elseif (!empty($meta['date'])) {
                     $meta['added'] = $meta['date'];
                 }
