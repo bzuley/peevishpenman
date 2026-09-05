@@ -1,6 +1,6 @@
 <?php
 $post_meta = [
-  'image'   => '/img/archetypes/everyman.png',
+  'image'   => '/img/archetypes/everyman_archetype.png',
   'slug'    => 'the-everyman',
   'title'   => 'The Everyman: The Anchor of the Story',
   'excerpt' => 'From Pearson\'s "Realist" to medieval morality plays to Samwise Gamgee, a look at the archetype of continuity, and why writers keep mistaking ordinary for unimportant.',
