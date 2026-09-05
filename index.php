@@ -53,7 +53,7 @@
   </script>
 
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/analytics.php'; ?>
-  <!-- deploy-check: 2026-09-03 22:03 UTC -->
+  <!-- deploy-check: 2026-09-05 18:10 UTC -->
 </head>
 
 <body>
