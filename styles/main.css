@@ -355,7 +355,7 @@ small {
   font-weight: 400;
   letter-spacing: -0.01em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #f1ece2;
   margin: 0;
   display: flex;
   justify-content: center;
@@ -380,12 +380,12 @@ small {
 
 .ppm-hero-site-title-outline {
   color: transparent;
-  -webkit-text-stroke: 1px #ffffff;
-  text-stroke: 1px #ffffff;
+  -webkit-text-stroke: 0.6px #f1ece2;
+  text-stroke: 0.6px #f1ece2;
 }
 
 .ppm-hero-site-title-solid {
-  color: #ffffff;
+  color: #f1ece2;
 }
 
 /* typewriter image */
