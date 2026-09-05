@@ -58,7 +58,7 @@
 
     function updateScrollOffset() {
       var siteNavHeight = siteNav ? siteNav.offsetHeight : 0;
-      nav.style.top = siteNavHeight + 'px';
+      document.documentElement.style.setProperty('--nav-height', siteNavHeight + 'px');
       var offset = siteNavHeight + nav.offsetHeight + 16;
       headings.forEach(function (h) {
         h.style.scrollMarginTop = offset + 'px';

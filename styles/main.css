@@ -1521,7 +1521,7 @@ html.ppm-nav-open {
 
 .ppm-jump-nav {
   position: sticky;
-  top: 0;
+  top: var(--nav-height, 0px);
   z-index: 30;
   margin: 0 0 2.5rem;
   padding: 0.15rem 0;
