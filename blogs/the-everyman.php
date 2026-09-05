@@ -1,6 +1,6 @@
 <?php
 $post_meta = [
-  'image'   => '/img/typewriter-green.webp',
+  'image'   => '/img/archetypes/everyman_archetype.png',
   'slug'    => 'the-everyman',
   'title'   => 'The Everyman: The Anchor of the Story',
   'excerpt' => 'From Pearson\'s "Realist" to medieval morality plays to Samwise Gamgee, a look at the archetype of continuity, and why writers keep mistaking ordinary for unimportant.',
@@ -46,7 +46,7 @@ $post_meta = [
   <figure class="ppm-article-hero">
     <img
       src="<?php echo htmlspecialchars($post_meta['image']); ?>"
-      alt="A vintage typewriter, standing in for the ordinary tools of daily life"
+      alt="A man in a wool sweater sits on a porch step with his dog, holding a mug of coffee"
     >
     <div class="ppm-article-hero-content">
       <p class="ppm-article-kicker">Character Archetypes & Craft</p>
@@ -59,6 +59,8 @@ $post_meta = [
     </div>
   </figure>
 </header>
+
+    <?php $archetype_name = 'Everyman'; include $_SERVER['DOCUMENT_ROOT'].'/partials/archetype-wheel.php'; ?>
 
     <section>
       <h2>The Archetype of Stability</h2>
