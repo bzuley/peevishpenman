@@ -360,8 +360,8 @@ small {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: clamp(0.75rem, 2vw, 1.25rem);
-  flex-wrap: wrap;
+  gap: clamp(0.5rem, 2vw, 1.25rem);
+  flex-wrap: nowrap;
 }
 
 .ppm-hero-logo {
@@ -374,8 +374,9 @@ small {
 .ppm-hero-title-text {
   display: flex;
   align-items: center;
-  gap: 0.4rem;
-  flex-wrap: wrap;
+  gap: 0.3rem;
+  flex-wrap: nowrap;
+  white-space: nowrap;
 }
 
 .ppm-hero-site-title-outline {
@@ -1178,11 +1179,11 @@ html.ppm-nav-open {
   }
 
   .ppm-hero-site-title {
-    font-size: clamp(2.3rem, 9vw, 3.2rem);
+    font-size: clamp(1.7rem, 7.5vw, 3.2rem);
   }
 
   .ppm-hero-logo {
-    height: clamp(44px, 11vw, 60px);
+    height: clamp(38px, 9vw, 60px);
   }
 
   .ppm-hero-image {
