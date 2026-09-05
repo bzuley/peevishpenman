@@ -350,10 +350,10 @@ small {
 
 /* Site title at top of hero - with logo */
 .ppm-hero-site-title {
-  font-family: "Special Elite", "Courier New", monospace;
-  font-size: clamp(2.2rem, 7vw, 3.6rem);
+  font-family: "Archivo Black", "Space Grotesk", system-ui, sans-serif;
+  font-size: clamp(2.6rem, 9vw, 4.2rem);
   font-weight: 400;
-  letter-spacing: 0.03em;
+  letter-spacing: -0.01em;
   text-transform: uppercase;
   color: #ffffff;
   margin: 0;
@@ -374,14 +374,14 @@ small {
 .ppm-hero-title-text {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.4rem;
   flex-wrap: wrap;
 }
 
 .ppm-hero-site-title-outline {
   color: transparent;
-  -webkit-text-stroke: 1.5px #ffffff;
-  text-stroke: 1.5px #ffffff;
+  -webkit-text-stroke: 1px #ffffff;
+  text-stroke: 1px #ffffff;
 }
 
 .ppm-hero-site-title-solid {
@@ -1178,7 +1178,7 @@ html.ppm-nav-open {
   }
 
   .ppm-hero-site-title {
-    font-size: clamp(2rem, 8vw, 2.8rem);
+    font-size: clamp(2.3rem, 9vw, 3.2rem);
   }
 
   .ppm-hero-logo {
