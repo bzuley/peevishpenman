@@ -25,7 +25,7 @@
 <meta name="twitter:description" content="Mystic wisdom, timeless methods, and practical inspiration for writers, from OA Allen. Free PDF and EPUB.">
 <meta name="twitter:image" content="https://peevishpenman.com/img/wss-cover.jpg">
 
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 :root {

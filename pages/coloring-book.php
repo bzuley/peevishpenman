@@ -23,6 +23,9 @@
   <meta name="twitter:description" content="A satirical adult coloring book for anyone who suspects the people in charge might not be entirely human. Available now on Amazon.">
   <meta name="twitter:image" content="https://peevishpenman.com/img/covers/reptilian-cover-3d.webp">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles/main.css">
 
   <style>
