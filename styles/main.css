@@ -1528,20 +1528,25 @@ html.ppm-nav-open {
      their shared edge — a compositor artifact, not a layout gap. */
   top: calc(var(--nav-height, 0px) - 1px);
   z-index: 30;
-  margin: 0 0 2.5rem;
+  /* Break out of .ppm-article-inner's 760px column so the bar spans the
+     full viewport width like the site nav above it, instead of being
+     boxed to the width of the article text. */
+  width: 100vw;
+  margin: 0 calc(50% - 50vw) 2.5rem;
   padding: calc(0.15rem + 1px) 0 0.15rem;
   background: rgba(5, 6, 8, 0.92);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--ppm-border-soft);
-  border-radius: var(--ppm-radius-sm);
 }
 
 .ppm-jump-nav-inner {
   display: flex;
   align-items: flex-start;
   gap: 1.25rem;
-  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 5%;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
