@@ -350,17 +350,16 @@ small {
 
 /* Site title at top of hero - with logo */
 .ppm-hero-site-title {
-  font-family: "Archivo Black", "Space Grotesk", system-ui, sans-serif;
-  font-size: clamp(2.6rem, 9vw, 4.2rem);
-  font-weight: 400;
+  font-family: "Archivo", "Space Grotesk", system-ui, sans-serif;
+  font-weight: 700;
   letter-spacing: -0.01em;
   text-transform: uppercase;
   color: #f1ece2;
   margin: 0;
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: clamp(0.5rem, 2vw, 1.25rem);
+  align-items: baseline;
+  gap: clamp(0.4rem, 1.5vw, 0.9rem);
   flex-wrap: nowrap;
 }
 
@@ -369,23 +368,31 @@ small {
   width: auto;
   display: block;
   flex-shrink: 0;
+  align-self: center;
 }
 
 .ppm-hero-title-text {
   display: flex;
-  align-items: center;
-  gap: 0.3rem;
+  align-items: baseline;
+  gap: 0.25rem;
   flex-wrap: nowrap;
   white-space: nowrap;
 }
 
+/* PEEVISH: a quiet lead-in, kept small and outlined */
 .ppm-hero-site-title-outline {
+  font-size: clamp(1.5rem, 5.2vw, 2.4rem);
   color: transparent;
-  -webkit-text-stroke: 0.6px #f1ece2;
-  text-stroke: 0.6px #f1ece2;
+  -webkit-text-stroke: 1px #f1ece2;
+  text-stroke: 1px #f1ece2;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translateZ(0);
 }
 
+/* PENMAN: the important part — sized to match the logo's presence */
 .ppm-hero-site-title-solid {
+  font-size: clamp(2.7rem, 9.4vw, 4.3rem);
   color: #f1ece2;
 }
 
@@ -1178,8 +1185,12 @@ html.ppm-nav-open {
     gap: var(--ppm-spacing-md);
   }
 
-  .ppm-hero-site-title {
-    font-size: clamp(1.7rem, 7.5vw, 3.2rem);
+  .ppm-hero-site-title-solid {
+    font-size: clamp(2rem, 7.7vw, 3.1rem);
+  }
+
+  .ppm-hero-site-title-outline {
+    font-size: clamp(1.1rem, 4.3vw, 1.75rem);
   }
 
   .ppm-hero-logo {
