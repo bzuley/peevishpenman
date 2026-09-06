@@ -292,6 +292,13 @@ small {
   transform: translateY(0);
 }
 
+.ab-cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
 /* ================================
    6) BASIC CARD STYLE
    ================================ */

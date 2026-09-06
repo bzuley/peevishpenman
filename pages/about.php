@@ -426,11 +426,10 @@
       what happens when reality turns out to be stranger than the official
       explanation.
     </p>
-    <a class="ppm-button" href="/pages/newsletter">Join the Newsletter</a>
-    <p class="ab-cta-sub">
-      Questions or press inquiries? Reach out at
-      <a href="mailto:editor@peevishpenman.com">editor@peevishpenman.com</a>.
-    </p>
+    <div class="ab-cta-buttons">
+      <a class="ppm-button" href="/pages/newsletter">Join the Newsletter</a>
+      <a class="ppm-button ppm-button--ghost" href="mailto:editor@peevishpenman.com">Contact</a>
+    </div>
   </section>
 
 </main>
