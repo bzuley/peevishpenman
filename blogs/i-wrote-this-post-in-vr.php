@@ -17,13 +17,13 @@ $post_meta = [
   <meta name="description" content="<?php echo htmlspecialchars($post_meta['excerpt']); ?>">
   <meta name="author" content="OA Allen">
 
-  <link rel="canonical" href="https://peevishpenman.com/blogs/<?php echo htmlspecialchars($post_meta['slug']); ?>.php">
+  <link rel="canonical" href="https://peevishpenman.com/blogs/<?php echo htmlspecialchars($post_meta['slug']); ?>">
 
   <!-- Open Graph -->
   <meta property="og:title" content="<?php echo htmlspecialchars($post_meta['title']); ?>">
   <meta property="og:description" content="<?php echo htmlspecialchars($post_meta['excerpt']); ?>">
   <meta property="og:type" content="article">
-  <meta property="og:url" content="https://peevishpenman.com/blogs/<?php echo htmlspecialchars($post_meta['slug']); ?>.php">
+  <meta property="og:url" content="https://peevishpenman.com/blogs/<?php echo htmlspecialchars($post_meta['slug']); ?>">
   <meta property="og:image" content="<?php echo htmlspecialchars($post_meta['image']); ?>">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -134,7 +134,7 @@ $post_meta = [
       </p>
 
       <p>
-        I keep circling this same tension in fiction, too. <a href="/pages/delcath-series.php">The Delcath Series</a> is built around Alexandria, a corporate intelligence that advises, corrects, and calculates for every miner under her care—helpful, constant, and never quite neutral. I didn't have to invent much to write her. I just had to pay attention to my own headset.
+        I keep circling this same tension in fiction, too. <a href="/pages/delcath-series">The Delcath Series</a> is built around Alexandria, a corporate intelligence that advises, corrects, and calculates for every miner under her care—helpful, constant, and never quite neutral. I didn't have to invent much to write her. I just had to pay attention to my own headset.
       </p>
     </section>
 

@@ -7,6 +7,8 @@
   <meta name="description" content="Join the Peevish Penman newsletter for chapters, secret extras, and release dates from OA Allen.">
   <meta name="author" content="OA Allen">
 
+  <link rel="canonical" href="https://peevishpenman.com/pages/newsletter">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">

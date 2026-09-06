@@ -1,7 +1,7 @@
 <?php
 // Emits BlogPosting JSON-LD for search rich results.
 // Expects $post_meta (see blog-slug.php for the shape) to already be set.
-$schema_url = 'https://peevishpenman.com/blogs/' . rawurlencode($post_meta['slug']) . '.php';
+$schema_url = 'https://peevishpenman.com/blogs/' . rawurlencode($post_meta['slug']);
 $schema_image = $post_meta['image'];
 if ($schema_image !== '' && strpos($schema_image, 'http') !== 0) {
   $schema_image = 'https://peevishpenman.com' . $schema_image;

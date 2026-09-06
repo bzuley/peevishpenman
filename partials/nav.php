@@ -15,12 +15,12 @@
     <div class="ppm-nav-icons">
       
       <!-- Free Handbook CTA - Primary -->
-      <a href="/pages/writer-secret-society.php" class="ppm-nav-cta ppm-nav-cta--primary">
+      <a href="/pages/writer-secret-society" class="ppm-nav-cta ppm-nav-cta--primary">
   Free Handbook
 </a>
 
       <!-- Newsletter CTA - Secondary -->
-      <a href="/pages/newsletter.php" class="ppm-nav-cta ppm-nav-cta--ghost">
+      <a href="/pages/newsletter" class="ppm-nav-cta ppm-nav-cta--ghost">
         Newsletter
       </a>
 
@@ -64,10 +64,10 @@
     <div class="ppm-drawer-section">
       <h3 class="ppm-drawer-heading">Writing Projects</h3>
       <ul>
-        <li><a href="/pages/bright-dark.php">The Bright Dark</a></li>
-        <li><a href="/pages/delcath-series.php">Delcath Series</a></li>
-        <li><a href="/pages/ghost-trucker.php">Ghost Trucker</a></li>
-        <li><a href="/pages/coloring-book.php">Reptilian Conspiracy Coloring Book</a></li>
+        <li><a href="/pages/bright-dark">The Bright Dark</a></li>
+        <li><a href="/pages/delcath-series">Delcath Series</a></li>
+        <li><a href="/pages/ghost-trucker">Ghost Trucker</a></li>
+        <li><a href="/pages/coloring-book">Reptilian Conspiracy Coloring Book</a></li>
       </ul>
     </div>
 
@@ -75,8 +75,8 @@
     <div class="ppm-drawer-section">
       <h3 class="ppm-drawer-heading">Peevish Penman</h3>
       <ul>
-        <li><a href="/pages/about.php">About OA Allen</a></li>
-        <li><a href="/pages/newsletter.php">Email Sign-Up</a></li>
+        <li><a href="/pages/about">About OA Allen</a></li>
+        <li><a href="/pages/newsletter">Email Sign-Up</a></li>
       </ul>
     </div>
 

@@ -7,13 +7,13 @@
   <meta name="description" content="OA Allen is the pen name of Carrie Bailey Allen — science-fiction writer, artist, and researcher whose work circles belief, power, and technology.">
   <meta name="author" content="OA Allen">
 
-  <link rel="canonical" href="https://peevishpenman.com/pages/about.php">
+  <link rel="canonical" href="https://peevishpenman.com/pages/about">
 
   <!-- Open Graph -->
   <meta property="og:site_name" content="Peevish Penman">
   <meta property="og:title" content="About OA Allen – Peevish Penman">
   <meta property="og:description" content="OA Allen is the pen name of Carrie Bailey Allen — science-fiction writer, artist, and researcher whose work circles belief, power, and technology.">
-  <meta property="og:url" content="https://peevishpenman.com/pages/about.php">
+  <meta property="og:url" content="https://peevishpenman.com/pages/about">
   <meta property="og:type" content="profile">
   <meta property="og:image" content="https://peevishpenman.com/img/peevish-penman-social-share-1200x630.png">
   <meta property="og:image:width" content="1200">
@@ -291,7 +291,7 @@
     "@type": "Person",
     "name": "OA Allen",
     "alternateName": "Carrie Bailey Allen",
-    "url": "https://peevishpenman.com/pages/about.php",
+    "url": "https://peevishpenman.com/pages/about",
     "description": "OA Allen is the pen name of Carrie Bailey Allen — science-fiction writer, artist, and researcher whose work circles belief, power, and technology.",
     "sameAs": [
       "https://www.facebook.com/PeevishPenman",
@@ -358,7 +358,7 @@
     <div class="ab-panel-inner">
       <h2>The Work</h2>
       <p>
-        Her science-fiction novel <a href="/pages/bright-dark.php"><em>The Bright Dark</em></a> grew out of those
+        Her science-fiction novel <a href="/pages/bright-dark"><em>The Bright Dark</em></a> grew out of those
         interests, imagining a future shaped not just by catastrophe and
         technology but by the myths, institutions, class systems, and
         assumptions people build afterward. She asked what it might have
@@ -366,12 +366,12 @@
         civilizations.
       </p>
       <p>
-        <a href="/pages/delcath-series.php">The Delcath series</a> started as a tribute to <em>No Exit</em> by
+        <a href="/pages/delcath-series">The Delcath series</a> started as a tribute to <em>No Exit</em> by
         Jean-Paul Sartre. Carrie asked what hell could look like for workers
         isolated in space.
       </p>
       <p>
-        Her current work in progress, <a href="/pages/ghost-trucker.php"><em>Ghost Trucker</em></a>, moves further
+        Her current work in progress, <a href="/pages/ghost-trucker"><em>Ghost Trucker</em></a>, moves further
         into the territory between the rational and the uncanny. After
         three years on the road with her husband, who worked as a long-haul
         truck driver during COVID, she returned with a miniature schnauzer
@@ -382,22 +382,22 @@
 
   <section class="ab-works">
     <div class="ab-works-inner">
-      <a class="ab-work" href="/pages/bright-dark.php">
+      <a class="ab-work" href="/pages/bright-dark">
         <p class="ab-work-label">Novel</p>
         <h3>The Bright Dark</h3>
         <p>A post-apocalyptic future built from myth, technology, and the assumptions people build afterward.</p>
       </a>
-      <a class="ab-work" href="/pages/delcath-series.php">
+      <a class="ab-work" href="/pages/delcath-series">
         <p class="ab-work-label">Series</p>
         <h3>The Delcath Series</h3>
         <p>Asteroid miners, corporate dependence, and a tribute to Sartre&rsquo;s <em>No Exit</em>.</p>
       </a>
-      <a class="ab-work" href="/pages/ghost-trucker.php">
+      <a class="ab-work" href="/pages/ghost-trucker">
         <p class="ab-work-label">Work in Progress</p>
         <h3>Ghost Trucker</h3>
         <p>Speculative fiction from the cab of a semi, in the territory between the rational and the uncanny.</p>
       </a>
-      <a class="ab-work" href="/pages/coloring-book.php">
+      <a class="ab-work" href="/pages/coloring-book">
         <p class="ab-work-label">Art</p>
         <h3>The Reptilian Conspiracy Coloring Book</h3>
         <p>Conspiracy culture, art, philosophy, and a sense of humor, refusing to live in separate rooms.</p>
@@ -426,7 +426,7 @@
       what happens when reality turns out to be stranger than the official
       explanation.
     </p>
-    <a class="ppm-button" href="/pages/newsletter.php">Join the Newsletter</a>
+    <a class="ppm-button" href="/pages/newsletter">Join the Newsletter</a>
     <p class="ab-cta-sub">
       Questions or press inquiries? Reach out at
       <a href="mailto:editor@peevishpenman.com">editor@peevishpenman.com</a>.

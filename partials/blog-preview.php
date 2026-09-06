@@ -35,7 +35,7 @@ function ppm_truncate($text, $limit) {
         <ul>
           <?php foreach ($blog_items as $post) : ?>
             <li class="blog-card">
-              <a href="/blogs/<?= htmlspecialchars($post['slug']) ?>.php">
+              <a href="/blogs/<?= htmlspecialchars($post['slug']) ?>">
                 <?php if (!empty($post['image'])) : ?>
                   <img class="bp-img"
                        src="<?= htmlspecialchars($post['image']) ?>"

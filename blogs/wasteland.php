@@ -20,13 +20,13 @@ $post_meta = [
   <meta name="description" content="<?php echo htmlspecialchars($post_meta['excerpt']); ?>">
   <meta name="author" content="OA Allen">
 
-  <link rel="canonical" href="https://peevishpenman.com/blogs/<?php echo htmlspecialchars($post_meta['slug']); ?>.php">
+  <link rel="canonical" href="https://peevishpenman.com/blogs/<?php echo htmlspecialchars($post_meta['slug']); ?>">
 
   <!-- Open Graph -->
   <meta property="og:title" content="<?php echo htmlspecialchars($post_meta['title']); ?>">
   <meta property="og:description" content="<?php echo htmlspecialchars($post_meta['excerpt']); ?>">
   <meta property="og:type" content="article">
-  <meta property="og:url" content="https://peevishpenman.com/blogs/<?php echo htmlspecialchars($post_meta['slug']); ?>.php">
+  <meta property="og:url" content="https://peevishpenman.com/blogs/<?php echo htmlspecialchars($post_meta['slug']); ?>">
   <meta property="og:image" content="<?php echo htmlspecialchars($post_meta['image']); ?>">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -178,7 +178,7 @@ $post_meta = [
 
       <p>They are the acres that stimulate the imagination and inspire.</p>
 
-      <p>It's the same territory—literal, this time—that I keep returning to in <a href="/pages/bright-dark.php">The Bright Dark</a>, where the Wastelands are a named place on the map, not just a mood. Enormous predators haunt them. Nobody remembers what they used to be. Miles of possibility, and most of it wants to eat you.</p>
+      <p>It's the same territory—literal, this time—that I keep returning to in <a href="/pages/bright-dark">The Bright Dark</a>, where the Wastelands are a named place on the map, not just a mood. Enormous predators haunt them. Nobody remembers what they used to be. Miles of possibility, and most of it wants to eat you.</p>
     </section>
 
     <p class="ppm-article-disclaimer"><em>Carrie Bailey is the author of the Immortal Coffee Novels.</em></p>

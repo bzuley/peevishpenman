@@ -20,13 +20,13 @@ $post_meta = [
   <meta name="description" content="<?php echo htmlspecialchars($post_meta['excerpt']); ?>">
   <meta name="author" content="OA Allen">
 
-  <link rel="canonical" href="https://peevishpenman.com/blogs/<?php echo htmlspecialchars($post_meta['slug']); ?>.php">
+  <link rel="canonical" href="https://peevishpenman.com/blogs/<?php echo htmlspecialchars($post_meta['slug']); ?>">
 
   <!-- Open Graph -->
   <meta property="og:title" content="<?php echo htmlspecialchars($post_meta['title']); ?>">
   <meta property="og:description" content="<?php echo htmlspecialchars($post_meta['excerpt']); ?>">
   <meta property="og:type" content="article">
-  <meta property="og:url" content="https://peevishpenman.com/blogs/<?php echo htmlspecialchars($post_meta['slug']); ?>.php">
+  <meta property="og:url" content="https://peevishpenman.com/blogs/<?php echo htmlspecialchars($post_meta['slug']); ?>">
   <meta property="og:image" content="<?php echo htmlspecialchars($post_meta['image']); ?>">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -146,7 +146,7 @@ $post_meta = [
 
       <p>Arthur Dent begins <em>The Hitchhiker's Guide to the Galaxy</em> wanting little more than tea and to keep his house from being demolished. He spends the rest of the story carrying that stubbornly ordinary perspective into an increasingly absurd universe.</p>
 
-      <p>I lean on the same instinct in <a href="/pages/ghost-trucker.php">Ghost Trucker</a>. Parker dies, wakes up still behind the wheel, and gets pulled into a whole afterlife bureaucracy—but he never once asks to understand the metaphysics of death. He wants to know who hired him, what the contract says, and how he gets out of it. The Everyman doesn't stop being the Everyman just because the freight route now runs through the Netherverse.</p>
+      <p>I lean on the same instinct in <a href="/pages/ghost-trucker">Ghost Trucker</a>. Parker dies, wakes up still behind the wheel, and gets pulled into a whole afterlife bureaucracy—but he never once asks to understand the metaphysics of death. He wants to know who hired him, what the contract says, and how he gets out of it. The Everyman doesn't stop being the Everyman just because the freight route now runs through the Netherverse.</p>
     </section>
 
     <section>

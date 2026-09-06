@@ -20,13 +20,13 @@ $post_meta = [
   <meta name="description" content="<?php echo htmlspecialchars($post_meta['excerpt']); ?>">
   <meta name="author" content="OA Allen">
 
-  <link rel="canonical" href="https://peevishpenman.com/blogs/<?php echo htmlspecialchars($post_meta['slug']); ?>.php">
+  <link rel="canonical" href="https://peevishpenman.com/blogs/<?php echo htmlspecialchars($post_meta['slug']); ?>">
 
   <!-- Open Graph -->
   <meta property="og:title" content="<?php echo htmlspecialchars($post_meta['title']); ?>">
   <meta property="og:description" content="<?php echo htmlspecialchars($post_meta['excerpt']); ?>">
   <meta property="og:type" content="article">
-  <meta property="og:url" content="https://peevishpenman.com/blogs/<?php echo htmlspecialchars($post_meta['slug']); ?>.php">
+  <meta property="og:url" content="https://peevishpenman.com/blogs/<?php echo htmlspecialchars($post_meta['slug']); ?>">
   <meta property="og:image" content="<?php echo htmlspecialchars($post_meta['image']); ?>">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -160,7 +160,7 @@ $post_meta = [
 
       <p>Not every protagonist needs a Hero's Journey. A Magician can be the main character and cross the same distance without conquering anything. His victories should reveal new problems rather than close them. The Magician's journey should be one of self-discovery, an ever-widening landscape of limitations on knowledge and power.</p>
 
-      <p>I lean on the same instinct with Ren in <a href="/pages/bright-dark.php">The Bright Dark</a>. His transformation isn't measured in battles won, but in how much less certain he becomes about who he was before he understood what he now understands.</p>
+      <p>I lean on the same instinct with Ren in <a href="/pages/bright-dark">The Bright Dark</a>. His transformation isn't measured in battles won, but in how much less certain he becomes about who he was before he understood what he now understands.</p>
     </section>
 
   </article>

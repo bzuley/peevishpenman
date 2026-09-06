@@ -17,13 +17,13 @@ $post_meta = [
   <meta name="description" content="<?php echo htmlspecialchars($post_meta['excerpt']); ?>">
   <meta name="author" content="OA Allen">
 
-  <link rel="canonical" href="https://peevishpenman.com/blogs/<?php echo htmlspecialchars($post_meta['slug']); ?>.php">
+  <link rel="canonical" href="https://peevishpenman.com/blogs/<?php echo htmlspecialchars($post_meta['slug']); ?>">
 
   <!-- Open Graph -->
   <meta property="og:title" content="<?php echo htmlspecialchars($post_meta['title']); ?>">
   <meta property="og:description" content="<?php echo htmlspecialchars($post_meta['excerpt']); ?>">
   <meta property="og:type" content="article">
-  <meta property="og:url" content="https://peevishpenman.com/blogs/<?php echo htmlspecialchars($post_meta['slug']); ?>.php">
+  <meta property="og:url" content="https://peevishpenman.com/blogs/<?php echo htmlspecialchars($post_meta['slug']); ?>">
   <meta property="og:image" content="<?php echo htmlspecialchars($post_meta['image']); ?>">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -227,7 +227,7 @@ $post_meta = [
 
       <p>Sometimes I wonder where we would be as a species if we hadn't suppressed exploration of the mind.</p>
 
-      <p>It's a question I write into fiction, too. <a href="/pages/bright-dark.php">The Bright Dark</a> imagines a lost process called rarefication, where people shed their physical bodies and become luminous entities called plasmoids—a fictional exaggeration of exactly the kind of dissolving-into-light imagery I keep describing above. I didn't plan that overlap. It found me anyway.</p>
+      <p>It's a question I write into fiction, too. <a href="/pages/bright-dark">The Bright Dark</a> imagines a lost process called rarefication, where people shed their physical bodies and become luminous entities called plasmoids—a fictional exaggeration of exactly the kind of dissolving-into-light imagery I keep describing above. I didn't plan that overlap. It found me anyway.</p>
     </section>
 
   </article>

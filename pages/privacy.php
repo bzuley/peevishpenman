@@ -8,7 +8,7 @@
   <meta name="author" content="OA Allen">
   <meta name="robots" content="noindex, follow">
 
-  <link rel="canonical" href="https://peevishpenman.com/pages/privacy.php">
+  <link rel="canonical" href="https://peevishpenman.com/pages/privacy">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
