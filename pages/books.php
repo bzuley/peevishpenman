@@ -7,13 +7,13 @@
   <meta name="description" content="Books and writing projects from OA Allen: the Delcath series, The Bright Dark, Ghost Trucker, and the free Writer Secret Society Handbook.">
   <meta name="author" content="OA Allen">
 
-  <link rel="canonical" href="https://peevishpenman.com/pages/books.php">
+  <link rel="canonical" href="https://peevishpenman.com/pages/books">
 
   <!-- Open Graph -->
   <meta property="og:site_name" content="Peevish Penman">
   <meta property="og:title" content="Books – Peevish Penman">
   <meta property="og:description" content="Books and writing projects from OA Allen: the Delcath series, The Bright Dark, Ghost Trucker, and the free Writer Secret Society Handbook.">
-  <meta property="og:url" content="https://peevishpenman.com/pages/books.php">
+  <meta property="og:url" content="https://peevishpenman.com/pages/books">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://peevishpenman.com/img/peevish-penman-social-share-1200x630.png">
   <meta property="og:image:width" content="1200">
@@ -89,31 +89,31 @@
       <p>Everything OA Allen is writing, from finished novellas to what's coming next.</p>
 
       <div class="ppm-books-grid">
-        <a class="ppm-book-card" href="/pages/delcath-series.php">
+        <a class="ppm-book-card" href="/pages/delcath-series">
           <p class="ppm-book-card-label">Series &middot; Available Now</p>
           <h2>The Delcath Series</h2>
           <p>Asteroid miners, corporate dependence, and a tribute to Sartre&rsquo;s <em>No Exit</em>. Start with <em>Waiting on Delcath</em>.</p>
         </a>
 
-        <a class="ppm-book-card" href="/pages/writer-secret-society.php">
+        <a class="ppm-book-card" href="/pages/writer-secret-society">
           <p class="ppm-book-card-label">Free Download</p>
           <h2>The Handbook of the Writer Secret Society</h2>
           <p>Mystic wisdom, timeless methods, and practical inspiration for writers. Free PDF and EPUB.</p>
         </a>
 
-        <a class="ppm-book-card" href="/pages/bright-dark.php">
+        <a class="ppm-book-card" href="/pages/bright-dark">
           <p class="ppm-book-card-label">Novel &middot; Coming Soon</p>
           <h2>The Bright Dark</h2>
           <p>A post-apocalyptic future built from myth, technology, and the assumptions people build afterward.</p>
         </a>
 
-        <a class="ppm-book-card" href="/pages/ghost-trucker.php">
+        <a class="ppm-book-card" href="/pages/ghost-trucker">
           <p class="ppm-book-card-label">Work in Progress</p>
           <h2>Ghost Trucker</h2>
           <p>Speculative fiction from the cab of a semi, in the territory between the rational and the uncanny.</p>
         </a>
 
-        <a class="ppm-book-card" href="/pages/coloring-book.php">
+        <a class="ppm-book-card" href="/pages/coloring-book">
           <p class="ppm-book-card-label">Art &middot; Available Now</p>
           <h2>The Reptilian Conspiracy Coloring Book</h2>
           <p>Conspiracy culture, art, philosophy, and a sense of humor, refusing to live in separate rooms.</p>

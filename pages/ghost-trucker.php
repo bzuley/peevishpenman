@@ -7,13 +7,13 @@
   <meta name="description" content="Ghost Trucker: speculative fiction from the cab of a semi. A trucker dies, wakes up in the Netherverse, and discovers death hasn't freed him from employment.">
   <meta name="author" content="OA Allen">
 
-  <link rel="canonical" href="https://peevishpenman.com/pages/ghost-trucker.php">
+  <link rel="canonical" href="https://peevishpenman.com/pages/ghost-trucker">
 
   <!-- Open Graph -->
   <meta property="og:site_name" content="Peevish Penman">
   <meta property="og:title" content="Ghost Trucker – OA Allen &amp; Peevish Penman">
   <meta property="og:description" content="Ghost Trucker: speculative fiction from the cab of a semi. A trucker dies, wakes up in the Netherverse, and discovers death hasn't freed him from employment.">
-  <meta property="og:url" content="https://peevishpenman.com/pages/ghost-trucker.php">
+  <meta property="og:url" content="https://peevishpenman.com/pages/ghost-trucker">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://peevishpenman.com/img/peevish-penman-social-share-1200x630.png">
   <meta property="og:image:width" content="1200">
@@ -573,7 +573,7 @@
       <p>What the contract says.</p>
       <p>And how the hell he gets out of it.</p>
       <p>
-        Parker is, in other words, an <a class="ppm-inline-link" href="/blogs/the-everyman.php">Everyman</a>
+        Parker is, in other words, an <a class="ppm-inline-link" href="/blogs/the-everyman">Everyman</a>
         dropped into the strangest circumstances imaginable&mdash;and refusing,
         on principle, to be impressed by them.
       </p>
@@ -583,7 +583,7 @@
   <section class="gt-cta">
     <p class="gt-cta-title">Ghost Trucker</p>
     <p class="gt-cta-sub">Coming soon from <strong>OA Allen</strong> and <strong>Peevish Penman</strong>.</p>
-    <a class="ppm-button" href="/pages/newsletter.php">
+    <a class="ppm-button" href="/pages/newsletter">
       Get the Launch Alert
     </a>
   </section>

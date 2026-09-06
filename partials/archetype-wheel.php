@@ -10,6 +10,6 @@
   >
   <figcaption>
     The <?php echo htmlspecialchars($archetype_name); ?> is one of twelve character archetypes on the wheel.
-    <a href="/blog-tag.php?tag=archetypes">Explore the full series</a>.
+    <a href="/blog-tag?tag=archetypes">Explore the full series</a>.
   </figcaption>
 </figure>

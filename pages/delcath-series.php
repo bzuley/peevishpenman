@@ -7,13 +7,13 @@
   <meta name="description" content="The Delcath Series by OA Allen: science fiction about asteroid miners, labour and dependence, and the intelligence that watches over them.">
   <meta name="author" content="OA Allen">
 
-  <link rel="canonical" href="https://peevishpenman.com/pages/delcath-series.php">
+  <link rel="canonical" href="https://peevishpenman.com/pages/delcath-series">
 
   <!-- Open Graph -->
   <meta property="og:site_name" content="Peevish Penman">
   <meta property="og:title" content="The Delcath Series – OA Allen">
   <meta property="og:description" content="Science fiction about asteroid miners, labour and dependence, and the intelligence that watches over them.">
-  <meta property="og:url" content="https://peevishpenman.com/pages/delcath-series.php">
+  <meta property="og:url" content="https://peevishpenman.com/pages/delcath-series">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://peevishpenman.com/img/covers/wod-cover-3d.webp">
 
@@ -550,7 +550,7 @@
         Alexandria isn't a metaphor I invented from nothing. I wrote about
         living alongside a helpful, constant, not-quite-neutral intelligence
         of my own in
-        <a class="ppm-inline-link" href="/blogs/i-wrote-this-post-in-vr.php">I Wrote This Post in Virtual Reality</a>.
+        <a class="ppm-inline-link" href="/blogs/i-wrote-this-post-in-vr">I Wrote This Post in Virtual Reality</a>.
       </p>
       <p class="dc-close-line">
         Begin with <em>Waiting on Delcath</em>, then continue with

@@ -7,13 +7,13 @@
   <meta name="description" content="The Bright Dark: a post-apocalyptic novel about lost technology, competing civilizations, and one truthseeker chasing the strangest relic of the old world.">
   <meta name="author" content="OA Allen">
 
-  <link rel="canonical" href="https://peevishpenman.com/pages/bright-dark.php">
+  <link rel="canonical" href="https://peevishpenman.com/pages/bright-dark">
 
   <!-- Open Graph -->
   <meta property="og:site_name" content="Peevish Penman">
   <meta property="og:title" content="The Bright Dark – OA Allen &amp; Peevish Penman">
   <meta property="og:description" content="The Bright Dark: a post-apocalyptic novel about lost technology, competing civilizations, and one truthseeker chasing the strangest relic of the old world.">
-  <meta property="og:url" content="https://peevishpenman.com/pages/bright-dark.php">
+  <meta property="og:url" content="https://peevishpenman.com/pages/bright-dark">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://peevishpenman.com/img/peevish-penman-social-share-1200x630.png">
   <meta property="og:image:width" content="1200">
@@ -442,7 +442,7 @@
           Electricity is a mystery. Germs sound like a conspiracy theory.
           Ancient technology is excavated, catalogued and occasionally
           misunderstood. Three-horned livestock wander the roads. Enormous
-          predators haunt the <a class="ppm-inline-link" href="/blogs/wasteland.php">Wastelands</a>. History has become religion,
+          predators haunt the <a class="ppm-inline-link" href="/blogs/wasteland">Wastelands</a>. History has become religion,
           folklore and badly remembered technical documentation.
         </p>
         <p>And Ren wants to understand all of it.</p>
@@ -500,7 +500,7 @@
         chasing in my own meditation practice—shedding the body's noise
         until whatever is left starts to look like light. I write about
         that side of it, the non-fictional side, in
-        <a class="ppm-inline-link" href="/blogs/closed-eye-visualizations.php">Closed-Eye Visualizations</a>.
+        <a class="ppm-inline-link" href="/blogs/closed-eye-visualizations">Closed-Eye Visualizations</a>.
       </p>
     </div>
   </section>
@@ -595,7 +595,7 @@
       truthseeker discovering that the strangest relic of the old world may
       be its understanding of reality itself.
     </p>
-    <a class="ppm-button" href="/pages/newsletter.php">
+    <a class="ppm-button" href="/pages/newsletter">
       Get the Launch Alert
     </a>
     <span class="bd-cta-byline">By OA Allen &middot; Coming Soon from Peevish Penman</span>

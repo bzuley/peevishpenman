@@ -11,13 +11,13 @@ $blog_items = ppm_get_blog_posts();
   <meta name="description" content="Essays and dispatches from OA Allen on self-publishing, character archetypes, and metaphysical science fiction.">
   <meta name="author" content="OA Allen">
 
-  <link rel="canonical" href="https://peevishpenman.com/blog.php">
+  <link rel="canonical" href="https://peevishpenman.com/blog">
 
   <!-- Open Graph -->
   <meta property="og:site_name" content="Peevish Penman">
   <meta property="og:title" content="Blog – Peevish Penman">
   <meta property="og:description" content="Essays and dispatches from OA Allen on self-publishing, character archetypes, and metaphysical science fiction.">
-  <meta property="og:url" content="https://peevishpenman.com/blog.php">
+  <meta property="og:url" content="https://peevishpenman.com/blog">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://peevishpenman.com/img/peevish-penman-social-share-1200x630.png">
 
@@ -51,7 +51,7 @@ $blog_items = ppm_get_blog_posts();
         <ul>
           <?php foreach ($blog_items as $post): ?>
             <li class="blog-card">
-              <a href="/blogs/<?php echo htmlspecialchars($post['slug']); ?>.php">
+              <a href="/blogs/<?php echo htmlspecialchars($post['slug']); ?>">
                 <?php if (!empty($post['image'])): ?>
                   <img class="bp-img"
                        src="<?php echo htmlspecialchars($post['image']); ?>"

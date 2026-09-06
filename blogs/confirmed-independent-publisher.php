@@ -20,13 +20,13 @@ $post_meta = [
   <meta name="description" content="<?php echo htmlspecialchars($post_meta['excerpt']); ?>">
   <meta name="author" content="OA Allen">
 
-  <link rel="canonical" href="https://peevishpenman.com/blogs/<?php echo htmlspecialchars($post_meta['slug']); ?>.php">
+  <link rel="canonical" href="https://peevishpenman.com/blogs/<?php echo htmlspecialchars($post_meta['slug']); ?>">
 
   <!-- Open Graph -->
   <meta property="og:title" content="<?php echo htmlspecialchars($post_meta['title']); ?>">
   <meta property="og:description" content="<?php echo htmlspecialchars($post_meta['excerpt']); ?>">
   <meta property="og:type" content="article">
-  <meta property="og:url" content="https://peevishpenman.com/blogs/<?php echo htmlspecialchars($post_meta['slug']); ?>.php">
+  <meta property="og:url" content="https://peevishpenman.com/blogs/<?php echo htmlspecialchars($post_meta['slug']); ?>">
   <meta property="og:image" content="<?php echo htmlspecialchars($post_meta['image']); ?>">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -110,7 +110,7 @@ $post_meta = [
 
       <p>No, I know who I am now. I never wanted to just write books or catalog them. I wanted to make the books. Format and feel their spine. Carry them to the post and mail them. And absolutely love it.</p>
 
-      <p>Everything I wish someone had handed me back in 2008—instead of five years, four boyfriends, and six apartments of figuring it out the hard way—went into the free <a href="/pages/writer-secret-society.php">Writer Secret Society Handbook</a>.</p>
+      <p>Everything I wish someone had handed me back in 2008—instead of five years, four boyfriends, and six apartments of figuring it out the hard way—went into the free <a href="/pages/writer-secret-society">Writer Secret Society Handbook</a>.</p>
     </section>
 
   </article>

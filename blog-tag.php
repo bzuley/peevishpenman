@@ -20,13 +20,13 @@ $tag_label = $tag_labels[strtolower($tag)] ?? ucwords(str_replace(['-', '_'], ' 
   <meta name="description" content="<?php echo htmlspecialchars($tag_label); ?> posts from OA Allen at Peevish Penman.">
   <meta name="author" content="OA Allen">
 
-  <link rel="canonical" href="https://peevishpenman.com/blog-tag.php?tag=<?php echo urlencode($tag); ?>">
+  <link rel="canonical" href="https://peevishpenman.com/blog-tag?tag=<?php echo urlencode($tag); ?>">
 
   <!-- Open Graph -->
   <meta property="og:site_name" content="Peevish Penman">
   <meta property="og:title" content="<?php echo htmlspecialchars($tag_label); ?> Posts – Peevish Penman">
   <meta property="og:description" content="<?php echo htmlspecialchars($tag_label); ?> posts from OA Allen at Peevish Penman.">
-  <meta property="og:url" content="https://peevishpenman.com/blog-tag.php?tag=<?php echo urlencode($tag); ?>">
+  <meta property="og:url" content="https://peevishpenman.com/blog-tag?tag=<?php echo urlencode($tag); ?>">
   <meta property="og:type" content="website">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -57,7 +57,7 @@ $tag_label = $tag_labels[strtolower($tag)] ?? ucwords(str_replace(['-', '_'], ' 
         <ul>
           <?php foreach ($blog_items as $post): ?>
             <li class="blog-card">
-              <a href="/blogs/<?php echo htmlspecialchars($post['slug']); ?>.php">
+              <a href="/blogs/<?php echo htmlspecialchars($post['slug']); ?>">
                 <?php if (!empty($post['image'])): ?>
                   <img class="bp-img"
                        src="<?php echo htmlspecialchars($post['image']); ?>"

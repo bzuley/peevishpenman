@@ -102,16 +102,16 @@
       <section class="ppm-quicklinks">
         <div class="ppm-quicklinks-buttons">
           <a class="ppm-button"
-            href="/pages/books.php">Explore the Books</a>
+            href="/pages/books">Explore the Books</a>
 
           <a class="ppm-button ppm-button--ghost"
-            href="/blog-tag.php?tag=selfpublishing">Self-Publishing</a>
+            href="/blog-tag?tag=selfpublishing">Self-Publishing</a>
 
           <a class="ppm-button ppm-button--ghost"
-            href="/blog-tag.php?tag=archetypes">Character Archetypes</a>
+            href="/blog-tag?tag=archetypes">Character Archetypes</a>
 
           <a class="ppm-button ppm-button--ghost"
-            href="/blog-tag.php?tag=sciencefiction">Science Fiction</a>
+            href="/blog-tag?tag=sciencefiction">Science Fiction</a>
         </div>
 
         <div class="ppm-quicklinks-description">
@@ -132,12 +132,12 @@
     <nav class="ppm-home-nav ppm-home-widget" aria-label="Explore">
       <h3 class="ppm-home-nav-heading">Explore</h3>
       <ul>
-        <li><a href="/pages/books.php">Books</a></li>
-        <li><a href="/blog.php">Blog</a></li>
-        <li><a href="/blog-tag.php?tag=selfpublishing">Self-Publishing</a></li>
-        <li><a href="/blog-tag.php?tag=archetypes">Character Archetypes</a></li>
-        <li><a href="/blog-tag.php?tag=sciencefiction">Science Fiction</a></li>
-        <li><a href="/pages/about.php">About</a></li>
+        <li><a href="/pages/books">Books</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/blog-tag?tag=selfpublishing">Self-Publishing</a></li>
+        <li><a href="/blog-tag?tag=archetypes">Character Archetypes</a></li>
+        <li><a href="/blog-tag?tag=sciencefiction">Science Fiction</a></li>
+        <li><a href="/pages/about">About</a></li>
       </ul>
     </nav>
   </aside>
@@ -146,21 +146,21 @@
     <!-- Books row -->
     <section class="ppm-home-books">
       <div class="ppm-home-books-grid">
-        <a class="ppm-home-book" href="/pages/delcath-series.php">
+        <a class="ppm-home-book" href="/pages/delcath-series">
           <div class="ppm-home-book-cover ppm-home-book-cover--inset">
             <img src="/img/covers/wod-cover-3d.webp" alt="Waiting on Delcath — book cover" loading="lazy">
           </div>
           <p class="ppm-home-book-title">The Delcath Series</p>
         </a>
 
-        <a class="ppm-home-book" href="/pages/writer-secret-society.php">
+        <a class="ppm-home-book" href="/pages/writer-secret-society">
           <div class="ppm-home-book-cover">
             <img src="/img/wss-hardcover.webp" alt="The Handbook of the Writer Secret Society — book cover" loading="lazy">
           </div>
           <p class="ppm-home-book-title">Writer Secret Society</p>
         </a>
 
-        <a class="ppm-home-book" href="/pages/coloring-book.php">
+        <a class="ppm-home-book" href="/pages/coloring-book">
           <div class="ppm-home-book-cover ppm-home-book-cover--inset">
             <img src="/img/covers/reptilian-cover-3d.webp" alt="Reptilian Conspiracy Coloring Book cover" loading="lazy">
           </div>
@@ -177,7 +177,7 @@
       <p class="ppm-home-widget-label">Free Download</p>
       <h3 class="ppm-home-widget-title">Writer Secret Society Handbook</h3>
       <p class="ppm-home-widget-text">Mystic wisdom and practical inspiration for writers. Free PDF and EPUB.</p>
-      <a class="ppm-button" href="/pages/writer-secret-society.php">Get the Handbook</a>
+      <a class="ppm-button" href="/pages/writer-secret-society">Get the Handbook</a>
     </div>
 
     <div class="ppm-home-widget">

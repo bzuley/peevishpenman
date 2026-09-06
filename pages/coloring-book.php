@@ -7,13 +7,13 @@
   <meta name="description" content="The Reptilian Conspiracy Coloring Book by OA Allen — a satirical adult coloring book for anyone who suspects the people in charge might not be entirely human. Available now on Amazon.">
   <meta name="author" content="OA Allen">
 
-  <link rel="canonical" href="https://peevishpenman.com/pages/coloring-book.php">
+  <link rel="canonical" href="https://peevishpenman.com/pages/coloring-book">
 
   <!-- Open Graph -->
   <meta property="og:site_name" content="Peevish Penman">
   <meta property="og:title" content="Reptilian Conspiracy Coloring Book – Peevish Penman">
   <meta property="og:description" content="A satirical adult coloring book for anyone who suspects the people in charge might not be entirely human. Available now on Amazon.">
-  <meta property="og:url" content="https://peevishpenman.com/pages/coloring-book.php">
+  <meta property="og:url" content="https://peevishpenman.com/pages/coloring-book">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://peevishpenman.com/img/covers/reptilian-cover-3d.webp">
 
@@ -67,7 +67,7 @@
     "author": { "@type": "Person", "name": "OA Allen" },
     "description": "A satirical adult coloring book for anyone who suspects the people in charge might not be entirely human.",
     "image": "https://peevishpenman.com/img/covers/reptilian-cover-3d.webp",
-    "url": "https://peevishpenman.com/pages/coloring-book.php",
+    "url": "https://peevishpenman.com/pages/coloring-book",
     "offers": {
       "@type": "Offer",
       "url": "https://www.amazon.com/dp/B09MYXZ71P",
@@ -125,7 +125,7 @@
     <section>
       <p>
         Want previews and release news for future titles? Join the
-        <a href="/pages/newsletter.php">newsletter</a>.
+        <a href="/pages/newsletter">newsletter</a>.
       </p>
     </section>
   </article>
