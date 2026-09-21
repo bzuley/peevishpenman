@@ -1,6 +1,6 @@
 <?php
 $post_meta = [
-  'image'   => '/img/general/writer-overwhelmed-in-library.png',
+  'image'   => '/img/pig_and_goose.png',
   'slug'    => 'authority-of-authors',
   'title'   => 'The Authority of Authors',
   'excerpt' => 'Author and authority share a Latin root: someone who causes something to exist. A look at where that word comes from, who really controls the narrative, and how writers can question the power dynamics they put on the page.',
@@ -46,7 +46,7 @@ $post_meta = [
   <figure class="ppm-article-hero">
     <img
       src="<?php echo htmlspecialchars($post_meta['image']); ?>"
-      alt="A weary old man kneels on the floor of a dark, chaotic library, surrounded by towering stacks of books and loose pages drifting through the air"
+      alt="A pig and a goose facing off, an illustration of authority and power dynamics"
     >
     <div class="ppm-article-hero-content">
       <p class="ppm-article-kicker">On Writing &amp; Power</p>
@@ -92,6 +92,8 @@ $post_meta = [
       <p>Authorship establishes authority.</p>
 
       <p>I feel so much more comfortable calling myself a writer.</p>
+
+      <p>This isn't the first time a word's history has taken over one of these posts. If you like this sort of etymological rabbit hole, I went down a similar one in <a href="/blogs/wasteland">Wasteland</a>.</p>
     </section>
 
     <section>
@@ -124,6 +126,8 @@ $post_meta = [
       <p>And when we look at the authorities that control the algorithms on social media, the corporations and billionaires that set the tone for our insecurities, we realize these are people who chose less for us and more for them. We exist behind an invisible fence. We're managed in every stage of life.</p>
 
       <p>As much as you can, write your own story.</p>
+
+      <p>I wrote about what that choice actually looked like for me in <a href="/blogs/confirmed-independent-publisher">Confirmed Independent Publisher</a>&mdash;five years of false starts before I let myself claim the title.</p>
     </section>
 
     <section>
@@ -150,6 +154,8 @@ $post_meta = [
       <p>In the <em>Foundation</em> television series, the Cleons embody authority through continuity. Their genetic dynasty turns one ruler into an institution, making power appear permanent, inevitable, and larger than any individual man. Dawn. Day. Dusk. Rinse and repeat.</p>
 
       <p>And in <em>Dune</em>, almost every major form of authority overlaps: religion, bloodline, wealth, control of resources, military power, prophecy, and narrative. Paul becomes the center of a story that other people begin telling about him, and that story acquires an authority of its own.</p>
+
+      <p>This is the same territory I dig into in <a href="/blogs/the-magician">The Magician</a>: knowledge as power, and how quickly understanding a system curdles into believing you're entitled to run it.</p>
     </section>
 
     <section>
@@ -164,6 +170,8 @@ $post_meta = [
       <p>The only thing I know for sure is that we're never going to find out, but we can all be more deliberate about the stories we write.</p>
 
       <p>We can all be authors.</p>
+
+      <p>If you want help writing your own story on the page, the free <a href="/pages/writer-secret-society">Writer Secret Society Handbook</a> is a good place to start.</p>
     </section>
 
   </article>
