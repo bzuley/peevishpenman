@@ -112,6 +112,18 @@
 
           <a class="ppm-button ppm-button--ghost"
             href="/blog-tag?tag=sciencefiction">Science Fiction</a>
+
+          <a class="ppm-button ppm-button--ghost"
+            href="/blog-tag?tag=wordcraft">Word Craft</a>
+
+          <a class="ppm-button ppm-button--ghost"
+            href="/blog-tag?tag=inneralchemy">Inner Alchemy</a>
+
+          <a class="ppm-button ppm-button--ghost"
+            href="/blog-tag?tag=meditation">Meditation</a>
+
+          <a class="ppm-button ppm-button--ghost"
+            href="/blog-tag?tag=technology">Technology</a>
         </div>
 
         <div class="ppm-quicklinks-description">
@@ -129,15 +141,16 @@
 <div class="ppm-home-columns">
 
   <aside class="ppm-home-sidebar ppm-home-sidebar--left">
-    <nav class="ppm-home-nav ppm-home-widget" aria-label="Explore">
-      <h3 class="ppm-home-nav-heading">Explore</h3>
+    <nav class="ppm-home-nav ppm-home-widget" aria-label="Browse by tag">
+      <h3 class="ppm-home-nav-heading">Topics</h3>
       <ul>
-        <li><a href="/pages/books">Books</a></li>
-        <li><a href="/blog">Blog</a></li>
         <li><a href="/blog-tag?tag=selfpublishing">Self-Publishing</a></li>
         <li><a href="/blog-tag?tag=archetypes">Character Archetypes</a></li>
         <li><a href="/blog-tag?tag=sciencefiction">Science Fiction</a></li>
-        <li><a href="/pages/about">About</a></li>
+        <li><a href="/blog-tag?tag=wordcraft">Word Craft</a></li>
+        <li><a href="/blog-tag?tag=inneralchemy">Inner Alchemy</a></li>
+        <li><a href="/blog-tag?tag=meditation">Meditation</a></li>
+        <li><a href="/blog-tag?tag=technology">Technology</a></li>
       </ul>
     </nav>
   </aside>
