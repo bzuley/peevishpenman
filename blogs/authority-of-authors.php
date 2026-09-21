@@ -162,6 +162,8 @@ $post_meta = [
       <p>Maybe it's always been that way and we only now have access to view the evidence. Maybe there is only one author who hides and manipulates people in the shadows. Maybe it's our reptilian overlords.</p>
 
       <p>The only thing I know for sure is that we're never going to find out, but we can all be more deliberate about the stories we write.</p>
+
+      <p>We can all be authors.</p>
     </section>
 
   </article>
