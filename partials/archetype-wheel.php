@@ -1,6 +1,6 @@
 <?php
 // Include after setting $archetype_name, e.g.:
-// <?php $archetype_name = 'Everyman'; include $_SERVER['DOCUMENT_ROOT'].'/partials/archetype-wheel.php'; ?>
+// $archetype_name = 'Everyman'; include $_SERVER['DOCUMENT_ROOT'].'/partials/archetype-wheel.php';
 ?>
 <figure class="ppm-archetype-wheel">
   <img
