@@ -4,7 +4,7 @@
 ?>
 <figure class="ppm-archetype-wheel">
   <img
-    src="/img/archetypes/archetypes_wheel.png"
+    src="/img/archetypes/archetype_wheel.png"
     alt="A wheel diagram showing all twelve character archetypes arranged in a circle"
     loading="lazy"
   >
