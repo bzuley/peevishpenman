@@ -52,7 +52,7 @@ $post_meta = [
       alt="A man with long braided hair in a dark suit sits at a card table, holding a deck of cards beside a stack of poker chips"
     >
     <div class="ppm-article-hero-content">
-      <p class="ppm-article-kicker">Character Archetypes & Craft</p>
+      <p class="ppm-article-kicker">Character Archetypes</p>
       <h1><?php echo htmlspecialchars($post_meta['title']); ?></h1>
       <div class="ppm-article-meta">
         <time datetime="<?php echo htmlspecialchars($post_meta['date']); ?>">

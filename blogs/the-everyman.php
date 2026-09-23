@@ -52,7 +52,7 @@ $post_meta = [
       alt="A man in a wool sweater sits on a porch step with his dog, holding a mug of coffee"
     >
     <div class="ppm-article-hero-content">
-      <p class="ppm-article-kicker">Character Archetypes & Craft</p>
+      <p class="ppm-article-kicker">Character Archetypes</p>
       <h1><?php echo htmlspecialchars($post_meta['title']); ?></h1>
       <div class="ppm-article-meta">
         <time datetime="<?php echo htmlspecialchars($post_meta['date']); ?>">
