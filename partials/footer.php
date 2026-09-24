@@ -52,6 +52,7 @@
     <a href="/pages/about">About</a>
     <a href="/pages/books">Books</a>
     <a href="/pages/privacy">Privacy</a>
+    <a href="/rss.xml" type="application/rss+xml">RSS Feed</a>
   </nav>
 
   <div class="ppm-footer-bottom">

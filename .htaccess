@@ -21,6 +21,9 @@ RewriteCond %{HTTP_HOST} ^www\. [NC]
 RewriteCond %{HTTP_HOST} ^(?:www\.)?(.+)$ [NC]
 RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L]
 
+# Generate the RSS feed from current blog metadata.
+RewriteRule ^rss\.xml$ rss.php [L]
+
 # Generate the sitemap dynamically, even if an old XML file remains on the server.
 RewriteRule ^sitemap\.xml$ sitemap.php [L]
 

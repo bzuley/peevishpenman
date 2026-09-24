@@ -14,6 +14,7 @@ $tag_label = $tag_labels[strtolower($tag)] ?? ucwords(str_replace(['-', '_'], ' 
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="alternate" type="application/rss+xml" title="Peevish Penman RSS Feed" href="https://peevishpenman.com/rss.xml">
   <meta charset="UTF-8">
   <title><?php echo htmlspecialchars($tag_label); ?> Posts – Peevish Penman</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
