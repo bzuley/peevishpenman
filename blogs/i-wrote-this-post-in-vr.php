@@ -5,7 +5,10 @@ $post_meta = [
   'title'   => 'I Wrote This Post in Virtual Reality',
   'excerpt' => 'A sci-fi author tries to write inside a Meta Quest 3, fails through every "obvious" input method, and ends up with a grudging respect for the tech—plus a blunt take on AI, ethics, and accessibility.',
   'date'    => '2025-12-29',
-  'added'   => '2026-08-25'
+  'added'   => '2026-08-25',
+  // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
+  // Powers the quicklink buttons on index.php (see /blog-tag.php).
+  'tags'    => 'writing, sciencefiction, technology'
 ];
 ?>
 <!DOCTYPE html>

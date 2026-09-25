@@ -5,9 +5,19 @@ $tag = isset($_GET['tag']) ? trim($_GET['tag']) : '';
 $blog_items = $tag !== '' ? ppm_get_posts_by_tag($tag) : [];
 
 $tag_labels = [
-  'selfpublishing' => 'Self-Publishing',
-  'archetypes'     => 'Character Archetypes',
-  'sciencefiction' => 'Science Fiction',
+  'selfpublishing'       => 'Self-Publishing',
+  'archetypes'           => 'Character Archetypes',
+  'sciencefiction'       => 'Science Fiction',
+  'writing'              => 'Writing',
+  'wordcraft'            => 'Wordcraft',
+  'meditation'           => 'Meditation',
+  'postapocalypticscifi' => 'Post-Apocalyptic Scifi',
+  'consciousness'        => 'Consciousness',
+  'metaphysicalscifi'    => 'Metaphysical Scifi',
+  'losttechnology'       => 'Lost Technology',
+  'anomalousphenomena'   => 'Anomalous Phenomena',
+  'worldbuilding'        => 'Worldbuilding',
+  'technology'           => 'Technology',
 ];
 $tag_label = $tag_labels[strtolower($tag)] ?? ucwords(str_replace(['-', '_'], ' ', $tag));
 ?>

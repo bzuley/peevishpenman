@@ -5,7 +5,10 @@ $post_meta = [
   'title'   => 'The Nine Parts of Speech and the F Word',
   'excerpt' => 'A shamelessly profane grammar lesson proving that one very specific word can stand in for all nine parts of speech.',
   'date'    => '2024-12-09',
-  'added'   => '2026-08-25'
+  'added'   => '2026-08-25',
+  // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
+  // Powers the quicklink buttons on index.php (see /blog-tag.php).
+  'tags'    => 'wordcraft, writing'
 ];
 ?>
 <!DOCTYPE html>
