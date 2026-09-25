@@ -371,13 +371,6 @@ small {
   flex-wrap: nowrap;
 }
 
-.ppm-hero-logo {
-  height: clamp(52px, 9vw, 84px);
-  width: auto;
-  display: block;
-  flex-shrink: 0;
-}
-
 .ppm-hero-title-text {
   display: flex;
   align-items: center;
@@ -522,9 +515,22 @@ small {
   font-family: "IBM Plex Sans", system-ui, sans-serif;
 }
 
-/* Site brand in the nav — desktop only; hidden on mobile, where the
-   homepage's own title line still carries the branding. */
+/* Site brand in the nav — on mobile just the logo as a home link at the
+   left; desktop adds the PEEVISH PENMAN wordmark (see below). */
 .ppm-nav-brand {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  text-decoration: none;
+}
+
+.ppm-nav-brand-logo {
+  height: 36px;
+  width: auto;
+  display: block;
+}
+
+.ppm-nav-brand-text {
   display: none;
 }
 
@@ -558,23 +564,21 @@ small {
   }
 
   .ppm-nav-brand {
-    display: flex;
-    align-items: center;
     gap: 0.6rem;
-    text-decoration: none;
+    /* Logo height; the wordmark's caps are sized to match it. Scales down
+       on narrower desktops so the wordmark and nav buttons share one row. */
+    --ppm-brand-h: clamp(22px, 6.3vw - 2.25rem, 40px);
   }
 
   .ppm-nav-brand-logo {
-    height: 40px;
-    width: auto;
-    display: block;
+    height: var(--ppm-brand-h);
   }
 
   .ppm-nav-brand-text {
     font-family: "Space Grotesk", system-ui, sans-serif;
-    /* Space Grotesk caps are 0.7em tall, so 40px / 0.7 makes the
-       capital letters match the 40px logo height */
-    font-size: calc(40px / 0.7);
+    /* Space Grotesk caps are 0.7em tall, so logo height / 0.7 makes the
+       capital letters match the logo */
+    font-size: calc(var(--ppm-brand-h) / 0.7);
     line-height: 1;
     font-weight: 600;
     letter-spacing: 0.05em;
@@ -1202,10 +1206,6 @@ html.ppm-nav-open {
     font-size: clamp(1.7rem, 7.5vw, 3.2rem);
   }
 
-  .ppm-hero-logo {
-    height: clamp(38px, 9vw, 60px);
-  }
-
   .ppm-hero-image {
     max-width: 160px;
   }
@@ -1239,12 +1239,14 @@ html.ppm-nav-open {
   }
 
   .ppm-nav-icons {
-    gap: 8px;
+    gap: 6px;
   }
 
+  /* Tighter buttons so the logo, both CTAs and the menu fit on one row */
   .ppm-nav-cta {
-    padding: 0.45rem 0.85rem;
+    padding: 0.45rem 0.6rem;
     font-size: 0.72rem;
+    letter-spacing: 0.04em;
   }
 
   .ppm-icon-btn {
@@ -1264,6 +1266,13 @@ html.ppm-nav-open {
 
   .ppm-hamburger span {
     width: 22px;
+  }
+}
+
+@media (max-width: 380px) {
+  .ppm-nav-cta {
+    padding: 0.45rem 0.5rem;
+    font-size: 0.66rem;
   }
 }
 

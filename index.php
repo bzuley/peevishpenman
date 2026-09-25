@@ -61,12 +61,8 @@
   <div class="ppm-hero-inner">
     <div class="ppm-hero-content">
 
-      <!-- Site Title with Logo -->
+      <!-- Site Title -->
       <h1 class="ppm-hero-site-title">
-        <img src="/img/logos/logo-ppm.webp"
-             alt="Peevish Penman typewriter logo"
-             class="ppm-hero-logo"
-             width="200" height="201">
         <div class="ppm-hero-title-text">
           <span class="ppm-hero-site-title-outline">PEEVISH</span>
           <span class="ppm-hero-site-title-solid">PENMAN</span>
