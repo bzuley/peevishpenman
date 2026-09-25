@@ -63,20 +63,6 @@
         var(--ppm-obsidian);
     }
 
-    .dc-hero::before {
-      content: '';
-      position: absolute;
-      top: 52%;
-      left: 50%;
-      width: min(900px, 140vw);
-      aspect-ratio: 1;
-      transform: translate(-50%, -50%);
-      border-radius: 50%;
-      background:
-        radial-gradient(circle, transparent 0 30%, rgba(117, 255, 232, 0.05) 31% 32%, transparent 33% 44%, rgba(124, 111, 175, 0.08) 45% 47%, transparent 48%);
-      pointer-events: none;
-    }
-
     .dc-hero-content {
       position: relative;
       z-index: 1;
