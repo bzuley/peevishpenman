@@ -54,7 +54,7 @@
   <!-- deploy-check: 2026-09-05 18:10 UTC -->
 </head>
 
-<body>
+<body class="ppm-home">
 <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/nav.php'; ?>
 
 <header class="ppm-hero">

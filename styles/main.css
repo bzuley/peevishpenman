@@ -984,6 +984,13 @@ small {
   transform: translateY(-1px);
 }
 
+/* On the desktop homepage the right sidebar already has a handbook button */
+@media (min-width: 901px) {
+  .ppm-home .ppm-nav-cta--primary {
+    display: none;
+  }
+}
+
 /* Ghost CTA - white outline */
 .ppm-nav-cta--ghost {
   background: transparent;
