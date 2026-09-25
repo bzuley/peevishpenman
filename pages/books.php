@@ -63,6 +63,45 @@
       margin: 0 0 0.5rem;
     }
 
+    .ppm-book-card--has-cover {
+      display: grid;
+      grid-template-columns: 7.5rem 1fr;
+      gap: 1.5rem;
+      align-items: center;
+    }
+
+    .ppm-book-card-cover {
+      aspect-ratio: 2 / 3;
+      border-radius: var(--ppm-radius-sm);
+      overflow: hidden;
+    }
+
+    .ppm-book-card-cover img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .ppm-book-card-cover--inset img {
+      object-fit: contain;
+    }
+
+    .ppm-book-card-cover--zoom img {
+      transform: scale(1.3);
+    }
+
+    @media (max-width: 480px) {
+      .ppm-book-card--has-cover {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+
+      .ppm-book-card-cover {
+        width: 7rem;
+      }
+    }
+
     .ppm-book-card h2 {
       margin: 0 0 0.5rem;
     }
@@ -90,16 +129,26 @@
       <p>Everything OA Allen is writing, from finished novellas to what's coming next.</p>
 
       <div class="ppm-books-grid">
-        <a class="ppm-book-card" href="/pages/delcath-series">
-          <p class="ppm-book-card-label">Series &middot; Available Now</p>
-          <h2>The Delcath Series</h2>
-          <p>Asteroid miners, corporate dependence, and a tribute to Sartre&rsquo;s <em>No Exit</em>. Start with <em>Waiting on Delcath</em>.</p>
+        <a class="ppm-book-card ppm-book-card--has-cover" href="/pages/delcath-series">
+          <div class="ppm-book-card-cover ppm-book-card-cover--inset">
+            <img src="/img/covers/wod-cover-3d.webp" alt="Waiting on Delcath — book cover" width="1086" height="1448" loading="lazy">
+          </div>
+          <div>
+            <p class="ppm-book-card-label">Series &middot; Available Now</p>
+            <h2>The Delcath Series</h2>
+            <p>Asteroid miners, corporate dependence, and a tribute to Sartre&rsquo;s <em>No Exit</em>. Start with <em>Waiting on Delcath</em>.</p>
+          </div>
         </a>
 
-        <a class="ppm-book-card" href="/pages/writer-secret-society">
-          <p class="ppm-book-card-label">Free Download</p>
-          <h2>The Handbook of the Writer Secret Society</h2>
-          <p>Mystic wisdom, timeless methods, and practical inspiration for writers. Free PDF and EPUB.</p>
+        <a class="ppm-book-card ppm-book-card--has-cover" href="/pages/writer-secret-society">
+          <div class="ppm-book-card-cover ppm-book-card-cover--zoom">
+            <img src="/img/wss-hardcover.webp" alt="The Handbook of the Writer Secret Society — book cover" width="480" height="720" loading="lazy">
+          </div>
+          <div>
+            <p class="ppm-book-card-label">Free Download</p>
+            <h2>The Handbook of the Writer Secret Society</h2>
+            <p>Mystic wisdom, timeless methods, and practical inspiration for writers. Free PDF and EPUB.</p>
+          </div>
         </a>
 
         <a class="ppm-book-card" href="/pages/bright-dark">
@@ -114,10 +163,15 @@
           <p>Speculative fiction from the cab of a semi, in the territory between the rational and the uncanny.</p>
         </a>
 
-        <a class="ppm-book-card" href="/pages/coloring-book">
-          <p class="ppm-book-card-label">Art &middot; Available Now</p>
-          <h2>The Reptilian Conspiracy Coloring Book</h2>
-          <p>Conspiracy culture, art, philosophy, and a sense of humor, refusing to live in separate rooms.</p>
+        <a class="ppm-book-card ppm-book-card--has-cover" href="/pages/coloring-book">
+          <div class="ppm-book-card-cover ppm-book-card-cover--inset">
+            <img src="/img/covers/reptilian-cover-3d.webp" alt="Reptilian Conspiracy Coloring Book cover" width="1086" height="1448" loading="lazy">
+          </div>
+          <div>
+            <p class="ppm-book-card-label">Art &middot; Available Now</p>
+            <h2>The Reptilian Conspiracy Coloring Book</h2>
+            <p>Conspiracy culture, art, philosophy, and a sense of humor, refusing to live in separate rooms.</p>
+          </div>
         </a>
       </div>
     </section>
