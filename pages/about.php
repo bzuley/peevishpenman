@@ -324,7 +324,7 @@
 
   <section class="ab-hero">
     <div class="ab-hero-content">
-      <img class="ab-portrait" src="/img/oa-allen-portrait.jpg" alt="Carrie Bailey Allen" width="480" height="640">
+      <img class="ab-portrait" src="/img/oa-allen-portrait.webp" alt="Carrie Bailey Allen" width="720" height="960">
       <p class="ab-kicker">Peevish Penman &middot; About</p>
       <h1>About OA Allen</h1>
       <p class="ab-tagline">Carrie Bailey Allen writes speculative fiction under the name OA Allen.</p>
