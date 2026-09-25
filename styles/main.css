@@ -1323,7 +1323,7 @@ html.ppm-nav-open {
   font-family: "Space Grotesk", system-ui, sans-serif;
   color: var(--ppm-hermes);
   font-size: clamp(1rem, 1vw + 0.9rem, 1.25rem);
-  margin: 0.8em 0 0.3em;
+  margin: 0.8em 1em 0.3em;
   text-align: center;
 }
 
