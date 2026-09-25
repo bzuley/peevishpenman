@@ -596,7 +596,7 @@
       truthseeker discovering that the strangest relic of the old world may
       be its understanding of reality itself.
     </p>
-    <a class="ppm-button" href="/pages/newsletter">
+    <a class="ppm-button" href="#newsletter">
       Get the Launch Alert
     </a>
     <span class="bd-cta-byline">By OA Allen &middot; Coming Soon from Peevish Penman</span>

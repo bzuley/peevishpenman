@@ -24,7 +24,7 @@
   </section>
 
   <!-- Newsletter -->
-  <section class="ppm-footer-newsletter">
+  <section class="ppm-footer-newsletter" id="newsletter">
     <div class="ppm-footer-newsletter-overline">Early Access • Launch Alerts</div>
     <h3>Get the Drops First</h3>
     <p class="ppm-footer-newsletter-lede">Chapters, secret extras, and release dates—straight from the studio. No filler. No delay.</p>

@@ -20,7 +20,7 @@
 </a>
 
       <!-- Newsletter CTA - Secondary -->
-      <a href="/pages/newsletter" class="ppm-nav-cta ppm-nav-cta--ghost">
+      <a href="#newsletter" class="ppm-nav-cta ppm-nav-cta--ghost">
         Newsletter
       </a>
 
@@ -76,7 +76,6 @@
       <h3 class="ppm-drawer-heading">Peevish Penman</h3>
       <ul>
         <li><a href="/pages/about">About OA Allen</a></li>
-        <li><a href="/pages/newsletter">Email Sign-Up</a></li>
       </ul>
     </div>
 

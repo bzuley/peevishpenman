@@ -439,7 +439,7 @@
       explanation.
     </p>
     <div class="ab-cta-buttons">
-      <a class="ppm-button" href="/pages/newsletter">Join the Newsletter</a>
+      <a class="ppm-button" href="#newsletter">Join the Newsletter</a>
       <a class="ppm-button ppm-button--ghost" href="mailto:editor@peevishpenman.com">Contact</a>
     </div>
   </section>

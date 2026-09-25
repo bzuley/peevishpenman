@@ -584,7 +584,7 @@
   <section class="gt-cta">
     <p class="gt-cta-title">Ghost Trucker</p>
     <p class="gt-cta-sub">Coming soon from <strong>OA Allen</strong> and <strong>Peevish Penman</strong>.</p>
-    <a class="ppm-button" href="/pages/newsletter">
+    <a class="ppm-button" href="#newsletter">
       Get the Launch Alert
     </a>
   </section>

@@ -126,7 +126,7 @@
     <section>
       <p>
         Want previews and release news for future titles? Join the
-        <a href="/pages/newsletter">newsletter</a>.
+        <a href="#newsletter">newsletter</a>.
       </p>
     </section>
   </article>
