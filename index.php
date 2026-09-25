@@ -29,10 +29,7 @@
   <meta name="twitter:description" content="Consciousness-driven science fiction, plasmoid metaphysics, and the Delcath Universe by OA Allen.">
   <meta name="twitter:image" content="https://peevishpenman.com/img/peevish-penman-social-share-1200x630.png">
 
-  <!-- Favicons -->
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/favicons.php'; ?>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -57,19 +54,15 @@
   <!-- deploy-check: 2026-09-05 18:10 UTC -->
 </head>
 
-<body>
+<body class="ppm-home">
 <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/nav.php'; ?>
 
 <header class="ppm-hero">
   <div class="ppm-hero-inner">
     <div class="ppm-hero-content">
 
-      <!-- Site Title with Logo -->
+      <!-- Site Title -->
       <h1 class="ppm-hero-site-title">
-        <img src="/img/logos/logo-ppm.webp"
-             alt="Peevish Penman typewriter logo"
-             class="ppm-hero-logo"
-             width="200" height="201">
         <div class="ppm-hero-title-text">
           <span class="ppm-hero-site-title-outline">PEEVISH</span>
           <span class="ppm-hero-site-title-solid">PENMAN</span>

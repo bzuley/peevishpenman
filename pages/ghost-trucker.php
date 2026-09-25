@@ -65,10 +65,7 @@
       padding: clamp(4rem, 12vw, 8rem) 5% clamp(3rem, 8vw, 5rem);
       text-align: center;
       overflow: hidden;
-      background:
-        radial-gradient(ellipse at 50% 0%, rgba(255, 180, 84, 0.16), transparent 62%),
-        radial-gradient(ellipse at 15% 100%, rgba(232, 92, 65, 0.10), transparent 55%),
-        var(--ppm-obsidian);
+      background: var(--ppm-obsidian);
     }
 
     .gt-hero::before {
@@ -456,6 +453,7 @@
   </style>
 
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/analytics.php'; ?>
+  <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/favicons.php'; ?>
 </head>
 <body>
 

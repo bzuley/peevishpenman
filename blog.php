@@ -34,6 +34,7 @@ $blog_items = ppm_get_blog_posts();
   <link rel="stylesheet" href="/styles/main.css">
 
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/analytics.php'; ?>
+  <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/favicons.php'; ?>
 </head>
 
 <body>

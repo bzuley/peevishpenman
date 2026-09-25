@@ -2,7 +2,7 @@
 <nav class="ppm-nav">
   <div class="ppm-nav-inner">
 
-    <!-- Site brand (desktop only; the homepage's own title line covers mobile) -->
+    <!-- Site brand: logo-only home link on mobile, logo + wordmark on desktop -->
     <a href="/" class="ppm-nav-brand" aria-label="Peevish Penman home">
       <img src="/img/logos/logo-ppm.webp" alt="" class="ppm-nav-brand-logo" width="36" height="36">
       <span class="ppm-nav-brand-text">
