@@ -29,10 +29,7 @@
   <meta name="twitter:description" content="Consciousness-driven science fiction, plasmoid metaphysics, and the Delcath Universe by OA Allen.">
   <meta name="twitter:image" content="https://peevishpenman.com/img/peevish-penman-social-share-1200x630.png">
 
-  <!-- Favicons -->
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/favicons.php'; ?>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">

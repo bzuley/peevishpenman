@@ -46,6 +46,7 @@ $tag_label = $tag_labels[strtolower($tag)] ?? ucwords(str_replace(['-', '_'], ' 
   <link rel="stylesheet" href="/styles/main.css">
 
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/analytics.php'; ?>
+  <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/favicons.php'; ?>
 </head>
 
 <body>
