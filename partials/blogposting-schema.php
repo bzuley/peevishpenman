@@ -1,6 +1,10 @@
 <?php
 // Emits BlogPosting JSON-LD for search rich results.
 // Expects $post_meta (see blog-slug.php for the shape) to already be set.
+// Every post includes this partial, so it also counts the view that
+// picks the homepage's featured post.
+require_once __DIR__ . '/../blog-config.php';
+ppm_record_view($post_meta['slug']);
 $schema_url = 'https://peevishpenman.com/blogs/' . rawurlencode($post_meta['slug']);
 $schema_image = $post_meta['image'];
 if ($schema_image !== '' && strpos($schema_image, 'http') !== 0) {

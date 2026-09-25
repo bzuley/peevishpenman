@@ -137,3 +137,107 @@ function ppm_get_posts_by_tag($tag) {
         return false;
     }));
 }
+
+// Per-day view counts for posts, kept server-side so the homepage can
+// feature the most-read post. Lives under partials/data/, which
+// .htaccess blocks from direct access.
+const PPM_VIEWS_FILE = __DIR__ . '/partials/data/post-views.json';
+const PPM_POPULAR_WINDOW_DAYS = 30;
+
+/**
+ * Count one view of a post. Skips non-GET requests and obvious bots so
+ * crawlers don't decide what's "popular". Never lets a storage problem
+ * break the page.
+ */
+function ppm_record_view($slug) {
+    if (($_SERVER['REQUEST_METHOD'] ?? '') !== 'GET' || $slug === '') {
+        return;
+    }
+    $agent = $_SERVER['HTTP_USER_AGENT'] ?? '';
+    if ($agent === '' || preg_match('/bot|crawl|spider|slurp|preview|fetch|curl|wget|python|headless/i', $agent)) {
+        return;
+    }
+
+    $dir = dirname(PPM_VIEWS_FILE);
+    if (!is_dir($dir) && !@mkdir($dir, 0755, true)) {
+        return;
+    }
+    $fh = @fopen(PPM_VIEWS_FILE, 'c+');
+    if ($fh === false) {
+        return;
+    }
+    if (flock($fh, LOCK_EX)) {
+        $views = json_decode(stream_get_contents($fh), true);
+        if (!is_array($views)) {
+            $views = [];
+        }
+
+        $tz = new DateTimeZone(PPM_PUBLISH_TIMEZONE);
+        $today = (new DateTimeImmutable('now', $tz))->format('Y-m-d');
+        $views[$today][$slug] = ($views[$today][$slug] ?? 0) + 1;
+
+        // Drop days that have aged out of the popularity window.
+        $cutoff = (new DateTimeImmutable('now', $tz))
+            ->modify('-' . PPM_POPULAR_WINDOW_DAYS . ' days')->format('Y-m-d');
+        foreach (array_keys($views) as $day) {
+            if ($day < $cutoff) {
+                unset($views[$day]);
+            }
+        }
+
+        ftruncate($fh, 0);
+        rewind($fh);
+        fwrite($fh, json_encode($views));
+        fflush($fh);
+        flock($fh, LOCK_UN);
+    }
+    fclose($fh);
+}
+
+/**
+ * Total views per slug over the last PPM_POPULAR_WINDOW_DAYS days.
+ */
+function ppm_get_recent_views() {
+    if (!is_readable(PPM_VIEWS_FILE)) {
+        return [];
+    }
+    $views = json_decode((string) @file_get_contents(PPM_VIEWS_FILE), true);
+    if (!is_array($views)) {
+        return [];
+    }
+
+    $cutoff = (new DateTimeImmutable('now', new DateTimeZone(PPM_PUBLISH_TIMEZONE)))
+        ->modify('-' . PPM_POPULAR_WINDOW_DAYS . ' days')->format('Y-m-d');
+    $totals = [];
+    foreach ($views as $day => $counts) {
+        if ($day < $cutoff || !is_array($counts)) {
+            continue;
+        }
+        foreach ($counts as $slug => $count) {
+            $totals[$slug] = ($totals[$slug] ?? 0) + (int) $count;
+        }
+    }
+    return $totals;
+}
+
+/**
+ * The most-viewed published post of the last 30 days. Ties (and a site
+ * with no view data yet) go to the newest post, since $posts arrives
+ * newest-first.
+ */
+function ppm_get_featured_post($posts) {
+    if (empty($posts)) {
+        return null;
+    }
+    $views = ppm_get_recent_views();
+    $featured = $posts[0];
+    $best = $views[$featured['slug']] ?? 0;
+    foreach ($posts as $post) {
+        $count = $views[$post['slug']] ?? 0;
+        if ($count > $best) {
+            $featured = $post;
+            $best = $count;
+        }
+    }
+    return $featured;
+}

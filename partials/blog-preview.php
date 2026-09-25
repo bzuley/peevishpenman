@@ -8,6 +8,17 @@ $ppm_show_excerpt    = true;
 $ppm_excerpt_len     = 100;
 
 $blog_items = ppm_get_blog_posts();
+
+// When the page has a featured post (see index.php), lead the list with it.
+// Its card is hidden on desktop, where the featured block above shows it.
+$ppm_featured_slug = isset($ppm_featured_post) ? $ppm_featured_post['slug'] : null;
+if ($ppm_featured_slug !== null) {
+    $blog_items = array_values(array_filter($blog_items, function ($post) use ($ppm_featured_slug) {
+        return $post['slug'] !== $ppm_featured_slug;
+    }));
+    array_unshift($blog_items, $ppm_featured_post);
+}
+
 $blog_items = array_slice($blog_items, 0, $ppm_post_limit);
 
 function ppm_truncate($text, $limit) {
@@ -34,7 +45,7 @@ function ppm_truncate($text, $limit) {
       <div class="blog-container">
         <ul>
           <?php foreach ($blog_items as $post) : ?>
-            <li class="blog-card">
+            <li class="blog-card<?= $post['slug'] === $ppm_featured_slug ? ' blog-card--featured' : '' ?>">
               <a href="/blogs/<?= htmlspecialchars($post['slug']) ?>">
                 <?php if (!empty($post['image'])) : ?>
                   <img class="bp-img"

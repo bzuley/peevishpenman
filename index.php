@@ -144,6 +144,32 @@
   </aside>
 
   <div class="ppm-home-main">
+    <?php
+    require_once $_SERVER['DOCUMENT_ROOT'] . '/blog-config.php';
+    // Most-read post of the last 30 days. Desktop shows it here, above the
+    // books; mobile shows it as the first card in the blog list instead.
+    $ppm_featured_post = ppm_get_featured_post(ppm_get_blog_posts());
+    ?>
+    <?php if ($ppm_featured_post) : ?>
+      <section class="ppm-home-featured" aria-label="Featured article">
+        <a class="ppm-home-featured-card" href="/blogs/<?= htmlspecialchars($ppm_featured_post['slug']) ?>">
+          <?php if (!empty($ppm_featured_post['image'])) : ?>
+            <img class="ppm-home-featured-img"
+                 src="<?= htmlspecialchars($ppm_featured_post['image']) ?>"
+                 alt="<?= htmlspecialchars($ppm_featured_post['title']) ?>">
+          <?php endif; ?>
+          <div class="ppm-home-featured-body">
+            <p class="ppm-home-featured-label">Most Read This Month</p>
+            <h2 class="ppm-home-featured-title"><?= htmlspecialchars($ppm_featured_post['title']) ?></h2>
+            <?php if (!empty($ppm_featured_post['excerpt'])) : ?>
+              <p class="ppm-home-featured-excerpt"><?= htmlspecialchars($ppm_featured_post['excerpt']) ?></p>
+            <?php endif; ?>
+            <span class="ppm-home-featured-cta">Read the article &rarr;</span>
+          </div>
+        </a>
+      </section>
+    <?php endif; ?>
+
     <!-- Books row -->
     <section class="ppm-home-books">
       <div class="ppm-home-books-grid">

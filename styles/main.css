@@ -601,6 +601,114 @@ small {
 }
 
 /* ================================
+   8a) HOME FEATURED ARTICLE —
+   most-read post of the last 30 days. Desktop shows this block
+   atop the center column; mobile instead leads the blog list
+   with it (.blog-card--featured), so the block is hidden there.
+   ================================ */
+
+.ppm-home-featured {
+  display: none;
+}
+
+@media (min-width: 901px) {
+  .ppm-home-featured {
+    display: block;
+    margin-bottom: var(--ppm-spacing-xl);
+  }
+
+  .ppm-home-featured-card {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+    background: rgba(10, 20, 19, 0.65);
+    border: 1px solid var(--ppm-border-soft);
+    border-radius: var(--ppm-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--ppm-shadow-soft);
+    text-decoration: none;
+    color: inherit;
+    transition: transform var(--ppm-transition-med),
+                box-shadow var(--ppm-transition-med),
+                border-color var(--ppm-transition-med);
+  }
+
+  .ppm-home-featured-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 26px rgba(0, 0, 0, 0.35);
+    border-color: rgba(117, 255, 232, 0.55);
+  }
+
+  .ppm-home-featured-img {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    display: block;
+    border-right: 1px solid var(--ppm-border-soft);
+  }
+
+  .ppm-home-featured-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: var(--ppm-spacing-lg);
+  }
+
+  .ppm-home-featured-label {
+    margin: 0 0 0.6em;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ppm-hermes-shadow);
+  }
+
+  .ppm-home-featured-title {
+    margin: 0 0 0.5em;
+    font-family: "Space Grotesk", system-ui, sans-serif;
+    font-size: clamp(1.3rem, 1vw + 1rem, 1.75rem);
+    line-height: 1.2;
+    color: var(--ppm-hermes);
+  }
+
+  .ppm-home-featured-excerpt {
+    margin: 0 0 var(--ppm-spacing-md);
+    font-family: "IBM Plex Sans", system-ui, sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.55;
+    color: var(--ppm-text-main);
+    opacity: 0.85;
+  }
+
+  .ppm-home-featured-cta {
+    font-family: "Space Grotesk", system-ui, sans-serif;
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ppm-hermes-lumen);
+  }
+
+  /* Already shown in the featured block above */
+  .ppm-home-main .blog-card--featured {
+    display: none;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1150px) {
+  .ppm-home-featured-card {
+    grid-template-columns: 1fr;
+  }
+
+  .ppm-home-featured-img {
+    border-right: none;
+    border-bottom: 1px solid var(--ppm-border-soft);
+  }
+}
+
+/* ================================
    8b) HOME THREE-COLUMN LAYOUT (desktop only) —
    sidebar nav / wide center column / widget sidebar.
    Mobile keeps the single-column flow and reaches books
