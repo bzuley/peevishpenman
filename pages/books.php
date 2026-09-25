@@ -80,6 +80,7 @@
       display: block;
       width: 100%;
       height: 100%;
+      margin: 0; /* cancel .ppm-article img's vertical margin, which pushed the cover down and clipped its bottom */
       object-fit: cover;
     }
 
