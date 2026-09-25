@@ -4,7 +4,8 @@ $post_meta = [
   'slug'    => 'love-of-money-self-publication',
   'title'   => 'For the Love of Money and/or Self-Publication',
   'excerpt' => 'From cash-paid pizza murals to Amazon candles, an indie author weighs what self-publishing earns per hour against what books keep: the fragments of a life, left for the people who come after.',
-  'date'    => 'YYYY-MM-DD',
+  'date'    => '2018-06-18',
+  'added'   => '2026-09-25',
   'tags'    => 'selfpublishing, writing'
 ];
 require_once $_SERVER['DOCUMENT_ROOT'] . '/blog-config.php';
