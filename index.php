@@ -134,10 +134,17 @@
       <h3 class="ppm-home-nav-heading">Explore</h3>
       <ul>
         <li><a href="/blog-tag?tag=sciencefiction">Science Fiction</a></li>
+        <li><a href="/blog-tag?tag=postapocalypticscifi">Post-Apocalyptic Scifi</a></li>
+        <li><a href="/blog-tag?tag=metaphysicalscifi">Metaphysical Scifi</a></li>
+        <li><a href="/blog-tag?tag=consciousness">Consciousness</a></li>
+        <li><a href="/blog-tag?tag=anomalousphenomena">Anomalous Phenomena</a></li>
+        <li><a href="/blog-tag?tag=losttechnology">Lost Technology</a></li>
+        <li><a href="/blog-tag?tag=technology">Technology</a></li>
+        <li><a href="/blog-tag?tag=worldbuilding">Worldbuilding</a></li>
         <li><a href="/blog-tag?tag=archetypes">Character Archetypes</a></li>
-        <li><a href="/blog-tag?tag=writing">Writing</a></li>
-        <li><a href="/blog-tag?tag=language">Language</a></li>
         <li><a href="/blog-tag?tag=meditation">Meditation</a></li>
+        <li><a href="/blog-tag?tag=writing">Writing</a></li>
+        <li><a href="/blog-tag?tag=wordcraft">Wordcraft</a></li>
         <li><a href="/blog-tag?tag=selfpublishing">Self-Publishing</a></li>
       </ul>
     </nav>

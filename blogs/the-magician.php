@@ -8,7 +8,7 @@ $post_meta = [
   'added'   => '2026-09-05',
   // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
   // Powers the quicklink buttons on index.php (see /blog-tag.php).
-  'tags'    => 'archetypes, writing, meditation'
+  'tags'    => 'archetypes, writing, meditation, consciousness'
 ];
 ?>
 <!DOCTYPE html>

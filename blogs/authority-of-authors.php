@@ -8,7 +8,7 @@ $post_meta = [
   'added'   => '2026-09-21',
   // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
   // Powers the quicklink buttons on index.php (see /blog-tag.php).
-  'tags'    => 'writing, language, selfpublishing'
+  'tags'    => 'writing, wordcraft, selfpublishing'
 ];
 ?>
 <!DOCTYPE html>
