@@ -1,6 +1,6 @@
 <?php
 $post_meta = [
-  'image'   => '/img/ontology-of-ether.webp',
+  'image'   => '/img/ontology-of-ether-v2.webp',
   'slug'    => 'ontology-of-ether',
   'title'   => 'The Ontology of Ether',
   'excerpt' => 'Cosmology, consciousness, and unseen forces in The Bright Dark, with a creation story from the world after the apocalypse.',
@@ -26,7 +26,7 @@ $post_meta = [
   <meta property="og:description" content="<?php echo htmlspecialchars($post_meta['excerpt']); ?>">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://peevishpenman.com/blogs/<?php echo htmlspecialchars($post_meta['slug']); ?>">
-  <meta property="og:image" content="https://peevishpenman.com<?php echo htmlspecialchars($post_meta['image']); ?>">
+  <meta property="og:image" content="https://peevishpenman.com/img/ontology-of-ether-social-v2.jpg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -48,7 +48,8 @@ $post_meta = [
   <figure class="ppm-article-hero">
     <img
       src="<?php echo htmlspecialchars($post_meta['image']); ?>"
-      alt="Survivors gathered around a fire among ruins, beneath branching light and a vast star-filled sky"
+      width="1254" height="1254"
+      alt="A storyteller and two companions around a fire, with orange sparks branching into a teal cosmic sky above distant ruins"
     >
     <div class="ppm-article-hero-content">
       <p class="ppm-article-kicker">Science Fiction &amp; Cosmology</p>
