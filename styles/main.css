@@ -576,9 +576,11 @@ small {
 
   .ppm-nav-brand-text {
     font-family: "Space Grotesk", system-ui, sans-serif;
-    /* Space Grotesk caps are 0.7em tall, so logo height / 0.7 makes the
-       capital letters match the logo */
-    font-size: calc(var(--ppm-brand-h) / 0.7);
+    /* Letters render 34px tall when the logo box is 40px (the badge
+       itself is smaller; the image has transparent padding). Space
+       Grotesk's visible letter height is ~0.76em, so 40px * 1.12 ≈ 44.8px
+       font size gives 34px letters. Scales with the logo below 1200px. */
+    font-size: calc(var(--ppm-brand-h) * 1.12);
     line-height: 1;
     font-weight: 600;
     letter-spacing: 0.05em;
@@ -617,42 +619,24 @@ small {
     margin-bottom: var(--ppm-spacing-xl);
   }
 
+  /* Deliberately not a card: no box, border or rounded corners. The
+     image runs the full column width with the text beneath it. */
   .ppm-home-featured-card {
-    display: grid;
-    grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
-    background: rgba(10, 20, 19, 0.65);
-    border: 1px solid var(--ppm-border-soft);
-    border-radius: var(--ppm-radius-lg);
-    overflow: hidden;
-    box-shadow: var(--ppm-shadow-soft);
+    display: block;
     text-decoration: none;
     color: inherit;
-    transition: transform var(--ppm-transition-med),
-                box-shadow var(--ppm-transition-med),
-                border-color var(--ppm-transition-med);
-  }
-
-  .ppm-home-featured-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 0 26px rgba(0, 0, 0, 0.35);
-    border-color: rgba(117, 255, 232, 0.55);
   }
 
   .ppm-home-featured-img {
     width: 100%;
-    height: 100%;
-    min-height: 100%;
+    height: auto;
     aspect-ratio: 16 / 9;
     object-fit: cover;
     display: block;
-    border-right: 1px solid var(--ppm-border-soft);
   }
 
   .ppm-home-featured-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: var(--ppm-spacing-lg);
+    padding-top: var(--ppm-spacing-md);
   }
 
   .ppm-home-featured-label {
@@ -668,9 +652,13 @@ small {
   .ppm-home-featured-title {
     margin: 0 0 0.5em;
     font-family: "Space Grotesk", system-ui, sans-serif;
-    font-size: clamp(1.3rem, 1vw + 1rem, 1.75rem);
+    font-size: clamp(1.4rem, 1vw + 1.1rem, 2rem);
     line-height: 1.2;
     color: var(--ppm-hermes);
+  }
+
+  .ppm-home-featured-card:hover .ppm-home-featured-title {
+    color: var(--ppm-hermes-lumen);
   }
 
   .ppm-home-featured-excerpt {
@@ -694,17 +682,6 @@ small {
   /* Already shown in the featured block above */
   .ppm-home-main .blog-card--featured {
     display: none;
-  }
-}
-
-@media (min-width: 901px) and (max-width: 1150px) {
-  .ppm-home-featured-card {
-    grid-template-columns: 1fr;
-  }
-
-  .ppm-home-featured-img {
-    border-right: none;
-    border-bottom: 1px solid var(--ppm-border-soft);
   }
 }
 
