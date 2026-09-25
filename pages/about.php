@@ -124,6 +124,37 @@
 
     .ab-hero-lede strong { color: var(--ppm-text-main); font-weight: 600; }
 
+    /* Desktop: portrait in a left column beside the intro text */
+    @media (min-width: 901px) {
+      .ab-hero-content {
+        display: grid;
+        grid-template-columns: auto minmax(0, 1fr);
+        column-gap: clamp(2.5rem, 5vw, 4rem);
+        align-items: center;
+        max-width: 1000px;
+        margin: 0 auto;
+        text-align: left;
+      }
+
+      .ab-portrait {
+        grid-row: 1 / span 4;
+        width: clamp(15rem, 24vw, 19rem);
+        margin: 0;
+      }
+
+      .ab-hero-content > :not(.ab-portrait) {
+        grid-column: 2;
+      }
+
+      .ab-kicker { justify-self: start; }
+      .ab-kicker::before { display: none; }
+
+      .ab-hero-lede {
+        max-width: none;
+        margin: 0;
+      }
+    }
+
     /* ---------- Statement divider ---------- */
     .ab-statement {
       padding: clamp(2.5rem, 6vw, 4rem) 5%;
