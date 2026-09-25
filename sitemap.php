@@ -20,7 +20,6 @@ $paths = [
     '/blog-tag?tag=selfpublishing',
     '/blog-tag?tag=archetypes',
     '/pages/about',
-    '/pages/newsletter',
 ];
 
 foreach (ppm_get_blog_posts() as $post) {

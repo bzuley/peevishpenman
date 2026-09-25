@@ -30,6 +30,9 @@ RewriteRule ^sitemap\.xml$ sitemap.php [L]
 # Legacy "Thought Engines" URLs now live at /pages/bright-dark
 RewriteRule ^(pages/thought-engines(\.php)?|projects/thought-engines)/?$ /pages/bright-dark [R=301,L,NC]
 
+# The standalone newsletter page was removed; the sign-up form lives in the site footer
+RewriteRule ^pages/newsletter(\.php)?/?$ /#newsletter [R=301,L,NC,NE]
+
 # Redirect /page.php to /page
 RewriteCond %{THE_REQUEST} \s/+(.+?)\.php[\s?] [NC]
 RewriteRule ^(.+)\.php$ /$1 [R=301,L]

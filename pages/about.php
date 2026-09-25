@@ -55,6 +55,16 @@
 
     .ab-hero-content { position: relative; z-index: 1; }
 
+    .ab-portrait {
+      display: block;
+      width: clamp(10rem, 36vw, 14rem);
+      height: auto;
+      margin: 0 auto 1.75rem;
+      border-radius: var(--ppm-radius-md);
+      border: 1px solid var(--ppm-border-soft);
+      box-shadow: var(--ppm-shadow-soft);
+    }
+
     .ab-kicker {
       display: inline-flex;
       align-items: center;
@@ -314,6 +324,7 @@
 
   <section class="ab-hero">
     <div class="ab-hero-content">
+      <img class="ab-portrait" src="/img/oa-allen-portrait.jpg" alt="Carrie Bailey Allen" width="480" height="640">
       <p class="ab-kicker">Peevish Penman &middot; About</p>
       <h1>About OA Allen</h1>
       <p class="ab-tagline">Carrie Bailey Allen writes speculative fiction under the name OA Allen.</p>
@@ -428,7 +439,7 @@
       explanation.
     </p>
     <div class="ab-cta-buttons">
-      <a class="ppm-button" href="/pages/newsletter">Join the Newsletter</a>
+      <a class="ppm-button" href="#newsletter">Join the Newsletter</a>
       <a class="ppm-button ppm-button--ghost" href="mailto:editor@peevishpenman.com">Contact</a>
     </div>
   </section>
