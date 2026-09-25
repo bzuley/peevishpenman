@@ -24,7 +24,7 @@
   <meta name="twitter:description" content="Science fiction about asteroid miners, labour and dependence, and the intelligence that watches over them.">
   <meta name="twitter:image" content="https://peevishpenman.com/img/covers/wod-cover-3d.webp">
 
-  <link rel="stylesheet" href="/styles/main.css">
+  <link rel="stylesheet" href="/styles/main.css?v=<?= filemtime($_SERVER['DOCUMENT_ROOT'].'/styles/main.css') ?>">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
