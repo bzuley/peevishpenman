@@ -6,7 +6,7 @@ $post_meta = [
   'excerpt' => 'Cosmology, consciousness, and unseen forces in The Bright Dark, with a creation story from the world after the apocalypse.',
   'date'    => '2015-10-09',
   'added'   => '2026-09-24',
-  'tags'    => 'sciencefiction'
+  'tags'    => 'sciencefiction, writing'
 ];
 ?>
 <!DOCTYPE html>

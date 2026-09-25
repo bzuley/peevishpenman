@@ -5,7 +5,10 @@ $post_meta = [
   'title'   => 'The Authority of Authors',
   'excerpt' => 'Author and authority share a Latin root: someone who causes something to exist. A look at where that word comes from, who really controls the narrative, and how writers can question the power dynamics they put on the page.',
   'date'    => '2026-09-21',
-  'added'   => '2026-09-21'
+  'added'   => '2026-09-21',
+  // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
+  // Powers the quicklink buttons on index.php (see /blog-tag.php).
+  'tags'    => 'writing, language, selfpublishing'
 ];
 ?>
 <!DOCTYPE html>

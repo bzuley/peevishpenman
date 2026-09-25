@@ -5,7 +5,10 @@ $post_meta = [
   'title'   => 'Meditation - Closed Eye Visualizations',
   'excerpt' => 'Exploring the phenomenon of closed-eye visualizations in meditation—from subtle patterns to vivid imagery. A personal account of CEVs, their neuroscience, and their role in inner alchemy.',
   'date'    => '2024-12-20',
-  'added'   => '2026-08-25'
+  'added'   => '2026-08-25',
+  // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
+  // Powers the quicklink buttons on index.php (see /blog-tag.php).
+  'tags'    => 'meditation'
 ];
 ?>
 <!DOCTYPE html>

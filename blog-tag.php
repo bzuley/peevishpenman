@@ -8,6 +8,9 @@ $tag_labels = [
   'selfpublishing' => 'Self-Publishing',
   'archetypes'     => 'Character Archetypes',
   'sciencefiction' => 'Science Fiction',
+  'writing'        => 'Writing',
+  'language'       => 'Language',
+  'meditation'     => 'Meditation',
 ];
 $tag_label = $tag_labels[strtolower($tag)] ?? ucwords(str_replace(['-', '_'], ' ', $tag));
 ?>
