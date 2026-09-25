@@ -8,7 +8,11 @@ $post_meta = [
   // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
   // Powers the quicklink buttons on index.php (see /blog-tag.php).
   'tags'    => ''
+  // Optional 'added' => 'YYYY-MM-DD': the day the post goes live on the
+  // site. A future date schedules the post; it stays hidden until then.
 ];
+require_once $_SERVER['DOCUMENT_ROOT'] . '/blog-config.php';
+ppm_require_published($post_meta);
 ?>
 <!DOCTYPE html>
 <html lang="en">
