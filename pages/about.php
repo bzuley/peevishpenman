@@ -57,15 +57,12 @@
 
     .ab-portrait {
       display: block;
-      width: clamp(9rem, 28vw, 12rem);
-      height: clamp(9rem, 28vw, 12rem);
-      max-width: none;
+      width: clamp(10rem, 36vw, 14rem);
+      height: auto;
       margin: 0 auto 1.75rem;
-      border-radius: 50%;
-      object-fit: cover;
-      object-position: 50% 30%;
-      border: 2px solid var(--ppm-hermes-shadow);
-      box-shadow: 0 0 40px rgba(117, 255, 232, 0.15), var(--ppm-shadow-soft);
+      border-radius: var(--ppm-radius-md);
+      border: 1px solid var(--ppm-border-soft);
+      box-shadow: var(--ppm-shadow-soft);
     }
 
     .ab-kicker {
