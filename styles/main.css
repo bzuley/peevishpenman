@@ -572,7 +572,10 @@ small {
 
   .ppm-nav-brand-text {
     font-family: "Space Grotesk", system-ui, sans-serif;
-    font-size: 1.3rem;
+    /* Space Grotesk caps are 0.7em tall, so 40px / 0.7 makes the
+       capital letters match the 40px logo height */
+    font-size: calc(40px / 0.7);
+    line-height: 1;
     font-weight: 600;
     letter-spacing: 0.05em;
     text-transform: uppercase;
