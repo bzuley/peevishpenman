@@ -4,4 +4,4 @@ error_log
 .well-known/
 Thumbs.db
 __pycache__/
-*.pyc
+*.pycpartials/data/
