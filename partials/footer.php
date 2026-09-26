@@ -16,10 +16,18 @@
 
 <!-- Peevish Penman Footer -->
 <footer class="ppm-footer">
-  <!-- Logo -->
+  <!-- Logo (mobile) -->
   <section class="ppm-footer-logo">
     <a href="/" aria-label="Peevish Penman home">
       <img src="/img/logos/logo-ppm.webp" alt="Peevish Penman" width="200" height="201" loading="lazy">
+    </a>
+  </section>
+
+  <!-- Typewriter (desktop) -->
+  <section class="ppm-footer-typewriter">
+    <a href="/" aria-label="Peevish Penman home">
+      <div class="ppm-footer-typewriter-gradient"></div>
+      <img src="/img/logos/hermes_3000.webp" alt="Peevish Penman" width="1236" height="1273" loading="lazy">
     </a>
   </section>
 

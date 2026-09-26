@@ -2001,6 +2001,58 @@ html.ppm-nav-open {
   opacity: 0.7;
 }
 
+/* Typewriter (desktop-only footer mark, styled like the mobile hero art) */
+.ppm-footer-typewriter {
+  display: none;
+}
+
+@media (min-width: 901px) {
+  .ppm-footer-logo {
+    display: none;
+  }
+
+  .ppm-footer-typewriter {
+    display: block;
+    position: relative;
+    max-width: 220px;
+    margin: 0 auto var(--ppm-spacing-lg);
+    text-align: center;
+  }
+
+  .ppm-footer-typewriter-gradient {
+    position: absolute;
+    inset: -40% -45%;
+    border-radius: 9999px;
+    background:
+      radial-gradient(ellipse at 30% 20%,
+        rgba(159, 255, 227, 0.45) 0%,
+        transparent 70%),
+      radial-gradient(ellipse at 70% 80%,
+        rgba(210, 75, 175, 0.45) 0%,
+        transparent 95%);
+    z-index: 1;
+    filter: blur(30px);
+  }
+
+  .ppm-footer-typewriter img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: auto;
+    opacity: 0.82;
+    filter:
+      drop-shadow(0 14px 32px rgba(0, 0, 0, 0.45))
+      brightness(1.08)
+      contrast(0.92)
+      saturate(0.95);
+    transition: opacity var(--ppm-transition-fast);
+  }
+
+  .ppm-footer-typewriter a:hover img {
+    opacity: 0.6;
+  }
+}
+
 /* Newsletter Section */
 .ppm-footer-newsletter {
   text-align: center;
