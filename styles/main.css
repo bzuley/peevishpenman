@@ -192,6 +192,15 @@ small {
   gap: var(--ppm-spacing-md);
 }
 
+/* Fades an image's edges to transparent so it melts into the page
+   background instead of showing a hard rectangular edge. Best on
+   images whose edge colors are already close to the site background
+   (e.g. dark art on our near-black background). */
+.ppm-fade-mask {
+  -webkit-mask-image: radial-gradient(circle, black 60%, transparent 90%);
+  mask-image: radial-gradient(circle, black 60%, transparent 90%);
+}
+
 /* ================================
    5) LINKS & BUTTONS
    ================================ */

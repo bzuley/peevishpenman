@@ -50,6 +50,7 @@ $post_meta = [
   <!-- Hero image with overlaid content -->
   <figure class="ppm-article-hero">
     <img
+      class="ppm-fade-mask"
       src="<?php echo htmlspecialchars($post_meta['image']); ?>"
       alt="Illustration of a woman meditating in lotus position with eyes closed, haloed by concentric art-deco rings of light"
     >
