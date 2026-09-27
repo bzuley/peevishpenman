@@ -1,6 +1,6 @@
 <?php
 $post_meta = [
-  'image'   => '/img/typewriter-red.png',
+  'image'   => '/img/general/wasteland_alas_babylon.png',
   'slug'    => 'post-apocalyptic-or-postapocalyptic',
   'title'   => 'Post Apocalyptic or Post-Apocalyptic or Postapocalyptic?',
   'excerpt' => 'A tongue-in-cheek case for dropping the hyphen from "post-apocalyptic"—and a look at why search engines, spell-check, and plain laziness might matter more than the rulebook.',
@@ -57,7 +57,7 @@ $post_meta = [
   <figure class="ppm-article-hero">
     <img
       src="<?php echo htmlspecialchars($post_meta['image']); ?>"
-      alt="Illustration of a red vintage typewriter"
+      alt="An abandoned roadside gas station and diner with rusted vintage cars, overgrown pavement, and a wildfire smoke plume on the horizon"
     >
     <div class="ppm-article-hero-content">
       <p class="ppm-article-kicker">A Grammar Rant</p>

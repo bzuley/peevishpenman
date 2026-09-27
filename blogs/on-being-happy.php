@@ -1,6 +1,6 @@
 <?php
 $post_meta = [
-  'image'   => '/img/book-boy.jpg',
+  'image'   => '/img/general/sunflowers_alchemy.png',
   'slug'    => 'on-being-happy',
   'title'   => 'On Being Happy',
   'excerpt' => 'A meditation on a father\'s turbulent past and peaceful present, painted in sailboats and calm seas, and what his happiness taught a daughter about walking away from what doesn\'t work.',
@@ -57,7 +57,7 @@ $post_meta = [
   <figure class="ppm-article-hero">
     <img
       src="<?php echo htmlspecialchars($post_meta['image']); ?>"
-      alt="Illustration of a person seen from behind, reading a book in bed beside a cup of coffee, beneath a night sky full of spiraling galaxies"
+      alt="Sunlit sunflowers in a field at golden hour, overlaid with a faint gold alchemical diagram of the sun and the four elements"
     >
     <div class="ppm-article-hero-content">
       <p class="ppm-article-kicker">Family, Painting &amp; Letting Go</p>

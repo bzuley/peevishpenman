@@ -1,6 +1,6 @@
 <?php
 $post_meta = [
-  'image'   => '/img/general/writer-overwhelmed-in-library.png',
+  'image'   => '/img/general/artist_and_raven.png',
   'slug'    => 'buy-artwork-from-family-or-friends',
   'title'   => 'How to Buy Artwork From Your Family or Friends Without Being a Dick',
   'excerpt' => 'A painter\'s survival guide to being asked for free murals: what commissioning art actually costs in skill, time, and materials—and how not to be a dick about it.',
@@ -57,7 +57,7 @@ $post_meta = [
   <figure class="ppm-article-hero">
     <img
       src="<?php echo htmlspecialchars($post_meta['image']); ?>"
-      alt="Surreal illustration of a person kneeling in an overwhelming, cluttered library, buried in stacks of books and loose pages"
+      alt="A raven holding a paintbrush beside a smiling artist resting her chin on her hand and holding a fan of cash, a half-finished mountain landscape painting on the easel between them"
     >
     <div class="ppm-article-hero-content">
       <p class="ppm-article-kicker">The Business of Being Talented</p>
