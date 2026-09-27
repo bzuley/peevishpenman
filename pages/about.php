@@ -374,8 +374,7 @@
   </section>
 
   <section class="ab-statement">
-    <p>Reality rarely agrees with itself.</p>
-    <p>Carrie writes about what people do when it doesn&rsquo;t.</p>
+    <p>Insert Coffee Repeat</p>
   </section>
 
   <section class="ab-panel">
