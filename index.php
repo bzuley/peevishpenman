@@ -141,6 +141,18 @@
         <li><a href="/blog-tag?tag=selfpublishing">Self-Publishing</a></li>
       </ul>
     </nav>
+
+    <div class="ppm-home-widget ppm-home-glossary">
+      <p class="ppm-home-widget-label">Definitions</p>
+      <dl>
+        <dt>Peevish <span>[adj]</span></dt>
+        <dd>Easily irritated by unimportant things.</dd>
+        <dt>Penman <span>[n]</span></dt>
+        <dd>A copyist, a scribe, an author, a wordsmith, i.e., a madman with a pen.</dd>
+        <dt>Press <span>[n]</span></dt>
+        <dd>An unexpected and forceful enlistment.</dd>
+      </dl>
+    </div>
   </aside>
 
   <div class="ppm-home-main">
