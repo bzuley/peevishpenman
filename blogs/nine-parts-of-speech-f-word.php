@@ -503,6 +503,10 @@ $post_meta = [
 
     <section>
       <p>If your grammar education left you this many gaps, the free <a href="/pages/writer-secret-society">Writer Secret Society Handbook</a> covers the rest of the craft—marginally more politely.</p>
+
+      <p class="ppm-who-wrote">
+        <a href="/pages/about" class="ppm-who-wrote-button">Who the *%$@# wrote this *#@?</a>
+      </p>
     </section>
 
   </article>
