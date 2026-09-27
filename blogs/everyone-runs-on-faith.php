@@ -1,6 +1,6 @@
 <?php
 $post_meta = [
-  'image'   => '/img/excalibur.jpg',
+  'image'   => '/img/general/the_alter_of_science.png',
   'slug'    => 'everyone-runs-on-faith',
   'title'   => 'Everyone Runs on Faith, Even Scientists',
   'excerpt' => 'Ancient people weren\'t less intelligent, just less informed. On volcanoes, the problem of induction, and why our faith in science looks a lot like medieval faith in Christianity.',
@@ -59,7 +59,7 @@ ppm_require_published($post_meta);
   <figure class="ppm-article-hero">
     <img
       src="<?php echo htmlspecialchars($post_meta['image']); ?>"
-      alt="Photograph of a vintage mint-green Hermes 3000 typewriter, open in its travel case with a blank sheet of paper loaded"
+      alt="A scientist in a lab coat and safety goggles kneels with raised arms before a candlelit altar holding a glowing blue flask, beneath a golden sunburst atom symbol and DNA banners"
     >
     <div class="ppm-article-hero-content">
       <p class="ppm-article-kicker">History, Belief &amp; Worldbuilding</p>

@@ -1,6 +1,6 @@
 <?php
 $post_meta = [
-  'image'   => '/img/excalibur.jpg',
+  'image'   => '/img/general/asherah.png',
   'slug'    => 'what-the-knights-templar-found',
   'title'   => 'What the Knights Templar Found',
   'excerpt' => 'A documentary said the Knights Templar dug up brotherhood beneath the Temple Mount. I think they found Asherah, the Canaanite Queen of Heaven—and turned her into the Black Madonna.',
@@ -57,7 +57,7 @@ $post_meta = [
   <figure class="ppm-article-hero">
     <img
       src="<?php echo htmlspecialchars($post_meta['image']); ?>"
-      alt="Photograph of a vintage mint-green Hermes 3000 typewriter, open in its travel case with a blank sheet of paper loaded"
+      alt="Gloved hands lifting a dark clay figurine of a woman from the dirt of an archeological dig beside ancient stone blocks, with excavators working in the sunlit background"
     >
     <div class="ppm-article-hero-content">
       <p class="ppm-article-kicker">History, Myth &amp; Worldbuilding Research</p>
