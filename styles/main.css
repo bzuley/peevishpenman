@@ -2089,19 +2089,21 @@ html.ppm-nav-open {
     text-align: center;
   }
 
+  /* Softer and tighter than the mobile hero glow: on wide screens the
+     full-strength aura spills far past the art and dominates the footer. */
   .ppm-footer-typewriter-gradient {
     position: absolute;
-    inset: -40% -45%;
+    inset: -18% -22%;
     border-radius: 9999px;
     background:
       radial-gradient(ellipse at 30% 20%,
-        rgba(159, 255, 227, 0.45) 0%,
-        transparent 70%),
+        rgba(159, 255, 227, 0.2) 0%,
+        transparent 65%),
       radial-gradient(ellipse at 70% 80%,
-        rgba(210, 75, 175, 0.45) 0%,
-        transparent 95%);
+        rgba(210, 75, 175, 0.2) 0%,
+        transparent 75%);
     z-index: 1;
-    filter: blur(30px);
+    filter: blur(40px);
   }
 
   .ppm-footer-typewriter img {
