@@ -1,6 +1,6 @@
 <?php
 $post_meta = [
-  'image'   => '/img/whirlwind.png',
+  'image'   => '/img/general/big_nose_liar.png',
   'slug'    => 'tell-me-a-big-lie',
   'title'   => 'Tell Me a Big Lie',
   'excerpt' => 'A 2017 op-ed connecting "America First" rhetoric, The America We Deserve, and the Reform Party—daring readers to explain away what was standing in plain sight.',
@@ -57,7 +57,7 @@ $post_meta = [
   <figure class="ppm-article-hero">
     <img
       src="<?php echo htmlspecialchars($post_meta['image']); ?>"
-      alt="Illustration of an old writer at a typewriter, his words spiraling upward into a whirlwind of flying pages against a starry sky"
+      alt="A grinning showman in a top hat, red velvet coat and white gloves, with a long wooden Pinocchio nose, spreads his arms against a bright blue sky"
     >
     <div class="ppm-article-hero-content">
       <p class="ppm-article-kicker">A 2017 Op-Ed</p>

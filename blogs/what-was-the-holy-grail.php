@@ -1,6 +1,6 @@
 <?php
 $post_meta = [
-  'image'   => '/img/excalibur-closeup.jpg',
+  'image'   => '/img/general/holy_grail.png',
   'slug'    => 'what-was-the-holy-grail',
   'title'   => 'What Was the Holy Grail Before It Was Holy?',
   'excerpt' => 'The first Grail story never calls it holy or even clearly a cup. How a golden serving dish in an unfinished romance became the cup of Christ—and what that teaches writers about myth.',
@@ -59,7 +59,7 @@ ppm_require_published($post_meta);
   <figure class="ppm-article-hero">
     <img
       src="<?php echo htmlspecialchars($post_meta['image']); ?>"
-      alt="Photograph of a vintage mint-green Hermes 3000 typewriter, open in its travel case with a blank sheet of paper loaded"
+      alt="A young woman in a pale medieval gown descends a candlelit stone staircase carrying a glowing golden chalice, watched by knights in chainmail and red cloaks"
     >
     <div class="ppm-article-hero-content">
       <p class="ppm-article-kicker">Myth, Legend &amp; Storytelling</p>
