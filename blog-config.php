@@ -34,9 +34,9 @@ function ppm_require_published($meta) {
     header('X-Robots-Tag: noindex');
     echo '<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Not Found – Peevish Penman</title>'
         . '<meta name="robots" content="noindex"><link rel="stylesheet" href="/styles/main.css?v=' . filemtime($_SERVER['DOCUMENT_ROOT'] . '/styles/main.css') . '">'
-        . '<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">'
-        . '<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">'
-        . '<link rel="apple-touch-icon" href="/apple-touch-icon.png"></head>'
+        . '<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=2">'
+        . '<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=2">'
+        . '<link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2"></head>'
         . '<body><main class="ppm-article"><article class="ppm-article-inner">'
         . '<h1>Not Found</h1><p><a href="/blog">Back to the blog</a></p></article></main></body></html>';
     exit;
