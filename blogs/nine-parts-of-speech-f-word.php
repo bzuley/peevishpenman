@@ -57,6 +57,7 @@ $post_meta = [
   <figure class="ppm-article-hero">
     <img
       src="<?php echo htmlspecialchars($post_meta['image']); ?>"
+      width="1184" height="864"
       alt="Illustration of a furious writer at a typewriter, fist raised and shouting in symbols, with a whiskey bottle and crumpled pages scattered across the desk"
     >
     <div class="ppm-article-hero-content">
@@ -503,6 +504,8 @@ $post_meta = [
 
     <section>
       <p>If your grammar education left you this many gaps, the free <a href="/pages/writer-secret-society">Writer Secret Society Handbook</a> covers the rest of the craft—marginally more politely.</p>
+
+      <p>For a gentler etymological tangent, see <a href="/blogs/what-was-the-holy-grail">What Was the Holy Grail Before It Was Holy?</a>—no profanity required.</p>
 
       <p class="ppm-who-wrote">
         <a href="/pages/about" class="ppm-who-wrote-button">Who the *%$@# wrote this *#@?</a>

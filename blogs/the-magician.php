@@ -3,7 +3,7 @@ $post_meta = [
   'image'   => '/img/archetypes/magician_archetype.png',
   'slug'    => 'the-magician',
   'title'   => 'The Magician: The Archetype of Transformation',
-  'excerpt' => 'From Merlin\'s hidden knowledge to Victor Frankenstein\'s fatal overreach to Ren\'s inner alchemy in The Bright Dark, a look at the archetype of transformation, and why good and evil were never the point.',
+  'excerpt' => 'From Merlin\'s hidden knowledge to Frankenstein\'s overreach to Ren\'s inner alchemy: the archetype of transformation, and why good and evil were never the point.',
   'date'    => '2026-09-05',
   'added'   => '2026-09-05',
   // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
@@ -57,6 +57,7 @@ $post_meta = [
   <figure class="ppm-article-hero">
     <img
       src="<?php echo htmlspecialchars($post_meta['image']); ?>"
+      width="1448" height="1086"
       alt="A man with long braided hair in a dark suit sits at a card table, holding a deck of cards beside a stack of poker chips"
     >
     <div class="ppm-article-hero-content">
@@ -138,6 +139,8 @@ $post_meta = [
 
       <p>Ren's transformation follows this pattern through a series of changes in identity. He begins with identities that seem solid: academic, Guardsman, Aucklander, son, brother, rational observer. But the journey repeatedly complicates or strips away his certainty about what those identities mean. Even the distinction between observer and participant becomes harder to maintain. By the time Ren begins to understand what is happening around him, the person doing the understanding is no longer quite the person who set out to find the answers.</p>
 
+      <p>I lay out the cosmology his alchemy actually operates within over in <a href="/blogs/ontology-of-ether">The Ontology of Ether</a>.</p>
+
       <p>The alchemical journey strips the Magician of certainty. At the same time, he learns to read patterns and apply methods rather than simply accumulate information.</p>
 
       <p>The word <em>knowledge</em> comes through Old English <em>cnāwleċe</em>, from the same root as <em>know</em>: not merely possessing information, but apprehending, recognizing, or understanding something. That distinction matters for the Magician. Information can be collected; knowledge can be used.</p>
@@ -169,6 +172,8 @@ $post_meta = [
       <p>Not every protagonist needs a Hero's Journey. A Magician can be the main character and cross the same distance without conquering anything. His victories should reveal new problems rather than close them. The Magician's journey should be one of self-discovery, an ever-widening landscape of limitations on knowledge and power.</p>
 
       <p>I lean on the same instinct with Ren in <a href="/pages/bright-dark">The Bright Dark</a>. His transformation isn't measured in battles won, but in how much less certain he becomes about who he was before he understood what he now understands.</p>
+
+      <p>If the Magician is the archetype of transformation, <a href="/blogs/the-everyman">The Everyman</a> sits at the opposite end of the wheel: continuity instead of change.</p>
     </section>
 
   </article>

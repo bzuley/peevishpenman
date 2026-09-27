@@ -3,7 +3,7 @@ $post_meta = [
   'image'   => '/img/general/sunflowers_alchemy.png',
   'slug'    => 'on-being-happy',
   'title'   => 'On Being Happy',
-  'excerpt' => 'A meditation on a father\'s turbulent past and peaceful present, painted in sailboats and calm seas, and what his happiness taught a daughter about walking away from what doesn\'t work.',
+  'excerpt' => 'A meditation on a father\'s turbulent past and peaceful present, painted in sailboats and calm seas, and what his happiness taught his daughter.',
   'date'    => '2016-06-20',
   'added'   => '2026-09-26',
   // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
@@ -57,6 +57,7 @@ $post_meta = [
   <figure class="ppm-article-hero">
     <img
       src="<?php echo htmlspecialchars($post_meta['image']); ?>"
+      width="1672" height="941"
       alt="Sunlit sunflowers in a field at golden hour, overlaid with a faint gold alchemical diagram of the sun and the four elements"
     >
     <div class="ppm-article-hero-content">
@@ -85,6 +86,11 @@ $post_meta = [
         been strong on composition and weak on proportions, with distorted hands, awkwardly set noses, and squat
         lines. The colors vary, but the palette always seemed dark and murky, over-mixed, over-dramatic, as if it
         were attempting to capture an audience by direct visual assault.
+      </p>
+
+      <p>
+        I know the feeling from the other side of the easel—I'm a painter too, and I've written about
+        <a href="/blogs/buy-artwork-from-family-or-friends">what it's like being asked for free art by people who love you</a>.
       </p>
 
       <p>

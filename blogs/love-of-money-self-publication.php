@@ -3,7 +3,7 @@ $post_meta = [
   'image'   => '/img/love-of-money-self-publication.webp',
   'slug'    => 'love-of-money-self-publication',
   'title'   => 'For the Love of Money and/or Self-Publication',
-  'excerpt' => 'From cash-paid pizza murals to Amazon candles, an indie author weighs what self-publishing earns per hour against what books keep: the fragments of a life, left for the people who come after.',
+  'excerpt' => 'From cash-paid pizza murals to Amazon candles, an indie author weighs what self-publishing earns per hour against what books keep.',
   'date'    => '2018-06-18',
   'added'   => '2026-09-25',
   'tags'    => 'selfpublishing, writing'
@@ -79,7 +79,7 @@ ppm_require_published($post_meta);
 
       <p>Writing has never filled my pockets. It has, however, given me considerably more opportunities to explore philosophical concepts my university education ignored. It’s been the mirror that showed me my biases and the lingering pain left by unconventional friendships and bad choices.</p>
 
-      <p>But when I started in 2008, I had hoped to make money.</p>
+      <p>But when I started in 2008, I had hoped to make money—the same year I became a <a href="/blogs/confirmed-independent-publisher">confirmed independent publisher</a>.</p>
     </section>
 
     <section>

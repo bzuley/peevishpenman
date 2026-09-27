@@ -57,6 +57,7 @@ $post_meta = [
   <figure class="ppm-article-hero">
     <img
       src="<?php echo htmlspecialchars($post_meta['image']); ?>"
+      width="1536" height="1024"
       alt="A grinning showman in a top hat, red velvet coat and white gloves, with a long wooden Pinocchio nose, spreads his arms against a bright blue sky"
     >
     <div class="ppm-article-hero-content">
@@ -135,6 +136,8 @@ $post_meta = [
       </p>
 
       <p>Give me some "alternative facts." Tell me a "Big Lie," <em>Mein Kampf</em>.</p>
+
+      <p>Authority always needs a story to back it up. I dug into where that word actually comes from in <a href="/blogs/authority-of-authors">The Authority of Authors</a>.</p>
     </section>
 
   </article>

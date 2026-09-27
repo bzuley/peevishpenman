@@ -3,7 +3,7 @@ $post_meta = [
   'image'   => '/img/general/artist_and_raven.png',
   'slug'    => 'buy-artwork-from-family-or-friends',
   'title'   => 'How to Buy Artwork From Your Family or Friends Without Being a Dick',
-  'excerpt' => 'A painter\'s survival guide to being asked for free murals: what commissioning art actually costs in skill, time, and materials—and how not to be a dick about it.',
+  'excerpt' => 'A painter\'s survival guide to being asked for free murals: what commissioning art actually costs in skill, time, and materials.',
   'date'    => '2016-09-14',
   'added'   => '2026-09-26',
   // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
@@ -57,6 +57,7 @@ $post_meta = [
   <figure class="ppm-article-hero">
     <img
       src="<?php echo htmlspecialchars($post_meta['image']); ?>"
+      width="1536" height="1024"
       alt="A raven holding a paintbrush beside a smiling artist resting her chin on her hand and holding a fan of cash, a half-finished mountain landscape painting on the easel between them"
     >
     <div class="ppm-article-hero-content">
@@ -269,6 +270,8 @@ $post_meta = [
         for a mural in your backyard or a portrait of your dog or baby as a favor from your very talented friend
         or family member, remember, just remember: it doesn't take an MBA to know when someone is being a dick.
       </p>
+
+      <p>My own father paints too, purely for the joy of it now—no cash, no free-mural requests, just sailboats and calm water. I wrote about what changed for him in <a href="/blogs/on-being-happy">On Being Happy</a>.</p>
     </section>
 
   </article>

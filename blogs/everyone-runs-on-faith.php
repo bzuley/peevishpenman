@@ -3,7 +3,7 @@ $post_meta = [
   'image'   => '/img/general/the_alter_of_science.png',
   'slug'    => 'everyone-runs-on-faith',
   'title'   => 'Everyone Runs on Faith, Even Scientists',
-  'excerpt' => 'Ancient people weren\'t less intelligent, just less informed. On volcanoes, the problem of induction, and why our faith in science looks a lot like medieval faith in Christianity.',
+  'excerpt' => 'Ancient people weren\'t less intelligent, just less informed. On volcanoes, the problem of induction, and why faith in science resembles medieval faith.',
   'date'    => '2016-10-26',
   'added'   => '2026-09-27',
   // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
@@ -59,6 +59,7 @@ ppm_require_published($post_meta);
   <figure class="ppm-article-hero">
     <img
       src="<?php echo htmlspecialchars($post_meta['image']); ?>"
+      width="1536" height="1024"
       alt="A scientist in a lab coat and safety goggles kneels with raised arms before a candlelit altar holding a glowing blue flask, beneath a golden sunburst atom symbol and DNA banners"
     >
     <div class="ppm-article-hero-content">
@@ -101,7 +102,7 @@ ppm_require_published($post_meta);
       <h2>No One Is Objective About the Origins of Civilization</h2>
 
       <p>
-        While researching the second book in my Immortal Coffee series, a post-apocalyptic story, I was ravenously
+        While researching <a href="/pages/bright-dark">The Bright Dark</a>, a post-apocalyptic story, I was ravenously
         devouring documentaries about Mesopotamia, and I kept running into the same problem.
       </p>
 
@@ -233,6 +234,8 @@ ppm_require_published($post_meta);
         That's the rule I try to follow when I write about the ancient world: the people there weren't dumber than
         us. They were just working with less information, and a lot of faith. Same as us.
       </p>
+
+      <p>Political ideology runs on the same fuel. I watched that particular flavor of belief take hold in real time and wrote about it in <a href="/blogs/tell-me-a-big-lie">Tell Me a Big Lie</a>.</p>
     </section>
 
     <section>

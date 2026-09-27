@@ -3,7 +3,7 @@ $post_meta = [
   'image'   => '/img/newton-alchemist.webp',
   'slug'    => 'newton-alchemist',
   'title'   => 'Why Did We Forget Isaac Newton Was an Alchemist?',
-  'excerpt' => 'The father of modern physics wrote about a million words on alchemy. Why we forgot, and what inner alchemy says about the parts of experience science still can’t measure.',
+  'excerpt' => 'The father of modern physics wrote about a million words on alchemy. Why we forgot, and what inner alchemy says about experience science still can’t measure.',
   'date'    => '2026-09-28',
   'tags'    => 'consciousness, anomalousphenomena, metaphysicalscifi, writing'
 ];
@@ -127,6 +127,8 @@ ppm_require_published($post_meta);
       <p>And talking about those things—that bulk of our human experience—requires us to pay a professional to tell us that it’s all in our head.</p>
 
       <p>But so is the stuff we can measure.</p>
+
+      <p>I've spent plenty of time trying to document my own unmeasurable data—see <a href="/blogs/closed-eye-visualizations">Closed-Eye Visualizations</a> for a first-person account of the stuff science still can't quite weigh.</p>
     </section>
 
     <section>

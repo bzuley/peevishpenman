@@ -3,7 +3,7 @@ $post_meta = [
   'image'   => '/img/pig_and_goose.png',
   'slug'    => 'authority-of-authors',
   'title'   => 'The Authority of Authors',
-  'excerpt' => 'Author and authority share a Latin root: someone who causes something to exist. A look at where that word comes from, who really controls the narrative, and how writers can question the power dynamics they put on the page.',
+  'excerpt' => 'Author and authority share a Latin root: someone who causes something to exist. A look at who controls the narrative and the power writers wield on the page.',
   'date'    => '2026-09-21',
   'added'   => '2026-09-21',
   // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
@@ -57,6 +57,7 @@ $post_meta = [
   <figure class="ppm-article-hero">
     <img
       src="<?php echo htmlspecialchars($post_meta['image']); ?>"
+      width="1536" height="1024"
       alt="A pig and a goose facing off, an illustration of authority and power dynamics"
     >
     <div class="ppm-article-hero-content">
@@ -104,7 +105,7 @@ $post_meta = [
 
       <p>I feel so much more comfortable calling myself a writer.</p>
 
-      <p>This isn't the first time a word's history has taken over one of these posts. If you like this sort of etymological rabbit hole, I went down a similar one in <a href="/blogs/wasteland">Wasteland</a>.</p>
+      <p>This isn't the first time a word's history has taken over one of these posts. If you like this sort of etymological rabbit hole, I went down a similar one in <a href="/blogs/wasteland">Wasteland</a>&mdash;or, if you want the profane version of the same instinct, <a href="/blogs/nine-parts-of-speech-f-word">The Nine Parts of Speech and the F Word</a>.</p>
     </section>
 
     <section>

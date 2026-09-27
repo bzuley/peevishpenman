@@ -3,7 +3,7 @@ $post_meta = [
   'image'   => '/img/vr-writing-hero.jpg',
   'slug'    => 'i-wrote-this-post-in-vr',
   'title'   => 'I Wrote This Post in Virtual Reality',
-  'excerpt' => 'A sci-fi author tries to write inside a Meta Quest 3, fails through every "obvious" input method, and ends up with a grudging respect for the tech—plus a blunt take on AI, ethics, and accessibility.',
+  'excerpt' => 'A sci-fi author tries to write inside a Meta Quest 3, fails through every "obvious" input method, and ends up with a grudging respect for the tech.',
   'date'    => '2025-12-29',
   'added'   => '2026-08-25',
   // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
@@ -57,6 +57,7 @@ $post_meta = [
   <figure class="ppm-article-hero">
     <img
       src="<?php echo htmlspecialchars($post_meta['image']); ?>"
+      width="1456" height="816"
       alt="Writing in virtual reality"
     >
     <div class="ppm-article-hero-content">
@@ -138,6 +139,10 @@ $post_meta = [
 
       <p>
         Any technology that allows you to express your unique voice, should be an option and you shouldn't have to justify your choice to use it. Just be original; don't mimic. Don't let AI mimic and claim its word salad as your own. Artificial Intelligence can be a superior search engine. You already use AI in Google. All. The. Time.
+      </p>
+
+      <p>
+        That's the same question I keep circling in <a href="/blogs/authority-of-authors">The Authority of Authors</a>: who gets to claim the words as theirs, and what that claim is actually worth.
       </p>
 
       <p>

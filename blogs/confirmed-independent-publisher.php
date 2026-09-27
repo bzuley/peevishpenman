@@ -3,7 +3,7 @@ $post_meta = [
   'image'   => '/img/librarian.jpg',
   'slug'    => 'confirmed-independent-publisher',
   'title'   => 'Confirmed Independent Publisher',
-  'excerpt' => 'A librarian-turned-writer looks back at how a bookmobile patron, a fake reptilian finance book, and five years of false starts led to becoming a confirmed independent publisher.',
+  'excerpt' => 'A librarian-turned-writer looks back at a bookmobile patron, a fake reptilian finance book, and five years of false starts before going independent.',
   'date'    => '2016-06-01',
   'added'   => '2026-08-28',
   // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
@@ -57,6 +57,7 @@ $post_meta = [
   <figure class="ppm-article-hero">
     <img
       src="<?php echo htmlspecialchars($post_meta['image']); ?>"
+      width="960" height="960"
       alt="Illustration of a librarian paging through a book beside towering shelves, under a night sky full of stars, moons, and planets"
     >
     <div class="ppm-article-hero-content">
@@ -119,6 +120,8 @@ $post_meta = [
       <p>No, I know who I am now. I never wanted to just write books or catalog them. I wanted to make the books. Format and feel their spine. Carry them to the post and mail them. And absolutely love it.</p>
 
       <p>Everything I wish someone had handed me back in 2008—instead of five years, four boyfriends, and six apartments of figuring it out the hard way—went into the free <a href="/pages/writer-secret-society">Writer Secret Society Handbook</a>.</p>
+
+      <p>Years later, I did the actual math on what self-publishing costs and pays in <a href="/blogs/love-of-money-self-publication">For the Love of Money and/or Self-Publication</a>.</p>
     </section>
 
   </article>

@@ -3,7 +3,7 @@ $post_meta = [
   'image'   => '/img/archetypes/everyman_archetype.png',
   'slug'    => 'the-everyman',
   'title'   => 'The Everyman: The Anchor of the Story',
-  'excerpt' => 'From Pearson\'s "Realist" to medieval morality plays to Samwise Gamgee, a look at the archetype of continuity, and why writers keep mistaking ordinary for unimportant.',
+  'excerpt' => 'From Pearson\'s "Realist" to medieval morality plays to Samwise Gamgee: the archetype of continuity, and why writers keep mistaking ordinary for unimportant.',
   'date'    => '2026-08-28',
   'added'   => '2026-08-28',
   // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
@@ -57,6 +57,7 @@ $post_meta = [
   <figure class="ppm-article-hero">
     <img
       src="<?php echo htmlspecialchars($post_meta['image']); ?>"
+      width="1536" height="1024"
       alt="A man in a wool sweater sits on a porch step with his dog, holding a mug of coffee"
     >
     <div class="ppm-article-hero-content">
@@ -165,6 +166,8 @@ $post_meta = [
       <p>The Everyman should not be written simply as the sensible character who is always proven right. His limitations come from the same place as his virtues. The anchor that keeps everyone from drifting can also prevent the ship from moving.</p>
 
       <p>Necessary because he preserves what matters but dangerous when preservation becomes the goal, the Everyman archetype is grounded. Accentuate him to give your stories relatability. Use him to react to the supernatural, bizarre characters, contrast ambition, or build empathy.</p>
+
+      <p>He's also the opposite end of the wheel from <a href="/blogs/the-magician">The Magician</a>: one archetype holds the world together, the other keeps changing what it can become.</p>
     </section>
 
   </article>
