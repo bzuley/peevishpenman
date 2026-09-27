@@ -3,7 +3,7 @@ $post_meta = [
   'image'   => '/img/general/holy_grail.png',
   'slug'    => 'what-was-the-holy-grail',
   'title'   => 'What Was the Holy Grail Before It Was Holy?',
-  'excerpt' => 'The first Grail story never calls it holy or even clearly a cup. How a golden serving dish in an unfinished romance became the cup of Christ—and what that teaches writers about myth.',
+  'excerpt' => 'The first Grail story never calls it holy or even clearly a cup. How a golden serving dish became the cup of Christ—and what that teaches writers about myth.',
   'date'    => '2016-10-26',
   'added'   => '2026-09-27',
   // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
@@ -59,6 +59,7 @@ ppm_require_published($post_meta);
   <figure class="ppm-article-hero">
     <img
       src="<?php echo htmlspecialchars($post_meta['image']); ?>"
+      width="1536" height="1024"
       alt="A young woman in a pale medieval gown descends a candlelit stone staircase carrying a glowing golden chalice, watched by knights in chainmail and red cloaks"
     >
     <div class="ppm-article-hero-content">

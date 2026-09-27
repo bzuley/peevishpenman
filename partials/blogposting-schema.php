@@ -20,7 +20,7 @@ if ($schema_image !== '' && strpos($schema_image, 'http') !== 0) {
   'image' => $schema_image,
   'datePublished' => $post_meta['date'],
   'dateModified' => $post_meta['added'] ?? $post_meta['date'],
-  'author' => ['@type' => 'Person', 'name' => 'OA Allen'],
+  'author' => ['@type' => 'Person', 'name' => 'OA Allen', 'url' => 'https://peevishpenman.com/pages/about'],
   'publisher' => ['@type' => 'Organization', 'name' => 'Peevish Penman'],
   'mainEntityOfPage' => ['@type' => 'WebPage', '@id' => $schema_url],
 ], JSON_UNESCAPED_SLASHES); ?>

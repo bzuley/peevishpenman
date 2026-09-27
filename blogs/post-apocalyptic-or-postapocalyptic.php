@@ -3,7 +3,7 @@ $post_meta = [
   'image'   => '/img/general/wasteland_alas_babylon.png',
   'slug'    => 'post-apocalyptic-or-postapocalyptic',
   'title'   => 'Post Apocalyptic or Post-Apocalyptic or Postapocalyptic?',
-  'excerpt' => 'A tongue-in-cheek case for dropping the hyphen from "post-apocalyptic"—and a look at why search engines, spell-check, and plain laziness might matter more than the rulebook.',
+  'excerpt' => 'A tongue-in-cheek case for dropping the hyphen from "post-apocalyptic"—and why search engines and plain laziness might matter more than the rulebook.',
   'date'    => '2016-02-01',
   'added'   => '2026-09-26',
   // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
@@ -57,6 +57,7 @@ $post_meta = [
   <figure class="ppm-article-hero">
     <img
       src="<?php echo htmlspecialchars($post_meta['image']); ?>"
+      width="1672" height="941"
       alt="An abandoned roadside gas station and diner with rusted vintage cars, overgrown pavement, and a wildfire smoke plume on the horizon"
     >
     <div class="ppm-article-hero-content">
@@ -185,6 +186,11 @@ $post_meta = [
         world and "post-apocalyptic" fiction starts five minutes after. And they do so because
         "postapocalyptic" sounds smarter. More mysterious. It's deeper. Ten minutes of profundity. In sum, people
         search for "postapocalyptic" books when they actually want apocalyptic work.
+      </p>
+
+      <p>
+        If you'd rather argue about the word itself than the hyphen, I went down that hole already in
+        <a href="/blogs/wasteland">Wasteland</a>.
       </p>
     </section>
 

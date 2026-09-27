@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <title>Reptilian Conspiracy Coloring Book – Peevish Penman</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="The Reptilian Conspiracy Coloring Book by OA Allen — a satirical adult coloring book for anyone who suspects the people in charge might not be entirely human. Available now on Amazon.">
+  <meta name="description" content="A satirical adult coloring book for anyone who suspects the people in charge might not be entirely human. Available now on Amazon.">
   <meta name="author" content="OA Allen">
 
   <link rel="canonical" href="https://peevishpenman.com/pages/coloring-book">

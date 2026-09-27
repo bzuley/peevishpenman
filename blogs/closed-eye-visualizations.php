@@ -3,7 +3,7 @@ $post_meta = [
   'image'   => '/img/cev-hero.jpg',
   'slug'    => 'closed-eye-visualizations',
   'title'   => 'Meditation - Closed Eye Visualizations',
-  'excerpt' => 'Exploring the phenomenon of closed-eye visualizations in meditation—from subtle patterns to vivid imagery. A personal account of CEVs, their neuroscience, and their role in inner alchemy.',
+  'excerpt' => 'Exploring closed-eye visualizations in meditation, from subtle patterns to vivid imagery: a personal account of CEVs, their neuroscience, and inner alchemy.',
   'date'    => '2024-12-20',
   'added'   => '2026-08-25',
   // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
@@ -58,6 +58,7 @@ $post_meta = [
     <img
       class="ppm-fade-mask"
       src="<?php echo htmlspecialchars($post_meta['image']); ?>"
+      width="1024" height="1024"
       alt="Illustration of a woman meditating in lotus position with eyes closed, haloed by concentric art-deco rings of light"
     >
     <div class="ppm-article-hero-content">
@@ -238,6 +239,8 @@ $post_meta = [
       <p>Unlike most forms of meditation, alchemical mediators emphasize transformation. I personally keep a journal and document how my CEVs evolve. I use dream interpretation and symbolism to understand what I encounter on a deeper level. I even know when to expect amusing imagery and imagery that distresses me, because I am more aware of my own mental state.</p>
 
       <p>Sometimes I wonder where we would be as a species if we hadn't suppressed exploration of the mind.</p>
+
+      <p>History offers its own case study: I wrote about how thoroughly we suppressed <a href="/blogs/newton-alchemist">Isaac Newton's own decades of alchemical work</a>.</p>
 
       <p>It's a question I write into fiction, too. <a href="/pages/bright-dark">The Bright Dark</a> imagines a lost process called rarefication, where people shed their physical bodies and become luminous entities called plasmoids—a fictional exaggeration of exactly the kind of dissolving-into-light imagery I keep describing above. I didn't plan that overlap. It found me anyway.</p>
     </section>

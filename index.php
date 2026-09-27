@@ -46,7 +46,7 @@
     "name": "Peevish Penman",
     "url": "https://peevishpenman.com/",
     "description": "Creative home of OA Allen: metaphysical science fiction, consciousness, and the Delcath Universe.",
-    "publisher": { "@type": "Person", "name": "OA Allen" }
+    "publisher": { "@type": "Person", "name": "OA Allen", "url": "https://peevishpenman.com/pages/about" }
   }
   </script>
 

@@ -3,7 +3,7 @@ $post_meta = [
   'image'   => '/img/whirlwind.jpg',
   'slug'    => 'wasteland',
   'title'   => 'Wasteland',
-  'excerpt' => 'Merriam-Webster says a wasteland is barren, ugly, and spiritually arid. So why does the word feel so good to write? A dig through etymology, Chernobyl, and the Wasteland Rules of 1838.',
+  'excerpt' => 'Merriam-Webster says a wasteland is barren and spiritually arid. So why does the word feel so good to write? A dig through etymology, Chernobyl, and 1838 law.',
   'date'    => '2016-08-01',
   'added'   => '2026-08-28',
   // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
@@ -57,6 +57,7 @@ $post_meta = [
   <figure class="ppm-article-hero">
     <img
       src="<?php echo htmlspecialchars($post_meta['image']); ?>"
+      width="640" height="640"
       alt="Illustration of an old writer at a typewriter, his words spiraling upward into a whirlwind of flying pages against a starry sky"
     >
     <div class="ppm-article-hero-content">
@@ -187,9 +188,11 @@ $post_meta = [
       <p>They are the acres that stimulate the imagination and inspire.</p>
 
       <p>It's the same territory—literal, this time—that I keep returning to in <a href="/pages/bright-dark">The Bright Dark</a>, where the Wastelands are a named place on the map, not just a mood. Enormous predators haunt them. Nobody remembers what they used to be. Miles of possibility, and most of it wants to eat you.</p>
+
+      <p>If you'd rather argue about the hyphen than the etymology, I've got a post for that too: <a href="/blogs/post-apocalyptic-or-postapocalyptic">Post Apocalyptic or Post-Apocalyptic or Postapocalyptic?</a></p>
     </section>
 
-    <p class="ppm-article-disclaimer"><em>Carrie Bailey is the author of the Immortal Coffee Novels.</em></p>
+    <p class="ppm-article-disclaimer"><em><a href="/pages/about">OA Allen</a> is the author of <a href="/pages/bright-dark">The Bright Dark</a>.</em></p>
 
   </article>
 </main>
