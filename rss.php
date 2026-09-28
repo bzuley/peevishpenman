@@ -16,7 +16,7 @@ echo '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
   <channel>
     <title>Peevish Penman</title>
     <link>https://peevishpenman.com/articles</link>
-    <description>Essays and dispatches from OA Allen on self-publishing, character archetypes, and metaphysical science fiction.</description>
+    <description>Articles on writing, science fiction, history, consciousness, technology, publishing, and unusual questions worth investigating in the world of speculative fiction.</description>
     <language>en-us</language>
     <atom:link href="https://peevishpenman.com/rss.xml" rel="self" type="application/rss+xml" />
 <?php foreach ($posts as $post):

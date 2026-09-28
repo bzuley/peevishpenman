@@ -6,7 +6,7 @@
   <title>Peevish Penman | Metaphysical Science Fiction by OA Allen</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="OA Allen writes consciousness-driven science fiction set in the Delcath Universe: plasmoids, mind-physics, and stories with heart. Welcome to Peevish Penman.">
+  <meta name="description" content="OA Allen is a science-fiction writer, artist, and researcher exploring consciousness, technology, belief, and the stranger edges of reality.">
   <meta name="author" content="OA Allen">
   <meta name="google-site-verification" content="G_nNm6qUrcfYjLupL8e5BsdlUhDpi7MTdHbswkTKzJo">
 
@@ -15,7 +15,7 @@
   <!-- Open Graph -->
   <meta property="og:site_name" content="Peevish Penman">
   <meta property="og:title" content="OA Allen | Peevish Penman">
-  <meta property="og:description" content="Consciousness-driven science fiction, plasmoid metaphysics, and the Delcath Universe by OA Allen.">
+  <meta property="og:description" content="OA Allen is a science-fiction writer, artist, and researcher exploring consciousness, technology, belief, and the stranger edges of reality.">
   <meta property="og:url" content="https://peevishpenman.com/">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://peevishpenman.com/img/peevish-penman-social-share-1200x630.png">
@@ -26,7 +26,7 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="OA Allen | Peevish Penman">
-  <meta name="twitter:description" content="Consciousness-driven science fiction, plasmoid metaphysics, and the Delcath Universe by OA Allen.">
+  <meta name="twitter:description" content="OA Allen is a science-fiction writer, artist, and researcher exploring consciousness, technology, belief, and the stranger edges of reality.">
   <meta name="twitter:image" content="https://peevishpenman.com/img/peevish-penman-social-share-1200x630.png">
 
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/favicons.php'; ?>
