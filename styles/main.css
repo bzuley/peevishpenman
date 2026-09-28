@@ -58,14 +58,17 @@ ul, ol {
      PEEVISH PENMAN BRAND COLORS — unified system
      ========================================================= */
 
-  /* Primary brand: Hermes typewriter teal-mint */
-  --ppm-hermes: #2FA891;
+  /* Primary brand: Hermes 3000 green, calibrated toward the real keycaps */
+  --ppm-hermes: #3E986B;
 
   /* Hover / glow variant — luminous aura */
-  --ppm-hermes-lumen: #4FC3AC;
+  --ppm-hermes-lumen: #69BF8E;
 
   /* Deep variant for subtle contrast moments */
-  --ppm-hermes-shadow: #1D7A68;
+  --ppm-hermes-shadow: #266D4C;
+
+  /* Pale keycap mint — for small accents */
+  --ppm-hermes-key: #B5D9BF;
 
 
   /* =========================================================
@@ -81,7 +84,7 @@ ul, ol {
   --ppm-surface-soft: #0a0d12;
 
   /* Borders and subtle outlines */
-  --ppm-border-soft: rgba(47, 168, 145, 0.20);
+  --ppm-border-soft: rgba(62, 152, 107, 0.20);
 
 
   /* =========================================================
@@ -463,7 +466,7 @@ small {
   color: transparent;
 
   filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.18))
-          drop-shadow(0 0 6px rgba(79, 195, 172, 0.15));
+          drop-shadow(0 0 6px rgba(105, 191, 142, 0.15));
 }
 
 /* logline text */
