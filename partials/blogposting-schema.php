@@ -6,8 +6,9 @@
 require_once __DIR__ . '/../blog-config.php';
 ppm_record_view($post_meta['slug']);
 $schema_url = 'https://peevishpenman.com/articles/' . rawurlencode($post_meta['slug']);
-$schema_image = $post_meta['image'];
-if ($schema_image !== '' && strpos($schema_image, 'http') !== 0) {
+// Posts without a hero image fall back to the site-wide share image.
+$schema_image = $post_meta['image'] ?: '/img/peevish-penman-social-share-1200x630.png';
+if (strpos($schema_image, 'http') !== 0) {
   $schema_image = 'https://peevishpenman.com' . $schema_image;
 }
 $schema_author_name = $post_meta['author'] ?? 'OA Allen';
