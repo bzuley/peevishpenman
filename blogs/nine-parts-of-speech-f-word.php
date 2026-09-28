@@ -9,7 +9,11 @@ $post_meta = [
   // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
   // Powers the quicklink buttons on index.php (see /blog-tag.php).
   'tags'    => 'wordcraft, writing',
-  'author'  => 'OA Allen'
+  // Credited to Carrie Bailey by name in the original 2010 publication,
+  // rather than the OA Allen pen name used elsewhere on the site. This
+  // post's own "Who wrote this" banner (below) serves as its byline, so
+  // the generic byline partial isn't included here.
+  'author'  => 'Carrie Bailey'
 ];
 ?>
 <!DOCTYPE html>
