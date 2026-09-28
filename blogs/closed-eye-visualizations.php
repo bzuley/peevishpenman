@@ -246,8 +246,8 @@ $post_meta = [
       <p>It's a question I write into fiction, too. <a href="/pages/bright-dark">The Bright Dark</a> imagines a lost process called rarefication, where people shed their physical bodies and become luminous entities called plasmoids—a fictional exaggeration of exactly the kind of dissolving-into-light imagery I keep describing above. I didn't plan that overlap. It found me anyway.</p>
     </section>
 
-  <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/related-posts.php'; ?>
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/byline.php'; ?>
+  <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/related-posts.php'; ?>
   </article>
 </main>
 

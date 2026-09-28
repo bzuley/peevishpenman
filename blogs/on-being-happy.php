@@ -248,8 +248,8 @@ $post_meta = [
       <p>If happiness is your destination, does it matter as much what else you find there?</p>
     </section>
 
-  <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/related-posts.php'; ?>
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/byline.php'; ?>
+  <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/related-posts.php'; ?>
   </article>
 </main>
 

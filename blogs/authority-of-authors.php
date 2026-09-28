@@ -187,8 +187,8 @@ $post_meta = [
       <p>If you want help writing your own story on the page, the free <a href="/pages/writer-secret-society">Writer Secret Society Handbook</a> is a good place to start.</p>
     </section>
 
-  <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/related-posts.php'; ?>
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/byline.php'; ?>
+  <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/related-posts.php'; ?>
   </article>
 </main>
 

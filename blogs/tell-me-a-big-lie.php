@@ -141,8 +141,8 @@ $post_meta = [
       <p>Authority always needs a story to back it up. I dug into where that word actually comes from in <a href="/blogs/authority-of-authors">The Authority of Authors</a>.</p>
     </section>
 
-  <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/related-posts.php'; ?>
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/byline.php'; ?>
+  <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/related-posts.php'; ?>
   </article>
 </main>
 

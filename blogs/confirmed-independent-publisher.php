@@ -125,8 +125,8 @@ $post_meta = [
       <p>Years later, I did the actual math on what self-publishing costs and pays in <a href="/blogs/love-of-money-self-publication">For the Love of Money and/or Self-Publication</a>.</p>
     </section>
 
-  <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/related-posts.php'; ?>
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/byline.php'; ?>
+  <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/related-posts.php'; ?>
   </article>
 </main>
 

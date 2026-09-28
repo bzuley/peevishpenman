@@ -295,3 +295,135 @@ function ppm_get_featured_post($posts) {
     }
     return $featured;
 }
+
+// SQLite database backing site search (and, later, other durable data).
+// Lives under partials/data/, alongside the existing view-count and
+// newsletter-signup files, which .htaccess blocks from direct access.
+const PPM_DB_FILE = __DIR__ . '/partials/data/ppm.sqlite';
+
+/**
+ * Shared PDO connection to the site's SQLite database, created (with its
+ * schema) on first use. Returns null if SQLite isn't available or the
+ * data directory can't be created, so callers can fail gracefully
+ * instead of taking down the page.
+ */
+function ppm_db() {
+    static $pdo = 'unset';
+    if ($pdo !== 'unset') {
+        return $pdo;
+    }
+
+    $dir = dirname(PPM_DB_FILE);
+    if (!is_dir($dir) && !@mkdir($dir, 0755, true)) {
+        return $pdo = null;
+    }
+
+    try {
+        $pdo = new PDO('sqlite:' . PPM_DB_FILE);
+        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $pdo->exec("CREATE TABLE IF NOT EXISTS ppm_meta (key TEXT PRIMARY KEY, value TEXT)");
+        $pdo->exec("CREATE VIRTUAL TABLE IF NOT EXISTS posts_fts USING fts5(
+            slug UNINDEXED, title, excerpt, tags, tokenize = 'porter unicode61'
+        )");
+    } catch (PDOException $e) {
+        return $pdo = null;
+    }
+    return $pdo;
+}
+
+/**
+ * Cheap fingerprint of the posts directory (file count + latest edit
+ * time), used to detect when the search index has gone stale without
+ * having to re-read every post on every search.
+ */
+function ppm_search_fingerprint() {
+    $files = glob($_SERVER['DOCUMENT_ROOT'] . '/blogs/*.php') ?: [];
+    $latest = 0;
+    foreach ($files as $file) {
+        $latest = max($latest, filemtime($file));
+    }
+    return count($files) . ':' . $latest;
+}
+
+/**
+ * Rebuilds the posts_fts index from ppm_get_blog_posts() when the posts
+ * directory has changed since the last index, so search results stay
+ * current without a separate build/deploy step.
+ */
+function ppm_search_sync($pdo) {
+    $fingerprint = ppm_search_fingerprint();
+    $stored = $pdo->query("SELECT value FROM ppm_meta WHERE key = 'search_fingerprint'")->fetchColumn();
+    if ($stored === $fingerprint) {
+        return;
+    }
+
+    $pdo->beginTransaction();
+    $pdo->exec("DELETE FROM posts_fts");
+    $insert = $pdo->prepare(
+        "INSERT INTO posts_fts (slug, title, excerpt, tags) VALUES (:slug, :title, :excerpt, :tags)"
+    );
+    foreach (ppm_get_blog_posts() as $post) {
+        $insert->execute([
+            ':slug'    => $post['slug'],
+            ':title'   => $post['title'],
+            ':excerpt' => $post['excerpt'],
+            ':tags'    => implode(' ', $post['tags']),
+        ]);
+    }
+    $pdo->prepare(
+        "INSERT INTO ppm_meta (key, value) VALUES ('search_fingerprint', :fp)
+         ON CONFLICT(key) DO UPDATE SET value = :fp"
+    )->execute([':fp' => $fingerprint]);
+    $pdo->commit();
+}
+
+/**
+ * Full-text search over post titles, excerpts, and tags, ranked by
+ * relevance (SQLite FTS5 + bm25). Returns full post metadata (image,
+ * date, etc.) from ppm_get_blog_posts(), in ranked order. Returns an
+ * empty array on a blank query or if search is unavailable, rather
+ * than erroring the page.
+ */
+function ppm_search_posts($query, $limit = 20) {
+    preg_match_all('/\w+/u', (string) $query, $matches);
+    $tokens = $matches[0];
+    if (empty($tokens)) {
+        return [];
+    }
+
+    $pdo = ppm_db();
+    if ($pdo === null) {
+        return [];
+    }
+
+    try {
+        ppm_search_sync($pdo);
+
+        $match_expr = implode(' OR ', array_map(function ($token) {
+            return '"' . $token . '"*';
+        }, $tokens));
+
+        $stmt = $pdo->prepare(
+            "SELECT slug FROM posts_fts WHERE posts_fts MATCH :q ORDER BY bm25(posts_fts) LIMIT :limit"
+        );
+        $stmt->bindValue(':q', $match_expr, PDO::PARAM_STR);
+        $stmt->bindValue(':limit', $limit, PDO::PARAM_INT);
+        $stmt->execute();
+        $ranked_slugs = $stmt->fetchAll(PDO::FETCH_COLUMN);
+    } catch (PDOException $e) {
+        return [];
+    }
+
+    $by_slug = [];
+    foreach (ppm_get_blog_posts() as $post) {
+        $by_slug[$post['slug']] = $post;
+    }
+
+    $results = [];
+    foreach ($ranked_slugs as $slug) {
+        if (isset($by_slug[$slug])) {
+            $results[] = $by_slug[$slug];
+        }
+    }
+    return $results;
+}
