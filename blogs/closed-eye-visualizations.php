@@ -8,7 +8,8 @@ $post_meta = [
   'added'   => '2026-08-25',
   // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
   // Powers the quicklink buttons on index.php (see /blog-tag.php).
-  'tags'    => 'meditation, consciousness, metaphysicalscifi, anomalousphenomena'
+  'tags'    => 'meditation, consciousness, metaphysicalscifi, anomalousphenomena',
+  'author'  => 'OA Allen'
 ];
 ?>
 <!DOCTYPE html>
@@ -19,7 +20,7 @@ $post_meta = [
   <title><?php echo htmlspecialchars($post_meta['title']); ?> – Peevish Penman</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="<?php echo htmlspecialchars($post_meta['excerpt']); ?>">
-  <meta name="author" content="OA Allen">
+  <meta name="author" content="<?php echo htmlspecialchars($post_meta['author']); ?>">
 
   <link rel="canonical" href="https://peevishpenman.com/blogs/<?php echo htmlspecialchars($post_meta['slug']); ?>">
 
@@ -245,6 +246,7 @@ $post_meta = [
       <p>It's a question I write into fiction, too. <a href="/pages/bright-dark">The Bright Dark</a> imagines a lost process called rarefication, where people shed their physical bodies and become luminous entities called plasmoids—a fictional exaggeration of exactly the kind of dissolving-into-light imagery I keep describing above. I didn't plan that overlap. It found me anyway.</p>
     </section>
 
+  <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/byline.php'; ?>
   </article>
 </main>
 

@@ -5,7 +5,8 @@ $post_meta = [
   'title'   => 'Why Did We Forget Isaac Newton Was an Alchemist?',
   'excerpt' => 'The father of modern physics wrote about a million words on alchemy. Why we forgot, and what inner alchemy says about experience science still can’t measure.',
   'date'    => '2026-09-28',
-  'tags'    => 'consciousness, anomalousphenomena, metaphysicalscifi, writing'
+  'tags'    => 'consciousness, anomalousphenomena, metaphysicalscifi, writing',
+  'author'  => 'OA Allen'
 ];
 require_once $_SERVER['DOCUMENT_ROOT'] . '/blog-config.php';
 ppm_require_published($post_meta);
@@ -18,7 +19,7 @@ ppm_require_published($post_meta);
   <title><?php echo htmlspecialchars($post_meta['title']); ?> – Peevish Penman</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="<?php echo htmlspecialchars($post_meta['excerpt']); ?>">
-  <meta name="author" content="OA Allen">
+  <meta name="author" content="<?php echo htmlspecialchars($post_meta['author']); ?>">
 
   <link rel="canonical" href="https://peevishpenman.com/blogs/<?php echo htmlspecialchars($post_meta['slug']); ?>">
 
@@ -177,6 +178,7 @@ ppm_require_published($post_meta);
       <p>Wherever.</p>
     </section>
 
+  <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/byline.php'; ?>
   </article>
 </main>
 

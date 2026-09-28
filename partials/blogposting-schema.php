@@ -10,6 +10,11 @@ $schema_image = $post_meta['image'];
 if ($schema_image !== '' && strpos($schema_image, 'http') !== 0) {
   $schema_image = 'https://peevishpenman.com' . $schema_image;
 }
+$schema_author_name = $post_meta['author'] ?? 'OA Allen';
+$schema_author = ['@type' => 'Person', 'name' => $schema_author_name];
+if ($schema_author_name === 'OA Allen') {
+  $schema_author['url'] = 'https://peevishpenman.com/pages/about';
+}
 ?>
 <script type="application/ld+json">
 <?php echo json_encode([
@@ -20,7 +25,7 @@ if ($schema_image !== '' && strpos($schema_image, 'http') !== 0) {
   'image' => $schema_image,
   'datePublished' => $post_meta['date'],
   'dateModified' => $post_meta['added'] ?? $post_meta['date'],
-  'author' => ['@type' => 'Person', 'name' => 'OA Allen', 'url' => 'https://peevishpenman.com/pages/about'],
+  'author' => $schema_author,
   'publisher' => ['@type' => 'Organization', 'name' => 'Peevish Penman'],
   'mainEntityOfPage' => ['@type' => 'WebPage', '@id' => $schema_url],
 ], JSON_UNESCAPED_SLASHES); ?>

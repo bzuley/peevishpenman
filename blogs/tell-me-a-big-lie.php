@@ -8,7 +8,8 @@ $post_meta = [
   'added'   => '2026-09-26',
   // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
   // Powers the quicklink buttons on index.php (see /blog-tag.php).
-  'tags'    => 'culture, politics, colonization'
+  'tags'    => 'culture, politics, colonization',
+  'author'  => 'OA Allen'
 ];
 ?>
 <!DOCTYPE html>
@@ -19,7 +20,7 @@ $post_meta = [
   <title><?php echo htmlspecialchars($post_meta['title']); ?> – Peevish Penman</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="<?php echo htmlspecialchars($post_meta['excerpt']); ?>">
-  <meta name="author" content="OA Allen">
+  <meta name="author" content="<?php echo htmlspecialchars($post_meta['author']); ?>">
 
   <link rel="canonical" href="https://peevishpenman.com/blogs/<?php echo htmlspecialchars($post_meta['slug']); ?>">
 
@@ -140,6 +141,7 @@ $post_meta = [
       <p>Authority always needs a story to back it up. I dug into where that word actually comes from in <a href="/blogs/authority-of-authors">The Authority of Authors</a>.</p>
     </section>
 
+  <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/byline.php'; ?>
   </article>
 </main>
 
