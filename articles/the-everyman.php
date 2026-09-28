@@ -7,7 +7,7 @@ $post_meta = [
   'date'    => '2026-08-28',
   'added'   => '2026-08-28',
   // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
-  // Powers the quicklink buttons on index.php (see /blog-tag.php).
+  // Powers the quicklink buttons on index.php (see /article-tag.php).
   'tags'    => 'archetypes, writing',
   'author'  => 'OA Allen'
 ];
@@ -22,13 +22,13 @@ $post_meta = [
   <meta name="description" content="<?php echo htmlspecialchars($post_meta['excerpt']); ?>">
   <meta name="author" content="<?php echo htmlspecialchars($post_meta['author']); ?>">
 
-  <link rel="canonical" href="https://peevishpenman.com/blogs/<?php echo htmlspecialchars($post_meta['slug']); ?>">
+  <link rel="canonical" href="https://peevishpenman.com/articles/<?php echo htmlspecialchars($post_meta['slug']); ?>">
 
   <!-- Open Graph -->
   <meta property="og:title" content="<?php echo htmlspecialchars($post_meta['title']); ?>">
   <meta property="og:description" content="<?php echo htmlspecialchars($post_meta['excerpt']); ?>">
   <meta property="og:type" content="article">
-  <meta property="og:url" content="https://peevishpenman.com/blogs/<?php echo htmlspecialchars($post_meta['slug']); ?>">
+  <meta property="og:url" content="https://peevishpenman.com/articles/<?php echo htmlspecialchars($post_meta['slug']); ?>">
   <meta property="og:image" content="https://peevishpenman.com<?php echo htmlspecialchars($post_meta['image']); ?>">
 
   <!-- Twitter Card -->
@@ -168,7 +168,7 @@ $post_meta = [
 
       <p>Necessary because he preserves what matters but dangerous when preservation becomes the goal, the Everyman archetype is grounded. Accentuate him to give your stories relatability. Use him to react to the supernatural, bizarre characters, contrast ambition, or build empathy.</p>
 
-      <p>He's also the opposite end of the wheel from <a href="/blogs/the-magician">The Magician</a>: one archetype holds the world together, the other keeps changing what it can become.</p>
+      <p>He's also the opposite end of the wheel from <a href="/articles/the-magician">The Magician</a>: one archetype holds the world together, the other keeps changing what it can become.</p>
     </section>
 
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/byline.php'; ?>

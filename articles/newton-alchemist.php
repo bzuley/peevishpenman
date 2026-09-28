@@ -21,13 +21,13 @@ ppm_require_published($post_meta);
   <meta name="description" content="<?php echo htmlspecialchars($post_meta['excerpt']); ?>">
   <meta name="author" content="<?php echo htmlspecialchars($post_meta['author']); ?>">
 
-  <link rel="canonical" href="https://peevishpenman.com/blogs/<?php echo htmlspecialchars($post_meta['slug']); ?>">
+  <link rel="canonical" href="https://peevishpenman.com/articles/<?php echo htmlspecialchars($post_meta['slug']); ?>">
 
   <!-- Open Graph -->
   <meta property="og:title" content="<?php echo htmlspecialchars($post_meta['title']); ?>">
   <meta property="og:description" content="<?php echo htmlspecialchars($post_meta['excerpt']); ?>">
   <meta property="og:type" content="article">
-  <meta property="og:url" content="https://peevishpenman.com/blogs/<?php echo htmlspecialchars($post_meta['slug']); ?>">
+  <meta property="og:url" content="https://peevishpenman.com/articles/<?php echo htmlspecialchars($post_meta['slug']); ?>">
   <meta property="og:image" content="https://peevishpenman.com/img/newton-alchemist-social.jpg">
 
   <!-- Twitter Card -->
@@ -129,7 +129,7 @@ ppm_require_published($post_meta);
 
       <p>But so is the stuff we can measure.</p>
 
-      <p>I've spent plenty of time trying to document my own unmeasurable data—see <a href="/blogs/closed-eye-visualizations">Closed-Eye Visualizations</a> for a first-person account of the stuff science still can't quite weigh.</p>
+      <p>I've spent plenty of time trying to document my own unmeasurable data—see <a href="/articles/closed-eye-visualizations">Closed-Eye Visualizations</a> for a first-person account of the stuff science still can't quite weigh.</p>
     </section>
 
     <section>

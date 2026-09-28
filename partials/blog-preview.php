@@ -40,7 +40,7 @@ $blog_items = array_slice($blog_items, 0, $ppm_post_limit);
         <ul>
           <?php foreach ($blog_items as $post) : ?>
             <li class="blog-card<?= $post['slug'] === $ppm_featured_slug ? ' blog-card--featured' : '' ?>">
-              <a href="/blogs/<?= htmlspecialchars($post['slug']) ?>">
+              <a href="/articles/<?= htmlspecialchars($post['slug']) ?>">
                 <?php if (!empty($post['image'])) : ?>
                   <img class="bp-img"
                        src="<?= htmlspecialchars($post['image']) ?>"

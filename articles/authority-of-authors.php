@@ -7,7 +7,7 @@ $post_meta = [
   'date'    => '2026-09-21',
   'added'   => '2026-09-21',
   // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
-  // Powers the quicklink buttons on index.php (see /blog-tag.php).
+  // Powers the quicklink buttons on index.php (see /article-tag.php).
   'tags'    => 'writing, wordcraft, selfpublishing',
   'author'  => 'OA Allen'
 ];
@@ -22,13 +22,13 @@ $post_meta = [
   <meta name="description" content="<?php echo htmlspecialchars($post_meta['excerpt']); ?>">
   <meta name="author" content="<?php echo htmlspecialchars($post_meta['author']); ?>">
 
-  <link rel="canonical" href="https://peevishpenman.com/blogs/<?php echo htmlspecialchars($post_meta['slug']); ?>">
+  <link rel="canonical" href="https://peevishpenman.com/articles/<?php echo htmlspecialchars($post_meta['slug']); ?>">
 
   <!-- Open Graph -->
   <meta property="og:title" content="<?php echo htmlspecialchars($post_meta['title']); ?>">
   <meta property="og:description" content="<?php echo htmlspecialchars($post_meta['excerpt']); ?>">
   <meta property="og:type" content="article">
-  <meta property="og:url" content="https://peevishpenman.com/blogs/<?php echo htmlspecialchars($post_meta['slug']); ?>">
+  <meta property="og:url" content="https://peevishpenman.com/articles/<?php echo htmlspecialchars($post_meta['slug']); ?>">
   <meta property="og:image" content="https://peevishpenman.com<?php echo htmlspecialchars($post_meta['image']); ?>">
 
   <!-- Twitter Card -->
@@ -106,7 +106,7 @@ $post_meta = [
 
       <p>I feel so much more comfortable calling myself a writer.</p>
 
-      <p>This isn't the first time a word's history has taken over one of these posts. If you like this sort of etymological rabbit hole, I went down a similar one in <a href="/blogs/wasteland">Wasteland</a>&mdash;or, if you want the profane version of the same instinct, <a href="/blogs/nine-parts-of-speech-f-word">The Nine Parts of Speech and the F Word</a>.</p>
+      <p>This isn't the first time a word's history has taken over one of these posts. If you like this sort of etymological rabbit hole, I went down a similar one in <a href="/articles/wasteland">Wasteland</a>&mdash;or, if you want the profane version of the same instinct, <a href="/articles/nine-parts-of-speech-f-word">The Nine Parts of Speech and the F Word</a>.</p>
     </section>
 
     <section>
@@ -140,7 +140,7 @@ $post_meta = [
 
       <p>As much as you can, write your own story.</p>
 
-      <p>I wrote about what that choice actually looked like for me in <a href="/blogs/confirmed-independent-publisher">Confirmed Independent Publisher</a>&mdash;five years of false starts before I let myself claim the title.</p>
+      <p>I wrote about what that choice actually looked like for me in <a href="/articles/confirmed-independent-publisher">Confirmed Independent Publisher</a>&mdash;five years of false starts before I let myself claim the title.</p>
     </section>
 
     <section>
@@ -168,7 +168,7 @@ $post_meta = [
 
       <p>And in <em>Dune</em>, almost every major form of authority overlaps: religion, bloodline, wealth, control of resources, military power, prophecy, and narrative. Paul becomes the center of a story that other people begin telling about him, and that story acquires an authority of its own.</p>
 
-      <p>This is the same territory I dig into in <a href="/blogs/the-magician">The Magician</a>: knowledge as power, and how quickly understanding a system curdles into believing you're entitled to run it.</p>
+      <p>This is the same territory I dig into in <a href="/articles/the-magician">The Magician</a>: knowledge as power, and how quickly understanding a system curdles into believing you're entitled to run it.</p>
     </section>
 
     <section>

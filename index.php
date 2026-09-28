@@ -99,13 +99,13 @@
             href="/pages/books">Explore the Books</a>
 
           <a class="ppm-button ppm-button--ghost"
-            href="/blog-tag?tag=selfpublishing">Self-Publishing</a>
+            href="/article-tag?tag=selfpublishing">Self-Publishing</a>
 
           <a class="ppm-button ppm-button--ghost"
-            href="/blog-tag?tag=archetypes">Character Archetypes</a>
+            href="/article-tag?tag=archetypes">Character Archetypes</a>
 
           <a class="ppm-button ppm-button--ghost"
-            href="/blog-tag?tag=sciencefiction">Science Fiction</a>
+            href="/article-tag?tag=sciencefiction">Science Fiction</a>
         </div>
 
         <div class="ppm-quicklinks-description">
@@ -126,19 +126,19 @@
     <nav class="ppm-home-nav ppm-home-widget" aria-label="Explore">
       <h3 class="ppm-home-nav-heading">Explore</h3>
       <ul>
-        <li><a href="/blog-tag?tag=sciencefiction">Science Fiction</a></li>
-        <li><a href="/blog-tag?tag=postapocalypticscifi">Post-Apocalyptic Scifi</a></li>
-        <li><a href="/blog-tag?tag=metaphysicalscifi">Metaphysical Scifi</a></li>
-        <li><a href="/blog-tag?tag=consciousness">Consciousness</a></li>
-        <li><a href="/blog-tag?tag=anomalousphenomena">Anomalous Phenomena</a></li>
-        <li><a href="/blog-tag?tag=losttechnology">Lost Technology</a></li>
-        <li><a href="/blog-tag?tag=technology">Technology</a></li>
-        <li><a href="/blog-tag?tag=worldbuilding">Worldbuilding</a></li>
-        <li><a href="/blog-tag?tag=archetypes">Character Archetypes</a></li>
-        <li><a href="/blog-tag?tag=meditation">Meditation</a></li>
-        <li><a href="/blog-tag?tag=writing">Writing</a></li>
-        <li><a href="/blog-tag?tag=wordcraft">Wordcraft</a></li>
-        <li><a href="/blog-tag?tag=selfpublishing">Self-Publishing</a></li>
+        <li><a href="/article-tag?tag=sciencefiction">Science Fiction</a></li>
+        <li><a href="/article-tag?tag=postapocalypticscifi">Post-Apocalyptic Scifi</a></li>
+        <li><a href="/article-tag?tag=metaphysicalscifi">Metaphysical Scifi</a></li>
+        <li><a href="/article-tag?tag=consciousness">Consciousness</a></li>
+        <li><a href="/article-tag?tag=anomalousphenomena">Anomalous Phenomena</a></li>
+        <li><a href="/article-tag?tag=losttechnology">Lost Technology</a></li>
+        <li><a href="/article-tag?tag=technology">Technology</a></li>
+        <li><a href="/article-tag?tag=worldbuilding">Worldbuilding</a></li>
+        <li><a href="/article-tag?tag=archetypes">Character Archetypes</a></li>
+        <li><a href="/article-tag?tag=meditation">Meditation</a></li>
+        <li><a href="/article-tag?tag=writing">Writing</a></li>
+        <li><a href="/article-tag?tag=wordcraft">Wordcraft</a></li>
+        <li><a href="/article-tag?tag=selfpublishing">Self-Publishing</a></li>
       </ul>
     </nav>
 
@@ -164,7 +164,7 @@
     ?>
     <?php if ($ppm_featured_post) : ?>
       <section class="ppm-home-featured" aria-label="Featured article">
-        <a class="ppm-home-featured-card" href="/blogs/<?= htmlspecialchars($ppm_featured_post['slug']) ?>">
+        <a class="ppm-home-featured-card" href="/articles/<?= htmlspecialchars($ppm_featured_post['slug']) ?>">
           <?php if (!empty($ppm_featured_post['image'])) : ?>
             <img class="ppm-home-featured-img"
                  src="<?= htmlspecialchars($ppm_featured_post['image']) ?>"

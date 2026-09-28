@@ -1,32 +1,44 @@
 <?php
 require_once __DIR__ . '/blog-config.php';
-$blog_items = ppm_get_blog_posts();
+
+$tag = isset($_GET['tag']) ? trim($_GET['tag']) : '';
+$blog_items = $tag !== '' ? ppm_get_posts_by_tag($tag) : [];
+
+$tag_labels = [
+  'selfpublishing'       => 'Self-Publishing',
+  'archetypes'           => 'Character Archetypes',
+  'sciencefiction'       => 'Science Fiction',
+  'writing'              => 'Writing',
+  'wordcraft'            => 'Wordcraft',
+  'meditation'           => 'Meditation',
+  'postapocalypticscifi' => 'Post-Apocalyptic Scifi',
+  'consciousness'        => 'Consciousness',
+  'metaphysicalscifi'    => 'Metaphysical Scifi',
+  'losttechnology'       => 'Lost Technology',
+  'anomalousphenomena'   => 'Anomalous Phenomena',
+  'worldbuilding'        => 'Worldbuilding',
+  'technology'           => 'Technology',
+];
+$tag_label = $tag_labels[strtolower($tag)] ?? ucwords(str_replace(['-', '_'], ' ', $tag));
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <link rel="alternate" type="application/rss+xml" title="Peevish Penman RSS Feed" href="https://peevishpenman.com/rss.xml">
   <meta charset="UTF-8">
-  <title>Articles – Peevish Penman</title>
+  <title><?php echo htmlspecialchars($tag_label); ?> Posts – Peevish Penman</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Essays and dispatches from OA Allen on self-publishing, character archetypes, and metaphysical science fiction.">
+  <meta name="description" content="<?php echo htmlspecialchars($tag_label); ?> posts from OA Allen at Peevish Penman.">
   <meta name="author" content="OA Allen">
 
-  <link rel="canonical" href="https://peevishpenman.com/blog">
+  <link rel="canonical" href="https://peevishpenman.com/article-tag?tag=<?php echo urlencode($tag); ?>">
 
   <!-- Open Graph -->
   <meta property="og:site_name" content="Peevish Penman">
-  <meta property="og:title" content="Articles – Peevish Penman">
-  <meta property="og:description" content="Essays and dispatches from OA Allen on self-publishing, character archetypes, and metaphysical science fiction.">
-  <meta property="og:url" content="https://peevishpenman.com/blog">
+  <meta property="og:title" content="<?php echo htmlspecialchars($tag_label); ?> Posts – Peevish Penman">
+  <meta property="og:description" content="<?php echo htmlspecialchars($tag_label); ?> posts from OA Allen at Peevish Penman.">
+  <meta property="og:url" content="https://peevishpenman.com/article-tag?tag=<?php echo urlencode($tag); ?>">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://peevishpenman.com/img/peevish-penman-social-share-1200x630.png">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Articles – Peevish Penman">
-  <meta name="twitter:description" content="Essays and dispatches from OA Allen on self-publishing, character archetypes, and metaphysical science fiction.">
-  <meta name="twitter:image" content="https://peevishpenman.com/img/peevish-penman-social-share-1200x630.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,17 +55,21 @@ $blog_items = ppm_get_blog_posts();
 
 <section class="ppm-blog-preview">
   <div class="blog-preview">
+    <div class="bp-head">
+      <h2 class="bp-title"><?php echo htmlspecialchars($tag_label); ?></h2>
+    </div>
+
     <div class="blog-container">
 
       <?php if (empty($blog_items)): ?>
-        <p style="color:#f88; max-width:40rem; margin:2rem auto; text-align:center;">
-          No articles found.
+        <p style="color:#B8C9C6; max-width:40rem; margin:2rem auto; text-align:center;">
+          No posts tagged &ldquo;<?php echo htmlspecialchars($tag_label); ?>&rdquo; yet. Check back soon!
         </p>
       <?php else: ?>
         <ul>
           <?php foreach ($blog_items as $post): ?>
             <li class="blog-card">
-              <a href="/blogs/<?php echo htmlspecialchars($post['slug']); ?>">
+              <a href="/articles/<?php echo htmlspecialchars($post['slug']); ?>">
                 <?php if (!empty($post['image'])): ?>
                   <img class="bp-img"
                        src="<?php echo htmlspecialchars($post['image']); ?>"

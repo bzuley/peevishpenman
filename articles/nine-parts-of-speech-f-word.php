@@ -7,7 +7,7 @@ $post_meta = [
   'date'    => '2010-09-23',
   'added'   => '2026-08-25',
   // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
-  // Powers the quicklink buttons on index.php (see /blog-tag.php).
+  // Powers the quicklink buttons on index.php (see /article-tag.php).
   'tags'    => 'wordcraft, writing',
   // Credited to Carrie Bailey by name in the original 2010 publication,
   // rather than the OA Allen pen name used elsewhere on the site. This
@@ -26,13 +26,13 @@ $post_meta = [
   <meta name="description" content="<?php echo htmlspecialchars($post_meta['excerpt']); ?>">
   <meta name="author" content="<?php echo htmlspecialchars($post_meta['author']); ?>">
 
-  <link rel="canonical" href="https://peevishpenman.com/blogs/<?php echo htmlspecialchars($post_meta['slug']); ?>">
+  <link rel="canonical" href="https://peevishpenman.com/articles/<?php echo htmlspecialchars($post_meta['slug']); ?>">
 
   <!-- Open Graph -->
   <meta property="og:title" content="<?php echo htmlspecialchars($post_meta['title']); ?>">
   <meta property="og:description" content="<?php echo htmlspecialchars($post_meta['excerpt']); ?>">
   <meta property="og:type" content="article">
-  <meta property="og:url" content="https://peevishpenman.com/blogs/<?php echo htmlspecialchars($post_meta['slug']); ?>">
+  <meta property="og:url" content="https://peevishpenman.com/articles/<?php echo htmlspecialchars($post_meta['slug']); ?>">
   <meta property="og:image" content="https://peevishpenman.com<?php echo htmlspecialchars($post_meta['image']); ?>">
 
   <!-- Twitter Card -->

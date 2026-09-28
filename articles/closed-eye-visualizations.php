@@ -7,7 +7,7 @@ $post_meta = [
   'date'    => '2024-12-20',
   'added'   => '2026-08-25',
   // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
-  // Powers the quicklink buttons on index.php (see /blog-tag.php).
+  // Powers the quicklink buttons on index.php (see /article-tag.php).
   'tags'    => 'meditation, consciousness, metaphysicalscifi, anomalousphenomena',
   'author'  => 'OA Allen'
 ];
@@ -22,13 +22,13 @@ $post_meta = [
   <meta name="description" content="<?php echo htmlspecialchars($post_meta['excerpt']); ?>">
   <meta name="author" content="<?php echo htmlspecialchars($post_meta['author']); ?>">
 
-  <link rel="canonical" href="https://peevishpenman.com/blogs/<?php echo htmlspecialchars($post_meta['slug']); ?>">
+  <link rel="canonical" href="https://peevishpenman.com/articles/<?php echo htmlspecialchars($post_meta['slug']); ?>">
 
   <!-- Open Graph -->
   <meta property="og:title" content="<?php echo htmlspecialchars($post_meta['title']); ?>">
   <meta property="og:description" content="<?php echo htmlspecialchars($post_meta['excerpt']); ?>">
   <meta property="og:type" content="article">
-  <meta property="og:url" content="https://peevishpenman.com/blogs/<?php echo htmlspecialchars($post_meta['slug']); ?>">
+  <meta property="og:url" content="https://peevishpenman.com/articles/<?php echo htmlspecialchars($post_meta['slug']); ?>">
   <meta property="og:image" content="https://peevishpenman.com<?php echo htmlspecialchars($post_meta['image']); ?>">
 
   <!-- Twitter Card -->
@@ -241,7 +241,7 @@ $post_meta = [
 
       <p>Sometimes I wonder where we would be as a species if we hadn't suppressed exploration of the mind.</p>
 
-      <p>History offers its own case study: I wrote about how thoroughly we suppressed <a href="/blogs/newton-alchemist">Isaac Newton's own decades of alchemical work</a>.</p>
+      <p>History offers its own case study: I wrote about how thoroughly we suppressed <a href="/articles/newton-alchemist">Isaac Newton's own decades of alchemical work</a>.</p>
 
       <p>It's a question I write into fiction, too. <a href="/pages/bright-dark">The Bright Dark</a> imagines a lost process called rarefication, where people shed their physical bodies and become luminous entities called plasmoids—a fictional exaggeration of exactly the kind of dissolving-into-light imagery I keep describing above. I didn't plan that overlap. It found me anyway.</p>
     </section>

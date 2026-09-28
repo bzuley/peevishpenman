@@ -7,7 +7,7 @@ $post_meta = [
   'date'    => '2016-10-26',
   'added'   => '2026-09-27',
   // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
-  // Powers the quicklink buttons on index.php (see /blog-tag.php).
+  // Powers the quicklink buttons on index.php (see /article-tag.php).
   'tags'    => 'worldbuilding, wordcraft, writing',
   'author'  => 'OA Allen'
 ];
@@ -24,13 +24,13 @@ ppm_require_published($post_meta);
   <meta name="description" content="<?php echo htmlspecialchars($post_meta['excerpt']); ?>">
   <meta name="author" content="<?php echo htmlspecialchars($post_meta['author']); ?>">
 
-  <link rel="canonical" href="https://peevishpenman.com/blogs/<?php echo htmlspecialchars($post_meta['slug']); ?>">
+  <link rel="canonical" href="https://peevishpenman.com/articles/<?php echo htmlspecialchars($post_meta['slug']); ?>">
 
   <!-- Open Graph -->
   <meta property="og:title" content="<?php echo htmlspecialchars($post_meta['title']); ?>">
   <meta property="og:description" content="<?php echo htmlspecialchars($post_meta['excerpt']); ?>">
   <meta property="og:type" content="article">
-  <meta property="og:url" content="https://peevishpenman.com/blogs/<?php echo htmlspecialchars($post_meta['slug']); ?>">
+  <meta property="og:url" content="https://peevishpenman.com/articles/<?php echo htmlspecialchars($post_meta['slug']); ?>">
   <meta property="og:image" content="https://peevishpenman.com<?php echo htmlspecialchars($post_meta['image']); ?>">
 
   <!-- Twitter Card -->
@@ -196,8 +196,8 @@ ppm_require_published($post_meta);
     <section>
       <p class="ppm-article-disclaimer">
         <strong>Related reading:</strong>
-        <a href="/blogs/what-the-knights-templar-found">What the Knights Templar Found</a> &middot;
-        <a href="/blogs/everyone-runs-on-faith">Everyone Runs on Faith, Even Scientists</a>
+        <a href="/articles/what-the-knights-templar-found">What the Knights Templar Found</a> &middot;
+        <a href="/articles/everyone-runs-on-faith">Everyone Runs on Faith, Even Scientists</a>
       </p>
     </section>
 

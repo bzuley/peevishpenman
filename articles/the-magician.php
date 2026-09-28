@@ -7,7 +7,7 @@ $post_meta = [
   'date'    => '2026-09-05',
   'added'   => '2026-09-05',
   // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
-  // Powers the quicklink buttons on index.php (see /blog-tag.php).
+  // Powers the quicklink buttons on index.php (see /article-tag.php).
   'tags'    => 'archetypes, writing, meditation, consciousness',
   'author'  => 'OA Allen'
 ];
@@ -22,13 +22,13 @@ $post_meta = [
   <meta name="description" content="<?php echo htmlspecialchars($post_meta['excerpt']); ?>">
   <meta name="author" content="<?php echo htmlspecialchars($post_meta['author']); ?>">
 
-  <link rel="canonical" href="https://peevishpenman.com/blogs/<?php echo htmlspecialchars($post_meta['slug']); ?>">
+  <link rel="canonical" href="https://peevishpenman.com/articles/<?php echo htmlspecialchars($post_meta['slug']); ?>">
 
   <!-- Open Graph -->
   <meta property="og:title" content="<?php echo htmlspecialchars($post_meta['title']); ?>">
   <meta property="og:description" content="<?php echo htmlspecialchars($post_meta['excerpt']); ?>">
   <meta property="og:type" content="article">
-  <meta property="og:url" content="https://peevishpenman.com/blogs/<?php echo htmlspecialchars($post_meta['slug']); ?>">
+  <meta property="og:url" content="https://peevishpenman.com/articles/<?php echo htmlspecialchars($post_meta['slug']); ?>">
   <meta property="og:image" content="https://peevishpenman.com<?php echo htmlspecialchars($post_meta['image']); ?>">
 
   <!-- Twitter Card -->
@@ -140,7 +140,7 @@ $post_meta = [
 
       <p>Ren's transformation follows this pattern through a series of changes in identity. He begins with identities that seem solid: academic, Guardsman, Aucklander, son, brother, rational observer. But the journey repeatedly complicates or strips away his certainty about what those identities mean. Even the distinction between observer and participant becomes harder to maintain. By the time Ren begins to understand what is happening around him, the person doing the understanding is no longer quite the person who set out to find the answers.</p>
 
-      <p>I lay out the cosmology his alchemy actually operates within over in <a href="/blogs/ontology-of-ether">The Ontology of Ether</a>.</p>
+      <p>I lay out the cosmology his alchemy actually operates within over in <a href="/articles/ontology-of-ether">The Ontology of Ether</a>.</p>
 
       <p>The alchemical journey strips the Magician of certainty. At the same time, he learns to read patterns and apply methods rather than simply accumulate information.</p>
 
@@ -174,7 +174,7 @@ $post_meta = [
 
       <p>I lean on the same instinct with Ren in <a href="/pages/bright-dark">The Bright Dark</a>. His transformation isn't measured in battles won, but in how much less certain he becomes about who he was before he understood what he now understands.</p>
 
-      <p>If the Magician is the archetype of transformation, <a href="/blogs/the-everyman">The Everyman</a> sits at the opposite end of the wheel: continuity instead of change.</p>
+      <p>If the Magician is the archetype of transformation, <a href="/articles/the-everyman">The Everyman</a> sits at the opposite end of the wheel: continuity instead of change.</p>
     </section>
 
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/byline.php'; ?>

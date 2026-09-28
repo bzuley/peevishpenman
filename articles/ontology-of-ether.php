@@ -20,13 +20,13 @@ $post_meta = [
   <meta name="description" content="<?php echo htmlspecialchars($post_meta['excerpt']); ?>">
   <meta name="author" content="<?php echo htmlspecialchars($post_meta['author']); ?>">
 
-  <link rel="canonical" href="https://peevishpenman.com/blogs/<?php echo htmlspecialchars($post_meta['slug']); ?>">
+  <link rel="canonical" href="https://peevishpenman.com/articles/<?php echo htmlspecialchars($post_meta['slug']); ?>">
 
   <!-- Open Graph -->
   <meta property="og:title" content="<?php echo htmlspecialchars($post_meta['title']); ?>">
   <meta property="og:description" content="<?php echo htmlspecialchars($post_meta['excerpt']); ?>">
   <meta property="og:type" content="article">
-  <meta property="og:url" content="https://peevishpenman.com/blogs/<?php echo htmlspecialchars($post_meta['slug']); ?>">
+  <meta property="og:url" content="https://peevishpenman.com/articles/<?php echo htmlspecialchars($post_meta['slug']); ?>">
   <meta property="og:image" content="https://peevishpenman.com/img/ontology-of-ether-social-v2.jpg">
 
   <!-- Twitter Card -->
@@ -86,7 +86,7 @@ $post_meta = [
 
       <p>Long before Darwin, the Hawaiian creation chant, the <em>Kumulipo</em>, described the emergence of life from coral to increasingly complex forms, placing humans within a genealogy shared with the rest of the living world. What interested me was that progression toward complexity. For <em>The Bright Dark</em>, I extended that concept beyond the development of living things to the structure of existence itself. Matter, dreams, emotions, and consciousness all have a place within that cosmology.</p>
 
-      <p>It was relevant to my book because my main character doesn’t have to leave the material world to encounter them. He learns to <a href="/blogs/closed-eye-visualizations">direct his attention toward aspects of reality he hadn’t previously perceived</a>.</p>
+      <p>It was relevant to my book because my main character doesn’t have to leave the material world to encounter them. He learns to <a href="/articles/closed-eye-visualizations">direct his attention toward aspects of reality he hadn’t previously perceived</a>.</p>
 
       <p>When I read the <em>Corpus Hermeticum</em> or Plato’s <em>Republic</em>, I marvel at the scope of human experience they engage with. We tend to acknowledge only what we can measure. It’s that broader scope that is suppressed in modern times and that the apocalypse restores in <em>The Bright Dark</em>.</p>
 

@@ -36,6 +36,11 @@ RewriteRule ^pages/delcath(\.php)?/?$ /pages/delcath-series [R=301,L,NC]
 # The standalone newsletter page was removed; the sign-up form lives in the site footer
 RewriteRule ^pages/newsletter(\.php)?/?$ /#newsletter [R=301,L,NC,NE]
 
+# "Blog" was renamed to "Articles" sitewide.
+RewriteRule ^blog/?$ /articles [R=301,L,NC]
+RewriteRule ^blogs/(.+)$ /articles/$1 [R=301,L,NC]
+RewriteRule ^blog-tag/?$ /article-tag [R=301,L,NC,QSA]
+
 # Redirect /page.php to /page
 RewriteCond %{THE_REQUEST} \s/+(.+?)\.php[\s?] [NC]
 RewriteRule ^(.+)\.php$ /$1 [R=301,L]
