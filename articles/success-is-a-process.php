@@ -1,6 +1,6 @@
 <?php
 $post_meta = [
-  'image'   => '/img/general/writer-overwhelmed-in-library.png',
+  'image'   => '/img/success-is-a-process.webp',
   'slug'    => 'success-is-a-process',
   'title'   => 'Success Is a Process',
   'excerpt' => 'Why finishing a book can feel scarier than starting one, and how shy writers can turn the last page into a first step toward readers, with advice from Jody Aberdeen and Rob Hines.',
@@ -31,13 +31,13 @@ ppm_require_published($post_meta);
   <meta property="og:description" content="<?php echo htmlspecialchars($post_meta['excerpt']); ?>">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://peevishpenman.com/articles/<?php echo htmlspecialchars($post_meta['slug']); ?>">
-  <meta property="og:image" content="https://peevishpenman.com<?php echo htmlspecialchars($post_meta['image']); ?>">
+  <meta property="og:image" content="https://peevishpenman.com/img/success-is-a-process-social.jpg">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="<?php echo htmlspecialchars($post_meta['title']); ?>">
   <meta name="twitter:description" content="<?php echo htmlspecialchars($post_meta['excerpt']); ?>">
-  <meta name="twitter:image" content="https://peevishpenman.com<?php echo htmlspecialchars($post_meta['image']); ?>">
+  <meta name="twitter:image" content="https://peevishpenman.com/img/success-is-a-process-social.jpg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -60,8 +60,8 @@ ppm_require_published($post_meta);
   <figure class="ppm-article-hero">
     <img
       src="<?php echo htmlspecialchars($post_meta['image']); ?>"
-      width="1024" height="1024"
-      alt="A gray-haired writer crouched over a desk in a dim library, pages swirling through the air and books toppling in piles around him"
+      width="1672" height="941"
+      alt="A frightened writer clutching her notebooks runs from a giant golden money bag with arms and sneakers, coins and loose pages flying behind her"
     >
     <div class="ppm-article-hero-content">
       <p class="ppm-article-kicker">Writing, Fear &amp; Success</p>
