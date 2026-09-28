@@ -695,6 +695,13 @@ small {
   }
 }
 
+/* Stands in for the featured card on desktop; see partials/blog-preview.php */
+@media (max-width: 900px) {
+  .ppm-home-main .blog-card--overflow {
+    display: none;
+  }
+}
+
 /* ================================
    8b) HOME THREE-COLUMN LAYOUT (desktop only) —
    sidebar nav / wide center column / widget sidebar.
@@ -2149,7 +2156,7 @@ html.ppm-nav-open {
   text-transform: uppercase;
 }
 
-.ppm-related-list {
+.ppm-article .ppm-related-list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -2174,7 +2181,15 @@ html.ppm-nav-open {
   background: rgba(117, 255, 232, 0.06);
 }
 
-.ppm-related-item img {
+/* Scoped under .ppm-article to beat the article-wide img, ul and li
+   rules: their auto side margins would otherwise center any row whose
+   text is too short to fill it, knocking it out of line with the rest. */
+.ppm-article .ppm-related-item {
+  margin: 0;
+}
+
+.ppm-article .ppm-related-item img {
+  margin: 0;
   width: 72px;
   height: 72px;
   border-radius: var(--ppm-radius-sm);
