@@ -6,7 +6,8 @@ $post_meta = [
   'excerpt' => 'From cash-paid pizza murals to Amazon candles, an indie author weighs what self-publishing earns per hour against what books keep.',
   'date'    => '2018-06-18',
   'added'   => '2026-09-25',
-  'tags'    => 'selfpublishing, writing'
+  'tags'    => 'selfpublishing, writing',
+  'author'  => 'OA Allen'
 ];
 require_once $_SERVER['DOCUMENT_ROOT'] . '/blog-config.php';
 ppm_require_published($post_meta);
@@ -19,7 +20,7 @@ ppm_require_published($post_meta);
   <title><?php echo htmlspecialchars($post_meta['title']); ?> – Peevish Penman</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="<?php echo htmlspecialchars($post_meta['excerpt']); ?>">
-  <meta name="author" content="OA Allen">
+  <meta name="author" content="<?php echo htmlspecialchars($post_meta['author']); ?>">
 
   <link rel="canonical" href="https://peevishpenman.com/blogs/<?php echo htmlspecialchars($post_meta['slug']); ?>">
 
@@ -150,6 +151,7 @@ ppm_require_published($post_meta);
       <p>I might be remembered a little better by the people I love most.</p>
     </section>
 
+  <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/byline.php'; ?>
   </article>
 </main>
 

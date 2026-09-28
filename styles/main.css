@@ -2018,6 +2018,24 @@ html.ppm-nav-open {
   display: block;
 }
 
+.ppm-article-byline {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(117, 255, 232, 0.2);
+  font-family: "Space Grotesk", system-ui, sans-serif;
+  font-size: 0.95rem;
+  color: var(--ppm-text-muted);
+}
+
+.ppm-article-byline p {
+  margin: 0;
+}
+
+.ppm-article-byline strong {
+  color: var(--ppm-hermes);
+  font-weight: 600;
+}
+
 /* Responsive adjustments for articles */
 @media (max-width: 740px) {
   .ppm-article {

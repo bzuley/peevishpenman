@@ -7,9 +7,14 @@ $post_meta = [
   'date'    => 'YYYY-MM-DD',
   // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
   // Powers the quicklink buttons on index.php (see /blog-tag.php).
-  'tags'    => ''
+  'tags'    => '',
+  // Defaults to OA Allen. Set this to a guest author's name and add
+  // 'guest_post' => true below when the post wasn't written by OA Allen.
+  'author'  => 'OA Allen'
   // Optional 'added' => 'YYYY-MM-DD': the day the post goes live on the
   // site. A future date schedules the post; it stays hidden until then.
+  // Optional 'guest_post' => true: shows "Guest Post by {author}" instead
+  // of "Written by {author}" in the byline.
 ];
 require_once $_SERVER['DOCUMENT_ROOT'] . '/blog-config.php';
 ppm_require_published($post_meta);
@@ -22,7 +27,7 @@ ppm_require_published($post_meta);
   <title><?php echo htmlspecialchars($post_meta['title']); ?> – Peevish Penman</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="<?php echo htmlspecialchars($post_meta['excerpt']); ?>">
-  <meta name="author" content="OA Allen">
+  <meta name="author" content="<?php echo htmlspecialchars($post_meta['author']); ?>">
 
   <link rel="canonical" href="https://peevishpenman.com/blogs/<?php echo htmlspecialchars($post_meta['slug']); ?>">
 
@@ -100,6 +105,7 @@ ppm_require_published($post_meta);
 
     <!-- Add more sections as needed -->
 
+  <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/byline.php'; ?>
   </article>
 </main>
 

@@ -6,7 +6,8 @@ $post_meta = [
   'excerpt' => 'Cosmology, consciousness, and unseen forces in The Bright Dark, with a creation story from the world after the apocalypse.',
   'date'    => '2015-10-09',
   'added'   => '2026-09-24',
-  'tags'    => 'sciencefiction, writing, postapocalypticscifi, consciousness, metaphysicalscifi, worldbuilding, losttechnology, anomalousphenomena'
+  'tags'    => 'sciencefiction, writing, postapocalypticscifi, consciousness, metaphysicalscifi, worldbuilding, losttechnology, anomalousphenomena',
+  'author'  => 'OA Allen'
 ];
 ?>
 <!DOCTYPE html>
@@ -17,7 +18,7 @@ $post_meta = [
   <title><?php echo htmlspecialchars($post_meta['title']); ?> – Peevish Penman</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="<?php echo htmlspecialchars($post_meta['excerpt']); ?>">
-  <meta name="author" content="OA Allen">
+  <meta name="author" content="<?php echo htmlspecialchars($post_meta['author']); ?>">
 
   <link rel="canonical" href="https://peevishpenman.com/blogs/<?php echo htmlspecialchars($post_meta['slug']); ?>">
 
@@ -136,6 +137,7 @@ $post_meta = [
       <p>And never again would they tempt the forces of nature by thinking too deeply about anything.</p>
     </section>
 
+  <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/byline.php'; ?>
   </article>
 </main>
 
