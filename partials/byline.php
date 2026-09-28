@@ -1,14 +1,14 @@
 <?php
 // Byline shown at the end of every article. Expects $post_meta (see
 // blog-slug.php for the shape) to already be set. Defaults to OA Allen's
-// author card; set $post_meta['author'] (and 'guest_post' => true, plus
-// optionally 'author_image' / 'author_bio' / 'author_link') for a
-// guest-written post.
+// author card (no portrait, by design); set $post_meta['author'] (and
+// 'guest_post' => true, plus optionally 'author_image' / 'author_bio' /
+// 'author_link') for a guest-written post.
 $ppm_byline_author = $post_meta['author'] ?? 'OA Allen';
 $ppm_byline_is_guest = !empty($post_meta['guest_post']);
 
 if ($ppm_byline_author === 'OA Allen') {
-  $ppm_byline_image = '/img/oa-allen-portrait.webp';
+  $ppm_byline_image = null;
   $ppm_byline_bio   = 'Science-fiction writer & painter, researching belief, power, and technology.';
   $ppm_byline_link  = ['href' => '/pages/about', 'text' => 'More about OA Allen'];
 } else {
