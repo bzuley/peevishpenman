@@ -5,7 +5,7 @@ $post_meta = [
   'title'   => 'Tell Me a Big Lie',
   'excerpt' => 'A 2017 op-ed connecting "America First" rhetoric, The America We Deserve, and the Reform Party—daring readers to explain away what was standing in plain sight.',
   'date'    => '2017-01-22',
-  'added'   => '2026-09-26',
+  'added'   => '2016-01-22',
   // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
   // Powers the quicklink buttons on index.php (see /article-tag.php).
   'tags'    => 'culture, politics, colonization',
