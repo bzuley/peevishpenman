@@ -230,6 +230,7 @@ $post_meta = [
       <p>Or not…</p>
     </section>
 
+  <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/related-posts.php'; ?>
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/byline.php'; ?>
   </article>
 </main>

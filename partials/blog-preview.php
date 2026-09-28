@@ -20,12 +20,6 @@ if ($ppm_featured_slug !== null) {
 }
 
 $blog_items = array_slice($blog_items, 0, $ppm_post_limit);
-
-function ppm_truncate($text, $limit) {
-    $text = strip_tags($text);
-    if (mb_strlen($text) <= $limit) return $text;
-    return mb_substr($text, 0, $limit - 1) . '…';
-}
 ?>
 
 <section class="ppm-blog-preview">

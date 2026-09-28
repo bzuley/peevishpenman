@@ -177,6 +177,7 @@ $post_meta = [
       <p>If the Magician is the archetype of transformation, <a href="/blogs/the-everyman">The Everyman</a> sits at the opposite end of the wheel: continuity instead of change.</p>
     </section>
 
+  <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/related-posts.php'; ?>
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/byline.php'; ?>
   </article>
 </main>

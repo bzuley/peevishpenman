@@ -124,6 +124,60 @@ function ppm_get_blog_posts() {
 }
 
 /**
+ * Split a comma-separated tag string (as stored in a post's own $post_meta)
+ * or an already-split tag array (as ppm_get_blog_posts() returns) into a
+ * clean, lowercased list, for comparing tags between posts.
+ */
+function ppm_normalize_tags($tags) {
+    $list = is_array($tags) ? $tags : explode(',', (string) $tags);
+    return array_values(array_filter(array_map(function ($tag) {
+        return strtolower(trim($tag));
+    }, $list), function ($tag) {
+        return $tag !== '';
+    }));
+}
+
+/**
+ * Other published posts to surface as "Keep Reading" links at the end of
+ * an article. Ranked by number of shared tags with $post_meta (most
+ * shared first); posts with no shared tags still fill out the list,
+ * newest first, so a post with sparse tags always gets related reading.
+ */
+function ppm_get_related_posts($post_meta, $limit = 3) {
+    $current_slug = $post_meta['slug'] ?? '';
+    $current_tags = ppm_normalize_tags($post_meta['tags'] ?? '');
+
+    $candidates = [];
+    foreach (ppm_get_blog_posts() as $post) {
+        if ($post['slug'] === $current_slug) {
+            continue;
+        }
+        $shared = count(array_intersect($current_tags, ppm_normalize_tags($post['tags'])));
+        $candidates[] = ['post' => $post, 'shared' => $shared];
+    }
+
+    // A stable sort (guaranteed by PHP 8+) keeps ppm_get_blog_posts()'s
+    // newest-first order as the tiebreaker among equal shared-tag counts.
+    usort($candidates, function ($a, $b) {
+        return $b['shared'] <=> $a['shared'];
+    });
+
+    return array_slice(array_map(function ($c) {
+        return $c['post'];
+    }, $candidates), 0, $limit);
+}
+
+/**
+ * Plain-text excerpt truncated to $limit characters, with a trailing
+ * ellipsis when it was cut short.
+ */
+function ppm_truncate($text, $limit) {
+    $text = strip_tags($text);
+    if (mb_strlen($text) <= $limit) return $text;
+    return mb_substr($text, 0, $limit - 1) . '…';
+}
+
+/**
  * Return only the posts tagged with the given tag (case-insensitive).
  */
 function ppm_get_posts_by_tag($tag) {
