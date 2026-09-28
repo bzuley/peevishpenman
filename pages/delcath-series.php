@@ -470,7 +470,7 @@
           discover that a system capable of planning for nearly everything
           has left them terribly alone.
         </p>
-        <a class="ppm-button dc-buy" href="#">
+        <a class="ppm-button dc-buy" href="https://www.amazon.com/dp/B0BVCXMRJ6" target="_blank" rel="noopener noreferrer">
           Buy on Amazon
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </a>
@@ -509,7 +509,7 @@
           novella from one isolated mining crew to the society that created
           them.
         </p>
-        <a class="ppm-button dc-buy" href="#">
+        <a class="ppm-button dc-buy" href="https://www.amazon.com/dp/B0CXLKGJVM" target="_blank" rel="noopener noreferrer">
           Buy on Amazon
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </a>
