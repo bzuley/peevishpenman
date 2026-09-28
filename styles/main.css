@@ -2094,9 +2094,9 @@ html.ppm-nav-open {
   border-top: 1px solid rgba(117, 255, 232, 0.2);
 }
 
-/* When the related-posts strip is already showing, its own border-top
-   is the section break, so the byline right after it skips its own. */
-.ppm-related-posts + .ppm-article-byline {
+/* When the byline is already showing, its own border-top is the section
+   break, so the related-posts strip right after it skips its own. */
+.ppm-article-byline + .ppm-related-posts {
   margin-top: 1.5rem;
   padding-top: 0;
   border-top: none;

@@ -275,8 +275,8 @@ $post_meta = [
       <p>My own father paints too, purely for the joy of it now—no cash, no free-mural requests, just sailboats and calm water. I wrote about what changed for him in <a href="/blogs/on-being-happy">On Being Happy</a>.</p>
     </section>
 
-  <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/related-posts.php'; ?>
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/byline.php'; ?>
+  <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/related-posts.php'; ?>
   </article>
 </main>
 
