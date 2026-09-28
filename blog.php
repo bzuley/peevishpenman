@@ -7,7 +7,7 @@ $blog_items = ppm_get_blog_posts();
 <head>
   <link rel="alternate" type="application/rss+xml" title="Peevish Penman RSS Feed" href="https://peevishpenman.com/rss.xml">
   <meta charset="UTF-8">
-  <title>Blog – Peevish Penman</title>
+  <title>Articles – Peevish Penman</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Essays and dispatches from OA Allen on self-publishing, character archetypes, and metaphysical science fiction.">
   <meta name="author" content="OA Allen">
@@ -16,7 +16,7 @@ $blog_items = ppm_get_blog_posts();
 
   <!-- Open Graph -->
   <meta property="og:site_name" content="Peevish Penman">
-  <meta property="og:title" content="Blog – Peevish Penman">
+  <meta property="og:title" content="Articles – Peevish Penman">
   <meta property="og:description" content="Essays and dispatches from OA Allen on self-publishing, character archetypes, and metaphysical science fiction.">
   <meta property="og:url" content="https://peevishpenman.com/blog">
   <meta property="og:type" content="website">
@@ -24,7 +24,7 @@ $blog_items = ppm_get_blog_posts();
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Blog – Peevish Penman">
+  <meta name="twitter:title" content="Articles – Peevish Penman">
   <meta name="twitter:description" content="Essays and dispatches from OA Allen on self-publishing, character archetypes, and metaphysical science fiction.">
   <meta name="twitter:image" content="https://peevishpenman.com/img/peevish-penman-social-share-1200x630.png">
 
@@ -47,7 +47,7 @@ $blog_items = ppm_get_blog_posts();
 
       <?php if (empty($blog_items)): ?>
         <p style="color:#f88; max-width:40rem; margin:2rem auto; text-align:center;">
-          No blog posts found.
+          No articles found.
         </p>
       <?php else: ?>
         <ul>

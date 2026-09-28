@@ -38,7 +38,7 @@ function ppm_require_published($meta) {
         . '<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=3">'
         . '<link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3"></head>'
         . '<body><main class="ppm-article"><article class="ppm-article-inner">'
-        . '<h1>Not Found</h1><p><a href="/blog">Back to the blog</a></p></article></main></body></html>';
+        . '<h1>Not Found</h1><p><a href="/blog">Back to the articles</a></p></article></main></body></html>';
     exit;
 }
 
