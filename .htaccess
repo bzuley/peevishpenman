@@ -41,6 +41,11 @@ RewriteRule ^blog/?$ /articles [R=301,L,NC]
 RewriteRule ^blogs/(.+)$ /articles/$1 [R=301,L,NC]
 RewriteRule ^blog-tag/?$ /article-tag [R=301,L,NC,QSA]
 
+# The articles listing shares its clean URL with the articles/ post
+# directory, so the generic directory-checked rule below would treat
+# /articles as a directory request. Route it explicitly first.
+RewriteRule ^articles/?$ articles.php [L]
+
 # Redirect /page.php to /page
 RewriteCond %{THE_REQUEST} \s/+(.+?)\.php[\s?] [NC]
 RewriteRule ^(.+)\.php$ /$1 [R=301,L]
