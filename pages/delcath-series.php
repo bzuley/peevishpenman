@@ -47,8 +47,9 @@
 
     /* ---------- Hero ---------- */
     .dc-hero {
+      --dc-hero-pad-top: clamp(4rem, 12vw, 8rem);
       position: relative;
-      padding: clamp(4rem, 12vw, 8rem) 5% clamp(3rem, 8vw, 5rem);
+      padding: var(--dc-hero-pad-top) 5% clamp(3rem, 8vw, 5rem);
       text-align: center;
       overflow: hidden;
       background:
@@ -73,9 +74,13 @@
       padding: 0.5rem 0 1rem;
     }
 
+    /* Extend up through the hero's top padding and fade every edge to
+       transparent so the art meets the nav with no visible seam. */
     .dc-hero-art {
       position: absolute;
-      inset: -2rem -10% 0;
+      inset: calc(-1 * var(--dc-hero-pad-top) - 0.5rem) -10% 0;
+      -webkit-mask-image: radial-gradient(ellipse 50% 50% at 50% 50%, #000 55%, transparent 100%);
+      mask-image: radial-gradient(ellipse 50% 50% at 50% 50%, #000 55%, transparent 100%);
       z-index: 0;
       display: flex;
       align-items: center;
