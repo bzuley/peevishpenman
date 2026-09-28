@@ -2092,9 +2092,6 @@ html.ppm-nav-open {
   margin-top: 2.5rem;
   padding-top: 1.5rem;
   border-top: 1px solid rgba(117, 255, 232, 0.2);
-  font-family: "Space Grotesk", system-ui, sans-serif;
-  font-size: 0.95rem;
-  color: var(--ppm-text-muted);
 }
 
 /* When the related-posts strip is already showing, its own border-top
@@ -2105,13 +2102,70 @@ html.ppm-nav-open {
   border-top: none;
 }
 
-.ppm-article-byline p {
+.ppm-byline-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.ppm-byline-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top center;
+  flex-shrink: 0;
+  border: 1px solid var(--ppm-border-soft);
+}
+
+.ppm-byline-text {
+  min-width: 0;
+}
+
+.ppm-article .ppm-byline-text p {
   margin: 0;
 }
 
-.ppm-article-byline strong {
+.ppm-article .ppm-byline-label {
+  font-family: "Space Grotesk", system-ui, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
   color: var(--ppm-hermes);
+}
+
+.ppm-article .ppm-byline-name {
+  font-family: "Space Grotesk", system-ui, sans-serif;
+  font-size: 1.15rem;
   font-weight: 600;
+  color: #ffffff;
+  margin-top: 0.15rem !important;
+}
+
+.ppm-article .ppm-byline-bio {
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--ppm-text-muted);
+  margin-top: 0.3rem !important;
+}
+
+.ppm-article .ppm-byline-bio a {
+  color: var(--ppm-hermes);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.ppm-article .ppm-byline-bio a:hover {
+  color: var(--ppm-hermes-lumen);
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .ppm-byline-card {
+    align-items: flex-start;
+  }
 }
 
 /* Responsive adjustments for articles */
