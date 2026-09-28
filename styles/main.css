@@ -2018,6 +2018,76 @@ html.ppm-nav-open {
   display: block;
 }
 
+.ppm-related-posts {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(117, 255, 232, 0.2);
+}
+
+.ppm-article .ppm-related-heading {
+  border-top: none;
+  padding-top: 0;
+  margin: 0 0 1.25rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.ppm-related-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.ppm-article .ppm-related-item a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  color: inherit;
+  padding: 0.5rem;
+  margin: 0 -0.5rem;
+  border-radius: var(--ppm-radius-sm);
+  transition: background var(--ppm-transition-fast);
+}
+
+.ppm-related-item a:hover {
+  background: rgba(117, 255, 232, 0.06);
+}
+
+.ppm-related-item img {
+  width: 72px;
+  height: 72px;
+  border-radius: var(--ppm-radius-sm);
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.ppm-related-item-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  min-width: 0;
+}
+
+.ppm-related-item-title {
+  font-family: "Space Grotesk", system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: #ffffff;
+}
+
+.ppm-related-item-excerpt {
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+  font-size: 0.88rem;
+  color: var(--ppm-text-muted);
+  line-height: 1.4;
+}
+
 .ppm-article-byline {
   margin-top: 2.5rem;
   padding-top: 1.5rem;
@@ -2025,6 +2095,14 @@ html.ppm-nav-open {
   font-family: "Space Grotesk", system-ui, sans-serif;
   font-size: 0.95rem;
   color: var(--ppm-text-muted);
+}
+
+/* When the related-posts strip is already showing, its own border-top
+   is the section break, so the byline right after it skips its own. */
+.ppm-related-posts + .ppm-article-byline {
+  margin-top: 1.5rem;
+  padding-top: 0;
+  border-top: none;
 }
 
 .ppm-article-byline p {
