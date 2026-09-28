@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
-Disallow: /blog-slug
-Disallow: /blog-slug.php
+Disallow: /article-slug
+Disallow: /article-slug.php
 
 Sitemap: https://peevishpenman.com/sitemap.xml

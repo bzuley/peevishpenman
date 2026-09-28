@@ -1,6 +1,6 @@
 <?php
 // Byline shown at the end of every article. Expects $post_meta (see
-// blog-slug.php for the shape) to already be set. Defaults to OA Allen's
+// article-slug.php for the shape) to already be set. Defaults to OA Allen's
 // author card (no portrait, by design); set $post_meta['author'] (and
 // 'guest_post' => true, plus optionally 'author_image' / 'author_bio' /
 // 'author_link') for a guest-written post.

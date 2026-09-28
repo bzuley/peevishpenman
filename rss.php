@@ -1,5 +1,5 @@
 <?php
-/** RSS summaries generated from the same metadata as the blog. */
+/** RSS summaries generated from the same metadata as the articles. */
 require_once __DIR__ . '/blog-config.php';
 
 function ppm_rss_xml($value) {
@@ -15,13 +15,13 @@ echo '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Peevish Penman</title>
-    <link>https://peevishpenman.com/blog</link>
-    <description>Essays and dispatches from OA Allen on self-publishing, character archetypes, and metaphysical science fiction.</description>
+    <link>https://peevishpenman.com/articles</link>
+    <description>Articles on writing, science fiction, history, consciousness, technology, publishing, and unusual questions worth investigating in the world of speculative fiction.</description>
     <language>en-us</language>
     <atom:link href="https://peevishpenman.com/rss.xml" rel="self" type="application/rss+xml" />
 <?php foreach ($posts as $post):
-    $url = $base_url . '/blogs/' . rawurlencode($post['slug']);
-    // Use the date added to this site, matching the blog's ordering.
+    $url = $base_url . '/articles/' . rawurlencode($post['slug']);
+    // Use the date added to this site, matching the articles' ordering.
     $date = DateTimeImmutable::createFromFormat('!Y-m-d', $post['added'], new DateTimeZone('UTC'));
 ?>
     <item>

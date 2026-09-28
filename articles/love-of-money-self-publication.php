@@ -22,13 +22,13 @@ ppm_require_published($post_meta);
   <meta name="description" content="<?php echo htmlspecialchars($post_meta['excerpt']); ?>">
   <meta name="author" content="<?php echo htmlspecialchars($post_meta['author']); ?>">
 
-  <link rel="canonical" href="https://peevishpenman.com/blogs/<?php echo htmlspecialchars($post_meta['slug']); ?>">
+  <link rel="canonical" href="https://peevishpenman.com/articles/<?php echo htmlspecialchars($post_meta['slug']); ?>">
 
   <!-- Open Graph -->
   <meta property="og:title" content="<?php echo htmlspecialchars($post_meta['title']); ?>">
   <meta property="og:description" content="<?php echo htmlspecialchars($post_meta['excerpt']); ?>">
   <meta property="og:type" content="article">
-  <meta property="og:url" content="https://peevishpenman.com/blogs/<?php echo htmlspecialchars($post_meta['slug']); ?>">
+  <meta property="og:url" content="https://peevishpenman.com/articles/<?php echo htmlspecialchars($post_meta['slug']); ?>">
   <meta property="og:image" content="https://peevishpenman.com/img/love-of-money-self-publication-social.jpg">
 
   <!-- Twitter Card -->
@@ -80,7 +80,7 @@ ppm_require_published($post_meta);
 
       <p>Writing has never filled my pockets. It has, however, given me considerably more opportunities to explore philosophical concepts my university education ignored. It’s been the mirror that showed me my biases and the lingering pain left by unconventional friendships and bad choices.</p>
 
-      <p>But when I started in 2008, I had hoped to make money—the same year I became a <a href="/blogs/confirmed-independent-publisher">confirmed independent publisher</a>.</p>
+      <p>But when I started in 2008, I had hoped to make money—the same year I became a <a href="/articles/confirmed-independent-publisher">confirmed independent publisher</a>.</p>
     </section>
 
     <section>
@@ -98,7 +98,7 @@ ppm_require_published($post_meta);
 
       <p>I love being an independent author, and self-publishing is my favorite part. But just as I quit painting murals when it stopped feeling like art, I stopped trying to write books that might trend.</p>
 
-      <p>Independent publishing offers a spectacular number of ways to work without getting paid. You can spend an afternoon fixing the spacing in a paperback. You can rewrite descriptions until every possible arrangement of the same forty words blurs together. You learn the difference between XML and HTML. You can <a href="/blogs/i-wrote-this-post-in-vr">write in virtual reality</a>.</p>
+      <p>Independent publishing offers a spectacular number of ways to work without getting paid. You can spend an afternoon fixing the spacing in a paperback. You can rewrite descriptions until every possible arrangement of the same forty words blurs together. You learn the difference between XML and HTML. You can <a href="/articles/i-wrote-this-post-in-vr">write in virtual reality</a>.</p>
 
       <p>Even with assistance from artificial intelligence, self-publishing is a time hole.</p>
 

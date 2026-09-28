@@ -1,11 +1,11 @@
 <?php
-// Emits BlogPosting JSON-LD for search rich results.
-// Expects $post_meta (see blog-slug.php for the shape) to already be set.
+// Emits Article JSON-LD for search rich results.
+// Expects $post_meta (see article-slug.php for the shape) to already be set.
 // Every post includes this partial, so it also counts the view that
 // picks the homepage's featured post.
 require_once __DIR__ . '/../blog-config.php';
 ppm_record_view($post_meta['slug']);
-$schema_url = 'https://peevishpenman.com/blogs/' . rawurlencode($post_meta['slug']);
+$schema_url = 'https://peevishpenman.com/articles/' . rawurlencode($post_meta['slug']);
 $schema_image = $post_meta['image'];
 if ($schema_image !== '' && strpos($schema_image, 'http') !== 0) {
   $schema_image = 'https://peevishpenman.com' . $schema_image;
@@ -19,7 +19,7 @@ if ($schema_author_name === 'OA Allen') {
 <script type="application/ld+json">
 <?php echo json_encode([
   '@context' => 'https://schema.org',
-  '@type' => 'BlogPosting',
+  '@type' => 'Article',
   'headline' => $post_meta['title'],
   'description' => $post_meta['excerpt'],
   'image' => $schema_image,

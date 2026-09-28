@@ -7,7 +7,7 @@ $post_meta = [
   'date'    => '2016-08-01',
   'added'   => '2026-08-28',
   // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
-  // Powers the quicklink buttons on index.php (see /blog-tag.php).
+  // Powers the quicklink buttons on index.php (see /article-tag.php).
   'tags'    => 'sciencefiction, wordcraft, writing, postapocalypticscifi, worldbuilding',
   'author'  => 'OA Allen'
 ];
@@ -22,13 +22,13 @@ $post_meta = [
   <meta name="description" content="<?php echo htmlspecialchars($post_meta['excerpt']); ?>">
   <meta name="author" content="<?php echo htmlspecialchars($post_meta['author']); ?>">
 
-  <link rel="canonical" href="https://peevishpenman.com/blogs/<?php echo htmlspecialchars($post_meta['slug']); ?>">
+  <link rel="canonical" href="https://peevishpenman.com/articles/<?php echo htmlspecialchars($post_meta['slug']); ?>">
 
   <!-- Open Graph -->
   <meta property="og:title" content="<?php echo htmlspecialchars($post_meta['title']); ?>">
   <meta property="og:description" content="<?php echo htmlspecialchars($post_meta['excerpt']); ?>">
   <meta property="og:type" content="article">
-  <meta property="og:url" content="https://peevishpenman.com/blogs/<?php echo htmlspecialchars($post_meta['slug']); ?>">
+  <meta property="og:url" content="https://peevishpenman.com/articles/<?php echo htmlspecialchars($post_meta['slug']); ?>">
   <meta property="og:image" content="https://peevishpenman.com<?php echo htmlspecialchars($post_meta['image']); ?>">
 
   <!-- Twitter Card -->
@@ -190,7 +190,7 @@ $post_meta = [
 
       <p>It's the same territory—literal, this time—that I keep returning to in <a href="/pages/bright-dark">The Bright Dark</a>, where the Wastelands are a named place on the map, not just a mood. Enormous predators haunt them. Nobody remembers what they used to be. Miles of possibility, and most of it wants to eat you.</p>
 
-      <p>If you'd rather argue about the hyphen than the etymology, I've got a post for that too: <a href="/blogs/post-apocalyptic-or-postapocalyptic">Post Apocalyptic or Post-Apocalyptic or Postapocalyptic?</a></p>
+      <p>If you'd rather argue about the hyphen than the etymology, I've got a post for that too: <a href="/articles/post-apocalyptic-or-postapocalyptic">Post Apocalyptic or Post-Apocalyptic or Postapocalyptic?</a></p>
     </section>
 
     <p class="ppm-article-disclaimer"><em><a href="/pages/about">OA Allen</a> is the author of <a href="/pages/bright-dark">The Bright Dark</a>.</em></p>

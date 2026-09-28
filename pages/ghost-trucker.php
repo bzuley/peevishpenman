@@ -572,7 +572,7 @@
       <p>What the contract says.</p>
       <p>And how the hell he gets out of it.</p>
       <p>
-        Parker is, in other words, an <a class="ppm-inline-link" href="/blogs/the-everyman">Everyman</a>
+        Parker is, in other words, an <a class="ppm-inline-link" href="/articles/the-everyman">Everyman</a>
         dropped into the strangest circumstances imaginable&mdash;and refusing,
         on principle, to be impressed by them.
       </p>

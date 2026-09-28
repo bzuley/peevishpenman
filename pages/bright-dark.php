@@ -444,7 +444,7 @@
           Electricity is a mystery. Germs sound like a conspiracy theory.
           Ancient technology is excavated, catalogued and occasionally
           misunderstood. Three-horned livestock wander the roads. Enormous
-          predators haunt the <a class="ppm-inline-link" href="/blogs/wasteland">Wastelands</a>. History has become religion,
+          predators haunt the <a class="ppm-inline-link" href="/articles/wasteland">Wastelands</a>. History has become religion,
           folklore and badly remembered technical documentation.
         </p>
         <p>And Ren wants to understand all of it.</p>
@@ -502,7 +502,7 @@
         chasing in my own meditation practice—shedding the body's noise
         until whatever is left starts to look like light. I write about
         that side of it, the non-fictional side, in
-        <a class="ppm-inline-link" href="/blogs/closed-eye-visualizations">Closed-Eye Visualizations</a>.
+        <a class="ppm-inline-link" href="/articles/closed-eye-visualizations">Closed-Eye Visualizations</a>.
       </p>
     </div>
   </section>

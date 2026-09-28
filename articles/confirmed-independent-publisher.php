@@ -7,7 +7,7 @@ $post_meta = [
   'date'    => '2016-06-01',
   'added'   => '2026-08-28',
   // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
-  // Powers the quicklink buttons on index.php (see /blog-tag.php).
+  // Powers the quicklink buttons on index.php (see /article-tag.php).
   'tags'    => 'selfpublishing, writing, worldbuilding',
   'author'  => 'OA Allen'
 ];
@@ -22,13 +22,13 @@ $post_meta = [
   <meta name="description" content="<?php echo htmlspecialchars($post_meta['excerpt']); ?>">
   <meta name="author" content="<?php echo htmlspecialchars($post_meta['author']); ?>">
 
-  <link rel="canonical" href="https://peevishpenman.com/blogs/<?php echo htmlspecialchars($post_meta['slug']); ?>">
+  <link rel="canonical" href="https://peevishpenman.com/articles/<?php echo htmlspecialchars($post_meta['slug']); ?>">
 
   <!-- Open Graph -->
   <meta property="og:title" content="<?php echo htmlspecialchars($post_meta['title']); ?>">
   <meta property="og:description" content="<?php echo htmlspecialchars($post_meta['excerpt']); ?>">
   <meta property="og:type" content="article">
-  <meta property="og:url" content="https://peevishpenman.com/blogs/<?php echo htmlspecialchars($post_meta['slug']); ?>">
+  <meta property="og:url" content="https://peevishpenman.com/articles/<?php echo htmlspecialchars($post_meta['slug']); ?>">
   <meta property="og:image" content="https://peevishpenman.com<?php echo htmlspecialchars($post_meta['image']); ?>">
 
   <!-- Twitter Card -->
@@ -122,7 +122,7 @@ $post_meta = [
 
       <p>Everything I wish someone had handed me back in 2008—instead of five years, four boyfriends, and six apartments of figuring it out the hard way—went into the free <a href="/pages/writer-secret-society">Writer Secret Society Handbook</a>.</p>
 
-      <p>Years later, I did the actual math on what self-publishing costs and pays in <a href="/blogs/love-of-money-self-publication">For the Love of Money and/or Self-Publication</a>.</p>
+      <p>Years later, I did the actual math on what self-publishing costs and pays in <a href="/articles/love-of-money-self-publication">For the Love of Money and/or Self-Publication</a>.</p>
     </section>
 
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/byline.php'; ?>

@@ -1,6 +1,6 @@
 <?php
 /**
- * Generate the sitemap from the same post metadata used by the blog.
+ * Generate the sitemap from the same post metadata used by the articles page.
  */
 require_once __DIR__ . '/blog-config.php';
 
@@ -15,15 +15,15 @@ $paths = [
     '/pages/ghost-trucker',
     '/pages/books',
     '/pages/coloring-book',
-    '/blog',
-    '/blog-tag?tag=sciencefiction',
-    '/blog-tag?tag=selfpublishing',
-    '/blog-tag?tag=archetypes',
+    '/articles',
+    '/article-tag?tag=sciencefiction',
+    '/article-tag?tag=selfpublishing',
+    '/article-tag?tag=archetypes',
     '/pages/about',
 ];
 
 foreach (ppm_get_blog_posts() as $post) {
-    $paths[] = '/blogs/' . rawurlencode($post['slug']);
+    $paths[] = '/articles/' . rawurlencode($post['slug']);
 }
 
 // Publication dates and deployment mtimes are not reliable modification dates,

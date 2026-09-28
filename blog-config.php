@@ -38,7 +38,7 @@ function ppm_require_published($meta) {
         . '<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=3">'
         . '<link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3"></head>'
         . '<body><main class="ppm-article"><article class="ppm-article-inner">'
-        . '<h1>Not Found</h1><p><a href="/blog">Back to the blog</a></p></article></main></body></html>';
+        . '<h1>Not Found</h1><p><a href="/articles">Back to the articles</a></p></article></main></body></html>';
     exit;
 }
 
@@ -59,8 +59,8 @@ function ppm_extract_quoted_field($array_string, $key) {
 
 function ppm_get_blog_posts() {
     $candidate_dirs = [
-        $_SERVER['DOCUMENT_ROOT'] . '/blogs',
-        __DIR__ . '/blogs',
+        $_SERVER['DOCUMENT_ROOT'] . '/articles',
+        __DIR__ . '/articles',
     ];
 
     $posts = [];
@@ -337,7 +337,7 @@ function ppm_db() {
  * having to re-read every post on every search.
  */
 function ppm_search_fingerprint() {
-    $files = glob($_SERVER['DOCUMENT_ROOT'] . '/blogs/*.php') ?: [];
+    $files = glob($_SERVER['DOCUMENT_ROOT'] . '/articles/*.php') ?: [];
     $latest = 0;
     foreach ($files as $file) {
         $latest = max($latest, filemtime($file));

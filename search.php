@@ -49,7 +49,7 @@ $results = $query !== '' ? ppm_search_posts($query) : [];
         <ul>
           <?php foreach ($results as $post): ?>
             <li class="blog-card">
-              <a href="/blogs/<?php echo htmlspecialchars($post['slug']); ?>">
+              <a href="/articles/<?php echo htmlspecialchars($post['slug']); ?>">
                 <?php if (!empty($post['image'])): ?>
                   <img class="bp-img"
                        src="<?php echo htmlspecialchars($post['image']); ?>"

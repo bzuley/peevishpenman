@@ -1,6 +1,6 @@
 <?php
 // "Keep Reading" strip shown near the end of an article. Expects
-// $post_meta (see blog-slug.php for the shape) to already be set.
+// $post_meta (see article-slug.php for the shape) to already be set.
 require_once $_SERVER['DOCUMENT_ROOT'] . '/blog-config.php';
 $ppm_related_posts = ppm_get_related_posts($post_meta, 3);
 ?>
@@ -10,7 +10,7 @@ $ppm_related_posts = ppm_get_related_posts($post_meta, 3);
   <ul class="ppm-related-list">
     <?php foreach ($ppm_related_posts as $related): ?>
       <li class="ppm-related-item">
-        <a href="/blogs/<?php echo htmlspecialchars($related['slug']); ?>">
+        <a href="/articles/<?php echo htmlspecialchars($related['slug']); ?>">
           <?php if (!empty($related['image'])): ?>
             <img src="<?php echo htmlspecialchars($related['image']); ?>"
                  alt="<?php echo htmlspecialchars($related['title']); ?>"
