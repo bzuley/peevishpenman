@@ -450,26 +450,26 @@ $post_meta = [
 
       <p>To conclude, a small, blasphemous grammar poem:</p>
 
-      <p><strong>The Nine Fucks of Speech</strong></p>
+      <p><strong>The Nine <s>Parts</s> Fucks of Speech</strong></p>
 
       <p>
-        Three little words fucks often see,<br>
+        Three little <s>words</s> fucks you often see,<br>
         Are articles — a, an, and the.
       </p>
 
       <p>
         A noun's the name of anything,<br>
-        As school, garden, hoop, fuck, or swing.
+        As school, garden, <s>hoop</s> fuck, or swing.
       </p>
 
       <p>
-        And fucking adjectives tell the kind of noun —<br>
+        <s>An</s> Fucking adjectives tell the kind of noun —<br>
         Great, small, pretty, white, or brown.
       </p>
 
       <p>
         Instead of nouns the pronouns stand —<br>
-        Her face, your arm, fuck head, my hand.
+        Her head, his face, your <s>arm</s> fuck, my hand.
       </p>
 
       <p>
@@ -478,8 +478,8 @@ $post_meta = [
       </p>
 
       <p>
-        How things are done, the adverbs tell,<br>
-        As slowly, quickly, ill, fucked up, or well.
+        How things <s>are done</s> fuck the adverbs tell,<br>
+        As slowly, quickly, <s>ill,</s> fucked up, or well.
       </p>
 
       <p>
@@ -489,17 +489,17 @@ $post_meta = [
 
       <p>
         The prepositions stand before<br>
-        A noun, as at or through fucking door.
+        A noun, as at or through <s>the</s> the fucking door.
       </p>
 
       <p>
-        The interjection shows surprise,<br>
+        The interjection <s>shows</s> fucking shows surprise,<br>
         As ah, fuck! How fucking pretty — oh fuck, how wise.
       </p>
 
       <p>
-        The fucks are fucked nine parts of speech,<br>
-        Which fucking, fucking, fucking teach.
+        The <s>whole</s> fucks are <s>called</s> fucked nine <s>parts</s> fucks of <s>speech</s>-fuck,<br>
+        <s>Which</s> Fuck <s>reading</s> fucking, <s>writing</s> fucking, <s>speaking</s> fucking <s>teach</s> fuck.
       </p>
     </section>
 
