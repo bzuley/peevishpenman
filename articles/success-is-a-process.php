@@ -4,7 +4,7 @@ $post_meta = [
   'slug'    => 'success-is-a-process',
   'title'   => 'Success Is a Process',
   'excerpt' => 'Why finishing a book can feel scarier than starting one, and how shy writers can turn the last page into a first step toward readers, with advice from Jody Aberdeen and Rob Hines.',
-  'date'    => '2026-09-28',
+  'date'    => '2013-03-04',
   'added'   => '2026-09-28',
   // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
   // Powers the quicklink buttons on index.php (see /article-tag.php).
