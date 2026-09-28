@@ -4,7 +4,7 @@ $post_meta = [
   'slug'    => 'nine-parts-of-speech-f-word',
   'title'   => 'The Nine Parts of Speech and the F Word',
   'excerpt' => 'A shamelessly profane grammar lesson proving that one very specific word can stand in for all nine parts of speech.',
-  'date'    => '2024-12-09',
+  'date'    => '2010-09-23',
   'added'   => '2026-08-25',
   // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
   // Powers the quicklink buttons on index.php (see /blog-tag.php).
@@ -478,7 +478,7 @@ $post_meta = [
 
       <p>
         Verbs tell of something to be done —<br>
-        To read, to fuck, sing, jump, or run.
+        <s>To read</s> To fuck, sing, jump, or run.
       </p>
 
       <p>
@@ -502,7 +502,7 @@ $post_meta = [
       </p>
 
       <p>
-        The <s>whole</s> fucks are <s>called</s> fucked nine <s>parts</s> fucks of <s>speech</s>-fuck,<br>
+        The <s>whole</s> fucks are <s>called</s> fucked nine <s>parts</s> fucks of <s>speech</s> fuck,<br>
         <s>Which</s> Fuck <s>reading</s> fucking, <s>writing</s> fucking, <s>speaking</s> fucking <s>teach</s> fuck.
       </p>
     </section>
