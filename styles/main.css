@@ -2111,11 +2111,12 @@ html.ppm-nav-open {
 .ppm-byline-avatar {
   width: 56px;
   height: 56px;
-  border-radius: 50%;
+  border-radius: 10px;
   object-fit: cover;
   object-position: top center;
   flex-shrink: 0;
-  border: 1px solid var(--ppm-border-soft);
+  border: 1px solid rgba(117, 255, 232, 0.35);
+  filter: grayscale(100%) contrast(1.05);
 }
 
 .ppm-byline-text {
