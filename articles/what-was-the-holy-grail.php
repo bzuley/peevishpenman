@@ -193,14 +193,6 @@ ppm_require_published($post_meta);
       </p>
     </section>
 
-    <section>
-      <p class="ppm-article-disclaimer">
-        <strong>Related reading:</strong>
-        <a href="/articles/what-the-knights-templar-found">What the Knights Templar Found</a> &middot;
-        <a href="/articles/everyone-runs-on-faith">Everyone Runs on Faith, Even Scientists</a>
-      </p>
-    </section>
-
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/byline.php'; ?>
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/related-posts.php'; ?>
   </article>

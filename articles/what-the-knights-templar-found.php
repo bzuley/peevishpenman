@@ -327,14 +327,6 @@ $post_meta = [
       <p>Maybe the Holy Grail was a woman. To me, that makes a much better story than brotherhood.</p>
     </section>
 
-    <section>
-      <p class="ppm-article-disclaimer">
-        <strong>Related reading:</strong>
-        <a href="/articles/what-was-the-holy-grail">What Was the Holy Grail Before It Was Holy?</a> &middot;
-        <a href="/articles/everyone-runs-on-faith">Everyone Runs on Faith, Even Scientists</a>
-      </p>
-    </section>
-
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/byline.php'; ?>
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/related-posts.php'; ?>
   </article>

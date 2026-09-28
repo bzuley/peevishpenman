@@ -239,14 +239,6 @@ ppm_require_published($post_meta);
       <p>Political ideology runs on the same fuel. I watched that particular flavor of belief take hold in real time and wrote about it in <a href="/articles/tell-me-a-big-lie">Tell Me a Big Lie</a>.</p>
     </section>
 
-    <section>
-      <p class="ppm-article-disclaimer">
-        <strong>Related reading:</strong>
-        <a href="/articles/what-the-knights-templar-found">What the Knights Templar Found</a> &middot;
-        <a href="/articles/what-was-the-holy-grail">What Was the Holy Grail Before It Was Holy?</a>
-      </p>
-    </section>
-
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/byline.php'; ?>
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/related-posts.php'; ?>
   </article>
