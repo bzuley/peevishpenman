@@ -445,9 +445,10 @@ small {
 
 /* gradient tagline line */
 .ppm-hero-gradient-line {
-  font-family: "Space Grotesk", system-ui, sans-serif;
-  font-size: clamp(1.4rem, 2.5vw, 1.8rem);
-  font-weight: 700;
+  font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  font-size: clamp(1.55rem, 2.8vw, 2.05rem);
+  font-weight: 600;
+  letter-spacing: 0.03em;
 
   background: linear-gradient(
     90deg,
