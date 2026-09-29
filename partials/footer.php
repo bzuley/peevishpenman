@@ -19,7 +19,7 @@
   <!-- Logo (mobile) -->
   <section class="ppm-footer-logo">
     <a href="/" aria-label="Peevish Penman home">
-      <img src="/img/logos/ppm_logo_main.webp" alt="Peevish Penman" width="200" height="200" loading="lazy">
+      <img src="/img/logos/circle_ppm_logo.webp" alt="Peevish Penman" width="200" height="200" loading="lazy">
     </a>
   </section>
 
