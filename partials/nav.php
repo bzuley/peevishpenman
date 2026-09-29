@@ -4,7 +4,7 @@
 
     <!-- Site brand: logo-only home link on mobile, logo + wordmark on desktop -->
     <a href="/" class="ppm-nav-brand" aria-label="Peevish Penman home">
-      <img src="/img/logos/ppm_logo_main_160.webp" alt="" class="ppm-nav-brand-logo" width="36" height="36">
+      <img src="/img/logos/circle_ppm_logo_160.webp" alt="" class="ppm-nav-brand-logo" width="36" height="36">
       <span class="ppm-nav-brand-text">
         <span class="ppm-nav-brand-outline">PEEVISH</span>
         <span class="ppm-nav-brand-solid">PENMAN</span>
