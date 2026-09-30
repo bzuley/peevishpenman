@@ -124,6 +124,20 @@ ppm_require_published($post_meta);
 
       <p><strong>That's Janeway.</strong></p>
 
+      <figure class="ppm-article-gif">
+        <iframe
+          src="https://giphy.com/embed/lQHyUVdkpRqfwtJdmL"
+          width="480" height="408"
+          title="Captain Janeway says, “There's coffee in that nebula.”"
+          loading="lazy"
+          allowfullscreen
+        ></iframe>
+        <figcaption>
+          “There's coffee in that nebula.”<br>
+          <a href="https://giphy.com/gifs/startrek-coffee-captain-janeway-stv1-lQHyUVdkpRqfwtJdmL">via GIPHY</a>
+        </figcaption>
+      </figure>
+
       <p>Mulgrew doesn't play her as a woman successfully imitating the male captains who came before her. Janeway is commanding, scientific, imperious, maternal, stubborn, compassionate, lonely, and sometimes spectacularly wrong. None of those things cancels out the others. Even Q notices. While attempting to seduce her, he marvels that she has “such authority” while managing to preserve her femininity.</p>
 
       <p>It's Q, so naturally it's both a compliment and an insult, but he's noticed something important about Janeway: she doesn't have to become less female as she becomes more powerful.</p>
