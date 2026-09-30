@@ -183,7 +183,8 @@
     <?php endif; ?>
 
     <!-- Books row -->
-    <section class="ppm-home-books">
+    <section class="ppm-home-books" aria-labelledby="ppm-home-books-title">
+      <h2 class="ppm-home-books-title" id="ppm-home-books-title">Books by OA Allen</h2>
       <div class="ppm-home-books-grid">
         <a class="ppm-home-book" href="/pages/delcath-series">
           <div class="ppm-home-book-cover ppm-home-book-cover--inset">

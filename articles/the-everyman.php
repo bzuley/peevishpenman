@@ -9,6 +9,9 @@ $post_meta = [
   // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
   // Powers the quicklink buttons on index.php (see /article-tag.php).
   'tags'    => 'archetypes, writing',
+  // Name on the archetype wheel; also lists this post in the series
+  // links under the wheel (see /partials/archetype-wheel.php).
+  'archetype' => 'Everyman',
   'author'  => 'OA Allen'
 ];
 ?>
@@ -73,7 +76,7 @@ $post_meta = [
   </figure>
 </header>
 
-    <?php $archetype_name = 'Everyman'; include $_SERVER['DOCUMENT_ROOT'].'/partials/archetype-wheel.php'; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/archetype-wheel.php'; ?>
 
     <section>
       <h2>The Archetype of Stability</h2>
