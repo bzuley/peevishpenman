@@ -222,7 +222,7 @@
     <div class="ppm-home-widget">
       <p class="ppm-home-widget-label">Early Access &middot; Launch Alerts</p>
       <h3 class="ppm-home-widget-title">Get the Drops First</h3>
-      <form action="/partials/newsletter-signup.php" method="POST" class="ppm-home-widget-form">
+      <form action="/partials/newsletter-signup" method="POST" class="ppm-home-widget-form">
         <input type="email" name="email" placeholder="Your email" required aria-label="Email address">
         <button type="submit" aria-label="Join the newsletter now">Join Now</button>
       </form>

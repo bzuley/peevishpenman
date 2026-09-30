@@ -37,16 +37,29 @@ RewriteRule ^pages/delcath(\.php)?/?$ /pages/delcath-series [R=301,L,NC]
 RewriteRule ^pages/newsletter(\.php)?/?$ /#newsletter [R=301,L,NC,NE]
 
 # "Blog" was renamed to "Articles" sitewide.
-RewriteRule ^blog/?$ /articles [R=301,L,NC]
-RewriteRule ^blogs/(.+)$ /articles/$1 [R=301,L,NC]
-RewriteRule ^blog-tag/?$ /article-tag [R=301,L,NC,QSA]
+# Each old URL, with or without .php or a trailing slash, goes to its
+# final clean URL in a single 301 hop.
+RewriteRule ^blogs?(\.php)?/?$ /articles [R=301,L,NC]
+RewriteRule ^blogs/(.+?)(\.php)?/?$ /articles/$1 [R=301,L,NC]
+RewriteRule ^blog-tag(\.php)?/?$ /article-tag [R=301,L,NC,QSA]
 
 # The articles listing shares its clean URL with the articles/ post
 # directory, so the generic directory-checked rule below would treat
-# /articles as a directory request. Route it explicitly first.
+# /articles as a directory request. Route it explicitly first, and stop
+# mod_dir from 301ing the canonical /articles to /articles/ on its own.
+<IfModule mod_dir.c>
+  DirectorySlash Off
+</IfModule>
 RewriteRule ^articles/?$ articles.php [L]
 
-# Redirect /page.php to /page
+# The homepage lives at /, not /index or /index.php
+RewriteCond %{REQUEST_METHOD} ^(GET|HEAD)$
+RewriteCond %{THE_REQUEST} \s/+index(\.php)?[\s?] [NC]
+RewriteRule ^index(\.php)?$ / [R=301,L,NC]
+
+# Redirect /page.php to /page. GET/HEAD only: browsers turn a redirected
+# POST into a GET and drop the form data, which would lose submissions.
+RewriteCond %{REQUEST_METHOD} ^(GET|HEAD)$
 RewriteCond %{THE_REQUEST} \s/+(.+?)\.php[\s?] [NC]
 RewriteRule ^(.+)\.php$ /$1 [R=301,L]
 
