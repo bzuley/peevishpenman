@@ -42,13 +42,15 @@
         <input type="email" name="email" placeholder="Your email" required aria-label="Email address">
         <button type="submit" aria-label="Join the newsletter now">Join Now</button>
       </div>
-      
-      <?php if (isset($_GET['status']) && $_GET['status'] === 'success'): ?>
-        <p class="ppm-footer-message ppm-footer-message-success">Thanks—check your inbox.</p>
+      <input type="hidden" name="form" value="footer">
+      <input type="text" name="website" class="ppm-signup-trap" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+      <?php if (($_GET['form'] ?? '') === 'footer' && ($_GET['signup'] ?? '') === 'success'): ?>
+        <p class="ppm-footer-message ppm-footer-message-success" role="status">You're on the list. Thank you!</p>
       <?php endif; ?>
-      
-      <?php if (isset($_GET['status']) && $_GET['status'] === 'error'): ?>
-        <p class="ppm-footer-message ppm-footer-message-error">Something went wrong. Please try again.</p>
+
+      <?php if (($_GET['form'] ?? '') === 'footer' && ($_GET['signup'] ?? '') === 'error'): ?>
+        <p class="ppm-footer-message ppm-footer-message-error" role="alert">That didn't go through. Please check your email address and try again.</p>
       <?php endif; ?>
     </form>
     

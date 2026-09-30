@@ -219,20 +219,22 @@
       <a class="ppm-button" href="/pages/writer-secret-society">Get the Handbook</a>
     </div>
 
-    <div class="ppm-home-widget">
+    <div class="ppm-home-widget" id="signup">
       <p class="ppm-home-widget-label">Early Access &middot; Launch Alerts</p>
       <h3 class="ppm-home-widget-title">Get the Drops First</h3>
       <form action="/partials/newsletter-signup" method="POST" class="ppm-home-widget-form">
         <input type="email" name="email" placeholder="Your email" required aria-label="Email address">
         <button type="submit" aria-label="Join the newsletter now">Join Now</button>
+        <input type="hidden" name="form" value="home">
+        <input type="text" name="website" class="ppm-signup-trap" tabindex="-1" autocomplete="off" aria-hidden="true">
       </form>
 
-      <?php if (isset($_GET['status']) && $_GET['status'] === 'success'): ?>
-        <p class="ppm-footer-message ppm-footer-message-success">Thanks—check your inbox.</p>
+      <?php if (($_GET['form'] ?? '') === 'home' && ($_GET['signup'] ?? '') === 'success'): ?>
+        <p class="ppm-footer-message ppm-footer-message-success" role="status">You're on the list. Thank you!</p>
       <?php endif; ?>
 
-      <?php if (isset($_GET['status']) && $_GET['status'] === 'error'): ?>
-        <p class="ppm-footer-message ppm-footer-message-error">Something went wrong. Please try again.</p>
+      <?php if (($_GET['form'] ?? '') === 'home' && ($_GET['signup'] ?? '') === 'error'): ?>
+        <p class="ppm-footer-message ppm-footer-message-error" role="alert">That didn't go through. Please check your email address and try again.</p>
       <?php endif; ?>
     </div>
   </aside>

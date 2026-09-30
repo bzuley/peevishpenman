@@ -2519,6 +2519,15 @@ html.ppm-nav-open {
   color: #ff9494;
 }
 
+/* Spam trap on the sign-up forms: invisible to people, filled in by bots */
+.ppm-signup-trap {
+  position: absolute !important;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
 .ppm-footer-newsletter-meta {
   font-size: 0.88rem;
   color: var(--ppm-text-muted);
