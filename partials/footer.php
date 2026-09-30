@@ -37,6 +37,12 @@
     <h3>Get the Drops First</h3>
     <p class="ppm-footer-newsletter-lede">Chapters, secret extras, and release dates—straight from the studio. No filler. No delay.</p>
 
+    <?php if (($_GET['form'] ?? '') === 'footer' && ($_GET['signup'] ?? '') === 'success'): ?>
+      <div class="ppm-footer-message ppm-footer-message-success" role="status">
+        <strong>You&rsquo;re on the list!</strong>
+        <span>Thanks for signing up. Watch your inbox for the next Peevish Penman newsletter.</span>
+      </div>
+    <?php else: ?>
     <form action="/partials/newsletter-signup" method="POST" id="newsletter-form">
       <div class="ppm-footer-newsletter-form">
         <input type="email" name="email" placeholder="Your email" required aria-label="Email address">
@@ -45,14 +51,11 @@
       <input type="hidden" name="form" value="footer">
       <input type="text" name="website" class="ppm-signup-trap" tabindex="-1" autocomplete="off" aria-hidden="true">
 
-      <?php if (($_GET['form'] ?? '') === 'footer' && ($_GET['signup'] ?? '') === 'success'): ?>
-        <p class="ppm-footer-message ppm-footer-message-success" role="status">You're on the list. Thank you!</p>
-      <?php endif; ?>
-
       <?php if (($_GET['form'] ?? '') === 'footer' && ($_GET['signup'] ?? '') === 'error'): ?>
-        <p class="ppm-footer-message ppm-footer-message-error" role="alert">That didn't go through. Please check your email address and try again.</p>
+        <p class="ppm-footer-message ppm-footer-message-error" role="alert">That didn&rsquo;t go through. Please check your email address and try again.</p>
       <?php endif; ?>
     </form>
+    <?php endif; ?>
     
     <p class="ppm-footer-newsletter-meta">One email when it matters. Unsubscribe anytime.</p>
   </section>

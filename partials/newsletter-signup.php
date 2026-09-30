@@ -16,17 +16,25 @@ function ppm_signup_referer_path() {
     return $path;
 }
 
-// Send the visitor back to the page they signed up on, scrolled to the form
-// they used. Only same-site paths are used, so the Referer can't bounce
-// anyone to another site.
+// The forms submit in the background (js/main.js) and ask for JSON, so the
+// page never reloads. Without JavaScript, send the visitor back to the page
+// they signed up on, scrolled to the form they used. Only same-site paths
+// are used, so the Referer can't bounce anyone to another site.
 function ppm_signup_redirect($status, $form) {
+    if (strpos($_SERVER['HTTP_ACCEPT'] ?? '', 'application/json') !== false) {
+        http_response_code($status === 'success' ? 200 : 400);
+        header('Content-Type: application/json; charset=UTF-8');
+        header('Cache-Control: no-store');
+        echo json_encode(['ok' => $status === 'success']);
+        exit;
+    }
     $path = ppm_signup_referer_path() ?: '/';
     $anchor = $form === 'home' ? 'signup' : 'newsletter';
     header('Location: ' . $path . '?signup=' . $status . '&form=' . $form . '#' . $anchor, true, 303);
     exit;
 }
 
-if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+if (($_SERVER['REQUEST_METHOD'] ?? '') !== 'POST') {
     header('Location: /');
     exit;
 }

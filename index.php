@@ -222,6 +222,12 @@
     <div class="ppm-home-widget" id="signup">
       <p class="ppm-home-widget-label">Early Access &middot; Launch Alerts</p>
       <h3 class="ppm-home-widget-title">Get the Drops First</h3>
+      <?php if (($_GET['form'] ?? '') === 'home' && ($_GET['signup'] ?? '') === 'success'): ?>
+        <div class="ppm-footer-message ppm-footer-message-success" role="status">
+          <strong>You&rsquo;re on the list!</strong>
+          <span>Thanks for signing up. Watch your inbox for the next Peevish Penman newsletter.</span>
+        </div>
+      <?php else: ?>
       <form action="/partials/newsletter-signup" method="POST" class="ppm-home-widget-form">
         <input type="email" name="email" placeholder="Your email" required aria-label="Email address">
         <button type="submit" aria-label="Join the newsletter now">Join Now</button>
@@ -229,12 +235,9 @@
         <input type="text" name="website" class="ppm-signup-trap" tabindex="-1" autocomplete="off" aria-hidden="true">
       </form>
 
-      <?php if (($_GET['form'] ?? '') === 'home' && ($_GET['signup'] ?? '') === 'success'): ?>
-        <p class="ppm-footer-message ppm-footer-message-success" role="status">You're on the list. Thank you!</p>
-      <?php endif; ?>
-
       <?php if (($_GET['form'] ?? '') === 'home' && ($_GET['signup'] ?? '') === 'error'): ?>
-        <p class="ppm-footer-message ppm-footer-message-error" role="alert">That didn't go through. Please check your email address and try again.</p>
+        <p class="ppm-footer-message ppm-footer-message-error" role="alert">That didn&rsquo;t go through. Please check your email address and try again.</p>
+      <?php endif; ?>
       <?php endif; ?>
     </div>
   </aside>
