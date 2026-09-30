@@ -86,7 +86,7 @@ function ppm_get_blog_posts() {
                 
                 $meta = [];
 
-                foreach (['slug', 'title', 'excerpt', 'date', 'image'] as $field) {
+                foreach (['slug', 'title', 'excerpt', 'date', 'image', 'archetype'] as $field) {
                     $value = ppm_extract_quoted_field($array_string, $field);
                     if ($value !== null) {
                         $meta[$field] = $value;
@@ -190,6 +190,16 @@ function ppm_get_posts_by_tag($tag) {
         }
         return false;
     }));
+}
+
+/**
+ * Published character-archetype profiles (posts whose $post_meta sets
+ * 'archetype'), oldest first so they read in series order.
+ */
+function ppm_get_archetype_posts() {
+    return array_reverse(array_values(array_filter(ppm_get_blog_posts(), function ($post) {
+        return !empty($post['archetype']);
+    })));
 }
 
 // Per-day view counts for posts, kept server-side so the homepage can

@@ -2144,6 +2144,65 @@ html.ppm-nav-open {
   margin: 0 auto;
 }
 
+/* "In the series" links under the wheel (partials/archetype-wheel.php) */
+.ppm-archetype-series {
+  margin: -0.75rem 0 2.5rem;
+  text-align: center;
+}
+
+.ppm-article .ppm-archetype-series-label {
+  margin: 0 0 0.6rem;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.7rem;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ppm-hermes-shadow);
+}
+
+.ppm-article .ppm-archetype-series ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.ppm-article .ppm-archetype-series li {
+  margin: 0;
+}
+
+.ppm-article .ppm-archetype-series a,
+.ppm-archetype-series [aria-current="page"] {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--ppm-border-soft);
+  border-radius: var(--ppm-radius-pill);
+  font-family: "Space Grotesk", system-ui, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--ppm-text-main);
+}
+
+.ppm-article .ppm-archetype-series a:hover {
+  border-color: var(--ppm-hermes);
+  color: var(--ppm-hermes);
+}
+
+.ppm-archetype-series [aria-current="page"] {
+  background: var(--ppm-hermes);
+  border-color: var(--ppm-hermes);
+  color: #000;
+}
+
 /* GIPHY embeds: full size on desktop, shrunk to the column on phones
    without changing shape. */
 .ppm-article-gif iframe {

@@ -9,6 +9,9 @@ $post_meta = [
   // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
   // Powers the quicklink buttons on index.php (see /article-tag.php).
   'tags'    => 'archetypes, writing',
+  // Name on the archetype wheel; also lists this post in the series
+  // links under the wheel (see /partials/archetype-wheel.php).
+  'archetype' => 'Ruler',
   'author'  => 'OA Allen'
 ];
 require_once $_SERVER['DOCUMENT_ROOT'] . '/blog-config.php';
@@ -75,7 +78,7 @@ ppm_require_published($post_meta);
   </figure>
 </header>
 
-    <?php $archetype_name = 'Ruler'; include $_SERVER['DOCUMENT_ROOT'].'/partials/archetype-wheel.php'; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/archetype-wheel.php'; ?>
 
     <section>
       <p>The Ruler is particularly prone to oversimplification.</p>
