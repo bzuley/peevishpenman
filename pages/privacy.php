@@ -69,9 +69,11 @@
     <section>
       <h2>Your Choices</h2>
       <p>
-        You can unsubscribe from the newsletter at any time by contacting OA
-        Allen directly (see below), and you can ask to have your email
-        address removed from the mailing list.
+        You can unsubscribe from the newsletter at any time with the
+        Unsubscribe button in every newsletter, or at
+        <a href="/unsubscribe">peevishpenman.com/unsubscribe</a>. Your
+        email address is removed from the mailing list straight away. You
+        can also contact OA Allen directly (see below).
       </p>
     </section>
 

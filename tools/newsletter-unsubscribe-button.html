@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Newsletter Unsubscribe Button</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 640px; margin: 2rem auto; padding: 0 16px; color: #222; background: #fff; line-height: 1.5; }
+    .sample { border: 1px dashed #bbb; border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; }
+    .copy { font: inherit; padding: .6rem 1.1rem; border-radius: 6px; border: 1px solid #222; background: #222; color: #fff; cursor: pointer; }
+    .copied { margin-left: .75rem; color: #2a7a2a; }
+    ol li { margin-bottom: .4rem; }
+  </style>
+</head>
+<body>
+  <h1>Unsubscribe button for the newsletter</h1>
+  <p>Put this at the bottom of <strong>every</strong> newsletter you send. It takes readers to
+    <a href="https://peevishpenman.com/unsubscribe">peevishpenman.com/unsubscribe</a>, where they enter
+    their email and are taken off the sign-up sheet straight away.</p>
+
+  <div class="sample" id="snippet">
+    <!-- Email-safe markup: a table with inline styles renders in every mail app. -->
+    <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin:24px auto 8px;">
+      <tr>
+        <td align="center" style="border-radius:6px;background:#1f1f1f;">
+          <a href="https://peevishpenman.com/unsubscribe" target="_blank"
+             style="display:inline-block;padding:10px 22px;font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#ffffff;text-decoration:none;border-radius:6px;">Unsubscribe</a>
+        </td>
+      </tr>
+    </table>
+    <p style="margin:0;text-align:center;font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#777777;">
+      You&rsquo;re getting this because you signed up at peevishpenman.com.
+    </p>
+  </div>
+
+  <p><button class="copy" id="copy" type="button">Copy button</button><span class="copied" id="copied" hidden>Copied — paste it into your email.</span></p>
+
+  <h2>How to use it in Gmail</h2>
+  <ol>
+    <li>Click <strong>Copy button</strong> above. (Or select everything inside the dashed box and copy it.)</li>
+    <li>In your newsletter draft, click at the very bottom and paste.</li>
+    <li>Put all subscribers in <strong>Bcc</strong>, never To or Cc, so readers can&rsquo;t see each other&rsquo;s addresses.</li>
+  </ol>
+  <p>The sign-up sheet is <code>partials/data/newsletter-subscribers.csv</code> on the server. Download a fresh
+    copy right before each send so anyone who unsubscribed since last time is already gone.</p>
+
+  <script>
+    document.getElementById('copy').addEventListener('click', async function () {
+      var box = document.getElementById('snippet');
+      var html = box.innerHTML;
+      var text = 'Unsubscribe: https://peevishpenman.com/unsubscribe';
+      try {
+        await navigator.clipboard.write([new ClipboardItem({
+          'text/html': new Blob([html], { type: 'text/html' }),
+          'text/plain': new Blob([text], { type: 'text/plain' })
+        })]);
+      } catch (e) {
+        var range = document.createRange();
+        range.selectNodeContents(box);
+        var sel = window.getSelection();
+        sel.removeAllRanges();
+        sel.addRange(range);
+        document.execCommand('copy');
+        sel.removeAllRanges();
+      }
+      document.getElementById('copied').hidden = false;
+    });
+  </script>
+</body>
+</html>
