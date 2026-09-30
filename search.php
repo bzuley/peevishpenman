@@ -34,7 +34,7 @@ $results = $query !== '' ? ppm_search_posts($query) : [];
       <h2 class="bp-title">Search</h2>
     </div>
 
-    <form class="ppm-search-form" action="/search.php" method="get" role="search">
+    <form class="ppm-search-form" action="/search" method="get" role="search">
       <input type="search" name="q" placeholder="Search posts&hellip;"
              value="<?php echo htmlspecialchars($query); ?>" aria-label="Search posts" autofocus>
       <button type="submit">Search</button>
