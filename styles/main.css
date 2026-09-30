@@ -2512,11 +2512,58 @@ html.ppm-nav-open {
 }
 
 .ppm-footer-message-success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  max-width: 520px;
+  margin: 1rem auto 0;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid var(--ppm-hermes);
+  border-radius: var(--ppm-radius-md);
+  background: rgba(47, 168, 145, 0.12);
+  color: var(--ppm-text-main);
+  font-size: 1.05rem;
+  line-height: 1.5;
+  text-align: center;
+  animation: ppm-signup-in 0.35s ease-out;
+}
+
+.ppm-footer-message-success strong {
+  font-family: "Space Grotesk", system-ui, sans-serif;
+  font-size: clamp(1.3rem, 2vw, 1.6rem);
+  font-weight: 700;
+  letter-spacing: 0.04em;
   color: var(--ppm-hermes);
+}
+
+.ppm-footer-message-success strong::before {
+  content: "\2713\00a0";
+}
+
+/* The homepage sidebar widget is narrow; scale the confirmation to fit */
+.ppm-home-widget .ppm-footer-message-success {
+  padding: 1rem 0.9rem;
+  font-size: 0.92rem;
+}
+
+.ppm-home-widget .ppm-footer-message-success strong {
+  font-size: 1.15rem;
+  letter-spacing: 0.02em;
+}
+
+@keyframes ppm-signup-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ppm-footer-message-success { animation: none; }
 }
 
 .ppm-footer-message-error {
   color: #ff9494;
+  font-size: 1rem;
 }
 
 /* Spam trap on the sign-up forms: invisible to people, filled in by bots */
