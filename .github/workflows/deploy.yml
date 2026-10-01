@@ -12,6 +12,18 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      # The /newsletter-admin page checks its password against this hash.
+      # Without the secret, no file is written and the page stays locked.
+      - name: Build newsletter admin password
+        env:
+          NEWSLETTER_ADMIN_PASSWORD: ${{ secrets.NEWSLETTER_ADMIN_PASSWORD }}
+        run: |
+          if [ -n "$NEWSLETTER_ADMIN_PASSWORD" ]; then
+            php -r '$h = password_hash(getenv("NEWSLETTER_ADMIN_PASSWORD"), PASSWORD_DEFAULT);
+              file_put_contents("partials/newsletter-admin-config.php",
+                "<?php\ndefine(\"PPM_NEWSLETTER_ADMIN_HASH\", " . var_export($h, true) . ");\n");'
+          fi
+
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:

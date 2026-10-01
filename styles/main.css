@@ -2789,3 +2789,127 @@ html.ppm-nav-open {
     height: 26px;
   }
 }
+/* ================================
+   NEWSLETTER ADMIN (/newsletter-admin)
+   ================================ */
+
+.ppm-admin-center {
+  text-align: center;
+}
+
+.ppm-admin-login {
+  display: flex;
+  gap: 10px;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.ppm-admin-login input {
+  flex: 1;
+  min-width: 0;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: var(--ppm-radius-md);
+  padding: 0.8rem 1rem;
+  color: #ffffff;
+}
+
+.ppm-admin-login input:focus {
+  outline: none;
+  border-color: var(--ppm-hermes);
+}
+
+.ppm-admin-login button,
+.ppm-admin-signout {
+  font-family: "Space Grotesk", system-ui, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.8rem 1.4rem;
+  border-radius: var(--ppm-radius-pill);
+  border: none;
+  background: var(--ppm-hermes);
+  color: #000;
+  cursor: pointer;
+}
+
+.ppm-admin-login button:hover,
+.ppm-admin-signout:hover {
+  background: var(--ppm-hermes-lumen);
+}
+
+.ppm-admin-signout {
+  margin-top: var(--ppm-spacing-lg);
+  background: transparent;
+  color: var(--ppm-text-muted);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.ppm-admin-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: var(--ppm-spacing-sm);
+  margin-bottom: var(--ppm-spacing-md);
+}
+
+.ppm-admin-stats div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--ppm-spacing-md) var(--ppm-spacing-sm);
+  background: var(--ppm-surface);
+  border: 1px solid var(--ppm-border-soft);
+  border-radius: var(--ppm-radius-md);
+}
+
+.ppm-admin-stats strong {
+  font-family: "Space Grotesk", system-ui, sans-serif;
+  font-size: 2rem;
+  line-height: 1.1;
+  color: var(--ppm-hermes);
+}
+
+.ppm-admin-stats span {
+  font-size: 0.85rem;
+  color: var(--ppm-text-muted);
+}
+
+.ppm-admin-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--ppm-spacing-md);
+  margin-bottom: var(--ppm-spacing-lg);
+}
+
+.ppm-admin-actions a {
+  color: var(--ppm-hermes);
+  text-decoration: underline;
+}
+
+.ppm-admin section {
+  margin-bottom: var(--ppm-spacing-lg);
+}
+
+.ppm-admin-table-wrap {
+  overflow-x: auto;
+}
+
+.ppm-admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+
+.ppm-admin-table th,
+.ppm-admin-table td {
+  text-align: left;
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--ppm-border-soft);
+  white-space: nowrap;
+}
+
+.ppm-admin-table th {
+  color: var(--ppm-text-muted);
+  font-weight: 500;
+}
