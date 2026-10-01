@@ -74,7 +74,7 @@ if ($method === 'POST' && ($_POST['action'] ?? '') === 'logout') {
 if ($method === 'POST' && ($_POST['action'] ?? '') === 'login' && $hash !== '') {
     if (count(ppm_admin_recent_fails()) >= PPM_ADMIN_MAX_FAILS) {
         $error = 'Too many wrong passwords. Try again in 15 minutes.';
-    } elseif (password_verify((string) ($_POST['password'] ?? ''), $hash)) {
+    } elseif (password_verify(trim((string) ($_POST['password'] ?? '')), $hash)) {
         session_regenerate_id(true);
         $_SESSION['admin'] = true;
         header('Location: /newsletter-admin', true, 303);
