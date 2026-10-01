@@ -19,7 +19,7 @@ jobs:
           NEWSLETTER_ADMIN_PASSWORD: ${{ secrets.NEWSLETTER_ADMIN_PASSWORD }}
         run: |
           if [ -n "$NEWSLETTER_ADMIN_PASSWORD" ]; then
-            php -r '$h = password_hash(getenv("NEWSLETTER_ADMIN_PASSWORD"), PASSWORD_DEFAULT);
+            php -r '$h = password_hash(trim(getenv("NEWSLETTER_ADMIN_PASSWORD")), PASSWORD_DEFAULT);
               file_put_contents("partials/newsletter-admin-config.php",
                 "<?php\ndefine(\"PPM_NEWSLETTER_ADMIN_HASH\", " . var_export($h, true) . ");\n");'
           fi
