@@ -6,3 +6,6 @@ Thumbs.db
 __pycache__/
 *.pyc
 partials/data/
+
+# Built from the NEWSLETTER_ADMIN_PASSWORD secret at deploy time
+partials/newsletter-admin-config.php

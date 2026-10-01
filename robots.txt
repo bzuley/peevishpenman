@@ -2,5 +2,6 @@ User-agent: *
 Allow: /
 Disallow: /article-slug
 Disallow: /article-slug.php
+Disallow: /newsletter-admin
 
 Sitemap: https://peevishpenman.com/sitemap.xml
