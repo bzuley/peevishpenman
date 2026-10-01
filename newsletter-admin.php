@@ -1,20 +1,14 @@
 <?php
 // Private newsletter dashboard: who's on the list, who left, and where
-// people sign up. Password-protected; the password's hash comes from the
-// NEWSLETTER_ADMIN_PASSWORD GitHub secret, which the deploy workflow writes
-// to partials/newsletter-admin-config.php. Without that file the page stays
-// locked for everyone.
+// people sign up. Password-protected with the password below.
 require_once __DIR__ . '/partials/newsletter-lib.php';
 
 header('X-Robots-Tag: noindex, nofollow');
 header('Cache-Control: no-store');
 header('Referrer-Policy: no-referrer');
 
-$config = __DIR__ . '/partials/newsletter-admin-config.php';
-if (is_readable($config)) {
-    require $config;
-}
-$hash = defined('PPM_NEWSLETTER_ADMIN_HASH') ? PPM_NEWSLETTER_ADMIN_HASH : '';
+const PPM_NEWSLETTER_ADMIN_PASSWORD = '4471';
+$hash = password_hash(PPM_NEWSLETTER_ADMIN_PASSWORD, PASSWORD_DEFAULT);
 
 session_name('ppm_admin');
 session_set_cookie_params([
