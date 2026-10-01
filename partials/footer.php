@@ -1,6 +1,7 @@
-<!-- Site scripts -->
-<script src="/js/main.js"></script>
-<script src="/js/jump-nav.js"></script>
+<!-- Site scripts. The ?v= changes on every deploy, like the stylesheet's,
+     so browsers never keep running an old cached copy. -->
+<script src="/js/main.js?v=<?= filemtime($_SERVER['DOCUMENT_ROOT'].'/js/main.js') ?>"></script>
+<script src="/js/jump-nav.js?v=<?= filemtime($_SERVER['DOCUMENT_ROOT'].'/js/jump-nav.js') ?>"></script>
 
 <script>
   (function () {
