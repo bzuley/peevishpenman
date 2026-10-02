@@ -20,13 +20,18 @@ $blog_items = ppm_get_blog_posts();
   <meta property="og:description" content="Articles on writing, science fiction, history, consciousness, technology, publishing, and unusual questions worth investigating in the world of speculative fiction.">
   <meta property="og:url" content="https://peevishpenman.com/articles">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://peevishpenman.com/img/peevish-penman-social-share-1200x630.png">
+  <meta property="og:image" content="https://peevishpenman.com/img/social/peevish-penman.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Articles – Peevish Penman">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Articles – Peevish Penman">
   <meta name="twitter:description" content="Articles on writing, science fiction, history, consciousness, technology, publishing, and unusual questions worth investigating in the world of speculative fiction.">
-  <meta name="twitter:image" content="https://peevishpenman.com/img/peevish-penman-social-share-1200x630.png">
+  <meta name="twitter:image" content="https://peevishpenman.com/img/social/peevish-penman.jpg">
+  <meta name="twitter:image:alt" content="Articles – Peevish Penman">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

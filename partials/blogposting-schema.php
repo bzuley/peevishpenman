@@ -11,7 +11,7 @@ ppm_record_view($post_meta['slug']);
 $schema_site = 'https://peevishpenman.com';
 $schema_url = $schema_site . '/articles/' . rawurlencode($post_meta['slug']);
 // Posts without a hero image fall back to the site-wide share image.
-$schema_image = ($post_meta['image'] ?? '') ?: '/img/peevish-penman-social-share-1200x630.png';
+$schema_image = ($post_meta['image'] ?? '') ?: '/img/social/peevish-penman.jpg';
 if (strpos($schema_image, 'http') !== 0) {
   $schema_image = $schema_site . $schema_image;
 }

@@ -16,13 +16,18 @@
   <meta property="og:description" content="Science fiction about asteroid miners, labour and dependence, and the intelligence that watches over them.">
   <meta property="og:url" content="https://peevishpenman.com/pages/delcath-series">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://peevishpenman.com/img/covers/wod-cover-3d.webp">
+  <meta property="og:image" content="https://peevishpenman.com/img/social/delcath-series.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="The Delcath Series – OA Allen">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="The Delcath Series – OA Allen">
   <meta name="twitter:description" content="Science fiction about asteroid miners, labour and dependence, and the intelligence that watches over them.">
-  <meta name="twitter:image" content="https://peevishpenman.com/img/covers/wod-cover-3d.webp">
+  <meta name="twitter:image" content="https://peevishpenman.com/img/social/delcath-series.jpg">
+  <meta name="twitter:image:alt" content="The Delcath Series – OA Allen">
 
   <link rel="stylesheet" href="/styles/main.css?v=<?= filemtime($_SERVER['DOCUMENT_ROOT'].'/styles/main.css') ?>">
 

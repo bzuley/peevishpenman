@@ -39,6 +39,18 @@ $tag_label = $tag_labels[strtolower($tag)] ?? ucwords(str_replace(['-', '_'], ' 
   <meta property="og:description" content="<?php echo htmlspecialchars($tag_label); ?> posts from OA Allen at Peevish Penman.">
   <meta property="og:url" content="https://peevishpenman.com/article-tag?tag=<?php echo urlencode($tag); ?>">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="https://peevishpenman.com/img/social/peevish-penman.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Peevish Penman — OA Allen, metaphysical science fiction">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="<?php echo htmlspecialchars($tag_label); ?> Posts – Peevish Penman">
+  <meta name="twitter:description" content="<?php echo htmlspecialchars($tag_label); ?> posts from OA Allen at Peevish Penman.">
+  <meta name="twitter:image" content="https://peevishpenman.com/img/social/peevish-penman.jpg">
+  <meta name="twitter:image:alt" content="Peevish Penman — OA Allen, metaphysical science fiction">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
