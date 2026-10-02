@@ -16,15 +16,18 @@
   <meta property="og:description" content="Ghost Trucker: speculative fiction from the cab of a semi. A trucker dies, wakes up in the Netherverse, and discovers death hasn't freed him from employment.">
   <meta property="og:url" content="https://peevishpenman.com/pages/ghost-trucker">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://peevishpenman.com/img/peevish-penman-social-share-1200x630.png">
+  <meta property="og:image" content="https://peevishpenman.com/img/social/peevish-penman.jpg">
+  <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Ghost Trucker – OA Allen &amp; Peevish Penman">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Ghost Trucker – OA Allen &amp; Peevish Penman">
   <meta name="twitter:description" content="Ghost Trucker: speculative fiction from the cab of a semi. A trucker dies, wakes up in the Netherverse, and discovers death hasn't freed him from employment.">
-  <meta name="twitter:image" content="https://peevishpenman.com/img/peevish-penman-social-share-1200x630.png">
+  <meta name="twitter:image" content="https://peevishpenman.com/img/social/peevish-penman.jpg">
+  <meta name="twitter:image:alt" content="Ghost Trucker – OA Allen &amp; Peevish Penman">
 
   <link rel="stylesheet" href="/styles/main.css?v=<?= filemtime($_SERVER['DOCUMENT_ROOT'].'/styles/main.css') ?>">
 

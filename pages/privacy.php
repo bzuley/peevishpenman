@@ -11,6 +11,23 @@
 
   <link rel="canonical" href="https://peevishpenman.com/pages/privacy">
 
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Peevish Penman">
+  <meta property="og:title" content="Privacy Policy – Peevish Penman">
+  <meta property="og:description" content="Privacy policy for peevishpenman.com — what information is collected, how it's used, and how to contact OA Allen with questions.">
+  <meta property="og:url" content="https://peevishpenman.com/pages/privacy">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://peevishpenman.com/img/social/peevish-penman.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Peevish Penman — OA Allen, metaphysical science fiction">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://peevishpenman.com/img/social/peevish-penman.jpg">
+  <meta name="twitter:image:alt" content="Peevish Penman — OA Allen, metaphysical science fiction">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=optional" rel="stylesheet">

@@ -15,16 +15,18 @@
 <meta property="og:description" content="Mystic wisdom, timeless methods, and practical inspiration for writers, from OA Allen. Free PDF and EPUB.">
 <meta property="og:url" content="https://peevishpenman.com/pages/writer-secret-society">
 <meta property="og:type" content="book">
-<meta property="og:image" content="https://peevishpenman.com/img/wss-cover.jpg">
-<meta property="og:image:width" content="720">
-<meta property="og:image:height" content="720">
+<meta property="og:image" content="https://peevishpenman.com/img/social/writer-secret-society.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="The Handbook of the Writer Secret Society — book cover">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="The Handbook of the Writer Secret Society — Free Download">
 <meta name="twitter:description" content="Mystic wisdom, timeless methods, and practical inspiration for writers, from OA Allen. Free PDF and EPUB.">
-<meta name="twitter:image" content="https://peevishpenman.com/img/wss-cover.jpg">
+<meta name="twitter:image" content="https://peevishpenman.com/img/social/writer-secret-society.jpg">
+<meta name="twitter:image:alt" content="The Handbook of the Writer Secret Society — book cover">
 
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=optional" rel="stylesheet">
 

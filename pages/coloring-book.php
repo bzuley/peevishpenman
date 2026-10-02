@@ -16,13 +16,18 @@
   <meta property="og:description" content="A satirical adult coloring book for anyone who suspects the people in charge might not be entirely human. Available now on Amazon.">
   <meta property="og:url" content="https://peevishpenman.com/pages/coloring-book">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://peevishpenman.com/img/covers/reptilian-cover-3d.webp">
+  <meta property="og:image" content="https://peevishpenman.com/img/social/coloring-book.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Reptilian Conspiracy Coloring Book – Peevish Penman">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Reptilian Conspiracy Coloring Book – Peevish Penman">
   <meta name="twitter:description" content="A satirical adult coloring book for anyone who suspects the people in charge might not be entirely human. Available now on Amazon.">
-  <meta name="twitter:image" content="https://peevishpenman.com/img/covers/reptilian-cover-3d.webp">
+  <meta name="twitter:image" content="https://peevishpenman.com/img/social/coloring-book.jpg">
+  <meta name="twitter:image:alt" content="Reptilian Conspiracy Coloring Book – Peevish Penman">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
