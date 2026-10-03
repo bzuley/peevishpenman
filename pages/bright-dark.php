@@ -171,30 +171,6 @@
     }
 
     /* ---------- Statement dividers ---------- */
-    .bd-statement {
-      padding: clamp(2.5rem, 6vw, 4rem) 5%;
-      text-align: center;
-      border-top: 1px solid var(--ppm-border-soft);
-      border-bottom: 1px solid var(--ppm-border-soft);
-    }
-
-    .bd-statement p {
-      font-family: "Oswald", "Space Grotesk", system-ui, sans-serif;
-      font-weight: 600;
-      font-size: clamp(1.3rem, 3.2vw, 1.9rem);
-      letter-spacing: 0.02em;
-      margin: 0;
-      color: #ffffff;
-    }
-
-    .bd-statement p + p {
-      margin-top: 0.5rem;
-      color: var(--bd-glow-soft);
-      font-weight: 500;
-      font-size: clamp(1.05rem, 2.4vw, 1.3rem);
-      font-style: italic;
-    }
-
     /* ---------- Mission / arrival section ---------- */
     .bd-arrival {
       padding: clamp(3rem, 7vw, 4.5rem) 5%;
@@ -372,13 +348,13 @@
 
       <div class="bd-hero-lede">
         <p>
-          Centuries after the modern world destroyed itself, civilization has
+          Centuries after the modern world collapsed, civilization has
           returned to New Zealand.
         </p>
         <p>Sort of.</p>
         <p>
-          Electricity is a mystery. Germs sound like a conspiracy theory.
-          Ancient technology is excavated, catalogued and occasionally
+          Electricity is poorly understood. Germs sound like a conspiracy
+          theory. Ancient technology is excavated, catalogued and occasionally
           misunderstood. Three-horned livestock wander the roads. Enormous
           predators haunt the <a class="ppm-inline-link" href="/articles/wasteland">Wastelands</a>. History has become religion,
           folklore and badly remembered technical documentation.
@@ -394,13 +370,16 @@
     <div class="bd-arrival-inner">
       <p>
         Twenty years old, painfully curious and much better with a scroll
-        than a weapon, Ren expects Recruitment Day to make him a scribe in the
-        Yellow Guard.
+        than a weapon, Ren expects Recruitment Day to place him with the
+        Yellow Guard, among the city&rsquo;s scribes.
       </p>
-      <p>Instead, one spectacularly bad decision makes him a grunt in the Green Guard.</p>
       <p>
-        Then an old captain offers him something far more dangerous than the
-        career he wanted: a mission to find the plasmoids.
+        Instead, one bad decision destroys his dreams and leaves his future
+        in the hands of a cantankerous old captain.
+      </p>
+      <p>
+        Ren is offered something far more dangerous: to find the plasmoids
+        his people call the Annuna.
       </p>
     </div>
   </section>
@@ -410,26 +389,26 @@
       <h2>Plasmoids</h2>
       <p>
         The first settlers left behind stories of rarefication&mdash;a lost
-        process by which human beings supposedly abandoned their physical
-        bodies and became luminous entities called plasmoids.
+        process by which human beings supposedly transformed themselves into
+        plasmoids.
       </p>
       <ul class="bd-belief-list">
-        <li>Most people treat them as history.</li>
-        <li>Some treat them as gods.</li>
+        <li>Most people treat the Annuna as history.</li>
+        <li>Some treat them as gawds.</li>
         <li class="bd-belief-strong">Ren thinks they might be real.</li>
       </ul>
       <p>
-        Now someone is meddling with portals, and a secretive elder guard
+        And with someone in the city opening portals, the old captain
         believes the vanished settlers may be the only ones who understand
-        what is happening.
+        the lost tech enough to help.
       </p>
       <p>
-        Ren is posted to remote Dunedin, the farthest corner of the island,
-        with a rank near the bottom of society, a guard-issued knife he
-        barely knows how to use, and an excellent cover story.
+        Ren is sent across the island toward remote Dunedin with an official
+        rank near the bottom of society, a guard-issued knife he barely
+        knows how to use, and an excellent cover story.
       </p>
       <span class="bd-cover-job">Official assignment: dig a cesspit.</span>
-      <span class="bd-cover-truth">Actual mission: find beings no one can prove exist.</span>
+      <span class="bd-cover-truth">Actual mission: find sentient plasma beings no one can prove exist.</span>
     </div>
   </section>
 
@@ -439,7 +418,7 @@
       <p>
         The apocalypse is ancient history. Humanity has already rebuilt.
         New cultures have formed. Guilds feud. Guards maintain an uneasy
-        order. Villages decide which pieces of the past they want
+        order. The Administrator decides which pieces of the past they get
         back&mdash;and which should remain buried.
       </p>
       <p>
@@ -448,18 +427,22 @@
         disturbingly like science.
       </p>
       <p>
-        And in the Zubian Waste, impossible lights move across the
-        landscape while people who live among them speak about reality as
-        though thought itself can leave footprints.
+        And in the Zubian Waste, impossible visions move across the
+        landscape. Every day. Like dream weather.
       </p>
-      <p class="bd-close-line">Ren wanted evidence. He begins finding far too much of it.</p>
+      <p>Ren goes looking for lost technology and sentient plasma.</p>
+      <p>
+        Instead, he finds people who can see more with their eyes closed,
+        machines that remember more than their operators do, and a
+        landscape where culture determines truth.
+      </p>
+      <p>And the Annuna may actually be real.</p>
+      <p class="bd-close-line">
+        Unfortunately, Ren was never prepared for this mission. No one was
+        and everything has to change before it even starts.
+      </p>
+      <span class="bd-byline">By OA Allen &middot; Coming Soon from Peevish Penman Press</span>
     </div>
-  </section>
-
-  <section class="bd-statement">
-    <p>There are doors in this world that should perhaps remain closed.</p>
-    <p>Ren has never been very good at leaving doors alone.</p>
-    <span class="bd-byline">By OA Allen &middot; Coming Soon from Peevish Penman Press</span>
   </section>
 
 </main>
