@@ -394,9 +394,10 @@
     <div class="bd-arrival-inner">
       <p>
         Twenty years old, painfully curious and much better with a scroll
-        than a weapon, Ren expects Recruitment Day to make him a scribe.
+        than a weapon, Ren expects Recruitment Day to make him a scribe in the
+        Yellow Guard.
       </p>
-      <p>Instead, one spectacularly bad decision puts him in the Guard.</p>
+      <p>Instead, one spectacularly bad decision makes him a grunt in the Green Guard.</p>
       <p>
         Then an old captain offers him something far more dangerous than the
         career he wanted: a mission to find the plasmoids.
@@ -423,9 +424,9 @@
         what is happening.
       </p>
       <p>
-        Ren is sent across the island toward remote Dunedin with an official
-        rank near the bottom of society, a guard-issued knife he barely
-        knows how to use, and an excellent cover story.
+        Ren is posted to remote Dunedin, the farthest corner of the island,
+        with a rank near the bottom of society, a guard-issued knife he
+        barely knows how to use, and an excellent cover story.
       </p>
       <span class="bd-cover-job">Official assignment: dig a cesspit.</span>
       <span class="bd-cover-truth">Actual mission: find beings no one can prove exist.</span>
