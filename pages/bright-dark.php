@@ -438,7 +438,7 @@
       </p>
       <p>And the Annuna may actually be real.</p>
       <p class="bd-close-line">
-        Unfortunately, Ren was never prepared for this mission. No one was
+        Unfortunately, Ren was never prepared for this mission. No one was,
         and everything has to change before it even starts.
       </p>
       <span class="bd-byline">By OA Allen &middot; Coming Soon from Peevish Penman Press</span>
