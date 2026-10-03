@@ -223,12 +223,14 @@
     </div>
 
     <div class="ppm-home-widget" id="signup">
-      <p class="ppm-home-widget-label">Early Access &middot; Launch Alerts</p>
+      <p class="ppm-home-widget-label">New Articles &middot; From the Desk</p>
       <h3 class="ppm-home-widget-title">Get the Drops First</h3>
+      <p class="ppm-home-widget-text">Get a sneak preview of <em>The Bright Dark</em> before it&rsquo;s published.</p>
       <?php if (($_GET['form'] ?? '') === 'home' && ($_GET['signup'] ?? '') === 'success'): ?>
         <div class="ppm-footer-message ppm-footer-message-success" role="status">
           <strong>You&rsquo;re on the list!</strong>
           <span>Thanks for signing up. Watch your inbox for the next Peevish Penman newsletter.</span>
+          <a class="ppm-signup-preview" href="/pages/bright-dark-chapter-one">Start reading Chapter 1 of <em>The Bright Dark</em> &rarr;</a>
         </div>
       <?php else: ?>
       <form action="/partials/newsletter-signup" method="POST" class="ppm-home-widget-form">

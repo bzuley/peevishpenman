@@ -2624,6 +2624,15 @@ html.ppm-nav-open {
   content: "\2713\00a0";
 }
 
+.ppm-signup-preview {
+  margin-top: 0.4rem;
+  font-family: "Space Grotesk", system-ui, sans-serif;
+  font-weight: 600;
+  color: var(--ppm-hermes);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 /* The homepage sidebar widget is narrow; scale the confirmation to fit */
 .ppm-home-widget .ppm-footer-message-success {
   padding: 1rem 0.9rem;
