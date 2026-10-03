@@ -35,7 +35,7 @@
   <section class="ppm-footer-newsletter" id="newsletter">
     <div class="ppm-footer-newsletter-overline">New Articles • From the Desk</div>
     <h3>Get the Drops First</h3>
-    <p class="ppm-footer-newsletter-lede">Writing tools, the independent author saga, and deep dives into science fiction and speculative ideas from OA Allen.</p>
+    <p class="ppm-footer-newsletter-lede">Writing tools, the independent author saga, and deep dives into science fiction and speculative ideas from OA Allen. Subscribers get a sneak preview of <em>The Bright Dark</em> before it&rsquo;s published.</p>
 
     <?php if (($_GET['form'] ?? '') === 'footer' && ($_GET['signup'] ?? '') === 'success'): ?>
       <div class="ppm-footer-message ppm-footer-message-success" role="status">
@@ -57,7 +57,7 @@
     </form>
     <?php endif; ?>
     
-    <p class="ppm-footer-newsletter-meta">One email when it matters. Unsubscribe anytime.</p>
+    <p class="ppm-footer-newsletter-meta">Two to four emails a year. Unsubscribe anytime.</p>
   </section>
 
   <!-- Footer Links -->
