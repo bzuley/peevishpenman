@@ -215,7 +215,7 @@
 
     .bd-arrival-inner p:last-of-type { margin-bottom: 0; }
 
-    /* ---------- Ishim / cover story panel sections ---------- */
+    /* ---------- Plasmoids / cover story panel sections ---------- */
     .bd-panel {
       padding: clamp(3rem, 7vw, 4.5rem) 5%;
       background:
@@ -399,21 +399,21 @@
       <p>Instead, one spectacularly bad decision puts him in the Guard.</p>
       <p>
         Then an old captain offers him something far more dangerous than the
-        career he wanted: a mission to find the Ishim.
+        career he wanted: a mission to find the plasmoids.
       </p>
     </div>
   </section>
 
   <section class="bd-panel">
     <div class="bd-panel-inner">
-      <h2>The Ishim</h2>
+      <h2>Plasmoids</h2>
       <p>
         The first settlers left behind stories of rarefication&mdash;a lost
         process by which human beings supposedly abandoned their physical
         bodies and became luminous entities called plasmoids.
       </p>
       <ul class="bd-belief-list">
-        <li>Most people treat the Ishim as history.</li>
+        <li>Most people treat them as history.</li>
         <li>Some treat them as gods.</li>
         <li class="bd-belief-strong">Ren thinks they might be real.</li>
       </ul>
