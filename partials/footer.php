@@ -15,7 +15,12 @@
 </script>
 
 <!-- Peevish Penman Footer -->
-<footer class="ppm-footer">
+<?php
+// Book pages set $ppm_footer_links = false before including this footer to
+// drop the About/Books/Privacy/RSS links, which they don't need.
+$ppm_footer_links = $ppm_footer_links ?? true;
+?>
+<footer class="ppm-footer<?= $ppm_footer_links ? '' : ' ppm-footer--no-links' ?>">
   <!-- Logo (mobile) -->
   <section class="ppm-footer-logo">
     <a href="/" aria-label="Peevish Penman home">
@@ -62,12 +67,14 @@
   </section>
 
   <!-- Footer Links -->
+  <?php if ($ppm_footer_links): ?>
   <nav class="ppm-footer-links" aria-label="Footer">
     <a href="/pages/about">About</a>
     <a href="/pages/books">Books</a>
     <a href="/pages/privacy">Privacy</a>
     <a href="/rss.xml" type="application/rss+xml">RSS Feed</a>
   </nav>
+  <?php endif; ?>
 
   <div class="ppm-footer-bottom">
     <!-- Social Media -->

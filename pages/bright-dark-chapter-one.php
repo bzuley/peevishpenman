@@ -388,6 +388,7 @@ header('X-Robots-Tag: noindex, nofollow');
 
 </main>
 
+<?php $ppm_footer_links = false; ?>
 <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/footer.php'; ?>
 </body>
 </html>

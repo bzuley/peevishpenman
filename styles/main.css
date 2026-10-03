@@ -2714,6 +2714,11 @@ html.ppm-nav-open {
   transform: scaleX(1);
 }
 
+/* Book pages leave out the footer links; close the gap they'd fill */
+.ppm-footer--no-links .ppm-footer-newsletter {
+  margin-bottom: 0;
+}
+
 /* Footer Bottom */
 .ppm-footer-bottom {
   margin-top: var(--ppm-spacing-lg);
