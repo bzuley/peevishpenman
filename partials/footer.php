@@ -33,9 +33,9 @@
 
   <!-- Newsletter -->
   <section class="ppm-footer-newsletter" id="newsletter">
-    <div class="ppm-footer-newsletter-overline">Early Access • Launch Alerts</div>
+    <div class="ppm-footer-newsletter-overline">New Articles • From the Desk</div>
     <h3>Get the Drops First</h3>
-    <p class="ppm-footer-newsletter-lede">Chapters, secret extras, and release dates—straight from the studio. No filler. No delay.</p>
+    <p class="ppm-footer-newsletter-lede">Writing tools, the independent author saga, and deeper dives into science fiction and speculative ideas with OA Allen.</p>
 
     <?php if (($_GET['form'] ?? '') === 'footer' && ($_GET['signup'] ?? '') === 'success'): ?>
       <div class="ppm-footer-message ppm-footer-message-success" role="status">

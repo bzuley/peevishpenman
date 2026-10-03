@@ -223,7 +223,7 @@
     </div>
 
     <div class="ppm-home-widget" id="signup">
-      <p class="ppm-home-widget-label">Early Access &middot; Launch Alerts</p>
+      <p class="ppm-home-widget-label">New Articles &middot; From the Desk</p>
       <h3 class="ppm-home-widget-title">Get the Drops First</h3>
       <?php if (($_GET['form'] ?? '') === 'home' && ($_GET['signup'] ?? '') === 'success'): ?>
         <div class="ppm-footer-message ppm-footer-message-success" role="status">
