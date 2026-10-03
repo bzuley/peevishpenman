@@ -215,40 +215,6 @@
 
     .bd-arrival-inner p:last-of-type { margin-bottom: 0; }
 
-    .bd-readout {
-      max-width: 480px;
-      margin: 2.25rem auto 0;
-      background: var(--ppm-surface);
-      border: 1px solid var(--ppm-border-soft);
-      border-radius: var(--ppm-radius-md);
-      padding: 1.5rem 1.75rem;
-      font-family: "IBM Plex Mono", monospace;
-      text-align: left;
-    }
-
-    .bd-readout p {
-      margin: 0 0 0.6rem;
-      font-size: 0.98rem;
-      line-height: 1.6;
-      color: var(--ppm-text-muted);
-    }
-
-    .bd-readout p:last-child { margin-bottom: 0; }
-
-    .bd-readout .bd-q { color: var(--ppm-text-muted); }
-    .bd-readout .bd-a {
-      color: var(--bd-glow);
-      font-weight: 600;
-      font-size: 1.15rem;
-      letter-spacing: 0.02em;
-    }
-    .bd-readout .bd-note {
-      color: var(--ppm-text-muted);
-      font-style: italic;
-      padding-top: 0.6rem;
-      border-top: 1px dashed var(--ppm-border-soft);
-    }
-
     /* ---------- Ishim / cover story panel sections ---------- */
     .bd-panel {
       padding: clamp(3rem, 7vw, 4.5rem) 5%;
@@ -310,23 +276,6 @@
     .bd-belief-list li.bd-belief-strong {
       color: var(--bd-glow-soft);
     }
-
-    /* ---------- Cover story close ---------- */
-    .bd-cover {
-      padding: clamp(3rem, 7vw, 4.5rem) 5%;
-      text-align: center;
-    }
-
-    .bd-cover-inner {
-      max-width: 620px;
-      margin: 0 auto;
-      font-family: "IBM Plex Sans", system-ui, sans-serif;
-      font-size: 1.15rem;
-      line-height: 1.75;
-      color: var(--ppm-text-main);
-    }
-
-    .bd-cover-inner p { margin: 0 0 0.5rem; }
 
     .bd-cover-job {
       display: block;
@@ -392,38 +341,8 @@
       margin-top: 1.75rem;
     }
 
-    /* ---------- Final CTA ---------- */
-    .bd-cta {
-      padding: clamp(3.5rem, 8vw, 5.5rem) 5%;
-      text-align: center;
-      background: var(--ppm-surface);
-    }
-
-    .bd-cta-title {
-      font-family: "Oswald", "Space Grotesk", system-ui, sans-serif;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      font-size: clamp(1.6rem, 4vw, 2.4rem);
-      color: #ffffff;
-      margin: 0 0 0.75rem;
-    }
-
-    .bd-cta-sub {
-      font-family: "IBM Plex Sans", system-ui, sans-serif;
-      font-size: 1.05rem;
-      color: var(--ppm-text-muted);
-      max-width: 620px;
-      margin: 0 auto 2rem;
-      line-height: 1.7;
-    }
-
-    .bd-cta-sub strong {
-      color: var(--bd-glow-soft);
-      font-weight: 600;
-    }
-
-    .bd-cta-byline {
+    /* ---------- Closing lines ---------- */
+    .bd-byline {
       display: block;
       margin-top: 1.75rem;
       font-family: "IBM Plex Mono", monospace;
@@ -445,7 +364,7 @@
 
   <section class="bd-hero">
     <div class="bd-hero-content">
-      <p class="bd-kicker">OA Allen &amp; Peevish Penman &middot; Post-Apocalyptic Science Fiction</p>
+      <p class="bd-kicker">OA Allen &middot; Post-Apocalyptic Science Fiction</p>
       <h1>The Bright Dark</h1>
       <p class="bd-tagline">The old world is gone. Nobody remembers it correctly.</p>
       <p class="bd-badge">Coming Soon</p>
@@ -480,20 +399,9 @@
       <p>Instead, one spectacularly bad decision puts him in the Guard.</p>
       <p>
         Then an old captain offers him something far more dangerous than the
-        career he wanted.
+        career he wanted: a mission to find the Ishim.
       </p>
-
-      <div class="bd-readout">
-        <p class="bd-q">A career?</p>
-        <p class="bd-a">A mission.</p>
-        <p class="bd-note">Find the Ishim.</p>
-      </div>
     </div>
-  </section>
-
-  <section class="bd-statement">
-    <p>Rarefication.</p>
-    <p>A lost process. Or a lost lie.</p>
   </section>
 
   <section class="bd-panel">
@@ -515,18 +423,6 @@
         what is happening.
       </p>
       <p>
-        Rarefication is fiction's version of something I've spent years
-        chasing in my own meditation practice—shedding the body's noise
-        until whatever is left starts to look like light. I write about
-        that side of it, the non-fictional side, in
-        <a class="ppm-inline-link" href="/articles/closed-eye-visualizations">Closed-Eye Visualizations</a>.
-      </p>
-    </div>
-  </section>
-
-  <section class="bd-cover">
-    <div class="bd-cover-inner">
-      <p>
         Ren is sent across the island toward remote Dunedin with an official
         rank near the bottom of society, a guard-issued knife he barely
         knows how to use, and an excellent cover story.
@@ -536,20 +432,14 @@
     </div>
   </section>
 
-  <section class="bd-statement">
-    <p>The farther Ren travels,</p>
-    <p>the stranger history becomes.</p>
-  </section>
-
-  <section class="bd-panel">
-    <div class="bd-panel-inner">
-      <h2>A World That Argues With Itself</h2>
+  <section class="bd-world">
+    <div class="bd-world-inner">
+      <h2>A World That Moved On Without Us</h2>
       <p>
-        Beyond Auck City, the tidy version of civilization Ren learned from
-        scrolls begins to fall apart. Nomads cross landscapes that once lay
-        beneath the sea. Communities argue over whether recovering old
-        technology will save humanity or lead it back toward the
-        catastrophe that destroyed the modern world.
+        The apocalypse is ancient history. Humanity has already rebuilt.
+        New cultures have formed. Guilds feud. Guards maintain an uneasy
+        order. Villages decide which pieces of the past they want
+        back&mdash;and which should remain buried.
       </p>
       <p>
         Metal can be progress in one settlement and corruption in another.
@@ -561,67 +451,19 @@
         landscape while people who live among them speak about reality as
         though thought itself can leave footprints.
       </p>
-      <p>Ren wanted evidence.</p>
-      <p>He begins finding far too much of it.</p>
+      <p class="bd-close-line">Ren wanted evidence. He begins finding far too much of it.</p>
     </div>
   </section>
 
-  <section class="bd-world">
-    <div class="bd-world-inner">
-      <h2>A Post-Apocalyptic World That Moved On Without Us</h2>
-      <p>
-        The Bright Dark is not a story about survivors picking through the
-        immediate wreckage of civilization. The apocalypse is ancient
-        history. Humanity has already rebuilt.
-      </p>
-      <p>
-        New cultures have formed. New governments control territory. Roads
-        carry coaches and rubbish carts. Guilds feud. Workers organize.
-        Guards maintain an uneasy order. Villages decide which pieces of the
-        past they want back&mdash;and which should remain buried.
-      </p>
-      <p>The people of this world do not dream of restoring ours.</p>
-      <p class="bd-close-line">They have their own world to protect.</p>
-    </div>
-  </section>
-
-  <section class="bd-panel">
-    <div class="bd-panel-inner">
-      <h2>Knowledge Is Power</h2>
-      <p>That is what Ren has always been taught.</p>
-      <p>But information is not the same thing as understanding.</p>
-      <p>
-        His search for the Ishim pulls him into conflicts between
-        technological reclamation and rejection, cities and nomads,
-        hierarchy and autonomy, the material world and something far more
-        difficult to define.
-      </p>
-      <p>
-        The deeper Ren travels into the mysteries left by the first
-        settlers, the less certain he becomes that humanity ever understood
-        reality in the first place.
-      </p>
-      <p>There are doors in this world that should perhaps remain closed.</p>
-      <p>Ren has never been very good at leaving doors alone.</p>
-    </div>
-  </section>
-
-  <section class="bd-cta">
-    <p class="bd-cta-title">The Bright Dark</p>
-    <p class="bd-cta-sub">
-      A post-apocalyptic science-fiction novel about lost technology,
-      competing civilizations, anomalous phenomena, and one relentless
-      truthseeker discovering that the strangest relic of the old world may
-      be its understanding of reality itself.
-    </p>
-    <a class="ppm-button" href="#newsletter">
-      Get a Sneak Preview
-    </a>
-    <span class="bd-cta-byline">By OA Allen &middot; Coming Soon from Peevish Penman</span>
+  <section class="bd-statement">
+    <p>There are doors in this world that should perhaps remain closed.</p>
+    <p>Ren has never been very good at leaving doors alone.</p>
+    <span class="bd-byline">By OA Allen &middot; Coming Soon from Peevish Penman Press</span>
   </section>
 
 </main>
 
+<?php $ppm_book_page = true; ?>
 <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/footer.php'; ?>
 
 </body>
