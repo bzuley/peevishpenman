@@ -16,11 +16,12 @@
 
 <!-- Peevish Penman Footer -->
 <?php
-// Book pages set $ppm_footer_links = false before including this footer to
-// drop the About/Books/Privacy/RSS links, which they don't need.
-$ppm_footer_links = $ppm_footer_links ?? true;
+// Book pages set $ppm_book_page = true before including this footer to
+// drop the About/Books/Privacy/RSS links, which they don't need, and to
+// credit Peevish Penman Press in the copyright line.
+$ppm_book_page = $ppm_book_page ?? false;
 ?>
-<footer class="ppm-footer<?= $ppm_footer_links ? '' : ' ppm-footer--no-links' ?>">
+<footer class="ppm-footer<?= $ppm_book_page ? ' ppm-footer--no-links' : '' ?>">
   <!-- Logo (mobile) -->
   <section class="ppm-footer-logo">
     <a href="/" aria-label="Peevish Penman home">
@@ -67,7 +68,7 @@ $ppm_footer_links = $ppm_footer_links ?? true;
   </section>
 
   <!-- Footer Links -->
-  <?php if ($ppm_footer_links): ?>
+  <?php if (!$ppm_book_page): ?>
   <nav class="ppm-footer-links" aria-label="Footer">
     <a href="/pages/about">About</a>
     <a href="/pages/books">Books</a>
@@ -98,7 +99,7 @@ $ppm_footer_links = $ppm_footer_links ?? true;
 
     <!-- Copyright -->
     <div class="ppm-footer-copy">
-      &copy; <?php echo date('Y'); ?> Peevish Penman. All rights reserved.
+      &copy; <?php echo date('Y'); ?> Peevish Penman<?= $ppm_book_page ? ' Press' : '' ?>. All rights reserved.
     </div>
   </div>
 </footer>

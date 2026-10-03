@@ -559,7 +559,7 @@
 
 </main>
 
-<?php $ppm_footer_links = false; ?>
+<?php $ppm_book_page = true; ?>
 <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/footer.php'; ?>
 
 </body>
