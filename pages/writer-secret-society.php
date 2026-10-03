@@ -262,9 +262,51 @@ img { max-width: 100%; height: auto; display: block; }
   opacity: .6;
 }
 
-.download-bar { display: none; }
+.download-bar,
+.brand-bar { display: none; }
 
 @media (max-width: 819px) {
+  .top-nav { display: none; }
+
+  .brand-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 10px 16px;
+    background: linear-gradient(180deg, #050608 0%, #08090d 100%);
+    border-bottom: 1px solid var(--brass);
+  }
+
+  .brand-bar img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .brand-bar-title {
+    display: flex;
+    gap: .35rem;
+    font-family: "Space Grotesk", system-ui, sans-serif;
+    font-size: 1.35rem;
+    line-height: 1;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+  }
+
+  .brand-bar-outline {
+    color: transparent;
+    font-weight: 500;
+    -webkit-text-stroke: 1px #ffffff;
+  }
+
+  .brand-bar-solid {
+    color: #ffffff;
+    font-weight: 700;
+  }
+
   body { padding-bottom: calc(76px + env(safe-area-inset-bottom)); }
 
   .download-bar {
@@ -301,6 +343,14 @@ img { max-width: 100%; height: auto; display: block; }
 </head>
 
 <body>
+  <a class="brand-bar" href="/" aria-label="Peevish Penman home">
+    <img src="/img/logos/ppm_logo_main_reduced_160.webp" alt="" width="36" height="36">
+    <span class="brand-bar-title">
+      <span class="brand-bar-outline">Peevish</span>
+      <span class="brand-bar-solid">Penman</span>
+    </span>
+  </a>
+
   <main class="page">
     <nav class="top-nav">
       <a href="/">Return Home</a>
