@@ -33,6 +33,9 @@ RewriteRule ^(pages/thought-engines(\.php)?|projects/thought-engines)/?$ /pages/
 # Shorthand /pages/delcath now lives at /pages/delcath-series
 RewriteRule ^pages/delcath(\.php)?/?$ /pages/delcath-series [R=301,L,NC]
 
+# Shorthand /pages/wss-handbook now lives at /pages/writer-secret-society
+RewriteRule ^pages/wss-handbook(\.php)?/?$ /pages/writer-secret-society [R=301,L,NC]
+
 # The standalone newsletter page was removed; the sign-up form lives in the site footer
 RewriteRule ^pages/newsletter(\.php)?/?$ /#newsletter [R=301,L,NC,NE]
 
