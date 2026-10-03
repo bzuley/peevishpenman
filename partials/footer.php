@@ -35,7 +35,7 @@
   <section class="ppm-footer-newsletter" id="newsletter">
     <div class="ppm-footer-newsletter-overline">New Articles • From the Desk</div>
     <h3>Get the Drops First</h3>
-    <p class="ppm-footer-newsletter-lede">Writing tools, the independent author saga, and deeper dives into science fiction and speculative ideas with OA Allen.</p>
+    <p class="ppm-footer-newsletter-lede">Writing tools, the independent author saga, and deep dives into science fiction and speculative ideas from OA Allen.</p>
 
     <?php if (($_GET['form'] ?? '') === 'footer' && ($_GET['signup'] ?? '') === 'success'): ?>
       <div class="ppm-footer-message ppm-footer-message-success" role="status">
