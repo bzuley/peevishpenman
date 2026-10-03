@@ -124,6 +124,19 @@
       margin: 0 0 2rem;
     }
 
+    .bd-preview-link {
+      margin: -1.25rem 0 2.25rem;
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 0.8rem;
+      letter-spacing: 0.04em;
+    }
+
+    .bd-preview-link a {
+      color: var(--bd-ember);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
     .bd-badge {
       display: inline-block;
       font-family: "IBM Plex Mono", monospace;
@@ -436,6 +449,7 @@
       <h1>The Bright Dark</h1>
       <p class="bd-tagline">The old world is gone. Nobody remembers it correctly.</p>
       <p class="bd-badge">Coming Soon</p>
+      <p class="bd-preview-link"><a href="#newsletter">Read a preview first &mdash; join the newsletter</a></p>
 
       <div class="bd-hero-lede">
         <p>
@@ -601,7 +615,7 @@
       be its understanding of reality itself.
     </p>
     <a class="ppm-button" href="#newsletter">
-      Get the Launch Alert
+      Get a Sneak Preview
     </a>
     <span class="bd-cta-byline">By OA Allen &middot; Coming Soon from Peevish Penman</span>
   </section>
