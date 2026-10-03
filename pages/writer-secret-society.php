@@ -262,14 +262,61 @@ img { max-width: 100%; height: auto; display: block; }
   opacity: .6;
 }
 
-.download-bar { display: none; }
+.download-bar,
+.brand-bar { display: none; }
 
 @media (max-width: 819px) {
-  body { padding-bottom: calc(76px + env(safe-area-inset-bottom)); }
+  .top-nav { display: none; }
+
+  .brand-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 10px 16px;
+    background: linear-gradient(180deg, #050608 0%, #08090d 100%);
+    border-bottom: 1px solid var(--brass);
+  }
+
+  .brand-bar img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .brand-bar-title {
+    display: flex;
+    gap: .35rem;
+    font-family: "Space Grotesk", system-ui, sans-serif;
+    font-size: 1.35rem;
+    line-height: 1;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+  }
+
+  .brand-bar-outline {
+    color: transparent;
+    font-weight: 500;
+    -webkit-text-stroke: 1px #ffffff;
+  }
+
+  .brand-bar-solid {
+    color: #ffffff;
+    font-weight: 700;
+  }
+
+  /* The download bar and brand bar cover these on mobile */
+  .cta .btns { display: none; }
+  .crumb { margin-top: 8px; }
+
+  body { padding-bottom: calc(104px + env(safe-area-inset-bottom)); }
 
   .download-bar {
     display: flex;
-    gap: 10px;
+    flex-wrap: wrap;
+    gap: 8px 10px;
     position: fixed;
     left: 0;
     right: 0;
@@ -281,6 +328,20 @@ img { max-width: 100%; height: auto; display: block; }
     box-shadow: 0 -6px 18px rgba(0,0,0,.25);
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
+  }
+
+  .download-bar-title {
+    flex-basis: 100%;
+    text-align: center;
+    font-family: Cinzel, serif;
+    font-weight: 600;
+    font-size: clamp(.6rem, 3vw, .72rem);
+    letter-spacing: clamp(.04em, 1.2vw - .2em, .12em);
+    text-transform: uppercase;
+    color: var(--brass);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .download-bar .btn {
@@ -301,6 +362,14 @@ img { max-width: 100%; height: auto; display: block; }
 </head>
 
 <body>
+  <a class="brand-bar" href="/" aria-label="Peevish Penman home">
+    <img src="/img/logos/ppm_logo_main_reduced_160.webp" alt="" width="36" height="36">
+    <span class="brand-bar-title">
+      <span class="brand-bar-outline">Peevish</span>
+      <span class="brand-bar-solid">Penman</span>
+    </span>
+  </a>
+
   <main class="page">
     <nav class="top-nav">
       <a href="/">Return Home</a>
@@ -377,6 +446,7 @@ img { max-width: 100%; height: auto; display: block; }
   </main>
 
   <nav class="download-bar" aria-label="Download the handbook">
+    <div class="download-bar-title">The Handbook of the Writer Secret Society</div>
     <a class="btn" href="/books/The_Handbook_of_the_Writer_Secret_Society_-_Third_Edition.pdf" download>Free PDF</a>
     <a class="btn btn--ghost" href="/books/handbook_wss_3ed.epub" download>Free EPUB</a>
   </nav>
