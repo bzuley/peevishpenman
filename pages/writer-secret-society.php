@@ -261,6 +261,39 @@ img { max-width: 100%; height: auto; display: block; }
   content: "← ";
   opacity: .6;
 }
+
+.download-bar { display: none; }
+
+@media (max-width: 819px) {
+  body { padding-bottom: calc(76px + env(safe-area-inset-bottom)); }
+
+  .download-bar {
+    display: flex;
+    gap: 10px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
+    background: rgba(18,18,18,.94);
+    border-top: 1px solid var(--brass);
+    box-shadow: 0 -6px 18px rgba(0,0,0,.25);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+  }
+
+  .download-bar .btn {
+    flex: 1;
+    min-width: 0;
+    padding: .8rem .5rem;
+    font-size: .78rem;
+    letter-spacing: .08em;
+    text-align: center;
+  }
+
+  .download-bar .btn--ghost { color: var(--ink); }
+}
 </style>
 
 <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/analytics.php'; ?>
@@ -342,5 +375,10 @@ img { max-width: 100%; height: auto; display: block; }
       <p class="crumb">Keep the secret; share the book.</p>
     </section>
   </main>
+
+  <nav class="download-bar" aria-label="Download the handbook">
+    <a class="btn" href="/books/The_Handbook_of_the_Writer_Secret_Society_-_Third_Edition.pdf" download>Free PDF</a>
+    <a class="btn btn--ghost" href="/books/handbook_wss_3ed.epub" download>Free EPUB</a>
+  </nav>
 </body>
 </html>
