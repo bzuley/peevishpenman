@@ -8,7 +8,7 @@ $post_meta = [
   'added'   => '2026-09-28',
   // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
   // Powers the quicklink buttons on index.php (see /article-tag.php).
-  'tags'    => 'writing, selfpublishing',
+  'tags'    => 'writing, selfpublishing, independentpublishing',
   'author'  => 'OA Allen'
 ];
 require_once $_SERVER['DOCUMENT_ROOT'].'/blog-config.php';
@@ -47,7 +47,7 @@ ppm_require_published($post_meta);
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=optional" rel="stylesheet">
-  <link rel="stylesheet" href="/styles/main.css?v=<?= filemtime($_SERVER['DOCUMENT_ROOT'].'/styles/main.css') ?>">
+  <link rel="stylesheet" href="<?= ppm_asset('/styles/main.css') ?>">
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/blogposting-schema.php'; ?>
 
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/analytics.php'; ?>
@@ -81,9 +81,9 @@ ppm_require_published($post_meta);
 </header>
 
     <section>
-      <p>When I was young, my mother told me that my father, though a talented artist, never finished anything he started. And if he did, he finished it too quickly. She considered him a failure, and her words grew into a phobia that clung to every creative project I ever started. I became convinced that I, too, would never know how or when to finish.</p>
+      <p>When I was young, my mother told me that my father, <a href="/articles/on-being-happy">though a talented artist</a>, never finished anything he started. And if he did, he finished it too quickly. She considered him a failure, and her words grew into a phobia that clung to every creative project I ever started. I became convinced that I, too, would never know how or when to finish.</p>
 
-      <p>Twenty years, one kid, two degrees, and a thousand different hairstyles later, I sat down to do the final edits on a novella called <em>Bungle of Oz</em> and fell apart. I wrote a long-overdue letter to an ex. I cried. I ate donuts. I called my sister. I tweeted. I cried at the part of <em>Harry Potter</em> where Harry walks into the forest. I ate a pineapple. I did everything except open the file.</p>
+      <p>Twenty years, one kid, two degrees, and a thousand different hairstyles later, I sat down to do the <a href="/articles/perfect-murder-editing-screenplay">final edits</a> on a novella called <em>Bungle of Oz</em> and fell apart. I wrote a long-overdue letter to an ex. I cried. I ate donuts. I called my sister. I tweeted. I cried at the part of <em>Harry Potter</em> where Harry walks into the forest. I ate a pineapple. I did everything except open the file.</p>
 
       <p>I wasn't stressed. My life was pretty good. So why was the finish line so terrifying?</p>
     </section>
@@ -91,7 +91,7 @@ ppm_require_published($post_meta);
     <section>
       <h2>The Fear at the Finish Line</h2>
 
-      <p>Finishing is hard for the same reason ending a relationship or eating the last donut in the box is hard. It's hard to let go, especially if the donuts have coconut on them. But the real fear is what comes next. The end of a book is also a beginning: the moment you stop being only a writer and start being a bookseller.</p>
+      <p>Finishing is hard for the same reason ending a relationship or eating the last donut in the box is hard. It's hard to let go, especially if the donuts have coconut on them. But the real fear is what comes next. The end of a book is also a beginning: the moment you stop being only a writer and <a href="/articles/love-of-money-self-publication">start being a bookseller</a>.</p>
 
       <p>That's when the familiar monsters show up. <strong>Failure</strong>: the told-you-so crowd, the friends who might drift away, the people I'd never get to prove wrong. And <strong>success</strong>, which frankly scares me less than yachts do. Everyone knows the success committee eventually issues you a yacht, and mine would catch fire. The quieter fear is that success wouldn't fix anything. I'd still get pimples, still fill out forms, still lose people I love.</p>
 
@@ -136,7 +136,7 @@ ppm_require_published($post_meta);
         <p>&mdash; Rob Hines</p>
       </blockquote>
 
-      <p>Rob's first move after deciding to write was to follow authors, and it paid off in knowledge and friendships. It's how he found Peevish Penman. But he knew that once a book came out, he'd need to shift his attention to people who list reading as their favorite pastime. Online, that means readers' communities. Offline, it means libraries, festivals, trade shows, and anywhere else readers gather.</p>
+      <p>Rob's first move after deciding to write was to follow authors, and it paid off in knowledge and friendships. It's how he found Peevish Penman. But he knew that once a book came out, he'd need to shift his attention to people who list reading as their favorite pastime. Online, that means <a href="/articles/reader-comments-honest-open-immediate">readers' communities</a>. Offline, it means libraries, festivals, trade shows, and anywhere else readers gather.</p>
 
       <p>Then comes the harder part: finding <em>your</em> readers.</p>
 

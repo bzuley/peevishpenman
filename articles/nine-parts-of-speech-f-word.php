@@ -49,7 +49,8 @@ $post_meta = [
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=optional" rel="stylesheet">
-  <link rel="stylesheet" href="/styles/main.css?v=<?= filemtime($_SERVER['DOCUMENT_ROOT'].'/styles/main.css') ?>">
+  <?php require_once $_SERVER['DOCUMENT_ROOT'].'/partials/assets.php'; ?>
+  <link rel="stylesheet" href="<?= ppm_asset('/styles/main.css') ?>">
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/blogposting-schema.php'; ?>
 
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/analytics.php'; ?>
@@ -510,6 +511,10 @@ $post_meta = [
         The <s>whole</s> fucks are <s>called</s> fucked nine <s>parts</s> fucks of <s>speech</s> fuck,<br>
         <s>Which</s> Fuck <s>reading</s> fucking, <s>writing</s> fucking, <s>speaking</s> fucking <s>teach</s> fuck.
       </p>
+    </section>
+
+    <section>
+      <p>For more wordcraft with fewer expletives, see where the word <em>author</em> comes from in <a href="/articles/authority-of-authors">The Authority of Authors</a>, or the hyphen fight in <a href="/articles/post-apocalyptic-or-postapocalyptic">Post Apocalyptic or Post-Apocalyptic or Postapocalyptic?</a></p>
     </section>
 
     <section>

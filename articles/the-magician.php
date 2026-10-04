@@ -48,7 +48,8 @@ $post_meta = [
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=optional" rel="stylesheet">
-  <link rel="stylesheet" href="/styles/main.css?v=<?= filemtime($_SERVER['DOCUMENT_ROOT'].'/styles/main.css') ?>">
+  <?php require_once $_SERVER['DOCUMENT_ROOT'].'/partials/assets.php'; ?>
+  <link rel="stylesheet" href="<?= ppm_asset('/styles/main.css') ?>">
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/blogposting-schema.php'; ?>
 
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/analytics.php'; ?>
@@ -102,7 +103,7 @@ $post_meta = [
 
       <p>By the Renaissance, however, the learned Magician became increasingly dangerous—not only as a literary figure, but as a real-world accusation. Across Europe, people accused of witchcraft were imprisoned, tortured, and burned, and many witches died because their knowledge, healing practices, or independence placed them outside accepted religious and social authority. No other archetype has been more persistently persecuted: the Magician's defining relationship with hidden knowledge has repeatedly made the figure a target for institutions threatened by what cannot be controlled. The period's fear of forbidden knowledge also shaped the fate of Giordano Bruno, the Italian philosopher and former Dominican friar. In 1600, Bruno was burned at the stake in Rome. The Magician was no longer merely the wise adviser standing beside the king. He had become the person who could be treated as a threat to the entire order of society.</p>
 
-      <p>Even figures who were not persecuted as heretics often kept their deepest interests hidden. Isaac Newton, remembered as the founder of modern physics, devoted enormous energy to alchemy, which he largely concealed from public view because it did not fit the image of the rational scientist. Secret societies later intensified this association between hidden knowledge and danger, especially through figures such as Aleister Crowley, whose ceremonial magic and public reputation helped cement the popular connection between the Magician, forbidden practices, and evil.</p>
+      <p>Even figures who were not persecuted as heretics often kept their deepest interests hidden. Isaac Newton, remembered as the founder of modern physics, <a href="/articles/newton-alchemist">devoted enormous energy to alchemy</a>, which he largely concealed from public view because it did not fit the image of the rational scientist. Secret societies later intensified this association between hidden knowledge and danger, especially through figures such as Aleister Crowley, whose ceremonial magic and public reputation helped cement the popular connection between the Magician, forbidden practices, and evil.</p>
 
       <p>This history has profoundly influenced literature. Medieval and early-modern writers often mocked him as a fraud or fool chasing impossible transmutations, but the literary figure gradually changed as well. By the modern period, the alchemist could represent someone trying to change lead into gold, but transformation became the domain of scientists, and any scientist who strayed from materialist conventions was dubbed a mad scientist.</p>
 

@@ -45,7 +45,8 @@ $post_meta = [
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=optional" rel="stylesheet">
-  <link rel="stylesheet" href="/styles/main.css?v=<?= filemtime($_SERVER['DOCUMENT_ROOT'].'/styles/main.css') ?>">
+  <?php require_once $_SERVER['DOCUMENT_ROOT'].'/partials/assets.php'; ?>
+  <link rel="stylesheet" href="<?= ppm_asset('/styles/main.css') ?>">
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/blogposting-schema.php'; ?>
 
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/analytics.php'; ?>
@@ -121,7 +122,7 @@ $post_meta = [
 
       <p>On the level of the individual, our world is shaped by influence and social reach, a more subtle authority.</p>
 
-      <p>But we're living in a time when it's become ever more clear that the ones who control the narrative are the ones who set the rules for the game we all have to play. And while we speak of the almighty algorithm as if it exists without an author, its programmers have more influence over our lives than even our friends or family.</p>
+      <p>But we're living in a time when it's become ever more clear that the ones who control the narrative are the ones who set the rules for the game we all have to play. And while we speak of the <a href="/articles/i-wrote-this-post-in-vr">almighty algorithm</a> as if it exists without an author, its programmers have more influence over our lives than even our friends or family.</p>
 
       <p>How many times this year did you share a random video, but you sent it to someone who had already seen it?</p>
 
@@ -161,7 +162,7 @@ $post_meta = [
 
       <p>In <em>Animal Farm</em>, the pigs begin with no special authority beyond their intelligence and ability to organize. Merit. Their power grows gradually through control of information, literacy, food, and eventually force.</p>
 
-      <p>The interesting question is not simply why Napoleon becomes a dictator, but why everyone else continues to recognize his authority.</p>
+      <p>The interesting question is not simply why Napoleon becomes a dictator, but why everyone else <a href="/articles/the-ruler">continues to recognize his authority</a>.</p>
 
       <p>Authority is quieter in <em>Pride and Prejudice</em>. Wealth, inheritance, gender, family reputation, and social rank determine who may speak freely, who must defer, and who has the luxury of ignoring convention.</p>
 

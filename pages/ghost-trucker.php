@@ -29,7 +29,8 @@
   <meta name="twitter:image" content="https://peevishpenman.com/img/social/peevish-penman.jpg">
   <meta name="twitter:image:alt" content="Ghost Trucker – OA Allen &amp; Peevish Penman">
 
-  <link rel="stylesheet" href="/styles/main.css?v=<?= filemtime($_SERVER['DOCUMENT_ROOT'].'/styles/main.css') ?>">
+  <?php require_once $_SERVER['DOCUMENT_ROOT'].'/partials/assets.php'; ?>
+  <link rel="stylesheet" href="<?= ppm_asset('/styles/main.css') ?>">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -454,6 +455,22 @@
       font-weight: 600;
     }
   </style>
+
+  <!-- TODO(OA Allen): Ghost Trucker isn't out yet, so this leaves out
+       everything not on the page: cover image, publisher, ISBN,
+       publication date, page count, book format and a purchase link
+       (offers). Add them here when the book is published. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Book",
+    "name": "Ghost Trucker",
+    "author": { "@type": "Person", "name": "OA Allen", "url": "https://peevishpenman.com/pages/about" },
+    "description": "Speculative fiction from the cab of a semi. A trucker dies, wakes up in the Netherverse, and discovers death hasn't freed him from employment.",
+    "genre": "Speculative Fiction",
+    "url": "https://peevishpenman.com/pages/ghost-trucker"
+  }
+  </script>
 
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/analytics.php'; ?>
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/favicons.php'; ?>

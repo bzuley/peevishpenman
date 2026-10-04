@@ -8,7 +8,7 @@ $post_meta = [
   'added'   => '2026-08-28',
   // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
   // Powers the quicklink buttons on index.php (see /article-tag.php).
-  'tags'    => 'selfpublishing, writing, worldbuilding',
+  'tags'    => 'selfpublishing, independentpublishing, writing, worldbuilding',
   'author'  => 'OA Allen'
 ];
 ?>
@@ -45,7 +45,8 @@ $post_meta = [
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=optional" rel="stylesheet">
-  <link rel="stylesheet" href="/styles/main.css?v=<?= filemtime($_SERVER['DOCUMENT_ROOT'].'/styles/main.css') ?>">
+  <?php require_once $_SERVER['DOCUMENT_ROOT'].'/partials/assets.php'; ?>
+  <link rel="stylesheet" href="<?= ppm_asset('/styles/main.css') ?>">
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/blogposting-schema.php'; ?>
 
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/analytics.php'; ?>
@@ -113,9 +114,9 @@ $post_meta = [
     <section>
       <h2>Five Years, Four Boyfriends, Six Apartments</h2>
 
-      <p>Five years, four boyfriends and six apartments on three continents later, I finished my novel and rather than query and I find a small press that wanted it. I released it on Amazon. I earned a 100 USD per month for the first six months, which were most pleasantly, the last six months of my writing career. Then, over the holiday, still intensely pleased with myself, I opened a physical copy to take notes for the second book in the series and discovered every single version I'd created had been a draft complete with typos and an unrevised ending where two critical characters had the wrong background.</p>
+      <p>Five years, four boyfriends and six apartments on three continents later, I <a href="/articles/success-is-a-process">finished my novel</a> and rather than query and I find a small press that wanted it. I released it on Amazon. I earned a 100 USD per month for the first six months, which were most pleasantly, the last six months of my writing career. Then, over the holiday, still intensely pleased with myself, I opened a physical copy to take notes for the second book in the series and discovered every single version I'd created had been a draft complete with typos and an unrevised ending where two critical characters had the wrong background.</p>
 
-      <p>I ignored everyone who said that it read like a draft, because I thought they were just being negative. Writers have to be positive. We can't network with the naysayers.</p>
+      <p>I ignored <a href="/articles/reader-comments-honest-open-immediate">everyone who said that it read like a draft</a>, because I thought they were just being negative. Writers have to be positive. We can't network with the naysayers.</p>
     </section>
 
     <section>

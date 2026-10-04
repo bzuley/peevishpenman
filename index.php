@@ -39,7 +39,8 @@
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&family=Archivo:wght@700;800;900&family=Cormorant+Garamond:wght@600&display=optional" rel="stylesheet">
 
   <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="/styles/main.css?v=<?= filemtime($_SERVER['DOCUMENT_ROOT'].'/styles/main.css') ?>">
+  <?php require_once $_SERVER['DOCUMENT_ROOT'].'/partials/assets.php'; ?>
+  <link rel="stylesheet" href="<?= ppm_asset('/styles/main.css') ?>">
 
   <script type="application/ld+json">
   {
@@ -128,19 +129,10 @@
     <nav class="ppm-home-nav ppm-home-widget" aria-label="Explore">
       <h3 class="ppm-home-nav-heading">Explore</h3>
       <ul>
-        <li><a href="/article-tag?tag=sciencefiction">Science Fiction</a></li>
-        <li><a href="/article-tag?tag=postapocalypticscifi">Post-Apocalyptic Scifi</a></li>
-        <li><a href="/article-tag?tag=metaphysicalscifi">Metaphysical Scifi</a></li>
-        <li><a href="/article-tag?tag=consciousness">Consciousness</a></li>
-        <li><a href="/article-tag?tag=anomalousphenomena">Anomalous Phenomena</a></li>
-        <li><a href="/article-tag?tag=losttechnology">Lost Technology</a></li>
-        <li><a href="/article-tag?tag=technology">Technology</a></li>
-        <li><a href="/article-tag?tag=worldbuilding">Worldbuilding</a></li>
-        <li><a href="/article-tag?tag=archetypes">Character Archetypes</a></li>
-        <li><a href="/article-tag?tag=meditation">Meditation</a></li>
-        <li><a href="/article-tag?tag=writing">Writing</a></li>
-        <li><a href="/article-tag?tag=wordcraft">Wordcraft</a></li>
-        <li><a href="/article-tag?tag=selfpublishing">Self-Publishing</a></li>
+        <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/blog-config.php'; ?>
+        <?php foreach (ppm_get_tags() as $explore_tag => $explore_info): ?>
+          <li><a href="/article-tag?tag=<?php echo rawurlencode($explore_tag); ?>"><?php echo htmlspecialchars($explore_info['label']); ?></a></li>
+        <?php endforeach; ?>
       </ul>
     </nav>
 

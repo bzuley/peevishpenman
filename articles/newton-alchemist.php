@@ -44,7 +44,7 @@ ppm_require_published($post_meta);
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=optional" rel="stylesheet">
-  <link rel="stylesheet" href="/styles/main.css?v=<?= filemtime($_SERVER['DOCUMENT_ROOT'].'/styles/main.css') ?>">
+  <link rel="stylesheet" href="<?= ppm_asset('/styles/main.css') ?>">
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/blogposting-schema.php'; ?>
 
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/analytics.php'; ?>
@@ -118,7 +118,7 @@ ppm_require_published($post_meta);
 
       <p>None of Newton’s alchemical work was published during his lifetime. In 1936, a significant portion of his private papers, including his alchemical manuscripts, was auctioned and subsequently studied by historians.</p>
 
-      <p>Even after they stopped burning Hermetic thinkers like Giordano Bruno, Newton’s heirs had reason not to advertise his alchemical work. Alchemy had gone underground into Hermetic societies, esoteric orders and private circles.</p>
+      <p>Even after they stopped burning Hermetic thinkers like <a href="/articles/the-magician">Giordano Bruno</a>, Newton’s heirs had reason not to advertise his alchemical work. Alchemy had gone underground into Hermetic societies, esoteric orders and private circles.</p>
 
       <p>Scientists, at least in the open, increasingly regarded Hermetic philosophy as superstition. Science requires observation and measurable data to understand the physical world. Inner alchemy concerns parts of human experience that do not submit nearly as neatly to measurement.</p>
     </section>
@@ -154,7 +154,7 @@ ppm_require_published($post_meta);
 
       <p>It’s not.</p>
 
-      <p>Isaac Newton was not less credible as a scientist because he examined the whole of human experience. He was doing what humans had done for thousands of years: standing on the shoulders of giants, including the tradition attributed to Hermes Trismegistus.</p>
+      <p>Isaac Newton was not less credible as a scientist because he examined the whole of human experience. He was doing what humans had done for thousands of years: standing on the shoulders of giants, including <a href="/articles/ontology-of-ether">the tradition attributed to Hermes Trismegistus</a>.</p>
 
       <p>In <a href="/pages/bright-dark"><em>The Bright Dark</em></a>, I imagined a place the cities established specifically for talking about everything supernatural. It’s called an Oval House.</p>
 

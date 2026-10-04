@@ -13,7 +13,8 @@ header('X-Robots-Tag: noindex, nofollow');
   <meta name="description" content="A subscriber preview of the first chapter of The Bright Dark, a post-apocalyptic science fiction novel by OA Allen.">
   <meta name="author" content="OA Allen">
 
-  <link rel="stylesheet" href="/styles/main.css?v=<?= filemtime($_SERVER['DOCUMENT_ROOT'].'/styles/main.css') ?>">
+  <?php require_once $_SERVER['DOCUMENT_ROOT'].'/partials/assets.php'; ?>
+  <link rel="stylesheet" href="<?= ppm_asset('/styles/main.css') ?>">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

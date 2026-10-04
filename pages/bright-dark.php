@@ -29,7 +29,8 @@
   <meta name="twitter:image" content="https://peevishpenman.com/img/social/peevish-penman.jpg">
   <meta name="twitter:image:alt" content="The Bright Dark – OA Allen &amp; Peevish Penman">
 
-  <link rel="stylesheet" href="/styles/main.css?v=<?= filemtime($_SERVER['DOCUMENT_ROOT'].'/styles/main.css') ?>">
+  <?php require_once $_SERVER['DOCUMENT_ROOT'].'/partials/assets.php'; ?>
+  <link rel="stylesheet" href="<?= ppm_asset('/styles/main.css') ?>">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -328,6 +329,23 @@
       color: var(--ppm-text-muted);
     }
   </style>
+
+  <!-- TODO(OA Allen): The Bright Dark isn't out yet, so this leaves out
+       everything not on the page: cover image, ISBN, publication date,
+       page count, book format and a purchase link (offers). Add them
+       here when the book is published. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Book",
+    "name": "The Bright Dark",
+    "author": { "@type": "Person", "name": "OA Allen", "url": "https://peevishpenman.com/pages/about" },
+    "description": "A post-apocalyptic novel about lost technology, competing civilizations, and one truthseeker chasing the strangest relic of the old world.",
+    "genre": "Post-Apocalyptic Science Fiction",
+    "publisher": { "@type": "Organization", "name": "Peevish Penman Press" },
+    "url": "https://peevishpenman.com/pages/bright-dark"
+  }
+  </script>
 
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/analytics.php'; ?>
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/favicons.php'; ?>

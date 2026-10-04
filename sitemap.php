@@ -6,7 +6,7 @@ require_once __DIR__ . '/blog-config.php';
 
 $base_url = 'https://peevishpenman.com';
 
-// Keep the existing sitemap's page and tag landing URLs.
+// Keep the existing sitemap's page URLs.
 $paths = [
     '/',
     '/pages/writer-secret-society',
@@ -16,11 +16,13 @@ $paths = [
     '/pages/books',
     '/pages/coloring-book',
     '/articles',
-    '/article-tag?tag=sciencefiction',
-    '/article-tag?tag=selfpublishing',
-    '/article-tag?tag=archetypes',
     '/pages/about',
 ];
+
+// Every tag landing page, from the same tag list the tag pages use.
+foreach (array_keys(ppm_get_tags()) as $tag) {
+    $paths[] = '/article-tag?tag=' . rawurlencode($tag);
+}
 
 foreach (ppm_get_blog_posts() as $post) {
     $paths[] = '/articles/' . rawurlencode($post['slug']);

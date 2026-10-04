@@ -45,7 +45,8 @@ $post_meta = [
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=optional" rel="stylesheet">
-  <link rel="stylesheet" href="/styles/main.css?v=<?= filemtime($_SERVER['DOCUMENT_ROOT'].'/styles/main.css') ?>">
+  <?php require_once $_SERVER['DOCUMENT_ROOT'].'/partials/assets.php'; ?>
+  <link rel="stylesheet" href="<?= ppm_asset('/styles/main.css') ?>">
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/blogposting-schema.php'; ?>
 
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/analytics.php'; ?>
@@ -221,7 +222,7 @@ $post_meta = [
       <p>
         Okay. Imagine it's today. You're a museum director who just finished giving investors a tour of the
         Renaissance collection when a bunch of powerful radicals march in and demand that you remove and destroy
-        all evidence of Isaac Newton. They consider his legend scientific dogma. Scientific inquiry, they say,
+        all evidence of <a href="/articles/newton-alchemist">Isaac Newton</a>. They consider his legend scientific dogma. Scientific inquiry, they say,
         wasn't discovered by one man, but developed from Aristotle onward by many thinkers in many cultures, and
         the story of Newton's apple creates a mythology around science that distracts from what actually drives
         research today.

@@ -1,6 +1,7 @@
 <!-- Site scripts -->
-<script src="/js/main.js"></script>
-<script src="/js/jump-nav.js"></script>
+<?php require_once $_SERVER['DOCUMENT_ROOT'].'/partials/assets.php'; ?>
+<script src="<?= ppm_asset('/js/main.js') ?>"></script>
+<script src="<?= ppm_asset('/js/jump-nav.js') ?>"></script>
 
 <script>
   (function () {

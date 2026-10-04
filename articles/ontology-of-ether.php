@@ -43,7 +43,8 @@ $post_meta = [
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=optional" rel="stylesheet">
-  <link rel="stylesheet" href="/styles/main.css?v=<?= filemtime($_SERVER['DOCUMENT_ROOT'].'/styles/main.css') ?>">
+  <?php require_once $_SERVER['DOCUMENT_ROOT'].'/partials/assets.php'; ?>
+  <link rel="stylesheet" href="<?= ppm_asset('/styles/main.css') ?>">
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/blogposting-schema.php'; ?>
 
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/analytics.php'; ?>
@@ -87,13 +88,13 @@ $post_meta = [
     <section>
       <h2>Ordering Existence</h2>
 
-      <p>My Ontology of Ether orders existence from void to source, pattern, matter, dreams and emotions, thought engines, and archetypes. These strata of reality overlap, but most importantly, they increase in complexity.</p>
+      <p>My Ontology of Ether orders existence from void to source, pattern, matter, dreams and emotions, thought engines, and <a href="/articles/the-magician">archetypes</a>. These strata of reality overlap, but most importantly, they increase in complexity.</p>
 
       <p>Long before Darwin, the Hawaiian creation chant, the <em>Kumulipo</em>, described the emergence of life from coral to increasingly complex forms, placing humans within a genealogy shared with the rest of the living world. What interested me was that progression toward complexity. For <em>The Bright Dark</em>, I extended that concept beyond the development of living things to the structure of existence itself. Matter, dreams, emotions, and consciousness all have a place within that cosmology.</p>
 
       <p>It was relevant to my book because my main character doesn’t have to leave the material world to encounter them. He learns to <a href="/articles/closed-eye-visualizations">direct his attention toward aspects of reality he hadn’t previously perceived</a>.</p>
 
-      <p>When I read the <em>Corpus Hermeticum</em> or Plato’s <em>Republic</em>, I marvel at the scope of human experience they engage with. We tend to acknowledge only what we can measure. It’s that broader scope that is suppressed in modern times and that the apocalypse restores in <em>The Bright Dark</em>.</p>
+      <p>When I read the <a href="/articles/newton-alchemist"><em>Corpus Hermeticum</em></a> or Plato’s <em>Republic</em>, I marvel at the scope of human experience they engage with. We tend to acknowledge only what we can measure. It’s that broader scope that is suppressed in modern times and that the apocalypse restores in <em>The Bright Dark</em>.</p>
 
       <p>That cosmology runs through the novel’s technology, spiritual practices, and ordinary life. Its unseen forces shape the story.</p>
     </section>

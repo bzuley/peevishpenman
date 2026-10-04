@@ -1671,6 +1671,20 @@ html.ppm-nav-open {
   font-size: 0.98rem;
 }
 
+.bp-desc a {
+  color: var(--ppm-hermes);
+}
+
+/* Topic chips that link to tag pages (the unknown-topic page) */
+.bp-tag a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.bp-tag a:hover {
+  color: var(--ppm-hermes-lumen);
+}
+
 /* Responsive adjustments */
 @media (max-width: 1024px) {
   .blog-container > ul {
@@ -2381,6 +2395,59 @@ html.ppm-nav-open {
   .ppm-byline-card {
     align-items: flex-start;
   }
+}
+
+/* "Filed under" tag links in the byline, linking to /article-tag pages.
+   Scoped under .ppm-article to beat the article-wide ul, li and a rules. */
+.ppm-article .ppm-article-tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.ppm-article .ppm-article-tags-label {
+  font-family: "Space Grotesk", system-ui, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ppm-text-muted);
+}
+
+.ppm-article .ppm-article-tags ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  line-height: normal;
+}
+
+.ppm-article .ppm-article-tags li {
+  margin: 0;
+}
+
+.ppm-article .ppm-article-tags a {
+  display: inline-block;
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--ppm-hermes);
+  background: rgba(117, 255, 232, 0.1);
+  border: 1px solid rgba(117, 255, 232, 0.35);
+  border-radius: 999px;
+  padding: 0.25em 0.75em;
+}
+
+.ppm-article .ppm-article-tags a:hover {
+  color: var(--ppm-hermes-lumen);
+  border-color: var(--ppm-hermes);
 }
 
 /* Responsive adjustments for articles */

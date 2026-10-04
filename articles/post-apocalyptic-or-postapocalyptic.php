@@ -45,7 +45,8 @@ $post_meta = [
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=optional" rel="stylesheet">
-  <link rel="stylesheet" href="/styles/main.css?v=<?= filemtime($_SERVER['DOCUMENT_ROOT'].'/styles/main.css') ?>">
+  <?php require_once $_SERVER['DOCUMENT_ROOT'].'/partials/assets.php'; ?>
+  <link rel="stylesheet" href="<?= ppm_asset('/styles/main.css') ?>">
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/blogposting-schema.php'; ?>
 
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/analytics.php'; ?>
@@ -161,7 +162,7 @@ $post_meta = [
       <p>
         Believe it or not, hyphen-lovers, but "postapocalyptic" is popping up all over more reputable
         publications for a good reason. It's indisputably more justifiable than "post apocalyptic" or
-        "post-apocalyptic," given the almighty rules of grammar and the increased use of the term.
+        "post-apocalyptic," given the <a href="/articles/nine-parts-of-speech-f-word">almighty rules of grammar</a> and the increased use of the term.
       </p>
     </section>
 
@@ -187,7 +188,7 @@ $post_meta = [
     <section>
       <p>
         Yet does the term "postapocalyptic" differ in use from the apocalyptic? NOT ENOUGH. Trust me. I write
-        books that take place 500 years after the apocalypse. I've been told I should call them dystopian
+        <a href="/pages/bright-dark">books that take place 500 years after the apocalypse</a>. I've been told I should call them dystopian
         fiction, because too many people feel apocalyptic fiction starts five minutes before the end of the
         world and "post-apocalyptic" fiction starts five minutes after. And they do so because
         "postapocalyptic" sounds smarter. More mysterious. It's deeper. Ten minutes of profundity. In sum, people

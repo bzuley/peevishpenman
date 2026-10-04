@@ -18,7 +18,7 @@ $results = $query !== '' ? ppm_search_posts($query) : [];
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=optional" rel="stylesheet">
-  <link rel="stylesheet" href="/styles/main.css?v=<?= filemtime($_SERVER['DOCUMENT_ROOT'].'/styles/main.css') ?>">
+  <link rel="stylesheet" href="<?= ppm_asset('/styles/main.css') ?>">
 
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/analytics.php'; ?>
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/favicons.php'; ?>
@@ -31,7 +31,7 @@ $results = $query !== '' ? ppm_search_posts($query) : [];
 <section class="ppm-blog-preview">
   <div class="blog-preview">
     <div class="bp-head">
-      <h2 class="bp-title">Search</h2>
+      <h1 class="bp-title">Search</h1>
     </div>
 
     <form class="ppm-search-form" action="/search" method="get" role="search">

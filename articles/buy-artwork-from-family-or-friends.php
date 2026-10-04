@@ -9,7 +9,9 @@ $post_meta = [
   // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
   // Powers the quicklink buttons on index.php (see /article-tag.php).
   'tags'    => 'culture, entrepreneur, painting',
-  'author'  => 'OA Allen'
+  'author'  => 'OA Allen',
+  // Shorter text for the browser/search <title>; the headline keeps 'title'.
+  'seo_title' => 'How to Buy Art From Friends'
 ];
 ?>
 <!DOCTYPE html>
@@ -17,7 +19,7 @@ $post_meta = [
 <head>
   <link rel="alternate" type="application/rss+xml" title="Peevish Penman RSS Feed" href="https://peevishpenman.com/rss.xml">
   <meta charset="UTF-8">
-  <title><?php echo htmlspecialchars($post_meta['title']); ?> – Peevish Penman</title>
+  <title><?php echo htmlspecialchars($post_meta['seo_title']); ?> – Peevish Penman</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="<?php echo htmlspecialchars($post_meta['excerpt']); ?>">
   <meta name="author" content="<?php echo htmlspecialchars($post_meta['author']); ?>">
@@ -45,7 +47,8 @@ $post_meta = [
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=optional" rel="stylesheet">
-  <link rel="stylesheet" href="/styles/main.css?v=<?= filemtime($_SERVER['DOCUMENT_ROOT'].'/styles/main.css') ?>">
+  <?php require_once $_SERVER['DOCUMENT_ROOT'].'/partials/assets.php'; ?>
+  <link rel="stylesheet" href="<?= ppm_asset('/styles/main.css') ?>">
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/blogposting-schema.php'; ?>
 
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/analytics.php'; ?>
@@ -133,7 +136,7 @@ $post_meta = [
 
       <p>
         Most good artists seek out instruction and practice. A lot. Basically, being an artist has more in
-        common with being a plumber or an IT technician than it does with having blue eyes or brown eyes. No one
+        common with <a href="/articles/the-everyman">being a plumber or an IT technician</a> than it does with having blue eyes or brown eyes. No one
         will deny that people are often born with an aptitude for creativity, but most don't work hard to
         develop the skills required to realize their ideas.
       </p>
@@ -205,7 +208,7 @@ $post_meta = [
         it.
       </p>
 
-      <p>Maybe the person started, but they didn't finish.</p>
+      <p>Maybe the person started, but <a href="/articles/success-is-a-process">they didn't finish</a>.</p>
 
       <p>
         Perhaps they seemed to like the idea when you were talking about it in front of other people you both
@@ -272,7 +275,7 @@ $post_meta = [
       </p>
 
       <p>
-        Most artists aren't savvy businessmen, and pricing art is an art form all on its own, but before you ask
+        Most artists aren't savvy businessmen, and <a href="/articles/love-of-money-self-publication">pricing art is an art form all on its own</a>, but before you ask
         for a mural in your backyard or a portrait of your dog or baby as a favor from your very talented friend
         or family member, remember, just remember: it doesn't take an MBA to know when someone is being a dick.
       </p>

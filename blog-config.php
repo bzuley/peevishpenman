@@ -3,9 +3,96 @@
  * Blog Configuration & Post Loader
  */
 
+require_once __DIR__ . '/partials/assets.php';
+
 // Scheduled posts go live at midnight in this timezone on their 'added'
 // date (or 'date', when 'added' isn't set).
 const PPM_PUBLISH_TIMEZONE = 'America/New_York';
+
+/**
+ * The site's tag landing pages (/article-tag?tag=...), keyed by the tag
+ * as posts write it in $post_meta['tags']. 'label' is the display name;
+ * 'intro' is the short paragraph shown under the tag page's heading.
+ * The sitemap and each article's tag links are built from this list,
+ * so a tag gets a landing page by being added here.
+ */
+function ppm_get_tags() {
+    // TODO(OA Allen): these intros were drafted from what each tag's
+    // articles actually cover. Rewrite them in your own words when you
+    // have time (1–3 sentences each).
+    return [
+        'sciencefiction' => [
+            'label' => 'Science Fiction',
+            'intro' => 'Science fiction from the writing desk: the research, invented cosmology and stray etymology behind OA Allen\'s post-apocalyptic novel The Bright Dark, plus one sci-fi author\'s attempt to write inside a VR headset.',
+        ],
+        'postapocalypticscifi' => [
+            'label' => 'Post-Apocalyptic Scifi',
+            'intro' => 'Writing about life after the end of the world, from what "wasteland" really means to whether "post-apocalyptic" needs its hyphen, and the creation story the survivors tell in The Bright Dark.',
+        ],
+        'metaphysicalscifi' => [
+            'label' => 'Metaphysical Scifi',
+            'intro' => 'Where science fiction meets consciousness, inner alchemy and the parts of human experience science still can\'t measure, and how those ideas shape The Bright Dark.',
+        ],
+        'consciousness' => [
+            'label' => 'Consciousness',
+            'intro' => 'Essays on the mind and what it makes: closed-eye visualizations in meditation, Isaac Newton\'s hidden alchemy, the Magician archetype, and why everyone, even scientists, runs on faith.',
+        ],
+        'anomalousphenomena' => [
+            'label' => 'Anomalous Phenomena',
+            'intro' => 'Things that don\'t fit neatly into ordinary life: visions behind closed eyes, the father of modern physics\' million words on alchemy, and the unseen forces in The Bright Dark\'s cosmology.',
+        ],
+        'losttechnology' => [
+            'label' => 'Lost Technology',
+            'intro' => 'Technology the world forgot, and the worlds built from what\'s left of it, like The Bright Dark, where ancient technology is excavated, catalogued and occasionally misunderstood.',
+        ],
+        'technology' => [
+            'label' => 'Technology',
+            'intro' => 'Writing with and about technology: virtual reality, accessibility, and where AI belongs in a writer\'s toolkit.',
+        ],
+        'worldbuilding' => [
+            'label' => 'Worldbuilding',
+            'intro' => 'The research and reasoning behind invented worlds: the Knights Templar, the first Holy Grail story, how ancient people reasoned about the world, invented cosmologies, and the history hiding in the word "wasteland."',
+        ],
+        'archetypes' => [
+            'label' => 'Character Archetypes',
+            'intro' => 'A series on the twelve character archetypes, one at a time: where each comes from, iconic examples from fiction and television, and the ways writers misunderstand it.',
+        ],
+        'meditation' => [
+            'label' => 'Meditation',
+            'intro' => 'Meditation as a practice and as a subject: closed-eye visualizations, inner alchemy, and the Magician\'s inward transformation.',
+        ],
+        'writing' => [
+            'label' => 'Writing',
+            'intro' => 'The craft and the life of writing: editing, grammar, character archetypes, worldbuilding research, and the long road to publishing your own books.',
+        ],
+        'wordcraft' => [
+            'label' => 'Wordcraft',
+            'intro' => 'Words up close: etymology, grammar, hyphens, profanity and editing, for writers who want to know why words work the way they do.',
+        ],
+        'selfpublishing' => [
+            'label' => 'Self-Publishing',
+            'intro' => 'The business and the feeling of self-publishing: finishing a book, finding readers, what it actually pays, and the instant feedback of publishing online.',
+        ],
+        'independentpublishing' => [
+            'label' => 'Independent Publishing',
+            'intro' => 'The independent author\'s path: going indie after years of false starts, weighing what independent publishing earns against what it\'s worth, and getting past the fear at the finish line.',
+        ],
+        'colonization' => [
+            'label' => 'Colonization',
+            'intro' => 'Colonization and its echoes: the imperial land law that gave us the word "wasteland," and a 2017 op-ed on the history of the "America First" slogan.',
+        ],
+    ];
+}
+
+/**
+ * Display name for a tag: its label from ppm_get_tags(), or a
+ * title-cased fallback for a tag that has no landing page entry.
+ */
+function ppm_tag_label($tag) {
+    $tags = ppm_get_tags();
+    $key = strtolower(trim($tag));
+    return $tags[$key]['label'] ?? ucwords(str_replace(['-', '_'], ' ', trim($tag)));
+}
 
 /**
  * Whether a post's publish date has arrived. Posts with a missing or
@@ -33,7 +120,7 @@ function ppm_require_published($meta) {
     http_response_code(404);
     header('X-Robots-Tag: noindex');
     echo '<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Not Found – Peevish Penman</title>'
-        . '<meta name="robots" content="noindex"><link rel="stylesheet" href="/styles/main.css?v=' . filemtime($_SERVER['DOCUMENT_ROOT'] . '/styles/main.css') . '">'
+        . '<meta name="robots" content="noindex"><link rel="stylesheet" href="' . ppm_asset('/styles/main.css') . '">'
         . '<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=5">'
         . '<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=5">'
         . '<link rel="apple-touch-icon" href="/apple-touch-icon.png?v=5"></head>'

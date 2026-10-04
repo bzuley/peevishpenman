@@ -8,7 +8,7 @@ $post_meta = [
   'added'   => '2026-08-28',
   // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
   // Powers the quicklink buttons on index.php (see /article-tag.php).
-  'tags'    => 'sciencefiction, wordcraft, writing, postapocalypticscifi, worldbuilding',
+  'tags'    => 'sciencefiction, wordcraft, writing, postapocalypticscifi, worldbuilding, colonization',
   'author'  => 'OA Allen'
 ];
 ?>
@@ -45,7 +45,8 @@ $post_meta = [
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=optional" rel="stylesheet">
-  <link rel="stylesheet" href="/styles/main.css?v=<?= filemtime($_SERVER['DOCUMENT_ROOT'].'/styles/main.css') ?>">
+  <?php require_once $_SERVER['DOCUMENT_ROOT'].'/partials/assets.php'; ?>
+  <link rel="stylesheet" href="<?= ppm_asset('/styles/main.css') ?>">
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/blogposting-schema.php'; ?>
 
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/analytics.php'; ?>
@@ -133,7 +134,7 @@ $post_meta = [
     <section>
       <h2>Empty Etymology</h2>
 
-      <p>A brief search of the internet about the origin of the term does not help as much as it should unless you want to buy <em>Wasteland: A History</em> for a solid $35, which does have some intriguing chapters on the human experience of wastelands.</p>
+      <p>A brief search of the internet about <a href="/articles/authority-of-authors">the origin of the term</a> does not help as much as it should unless you want to buy <em>Wasteland: A History</em> for a solid $35, which does have some intriguing chapters on the human experience of wastelands.</p>
 
       <p>I skimmed the Google Books sample.</p>
 

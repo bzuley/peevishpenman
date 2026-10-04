@@ -49,7 +49,7 @@ ppm_require_published($post_meta);
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=optional" rel="stylesheet">
-  <link rel="stylesheet" href="/styles/main.css?v=<?= filemtime($_SERVER['DOCUMENT_ROOT'].'/styles/main.css') ?>">
+  <link rel="stylesheet" href="<?= ppm_asset('/styles/main.css') ?>">
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/blogposting-schema.php'; ?>
 
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/analytics.php'; ?>
@@ -94,11 +94,11 @@ ppm_require_published($post_meta);
 
       <p>What keeps me going is the connections I make with my readers, my fans.</p>
 
-      <p>The nature of any form of online self-publishing, blogging included, is that it allows me to have an immediate connection with my readers. Consequently, they can give me feedback on every single thing I ever write, for better or worse, in real time. There’s no time lag. There’s no editorial process to wait through. There’s not a long period of time between pushing the publish button and knowing what people think. If they love it, I know right away. If they hate it, I know that right away too.</p>
+      <p>The nature of any form of online <a href="/articles/love-of-money-self-publication">self-publishing</a>, blogging included, is that it allows me to have an immediate connection with my readers. Consequently, they can give me feedback on every single thing I ever write, for better or worse, in real time. There’s no time lag. There’s no editorial process to wait through. There’s not a long period of time between pushing the publish button and knowing what people think. If they love it, I know right away. If they hate it, I know that right away too.</p>
 
       <p>The immediate nature of Facebook, the impulsiveness with which people comment and post, tells me more often than not that they are being honest. Their first impression is the one they give. The anonymous comments left on my blog, often even more honest, even if brutally so at times.</p>
 
-      <p>As writers, we want to be relevant. We want to make connections with our readers. We want to know that people read what we write, that they care enough to tell us what they think. We want them to be honest with us, to be critical of what we say and how we say it, and then we want them to come back for more.</p>
+      <p>As writers, we want to be relevant. We want to <a href="/articles/success-is-a-process">make connections with our readers</a>. We want to know that people read what we write, that they care enough to tell us what they think. We want them to be honest with us, to be critical of what we say and how we say it, and then we want them to come back for more.</p>
 
       <p>I’m happy to write in a medium that lets that all happen almost always openly, almost always honestly and almost always immediately.</p>
     </section>

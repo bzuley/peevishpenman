@@ -49,7 +49,7 @@ ppm_require_published($post_meta);
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=optional" rel="stylesheet">
-  <link rel="stylesheet" href="/styles/main.css?v=<?= filemtime($_SERVER['DOCUMENT_ROOT'].'/styles/main.css') ?>">
+  <link rel="stylesheet" href="<?= ppm_asset('/styles/main.css') ?>">
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/blogposting-schema.php'; ?>
 
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/analytics.php'; ?>
@@ -126,7 +126,7 @@ ppm_require_published($post_meta);
     </section>
 
     <section>
-      <p><strong>4. Action should mean action:</strong> Scripts are entirely different than novels. Less is more. No flowery, self-indulgent, garbage prose. Get to the point. Fast. Cut those adverbs and adjectives. Only write what the audience can see on screen. Period.</p>
+      <p><strong>4. Action should mean action:</strong> Scripts are entirely different than novels. Less is more. No flowery, self-indulgent, garbage prose. Get to the point. Fast. Cut those <a href="/articles/nine-parts-of-speech-f-word">adverbs and adjectives</a>. Only write what the audience can see on screen. Period.</p>
     </section>
 
     <section>
@@ -137,7 +137,7 @@ ppm_require_published($post_meta);
     <section>
       <p><strong>6. Divide and conquer:</strong> Read every line of action and dialogue as a standalone to determine if it is imperative to either the subplot or the main plot. With a 120-page limit, there’s no room for fluff, except on the peanut butter sandwich.</p>
 
-      <p>Script consultant, Marcus Leary, once wrote a post advising screenwriters to use the 140-character Twitter rule when writing action and dialogue. Great advice: <a href="http://readerproof.blogspot.com/2010/06/twitter-pacing.html" rel="noopener">http://readerproof.blogspot.com/2010/06/twitter-pacing.html</a></p>
+      <p>Script consultant, Marcus Leary, once wrote a post advising screenwriters to use the 140-character Twitter rule when writing action and dialogue. Great advice: <a href="http://readerproof.blogspot.com/2010/06/twitter-pacing.html" rel="noopener">Marcus Leary on Twitter pacing</a>.</p>
     </section>
 
     <section>
@@ -169,13 +169,13 @@ ppm_require_published($post_meta);
     </section>
 
     <section>
-      <p>Every successful murderer has patience. If I’m too exhausted to edit, I put it down for a few days. It’s okay to walk away. In fact, I encourage it. I never edit a piece I’ve just finished. I’m amazed at the flaws I find a week later. If you are resistant to patience, remember, once a script is out the door and in a producer’s hands, you’ll be in their tracking system. Even if they pass on it, the company labels the quality of your writing. Don’t be a sloppy murderer. Impatience could cost you your career.</p>
+      <p>Every successful murderer has patience. If I’m too exhausted to edit, I put it down for a few days. It’s okay to walk away. In fact, I encourage it. <a href="/articles/success-is-a-process">I never edit a piece I’ve just finished</a>. I’m amazed at the flaws I find a week later. If you are resistant to patience, remember, once a script is out the door and in a producer’s hands, you’ll be in their tracking system. Even if they pass on it, the company labels the quality of your writing. Don’t be a sloppy murderer. Impatience could cost you your career.</p>
 
       <p>By the way, four days after receiving the email, I had cut the 25 pages. The script is much tighter… and I didn’t leave fingerprints</p>
     </section>
 
     <section>
-      <p><em>Jeanne has written several spec screenplays and adapted the 2009 Pulitzer Prize-winning book, Slavery by Another Name with its author, Douglas A. Blackmon, senior national correspondent of The Wall Street Journal.  Jeanne is an active blogger <a href="http://jeannevb.com" rel="noopener">http://jeannevb.com</a> and launched her freelance career with an upcoming article in Writer’s Digest Magazine on the value of Twitter for writers.   Her Twitter presence is (in)famous, as she is moderator and pimp of the screenwriting chat, #scritpchat.  Together with Rachel Langer, she created a blog, SMwriters.com, dedicated to social media and writers.  After being sidetracked by screenwriting, her novel is back in progress.</em></p>
+      <p><em>Jeanne has written several spec screenplays and adapted the 2009 Pulitzer Prize-winning book, Slavery by Another Name with its author, Douglas A. Blackmon, senior national correspondent of The Wall Street Journal.  Jeanne is an active blogger at <a href="http://jeannevb.com" rel="noopener">jeannevb.com</a> and launched her freelance career with an upcoming article in Writer’s Digest Magazine on the value of Twitter for writers.   Her Twitter presence is (in)famous, as she is moderator and pimp of the screenwriting chat, #scritpchat.  Together with Rachel Langer, she created a blog, SMwriters.com, dedicated to social media and writers.  After being sidetracked by screenwriting, her novel is back in progress.</em></p>
     </section>
 
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/byline.php'; ?>
