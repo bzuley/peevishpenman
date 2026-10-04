@@ -32,7 +32,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=optional" rel="stylesheet">
-  <link rel="stylesheet" href="/styles/main.css?v=<?= filemtime($_SERVER['DOCUMENT_ROOT'].'/styles/main.css') ?>">
+  <?php require_once $_SERVER['DOCUMENT_ROOT'].'/partials/assets.php'; ?>
+  <link rel="stylesheet" href="<?= ppm_asset('/styles/main.css') ?>">
 
   <style>
     .ppm-books-grid {
@@ -115,6 +116,21 @@
       color: var(--ppm-text-muted);
     }
   </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Books & Writing Projects by OA Allen",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "The Delcath Series", "url": "https://peevishpenman.com/pages/delcath-series" },
+      { "@type": "ListItem", "position": 2, "name": "The Handbook of the Writer Secret Society", "url": "https://peevishpenman.com/pages/writer-secret-society" },
+      { "@type": "ListItem", "position": 3, "name": "The Bright Dark", "url": "https://peevishpenman.com/pages/bright-dark" },
+      { "@type": "ListItem", "position": 4, "name": "Ghost Trucker", "url": "https://peevishpenman.com/pages/ghost-trucker" },
+      { "@type": "ListItem", "position": 5, "name": "The Reptilian Conspiracy Coloring Book", "url": "https://peevishpenman.com/pages/coloring-book" }
+    ]
+  }
+  </script>
 
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/analytics.php'; ?>
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/favicons.php'; ?>

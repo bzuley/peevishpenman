@@ -29,7 +29,8 @@
   <meta name="twitter:image" content="https://peevishpenman.com/img/social/delcath-series.jpg">
   <meta name="twitter:image:alt" content="The Delcath Series – OA Allen">
 
-  <link rel="stylesheet" href="/styles/main.css?v=<?= filemtime($_SERVER['DOCUMENT_ROOT'].'/styles/main.css') ?>">
+  <?php require_once $_SERVER['DOCUMENT_ROOT'].'/partials/assets.php'; ?>
+  <link rel="stylesheet" href="<?= ppm_asset('/styles/main.css') ?>">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -381,6 +382,53 @@
 
     .dc-world .dc-close-line em { font-style: italic; }
   </style>
+
+  <!-- TODO(OA Allen): add each book's ISBN ("isbn"), publication date
+       ("datePublished"), page count ("numberOfPages"), book format
+       ("bookFormat", e.g. "https://schema.org/EBook" or
+       "https://schema.org/Paperback") and price ("price" plus
+       "priceCurrency" in its offers). None of these are on the page. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BookSeries",
+    "name": "The Delcath Series",
+    "author": { "@type": "Person", "name": "OA Allen", "url": "https://peevishpenman.com/pages/about" },
+    "description": "Science fiction about asteroid miners, labour and dependence, and the intelligence that watches over them.",
+    "genre": "Science Fiction",
+    "url": "https://peevishpenman.com/pages/delcath-series",
+    "hasPart": [
+      {
+        "@type": "Book",
+        "position": 1,
+        "name": "Waiting on Delcath",
+        "author": { "@type": "Person", "name": "OA Allen", "url": "https://peevishpenman.com/pages/about" },
+        "description": "Three miners. One asteroid. Twelve months between them and retirement. A claustrophobic survival story about friendship, dependency and what happens when people discover that a system capable of planning for nearly everything has left them terribly alone.",
+        "image": "https://peevishpenman.com/img/covers/wod-cover-3d.webp",
+        "url": "https://peevishpenman.com/pages/delcath-series#waiting-on-delcath",
+        "offers": {
+          "@type": "Offer",
+          "url": "https://www.amazon.com/dp/B0BVCXMRJ6",
+          "availability": "https://schema.org/InStock"
+        }
+      },
+      {
+        "@type": "Book",
+        "position": 2,
+        "name": "Children of Delcath",
+        "author": { "@type": "Person", "name": "OA Allen", "url": "https://peevishpenman.com/pages/about" },
+        "description": "Delcath does not merely employ miners. It makes them. Children of Delcath expands the world of the first novella from one isolated mining crew to the society that created them.",
+        "image": "https://peevishpenman.com/img/covers/cod-cover-3d.webp",
+        "url": "https://peevishpenman.com/pages/delcath-series#children-of-delcath",
+        "offers": {
+          "@type": "Offer",
+          "url": "https://www.amazon.com/dp/B0CXLKGJVM",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    ]
+  }
+  </script>
 
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/analytics.php'; ?>
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/favicons.php'; ?>

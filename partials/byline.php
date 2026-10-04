@@ -18,6 +18,14 @@ if ($ppm_byline_author === 'OA Allen') {
     ? ['href' => $post_meta['author_link'], 'text' => 'More from ' . $ppm_byline_author]
     : null;
 }
+
+// Links to the post's tag landing pages. Only tags listed in
+// ppm_get_tags() have a landing page worth linking to.
+require_once $_SERVER['DOCUMENT_ROOT'] . '/blog-config.php';
+$ppm_byline_tags = array_values(array_intersect(
+  array_unique(ppm_normalize_tags($post_meta['tags'] ?? '')),
+  array_keys(ppm_get_tags())
+));
 ?>
 <footer class="ppm-article-byline">
   <div class="ppm-byline-card">
@@ -38,4 +46,14 @@ if ($ppm_byline_author === 'OA Allen') {
       <?php endif; ?>
     </div>
   </div>
+  <?php if (!empty($ppm_byline_tags)): ?>
+    <nav class="ppm-article-tags" aria-label="Article topics">
+      <span class="ppm-article-tags-label">Filed under</span>
+      <ul>
+        <?php foreach ($ppm_byline_tags as $ppm_byline_tag): ?>
+          <li><a href="/article-tag?tag=<?php echo rawurlencode($ppm_byline_tag); ?>"><?php echo htmlspecialchars(ppm_tag_label($ppm_byline_tag)); ?></a></li>
+        <?php endforeach; ?>
+      </ul>
+    </nav>
+  <?php endif; ?>
 </footer>

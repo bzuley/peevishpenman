@@ -29,7 +29,8 @@
   <meta name="twitter:image" content="https://peevishpenman.com/img/social/peevish-penman.jpg">
   <meta name="twitter:image:alt" content="About OA Allen – Peevish Penman">
 
-  <link rel="stylesheet" href="/styles/main.css?v=<?= filemtime($_SERVER['DOCUMENT_ROOT'].'/styles/main.css') ?>">
+  <?php require_once $_SERVER['DOCUMENT_ROOT'].'/partials/assets.php'; ?>
+  <link rel="stylesheet" href="<?= ppm_asset('/styles/main.css') ?>">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

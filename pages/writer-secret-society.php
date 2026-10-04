@@ -357,6 +357,37 @@ img { max-width: 100%; height: auto; display: block; }
 }
 </style>
 
+<!-- TODO(OA Allen): add the handbook's ISBN ("isbn"), publication date
+     ("datePublished") and page count ("numberOfPages") if it has them.
+     None of these are on the page. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Book",
+  "name": "The Handbook of the Writer Secret Society",
+  "bookEdition": "Third Edition",
+  "author": { "@type": "Person", "name": "OA Allen", "url": "https://peevishpenman.com/pages/about" },
+  "description": "Mystic wisdom, timeless methods, and practical inspiration for writers, from OA Allen. Free PDF and EPUB.",
+  "image": "https://peevishpenman.com/img/wss-cover.jpg",
+  "url": "https://peevishpenman.com/pages/writer-secret-society",
+  "isAccessibleForFree": true,
+  "workExample": [
+    {
+      "@type": "Book",
+      "bookFormat": "https://schema.org/EBook",
+      "encodingFormat": "application/pdf",
+      "url": "https://peevishpenman.com/books/The_Handbook_of_the_Writer_Secret_Society_-_Third_Edition.pdf"
+    },
+    {
+      "@type": "Book",
+      "bookFormat": "https://schema.org/EBook",
+      "encodingFormat": "application/epub+zip",
+      "url": "https://peevishpenman.com/books/handbook_wss_3ed.epub"
+    }
+  ]
+}
+</script>
+
 <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/analytics.php'; ?>
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/favicons.php'; ?>
 </head>

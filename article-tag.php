@@ -4,22 +4,10 @@ require_once __DIR__ . '/blog-config.php';
 $tag = isset($_GET['tag']) ? trim($_GET['tag']) : '';
 $blog_items = $tag !== '' ? ppm_get_posts_by_tag($tag) : [];
 
-$tag_labels = [
-  'selfpublishing'       => 'Self-Publishing',
-  'archetypes'           => 'Character Archetypes',
-  'sciencefiction'       => 'Science Fiction',
-  'writing'              => 'Writing',
-  'wordcraft'            => 'Wordcraft',
-  'meditation'           => 'Meditation',
-  'postapocalypticscifi' => 'Post-Apocalyptic Scifi',
-  'consciousness'        => 'Consciousness',
-  'metaphysicalscifi'    => 'Metaphysical Scifi',
-  'losttechnology'       => 'Lost Technology',
-  'anomalousphenomena'   => 'Anomalous Phenomena',
-  'worldbuilding'        => 'Worldbuilding',
-  'technology'           => 'Technology',
-];
-$tag_label = $tag_labels[strtolower($tag)] ?? ucwords(str_replace(['-', '_'], ' ', $tag));
+$tag_key = strtolower($tag);
+$tag_info = ppm_get_tags()[$tag_key] ?? null;
+$tag_label = ppm_tag_label($tag);
+$tag_intro = $tag_info['intro'] ?? '';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -55,7 +43,7 @@ $tag_label = $tag_labels[strtolower($tag)] ?? ucwords(str_replace(['-', '_'], ' 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=optional" rel="stylesheet">
-  <link rel="stylesheet" href="/styles/main.css?v=<?= filemtime($_SERVER['DOCUMENT_ROOT'].'/styles/main.css') ?>">
+  <link rel="stylesheet" href="<?= ppm_asset('/styles/main.css') ?>">
 
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/analytics.php'; ?>
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/favicons.php'; ?>
@@ -68,7 +56,10 @@ $tag_label = $tag_labels[strtolower($tag)] ?? ucwords(str_replace(['-', '_'], ' 
 <section class="ppm-blog-preview">
   <div class="blog-preview">
     <div class="bp-head">
-      <h2 class="bp-title"><?php echo htmlspecialchars($tag_label); ?></h2>
+      <h1 class="bp-title"><?php echo htmlspecialchars($tag_label); ?> Posts</h1>
+      <?php if ($tag_intro !== ''): ?>
+        <p class="bp-desc"><?php echo htmlspecialchars($tag_intro); ?></p>
+      <?php endif; ?>
     </div>
 
     <div class="blog-container">
@@ -97,8 +88,8 @@ $tag_label = $tag_labels[strtolower($tag)] ?? ucwords(str_replace(['-', '_'], ' 
 
                 <?php if (!empty($post['tags'])): ?>
                   <ul class="bp-tags">
-                    <?php foreach ($post['tags'] as $tag): ?>
-                      <li class="bp-tag"><?php echo htmlspecialchars($tag); ?></li>
+                    <?php foreach ($post['tags'] as $post_tag): ?>
+                      <li class="bp-tag"><?php echo htmlspecialchars($post_tag); ?></li>
                     <?php endforeach; ?>
                   </ul>
                 <?php endif; ?>

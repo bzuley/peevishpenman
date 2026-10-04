@@ -3,9 +3,87 @@
  * Blog Configuration & Post Loader
  */
 
+require_once __DIR__ . '/partials/assets.php';
+
 // Scheduled posts go live at midnight in this timezone on their 'added'
 // date (or 'date', when 'added' isn't set).
 const PPM_PUBLISH_TIMEZONE = 'America/New_York';
+
+/**
+ * The site's tag landing pages (/article-tag?tag=...), keyed by the tag
+ * as posts write it in $post_meta['tags']. 'label' is the display name;
+ * 'intro' is the short paragraph shown under the tag page's heading.
+ * The sitemap and each article's tag links are built from this list,
+ * so a tag gets a landing page by being added here.
+ */
+function ppm_get_tags() {
+    // TODO(OA Allen): the intros below are placeholders. Rewrite each one
+    // (1–3 sentences) in your own words.
+    return [
+        'sciencefiction' => [
+            'label' => 'Science Fiction',
+            'intro' => 'Articles from Peevish Penman about science fiction.',
+        ],
+        'postapocalypticscifi' => [
+            'label' => 'Post-Apocalyptic Scifi',
+            'intro' => 'Articles from Peevish Penman about post-apocalyptic science fiction.',
+        ],
+        'metaphysicalscifi' => [
+            'label' => 'Metaphysical Scifi',
+            'intro' => 'Articles from Peevish Penman about metaphysical science fiction.',
+        ],
+        'consciousness' => [
+            'label' => 'Consciousness',
+            'intro' => 'Articles from Peevish Penman about consciousness.',
+        ],
+        'anomalousphenomena' => [
+            'label' => 'Anomalous Phenomena',
+            'intro' => 'Articles from Peevish Penman about anomalous phenomena.',
+        ],
+        'losttechnology' => [
+            'label' => 'Lost Technology',
+            'intro' => 'Articles from Peevish Penman about lost technology.',
+        ],
+        'technology' => [
+            'label' => 'Technology',
+            'intro' => 'Articles from Peevish Penman about technology.',
+        ],
+        'worldbuilding' => [
+            'label' => 'Worldbuilding',
+            'intro' => 'Articles from Peevish Penman about worldbuilding.',
+        ],
+        'archetypes' => [
+            'label' => 'Character Archetypes',
+            'intro' => 'Articles from Peevish Penman about character archetypes.',
+        ],
+        'meditation' => [
+            'label' => 'Meditation',
+            'intro' => 'Articles from Peevish Penman about meditation.',
+        ],
+        'writing' => [
+            'label' => 'Writing',
+            'intro' => 'Articles from Peevish Penman about writing.',
+        ],
+        'wordcraft' => [
+            'label' => 'Wordcraft',
+            'intro' => 'Articles from Peevish Penman about wordcraft.',
+        ],
+        'selfpublishing' => [
+            'label' => 'Self-Publishing',
+            'intro' => 'Articles from Peevish Penman about self-publishing.',
+        ],
+    ];
+}
+
+/**
+ * Display name for a tag: its label from ppm_get_tags(), or a
+ * title-cased fallback for a tag that has no landing page entry.
+ */
+function ppm_tag_label($tag) {
+    $tags = ppm_get_tags();
+    $key = strtolower(trim($tag));
+    return $tags[$key]['label'] ?? ucwords(str_replace(['-', '_'], ' ', trim($tag)));
+}
 
 /**
  * Whether a post's publish date has arrived. Posts with a missing or
@@ -33,7 +111,7 @@ function ppm_require_published($meta) {
     http_response_code(404);
     header('X-Robots-Tag: noindex');
     echo '<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Not Found – Peevish Penman</title>'
-        . '<meta name="robots" content="noindex"><link rel="stylesheet" href="/styles/main.css?v=' . filemtime($_SERVER['DOCUMENT_ROOT'] . '/styles/main.css') . '">'
+        . '<meta name="robots" content="noindex"><link rel="stylesheet" href="' . ppm_asset('/styles/main.css') . '">'
         . '<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=5">'
         . '<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=5">'
         . '<link rel="apple-touch-icon" href="/apple-touch-icon.png?v=5"></head>'

@@ -39,7 +39,8 @@
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&family=Archivo:wght@700;800;900&family=Cormorant+Garamond:wght@600&display=optional" rel="stylesheet">
 
   <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="/styles/main.css?v=<?= filemtime($_SERVER['DOCUMENT_ROOT'].'/styles/main.css') ?>">
+  <?php require_once $_SERVER['DOCUMENT_ROOT'].'/partials/assets.php'; ?>
+  <link rel="stylesheet" href="<?= ppm_asset('/styles/main.css') ?>">
 
   <script type="application/ld+json">
   {
