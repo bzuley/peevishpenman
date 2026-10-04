@@ -6,7 +6,7 @@ $post_meta = [
   'excerpt' => 'From cash-paid pizza murals to Amazon candles, an indie author weighs what self-publishing earns per hour against what books keep.',
   'date'    => '2018-06-18',
   'added'   => '2026-09-25',
-  'tags'    => 'selfpublishing, writing',
+  'tags'    => 'selfpublishing, independentpublishing, writing',
   'author'  => 'OA Allen'
 ];
 require_once $_SERVER['DOCUMENT_ROOT'] . '/blog-config.php';
@@ -79,7 +79,7 @@ ppm_require_published($post_meta);
 </header>
 
     <section>
-      <p>When I was eighteen, I painted murals for local pizza restaurants. People paid me in cash, and it took another decade before I made that much money again. I wore dingy overalls covered in acrylic paint, and at the end of the day my pockets bulged. I drove home to my infant son and emptied them into a shoebox in my dresser.</p>
+      <p>When I was eighteen, I <a href="/articles/buy-artwork-from-family-or-friends">painted murals</a> for local pizza restaurants. People paid me in cash, and it took another decade before I made that much money again. I wore dingy overalls covered in acrylic paint, and at the end of the day my pockets bulged. I drove home to my infant son and emptied them into a shoebox in my dresser.</p>
 
       <p>I had more work than I could finish and a babysitter who apparently believed the shoebox was a community resource.</p>
 
@@ -119,9 +119,9 @@ ppm_require_published($post_meta);
 
       <p>I just don’t have that in me.</p>
 
-      <p>What I have is a post-apocalyptic world to build, genetically modified animals to release into it, and characters who keep making their small-scale governments everybody else’s problem. I have a need to make ancient philosophy feel rational.</p>
+      <p>What I have is a <a href="/pages/bright-dark">post-apocalyptic world to build</a>, genetically modified animals to release into it, and characters who keep making their small-scale governments everybody else’s problem. I have a need to make ancient philosophy feel rational.</p>
 
-      <p>Somewhere, there may be a reader desperately waiting for all of that to happen in the same book. Finding that person has proved more difficult than finding someone who wants a candle.</p>
+      <p>Somewhere, there may be a reader desperately waiting for all of that to happen in the same book. <a href="/articles/success-is-a-process">Finding that person</a> has proved more difficult than finding someone who wants a candle.</p>
 
       <p>You can build a business around demand that already exists. Creating demand for the particular thing you wanted to make is much harder.</p>
 

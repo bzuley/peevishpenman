@@ -144,7 +144,7 @@ $post_meta = [
 
       <p>Give me some "alternative facts." Tell me a "Big Lie," <em>Mein Kampf</em>.</p>
 
-      <p>Authority always needs a story to back it up. I dug into where that word actually comes from in <a href="/articles/authority-of-authors">The Authority of Authors</a>.</p>
+      <p>Authority always needs a story to back it up. I dug into where that word actually comes from in <a href="/articles/authority-of-authors">The Authority of Authors</a>, and into why people go on accepting a leader's authority at all in <a href="/articles/the-ruler">The Ruler Archetype</a>.</p>
     </section>
 
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/byline.php'; ?>

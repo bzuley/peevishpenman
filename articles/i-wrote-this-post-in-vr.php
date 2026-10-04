@@ -93,7 +93,7 @@ $post_meta = [
       </p>
 
       <p>
-        I had to solve this mystery. I tried dictation. If you've ever opened Word and used the speech-to-text feature, you know the punctuation is atrocious. It might be great for writing hands-free, but you will be stuck editing hands-free. My dog could do a better job with a copy of my manuscript and an ink pad. Utterly futile.
+        I had to solve this mystery. I tried dictation. If you've ever opened Word and used the speech-to-text feature, you know the punctuation is atrocious. It might be great for writing hands-free, but you will be stuck <a href="/articles/perfect-murder-editing-screenplay">editing</a> hands-free. My dog could do a better job with a copy of my manuscript and an ink pad. Utterly futile.
       </p>
 
       <p>
@@ -137,7 +137,7 @@ $post_meta = [
       </p>
 
       <p>
-        All the technologies should be optional for everyone. For example, I used dictation to write this article, then had ChatGPT correct the punctuation. It wasn't as quick as typing on my laptop and I sidestepped implementing all those eighth-grade grammar lessons in the proofreading process. The result was incomprehensible, but I made the minor corrections needed on a keyboard.
+        All the technologies should be optional for everyone. For example, I used dictation to write this article, then had ChatGPT correct the punctuation. It wasn't as quick as typing on my laptop and I sidestepped implementing all those <a href="/articles/nine-parts-of-speech-f-word">eighth-grade grammar lessons</a> in the proofreading process. The result was incomprehensible, but I made the minor corrections needed on a keyboard.
       </p>
 
       <p>

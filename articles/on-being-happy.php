@@ -198,7 +198,7 @@ $post_meta = [
       <p>
         Today, thirteen percent of Americans are on antidepressants. And I personally suspect the medical
         community knows as little about helping people find happiness as they do about turning the tide on the
-        obesity epidemic. Science, which I love but do not reduce to dogma, can give us facts gleaned from
+        obesity epidemic. <a href="/articles/everyone-runs-on-faith">Science, which I love but do not reduce to dogma</a>, can give us facts gleaned from
         studies of multiple variables in people's lives that coexist with happiness, but they do not easily
         account for the complexity of our consciousness or the murky social world, where the filters of our
         perception and the corrosion of stored and retrieved memories confuse the process of understanding our
@@ -210,7 +210,7 @@ $post_meta = [
         you cannot find happiness during an autopsy, and the complex consciousness that accompanies it is
         similarly missing in the physical body when it's alive. Western thought has not been able to explain
         this phenomenon for many centuries, although the new insight in physics that the world itself is like a
-        hologram echoes many non-Western views about reality that help our consciousness make more sense.
+        hologram echoes <a href="/articles/newton-alchemist">many non-Western views about reality</a> that help our consciousness make more sense.
       </p>
 
       <p>

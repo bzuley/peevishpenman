@@ -48,6 +48,10 @@ $blog_items = ppm_get_blog_posts();
 
 <section class="ppm-blog-preview">
   <div class="blog-preview">
+    <div class="bp-head">
+      <h1 class="bp-title">Articles</h1>
+    </div>
+
     <div class="blog-container">
 
       <?php if (empty($blog_items)): ?>

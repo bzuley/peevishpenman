@@ -136,7 +136,7 @@ $post_meta = [
 
       <p>
         Most good artists seek out instruction and practice. A lot. Basically, being an artist has more in
-        common with being a plumber or an IT technician than it does with having blue eyes or brown eyes. No one
+        common with <a href="/articles/the-everyman">being a plumber or an IT technician</a> than it does with having blue eyes or brown eyes. No one
         will deny that people are often born with an aptitude for creativity, but most don't work hard to
         develop the skills required to realize their ideas.
       </p>
@@ -208,7 +208,7 @@ $post_meta = [
         it.
       </p>
 
-      <p>Maybe the person started, but they didn't finish.</p>
+      <p>Maybe the person started, but <a href="/articles/success-is-a-process">they didn't finish</a>.</p>
 
       <p>
         Perhaps they seemed to like the idea when you were talking about it in front of other people you both
@@ -275,7 +275,7 @@ $post_meta = [
       </p>
 
       <p>
-        Most artists aren't savvy businessmen, and pricing art is an art form all on its own, but before you ask
+        Most artists aren't savvy businessmen, and <a href="/articles/love-of-money-self-publication">pricing art is an art form all on its own</a>, but before you ask
         for a mural in your backyard or a portrait of your dog or baby as a favor from your very talented friend
         or family member, remember, just remember: it doesn't take an MBA to know when someone is being a dick.
       </p>

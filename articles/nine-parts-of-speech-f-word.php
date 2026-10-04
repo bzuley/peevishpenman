@@ -514,6 +514,10 @@ $post_meta = [
     </section>
 
     <section>
+      <p>For more wordcraft with fewer expletives, see where the word <em>author</em> comes from in <a href="/articles/authority-of-authors">The Authority of Authors</a>, or the hyphen fight in <a href="/articles/post-apocalyptic-or-postapocalyptic">Post Apocalyptic or Post-Apocalyptic or Postapocalyptic?</a></p>
+    </section>
+
+    <section>
       <p class="ppm-who-wrote">
         <a href="/pages/about" class="ppm-who-wrote-button">Who the *%$@# wrote this *#@?</a>
       </p>

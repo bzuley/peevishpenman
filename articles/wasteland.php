@@ -8,7 +8,7 @@ $post_meta = [
   'added'   => '2026-08-28',
   // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
   // Powers the quicklink buttons on index.php (see /article-tag.php).
-  'tags'    => 'sciencefiction, wordcraft, writing, postapocalypticscifi, worldbuilding',
+  'tags'    => 'sciencefiction, wordcraft, writing, postapocalypticscifi, worldbuilding, colonization',
   'author'  => 'OA Allen'
 ];
 ?>
@@ -134,7 +134,7 @@ $post_meta = [
     <section>
       <h2>Empty Etymology</h2>
 
-      <p>A brief search of the internet about the origin of the term does not help as much as it should unless you want to buy <em>Wasteland: A History</em> for a solid $35, which does have some intriguing chapters on the human experience of wastelands.</p>
+      <p>A brief search of the internet about <a href="/articles/authority-of-authors">the origin of the term</a> does not help as much as it should unless you want to buy <em>Wasteland: A History</em> for a solid $35, which does have some intriguing chapters on the human experience of wastelands.</p>
 
       <p>I skimmed the Google Books sample.</p>
 

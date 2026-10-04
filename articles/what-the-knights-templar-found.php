@@ -222,7 +222,7 @@ $post_meta = [
       <p>
         Okay. Imagine it's today. You're a museum director who just finished giving investors a tour of the
         Renaissance collection when a bunch of powerful radicals march in and demand that you remove and destroy
-        all evidence of Isaac Newton. They consider his legend scientific dogma. Scientific inquiry, they say,
+        all evidence of <a href="/articles/newton-alchemist">Isaac Newton</a>. They consider his legend scientific dogma. Scientific inquiry, they say,
         wasn't discovered by one man, but developed from Aristotle onward by many thinkers in many cultures, and
         the story of Newton's apple creates a mythology around science that distracts from what actually drives
         research today.

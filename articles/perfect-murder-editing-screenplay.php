@@ -126,7 +126,7 @@ ppm_require_published($post_meta);
     </section>
 
     <section>
-      <p><strong>4. Action should mean action:</strong> Scripts are entirely different than novels. Less is more. No flowery, self-indulgent, garbage prose. Get to the point. Fast. Cut those adverbs and adjectives. Only write what the audience can see on screen. Period.</p>
+      <p><strong>4. Action should mean action:</strong> Scripts are entirely different than novels. Less is more. No flowery, self-indulgent, garbage prose. Get to the point. Fast. Cut those <a href="/articles/nine-parts-of-speech-f-word">adverbs and adjectives</a>. Only write what the audience can see on screen. Period.</p>
     </section>
 
     <section>
@@ -169,7 +169,7 @@ ppm_require_published($post_meta);
     </section>
 
     <section>
-      <p>Every successful murderer has patience. If I’m too exhausted to edit, I put it down for a few days. It’s okay to walk away. In fact, I encourage it. I never edit a piece I’ve just finished. I’m amazed at the flaws I find a week later. If you are resistant to patience, remember, once a script is out the door and in a producer’s hands, you’ll be in their tracking system. Even if they pass on it, the company labels the quality of your writing. Don’t be a sloppy murderer. Impatience could cost you your career.</p>
+      <p>Every successful murderer has patience. If I’m too exhausted to edit, I put it down for a few days. It’s okay to walk away. In fact, I encourage it. <a href="/articles/success-is-a-process">I never edit a piece I’ve just finished</a>. I’m amazed at the flaws I find a week later. If you are resistant to patience, remember, once a script is out the door and in a producer’s hands, you’ll be in their tracking system. Even if they pass on it, the company labels the quality of your writing. Don’t be a sloppy murderer. Impatience could cost you your career.</p>
 
       <p>By the way, four days after receiving the email, I had cut the 25 pages. The script is much tighter… and I didn’t leave fingerprints</p>
     </section>

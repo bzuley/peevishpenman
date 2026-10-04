@@ -1671,6 +1671,20 @@ html.ppm-nav-open {
   font-size: 0.98rem;
 }
 
+.bp-desc a {
+  color: var(--ppm-hermes);
+}
+
+/* Topic chips that link to tag pages (the unknown-topic page) */
+.bp-tag a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.bp-tag a:hover {
+  color: var(--ppm-hermes-lumen);
+}
+
 /* Responsive adjustments */
 @media (max-width: 1024px) {
   .blog-container > ul {

@@ -87,7 +87,7 @@ $post_meta = [
 
       <p>If you have never experienced a CEV, I understand. I meditated for years before they became a common feature of my practice. It's not like picturing an image with your mind's eye. CEVs may appear spontaneously during meditation or deep relaxation, but they often convey as much meaning as a scene in a dream, but you are awake.</p>
 
-      <p>The few people that have studied this phenomena say that up to <strong>75% of people</strong> experience some form of closed-eye hallucination at some point in their lives. The more I study inner alchemy, the more I am convinced people have tuned their conscious minds by using meditation as their workspace all throughout history and I've wondered if CEVs weren't part of that method.</p>
+      <p>The few people that have studied this phenomena say that up to <strong>75% of people</strong> experience some form of closed-eye hallucination at some point in their lives. The more I study <a href="/articles/the-magician">inner alchemy</a>, the more I am convinced people have tuned their conscious minds by using meditation as their workspace all throughout history and I've wondered if CEVs weren't part of that method.</p>
 
       <p>I don't know that answer. But I am going to share my personal experience with the hope that I will have more knowledge at a later time.</p>
     </section>

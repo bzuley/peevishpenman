@@ -87,7 +87,7 @@ $post_meta = [
     <section>
       <h2>The Archetype of Stability</h2>
 
-      <p>The Everyman is the archetype of continuity and immediate human concerns. Rather than orienting himself toward distant power structures, the Everyman grounds himself in the practical world: people he knows, work that needs doing, and the family or community whose security depends on things continuing to function.</p>
+      <p>The Everyman is the archetype of continuity and immediate human concerns. Rather than orienting himself toward <a href="/articles/the-ruler">distant power structures</a>, the Everyman grounds himself in the practical world: people he knows, work that needs doing, and the family or community whose security depends on things continuing to function.</p>
 
       <p>Resistant to change, the Everyman values what already works and the systems that keep daily life functioning. While that resistance can become a weakness, it is also what makes the Everyman an anchor when other characters become unmoored by their ambitions.</p>
 

@@ -17,60 +17,69 @@ const PPM_PUBLISH_TIMEZONE = 'America/New_York';
  * so a tag gets a landing page by being added here.
  */
 function ppm_get_tags() {
-    // TODO(OA Allen): the intros below are placeholders. Rewrite each one
-    // (1–3 sentences) in your own words.
+    // TODO(OA Allen): these intros were drafted from what each tag's
+    // articles actually cover. Rewrite them in your own words when you
+    // have time (1–3 sentences each).
     return [
         'sciencefiction' => [
             'label' => 'Science Fiction',
-            'intro' => 'Articles from Peevish Penman about science fiction.',
+            'intro' => 'Science fiction from the writing desk: the research, invented cosmology and stray etymology behind OA Allen\'s post-apocalyptic novel The Bright Dark, plus one sci-fi author\'s attempt to write inside a VR headset.',
         ],
         'postapocalypticscifi' => [
             'label' => 'Post-Apocalyptic Scifi',
-            'intro' => 'Articles from Peevish Penman about post-apocalyptic science fiction.',
+            'intro' => 'Writing about life after the end of the world, from what "wasteland" really means to whether "post-apocalyptic" needs its hyphen, and the creation story the survivors tell in The Bright Dark.',
         ],
         'metaphysicalscifi' => [
             'label' => 'Metaphysical Scifi',
-            'intro' => 'Articles from Peevish Penman about metaphysical science fiction.',
+            'intro' => 'Where science fiction meets consciousness, inner alchemy and the parts of human experience science still can\'t measure, and how those ideas shape The Bright Dark.',
         ],
         'consciousness' => [
             'label' => 'Consciousness',
-            'intro' => 'Articles from Peevish Penman about consciousness.',
+            'intro' => 'Essays on the mind and what it makes: closed-eye visualizations in meditation, Isaac Newton\'s hidden alchemy, the Magician archetype, and why everyone, even scientists, runs on faith.',
         ],
         'anomalousphenomena' => [
             'label' => 'Anomalous Phenomena',
-            'intro' => 'Articles from Peevish Penman about anomalous phenomena.',
+            'intro' => 'Things that don\'t fit neatly into ordinary life: visions behind closed eyes, the father of modern physics\' million words on alchemy, and the unseen forces in The Bright Dark\'s cosmology.',
         ],
         'losttechnology' => [
             'label' => 'Lost Technology',
-            'intro' => 'Articles from Peevish Penman about lost technology.',
+            'intro' => 'Technology the world forgot, and the worlds built from what\'s left of it, like The Bright Dark, where ancient technology is excavated, catalogued and occasionally misunderstood.',
         ],
         'technology' => [
             'label' => 'Technology',
-            'intro' => 'Articles from Peevish Penman about technology.',
+            'intro' => 'Writing with and about technology: virtual reality, accessibility, and where AI belongs in a writer\'s toolkit.',
         ],
         'worldbuilding' => [
             'label' => 'Worldbuilding',
-            'intro' => 'Articles from Peevish Penman about worldbuilding.',
+            'intro' => 'The research and reasoning behind invented worlds: the Knights Templar, the first Holy Grail story, how ancient people reasoned about the world, invented cosmologies, and the history hiding in the word "wasteland."',
         ],
         'archetypes' => [
             'label' => 'Character Archetypes',
-            'intro' => 'Articles from Peevish Penman about character archetypes.',
+            'intro' => 'A series on the twelve character archetypes, one at a time: where each comes from, iconic examples from fiction and television, and the ways writers misunderstand it.',
         ],
         'meditation' => [
             'label' => 'Meditation',
-            'intro' => 'Articles from Peevish Penman about meditation.',
+            'intro' => 'Meditation as a practice and as a subject: closed-eye visualizations, inner alchemy, and the Magician\'s inward transformation.',
         ],
         'writing' => [
             'label' => 'Writing',
-            'intro' => 'Articles from Peevish Penman about writing.',
+            'intro' => 'The craft and the life of writing: editing, grammar, character archetypes, worldbuilding research, and the long road to publishing your own books.',
         ],
         'wordcraft' => [
             'label' => 'Wordcraft',
-            'intro' => 'Articles from Peevish Penman about wordcraft.',
+            'intro' => 'Words up close: etymology, grammar, hyphens, profanity and editing, for writers who want to know why words work the way they do.',
         ],
         'selfpublishing' => [
             'label' => 'Self-Publishing',
-            'intro' => 'Articles from Peevish Penman about self-publishing.',
+            'intro' => 'The business and the feeling of self-publishing: finishing a book, finding readers, what it actually pays, and the instant feedback of publishing online.',
+        ],
+        'independentpublishing' => [
+            'label' => 'Independent Publishing',
+            'intro' => 'The independent author\'s path: going indie after years of false starts, weighing what independent publishing earns against what it\'s worth, and getting past the fear at the finish line.',
+        ],
+        'colonization' => [
+            'label' => 'Colonization',
+            'intro' => 'Colonization and its echoes: the imperial land law that gave us the word "wasteland," and a 2017 op-ed on the history of the "America First" slogan.',
         ],
     ];
 }
