@@ -9,7 +9,9 @@ $post_meta = [
   // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
   // Powers the quicklink buttons on index.php (see /article-tag.php).
   'tags'    => 'culture, entrepreneur, painting',
-  'author'  => 'OA Allen'
+  'author'  => 'OA Allen',
+  // Shorter text for the browser/search <title>; the headline keeps 'title'.
+  'seo_title' => 'How to Buy Art From Friends'
 ];
 ?>
 <!DOCTYPE html>
@@ -17,7 +19,7 @@ $post_meta = [
 <head>
   <link rel="alternate" type="application/rss+xml" title="Peevish Penman RSS Feed" href="https://peevishpenman.com/rss.xml">
   <meta charset="UTF-8">
-  <title><?php echo htmlspecialchars($post_meta['title']); ?> – Peevish Penman</title>
+  <title><?php echo htmlspecialchars($post_meta['seo_title']); ?> – Peevish Penman</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="<?php echo htmlspecialchars($post_meta['excerpt']); ?>">
   <meta name="author" content="<?php echo htmlspecialchars($post_meta['author']); ?>">

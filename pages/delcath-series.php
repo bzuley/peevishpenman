@@ -383,12 +383,9 @@
     .dc-world .dc-close-line em { font-style: italic; }
   </style>
 
-  <!-- TODO(OA Allen): add each book's ISBN ("isbn"), publication date
-       ("datePublished"), page count ("numberOfPages"), book format
-       ("bookFormat", e.g. "https://schema.org/EBook" or
-       "https://schema.org/Paperback") and price ("price" plus
-       "priceCurrency" in its offers). None of these are on the page. -->
-  <script type="application/ld+json">
+  <!-- Publisher, dates and page counts are from the Kindle editions on Amazon.
+       TODO(OA Allen): add each book's ISBN ("isbn") if it has one, and its
+       price ("price" plus "priceCurrency") in its offers. -->  <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "BookSeries",
@@ -402,6 +399,9 @@
         "@type": "Book",
         "position": 1,
         "name": "Waiting on Delcath",
+        "datePublished": "2023-02-07",
+        "numberOfPages": 56,
+        "publisher": { "@type": "Organization", "name": "Peevish Penman Press" },
         "author": { "@type": "Person", "name": "OA Allen", "url": "https://peevishpenman.com/pages/about" },
         "description": "Three miners. One asteroid. Twelve months between them and retirement. A claustrophobic survival story about friendship, dependency and what happens when people discover that a system capable of planning for nearly everything has left them terribly alone.",
         "image": "https://peevishpenman.com/img/covers/wod-cover-3d.webp",
@@ -416,6 +416,9 @@
         "@type": "Book",
         "position": 2,
         "name": "Children of Delcath",
+        "datePublished": "2024-03-27",
+        "numberOfPages": 183,
+        "publisher": { "@type": "Organization", "name": "Peevish Penman Press" },
         "author": { "@type": "Person", "name": "OA Allen", "url": "https://peevishpenman.com/pages/about" },
         "description": "Delcath does not merely employ miners. It makes them. Children of Delcath expands the world of the first novella from one isolated mining crew to the society that created them.",
         "image": "https://peevishpenman.com/img/covers/cod-cover-3d.webp",
