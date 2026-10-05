@@ -195,6 +195,14 @@
           </div>
         </a>
       </div>
+
+      <p style="margin-top: 2.5rem;">
+        The research and craft behind the books lives in the articles:
+        <a href="/article-tag?tag=worldbuilding">worldbuilding</a>,
+        <a href="/article-tag?tag=archetypes">character archetypes</a>,
+        <a href="/article-tag?tag=selfpublishing">self-publishing</a>, and
+        <a href="/articles">everything else</a>.
+      </p>
     </section>
   </article>
 </main>

@@ -49,7 +49,7 @@ if ($ppm_featured_slug !== null) {
         <ul>
           <?php foreach ($blog_items as $post) : ?>
             <li class="blog-card<?= $post['slug'] === $ppm_featured_slug ? ' blog-card--featured' : '' ?><?= $post['slug'] === $ppm_overflow_slug ? ' blog-card--overflow' : '' ?>">
-              <a href="/articles/<?= htmlspecialchars($post['slug']) ?>">
+              <a class="blog-card-link" href="/articles/<?= htmlspecialchars($post['slug']) ?>">
                 <?php if (!empty($post['image'])) : ?>
                   <img class="bp-img"
                        src="<?= htmlspecialchars($post['image']) ?>"

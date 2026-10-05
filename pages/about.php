@@ -394,7 +394,7 @@
       </p>
       <p>
         With a family history that contains both sides of the colonial
-        story, colonizer and colonized, she is particularly interested in
+        story, <a href="/article-tag?tag=colonization">colonizer and colonized</a>, she is particularly interested in
         what happens when competing versions of reality are all,
         inconveniently, true.
       </p>
@@ -459,7 +459,7 @@
         She spent years working as a librarian before a severe balance
         disorder and hearing loss changed what that work could look like.
         She also writes with ADHD, which may explain both the sprawling
-        research trails and her tendency to become intensely interested in
+        <a href="/articles">research trails</a> and her tendency to become intensely interested in
         questions other people have sensibly left alone.
       </p>
     </div>
@@ -475,6 +475,7 @@
     </p>
     <div class="ab-cta-buttons">
       <a class="ppm-button" href="#newsletter">Join the Newsletter</a>
+      <a class="ppm-button ppm-button--ghost" href="/articles">Read the Articles</a>
       <a class="ppm-button ppm-button--ghost" href="mailto:editor@peevishpenman.com">Contact</a>
     </div>
   </section>

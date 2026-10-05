@@ -252,7 +252,7 @@ small {
 
   cursor: pointer;
   border: none;
-  box-shadow: 0 0 20px rgba(117, 255, 232, 0.4);
+  box-shadow: 0 0 16px rgba(117, 255, 232, 0.22);
 
   transition: background var(--ppm-transition-fast),
               transform var(--ppm-transition-fast),
@@ -261,7 +261,7 @@ small {
 
 .ppm-button:hover {
   background: var(--ppm-hermes-lumen);
-  box-shadow: 0 0 30px rgba(117, 255, 232, 0.6);
+  box-shadow: 0 0 24px rgba(117, 255, 232, 0.4);
   transform: translateY(-2px);
 }
 
@@ -280,6 +280,7 @@ small {
 
   background: transparent;
   border: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: none; /* the outline is enough; no glow */
 
   color: #ffffff;
   font-family: "Space Grotesk", system-ui, sans-serif;
@@ -295,6 +296,7 @@ small {
 .ppm-button--ghost:hover {
   background: rgba(255, 255, 255, 0.1);
   border-color: rgba(255, 255, 255, 0.6);
+  box-shadow: none;
   transform: translateY(-2px);
 }
 
@@ -417,11 +419,11 @@ small {
 
   background:
     radial-gradient(ellipse at 30% 20%,
-      rgba(159, 255, 227, 0.45) 0%,
+      rgba(159, 255, 227, 0.22) 0%,
       transparent 70%),
     radial-gradient(ellipse at 70% 80%,
-      rgba(210, 75, 175, 0.45) 0%,
-      transparent 95%);
+      rgba(210, 75, 175, 0.2) 0%,
+      transparent 85%);
 
   z-index: 1;
   filter: blur(30px);
@@ -770,6 +772,31 @@ small {
   .ppm-home-nav a:hover {
     opacity: 1;
     color: var(--ppm-hermes);
+  }
+
+  .ppm-home-nav .ppm-home-nav-all a {
+    font-family: "Space Grotesk", system-ui, sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ppm-hermes);
+    opacity: 1;
+  }
+
+  /* The sidebar is narrow: stack the search box over its button */
+  .ppm-home-sidebar .ppm-search-form {
+    flex-direction: column;
+    margin: 0 0 var(--ppm-spacing-md);
+  }
+
+  .ppm-home-sidebar .ppm-search-form input[type="search"] {
+    padding: 0.7rem 0.9rem;
+    font-size: 0.9rem;
+  }
+
+  .ppm-home-sidebar .ppm-search-form button {
+    padding: 0.7rem 1rem;
   }
 
   .ppm-home-widget {
@@ -1514,6 +1541,8 @@ html.ppm-nav-open {
 }
 
 .blog-card {
+  display: flex;
+  flex-direction: column;
   background: rgba(20, 32, 30, 0.65);
   border: 1px solid var(--ppm-border-soft);
   border-radius: var(--ppm-radius-lg);
@@ -1530,7 +1559,9 @@ html.ppm-nav-open {
   border-color: rgba(117, 255, 232, 0.55);
 }
 
-.blog-card a {
+/* The card's main link; its topic chips (.bp-tags) follow it */
+.blog-card-link {
+  flex: 1;
   text-decoration: none;
   display: block;
   color: inherit;
@@ -1583,7 +1614,55 @@ html.ppm-nav-open {
   background: rgba(117, 255, 232, 0.1);
   border: 1px solid rgba(117, 255, 232, 0.35);
   border-radius: 999px;
-  padding: 0.25em 0.75em;
+  transition: background var(--ppm-transition-fast),
+              border-color var(--ppm-transition-fast);
+}
+
+.bp-tag:hover {
+  background: rgba(117, 255, 232, 0.18);
+  border-color: rgba(117, 255, 232, 0.6);
+}
+
+.bp-tag--current {
+  background: var(--ppm-hermes);
+  border-color: var(--ppm-hermes);
+}
+
+.bp-tag.bp-tag--current a,
+.bp-tag.bp-tag--current a:hover {
+  color: #000;
+}
+
+/* Row of every topic, under the heading on listing pages */
+.ppm-topic-list {
+  max-width: 900px;
+  margin: 0 auto clamp(24px, 4vw, 40px);
+}
+
+.ppm-topic-list .bp-tags {
+  margin: 0;
+}
+
+/* On phones, one swipeable row instead of a screen-tall block of chips */
+@media (max-width: 740px) {
+  .ppm-topic-list .bp-tags {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding: 0 0 6px;
+    scrollbar-width: none;
+    -webkit-mask-image: linear-gradient(90deg, black 85%, transparent);
+    mask-image: linear-gradient(90deg, black 85%, transparent);
+  }
+
+  .ppm-topic-list .bp-tags::-webkit-scrollbar {
+    display: none;
+  }
+
+  .ppm-topic-list .bp-tag {
+    flex: none;
+    white-space: nowrap;
+  }
 }
 
 .ppm-search-form {
@@ -1677,14 +1756,29 @@ html.ppm-nav-open {
   color: var(--ppm-hermes);
 }
 
-/* Topic chips that link to tag pages (the unknown-topic page) */
+/* The whole chip is the link to its topic page */
 .bp-tag a {
+  display: block;
+  padding: 0.25em 0.75em;
   color: inherit;
   text-decoration: none;
 }
 
 .bp-tag a:hover {
   color: var(--ppm-hermes-lumen);
+}
+
+/* 404 page */
+.ppm-404-art {
+  display: block;
+  width: min(420px, 85vw);
+  height: auto;
+  margin: 0 auto var(--ppm-spacing-md);
+}
+
+.ppm-404-subhead {
+  margin: var(--ppm-spacing-lg) 0 var(--ppm-spacing-md);
+  font-size: 1rem;
 }
 
 /* Responsive adjustments */

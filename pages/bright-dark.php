@@ -442,15 +442,15 @@
       <p>
         Metal can be progress in one settlement and corruption in another.
         Science resembles mysticism. Mysticism sometimes behaves
-        disturbingly like science.
+        disturbingly like <a class="ppm-inline-link" href="/articles/ontology-of-ether">science</a>.
       </p>
       <p>
         And in the Zubian Waste, impossible visions move across the
         landscape. Every day. Like dream weather.
       </p>
-      <p>Ren goes looking for lost technology and sentient plasma.</p>
+      <p>Ren goes looking for <a class="ppm-inline-link" href="/article-tag?tag=losttechnology">lost technology</a> and sentient plasma.</p>
       <p>
-        Instead, he finds people who can see more with their eyes closed,
+        Instead, he finds people who can <a class="ppm-inline-link" href="/articles/closed-eye-visualizations">see more with their eyes closed</a>,
         machines that remember more than their operators do, and a
         landscape where culture determines truth.
       </p>

@@ -95,6 +95,25 @@ function ppm_tag_label($tag) {
 }
 
 /**
+ * URL of a tag's landing page.
+ */
+function ppm_tag_url($tag) {
+    return '/article-tag?tag=' . rawurlencode(strtolower(trim($tag)));
+}
+
+/**
+ * The tags from a post's tag list that have a landing page in
+ * ppm_get_tags(), lowercased and de-duplicated, in the post's order.
+ * Tags without a page are left out, so nothing links to a 404.
+ */
+function ppm_landing_tags($tags) {
+    return array_values(array_intersect(
+        array_unique(ppm_normalize_tags($tags)),
+        array_keys(ppm_get_tags())
+    ));
+}
+
+/**
  * Whether a post's publish date has arrived. Posts with a missing or
  * unreadable date are treated as unpublished, so a typo never leaks a
  * draft early.
@@ -117,15 +136,8 @@ function ppm_require_published($meta) {
     if (ppm_is_published($meta)) {
         return;
     }
-    http_response_code(404);
-    header('X-Robots-Tag: noindex');
-    echo '<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Not Found – Peevish Penman</title>'
-        . '<meta name="robots" content="noindex"><link rel="stylesheet" href="' . ppm_asset('/styles/main.css') . '">'
-        . '<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=5">'
-        . '<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=5">'
-        . '<link rel="apple-touch-icon" href="/apple-touch-icon.png?v=5"></head>'
-        . '<body><main class="ppm-article"><article class="ppm-article-inner">'
-        . '<h1>Not Found</h1><p><a href="/articles">Back to the articles</a></p></article></main></body></html>';
+    // The site's 404 page sets the status and noindex header itself.
+    include __DIR__ . '/404.php';
     exit;
 }
 

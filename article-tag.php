@@ -46,11 +46,7 @@ if ($tag_info === null):
         Browse <a href="/articles">all articles</a> or pick a topic:
       </p>
     </div>
-    <ul class="bp-tags">
-      <?php foreach (ppm_get_tags() as $topic_tag => $topic_info): ?>
-        <li class="bp-tag"><a href="/article-tag?tag=<?php echo rawurlencode($topic_tag); ?>"><?php echo htmlspecialchars($topic_info['label']); ?></a></li>
-      <?php endforeach; ?>
-    </ul>
+    <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/topic-list.php'; ?>
   </div>
 </section>
 
@@ -115,6 +111,9 @@ endif;
       <?php endif; ?>
     </div>
 
+    <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/search-form.php'; ?>
+    <?php $ppm_topic_current = $tag_key; include $_SERVER['DOCUMENT_ROOT'].'/partials/topic-list.php'; ?>
+
     <div class="blog-container">
 
       <?php if (empty($blog_items)): ?>
@@ -124,30 +123,7 @@ endif;
       <?php else: ?>
         <ul>
           <?php foreach ($blog_items as $post): ?>
-            <li class="blog-card">
-              <a href="/articles/<?php echo htmlspecialchars($post['slug']); ?>">
-                <?php if (!empty($post['image'])): ?>
-                  <img class="bp-img"
-                       src="<?php echo htmlspecialchars($post['image']); ?>"
-                       alt="<?php echo htmlspecialchars($post['title']); ?>"
-                       loading="lazy">
-                <?php endif; ?>
-
-                <h2><?php echo htmlspecialchars($post['title']); ?></h2>
-
-                <?php if (!empty($post['excerpt'])): ?>
-                  <p><?php echo htmlspecialchars($post['excerpt']); ?></p>
-                <?php endif; ?>
-
-                <?php if (!empty($post['tags'])): ?>
-                  <ul class="bp-tags">
-                    <?php foreach ($post['tags'] as $post_tag): ?>
-                      <li class="bp-tag"><?php echo htmlspecialchars($post_tag); ?></li>
-                    <?php endforeach; ?>
-                  </ul>
-                <?php endif; ?>
-              </a>
-            </li>
+            <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/post-card.php'; ?>
           <?php endforeach; ?>
         </ul>
       <?php endif; ?>

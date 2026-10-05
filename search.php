@@ -34,44 +34,27 @@ $results = $query !== '' ? ppm_search_posts($query) : [];
       <h1 class="bp-title">Search</h1>
     </div>
 
-    <form class="ppm-search-form" action="/search" method="get" role="search">
-      <input type="search" name="q" placeholder="Search posts&hellip;"
-             value="<?php echo htmlspecialchars($query); ?>" aria-label="Search posts" autofocus>
-      <button type="submit">Search</button>
-    </form>
+    <?php
+    $ppm_search_query = $query;
+    $ppm_search_autofocus = true;
+    include $_SERVER['DOCUMENT_ROOT'].'/partials/search-form.php';
+    ?>
 
     <div class="blog-container">
       <?php if ($query === ''): ?>
-        <p class="ppm-search-status">Try a topic, a title, or a tag like &ldquo;worldbuilding&rdquo; or &ldquo;self-publishing.&rdquo;</p>
+        <div>
+          <p class="ppm-search-status">Try a title, a phrase, or a topic like &ldquo;worldbuilding&rdquo; or &ldquo;self-publishing,&rdquo; or browse by topic:</p>
+          <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/topic-list.php'; ?>
+        </div>
       <?php elseif (empty($results)): ?>
-        <p class="ppm-search-status">No posts found for &ldquo;<?php echo htmlspecialchars($query); ?>.&rdquo;</p>
+        <div>
+          <p class="ppm-search-status">No articles found for &ldquo;<?php echo htmlspecialchars($query); ?>.&rdquo; Try another word, or browse by topic:</p>
+          <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/topic-list.php'; ?>
+        </div>
       <?php else: ?>
         <ul>
           <?php foreach ($results as $post): ?>
-            <li class="blog-card">
-              <a href="/articles/<?php echo htmlspecialchars($post['slug']); ?>">
-                <?php if (!empty($post['image'])): ?>
-                  <img class="bp-img"
-                       src="<?php echo htmlspecialchars($post['image']); ?>"
-                       alt="<?php echo htmlspecialchars($post['title']); ?>"
-                       loading="lazy">
-                <?php endif; ?>
-
-                <h2><?php echo htmlspecialchars($post['title']); ?></h2>
-
-                <?php if (!empty($post['excerpt'])): ?>
-                  <p><?php echo htmlspecialchars($post['excerpt']); ?></p>
-                <?php endif; ?>
-
-                <?php if (!empty($post['tags'])): ?>
-                  <ul class="bp-tags">
-                    <?php foreach ($post['tags'] as $tag): ?>
-                      <li class="bp-tag"><?php echo htmlspecialchars($tag); ?></li>
-                    <?php endforeach; ?>
-                  </ul>
-                <?php endif; ?>
-              </a>
-            </li>
+            <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/post-card.php'; ?>
           <?php endforeach; ?>
         </ul>
       <?php endif; ?>
