@@ -123,9 +123,9 @@
       inset: 0;
       background: radial-gradient(
         ellipse 65% 65% at 50% 45%,
-        rgba(5, 6, 8, 0.1) 0%,
-        rgba(5, 6, 8, 0.55) 55%,
-        rgba(5, 6, 8, 0.88) 78%,
+        rgba(11, 14, 19, 0.1) 0%,
+        rgba(11, 14, 19, 0.55) 55%,
+        rgba(11, 14, 19, 0.88) 78%,
         var(--ppm-obsidian) 100%
       );
     }
@@ -165,7 +165,7 @@
       line-height: 1.02;
       margin: 0 0 1.1rem;
       color: #ffffff;
-      text-shadow: 0 0 40px rgba(255, 180, 84, 0.3), 0 4px 18px rgba(5, 6, 8, 0.85);
+      text-shadow: 0 0 40px rgba(255, 180, 84, 0.3), 0 4px 18px rgba(11, 14, 19, 0.85);
     }
 
     .gt-tagline {
@@ -178,7 +178,7 @@
       font-style: italic;
       color: var(--gt-amber-lumen);
       margin: 0 0 2rem;
-      text-shadow: 0 2px 10px rgba(5, 6, 8, 0.85);
+      text-shadow: 0 2px 10px rgba(11, 14, 19, 0.85);
     }
 
     .gt-badge {
@@ -196,7 +196,7 @@
       padding: 0.5em 1.1em;
       transform: rotate(-2deg);
       margin-bottom: 2.25rem;
-      background: rgba(5, 6, 8, 0.4);
+      background: rgba(11, 14, 19, 0.4);
     }
 
     .gt-hero-lede {
