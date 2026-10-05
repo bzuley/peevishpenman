@@ -19,7 +19,7 @@ body {
   font-size: 16px;
   line-height: 1.6;
   color: #e6edf5;
-  background-color: #050608;
+  background-color: #0B0E13;
   overflow-x: clip;
 }
 
@@ -77,9 +77,9 @@ ul, ol {
   --ppm-purple: #7C6FAF;
 
   /* Deep blacks for New-Scientist-inspired monochrome theme */
-  --ppm-obsidian: #050608;
-  --ppm-surface: #0B1018;
-  --ppm-surface-soft: #0a0d12;
+  --ppm-obsidian: #0B0E13;
+  --ppm-surface: #121822;
+  --ppm-surface-soft: #10141B;
 
   /* Borders and subtle outlines */
   --ppm-border-soft: rgba(47, 168, 145, 0.20);
@@ -196,7 +196,7 @@ small {
 /* Fades an image's edges to transparent so it melts into the page
    background instead of showing a hard rectangular edge. Best on
    images whose edge colors are already close to the site background
-   (e.g. dark art on our near-black background). */
+   (e.g. dark art on our dark charcoal background). */
 .ppm-fade-mask {
   -webkit-mask-image: radial-gradient(circle, black 60%, transparent 90%);
   mask-image: radial-gradient(circle, black 60%, transparent 90%);
@@ -1023,7 +1023,7 @@ small {
 
 /* BLOG CARD */
 .ppm-blog-card {
-  background: rgba(10, 20, 19, 0.65);
+  background: rgba(20, 32, 30, 0.65);
   border: 1px solid var(--ppm-border-soft);
   border-radius: var(--ppm-radius-lg);
   overflow: hidden;
@@ -1084,7 +1084,7 @@ small {
   position: sticky;
   top: 0;
   z-index: 35;
-  background: linear-gradient(180deg, #050608 0%, #08090d 100%);
+  background: linear-gradient(180deg, #0B0E13 0%, #0E1117 100%);
   padding: 14px 5% 14px 5%;
   border-bottom: none;
   margin-bottom: 0;
@@ -1208,9 +1208,9 @@ small {
   width: min(320px, 80vw);
   height: 100vh;
   background: var(--ppm-surface-soft);
-  box-shadow: -18px 0 40px rgba(0, 0, 0, 0.8);
   transform: translateX(100%);
-  transition: transform var(--ppm-transition-med);
+  transition: transform var(--ppm-transition-med),
+              box-shadow var(--ppm-transition-med);
   z-index: 50;
   color: #ffffff;
 }
@@ -1335,6 +1335,8 @@ small {
 /* When nav is open */
 html.ppm-nav-open .ppm-drawer {
   transform: translateX(0%);
+  /* Shadow only while open, so it doesn't bleed onto the page edge when closed */
+  box-shadow: -18px 0 40px rgba(0, 0, 0, 0.8);
 }
 
 html.ppm-nav-open .ppm-nav-overlay {
@@ -1512,7 +1514,7 @@ html.ppm-nav-open {
 }
 
 .blog-card {
-  background: rgba(10, 20, 19, 0.65);
+  background: rgba(20, 32, 30, 0.65);
   border: 1px solid var(--ppm-border-soft);
   border-radius: var(--ppm-radius-lg);
   overflow: hidden;
@@ -1766,8 +1768,8 @@ html.ppm-nav-open {
   inset: 0;
   background: linear-gradient(
     to bottom,
-    rgba(5, 6, 8, 0.3) 0%,
-    rgba(5, 6, 8, 0.6) 100%
+    rgba(11, 14, 19, 0.3) 0%,
+    rgba(11, 14, 19, 0.6) 100%
   );
   z-index: 1;
 }
@@ -1845,7 +1847,7 @@ html.ppm-nav-open {
   width: 100vw;
   margin: 0 calc(50% - 50vw) 2.5rem;
   padding: calc(0.15rem + 1px) 0 0.15rem;
-  background: rgba(5, 6, 8, 0.92);
+  background: rgba(11, 14, 19, 0.92);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--ppm-border-soft);
@@ -2064,7 +2066,7 @@ html.ppm-nav-open {
 }
 
 .ppm-article pre {
-  background: rgba(10, 20, 19, 0.65);
+  background: rgba(20, 32, 30, 0.65);
   border: 1px solid var(--ppm-border-soft);
   border-radius: var(--ppm-radius-sm);
   padding: 1.25rem;

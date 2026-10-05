@@ -277,7 +277,7 @@ img { max-width: 100%; height: auto; display: block; }
     top: 0;
     z-index: 100;
     padding: 10px 16px;
-    background: linear-gradient(180deg, #050608 0%, #08090d 100%);
+    background: linear-gradient(180deg, #0B0E13 0%, #0E1117 100%);
     border-bottom: 1px solid var(--brass);
   }
 

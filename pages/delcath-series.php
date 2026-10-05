@@ -108,9 +108,9 @@
       inset: 0;
       background: radial-gradient(
         ellipse 65% 65% at 50% 45%,
-        rgba(5, 6, 8, 0.1) 0%,
-        rgba(5, 6, 8, 0.55) 55%,
-        rgba(5, 6, 8, 0.88) 78%,
+        rgba(11, 14, 19, 0.1) 0%,
+        rgba(11, 14, 19, 0.55) 55%,
+        rgba(11, 14, 19, 0.88) 78%,
         var(--ppm-obsidian) 100%
       );
     }
@@ -150,7 +150,7 @@
       line-height: 1.05;
       margin: 0 0 1.1rem;
       color: #ffffff;
-      text-shadow: 0 0 40px rgba(117, 255, 232, 0.25), 0 4px 18px rgba(5, 6, 8, 0.85);
+      text-shadow: 0 0 40px rgba(117, 255, 232, 0.25), 0 4px 18px rgba(11, 14, 19, 0.85);
     }
 
     .dc-tagline {
@@ -162,7 +162,7 @@
       letter-spacing: 0.06em;
       color: var(--ppm-hermes-lumen);
       margin: 0 0 2.25rem;
-      text-shadow: 0 2px 10px rgba(5, 6, 8, 0.85);
+      text-shadow: 0 2px 10px rgba(11, 14, 19, 0.85);
     }
 
     .dc-hero-lede {
