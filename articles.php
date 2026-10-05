@@ -52,6 +52,9 @@ $blog_items = ppm_get_blog_posts();
       <h1 class="bp-title">Articles</h1>
     </div>
 
+    <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/search-form.php'; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/topic-list.php'; ?>
+
     <div class="blog-container">
 
       <?php if (empty($blog_items)): ?>
@@ -61,30 +64,7 @@ $blog_items = ppm_get_blog_posts();
       <?php else: ?>
         <ul>
           <?php foreach ($blog_items as $post): ?>
-            <li class="blog-card">
-              <a href="/articles/<?php echo htmlspecialchars($post['slug']); ?>">
-                <?php if (!empty($post['image'])): ?>
-                  <img class="bp-img"
-                       src="<?php echo htmlspecialchars($post['image']); ?>"
-                       alt="<?php echo htmlspecialchars($post['title']); ?>"
-                       loading="lazy">
-                <?php endif; ?>
-
-                <h2><?php echo htmlspecialchars($post['title']); ?></h2>
-
-                <?php if (!empty($post['excerpt'])): ?>
-                  <p><?php echo htmlspecialchars($post['excerpt']); ?></p>
-                <?php endif; ?>
-
-                <?php if (!empty($post['tags'])): ?>
-                  <ul class="bp-tags">
-                    <?php foreach ($post['tags'] as $tag): ?>
-                      <li class="bp-tag"><?php echo htmlspecialchars($tag); ?></li>
-                    <?php endforeach; ?>
-                  </ul>
-                <?php endif; ?>
-              </a>
-            </li>
+            <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/post-card.php'; ?>
           <?php endforeach; ?>
         </ul>
       <?php endif; ?>

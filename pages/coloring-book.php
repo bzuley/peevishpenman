@@ -132,6 +132,11 @@
 
     <section>
       <p>
+        The book started as a joke cover made to amuse a sister; read how it
+        led to a publishing career in
+        <a href="/articles/confirmed-independent-publisher">Confirmed Independent Publisher</a>.
+      </p>
+      <p>
         Want previews and release news for future titles? Join the
         <a href="#newsletter">newsletter</a>.
       </p>

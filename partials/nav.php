@@ -62,11 +62,23 @@
 
     <!-- Search -->
     <form class="ppm-drawer-search" action="/search" method="get" role="search">
-      <input type="search" name="q" placeholder="Search posts&hellip;" aria-label="Search posts">
+      <input type="search" name="q" placeholder="Search articles&hellip;" aria-label="Search articles">
       <button type="submit" aria-label="Search">
         <svg viewBox="0 0 24 24" width="18" height="18"><path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 1 0-.7.7l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0A4.5 4.5 0 1 1 14 9.5 4.5 4.5 0 0 1 9.5 14z"/></svg>
       </button>
     </form>
+
+    <!-- Articles Section -->
+    <div class="ppm-drawer-section">
+      <h3 class="ppm-drawer-heading">Articles</h3>
+      <ul>
+        <li><a href="/articles">All Articles</a></li>
+        <li><a href="/article-tag?tag=archetypes">Character Archetypes</a></li>
+        <li><a href="/article-tag?tag=worldbuilding">Worldbuilding</a></li>
+        <li><a href="/article-tag?tag=selfpublishing">Self-Publishing</a></li>
+        <li><a href="/article-tag?tag=consciousness">Consciousness</a></li>
+      </ul>
+    </div>
 
     <!-- Writing Projects Section -->
     <div class="ppm-drawer-section">
@@ -84,6 +96,8 @@
       <h3 class="ppm-drawer-heading">Peevish Penman</h3>
       <ul>
         <li><a href="/pages/about">About OA Allen</a></li>
+        <li><a href="/pages/books">Books</a></li>
+        <li><a href="/pages/writer-secret-society">Free Writer&rsquo;s Handbook</a></li>
       </ul>
     </div>
 

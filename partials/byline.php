@@ -22,10 +22,7 @@ if ($ppm_byline_author === 'OA Allen') {
 // Links to the post's tag landing pages. Only tags listed in
 // ppm_get_tags() have a landing page worth linking to.
 require_once $_SERVER['DOCUMENT_ROOT'] . '/blog-config.php';
-$ppm_byline_tags = array_values(array_intersect(
-  array_unique(ppm_normalize_tags($post_meta['tags'] ?? '')),
-  array_keys(ppm_get_tags())
-));
+$ppm_byline_tags = ppm_landing_tags($post_meta['tags'] ?? '');
 ?>
 <footer class="ppm-article-byline">
   <div class="ppm-byline-card">
@@ -51,7 +48,7 @@ $ppm_byline_tags = array_values(array_intersect(
       <span class="ppm-article-tags-label">Filed under</span>
       <ul>
         <?php foreach ($ppm_byline_tags as $ppm_byline_tag): ?>
-          <li><a href="/article-tag?tag=<?php echo rawurlencode($ppm_byline_tag); ?>"><?php echo htmlspecialchars(ppm_tag_label($ppm_byline_tag)); ?></a></li>
+          <li><a href="<?php echo htmlspecialchars(ppm_tag_url($ppm_byline_tag)); ?>"><?php echo htmlspecialchars(ppm_tag_label($ppm_byline_tag)); ?></a></li>
         <?php endforeach; ?>
       </ul>
     </nav>

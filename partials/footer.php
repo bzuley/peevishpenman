@@ -72,6 +72,7 @@ $ppm_book_page = $ppm_book_page ?? false;
   <?php if (!$ppm_book_page): ?>
   <nav class="ppm-footer-links" aria-label="Footer">
     <a href="/pages/about">About</a>
+    <a href="/articles">Articles</a>
     <a href="/pages/books">Books</a>
     <a href="/pages/privacy">Privacy</a>
     <a href="/rss.xml" type="application/rss+xml">RSS Feed</a>

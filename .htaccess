@@ -6,6 +6,9 @@
 
 Options -Indexes
 
+# Missing pages get the site's own 404 page (which also answers 404).
+ErrorDocument 404 /404.php
+
 # HSTS: browsers that have seen the site over HTTPS stick to HTTPS for a
 # year. Deliberately no includeSubDomains or preload.
 <IfModule mod_headers.c>
