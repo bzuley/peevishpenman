@@ -304,47 +304,6 @@
     }
 
     .ab-work p + p { margin-top: 0.75rem; }
-
-    /* ---------- Closing CTA ---------- */
-    .ab-cta {
-      padding: clamp(3.5rem, 8vw, 5.5rem) 5%;
-      text-align: center;
-      background:
-        radial-gradient(ellipse at 50% 100%, rgba(117, 255, 232, 0.08), transparent 65%),
-        var(--ppm-surface);
-      border-top: 1px solid var(--ppm-border-soft);
-    }
-
-    .ab-cta-title {
-      font-family: "Oswald", "Space Grotesk", system-ui, sans-serif;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      font-size: clamp(1.4rem, 3.6vw, 2rem);
-      color: #ffffff;
-      margin: 0 0 0.75rem;
-    }
-
-    .ab-cta-sub {
-      font-family: "IBM Plex Sans", system-ui, sans-serif;
-      font-size: 1.05rem;
-      color: var(--ppm-text-muted);
-      max-width: 560px;
-      margin: 0 auto 2rem;
-      line-height: 1.7;
-    }
-
-    .ab-cta-sub a {
-      color: var(--ppm-hermes);
-      text-decoration: underline;
-      text-decoration-color: rgba(117, 255, 232, 0.4);
-      text-underline-offset: 2px;
-      transition: text-decoration-color var(--ppm-transition-fast);
-    }
-
-    .ab-cta-sub a:hover {
-      text-decoration-color: var(--ppm-hermes);
-    }
   </style>
 
   <script type="application/ld+json">
@@ -406,9 +365,9 @@
     <div class="ab-panel-inner">
       <h2>The Writer: OA Allen</h2>
       <p>
-        Carrie writes science fiction and speculative fiction about the
-        stranger systems where belief, power, history, and technology
-        converge. She favors metaphysical idealism over materialism and
+        Under the pen name OA Allen, Carrie writes science fiction and
+        speculative fiction about the stranger systems where belief, power,
+        history, and technology converge. She favors metaphysical idealism over materialism and
         stories about ordinary people over the chosen few.
       </p>
       <p>
@@ -495,19 +454,12 @@
         learned and encourage other writers to explore writing as both a
         craft and a profession.
       </p>
-    </div>
-  </section>
-
-  <section class="ab-cta">
-    <p class="ab-cta-title">Now in Vermont</p>
-    <p class="ab-cta-sub">
-      Carrie lives in Vermont, where she maintains a regimented schedule of
-      coffee and creativity under the direction of her miniature schnauzer.
-    </p>
-    <div class="ab-cta-buttons">
-      <a class="ppm-button" href="#newsletter">Join the Newsletter</a>
-      <a class="ppm-button ppm-button--ghost" href="/articles">Read the Articles</a>
-      <a class="ppm-button ppm-button--ghost" href="mailto:editor@peevishpenman.com">Contact</a>
+      <p>
+        Carrie lives in Vermont, where she maintains a regimented schedule of
+        coffee and creativity under the direction of her miniature schnauzer.
+        When she isn&rsquo;t writing, she enjoys hiking, gardening, and
+        meditation.
+      </p>
     </div>
   </section>
 
