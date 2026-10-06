@@ -3,31 +3,31 @@
 <head>
   <link rel="alternate" type="application/rss+xml" title="Peevish Penman RSS Feed" href="https://peevishpenman.com/rss.xml">
   <meta charset="UTF-8">
-  <title>About OA Allen – Peevish Penman</title>
+  <title>About Peevish Penman</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="OA Allen is the pen name of Carrie Bailey Allen — science-fiction writer, artist, and researcher whose work circles belief, power, and technology.">
+  <meta name="description" content="Peevish Penman is a writing resource for unconventional writers, created by science-fiction writer and former librarian Carrie Bailey Allen (OA Allen).">
   <meta name="author" content="OA Allen">
 
   <link rel="canonical" href="https://peevishpenman.com/pages/about">
 
   <!-- Open Graph -->
   <meta property="og:site_name" content="Peevish Penman">
-  <meta property="og:title" content="About OA Allen – Peevish Penman">
-  <meta property="og:description" content="OA Allen is the pen name of Carrie Bailey Allen — science-fiction writer, artist, and researcher whose work circles belief, power, and technology.">
+  <meta property="og:title" content="About Peevish Penman">
+  <meta property="og:description" content="Peevish Penman is a writing resource for unconventional writers, created by science-fiction writer and former librarian Carrie Bailey Allen (OA Allen).">
   <meta property="og:url" content="https://peevishpenman.com/pages/about">
   <meta property="og:type" content="profile">
   <meta property="og:image" content="https://peevishpenman.com/img/social/peevish-penman.jpg">
   <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="About OA Allen – Peevish Penman">
+  <meta property="og:image:alt" content="About Peevish Penman">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="About OA Allen – Peevish Penman">
-  <meta name="twitter:description" content="OA Allen is the pen name of Carrie Bailey Allen — science-fiction writer, artist, and researcher whose work circles belief, power, and technology.">
+  <meta name="twitter:title" content="About Peevish Penman">
+  <meta name="twitter:description" content="Peevish Penman is a writing resource for unconventional writers, created by science-fiction writer and former librarian Carrie Bailey Allen (OA Allen).">
   <meta name="twitter:image" content="https://peevishpenman.com/img/social/peevish-penman.jpg">
-  <meta name="twitter:image:alt" content="About OA Allen – Peevish Penman">
+  <meta name="twitter:image:alt" content="About Peevish Penman">
 
   <?php require_once $_SERVER['DOCUMENT_ROOT'].'/partials/assets.php'; ?>
   <link rel="stylesheet" href="<?= ppm_asset('/styles/main.css') ?>">
@@ -176,12 +176,14 @@
       color: #ffffff;
     }
 
-    .ab-statement p + p {
-      margin-top: 0.5rem;
-      color: var(--ppm-hermes-lumen);
+    .ab-statement p.ab-statement-lead {
+      margin-bottom: 0.6rem;
+      font-family: "IBM Plex Mono", monospace;
       font-weight: 500;
-      font-size: clamp(1rem, 2.2vw, 1.2rem);
-      font-style: italic;
+      font-size: 0.85rem;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--ppm-hermes);
     }
 
     /* ---------- Prose panels ---------- */
@@ -224,6 +226,7 @@
 
     .ab-panel--shaded p { color: var(--ppm-text-muted); }
 
+    .ab-hero-lede a,
     .ab-panel p a {
       color: var(--ppm-hermes);
       text-decoration: underline;
@@ -232,6 +235,7 @@
       transition: text-decoration-color var(--ppm-transition-fast);
     }
 
+    .ab-hero-lede a:hover,
     .ab-panel p a:hover {
       text-decoration-color: var(--ppm-hermes);
     }
@@ -246,6 +250,16 @@
       margin: 0 auto;
       display: grid;
       gap: 1.25rem;
+    }
+
+    .ab-works h2 {
+      font-family: "Oswald", "Space Grotesk", system-ui, sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      font-size: clamp(1.4rem, 3.2vw, 1.9rem);
+      color: #ffffff;
+      margin: 1.5rem 0 0;
     }
 
     .ab-work {
@@ -288,6 +302,8 @@
       color: var(--ppm-text-muted);
       margin: 0;
     }
+
+    .ab-work p + p { margin-top: 0.75rem; }
 
     /* ---------- Closing CTA ---------- */
     .ab-cta {
@@ -338,7 +354,7 @@
     "name": "OA Allen",
     "alternateName": "Carrie Bailey Allen",
     "url": "https://peevishpenman.com/pages/about",
-    "description": "OA Allen is the pen name of Carrie Bailey Allen — science-fiction writer, artist, and researcher whose work circles belief, power, and technology.",
+    "description": "Carrie Bailey Allen, writing as OA Allen, is a science-fiction writer, former librarian, and the creator of Peevish Penman.",
     "sameAs": [
       "https://www.facebook.com/PeevishPenman",
       "https://www.instagram.com/peevishpenman/",
@@ -362,105 +378,122 @@
     <div class="ab-hero-content">
       <img class="ab-portrait" src="/img/oa-allen-portrait.webp" alt="Carrie Bailey Allen" width="720" height="965">
       <p class="ab-kicker">Peevish Penman &middot; About</p>
-      <h1>About OA Allen</h1>
-      <p class="ab-tagline">Carrie Bailey Allen writes speculative fiction under the name OA Allen.</p>
+      <h1>About Peevish Penman</h1>
+      <p class="ab-tagline">A writing resource for unconventional writers.</p>
 
       <div class="ab-hero-lede">
         <p>
-          Carrie is a science-fiction writer, artist, researcher, and former
-          librarian whose interests tend to gather around strange systems:
-          <strong>belief, power, technology, folklore, conspiracy</strong>,
-          and the stories people construct to explain a world that often
-          appears to contradict itself.
+          Peevish Penman is a writing resource for unconventional writers,
+          with <a href="/articles">articles</a> on <strong>fiction, science fiction, publishing,
+          editing, creativity</strong>, and the realities of the writing life.
+        </p>
+        <p>
+          Created by writer and former librarian <strong>Carrie Bailey Allen</strong>,
+          Peevish Penman has been encouraging writers to approach writing as
+          both a craft and a profession since 2009. Carrie is also the editor
+          of the <a href="/pages/writer-secret-society"><em>Handbook of the Writer Secret Society</em></a>.
         </p>
       </div>
     </div>
   </section>
 
   <section class="ab-statement">
-    <p>Insert Coffee Repeat</p>
+    <p class="ab-statement-lead">Her personal motto?</p>
+    <p>Insert Coffee. Repeat.</p>
   </section>
 
   <section class="ab-panel">
     <div class="ab-panel-inner">
-      <h2>A Life That Kept Moving</h2>
+      <h2>The Writer: OA Allen</h2>
+      <p>
+        Carrie writes science fiction and speculative fiction about the
+        stranger systems where belief, power, history, and technology
+        converge. She favors metaphysical idealism over materialism and
+        stories about ordinary people over the chosen few.
+      </p>
       <p>
         She studied philosophy before earning a graduate degree in
         information studies in New Zealand, where she lived for several
-        years. She taught English in Chile. She moved from Oregon to North
-        Carolina and finally settled in Vermont. Living abroad&mdash;and
-        moving through different countries&mdash;left a permanent mark on
-        her fiction.
+        years. She taught English in Chile and moved from Oregon to North
+        Carolina, finally settling in Vermont.
       </p>
       <p>
-        With a family history that contains both sides of the colonial
-        story, <a href="/article-tag?tag=colonization">colonizer and colonized</a>, she is particularly interested in
-        what happens when competing versions of reality are all,
-        inconveniently, true.
-      </p>
-    </div>
-  </section>
-
-  <section class="ab-panel ab-panel--shaded">
-    <div class="ab-panel-inner">
-      <h2>The Work</h2>
-      <p>
-        Her science-fiction novel <a href="/pages/bright-dark"><em>The Bright Dark</em></a> grew out of those
-        interests, imagining a future shaped not just by catastrophe and
-        technology but by the myths, institutions, class systems, and
-        assumptions people build afterward. She asked what it might have
-        been like to be Solon visiting Sais and learning about ancient
-        civilizations.
-      </p>
-      <p>
-        <a href="/pages/delcath-series">The Delcath series</a> started as a tribute to <em>No Exit</em> by
-        Jean-Paul Sartre. Carrie asked what hell could look like for workers
-        isolated in space.
-      </p>
-      <p>
-        Her current work in progress, <a href="/pages/ghost-trucker"><em>Ghost Trucker</em></a>, moves further
-        into the territory between the rational and the uncanny. After
-        three years on the road with her husband, who worked as a long-haul
-        truck driver during COVID, she returned with a miniature schnauzer
-        and an appreciation for truck stops and audiobooks.
+        With a family history containing both sides of the
+        <a href="/article-tag?tag=colonization">colonial story</a>, she is
+        particularly interested in what happens when competing versions of
+        reality are all, inconveniently, true.
       </p>
     </div>
   </section>
 
   <section class="ab-works">
     <div class="ab-works-inner">
+      <h2>The Books</h2>
       <a class="ab-work" href="/pages/bright-dark">
         <p class="ab-work-label">Novel</p>
         <h3>The Bright Dark</h3>
-        <p>A post-apocalyptic future built from myth, technology, and the assumptions people build afterward.</p>
-      </a>
-      <a class="ab-work" href="/pages/delcath-series">
-        <p class="ab-work-label">Series</p>
-        <h3>The Delcath Series</h3>
-        <p>Asteroid miners, corporate dependence, and a tribute to Sartre&rsquo;s <em>No Exit</em>.</p>
+        <p>
+          <em>The Bright Dark</em> grew out of imagining a future shaped not
+          just by catastrophe, but by its aftermath&mdash;and by the problem
+          of understanding a civilization after much of its knowledge has
+          been lost.
+        </p>
+        <p>
+          Carrie wondered what it might have been like to be the Athenian
+          Solon travelling to Sais and learning what the Egyptians believed
+          about Atlantis; a medieval monk contemplating ancient Rome while
+          learning Latin; or a Mexican in the Victorian era leading European
+          explorers to Chich&eacute;n Itz&aacute;.
+        </p>
       </a>
       <a class="ab-work" href="/pages/ghost-trucker">
         <p class="ab-work-label">Work in Progress</p>
         <h3>Ghost Trucker</h3>
-        <p>Speculative fiction from the cab of a semi, in the territory between the rational and the uncanny.</p>
+        <p>
+          Carrie&rsquo;s next project moves further into the territory
+          between the rational and the uncanny: artificial intelligence
+          captures human consciousness at the moment of death and whisks
+          them away to a universe run on indentured servitude and
+          questionable truck-stop soda dispensers.
+        </p>
       </a>
+      <a class="ab-work" href="/pages/delcath-series">
+        <p class="ab-work-label">Novellas</p>
+        <h3>The Delcath Series</h3>
+        <p>
+          The Delcath novellas began as a science-fiction tribute to
+          Jean-Paul Sartre&rsquo;s <em>No Exit</em> and became a saga about
+          corporate asteroid miners isolated in deep space and creating
+          their own personal hell.
+        </p>
+      </a>
+
+      <h2>Art</h2>
       <a class="ab-work" href="/pages/coloring-book">
-        <p class="ab-work-label">Art</p>
+        <p class="ab-work-label">Coloring Book</p>
         <h3>The Reptilian Conspiracy Coloring Book</h3>
-        <p>Conspiracy culture, art, philosophy, and a sense of humor, refusing to live in separate rooms.</p>
+        <p>
+          Conspiracy culture, drawing, and a questionable sense of humor
+          meet sleep deprivation and a drawing tablet.
+        </p>
       </a>
     </div>
   </section>
 
-  <section class="ab-panel">
+  <section class="ab-panel ab-panel--shaded">
     <div class="ab-panel-inner">
-      <h2>Before the Page</h2>
+      <h2>The Writer&rsquo;s Mission</h2>
       <p>
-        She spent years working as a librarian before a severe balance
-        disorder and hearing loss changed what that work could look like.
-        She also writes with ADHD, which may explain both the sprawling
-        <a href="/articles">research trails</a> and her tendency to become intensely interested in
-        questions other people have sensibly left alone.
+        Carrie spent years working as a librarian before a severe balance
+        disorder and hearing loss changed the course of her career. She
+        turned tragedy into opportunity, reclaiming control of her personal
+        narrative through writing and publishing books with the support of
+        her husband and children.
+      </p>
+      <p>
+        Peevish Penman grew from the same impulse: to share what she has
+        learned and encourage other writers to explore writing as both a
+        craft and a profession.
       </p>
     </div>
   </section>
@@ -468,10 +501,8 @@
   <section class="ab-cta">
     <p class="ab-cta-title">Now in Vermont</p>
     <p class="ab-cta-sub">
-      Carrie now lives in Vermont, where she writes speculative fiction
-      about what humans believe, what they build from those beliefs, and
-      what happens when reality turns out to be stranger than the official
-      explanation.
+      Carrie lives in Vermont, where she maintains a regimented schedule of
+      coffee and creativity under the direction of her miniature schnauzer.
     </p>
     <div class="ab-cta-buttons">
       <a class="ppm-button" href="#newsletter">Join the Newsletter</a>
