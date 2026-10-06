@@ -95,7 +95,7 @@
     <div class="ppm-drawer-section">
       <h3 class="ppm-drawer-heading">Peevish Penman</h3>
       <ul>
-        <li><a href="/pages/about">About OA Allen</a></li>
+        <li><a href="/pages/about">About Peevish Penman</a></li>
         <li><a href="/pages/books">Books</a></li>
         <li><a href="/pages/writer-secret-society">Free Writer&rsquo;s Handbook</a></li>
       </ul>
