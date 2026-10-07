@@ -1225,6 +1225,9 @@ small {
   right: 0;
   width: min(320px, 80vw);
   height: 100vh;
+  height: 100dvh;
+  overflow-y: auto;
+  overscroll-behavior: contain;
   background: var(--ppm-surface-soft);
   transform: translateX(100%);
   transition: transform var(--ppm-transition-med),
@@ -3303,4 +3306,145 @@ html.ppm-nav-open {
    dark base so it doesn't show as a grey band on the light page */
 :root[data-theme="light"] .ppm-article-hero {
   background: #0B0E13;
+}
+
+/* ================================
+   Navbar topic links
+   ================================ */
+.ppm-nav-topics {
+  display: flex;
+  gap: 1.25rem;
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0 0 2px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  white-space: nowrap;
+}
+
+.ppm-nav-topics::-webkit-scrollbar {
+  display: none;
+}
+
+.ppm-nav-topics a {
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+  font-size: 0.85rem;
+  color: var(--ppm-text-main);
+  text-decoration: none;
+  opacity: 0.8;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 2px;
+}
+
+.ppm-nav-topics a:hover,
+.ppm-nav-topics a[aria-current="page"] {
+  opacity: 1;
+  color: var(--ppm-hermes-lumen);
+  border-bottom-color: var(--ppm-hermes);
+}
+
+/* ================================
+   Light theme fixes: cards, drawer, brand, matching nav outlines
+   ================================ */
+:root[data-theme="light"] .blog-card,
+:root[data-theme="light"] .ppm-blog-card {
+  background: #ffffff;
+  border-color: rgba(11, 14, 19, 0.15);
+  box-shadow: 0 6px 20px rgba(20, 30, 50, 0.08);
+}
+
+:root[data-theme="light"] .blog-card:hover,
+:root[data-theme="light"] .ppm-blog-card:hover {
+  border-color: var(--ppm-hermes);
+  box-shadow: 0 10px 26px rgba(20, 30, 50, 0.14);
+}
+
+:root[data-theme="light"] .bp-tag {
+  background: rgba(29, 122, 104, 0.08);
+  border-color: rgba(29, 122, 104, 0.4);
+}
+
+:root[data-theme="light"] .bp-tag:hover {
+  background: rgba(29, 122, 104, 0.16);
+  border-color: var(--ppm-hermes);
+}
+
+:root[data-theme="light"] .bp-tag.bp-tag--current {
+  background: var(--ppm-hermes);
+}
+
+:root[data-theme="light"] .bp-tag.bp-tag--current a,
+:root[data-theme="light"] .bp-tag.bp-tag--current a:hover {
+  color: #ffffff;
+}
+
+/* Drawer: white text on a light panel was unreadable */
+:root[data-theme="light"] .ppm-drawer,
+:root[data-theme="light"] .ppm-drawer-close,
+:root[data-theme="light"] .ppm-drawer-section a {
+  color: #1B2230;
+}
+
+:root[data-theme="light"] .ppm-drawer {
+  background: #ffffff;
+}
+
+:root[data-theme="light"] .ppm-nav-overlay {
+  background: rgba(20, 30, 50, 0.35);
+}
+
+/* Wordmark: solid teal + solid ink instead of a hairline outline */
+@media (min-width: 901px) {
+  :root[data-theme="light"] .ppm-nav-brand-outline {
+    color: var(--ppm-hermes);
+    -webkit-text-stroke: 0;
+    text-stroke: 0;
+    font-weight: 700;
+  }
+
+  :root[data-theme="light"] .ppm-nav-brand-solid {
+    color: #0B0E13;
+  }
+}
+
+/* One outline colour/weight for every nav control */
+:root[data-theme="light"] .ppm-nav-cta--ghost,
+:root[data-theme="light"] .ppm-theme-toggle {
+  border: 2px solid rgba(11, 14, 19, 0.35);
+  color: #0B0E13;
+}
+
+:root[data-theme="light"] .ppm-nav-cta--primary {
+  color: #ffffff;
+}
+
+:root[data-theme="light"] .ppm-theme-toggle:hover {
+  background: rgba(11, 14, 19, 0.06);
+  border-color: rgba(11, 14, 19, 0.6);
+  color: #0B0E13;
+}
+
+:root[data-theme="light"] .ppm-nav {
+  border-bottom: 1px solid rgba(11, 14, 19, 0.12);
+}
+
+:root[data-theme="light"] .ppm-hamburger span {
+  background: #0B0E13;
+}
+
+/* Match the dark theme's outlined toggle weight to the CTAs too */
+.ppm-theme-toggle {
+  border-width: 2px;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+:root[data-theme="light"] .ppm-drawer-search input[type="search"],
+:root[data-theme="light"] .ppm-drawer-search input[type="search"]:focus {
+  background: #ffffff;
+  border-color: rgba(11, 14, 19, 0.25);
+  color: #1B2230;
+}
+
+:root[data-theme="light"] .ppm-drawer-search input[type="search"]::placeholder {
+  color: rgba(27, 34, 48, 0.55);
 }
