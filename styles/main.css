@@ -739,6 +739,10 @@ small {
     display: block;
     position: sticky;
     top: var(--ppm-spacing-lg);
+    /* Never taller than the viewport: if the content is longer (e.g. the
+       About link at the bottom), the sidebar scrolls instead of being cut off. */
+    max-height: calc(100vh - 2 * var(--ppm-spacing-lg));
+    overflow-y: auto;
   }
 
   .ppm-home-nav-heading {
@@ -818,15 +822,6 @@ small {
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: var(--ppm-hermes-shadow);
-  }
-
-  /* The Explore list plus the definitions box is taller than many laptop
-     screens; let the left sidebar scroll with the page there so the box
-     isn't pinned off-screen. */
-  @media (max-height: 1000px) {
-    .ppm-home-sidebar--left {
-      position: static;
-    }
   }
 
   .ppm-home-glossary dl {
