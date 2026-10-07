@@ -141,7 +141,6 @@
       <ul>
         <li><a href="/pages/about">About Peevish Penman</a></li>
         <li><a href="/pages/books">Books</a></li>
-        <li><a href="/pages/writer-secret-society">Free Writer&rsquo;s Handbook</a></li>
       </ul>
     </div>
 

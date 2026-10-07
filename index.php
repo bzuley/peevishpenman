@@ -190,6 +190,10 @@
     </aside>
   </section>
 
+  <div class="ppm-home-main">
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/partials/blog-preview.php'; ?>
+  </div>
+
   <div class="ppm-home-middle">
     <!-- Books row -->
     <section class="ppm-home-books" aria-labelledby="ppm-home-books-title">
@@ -232,10 +236,6 @@
       </dl>
     </div>
     </aside>
-  </div>
-
-  <div class="ppm-home-main">
-    <?php include $_SERVER['DOCUMENT_ROOT'] . '/partials/blog-preview.php'; ?>
   </div>
 
 </div>
