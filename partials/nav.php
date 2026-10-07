@@ -1,4 +1,12 @@
 <!-- ============= PEEVISH PENMAN NAV ============= -->
+<script>
+  // Apply the saved colour theme before the page paints (dark is the default).
+  try {
+    if (localStorage.getItem('ppm-theme') === 'light') {
+      document.documentElement.setAttribute('data-theme', 'light');
+    }
+  } catch (e) {}
+</script>
 <nav class="ppm-nav">
   <div class="ppm-nav-inner">
 
@@ -24,6 +32,12 @@
         Newsletter
       </a>
 
+      <!-- Dark / light theme toggle -->
+      <button class="ppm-theme-toggle" type="button" aria-label="Switch to light theme" aria-pressed="false">
+        <svg class="ppm-theme-icon ppm-theme-icon--sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <svg class="ppm-theme-icon ppm-theme-icon--moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+
       <!-- Hamburger Menu -->
       <button class="ppm-hamburger"
               aria-label="Open menu"
@@ -47,6 +61,24 @@
     document.documentElement.style.setProperty('--ppm-scrollbar-width', scrollbarWidth + 'px');
     document.documentElement.classList.add('ppm-nav-open');
   }
+
+  (function () {
+    var root = document.documentElement;
+    var btn = document.querySelector('.ppm-theme-toggle');
+    if (!btn) return;
+    function sync() {
+      var light = root.getAttribute('data-theme') === 'light';
+      btn.setAttribute('aria-pressed', light ? 'true' : 'false');
+      btn.setAttribute('aria-label', light ? 'Switch to dark theme' : 'Switch to light theme');
+    }
+    btn.addEventListener('click', function () {
+      var light = root.getAttribute('data-theme') !== 'light';
+      if (light) root.setAttribute('data-theme', 'light'); else root.removeAttribute('data-theme');
+      try { localStorage.setItem('ppm-theme', light ? 'light' : 'dark'); } catch (e) {}
+      sync();
+    });
+    sync();
+  })();
 </script>
 
 <!-- Navigation Drawer -->

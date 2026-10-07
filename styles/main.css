@@ -3141,3 +3141,166 @@ html.ppm-nav-open {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
+
+/* ================================
+   Theme toggle + article title tags
+   ================================ */
+.ppm-theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border-radius: var(--ppm-radius-pill);
+  border: 1px solid var(--ppm-border-soft);
+  background: transparent;
+  color: var(--ppm-text-main);
+  cursor: pointer;
+}
+
+.ppm-theme-toggle:hover {
+  border-color: var(--ppm-hermes);
+  color: var(--ppm-hermes-lumen);
+}
+
+.ppm-theme-icon {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+/* Show the icon for the theme you'd switch to */
+.ppm-theme-icon--sun { display: block; }
+.ppm-theme-icon--moon { display: none; }
+:root[data-theme="light"] .ppm-theme-icon--sun { display: none; }
+:root[data-theme="light"] .ppm-theme-icon--moon { display: block; }
+
+@media (max-width: 600px) {
+  .ppm-theme-toggle {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+/* Tag chips directly under the article title */
+.ppm-article .ppm-article-tags--title {
+  margin: 0.25rem 0 1.25rem;
+}
+
+.ppm-article .ppm-article-tags--title {
+  justify-content: center;
+}
+
+/* ================================
+   Light theme (html[data-theme="light"]) — toggled from the nav.
+   Dark stays the default; these override the tokens and the few
+   hard-coded dark surfaces and white text.
+   ================================ */
+:root[data-theme="light"] {
+  color-scheme: light;
+  --ppm-hermes: #1D7A68;
+  --ppm-hermes-lumen: #2FA891;
+  --ppm-hermes-shadow: #176455;
+  --ppm-obsidian: #F6F4EF;
+  --ppm-surface: #FFFFFF;
+  --ppm-surface-soft: #F1EEE7;
+  --ppm-border-soft: rgba(29, 122, 104, 0.25);
+  --ppm-text-main: #1B2230;
+  --ppm-text-muted: #5B6472;
+  --ppm-shadow-soft: 0 18px 40px rgba(20, 30, 50, 0.15);
+}
+
+:root[data-theme="light"] body {
+  background-color: #F6F4EF;
+  color: #1B2230;
+}
+
+:root[data-theme="light"] h1,
+:root[data-theme="light"] h2,
+:root[data-theme="light"] h3,
+:root[data-theme="light"] h4,
+:root[data-theme="light"] h5,
+:root[data-theme="light"] h6 {
+  color: #0B0E13;
+}
+
+:root[data-theme="light"] .ppm-nav {
+  background: linear-gradient(180deg, #F6F4EF 0%, #EFECE4 100%);
+}
+
+:root[data-theme="light"] .ppm-nav-brand-outline {
+  color: transparent;
+  -webkit-text-stroke: 1px #0B0E13;
+}
+
+:root[data-theme="light"] .ppm-nav-brand-solid {
+  color: #0B0E13;
+}
+
+/* Text that sits on photos or the dark hero keeps its light colours */
+:root[data-theme="light"] .ppm-article-hero-content h1 { color: #ffffff; }
+:root[data-theme="light"] .ppm-article-hero-content .ppm-article-kicker { color: #4FC3AC; }
+:root[data-theme="light"] .ppm-article-hero-content .ppm-article-tags a {
+  color: #4FC3AC;
+  background: rgba(11, 14, 19, 0.45);
+}
+
+/* Hard-coded white text and translucent-white surfaces */
+:root[data-theme="light"] .ppm-hero-logline,
+:root[data-theme="light"] .ppm-site-subtitle {
+  color: #1B2230;
+}
+
+:root[data-theme="light"] .ppm-hero-site-title,
+:root[data-theme="light"] .ppm-hero-site-title-solid {
+  color: #0B0E13;
+}
+
+:root[data-theme="light"] .ppm-hero-site-title-outline {
+  -webkit-text-stroke-color: #0B0E13;
+  text-stroke-color: #0B0E13;
+}
+
+:root[data-theme="light"] .ppm-nav-cta--ghost {
+  color: #0B0E13;
+  border-color: rgba(11, 14, 19, 0.35);
+}
+
+:root[data-theme="light"] .ppm-nav-cta--ghost:hover {
+  background: rgba(11, 14, 19, 0.06);
+  border-color: rgba(11, 14, 19, 0.6);
+}
+
+:root[data-theme="light"] .ppm-search-form input[type="search"],
+:root[data-theme="light"] .ppm-home-widget-form input[type="email"] {
+  background: #ffffff;
+  border-color: rgba(11, 14, 19, 0.25);
+  color: #1B2230;
+}
+
+:root[data-theme="light"] .ppm-search-form input[type="search"]::placeholder {
+  color: rgba(27, 34, 48, 0.55);
+}
+
+:root[data-theme="light"] .ppm-jump-nav {
+  background: rgba(246, 244, 239, 0.94);
+}
+
+:root[data-theme="light"] .ppm-hero-gradient-line {
+  background-image: linear-gradient(
+    90deg,
+    #0B0E13 0%,
+    #1D5C50 20%,
+    var(--ppm-hermes) 45%,
+    #5B4BD6 82%,
+    #9A3FD6 100%
+  );
+  filter: none;
+}
+
+/* The hero's darkening overlay can extend past the photo; back it with the
+   dark base so it doesn't show as a grey band on the light page */
+:root[data-theme="light"] .ppm-article-hero {
+  background: #0B0E13;
+}

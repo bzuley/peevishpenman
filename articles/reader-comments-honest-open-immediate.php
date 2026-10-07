@@ -71,6 +71,7 @@ ppm_require_published($post_meta);
       <?php echo date('F j, Y', strtotime($post_meta['date'])); ?>
     </time>
   </div>
+  <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/article-tags.php'; ?>
 </header>
 
     <section>
