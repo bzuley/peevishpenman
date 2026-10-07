@@ -30,6 +30,9 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=optional" rel="stylesheet">
 
+<?php require_once $_SERVER['DOCUMENT_ROOT'].'/partials/assets.php'; ?>
+<link rel="stylesheet" href="<?= ppm_asset('/styles/main.css') ?>">
+
 <style>
 :root {
   --ink: #f5f5f5;
@@ -40,8 +43,9 @@
 }
 
 * { box-sizing: border-box; }
-html, body { margin: 0; padding: 0; background: transparent; color: var(--velum); }
+html, body { margin: 0; padding: 0; }
 body { font-family: Inter, system-ui, sans-serif; line-height: 1.6; }
+.page { color: var(--velum); }
 a { color: inherit; text-decoration: none; }
 img { max-width: 100%; height: auto; display: block; }
 
@@ -237,128 +241,80 @@ img { max-width: 100%; height: auto; display: block; }
   font-size: .9rem;
 }
 
-.top-nav {
+/* Site headings default to white in main.css; the handbook card is light */
+.page h1, .page h2, .page h3 { color: var(--velum); }
+
+/* Bottom download bar, all screen sizes */
+body { padding-bottom: calc(104px + env(safe-area-inset-bottom)); }
+
+.download-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 10px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 30;
+  padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
+  background: rgba(18,18,18,.94);
+  border-top: 1px solid var(--brass);
+  box-shadow: 0 -6px 18px rgba(0,0,0,.25);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.download-bar-title {
+  flex-basis: 100%;
   text-align: center;
-  padding: 0 0 20px;
-}
-
-.top-nav a {
   font-family: Cinzel, serif;
-  font-size: .85rem;
-  letter-spacing: .15em;
+  font-weight: 600;
+  font-size: clamp(.6rem, 3vw, .72rem);
+  letter-spacing: clamp(.04em, 1.2vw - .2em, .12em);
   text-transform: uppercase;
-  color: var(--ash);
-  opacity: .8;
-  transition: color .2s ease, opacity .2s ease;
-}
-
-.top-nav a:hover {
   color: var(--brass);
-  opacity: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.top-nav a::before {
-  content: "← ";
-  opacity: .6;
+.download-bar .btn {
+  flex: 1;
+  min-width: 0;
+  padding: .8rem .5rem;
+  font-size: .78rem;
+  letter-spacing: .08em;
+  text-align: center;
 }
 
-.download-bar,
-.brand-bar { display: none; }
+.download-bar .btn--ghost { color: var(--ink); }
 
-@media (max-width: 819px) {
-  .top-nav { display: none; }
-
-  .brand-bar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12px;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    padding: 10px 16px;
-    background: linear-gradient(180deg, #0B0E13 0%, #0E1117 100%);
-    border-bottom: 1px solid var(--brass);
-  }
-
-  .brand-bar img {
-    width: 36px;
-    height: 36px;
-  }
-
-  .brand-bar-title {
-    display: flex;
-    gap: .35rem;
-    font-family: "Space Grotesk", system-ui, sans-serif;
-    font-size: 1.35rem;
-    line-height: 1;
-    letter-spacing: .05em;
-    text-transform: uppercase;
-  }
-
-  .brand-bar-outline {
-    color: transparent;
-    font-weight: 500;
-    -webkit-text-stroke: 1px #ffffff;
-  }
-
-  .brand-bar-solid {
-    color: #ffffff;
-    font-weight: 700;
-  }
-
-  /* The download bar and brand bar cover these on mobile */
-  .cta .btns { display: none; }
-  .crumb { margin-top: 8px; }
-
-  body { padding-bottom: calc(104px + env(safe-area-inset-bottom)); }
+/* Wide screens: one slim row, title on the left, buttons on the right */
+@media (min-width: 820px) {
+  body { padding-bottom: calc(76px + env(safe-area-inset-bottom)); }
 
   .download-bar {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px 10px;
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 100;
-    padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
-    background: rgba(18,18,18,.94);
-    border-top: 1px solid var(--brass);
-    box-shadow: 0 -6px 18px rgba(0,0,0,.25);
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
   }
 
   .download-bar-title {
-    flex-basis: 100%;
-    text-align: center;
-    font-family: Cinzel, serif;
-    font-weight: 600;
-    font-size: clamp(.6rem, 3vw, .72rem);
-    letter-spacing: clamp(.04em, 1.2vw - .2em, .12em);
-    text-transform: uppercase;
-    color: var(--brass);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    flex: 0 1 auto;
+    font-size: .85rem;
+    letter-spacing: .12em;
+    margin-right: 12px;
   }
 
   .download-bar .btn {
-    flex: 1;
-    min-width: 0;
-    padding: .8rem .5rem;
-    font-size: .78rem;
-    letter-spacing: .08em;
-    text-align: center;
+    flex: 0 0 auto;
+    padding: .7rem 1.6rem;
+    font-size: .82rem;
   }
-
-  .download-bar .btn--ghost { color: var(--ink); }
 }
 
 /* ---------- Desktop: wide, news-style grid ---------- */
-.hero-actions { display: none; }
-
 @media (min-width: 1000px) {
   .page {
     max-width: 1400px;
@@ -369,7 +325,6 @@ img { max-width: 100%; height: auto; display: block; }
   }
 
   .page > * { grid-column: 1 / -1; margin: 0; }
-  .top-nav { text-align: left; padding: 0; }
 
   .hero {
     display: grid;
@@ -385,7 +340,6 @@ img { max-width: 100%; height: auto; display: block; }
   .hero h1 { font-size: clamp(2.2rem, 3.4vw, 3.4rem); line-height: 1.08; margin: .5rem 0 1rem; }
   .hero .sub { margin: 0; font-size: 1.15rem; max-width: 52ch; }
   .hero .rule { margin: 8px 0 20px; width: 200px; }
-  .hero-actions { display: flex; justify-content: flex-start; margin-top: 28px; }
 
   /* The three quote panels become a row of cards: image above, text below */
   .page > .panel {
@@ -453,19 +407,9 @@ img { max-width: 100%; height: auto; display: block; }
 </head>
 
 <body>
-  <a class="brand-bar" href="/" aria-label="Peevish Penman home">
-    <img src="/img/logos/ppm_logo_main_reduced_160.webp" alt="" width="36" height="36">
-    <span class="brand-bar-title">
-      <span class="brand-bar-outline">Peevish</span>
-      <span class="brand-bar-solid">Penman</span>
-    </span>
-  </a>
+  <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/nav.php'; ?>
 
   <main class="page">
-    <nav class="top-nav">
-      <a href="/">Return Home</a>
-    </nav>
-
     <header class="hero">
       <div class="overline">Writer Secret Society</div>
       <h1>The Third Edition of the Handbook</h1>
@@ -477,10 +421,6 @@ img { max-width: 100%; height: auto; display: block; }
       <div class="rule"></div>
       <p class="sub">More than just teaching techniques, the handbook inspires with mystic wisdom guarded by generations of writers who have come before. Prepare to be inspired, challenged, and transformed.</p>
 
-      <div class="hero-actions btns">
-        <a class="btn" href="/books/The_Handbook_of_the_Writer_Secret_Society_-_Third_Edition.pdf" download>Free PDF</a>
-        <a class="btn btn--ghost" href="/books/handbook_wss_3ed.epub" download>Free EPUB</a>
-      </div>
     </header>
 
     <section class="panel s–small">
@@ -524,19 +464,6 @@ img { max-width: 100%; height: auto; display: block; }
     </section>
 
     <section class="cta">
-      <div class="btns">
-        <a class="btn" href="/books/The_Handbook_of_the_Writer_Secret_Society_-_Third_Edition.pdf" download>
-          Free PDF Download
-        </a>
-        <a class="btn btn--ghost" href="/books/handbook_wss_3ed.epub" download>
-          Free EPUB Download
-        </a>
-      </div>
-      
-      <div class="btns" style="margin-top: 20px;">
-        <a class="btn btn--ghost" href="/">Return Home</a>
-      </div>
-
       <p class="crumb">Keep the secret; share the book.</p>
     </section>
   </main>
