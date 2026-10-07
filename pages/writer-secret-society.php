@@ -336,7 +336,7 @@ body { padding-bottom: calc(104px + env(safe-area-inset-bottom)); }
   }
   .hero > * { grid-column: 1; }
   .hero .top-mockup { grid-column: 2; grid-row: 1 / span 6; margin: 0; }
-  .hero .top-mockup img { width: 100%; max-width: 340px; margin: 0 auto; box-shadow: 0 14px 34px rgba(0,0,0,.25); }
+  .hero .top-mockup img { width: 100%; max-width: 340px; margin: 0 auto; filter: drop-shadow(0 14px 22px rgba(0,0,0,.35)); }
   .hero h1 { font-size: clamp(2.2rem, 3.4vw, 3.4rem); line-height: 1.08; margin: .5rem 0 1rem; }
   .hero .sub { margin: 0; font-size: 1.15rem; max-width: 52ch; }
   .hero .rule { margin: 8px 0 20px; width: 200px; }
