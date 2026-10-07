@@ -3585,7 +3585,7 @@ html.ppm-nav-open {
    narrow centred column. Phones and tablets keep the stacked layout.
    ================================ */
 @media (min-width: 1000px) {
-  main:is(.gt-page, .dc-page) {
+  main.dc-page {
     display: grid;
     grid-template-columns: repeat(12, minmax(0, 1fr));
     grid-auto-flow: row dense;
@@ -3596,18 +3596,13 @@ html.ppm-nav-open {
     background: transparent;
   }
 
-  main:is(.gt-page, .dc-page) > * {
+  main.dc-page > * {
     grid-column: 1 / -1;
     min-width: 0;
   }
 
-  /* decorative rules between sections: the gaps do that job now */
-  main:is(.gt-page, .dc-page) > :is(.gt-laneline) {
-    display: none;
-  }
-
   /* every section becomes a panel */
-  main:is(.gt-page, .dc-page) > section {
+  main.dc-page > section {
     background: var(--ppm-surface);
     border: 1px solid var(--ppm-border-soft);
     border-radius: var(--ppm-radius-md);
@@ -3615,7 +3610,7 @@ html.ppm-nav-open {
     text-align: left;
   }
 
-  main:is(.gt-page, .dc-page) > section :is([class$="-inner"], [class$="-copy"]) {
+  main.dc-page > section :is([class$="-inner"], [class$="-copy"]) {
     max-width: none;
     margin: 0;
     padding: 0;
@@ -3623,12 +3618,12 @@ html.ppm-nav-open {
   }
 
   /* Hero: title block left, lede right */
-  main:is(.gt-page, .dc-page) > section[class$="-hero"] {
+  main.dc-page > section[class$="-hero"] {
     text-align: left;
     overflow: hidden;
   }
 
-  main:is(.gt-page, .dc-page) [class$="-hero-content"] {
+  main.dc-page [class$="-hero-content"] {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     column-gap: clamp(2rem, 5vw, 5rem);
@@ -3636,10 +3631,10 @@ html.ppm-nav-open {
     text-align: left;
   }
 
-  :is(.gt-hero-content, .dc-hero-content) > [class$="-hero-title-block"] { grid-column: 1; }
-  :is(.gt-hero-content, .dc-hero-content) > [class$="-hero-lede"] { grid-column: 2; }
+  .dc-hero-content > [class$="-hero-title-block"] { grid-column: 1; }
+  .dc-hero-content > [class$="-hero-lede"] { grid-column: 2; }
 
-  main:is(.gt-page, .dc-page) :is(h1, [class$="-tagline"], [class$="-hero-lede"], [class$="-preview-link"]) {
+  main.dc-page :is(h1, [class$="-tagline"], [class$="-hero-lede"], [class$="-preview-link"]) {
     text-align: left;
     margin-left: 0;
     margin-right: 0;
@@ -3647,22 +3642,18 @@ html.ppm-nav-open {
   }
 
   /* Short pull-quote sections are plain text between the panels, not cards */
-  main:is(.gt-page, .dc-page) > section[class$="-statement"] {
+  main.dc-page > section[class$="-statement"] {
     background: none;
     border: 0;
     padding: 0.5rem 0;
     text-align: center;
   }
 
-  main:is(.gt-page, .dc-page) > section[class$="-statement"] * {
+  main.dc-page > section[class$="-statement"] * {
     text-align: center;
   }
 
   /* Two-up rows */
-  main.gt-page > .gt-arrival { grid-column: span 6; }
-  main.gt-page > .gt-employer { grid-column: span 6; }
-  main.gt-page > .gt-offer { grid-column: span 5; }
-  main.gt-page > .gt-world { grid-column: span 7; }
 
   /* Long reading sections flow into two columns under a full-width title */
   .dc-world .dc-world-inner,
@@ -3700,20 +3691,17 @@ html.ppm-nav-open {
     width: 100%;
   }
 
-  main.gt-page > .gt-offer { align-self: start; }
-
   .dc-books .dc-book .dc-book-cover { grid-column: 1; grid-row: 1; order: 0; }
   .dc-books .dc-book .dc-book-copy  { grid-column: 2; grid-row: 1; order: 0; text-align: left; }
   .dc-books .dc-book .dc-book-cover img { width: 100%; height: auto; }
 
   .dc-book-label,
-  .gt-kicker,
   .dc-kicker {
     font-family: "Cormorant Garamond", Georgia, serif;
     font-weight: 700;
   }
 
-  main:is(.gt-page, .dc-page) :is(.dc-book h2, .gt-employer h2, .gt-world h2, .dc-world h2) {
+  main.dc-page :is(.dc-book h2, .dc-world h2) {
     font-family: Georgia, "Times New Roman", serif;
     text-transform: none;
     letter-spacing: 0;
@@ -3721,6 +3709,6 @@ html.ppm-nav-open {
   }
 }
 
-:root[data-theme="light"] main:is(.gt-page, .dc-page) > section {
+:root[data-theme="light"] main.dc-page > section {
   border-color: rgba(11, 14, 19, 0.15);
 }
