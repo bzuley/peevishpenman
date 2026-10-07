@@ -3646,10 +3646,16 @@ html.ppm-nav-open {
     max-width: none;
   }
 
-  /* Short pull-quote sections read as slim banners */
+  /* Short pull-quote sections are plain text between the panels, not cards */
   main:is(.gt-page, .dc-page) > section[class$="-statement"] {
-    padding: 1.5rem clamp(1.75rem, 3vw, 3rem);
-    border-left: 4px solid var(--ppm-hermes);
+    background: none;
+    border: 0;
+    padding: 0.5rem 0;
+    text-align: center;
+  }
+
+  main:is(.gt-page, .dc-page) > section[class$="-statement"] * {
+    text-align: center;
   }
 
   /* Two-up rows */
