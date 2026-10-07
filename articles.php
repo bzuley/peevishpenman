@@ -53,7 +53,25 @@ $blog_items = ppm_get_blog_posts();
     </div>
 
     <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/search-form.php'; ?>
-    <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/topic-list.php'; ?>
+
+    <section class="ppm-topic-explorer" aria-labelledby="ppm-topic-explorer-title">
+      <h2 class="ppm-topic-explorer-title" id="ppm-topic-explorer-title">Explore by topic</h2>
+      <ul class="ppm-topic-grid">
+        <?php foreach (['writing', 'independentpublishing', 'sciencefiction'] as $topic_key): ?>
+          <?php $topic_count = count(ppm_get_posts_by_tag($topic_key)); ?>
+          <li>
+            <a class="ppm-topic-card" href="<?= htmlspecialchars(ppm_tag_url($topic_key)) ?>">
+              <span class="ppm-topic-card-label"><?= htmlspecialchars(ppm_tag_label($topic_key)) ?></span>
+              <span class="ppm-topic-card-intro"><?= htmlspecialchars(ppm_get_tags()[$topic_key]['intro']) ?></span>
+              <span class="ppm-topic-card-count"><?= $topic_count ?> article<?= $topic_count === 1 ? '' : 's' ?> &rarr;</span>
+            </a>
+          </li>
+        <?php endforeach; ?>
+      </ul>
+      <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/topic-list.php'; ?>
+    </section>
+
+    <h2 class="ppm-topic-explorer-title">All articles</h2>
 
     <div class="blog-container">
 

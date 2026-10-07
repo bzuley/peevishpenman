@@ -128,19 +128,6 @@
 <div class="ppm-home-columns">
 
   <aside class="ppm-home-sidebar ppm-home-sidebar--left">
-    <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/search-form.php'; ?>
-
-    <nav class="ppm-home-nav ppm-home-widget" aria-label="Explore">
-      <h3 class="ppm-home-nav-heading">Explore</h3>
-      <ul>
-        <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/blog-config.php'; ?>
-        <?php foreach (['writing', 'independentpublishing', 'sciencefiction'] as $explore_tag): ?>
-          <li><a href="<?php echo htmlspecialchars(ppm_tag_url($explore_tag)); ?>"><?php echo htmlspecialchars(ppm_tag_label($explore_tag)); ?></a></li>
-        <?php endforeach; ?>
-        <li class="ppm-home-nav-all"><a href="/articles">All Articles &rarr;</a></li>
-      </ul>
-    </nav>
-
     <div class="ppm-home-widget ppm-home-glossary">
       <p class="ppm-home-widget-label">Definitions</p>
       <dl>
