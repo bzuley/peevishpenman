@@ -736,9 +736,9 @@ small {
   }
 
   .ppm-home-sidebar {
+    /* Not sticky or independently scrolling: all three columns move
+       together with the page, whatever their lengths. */
     display: block;
-    position: sticky;
-    top: var(--ppm-spacing-lg);
   }
 
   .ppm-home-nav-heading {
@@ -818,15 +818,6 @@ small {
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: var(--ppm-hermes-shadow);
-  }
-
-  /* The Explore list plus the definitions box is taller than many laptop
-     screens; let the left sidebar scroll with the page there so the box
-     isn't pinned off-screen. */
-  @media (max-height: 1000px) {
-    .ppm-home-sidebar--left {
-      position: static;
-    }
   }
 
   .ppm-home-glossary dl {
@@ -3089,4 +3080,64 @@ html.ppm-nav-open {
 .ppm-admin-table th {
   color: var(--ppm-text-muted);
   font-weight: 500;
+}
+
+/* ================================
+   Articles page: Explore by topic
+   ================================ */
+.ppm-topic-explorer {
+  margin: var(--ppm-spacing-lg) 0;
+}
+
+.ppm-topic-explorer-title {
+  font-size: 0.8rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ppm-hermes-shadow);
+  margin: 0 0 var(--ppm-spacing-md);
+}
+
+.ppm-topic-grid {
+  list-style: none;
+  margin: 0 0 var(--ppm-spacing-md);
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--ppm-spacing-md);
+}
+
+.ppm-topic-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  height: 100%;
+  padding: 1.1rem 1.2rem;
+  background: var(--ppm-surface);
+  border: 1px solid var(--ppm-border-soft);
+  border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.ppm-topic-card:hover {
+  border-color: var(--ppm-hermes);
+}
+
+.ppm-topic-card-label {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--ppm-hermes);
+}
+
+.ppm-topic-card-intro {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.ppm-topic-card-count {
+  margin-top: auto;
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
