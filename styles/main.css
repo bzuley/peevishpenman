@@ -736,13 +736,9 @@ small {
   }
 
   .ppm-home-sidebar {
+    /* Not sticky or independently scrolling: all three columns move
+       together with the page, whatever their lengths. */
     display: block;
-    position: sticky;
-    top: var(--ppm-spacing-lg);
-    /* Never taller than the viewport: if the content is longer (e.g. the
-       About link at the bottom), the sidebar scrolls instead of being cut off. */
-    max-height: calc(100vh - 2 * var(--ppm-spacing-lg));
-    overflow-y: auto;
   }
 
   .ppm-home-nav-heading {
