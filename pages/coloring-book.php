@@ -36,33 +36,25 @@
   <link rel="stylesheet" href="<?= ppm_asset('/styles/main.css') ?>">
 
   <style>
-    .rcb-cover {
-      text-align: center;
-      margin: 1.5rem 0 0.5rem;
-    }
+    .rcb-page { max-width: 1500px; margin: 0 auto; padding: clamp(1.5rem, 4vw, 3rem) 5% 4rem; display: grid; gap: 1.25rem; }
+    .rcb-card { background: var(--ppm-surface); border: 1px solid var(--ppm-border-soft); border-radius: var(--ppm-radius-md); padding: clamp(1.5rem, 3vw, 3rem); display: grid; gap: clamp(1.5rem, 3vw, 3rem); align-items: center; }
+    .rcb-cover { text-align: center; }
+    .rcb-cover img { width: min(300px, 70%); height: auto; margin: 0 auto; display: block; filter: drop-shadow(0 14px 28px rgba(0, 0, 0, 0.45)); }
+    .rcb-label { font-family: "IBM Plex Mono", monospace; font-size: 0.75rem; font-weight: 500; letter-spacing: 0.24em; text-transform: uppercase; color: var(--ppm-hermes-shadow); margin: 0 0 0.6rem; }
+    .rcb-copy h1, .rcb-copy h2 { font-family: Georgia, "Times New Roman", serif; font-weight: 700; line-height: 1.12; margin: 0 0 0.6em; }
+    .rcb-copy h1 { font-size: clamp(2rem, 1.6vw + 1.4rem, 3rem); }
+    .rcb-copy h2 { font-size: clamp(1.5rem, 1vw + 1.1rem, 2rem); }
+    .rcb-hook { font-weight: 600; font-size: 1.15rem; color: var(--ppm-hermes-lumen); margin: 0 0 1.1rem; }
+    .rcb-copy p { line-height: 1.65; }
+    .rcb-buy { margin-top: 1.5rem; }
+    .rcb-page .rcb-buy .ppm-button { color: #000; text-decoration: none; }
+    .rcb-sample { margin: 0; text-align: center; }
+    .rcb-sample img { width: auto; max-width: min(420px, 100%); max-height: 38rem; height: auto; margin: 0 auto; display: block; border-radius: var(--ppm-radius-sm); }
+    .rcb-sample figcaption { margin-top: 0.75rem; font-style: italic; color: var(--ppm-text-muted); font-size: 0.9rem; }
 
-    .rcb-cover img {
-      width: clamp(180px, 26vw, 260px);
-      margin: 0 auto;
-      border-radius: var(--ppm-radius-sm);
-      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45);
-    }
-
-    .rcb-buy {
-      margin-top: 1.5rem;
-    }
-
-    .ppm-article-inner .rcb-buy .ppm-button {
-      color: #000;
-      text-decoration: none;
-    }
-
-    .rcb-sample {
-      text-align: center;
-    }
-
-    .rcb-sample img {
-      max-width: min(420px, 100%);
+    @media (min-width: 901px) {
+      .rcb-card { grid-template-columns: minmax(220px, 1fr) minmax(0, 2.4fr); }
+      .rcb-card--sample { grid-template-columns: minmax(0, 2.4fr) minmax(220px, 1fr); }
     }
   </style>
 
@@ -90,23 +82,15 @@
 
 <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/nav.php'; ?>
 
-<main class="ppm-article">
-  <article class="ppm-article-inner">
-    <header class="ppm-article-header">
+<main class="rcb-page">
+  <section class="rcb-card">
+    <div class="rcb-cover">
+      <img src="/img/reptilian_coloringbook_cover_dynamic.webp" alt="Reptilian Conspiracy: A Coloring Book cover" width="1086" height="1448" loading="lazy">
+    </div>
+    <div class="rcb-copy">
+      <p class="rcb-label">Art &middot; Coloring Book</p>
       <h1>Reptilian Conspiracy Coloring Book</h1>
-
-      <div class="rcb-cover">
-        <img src="/img/reptilian_coloringbook_cover_dynamic.webp" alt="Reptilian Conspiracy: A Coloring Book cover" width="1086" height="1448" loading="lazy">
-      </div>
-
-      <p class="rcb-buy">
-        <a class="ppm-button" href="https://www.amazon.com/dp/B09MYXZ71P" target="_blank" rel="noopener noreferrer">
-          Buy on Amazon
-        </a>
-      </p>
-    </header>
-
-    <section>
+      <p class="rcb-hook">Scenes from the world&rsquo;s least convincing cover-up.</p>
       <p>
         They're already among us&mdash;running press conferences, presiding
         over kitchens, sitting for royal portraits&mdash;and somebody has to
@@ -120,17 +104,18 @@
         separate rooms. Grab your colored pencils and get to the bottom of
         it.
       </p>
-    </section>
+      <p class="rcb-buy">
+        <a class="ppm-button" href="https://www.amazon.com/dp/B09MYXZ71P" target="_blank" rel="noopener noreferrer">
+          Buy on Amazon
+        </a>
+      </p>
+    </div>
+  </section>
 
-    <section class="rcb-sample">
+  <section class="rcb-card rcb-card--sample">
+    <div class="rcb-copy">
+      <p class="rcb-label">Inside the Book</p>
       <h2>A Page From the Book</h2>
-      <figure>
-        <img src="/img/reptilian-juliachild.webp" alt="Coloring book page of a grinning reptilian chef in a retro kitchen, with a preserved head in a jar on the shelf behind her" width="2174" height="2820" loading="lazy">
-        <figcaption>One of the illustrations you'll find inside.</figcaption>
-      </figure>
-    </section>
-
-    <section>
       <p>
         The book started as a joke cover made to amuse a sister; read how it
         led to a publishing career in
@@ -140,8 +125,12 @@
         Want previews and release news for future titles? Join the
         <a href="#newsletter">newsletter</a>.
       </p>
-    </section>
-  </article>
+    </div>
+    <figure class="rcb-sample">
+      <img src="/img/reptilian-juliachild.webp" alt="Coloring book page of a grinning reptilian chef in a retro kitchen, with a preserved head in a jar on the shelf behind her" width="2174" height="2820" loading="lazy">
+      <figcaption>One of the illustrations you'll find inside.</figcaption>
+    </figure>
+  </section>
 </main>
 
 <?php $ppm_book_page = true; ?>
