@@ -3292,10 +3292,53 @@ html.ppm-nav-open {
 .ppm-nav-topics {
   display: flex;
   list-style: none;
-  flex-wrap: wrap;
-  gap: 0.35rem 1.25rem;
-  margin: 10px 0 0;
-  padding: 0;
+  gap: 1.25rem;
+  margin: 0;
+  padding: 0 0 2px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  white-space: nowrap;
+  flex: 1;
+  min-width: 0;
+}
+
+.ppm-nav-topics::-webkit-scrollbar {
+  display: none;
+}
+
+.ppm-nav-topics-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 10px;
+}
+
+.ppm-nav-topics-arrow {
+  flex: none;
+  width: 28px;
+  height: 28px;
+  padding: 0 0 2px;
+  border-radius: var(--ppm-radius-pill);
+  border: 2px solid var(--ppm-border-soft);
+  background: transparent;
+  color: var(--ppm-text-main);
+  font-size: 1.2rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.ppm-nav-topics-arrow[hidden] {
+  display: none;
+}
+
+.ppm-nav-topics-arrow:hover {
+  border-color: var(--ppm-hermes);
+  color: var(--ppm-hermes-lumen);
+}
+
+:root[data-theme="light"] .ppm-nav-topics-arrow {
+  border-color: rgba(11, 14, 19, 0.35);
+  color: #0B0E13;
 }
 
 .ppm-nav-topics a {

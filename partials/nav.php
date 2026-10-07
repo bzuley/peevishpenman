@@ -56,12 +56,40 @@
     $ppm_nav_tag_current = isset($_GET['tag']) && strpos($_SERVER['REQUEST_URI'], 'article-tag') !== false
       ? strtolower(trim($_GET['tag'])) : '';
   ?>
+  <div class="ppm-nav-topics-wrap">
+  <button type="button" class="ppm-nav-topics-arrow ppm-nav-topics-arrow--prev" aria-label="Scroll topics left" hidden>&#8249;</button>
   <ul class="ppm-nav-topics" aria-label="Topics">
     <?php foreach (ppm_get_tags() as $ppm_nav_tag => $ppm_nav_info): ?>
       <li><a href="<?php echo htmlspecialchars(ppm_tag_url($ppm_nav_tag)); ?>"<?php echo $ppm_nav_tag === $ppm_nav_tag_current ? ' aria-current="page"' : ''; ?>><?php echo htmlspecialchars($ppm_nav_info['label']); ?></a></li>
     <?php endforeach; ?>
   </ul>
+  <button type="button" class="ppm-nav-topics-arrow ppm-nav-topics-arrow--next" aria-label="Scroll topics right" hidden>&#8250;</button>
+  </div>
 </nav>
+
+<script>
+  // Arrow buttons for the topic row: shown only on the side that has more to scroll to.
+  (function () {
+    var list = document.querySelector('.ppm-nav-topics');
+    if (!list) return;
+    var wrap = list.parentNode;
+    var prev = wrap.querySelector('.ppm-nav-topics-arrow--prev');
+    var next = wrap.querySelector('.ppm-nav-topics-arrow--next');
+    function update() {
+      var max = list.scrollWidth - list.clientWidth;
+      prev.hidden = list.scrollLeft <= 2;
+      next.hidden = list.scrollLeft >= max - 2;
+    }
+    function step(dir) {
+      list.scrollBy({ left: dir * Math.max(200, list.clientWidth * 0.7), behavior: 'smooth' });
+    }
+    prev.addEventListener('click', function () { step(-1); });
+    next.addEventListener('click', function () { step(1); });
+    list.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    update();
+  })();
+</script>
 
 <!-- Navigation Drawer Overlay -->
 <div class="ppm-nav-overlay"
