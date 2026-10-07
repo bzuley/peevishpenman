@@ -388,54 +388,11 @@
   <section class="ab-works">
     <div class="ab-works-inner">
       <h2>The Books</h2>
-      <a class="ab-work" href="/pages/bright-dark">
-        <p class="ab-work-label">Novel</p>
-        <h3>The Bright Dark</h3>
-        <p>
-          <em>The Bright Dark</em> grew out of imagining a future shaped not
-          just by catastrophe, but by its aftermath&mdash;and by the problem
-          of understanding a civilization after much of its knowledge has
-          been lost.
-        </p>
-        <p>
-          Carrie wondered what it might have been like to be the Athenian
-          Solon travelling to Sais and learning what the Egyptians believed
-          about Atlantis; a medieval monk contemplating ancient Rome while
-          learning Latin; or a Mexican in the Victorian era leading European
-          explorers to Chich&eacute;n Itz&aacute;.
-        </p>
-      </a>
-      <a class="ab-work" href="/pages/ghost-trucker">
-        <p class="ab-work-label">Work in Progress</p>
-        <h3>Ghost Trucker</h3>
-        <p>
-          Carrie&rsquo;s next project moves further into the territory
-          between the rational and the uncanny: artificial intelligence
-          captures human consciousness at the moment of death and whisks
-          them away to a universe run on indentured servitude and
-          questionable truck-stop soda dispensers.
-        </p>
-      </a>
-      <a class="ab-work" href="/pages/delcath-series">
-        <p class="ab-work-label">Novellas</p>
-        <h3>The Delcath Series</h3>
-        <p>
-          The Delcath novellas began as a science-fiction tribute to
-          Jean-Paul Sartre&rsquo;s <em>No Exit</em> and became a saga about
-          corporate asteroid miners isolated in deep space and creating
-          their own personal hell.
-        </p>
-      </a>
-
-      <h2>Art</h2>
-      <a class="ab-work" href="/pages/coloring-book">
-        <p class="ab-work-label">Coloring Book</p>
-        <h3>The Reptilian Conspiracy Coloring Book</h3>
-        <p>
-          Conspiracy culture, drawing, and a questionable sense of humor
-          meet sleep deprivation and a drawing tablet.
-        </p>
-      </a>
+      <p class="ab-works-more">
+        Novels, novellas, a coloring book, and the free Writer Secret Society
+        handbook, all in one place:
+        <a class="ppm-inline-link" href="/pages/books">see all of OA Allen&rsquo;s books &rarr;</a>
+      </p>
     </div>
   </section>
 

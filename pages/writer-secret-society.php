@@ -355,6 +355,66 @@ img { max-width: 100%; height: auto; display: block; }
 
   .download-bar .btn--ghost { color: var(--ink); }
 }
+
+/* ---------- Desktop: wide, news-style grid ---------- */
+.hero-actions { display: none; }
+
+@media (min-width: 1000px) {
+  .page {
+    max-width: 1400px;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 28px;
+    padding: 40px 5% 56px;
+  }
+
+  .page > * { grid-column: 1 / -1; margin: 0; }
+  .top-nav { text-align: left; padding: 0; }
+
+  .hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(220px, 340px);
+    column-gap: 64px;
+    align-items: center;
+    text-align: left;
+    padding: 48px 0;
+  }
+  .hero > * { grid-column: 1; }
+  .hero .top-mockup { grid-column: 2; grid-row: 1 / span 6; margin: 0; }
+  .hero .top-mockup img { width: 100%; max-width: 340px; margin: 0 auto; box-shadow: 0 14px 34px rgba(0,0,0,.25); }
+  .hero h1 { font-size: clamp(2.2rem, 3.4vw, 3.4rem); line-height: 1.08; margin: .5rem 0 1rem; }
+  .hero .sub { margin: 0; font-size: 1.15rem; max-width: 52ch; }
+  .hero .rule { margin: 8px 0 20px; width: 200px; }
+  .hero-actions { display: flex; justify-content: flex-start; margin-top: 28px; }
+
+  /* The three quote panels become a row of cards: image above, text below */
+  .page > .panel {
+    grid-column: span 4;
+    grid-template-columns: 1fr;
+    align-content: start;
+    gap: 0;
+    padding: 0;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+  }
+  .page > .panel .image { order: 1; }
+  .page > .panel .text { order: 2; padding: 22px 24px 26px; }
+  .page > .panel .image img { width: 100%; max-width: none; border-radius: 0; box-shadow: none; aspect-ratio: 4 / 3; object-fit: cover; }
+  .page > .panel.alt { grid-template-columns: 1fr; }
+  .page > .panel .text p { font-size: 1.02rem; }
+  .page > .panel .text strong { display: block; font-family: Cinzel, serif; letter-spacing: .08em; text-transform: uppercase; color: var(--brass); margin-bottom: 8px; }
+
+  .quote { font-size: 1.5rem; text-align: center; padding: 28px; border-left: 0; border-top: 2px solid var(--brass); border-bottom: 2px solid var(--brass); border-radius: 0; background: none; }
+
+  .page > .book { grid-column: span 6; text-align: left; align-self: center; }
+  .page > .book img { margin: 18px 0 0; }
+  .page > .panel.s–small img { max-width: none; }
+  .page > .book + .panel { grid-column: span 6; align-self: center; border: 0; background: none; }
+  .page > .book + .panel .text { padding: 0; }
+  .cta { padding: 12px 0 0; }
+}
 </style>
 
 <!-- TODO(OA Allen): add the handbook's ISBN ("isbn"), publication date
@@ -416,6 +476,11 @@ img { max-width: 100%; height: auto; display: block; }
 
       <div class="rule"></div>
       <p class="sub">More than just teaching techniques, the handbook inspires with mystic wisdom guarded by generations of writers who have come before. Prepare to be inspired, challenged, and transformed.</p>
+
+      <div class="hero-actions btns">
+        <a class="btn" href="/books/The_Handbook_of_the_Writer_Secret_Society_-_Third_Edition.pdf" download>Free PDF</a>
+        <a class="btn btn--ghost" href="/books/handbook_wss_3ed.epub" download>Free EPUB</a>
+      </div>
     </header>
 
     <section class="panel s–small">
