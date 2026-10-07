@@ -62,6 +62,8 @@
       .bk-grid { grid-template-columns: repeat(12, 1fr); }
       .bk-card { grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); }
       .bk-card--text { grid-template-columns: 1fr; }
+      .bk-card--text .bk-card-body { padding: 1.25rem 1.5rem 1.4rem; }
+      .bk-card--text h2 { font-size: 1.4rem; }
       .bk-card--lead { grid-column: span 12; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); }
       .bk-card--half { grid-column: span 6; }
       .bk-card--lead .bk-card-cover { padding: 2rem; }
@@ -104,8 +106,8 @@
 
   <section class="bk-section">
     <div class="bk-section-head">
-      <h2 class="bk-section-title">The Delcath Series</h2>
-      <p class="bk-section-note">Asteroid miners, corporate dependence, and a tribute to Sartre&rsquo;s <em>No Exit</em>. <a href="/pages/delcath-series">About the series &rarr;</a></p>
+      <h2 class="bk-section-title">Available Now</h2>
+      <p class="bk-section-note">Both Delcath novellas, the free Writer Secret Society handbook and the coloring book. <a href="/pages/delcath-series">About the Delcath series &rarr;</a></p>
     </div>
     <div class="bk-grid">
       <a class="bk-card bk-card--half" href="/pages/delcath-series#waiting-on-delcath">
@@ -130,15 +132,6 @@
           <span class="bk-card-cta">Read more &rarr;</span>
         </div>
       </a>
-    </div>
-  </section>
-
-  <section class="bk-section">
-    <div class="bk-section-head">
-      <h2 class="bk-section-title">Writing &amp; Art</h2>
-      <p class="bk-section-note">Free to download or ready to color.</p>
-    </div>
-    <div class="bk-grid">
       <a class="bk-card bk-card--half" href="/pages/writer-secret-society">
         <div class="bk-card-cover">
           <img src="/img/wss-hardcover.webp" alt="The Handbook of the Writer Secret Society — book cover" width="480" height="720" loading="lazy">
@@ -166,7 +159,7 @@
 
   <section class="bk-section">
     <div class="bk-section-head">
-      <h2 class="bk-section-title">In the Works</h2>
+      <h2 class="bk-section-title">In Progress</h2>
       <p class="bk-section-note">Coming soon from Peevish Penman Press.</p>
     </div>
     <div class="bk-grid">
