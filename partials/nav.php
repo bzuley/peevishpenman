@@ -145,10 +145,9 @@
       <h3 class="ppm-drawer-heading">Articles</h3>
       <ul>
         <li><a href="/articles">All Articles</a></li>
-        <li><a href="/article-tag?tag=archetypes">Character Archetypes</a></li>
-        <li><a href="/article-tag?tag=worldbuilding">Worldbuilding</a></li>
-        <li><a href="/article-tag?tag=selfpublishing">Self-Publishing</a></li>
-        <li><a href="/article-tag?tag=consciousness">Consciousness</a></li>
+        <li><a href="/article-tag?tag=writing">Writing</a></li>
+        <li><a href="/article-tag?tag=independentpublishing">Independent Publishing</a></li>
+        <li><a href="/article-tag?tag=sciencefiction">Science Fiction</a></li>
       </ul>
     </div>
 
