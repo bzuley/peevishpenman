@@ -49,6 +49,18 @@
     </div>
 
   </div> <!-- /.ppm-nav-inner -->
+
+  <!-- Topic (tag) links -->
+  <?php
+    require_once $_SERVER['DOCUMENT_ROOT'] . '/blog-config.php';
+    $ppm_nav_tag_current = isset($_GET['tag']) && strpos($_SERVER['REQUEST_URI'], 'article-tag') !== false
+      ? strtolower(trim($_GET['tag'])) : '';
+  ?>
+  <ul class="ppm-nav-topics" aria-label="Topics">
+    <?php foreach (ppm_get_tags() as $ppm_nav_tag => $ppm_nav_info): ?>
+      <li><a href="<?php echo htmlspecialchars(ppm_tag_url($ppm_nav_tag)); ?>"<?php echo $ppm_nav_tag === $ppm_nav_tag_current ? ' aria-current="page"' : ''; ?>><?php echo htmlspecialchars($ppm_nav_info['label']); ?></a></li>
+    <?php endforeach; ?>
+  </ul>
 </nav>
 
 <!-- Navigation Drawer Overlay -->

@@ -124,24 +124,11 @@
   </div> <!-- /.ppm-hero-inner -->
 </header>
 
-<!-- Three-column layout (desktop only): sidebar nav, wide center column, widgets -->
-<div class="ppm-home-columns">
+<!-- Desktop layout: 1) featured article + widgets, 2) books + definitions, 3) full-width blog cards.
+     Mobile shows only the blog list (with the featured post as its first card). -->
+<div class="ppm-home-sections">
 
-  <aside class="ppm-home-sidebar ppm-home-sidebar--left">
-    <div class="ppm-home-widget ppm-home-glossary">
-      <p class="ppm-home-widget-label">Definitions</p>
-      <dl>
-        <dt>Peevish <span>[adj]</span></dt>
-        <dd>Easily irritated by unimportant things.</dd>
-        <dt>Penman <span>[n]</span></dt>
-        <dd>A copyist, a scribe, an author, a wordsmith, i.e., a madman with a pen.</dd>
-        <dt>Press <span>[n]</span></dt>
-        <dd>An unexpected and forceful enlistment.</dd>
-      </dl>
-    </div>
-  </aside>
-
-  <div class="ppm-home-main">
+  <section class="ppm-home-top">
     <?php
     require_once $_SERVER['DOCUMENT_ROOT'] . '/blog-config.php';
     // Most-read post of the last 30 days. Desktop shows it here, above the
@@ -168,37 +155,8 @@
       </section>
     <?php endif; ?>
 
-    <!-- Books row -->
-    <section class="ppm-home-books" aria-labelledby="ppm-home-books-title">
-      <h2 class="ppm-home-books-title" id="ppm-home-books-title">Books by OA Allen</h2>
-      <div class="ppm-home-books-grid">
-        <a class="ppm-home-book" href="/pages/delcath-series">
-          <div class="ppm-home-book-cover ppm-home-book-cover--inset">
-            <img src="/img/covers/wod-cover-3d.webp" alt="Waiting on Delcath — book cover" loading="lazy">
-          </div>
-          <p class="ppm-home-book-title">The Delcath Series</p>
-        </a>
 
-        <a class="ppm-home-book" href="/pages/writer-secret-society">
-          <div class="ppm-home-book-cover">
-            <img src="/img/wss-hardcover.webp" alt="The Handbook of the Writer Secret Society — book cover" loading="lazy">
-          </div>
-          <p class="ppm-home-book-title">Writer Secret Society</p>
-        </a>
-
-        <a class="ppm-home-book" href="/pages/coloring-book">
-          <div class="ppm-home-book-cover ppm-home-book-cover--inset">
-            <img src="/img/covers/reptilian-cover-3d.webp" alt="Reptilian Conspiracy Coloring Book cover" loading="lazy">
-          </div>
-          <p class="ppm-home-book-title">Reptilian Conspiracy Coloring Book</p>
-        </a>
-      </div>
-    </section>
-
-    <?php include $_SERVER['DOCUMENT_ROOT'] . '/partials/blog-preview.php'; ?>
-  </div>
-
-  <aside class="ppm-home-sidebar ppm-home-sidebar--right">
+    <aside class="ppm-home-top-side">
     <div class="ppm-home-widget">
       <p class="ppm-home-widget-label">Free Download</p>
       <h3 class="ppm-home-widget-title">Writer Secret Society Handbook</h3>
@@ -229,7 +187,56 @@
       <?php endif; ?>
       <?php endif; ?>
     </div>
-  </aside>
+    </aside>
+  </section>
+
+  <div class="ppm-home-middle">
+    <!-- Books row -->
+    <section class="ppm-home-books" aria-labelledby="ppm-home-books-title">
+      <h2 class="ppm-home-books-title" id="ppm-home-books-title">Books by OA Allen</h2>
+      <div class="ppm-home-books-grid">
+        <a class="ppm-home-book" href="/pages/delcath-series">
+          <div class="ppm-home-book-cover ppm-home-book-cover--inset">
+            <img src="/img/covers/wod-cover-3d.webp" alt="Waiting on Delcath — book cover" loading="lazy">
+          </div>
+          <p class="ppm-home-book-title">The Delcath Series</p>
+        </a>
+
+        <a class="ppm-home-book" href="/pages/writer-secret-society">
+          <div class="ppm-home-book-cover">
+            <img src="/img/wss-hardcover.webp" alt="The Handbook of the Writer Secret Society — book cover" loading="lazy">
+          </div>
+          <p class="ppm-home-book-title">Writer Secret Society</p>
+        </a>
+
+        <a class="ppm-home-book" href="/pages/coloring-book">
+          <div class="ppm-home-book-cover ppm-home-book-cover--inset">
+            <img src="/img/covers/reptilian-cover-3d.webp" alt="Reptilian Conspiracy Coloring Book cover" loading="lazy">
+          </div>
+          <p class="ppm-home-book-title">Reptilian Conspiracy Coloring Book</p>
+        </a>
+      </div>
+    </section>
+
+
+    <aside class="ppm-home-glossary-wrap">
+    <div class="ppm-home-widget ppm-home-glossary">
+      <p class="ppm-home-widget-label">Definitions</p>
+      <dl>
+        <dt>Peevish <span>[adj]</span></dt>
+        <dd>Easily irritated by unimportant things.</dd>
+        <dt>Penman <span>[n]</span></dt>
+        <dd>A copyist, a scribe, an author, a wordsmith, i.e., a madman with a pen.</dd>
+        <dt>Press <span>[n]</span></dt>
+        <dd>An unexpected and forceful enlistment.</dd>
+      </dl>
+    </div>
+    </aside>
+  </div>
+
+  <div class="ppm-home-main">
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/partials/blog-preview.php'; ?>
+  </div>
 
 </div>
 

@@ -721,25 +721,6 @@ small {
 }
 
 @media (min-width: 901px) {
-  .ppm-home-columns {
-    display: grid;
-    grid-template-columns: 200px minmax(0, 1fr) 240px;
-    gap: var(--ppm-spacing-xl);
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 5% var(--ppm-spacing-xl);
-    align-items: start;
-  }
-
-  .ppm-home-main {
-    min-width: 0;
-  }
-
-  .ppm-home-sidebar {
-    /* Not sticky or independently scrolling: all three columns move
-       together with the page, whatever their lengths. */
-    display: block;
-  }
 
   .ppm-home-nav-heading {
     margin: 0 0 var(--ppm-spacing-sm);
@@ -975,15 +956,12 @@ small {
     padding-right: 0;
   }
 
-  .ppm-home-main .blog-container > ul {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  .ppm-home-main .blog-container {
+    max-width: none;
   }
-}
 
-@media (min-width: 901px) and (max-width: 1150px) {
-  .ppm-home-columns {
-    grid-template-columns: 170px minmax(0, 1fr) 200px;
-    gap: var(--ppm-spacing-lg);
+  .ppm-home-main .blog-container > ul {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
@@ -1225,6 +1203,9 @@ small {
   right: 0;
   width: min(320px, 80vw);
   height: 100vh;
+  height: 100dvh;
+  overflow-y: auto;
+  overscroll-behavior: contain;
   background: var(--ppm-surface-soft);
   transform: translateX(100%);
   transition: transform var(--ppm-transition-med),
@@ -3303,4 +3284,260 @@ html.ppm-nav-open {
    dark base so it doesn't show as a grey band on the light page */
 :root[data-theme="light"] .ppm-article-hero {
   background: #0B0E13;
+}
+
+/* ================================
+   Navbar topic links
+   ================================ */
+.ppm-nav-topics {
+  display: flex;
+  gap: 1.25rem;
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0 0 2px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  white-space: nowrap;
+}
+
+.ppm-nav-topics::-webkit-scrollbar {
+  display: none;
+}
+
+.ppm-nav-topics a {
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+  font-size: 0.85rem;
+  color: var(--ppm-text-main);
+  text-decoration: none;
+  opacity: 0.8;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 2px;
+}
+
+.ppm-nav-topics a:hover,
+.ppm-nav-topics a[aria-current="page"] {
+  opacity: 1;
+  color: var(--ppm-hermes-lumen);
+  border-bottom-color: var(--ppm-hermes);
+}
+
+/* ================================
+   Light theme fixes: cards, drawer, brand, matching nav outlines
+   ================================ */
+:root[data-theme="light"] .blog-card,
+:root[data-theme="light"] .ppm-blog-card {
+  background: #ffffff;
+  border-color: rgba(11, 14, 19, 0.15);
+  box-shadow: 0 6px 20px rgba(20, 30, 50, 0.08);
+}
+
+:root[data-theme="light"] .blog-card:hover,
+:root[data-theme="light"] .ppm-blog-card:hover {
+  border-color: var(--ppm-hermes);
+  box-shadow: 0 10px 26px rgba(20, 30, 50, 0.14);
+}
+
+:root[data-theme="light"] .bp-tag {
+  background: rgba(29, 122, 104, 0.08);
+  border-color: rgba(29, 122, 104, 0.4);
+}
+
+:root[data-theme="light"] .bp-tag:hover {
+  background: rgba(29, 122, 104, 0.16);
+  border-color: var(--ppm-hermes);
+}
+
+:root[data-theme="light"] .bp-tag.bp-tag--current {
+  background: var(--ppm-hermes);
+}
+
+:root[data-theme="light"] .bp-tag.bp-tag--current a,
+:root[data-theme="light"] .bp-tag.bp-tag--current a:hover {
+  color: #ffffff;
+}
+
+/* Drawer: white text on a light panel was unreadable */
+:root[data-theme="light"] .ppm-drawer,
+:root[data-theme="light"] .ppm-drawer-close,
+:root[data-theme="light"] .ppm-drawer-section a {
+  color: #1B2230;
+}
+
+:root[data-theme="light"] .ppm-drawer {
+  background: #ffffff;
+}
+
+:root[data-theme="light"] .ppm-nav-overlay {
+  background: rgba(20, 30, 50, 0.18);
+}
+
+/* Wordmark: solid teal + solid ink instead of a hairline outline */
+@media (min-width: 901px) {
+  :root[data-theme="light"] .ppm-nav-brand-outline {
+    color: var(--ppm-hermes);
+    -webkit-text-stroke: 0;
+    text-stroke: 0;
+    font-weight: 700;
+  }
+
+  :root[data-theme="light"] .ppm-nav-brand-solid {
+    color: #0B0E13;
+  }
+}
+
+/* One outline colour/weight for every nav control */
+:root[data-theme="light"] .ppm-nav-cta--ghost,
+:root[data-theme="light"] .ppm-theme-toggle {
+  border: 2px solid rgba(11, 14, 19, 0.35);
+  color: #0B0E13;
+}
+
+:root[data-theme="light"] .ppm-nav-cta--primary {
+  color: #ffffff;
+}
+
+:root[data-theme="light"] .ppm-theme-toggle:hover {
+  background: rgba(11, 14, 19, 0.06);
+  border-color: rgba(11, 14, 19, 0.6);
+  color: #0B0E13;
+}
+
+:root[data-theme="light"] .ppm-nav {
+  border-bottom: 1px solid rgba(11, 14, 19, 0.12);
+}
+
+:root[data-theme="light"] .ppm-hamburger span {
+  background: #0B0E13;
+}
+
+/* Match the dark theme's outlined toggle weight to the CTAs too */
+.ppm-theme-toggle {
+  border-width: 2px;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+:root[data-theme="light"] .ppm-drawer-search input[type="search"],
+:root[data-theme="light"] .ppm-drawer-search input[type="search"]:focus {
+  background: #ffffff;
+  border-color: rgba(11, 14, 19, 0.25);
+  color: #1B2230;
+}
+
+:root[data-theme="light"] .ppm-drawer-search input[type="search"]::placeholder {
+  color: rgba(27, 34, 48, 0.55);
+}
+
+/* Light theme: softer drawer shadow, and remaining white-on-cream text */
+:root[data-theme="light"] html.ppm-nav-open .ppm-drawer,
+:root[data-theme="light"].ppm-nav-open .ppm-drawer {
+  box-shadow: -8px 0 24px rgba(20, 30, 50, 0.12);
+}
+
+:root[data-theme="light"] .ppm-related-item-title,
+:root[data-theme="light"] .ppm-article .ppm-byline-name,
+:root[data-theme="light"] .ppm-home-widget-title {
+  color: #0B0E13;
+}
+
+:root[data-theme="light"] .ppm-button--ghost {
+  color: #0B0E13;
+  border-color: rgba(11, 14, 19, 0.35);
+}
+
+:root[data-theme="light"] .ppm-button--ghost:hover {
+  background: rgba(11, 14, 19, 0.06);
+  border-color: rgba(11, 14, 19, 0.6);
+}
+
+:root[data-theme="light"] .ppm-article-disclaimer strong {
+  color: #0B0E13;
+}
+
+:root[data-theme="light"] .ppm-home-featured-cta {
+  color: var(--ppm-hermes);
+}
+
+/* ================================
+   Home page sections (desktop)
+   ================================ */
+.ppm-home-top,
+.ppm-home-middle,
+.ppm-home-top-side,
+.ppm-home-glossary-wrap {
+  display: none;
+}
+
+@media (min-width: 901px) {
+  .ppm-home-sections {
+    padding: 0 5% var(--ppm-spacing-xl);
+  }
+
+  /* 1) Featured article large on the left, widgets stacked on the right */
+  .ppm-home-top {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) clamp(260px, 24vw, 380px);
+    gap: var(--ppm-spacing-xl);
+    align-items: start;
+    margin-bottom: var(--ppm-spacing-xl);
+  }
+
+  .ppm-home-top .ppm-home-featured {
+    margin-bottom: 0;
+  }
+
+  .ppm-home-top-side {
+    display: block;
+  }
+
+  /* 2) Books and definitions across the full width */
+  .ppm-home-middle {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) clamp(260px, 24vw, 380px);
+    gap: var(--ppm-spacing-xl);
+    align-items: center;
+    margin-bottom: var(--ppm-spacing-xl);
+    padding: var(--ppm-spacing-lg) 0;
+    border-top: 1px solid var(--ppm-border-soft);
+    border-bottom: 1px solid var(--ppm-border-soft);
+  }
+
+  .ppm-home-middle .ppm-home-book {
+    flex-basis: clamp(160px, 14vw, 230px);
+  }
+
+  .ppm-home-middle .ppm-home-books-grid {
+    gap: var(--ppm-spacing-lg);
+  }
+
+  .ppm-home-glossary-wrap {
+    display: block;
+  }
+
+  /* 3) Blog cards fill the whole width */
+  .ppm-home-main {
+    min-width: 0;
+  }
+}
+
+@media (min-width: 1700px) {
+  .ppm-home-main .blog-container > ul {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+}
+
+:root[data-theme="light"] .ppm-footer-newsletter-form input[type="email"],
+:root[data-theme="light"] .ppm-footer-newsletter-form input[type="email"]:focus {
+  background: #ffffff;
+  border-color: rgba(11, 14, 19, 0.25);
+  color: #1B2230;
+}
+
+:root[data-theme="light"] .ppm-footer-newsletter-form input[type="email"]::placeholder {
+  color: rgba(27, 34, 48, 0.55);
+}
+
+@media (min-width: 901px) {
+  .ppm-home-middle .ppm-home-book {
+    flex-basis: clamp(180px, 16vw, 260px);
+  }
 }
