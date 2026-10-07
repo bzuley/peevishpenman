@@ -3390,7 +3390,7 @@ html.ppm-nav-open {
 }
 
 :root[data-theme="light"] .ppm-nav-overlay {
-  background: rgba(20, 30, 50, 0.35);
+  background: rgba(20, 30, 50, 0.18);
 }
 
 /* Wordmark: solid teal + solid ink instead of a hairline outline */
@@ -3447,4 +3447,34 @@ html.ppm-nav-open {
 
 :root[data-theme="light"] .ppm-drawer-search input[type="search"]::placeholder {
   color: rgba(27, 34, 48, 0.55);
+}
+
+/* Light theme: softer drawer shadow, and remaining white-on-cream text */
+:root[data-theme="light"] html.ppm-nav-open .ppm-drawer,
+:root[data-theme="light"].ppm-nav-open .ppm-drawer {
+  box-shadow: -8px 0 24px rgba(20, 30, 50, 0.12);
+}
+
+:root[data-theme="light"] .ppm-related-item-title,
+:root[data-theme="light"] .ppm-article .ppm-byline-name,
+:root[data-theme="light"] .ppm-home-widget-title {
+  color: #0B0E13;
+}
+
+:root[data-theme="light"] .ppm-button--ghost {
+  color: #0B0E13;
+  border-color: rgba(11, 14, 19, 0.35);
+}
+
+:root[data-theme="light"] .ppm-button--ghost:hover {
+  background: rgba(11, 14, 19, 0.06);
+  border-color: rgba(11, 14, 19, 0.6);
+}
+
+:root[data-theme="light"] .ppm-article-disclaimer strong {
+  color: #0B0E13;
+}
+
+:root[data-theme="light"] .ppm-home-featured-cta {
+  color: var(--ppm-hermes);
 }
