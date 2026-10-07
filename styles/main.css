@@ -721,25 +721,6 @@ small {
 }
 
 @media (min-width: 901px) {
-  .ppm-home-columns {
-    display: grid;
-    grid-template-columns: 200px minmax(0, 1fr) 240px;
-    gap: var(--ppm-spacing-xl);
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 5% var(--ppm-spacing-xl);
-    align-items: start;
-  }
-
-  .ppm-home-main {
-    min-width: 0;
-  }
-
-  .ppm-home-sidebar {
-    /* Not sticky or independently scrolling: all three columns move
-       together with the page, whatever their lengths. */
-    display: block;
-  }
 
   .ppm-home-nav-heading {
     margin: 0 0 var(--ppm-spacing-sm);
@@ -975,15 +956,12 @@ small {
     padding-right: 0;
   }
 
-  .ppm-home-main .blog-container > ul {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  .ppm-home-main .blog-container {
+    max-width: none;
   }
-}
 
-@media (min-width: 901px) and (max-width: 1150px) {
-  .ppm-home-columns {
-    grid-template-columns: 170px minmax(0, 1fr) 200px;
-    gap: var(--ppm-spacing-lg);
+  .ppm-home-main .blog-container > ul {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
@@ -3477,4 +3455,89 @@ html.ppm-nav-open {
 
 :root[data-theme="light"] .ppm-home-featured-cta {
   color: var(--ppm-hermes);
+}
+
+/* ================================
+   Home page sections (desktop)
+   ================================ */
+.ppm-home-top,
+.ppm-home-middle,
+.ppm-home-top-side,
+.ppm-home-glossary-wrap {
+  display: none;
+}
+
+@media (min-width: 901px) {
+  .ppm-home-sections {
+    padding: 0 5% var(--ppm-spacing-xl);
+  }
+
+  /* 1) Featured article large on the left, widgets stacked on the right */
+  .ppm-home-top {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) clamp(260px, 24vw, 380px);
+    gap: var(--ppm-spacing-xl);
+    align-items: start;
+    margin-bottom: var(--ppm-spacing-xl);
+  }
+
+  .ppm-home-top .ppm-home-featured {
+    margin-bottom: 0;
+  }
+
+  .ppm-home-top-side {
+    display: block;
+  }
+
+  /* 2) Books and definitions across the full width */
+  .ppm-home-middle {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) clamp(260px, 24vw, 380px);
+    gap: var(--ppm-spacing-xl);
+    align-items: center;
+    margin-bottom: var(--ppm-spacing-xl);
+    padding: var(--ppm-spacing-lg) 0;
+    border-top: 1px solid var(--ppm-border-soft);
+    border-bottom: 1px solid var(--ppm-border-soft);
+  }
+
+  .ppm-home-middle .ppm-home-book {
+    flex-basis: clamp(160px, 14vw, 230px);
+  }
+
+  .ppm-home-middle .ppm-home-books-grid {
+    gap: var(--ppm-spacing-lg);
+  }
+
+  .ppm-home-glossary-wrap {
+    display: block;
+  }
+
+  /* 3) Blog cards fill the whole width */
+  .ppm-home-main {
+    min-width: 0;
+  }
+}
+
+@media (min-width: 1700px) {
+  .ppm-home-main .blog-container > ul {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+}
+
+:root[data-theme="light"] .ppm-footer-newsletter-form input[type="email"],
+:root[data-theme="light"] .ppm-footer-newsletter-form input[type="email"]:focus {
+  background: #ffffff;
+  border-color: rgba(11, 14, 19, 0.25);
+  color: #1B2230;
+}
+
+:root[data-theme="light"] .ppm-footer-newsletter-form input[type="email"]::placeholder {
+  color: rgba(27, 34, 48, 0.55);
+}
+
+@media (min-width: 901px) {
+  .ppm-home-middle .ppm-home-book {
+    flex-basis: clamp(180px, 16vw, 260px);
+  }
 }
