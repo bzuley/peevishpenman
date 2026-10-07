@@ -134,8 +134,8 @@
       <h3 class="ppm-home-nav-heading">Explore</h3>
       <ul>
         <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/blog-config.php'; ?>
-        <?php foreach (ppm_get_tags() as $explore_tag => $explore_info): ?>
-          <li><a href="<?php echo htmlspecialchars(ppm_tag_url($explore_tag)); ?>"><?php echo htmlspecialchars($explore_info['label']); ?></a></li>
+        <?php foreach (['writing', 'independentpublishing', 'sciencefiction'] as $explore_tag): ?>
+          <li><a href="<?php echo htmlspecialchars(ppm_tag_url($explore_tag)); ?>"><?php echo htmlspecialchars(ppm_tag_label($explore_tag)); ?></a></li>
         <?php endforeach; ?>
         <li class="ppm-home-nav-all"><a href="/articles">All Articles &rarr;</a></li>
       </ul>
