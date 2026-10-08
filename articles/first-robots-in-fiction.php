@@ -6,7 +6,7 @@ $post_meta = [
   'excerpt' => 'Was Frankenstein’s creature the first robot in science fiction? Tik-Tok, Čapek, the golem and a long line of automata say the answer is much older and messier.',
   'date'    => '2026-10-08',
   'added'   => '2026-10-08',
-  // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
+  // Comma-separated tags, e.g. 'independentpublishing, sciencefiction'.
   // Powers the quicklink buttons on index.php (see /article-tag.php).
   'tags'    => 'sciencefiction, technology, writing',
   'author'  => 'OA Allen'

@@ -5,7 +5,7 @@ $post_meta = [
   'title'   => 'Post Title Here',
   'excerpt' => 'Brief excerpt or description of the post content goes here.',
   'date'    => 'YYYY-MM-DD',
-  // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
+  // Comma-separated tags, e.g. 'independentpublishing, sciencefiction'.
   // Powers the quicklink buttons on index.php (see /article-tag.php).
   'tags'    => '',
   // Defaults to OA Allen. Set this to a guest author's name and add

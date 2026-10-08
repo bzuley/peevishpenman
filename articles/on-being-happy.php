@@ -6,7 +6,7 @@ $post_meta = [
   'excerpt' => 'A meditation on a father\'s turbulent past and peaceful present, painted in sailboats and calm seas, and what his happiness taught his daughter.',
   'date'    => '2016-06-20',
   'added'   => '2026-09-26',
-  // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
+  // Comma-separated tags, e.g. 'independentpublishing, sciencefiction'.
   // Powers the quicklink buttons on index.php (see /article-tag.php).
   'tags'    => 'culture, painting, minimalism',
   'author'  => 'OA Allen'

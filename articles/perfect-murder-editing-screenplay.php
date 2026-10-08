@@ -6,7 +6,7 @@ $post_meta = [
   'excerpt' => 'Your script consultant says cut 25 pages. Screenwriter Jeanne V. Bowerman shares eleven ways to edit a screenplay with a serial killer\'s efficiency, and leave no fingerprints.',
   'date'    => '2010-09-12',
   'added'   => '2026-09-28',
-  // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
+  // Comma-separated tags, e.g. 'independentpublishing, sciencefiction'.
   // Powers the quicklink buttons on index.php (see /article-tag.php).
   'tags'    => 'writing',
   'author'  => 'Jeanne V. Bowerman',

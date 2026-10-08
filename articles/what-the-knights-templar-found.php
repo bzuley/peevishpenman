@@ -6,7 +6,7 @@ $post_meta = [
   'excerpt' => 'A documentary said the Knights Templar dug up brotherhood beneath the Temple Mount. I think they found Asherah, the Canaanite Queen of Heaven.',
   'date'    => '2016-10-26',
   'added'   => '2026-09-26',
-  // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
+  // Comma-separated tags, e.g. 'independentpublishing, sciencefiction'.
   // Powers the quicklink buttons on index.php (see /article-tag.php).
   'tags'    => 'worldbuilding, sciencefiction, writing',
   'author'  => 'OA Allen'

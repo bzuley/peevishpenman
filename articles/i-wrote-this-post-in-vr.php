@@ -6,7 +6,7 @@ $post_meta = [
   'excerpt' => 'A sci-fi author tries to write inside a Meta Quest 3, fails through every "obvious" input method, and ends up with a grudging respect for the tech.',
   'date'    => '2025-12-29',
   'added'   => '2026-08-25',
-  // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
+  // Comma-separated tags, e.g. 'independentpublishing, sciencefiction'.
   // Powers the quicklink buttons on index.php (see /article-tag.php).
   'tags'    => 'writing, sciencefiction, technology',
   'author'  => 'OA Allen'

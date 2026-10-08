@@ -6,7 +6,7 @@ $post_meta = [
   'excerpt' => 'A shamelessly profane grammar lesson proving that one very specific word can stand in for all nine parts of speech.',
   'date'    => '2010-09-23',
   'added'   => '2026-08-25',
-  // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
+  // Comma-separated tags, e.g. 'independentpublishing, sciencefiction'.
   // Powers the quicklink buttons on index.php (see /article-tag.php).
   'tags'    => 'writing',
   // Credited to Carrie Bailey by name in the original 2010 publication,
