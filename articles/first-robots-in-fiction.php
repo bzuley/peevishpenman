@@ -1,6 +1,6 @@
 <?php
 $post_meta = [
-  'image'   => '/img/general/first_robots.png',
+  'image'   => '/img/first_robots.png',
   'slug'    => 'first-robots-in-fiction',
   'title'   => 'First Robots in Fiction',
   'excerpt' => 'Was Frankenstein’s creature the first robot in science fiction? Tik-Tok, Čapek, the golem and a long line of automata say the answer is much older and messier.',
@@ -62,7 +62,7 @@ ppm_require_published($post_meta);
   <figure class="ppm-article-hero">
     <img
       src="<?php echo htmlspecialchars($post_meta['image']); ?>"
-      alt="Illustration of early fictional robots and automata, from clockwork figures to mechanical men"
+      alt="Art deco illustration of a gleaming metal robot woman in the style of Metropolis, set against stylized skyscrapers"
     >
     <div class="ppm-article-hero-content">
       <p class="ppm-article-kicker">Science Fiction History</p>
