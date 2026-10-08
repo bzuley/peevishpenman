@@ -102,7 +102,7 @@
             href="/pages/books">Explore the Books</a>
 
           <a class="ppm-button ppm-button--ghost"
-            href="/article-tag?tag=selfpublishing">Self-Publishing</a>
+            href="/article-tag?tag=independentpublishing">Self-Publishing</a>
 
           <a class="ppm-button ppm-button--ghost"
             href="/article-tag?tag=archetypes">Character Archetypes</a>

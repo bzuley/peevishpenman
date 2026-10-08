@@ -8,7 +8,7 @@ $post_meta = [
   'added'   => '2026-08-25',
   // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
   // Powers the quicklink buttons on index.php (see /article-tag.php).
-  'tags'    => 'wordcraft, writing',
+  'tags'    => 'writing',
   // Credited to Carrie Bailey by name in the original 2010 publication,
   // rather than the OA Allen pen name used elsewhere on the site. This
   // post's own "Who wrote this" banner (below) serves as its byline, so

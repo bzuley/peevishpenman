@@ -448,7 +448,7 @@
         And in the Zubian Waste, impossible visions move across the
         landscape. Every day. Like dream weather.
       </p>
-      <p>Ren goes looking for <a class="ppm-inline-link" href="/article-tag?tag=losttechnology">lost technology</a> and sentient plasma.</p>
+      <p>Ren goes looking for <a class="ppm-inline-link" href="/article-tag?tag=technology">lost technology</a> and sentient plasma.</p>
       <p>
         Instead, he finds people who can <a class="ppm-inline-link" href="/articles/closed-eye-visualizations">see more with their eyes closed</a>,
         machines that remember more than their operators do, and a

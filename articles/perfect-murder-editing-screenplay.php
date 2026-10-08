@@ -8,7 +8,7 @@ $post_meta = [
   'added'   => '2026-09-28',
   // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
   // Powers the quicklink buttons on index.php (see /article-tag.php).
-  'tags'    => 'writing, wordcraft',
+  'tags'    => 'writing',
   'author'  => 'Jeanne V. Bowerman',
   'guest_post'  => true,
   'author_link' => 'http://jeannevb.com'

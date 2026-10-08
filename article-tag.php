@@ -2,6 +2,13 @@
 require_once __DIR__ . '/blog-config.php';
 
 $tag = isset($_GET['tag']) ? trim($_GET['tag']) : '';
+
+// A merged tag's old URL permanently redirects to the tag it became.
+$tag_merged_into = ppm_tag_aliases()[strtolower($tag)] ?? null;
+if ($tag_merged_into !== null) {
+  header('Location: ' . ppm_tag_url($tag_merged_into), true, 301);
+  exit;
+}
 $blog_items = $tag !== '' ? ppm_get_posts_by_tag($tag) : [];
 
 $tag_key = strtolower($tag);
