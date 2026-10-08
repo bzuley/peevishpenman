@@ -5,7 +5,7 @@ $post_meta = [
   'title'   => 'Why Did We Forget Isaac Newton Was an Alchemist?',
   'excerpt' => 'The father of modern physics wrote about a million words on alchemy. Why we forgot, and what inner alchemy says about experience science still can’t measure.',
   'date'    => '2026-09-28',
-  'tags'    => 'consciousness, anomalousphenomena, metaphysicalscifi, writing',
+  'tags'    => 'origins, consciousness',
   'author'  => 'OA Allen'
 ];
 require_once $_SERVER['DOCUMENT_ROOT'] . '/blog-config.php';

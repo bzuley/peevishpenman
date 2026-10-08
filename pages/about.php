@@ -378,7 +378,7 @@
       </p>
       <p>
         With a family history containing both sides of the
-        <a href="/article-tag?tag=colonization">colonial story</a>, she is
+        <a href="/article-tag?tag=origins">colonial story</a>, she is
         particularly interested in what happens when competing versions of
         reality are all, inconveniently, true.
       </p>

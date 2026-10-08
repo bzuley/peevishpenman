@@ -184,9 +184,9 @@
 
   <p style="margin-top: 2.5rem;">
     The research and craft behind the books lives in the articles:
-    <a href="/article-tag?tag=worldbuilding">worldbuilding</a>,
-    <a href="/article-tag?tag=archetypes">character archetypes</a>,
-    <a href="/article-tag?tag=independentpublishing">self-publishing</a>, and
+    <a href="/article-tag?tag=speculativefiction">speculative fiction</a>,
+    <a href="/article-tag?tag=origins">origins</a>,
+    <a href="/article-tag?tag=authorship">authorship</a>, and
     <a href="/articles">everything else</a>.
   </p>
 </main>

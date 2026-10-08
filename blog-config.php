@@ -17,57 +17,41 @@ const PPM_PUBLISH_TIMEZONE = 'America/New_York';
  * so a tag gets a landing page by being added here.
  */
 function ppm_get_tags() {
-    // TODO(OA Allen): these intros were drafted from what each tag's
-    // articles actually cover. Rewrite them in your own words when you
-    // have time (1–3 sentences each).
+    // The eight site categories, in nav order. Each intro states plainly
+    // what the category covers, so readers and search engines both get
+    // context for the shorter, more distinctive labels.
     return [
-        'sciencefiction' => [
-            'label' => 'Science Fiction',
-            'intro' => 'Science fiction from the writing desk: the research, invented cosmology and stray etymology behind OA Allen\'s post-apocalyptic novel The Bright Dark, plus one sci-fi author\'s attempt to write inside a VR headset.',
+        'speculativefiction' => [
+            'label' => 'Speculative Fiction',
+            'intro' => 'Science fiction, fantasy, and post-apocalyptic fiction: the robots, wastelands, and invented worlds of the genre, and the research behind OA Allen\'s metaphysical science fiction novel The Bright Dark.',
         ],
-        'postapocalypticscifi' => [
-            'label' => 'Post-Apocalyptic Scifi',
-            'intro' => 'Writing about life after the end of the world, from what "wasteland" really means to whether "post-apocalyptic" needs its hyphen, and the creation story the survivors tell in The Bright Dark.',
-        ],
-        'metaphysicalscifi' => [
-            'label' => 'Metaphysical Scifi',
-            'intro' => 'Where science fiction meets consciousness, inner alchemy and the parts of human experience science still can\'t measure, and how those ideas shape The Bright Dark.',
+        'authorship' => [
+            'label' => 'Authorship',
+            'intro' => 'Writing advice and the writing life: craft, grammar, editing, character archetypes, independent publishing, finding readers, and what it means to be the author of your own work.',
         ],
         'consciousness' => [
             'label' => 'Consciousness',
-            'intro' => 'Essays on the mind and what it makes: closed-eye visualizations in meditation, Isaac Newton\'s hidden alchemy, the Magician archetype, and why everyone, even scientists, runs on faith.',
+            'intro' => 'Essays on the mind and inner experience: meditation, closed-eye visualizations, inner alchemy, belief, and the parts of human awareness that science still struggles to measure.',
         ],
-        'anomalousphenomena' => [
-            'label' => 'Anomalous Phenomena',
-            'intro' => 'Things that don\'t fit neatly into ordinary life: visions behind closed eyes, the father of modern physics\' million words on alchemy, and the unseen forces in The Bright Dark\'s cosmology.',
+        'origins' => [
+            'label' => 'Origins',
+            'intro' => 'Trace the beginnings of inventions, ancient technologies, spiritual traditions, words, and ideas that continue to influence speculative fiction, from alchemy and the Holy Grail to the first robots.',
+        ],
+        'cosmology' => [
+            'label' => 'Cosmology',
+            'intro' => 'How people explain the universe and their place in it: creation stories, ancient and modern models of reality, the ether, and the invented cosmologies that shape fictional worlds.',
         ],
         'technology' => [
             'label' => 'Technology',
-            'intro' => 'Technology in the writer\'s life and in invented worlds: virtual reality, accessibility, where AI belongs in a writer\'s toolkit, and the technology the world forgot in The Bright Dark, where ancient machines are excavated, catalogued and occasionally misunderstood.',
+            'intro' => 'Technology in the writer\'s life and in invented worlds: virtual reality, robots and automata, alchemical apparatus, and the lost and imagined machines of science fiction.',
         ],
-        'worldbuilding' => [
-            'label' => 'Worldbuilding',
-            'intro' => 'The research and reasoning behind invented worlds: the Knights Templar, the first Holy Grail story, how ancient people reasoned about the world, invented cosmologies, and the history hiding in the word "wasteland."',
+        'anomalousphenomena' => [
+            'label' => 'Anomalous Phenomena',
+            'intro' => 'Experiences and forces that don\'t fit ordinary explanations: visions behind closed eyes, unseen energies, and the strange phenomena that speculative fiction takes seriously.',
         ],
-        'archetypes' => [
-            'label' => 'Character Archetypes',
-            'intro' => 'A series on the twelve character archetypes, one at a time: where each comes from, iconic examples from fiction and television, and the ways writers misunderstand it.',
-        ],
-        'meditation' => [
-            'label' => 'Meditation',
-            'intro' => 'Meditation as a practice and as a subject: closed-eye visualizations, inner alchemy, and the Magician\'s inward transformation.',
-        ],
-        'writing' => [
-            'label' => 'Writing',
-            'intro' => 'The craft and the life of writing: editing, grammar, etymology, hyphens and profanity, character archetypes, worldbuilding research, and the long road to publishing your own books.',
-        ],
-        'independentpublishing' => [
-            'label' => 'Independent Publishing',
-            'intro' => 'The independent author\'s path: going indie after years of false starts, finishing a book, finding readers, what self-publishing actually pays against what it\'s worth, and getting past the fear at the finish line.',
-        ],
-        'colonization' => [
-            'label' => 'Colonization',
-            'intro' => 'Colonization and its echoes: the imperial land law that gave us the word "wasteland," and a 2017 op-ed on the history of the "America First" slogan.',
+        'alternativerealities' => [
+            'label' => 'Alternative Realities',
+            'intro' => 'Explore fantasy worlds, alternate histories, parallel dimensions, and imagined systems of reality, from the strata of existence in The Bright Dark to what the Knights Templar might really have found.',
         ],
     ];
 }
@@ -79,9 +63,18 @@ function ppm_get_tags() {
  */
 function ppm_tag_aliases() {
     return [
-        'wordcraft'      => 'writing',
-        'losttechnology' => 'technology',
-        'selfpublishing' => 'independentpublishing',
+        'sciencefiction'        => 'speculativefiction',
+        'postapocalypticscifi'  => 'speculativefiction',
+        'metaphysicalscifi'     => 'speculativefiction',
+        'writing'               => 'authorship',
+        'independentpublishing' => 'authorship',
+        'archetypes'            => 'authorship',
+        'wordcraft'             => 'authorship',
+        'selfpublishing'        => 'authorship',
+        'meditation'            => 'consciousness',
+        'worldbuilding'         => 'origins',
+        'colonization'          => 'origins',
+        'losttechnology'        => 'technology',
     ];
 }
 
