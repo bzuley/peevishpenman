@@ -68,12 +68,11 @@ ppm_require_published($post_meta);
           <?php echo date('F j, Y', strtotime($post_meta['date'])); ?>
         </time>
       </div>
-      <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/article-tags.php'; ?>
-
       <figure class="ppm-article-hero">
         <img src="<?php echo htmlspecialchars($post_meta['image']); ?>"
              alt="Description of hero image">
       </figure>
+      <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/article-tags.php'; ?>
     </header>
 
     <!-- Optional: Lead/intro paragraph -->
