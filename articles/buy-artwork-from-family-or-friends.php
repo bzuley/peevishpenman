@@ -6,7 +6,7 @@ $post_meta = [
   'excerpt' => 'A painter\'s survival guide to being asked for free murals: what commissioning art actually costs in skill, time, and materials.',
   'date'    => '2016-09-14',
   'added'   => '2026-09-26',
-  // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
+  // Comma-separated tags, e.g. 'independentpublishing, sciencefiction'.
   // Powers the quicklink buttons on index.php (see /article-tag.php).
   'tags'    => 'culture, entrepreneur, painting',
   'author'  => 'OA Allen',
@@ -77,9 +77,9 @@ $post_meta = [
           <?php echo date('F j, Y', strtotime($post_meta['date'])); ?>
         </time>
       </div>
-      <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/article-tags.php'; ?>
     </div>
   </figure>
+  <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/article-tags.php'; ?>
 </header>
 
     <section>

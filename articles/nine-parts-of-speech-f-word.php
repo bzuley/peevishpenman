@@ -6,9 +6,9 @@ $post_meta = [
   'excerpt' => 'A shamelessly profane grammar lesson proving that one very specific word can stand in for all nine parts of speech.',
   'date'    => '2010-09-23',
   'added'   => '2026-08-25',
-  // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
+  // Comma-separated tags, e.g. 'independentpublishing, sciencefiction'.
   // Powers the quicklink buttons on index.php (see /article-tag.php).
-  'tags'    => 'wordcraft, writing',
+  'tags'    => 'writing',
   // Credited to Carrie Bailey by name in the original 2010 publication,
   // rather than the OA Allen pen name used elsewhere on the site. This
   // post's own "Who wrote this" banner (below) serves as its byline, so
@@ -79,9 +79,9 @@ $post_meta = [
           <?php echo date('F j, Y', strtotime($post_meta['date'])); ?>
         </time>
       </div>
-      <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/article-tags.php'; ?>
     </div>
   </figure>
+  <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/article-tags.php'; ?>
   
   <p class="ppm-article-disclaimer">
     <strong>Content warning:</strong> This post uses explicit profanity (the F-word) frequently and deliberately,

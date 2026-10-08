@@ -6,9 +6,9 @@ $post_meta = [
   'excerpt' => 'Why finishing a book can feel scarier than starting one, and how shy writers can turn the last page into a first step toward readers, with advice from Jody Aberdeen and Rob Hines.',
   'date'    => '2013-03-04',
   'added'   => '2026-09-28',
-  // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
+  // Comma-separated tags, e.g. 'independentpublishing, sciencefiction'.
   // Powers the quicklink buttons on index.php (see /article-tag.php).
-  'tags'    => 'writing, selfpublishing, independentpublishing',
+  'tags'    => 'writing, independentpublishing',
   'author'  => 'OA Allen'
 ];
 require_once $_SERVER['DOCUMENT_ROOT'].'/blog-config.php';
@@ -76,9 +76,9 @@ ppm_require_published($post_meta);
           <?php echo date('F j, Y', strtotime($post_meta['date'])); ?>
         </time>
       </div>
-      <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/article-tags.php'; ?>
     </div>
   </figure>
+  <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/article-tags.php'; ?>
 </header>
 
     <section>

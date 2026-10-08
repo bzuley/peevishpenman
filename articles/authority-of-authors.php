@@ -6,9 +6,9 @@ $post_meta = [
   'excerpt' => 'Author and authority share a Latin root: someone who causes something to exist. A look at who controls the narrative and the power writers wield on the page.',
   'date'    => '2026-09-21',
   'added'   => '2026-09-21',
-  // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
+  // Comma-separated tags, e.g. 'independentpublishing, sciencefiction'.
   // Powers the quicklink buttons on index.php (see /article-tag.php).
-  'tags'    => 'writing, wordcraft, selfpublishing',
+  'tags'    => 'writing, independentpublishing',
   'author'  => 'OA Allen'
 ];
 ?>
@@ -75,9 +75,9 @@ $post_meta = [
           <?php echo date('F j, Y', strtotime($post_meta['date'])); ?>
         </time>
       </div>
-      <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/article-tags.php'; ?>
     </div>
   </figure>
+  <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/article-tags.php'; ?>
 </header>
 
     <section>

@@ -6,7 +6,7 @@ $post_meta = [
   'excerpt' => 'Cosmology, consciousness, and unseen forces in The Bright Dark, with a creation story from the world after the apocalypse.',
   'date'    => '2015-10-09',
   'added'   => '2026-09-24',
-  'tags'    => 'sciencefiction, writing, postapocalypticscifi, consciousness, metaphysicalscifi, worldbuilding, losttechnology, anomalousphenomena',
+  'tags'    => 'sciencefiction, writing, postapocalypticscifi, consciousness, metaphysicalscifi, worldbuilding, technology, anomalousphenomena',
   'author'  => 'OA Allen'
 ];
 ?>
@@ -73,9 +73,9 @@ $post_meta = [
           <?php echo date('F j, Y', strtotime($post_meta['date'])); ?>
         </time>
       </div>
-      <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/article-tags.php'; ?>
     </div>
   </figure>
+  <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/article-tags.php'; ?>
 </header>
 
     <section>

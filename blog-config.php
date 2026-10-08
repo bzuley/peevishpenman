@@ -41,13 +41,9 @@ function ppm_get_tags() {
             'label' => 'Anomalous Phenomena',
             'intro' => 'Things that don\'t fit neatly into ordinary life: visions behind closed eyes, the father of modern physics\' million words on alchemy, and the unseen forces in The Bright Dark\'s cosmology.',
         ],
-        'losttechnology' => [
-            'label' => 'Lost Technology',
-            'intro' => 'Technology the world forgot, and the worlds built from what\'s left of it, like The Bright Dark, where ancient technology is excavated, catalogued and occasionally misunderstood.',
-        ],
         'technology' => [
             'label' => 'Technology',
-            'intro' => 'Writing with and about technology: virtual reality, accessibility, and where AI belongs in a writer\'s toolkit.',
+            'intro' => 'Technology in the writer\'s life and in invented worlds: virtual reality, accessibility, where AI belongs in a writer\'s toolkit, and the technology the world forgot in The Bright Dark, where ancient machines are excavated, catalogued and occasionally misunderstood.',
         ],
         'worldbuilding' => [
             'label' => 'Worldbuilding',
@@ -63,24 +59,29 @@ function ppm_get_tags() {
         ],
         'writing' => [
             'label' => 'Writing',
-            'intro' => 'The craft and the life of writing: editing, grammar, character archetypes, worldbuilding research, and the long road to publishing your own books.',
-        ],
-        'wordcraft' => [
-            'label' => 'Wordcraft',
-            'intro' => 'Words up close: etymology, grammar, hyphens, profanity and editing, for writers who want to know why words work the way they do.',
-        ],
-        'selfpublishing' => [
-            'label' => 'Self-Publishing',
-            'intro' => 'The business and the feeling of self-publishing: finishing a book, finding readers, what it actually pays, and the instant feedback of publishing online.',
+            'intro' => 'The craft and the life of writing: editing, grammar, etymology, hyphens and profanity, character archetypes, worldbuilding research, and the long road to publishing your own books.',
         ],
         'independentpublishing' => [
             'label' => 'Independent Publishing',
-            'intro' => 'The independent author\'s path: going indie after years of false starts, weighing what independent publishing earns against what it\'s worth, and getting past the fear at the finish line.',
+            'intro' => 'The independent author\'s path: going indie after years of false starts, finishing a book, finding readers, what self-publishing actually pays against what it\'s worth, and getting past the fear at the finish line.',
         ],
         'colonization' => [
             'label' => 'Colonization',
             'intro' => 'Colonization and its echoes: the imperial land law that gave us the word "wasteland," and a 2017 op-ed on the history of the "America First" slogan.',
         ],
+    ];
+}
+
+/**
+ * Retired tag keys and the tag each one was merged into. Old tag-page URLs
+ * 301 to the new page, and posts still using an old key are treated as
+ * using the new one.
+ */
+function ppm_tag_aliases() {
+    return [
+        'wordcraft'      => 'writing',
+        'losttechnology' => 'technology',
+        'selfpublishing' => 'independentpublishing',
     ];
 }
 
@@ -107,8 +108,10 @@ function ppm_tag_url($tag) {
  * Tags without a page are left out, so nothing links to a 404.
  */
 function ppm_landing_tags($tags) {
+    $aliases = ppm_tag_aliases();
+    $tags = array_map(fn($t) => $aliases[$t] ?? $t, ppm_normalize_tags($tags));
     return array_values(array_intersect(
-        array_unique(ppm_normalize_tags($tags)),
+        array_unique($tags),
         array_keys(ppm_get_tags())
     ));
 }

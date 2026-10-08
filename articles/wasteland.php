@@ -6,9 +6,9 @@ $post_meta = [
   'excerpt' => 'Merriam-Webster says a wasteland is barren and spiritually arid. So why does the word feel so good to write? A dig through etymology, Chernobyl, and 1838 law.',
   'date'    => '2016-08-01',
   'added'   => '2026-08-28',
-  // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
+  // Comma-separated tags, e.g. 'independentpublishing, sciencefiction'.
   // Powers the quicklink buttons on index.php (see /article-tag.php).
-  'tags'    => 'sciencefiction, wordcraft, writing, postapocalypticscifi, worldbuilding, colonization',
+  'tags'    => 'sciencefiction, writing, postapocalypticscifi, worldbuilding, colonization',
   'author'  => 'OA Allen'
 ];
 ?>
@@ -75,9 +75,9 @@ $post_meta = [
           <?php echo date('F j, Y', strtotime($post_meta['date'])); ?>
         </time>
       </div>
-      <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/article-tags.php'; ?>
     </div>
   </figure>
+  <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/article-tags.php'; ?>
 </header>
 
     <section>

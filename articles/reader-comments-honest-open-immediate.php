@@ -7,9 +7,9 @@ $post_meta = [
   'excerpt' => 'Blogger Kelly DeBie on anonymous blog comments, Facebook debates, and why the instant, honest feedback of online publishing keeps her writing.',
   'date'    => '2013-04-30',
   'added'   => '2026-09-28',
-  // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
+  // Comma-separated tags, e.g. 'independentpublishing, sciencefiction'.
   // Powers the quicklink buttons on index.php (see /article-tag.php).
-  'tags'    => 'writing, selfpublishing',
+  'tags'    => 'writing, independentpublishing',
   'author'  => 'Kelly DeBie',
   'guest_post' => true
 ];

@@ -6,9 +6,9 @@ $post_meta = [
   'excerpt' => 'A tongue-in-cheek case for dropping the hyphen from "post-apocalyptic"—and why search engines and plain laziness might matter more than the rulebook.',
   'date'    => '2016-02-01',
   'added'   => '2026-09-26',
-  // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
+  // Comma-separated tags, e.g. 'independentpublishing, sciencefiction'.
   // Powers the quicklink buttons on index.php (see /article-tag.php).
-  'tags'    => 'wordcraft, writing, postapocalypticscifi',
+  'tags'    => 'writing, postapocalypticscifi',
   'author'  => 'OA Allen'
 ];
 ?>
@@ -75,9 +75,9 @@ $post_meta = [
           <?php echo date('F j, Y', strtotime($post_meta['date'])); ?>
         </time>
       </div>
-      <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/article-tags.php'; ?>
     </div>
   </figure>
+  <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/article-tags.php'; ?>
 </header>
 
     <section>

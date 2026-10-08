@@ -6,7 +6,7 @@ $post_meta = [
   'excerpt' => 'Ancient people weren\'t less intelligent, just less informed. On volcanoes, the problem of induction, and why faith in science resembles medieval faith.',
   'date'    => '2016-10-26',
   'added'   => '2026-09-27',
-  // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
+  // Comma-separated tags, e.g. 'independentpublishing, sciencefiction'.
   // Powers the quicklink buttons on index.php (see /article-tag.php).
   'tags'    => 'worldbuilding, consciousness, writing',
   'author'  => 'OA Allen'
@@ -76,9 +76,9 @@ ppm_require_published($post_meta);
           <?php echo date('F j, Y', strtotime($post_meta['date'])); ?>
         </time>
       </div>
-      <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/article-tags.php'; ?>
     </div>
   </figure>
+  <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/article-tags.php'; ?>
 </header>
 
     <section>

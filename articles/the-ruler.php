@@ -6,7 +6,7 @@ $post_meta = [
   'excerpt' => 'From Horatio Hornblower to Captain Janeway to Red Reznikov: the archetype of leadership, and why the Ruler\'s power is a relationship, not a possession.',
   'date'    => '2026-09-30',
   'added'   => '2026-09-30',
-  // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
+  // Comma-separated tags, e.g. 'independentpublishing, sciencefiction'.
   // Powers the quicklink buttons on index.php (see /article-tag.php).
   'tags'    => 'archetypes, writing',
   // Name on the archetype wheel; also lists this post in the series
@@ -79,9 +79,9 @@ ppm_require_published($post_meta);
           <?php echo date('F j, Y', strtotime($post_meta['date'])); ?>
         </time>
       </div>
-      <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/article-tags.php'; ?>
     </div>
   </figure>
+  <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/article-tags.php'; ?>
 </header>
 
     <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/archetype-wheel.php'; ?>

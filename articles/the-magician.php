@@ -6,7 +6,7 @@ $post_meta = [
   'excerpt' => 'From Merlin\'s hidden knowledge to Frankenstein\'s overreach to Ren\'s inner alchemy: the archetype of transformation, and why good and evil were never the point.',
   'date'    => '2026-09-05',
   'added'   => '2026-09-05',
-  // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
+  // Comma-separated tags, e.g. 'independentpublishing, sciencefiction'.
   // Powers the quicklink buttons on index.php (see /article-tag.php).
   'tags'    => 'archetypes, writing, meditation, consciousness',
   // Name on the archetype wheel; also lists this post in the series
@@ -78,9 +78,9 @@ $post_meta = [
           <?php echo date('F j, Y', strtotime($post_meta['date'])); ?>
         </time>
       </div>
-      <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/article-tags.php'; ?>
     </div>
   </figure>
+  <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/article-tags.php'; ?>
 </header>
 
     <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/archetype-wheel.php'; ?>

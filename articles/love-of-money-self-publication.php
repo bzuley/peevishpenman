@@ -6,7 +6,7 @@ $post_meta = [
   'excerpt' => 'From cash-paid pizza murals to Amazon candles, an indie author weighs what self-publishing earns per hour against what books keep.',
   'date'    => '2018-06-18',
   'added'   => '2026-09-25',
-  'tags'    => 'selfpublishing, independentpublishing, writing',
+  'tags'    => 'independentpublishing, writing',
   'author'  => 'OA Allen'
 ];
 require_once $_SERVER['DOCUMENT_ROOT'] . '/blog-config.php';
@@ -74,9 +74,9 @@ ppm_require_published($post_meta);
           <?php echo date('F j, Y', strtotime($post_meta['date'])); ?>
         </time>
       </div>
-      <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/article-tags.php'; ?>
     </div>
   </figure>
+  <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/article-tags.php'; ?>
 </header>
 
     <section>

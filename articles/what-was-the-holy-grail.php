@@ -6,9 +6,9 @@ $post_meta = [
   'excerpt' => 'The first Grail story never calls it holy or even clearly a cup. How a golden serving dish became the cup of Christ—and what that teaches writers about myth.',
   'date'    => '2016-10-26',
   'added'   => '2026-09-27',
-  // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
+  // Comma-separated tags, e.g. 'independentpublishing, sciencefiction'.
   // Powers the quicklink buttons on index.php (see /article-tag.php).
-  'tags'    => 'worldbuilding, wordcraft, writing',
+  'tags'    => 'worldbuilding, writing',
   'author'  => 'OA Allen'
 ];
 require_once $_SERVER['DOCUMENT_ROOT'] . '/blog-config.php';
@@ -76,9 +76,9 @@ ppm_require_published($post_meta);
           <?php echo date('F j, Y', strtotime($post_meta['date'])); ?>
         </time>
       </div>
-      <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/article-tags.php'; ?>
     </div>
   </figure>
+  <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/article-tags.php'; ?>
 </header>
 
     <section>

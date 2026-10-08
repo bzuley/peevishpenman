@@ -6,7 +6,7 @@ $post_meta = [
   'excerpt' => 'From Pearson\'s "Realist" to medieval morality plays to Samwise Gamgee: the archetype of continuity, and why writers keep mistaking ordinary for unimportant.',
   'date'    => '2026-08-28',
   'added'   => '2026-08-28',
-  // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
+  // Comma-separated tags, e.g. 'independentpublishing, sciencefiction'.
   // Powers the quicklink buttons on index.php (see /article-tag.php).
   'tags'    => 'archetypes, writing',
   // Name on the archetype wheel; also lists this post in the series
@@ -78,9 +78,9 @@ $post_meta = [
           <?php echo date('F j, Y', strtotime($post_meta['date'])); ?>
         </time>
       </div>
-      <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/article-tags.php'; ?>
     </div>
   </figure>
+  <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/article-tags.php'; ?>
 </header>
 
     <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/archetype-wheel.php'; ?>

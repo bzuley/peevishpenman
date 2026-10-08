@@ -6,7 +6,7 @@ $post_meta = [
   'excerpt' => 'Exploring closed-eye visualizations in meditation, from subtle patterns to vivid imagery: a personal account of CEVs, their neuroscience, and inner alchemy.',
   'date'    => '2024-12-20',
   'added'   => '2026-08-25',
-  // Comma-separated tags, e.g. 'selfpublishing, sciencefiction'.
+  // Comma-separated tags, e.g. 'independentpublishing, sciencefiction'.
   // Powers the quicklink buttons on index.php (see /article-tag.php).
   'tags'    => 'meditation, consciousness, metaphysicalscifi, anomalousphenomena',
   'author'  => 'OA Allen'
@@ -76,9 +76,9 @@ $post_meta = [
           <?php echo date('F j, Y', strtotime($post_meta['date'])); ?>
         </time>
       </div>
-      <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/article-tags.php'; ?>
     </div>
   </figure>
+  <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/article-tags.php'; ?>
 </header>
 
     <section>
