@@ -87,7 +87,7 @@ ppm_require_published($post_meta);
       </p>
 
       <p>
-        But I will maintain until my dying breath that most ancient Sumerian writing about the Anunnaki is science fiction.
+        <strong>But I will maintain until my dying breath that most ancient Sumerian writing about the Anunnaki is science fiction.</strong>
       </p>
 
       <p>And I’m just not explaining that here.</p>
@@ -95,7 +95,7 @@ ppm_require_published($post_meta);
       <p>But it’s a human urge to take what is and project out to what it could be.</p>
 
       <p>
-        So, let’s use robots as a metric to define a first in science fiction. Notable Victorian-era science fiction writers include Edgar Allan Poe, Jules Verne, and H. G. Wells, and while these authors were instrumental in establishing many of the themes and conventions that continue to be central to science fiction today, they didn't include characters that we might distinctly consider robots. They had machines without operators. Let’s get our semantics straight so we can explore this very interesting question: what was the first robot in science fiction?
+        So, let’s use robots as a metric to define a first in science fiction. Notable Victorian-era science fiction writers include Edgar Allan Poe, Jules Verne, and H. G. Wells, and while these authors were instrumental in establishing many of the themes and conventions that continue to be central to science fiction today, they didn't include characters that we might distinctly consider robots. They had machines without operators. Let’s get our semantics straight so we can explore this very interesting question: <strong>what was the first robot in science fiction?</strong>
       </p>
     </section>
 
@@ -111,7 +111,7 @@ ppm_require_published($post_meta);
       </p>
 
       <p>
-        Let’s back up. Tik-Tok of Oz is a great example of an automaton that essentially meets the definition of a robot, because he can sense, think, and act.
+        Let’s back up. Tik-Tok of Oz is a great example of an automaton that essentially meets the definition of a robot, because he can <strong>sense, think, and act</strong>.
       </p>
 
       <p>
@@ -127,7 +127,7 @@ ppm_require_published($post_meta);
       <h2>Do Robots Need Feelings?</h2>
 
       <p>
-        Some people are preoccupied with whether artificial intelligence is conscious. I’m not. Consciousness involves awareness of our surroundings, thoughts, emotions, and experiences. We can break it into wakefulness, attention, perception, thought, and emotion, but science still doesn’t fully understand it in humans. If you can’t explain it in people, what definition are you using for the robots?
+        Some people are preoccupied with whether artificial intelligence is conscious. I’m not. Consciousness involves awareness of our surroundings, thoughts, emotions, and experiences. We can break it into wakefulness, attention, perception, thought, and emotion, but science still doesn’t fully understand it in humans. <strong>If you can’t explain it in people, what definition are you using for the robots?</strong>
       </p>
 
       <p>
@@ -153,7 +153,7 @@ ppm_require_published($post_meta);
       </p>
 
       <p>
-        Further back are the mechanical laborers in Mark Drinkwater’s <em>The United Worlds</em> (1834); Frankenstein’s creature (1818), if manufactured biological people count. I would not include Frankenstein’s creature, because then the homunculus, a miniature human being created through alchemy, would also count and we’d be going back to the 16th century. And there, we would need to start considering the golem. Though constructed of clay and animated by a divine name written in Hebrew and placed in his mouth, the workings of the golem were not explained. We would call it magic, because of the era of the writing, but it was based on the biblical description of making the first man. How do we know that language isn’t the source code of the universe?
+        Further back are the mechanical laborers in Mark Drinkwater’s <em>The United Worlds</em> (1834); Frankenstein’s creature (1818), if manufactured biological people count. I would not include Frankenstein’s creature, because then the homunculus, a miniature human being created through alchemy, would also count and we’d be going back to the 16th century. And there, we would need to start considering the golem. Though constructed of clay and animated by a divine name written in Hebrew and placed in his mouth, the workings of the golem were not explained. We would call it magic, because of the era of the writing, but it was based on the biblical description of making the first man. <strong>How do we know that language isn’t the source code of the universe?</strong>
       </p>
 
       <p>The line between science and magic is never clear. Often, it’s just a matter of style.</p>
@@ -175,7 +175,7 @@ ppm_require_published($post_meta);
       </p>
 
       <p>
-        Mary Shelley was a giant among writers, but she was neither the first to write about robots nor the first science fiction writer. She was emblematic of early science fiction and a cultural force still relevant today. We don’t need to silence other voices for hers to be heard.
+        Mary Shelley was a giant among writers, but she was neither the first to write about robots nor the first science fiction writer. She was emblematic of early science fiction and a cultural force still relevant today. <strong>We don’t need to silence other voices for hers to be heard.</strong>
       </p>
     </section>
 
