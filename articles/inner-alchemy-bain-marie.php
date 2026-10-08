@@ -63,7 +63,8 @@ ppm_require_published($post_meta);
   <figure class="ppm-article-hero">
     <img
       src="<?php echo htmlspecialchars($post_meta['image']); ?>"
-      alt="Inner alchemy: an alchemist’s laboratory with a copper vessel set in a bath of hot water"
+      width="1677" height="938"
+      alt="Medieval manuscript illustration of two alchemists beside a brick furnace, a glass flask steaming in a brass water bath, with a smiling sun, a crescent moon and stars above and flasks, herbs and an open book around them"
     >
     <div class="ppm-article-hero-content">
       <p class="ppm-article-kicker">History, Philosophy &amp; Science</p>
