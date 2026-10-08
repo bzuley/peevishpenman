@@ -74,7 +74,7 @@
 
       <!-- Gradient Tagline -->
       <div class="ppm-hero-gradient-line">
-        metaphysical science fiction · consciousness · inner alchemy
+        Speculative Fiction · Consciousness · Cosmology
       </div>
 
       <!-- OA Allen logline -->
