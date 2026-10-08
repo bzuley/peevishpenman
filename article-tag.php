@@ -112,7 +112,6 @@ endif;
     </div>
 
     <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/search-form.php'; ?>
-    <?php $ppm_topic_current = $tag_key; include $_SERVER['DOCUMENT_ROOT'].'/partials/topic-list.php'; ?>
 
     <div class="blog-container">
 

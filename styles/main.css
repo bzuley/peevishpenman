@@ -1590,12 +1590,6 @@ html.ppm-nav-open {
   color: var(--ppm-text-muted);
 }
 
-/* The topic page you're on */
-.bp-tag--current a {
-  font-weight: 700;
-  text-decoration: underline;
-}
-
 /* Row of every topic, under the heading on listing pages */
 .ppm-topic-list {
   max-width: 900px;
