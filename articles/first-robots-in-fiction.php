@@ -175,7 +175,7 @@ ppm_require_published($post_meta);
       </p>
 
       <p>
-        Mary Shelley was a giant among writers, but she was neither the first to write about robots nor the first science fiction writer. She was emblematic of early science fiction and cultural force still relevant today. We don’t need to silence other voices for hers to be heard.
+        Mary Shelley was a giant among writers, but she was neither the first to write about robots nor the first science fiction writer. She was emblematic of early science fiction and a cultural force still relevant today. We don’t need to silence other voices for hers to be heard.
       </p>
     </section>
 
