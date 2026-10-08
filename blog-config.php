@@ -23,7 +23,7 @@ function ppm_get_tags() {
     return [
         'speculativefiction' => [
             'label' => 'Speculative Fiction',
-            'intro' => 'Science fiction, fantasy, and post-apocalyptic fiction: the robots, wastelands, and invented worlds of the genre, and the research behind OA Allen\'s metaphysical science fiction novel The Bright Dark.',
+            'intro' => 'Science fiction and post-apocalyptic fiction: robots, wastelands, imagined futures, and the research behind OA Allen\'s metaphysical science fiction novel The Bright Dark.',
         ],
         'authorship' => [
             'label' => 'Authorship',
@@ -47,11 +47,11 @@ function ppm_get_tags() {
         ],
         'anomalousphenomena' => [
             'label' => 'Anomalous Phenomena',
-            'intro' => 'Experiences and forces that don\'t fit ordinary explanations: visions behind closed eyes, unseen energies, and the strange phenomena that speculative fiction takes seriously.',
+            'intro' => 'The paranormal and the unexplained: ghosts, glowing orbs, visions, psychic experiences, unseen energies, and the phenomena science sets aside but speculative fiction takes seriously.',
         ],
         'alternativerealities' => [
             'label' => 'Alternative Realities',
-            'intro' => 'Explore fantasy worlds, alternate histories, parallel dimensions, and imagined systems of reality, from the strata of existence in The Bright Dark to what the Knights Templar might really have found.',
+            'intro' => 'Fantasy in all its forms: magical worlds, wizards, Arthurian legend, Tolkien, alternate histories, parallel dimensions, and the imagined systems of reality that make invented worlds feel real.',
         ],
     ];
 }
