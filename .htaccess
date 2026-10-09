@@ -83,6 +83,13 @@ RewriteRule ^blogs?(\.php)?/?$ /articles [R=301,L,NC]
 RewriteRule ^blogs/(.+?)(\.php)?/?$ /articles/$1 [R=301,L,NC]
 RewriteRule ^blog-tag(\.php)?/?$ /article-tag [R=301,L,NC,QSA]
 
+# Legacy /articles/peevish-penman/<slug> URLs from the old site.
+# Slugs that changed are mapped one by one; any other slug that matches
+# an existing article goes to /articles/<slug>.
+RewriteRule ^articles/peevish-penman/meditation-and-closed-eye-visualizations/?$ /articles/closed-eye-visualizations [R=301,L,NC]
+RewriteCond %{DOCUMENT_ROOT}/articles/$1.php -f
+RewriteRule ^articles/peevish-penman/([^/]+?)/?$ /articles/$1 [R=301,L]
+
 # The articles listing shares its clean URL with the articles/ post
 # directory, so the generic directory-checked rule below would treat
 # /articles as a directory request. Route it explicitly first, and stop
