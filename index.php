@@ -74,7 +74,7 @@
 
       <!-- Gradient Tagline -->
       <div class="ppm-hero-gradient-line">
-        metaphysical science fiction · consciousness · inner alchemy
+        metaphysical science fiction · consciousness · cosmology
       </div>
 
       <!-- OA Allen logline -->
@@ -102,13 +102,13 @@
             href="/pages/books">Explore the Books</a>
 
           <a class="ppm-button ppm-button--ghost"
-            href="/article-tag?tag=independentpublishing">Self-Publishing</a>
+            href="/article-tag?tag=speculativefiction">Speculative Fiction</a>
 
           <a class="ppm-button ppm-button--ghost"
-            href="/article-tag?tag=archetypes">Character Archetypes</a>
+            href="/article-tag?tag=authorship">Authorship</a>
 
           <a class="ppm-button ppm-button--ghost"
-            href="/article-tag?tag=sciencefiction">Science Fiction</a>
+            href="/article-tag?tag=origins">Origins</a>
         </div>
 
         <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/search-form.php'; ?>

@@ -14,7 +14,7 @@ $archetype_series = ppm_get_archetype_posts();
   >
   <figcaption>
     The <?php echo htmlspecialchars($archetype_name); ?> is one of twelve character archetypes on the wheel.
-    <a href="/article-tag?tag=archetypes">Explore the full series</a>.
+    <a href="/article-tag?tag=authorship">Explore more on authorship</a>.
   </figcaption>
 </figure>
 <?php if (count($archetype_series) > 1): ?>

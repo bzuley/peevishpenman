@@ -6,7 +6,7 @@ $post_meta = [
   'excerpt' => 'From Taoist immortals and Egyptian metallurgists to medieval laboratories and the invention of the bain-marie, alchemy has been quietly influencing the modern world for thousands of years.',
   'date'    => '2026-10-08',
   'added'   => '2026-10-08',
-  'tags'    => 'consciousness, meditation, metaphysicalscifi',
+  'tags'    => 'origins, consciousness, technology',
   'author'  => 'OA Allen'
 ];
 require_once $_SERVER['DOCUMENT_ROOT'] . '/blog-config.php';

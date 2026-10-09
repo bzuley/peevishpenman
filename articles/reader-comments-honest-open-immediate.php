@@ -9,7 +9,7 @@ $post_meta = [
   'added'   => '2026-09-28',
   // Comma-separated tags, e.g. 'independentpublishing, sciencefiction'.
   // Powers the quicklink buttons on index.php (see /article-tag.php).
-  'tags'    => 'writing, independentpublishing',
+  'tags'    => 'authorship',
   'author'  => 'Kelly DeBie',
   'guest_post' => true
 ];

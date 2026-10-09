@@ -72,7 +72,7 @@ endif;
   <meta charset="UTF-8">
   <title><?php echo htmlspecialchars($tag_label); ?> Posts – Peevish Penman</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="<?php echo htmlspecialchars($tag_label); ?> posts from OA Allen at Peevish Penman.">
+  <meta name="description" content="<?php echo htmlspecialchars($tag_intro); ?>">
   <meta name="author" content="OA Allen">
 
   <link rel="canonical" href="https://peevishpenman.com/article-tag?tag=<?php echo urlencode($tag); ?>">
@@ -80,7 +80,7 @@ endif;
   <!-- Open Graph -->
   <meta property="og:site_name" content="Peevish Penman">
   <meta property="og:title" content="<?php echo htmlspecialchars($tag_label); ?> Posts – Peevish Penman">
-  <meta property="og:description" content="<?php echo htmlspecialchars($tag_label); ?> posts from OA Allen at Peevish Penman.">
+  <meta property="og:description" content="<?php echo htmlspecialchars($tag_intro); ?>">
   <meta property="og:url" content="https://peevishpenman.com/article-tag?tag=<?php echo urlencode($tag); ?>">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://peevishpenman.com/img/social/peevish-penman.jpg">
@@ -92,7 +92,7 @@ endif;
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="<?php echo htmlspecialchars($tag_label); ?> Posts – Peevish Penman">
-  <meta name="twitter:description" content="<?php echo htmlspecialchars($tag_label); ?> posts from OA Allen at Peevish Penman.">
+  <meta name="twitter:description" content="<?php echo htmlspecialchars($tag_intro); ?>">
   <meta name="twitter:image" content="https://peevishpenman.com/img/social/peevish-penman.jpg">
   <meta name="twitter:image:alt" content="Peevish Penman — OA Allen, metaphysical science fiction">
 

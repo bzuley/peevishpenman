@@ -57,7 +57,7 @@ $blog_items = ppm_get_blog_posts();
     <section class="ppm-topic-explorer" aria-labelledby="ppm-topic-explorer-title">
       <h2 class="ppm-topic-explorer-title" id="ppm-topic-explorer-title">Explore by topic</h2>
       <ul class="ppm-topic-grid">
-        <?php foreach (['writing', 'independentpublishing', 'sciencefiction'] as $topic_key): ?>
+        <?php foreach (['speculativefiction', 'authorship', 'origins'] as $topic_key): ?>
           <?php $topic_count = count(ppm_get_posts_by_tag($topic_key)); ?>
           <li>
             <a class="ppm-topic-card" href="<?= htmlspecialchars(ppm_tag_url($topic_key)) ?>">

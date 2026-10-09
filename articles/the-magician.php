@@ -8,7 +8,7 @@ $post_meta = [
   'added'   => '2026-09-05',
   // Comma-separated tags, e.g. 'independentpublishing, sciencefiction'.
   // Powers the quicklink buttons on index.php (see /article-tag.php).
-  'tags'    => 'archetypes, writing, meditation, consciousness',
+  'tags'    => 'authorship, consciousness, alternativerealities',
   // Name on the archetype wheel; also lists this post in the series
   // links under the wheel (see /partials/archetype-wheel.php).
   'archetype' => 'Magician',
