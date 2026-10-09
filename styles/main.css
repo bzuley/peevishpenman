@@ -3185,6 +3185,12 @@ html.ppm-nav-open {
   --ppm-text-main: #1B2230;
   --ppm-text-muted: #5B6472;
   --ppm-shadow-soft: 0 18px 40px rgba(20, 30, 50, 0.15);
+
+  /* Solid buttons, from the logo: sage fill, teal ring, ink text */
+  --ppm-light-button: #B3CCC3;
+  --ppm-light-button-hover: #9FBFB4;
+  --ppm-light-button-ring: #3C9C90;
+  --ppm-light-button-ink: #183030;
 }
 
 :root[data-theme="light"] body {
@@ -3458,11 +3464,12 @@ html.ppm-nav-open {
   border-color: rgba(11, 14, 19, 0.6);
 }
 
-/* Light theme: the solid teal buttons darken, so black text on them turns
-   muddy. Use white text, darken (rather than lighten) on hover so the
-   white stays readable, and drop the mint glow, which reads as a haze on
-   the cream background. */
+/* Light theme: solid buttons take their colours from the logo, a sage
+   typewriter-body fill inside the logo's teal ring with the dark ink of
+   its "PPM" lettering, softer on the cream background than solid dark
+   teal. The mint glow is dropped; it reads as a haze on cream. */
 :root[data-theme="light"] .ppm-button:not(.ppm-button--ghost),
+:root[data-theme="light"] .ppm-nav-cta--primary,
 :root[data-theme="light"] .ppm-home-widget-form button,
 :root[data-theme="light"] .ppm-drawer-search button,
 :root[data-theme="light"] .ppm-search-form button,
@@ -3470,7 +3477,9 @@ html.ppm-nav-open {
 :root[data-theme="light"] .ppm-who-wrote-button.ppm-who-wrote-button,
 :root[data-theme="light"] .ppm-archetype-series [aria-current="page"],
 :root[data-theme="light"] .ppm-admin-signout {
-  color: #ffffff;
+  background: var(--ppm-light-button);
+  border: 2px solid var(--ppm-light-button-ring);
+  color: var(--ppm-light-button-ink);
   box-shadow: none;
 }
 
@@ -3481,10 +3490,10 @@ html.ppm-nav-open {
 :root[data-theme="light"] .ppm-search-form button:hover,
 :root[data-theme="light"] .ppm-footer-newsletter-form button:hover,
 :root[data-theme="light"] .ppm-who-wrote-button.ppm-who-wrote-button:hover {
-  background: var(--ppm-hermes-shadow);
-  border-color: var(--ppm-hermes-shadow);
-  color: #ffffff;
-  box-shadow: 0 6px 16px rgba(20, 30, 50, 0.15);
+  background: var(--ppm-light-button-hover);
+  border-color: var(--ppm-light-button-ring);
+  color: var(--ppm-light-button-ink);
+  box-shadow: 0 6px 16px rgba(20, 30, 50, 0.12);
 }
 
 :root[data-theme="light"] .ppm-article-disclaimer strong {
