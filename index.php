@@ -74,7 +74,7 @@
 
       <!-- Gradient Tagline -->
       <div class="ppm-hero-gradient-line">
-        Speculative Fiction · Consciousness · Cosmology
+        metaphysical science fiction · consciousness · cosmology
       </div>
 
       <!-- OA Allen logline -->
