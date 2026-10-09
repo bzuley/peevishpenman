@@ -1744,6 +1744,11 @@ html.ppm-nav-open {
   margin: 0 auto var(--ppm-spacing-md);
 }
 
+.ppm-404-art-frame {
+  width: fit-content;
+  margin: 0 auto;
+}
+
 .ppm-404-subhead {
   margin: var(--ppm-spacing-lg) 0 var(--ppm-spacing-md);
   font-size: 1rem;
@@ -3281,6 +3286,18 @@ html.ppm-nav-open {
    dark base so it doesn't show as a grey band on the light page */
 :root[data-theme="light"] .ppm-article-hero {
   background: #0B0E13;
+}
+
+/* The 404 art is drawn for a black page; give it a dark panel to fade into */
+:root[data-theme="light"] .ppm-404-art-frame {
+  margin-bottom: var(--ppm-spacing-md);
+  padding: var(--ppm-spacing-md);
+  border-radius: var(--ppm-radius-lg);
+  background: #0B0E13;
+}
+
+:root[data-theme="light"] .ppm-404-art {
+  margin-bottom: 0;
 }
 
 /* ================================

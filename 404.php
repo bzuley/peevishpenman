@@ -32,10 +32,12 @@ $ppm_404_recent = array_slice(ppm_get_blog_posts(), 0, 3);
 
 <main class="ppm-404">
   <section class="blog-preview">
-    <img class="ppm-404-art ppm-fade-mask"
-         src="/img/404.webp"
-         alt="404, page not found: a woman gazes out a spaceship window at a distant Earth"
-         width="900" height="900">
+    <div class="ppm-404-art-frame">
+      <img class="ppm-404-art ppm-fade-mask"
+           src="/img/404.webp"
+           alt="404, page not found: a woman gazes out a spaceship window at a distant Earth"
+           width="900" height="900">
+    </div>
 
     <div class="bp-head">
       <h1 class="bp-title">Lost in the Dark</h1>
