@@ -74,7 +74,7 @@
 
       <!-- Gradient Tagline -->
       <div class="ppm-hero-gradient-line">
-        metaphysical science fiction · consciousness · cosmology
+        <span class="ppm-hero-gradient-part">metaphysical science fiction</span><span class="ppm-hero-gradient-sep"> · </span><span class="ppm-hero-gradient-part">consciousness · cosmology</span>
       </div>
 
       <!-- OA Allen logline -->
