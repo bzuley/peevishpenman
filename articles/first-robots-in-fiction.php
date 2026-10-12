@@ -8,7 +8,7 @@ $post_meta = [
   'added'   => '2026-10-08',
   // Comma-separated tags, e.g. 'independentpublishing, sciencefiction'.
   // Powers the quicklink buttons on index.php (see /article-tag.php).
-  'tags'    => 'speculativefiction, technology, origins',
+  'tags'    => 'speculativefiction, technology, hiddenhistories',
   'author'  => 'OA Allen'
 ];
 require_once $_SERVER['DOCUMENT_ROOT'] . '/blog-config.php';

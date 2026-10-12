@@ -37,9 +37,9 @@ function ppm_get_tags() {
             'label' => 'Alchemy',
             'intro' => 'From Taoist inner alchemy and Hermetic laboratories to Isaac Newton\'s hidden manuscripts: the history, symbolism, and inner transformation of alchemy, and where it surfaces in OA Allen\'s metaphysical science fiction.',
         ],
-        'origins' => [
-            'label' => 'Origins',
-            'intro' => 'Trace the beginnings of inventions, ancient technologies, spiritual traditions, words, and ideas that continue to influence speculative fiction, from alchemy and the Holy Grail to the first robots.',
+        'hiddenhistories' => [
+            'label' => 'Hidden Histories',
+            'intro' => 'The overlooked stories behind the ideas we take for granted. Trace the beginnings of inventions, ancient technologies, spiritual traditions, words, and ideas that continue to influence speculative fiction, from alchemy and the Holy Grail to the first robots.',
         ],
         'cosmology' => [
             'label' => 'Cosmology',
@@ -75,9 +75,10 @@ function ppm_tag_aliases() {
         'archetypes'            => 'writing',
         'wordcraft'             => 'writing',
         'selfpublishing'        => 'writing',
+        'origins'               => 'hiddenhistories',
         'meditation'            => 'consciousness',
-        'worldbuilding'         => 'origins',
-        'colonization'          => 'origins',
+        'worldbuilding'         => 'hiddenhistories',
+        'colonization'          => 'hiddenhistories',
         'losttechnology'        => 'technology',
     ];
 }

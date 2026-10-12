@@ -108,7 +108,7 @@
             href="/article-tag?tag=writing">Writing</a>
 
           <a class="ppm-button ppm-button--ghost"
-            href="/article-tag?tag=origins">Origins</a>
+            href="/article-tag?tag=hiddenhistories">Hidden Histories</a>
         </div>
 
         <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/search-form.php'; ?>

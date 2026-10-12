@@ -185,7 +185,7 @@
   <p style="margin-top: 2.5rem;">
     The research and craft behind the books lives in the articles:
     <a href="/article-tag?tag=speculativefiction">speculative fiction</a>,
-    <a href="/article-tag?tag=origins">origins</a>,
+    <a href="/article-tag?tag=hiddenhistories">hidden histories</a>,
     <a href="/article-tag?tag=writing">writing</a>, and
     <a href="/articles">everything else</a>.
   </p>
