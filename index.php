@@ -105,10 +105,10 @@
             href="/article-tag?tag=speculativefiction">Speculative Fiction</a>
 
           <a class="ppm-button ppm-button--ghost"
-            href="/article-tag?tag=authorship">Authorship</a>
+            href="/article-tag?tag=writingcraft">Writing Craft</a>
 
           <a class="ppm-button ppm-button--ghost"
-            href="/article-tag?tag=origins">Origins</a>
+            href="/article-tag?tag=hiddenhistories">Hidden Histories</a>
         </div>
 
         <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/search-form.php'; ?>

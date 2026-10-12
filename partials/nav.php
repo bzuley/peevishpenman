@@ -59,7 +59,7 @@
   <div class="ppm-nav-topics-wrap">
   <button type="button" class="ppm-nav-topics-arrow ppm-nav-topics-arrow--prev" aria-label="Scroll topics left" hidden>&#8249;</button>
   <ul class="ppm-nav-topics" aria-label="Topics">
-    <?php foreach (ppm_get_tags() as $ppm_nav_tag => $ppm_nav_info): ?>
+    <?php foreach (ppm_get_nav_tags() as $ppm_nav_tag => $ppm_nav_info): ?>
       <li><a href="<?php echo htmlspecialchars(ppm_tag_url($ppm_nav_tag)); ?>"<?php echo $ppm_nav_tag === $ppm_nav_tag_current ? ' aria-current="page"' : ''; ?>><?php echo htmlspecialchars($ppm_nav_info['label']); ?></a></li>
     <?php endforeach; ?>
   </ul>
@@ -145,7 +145,7 @@
       <h3 class="ppm-drawer-heading">Articles</h3>
       <ul>
         <li><a href="/articles">All Articles</a></li>
-        <?php foreach (ppm_get_tags() as $ppm_drawer_tag => $ppm_drawer_info): ?>
+        <?php foreach (ppm_get_nav_tags() as $ppm_drawer_tag => $ppm_drawer_info): ?>
           <li><a href="<?php echo htmlspecialchars(ppm_tag_url($ppm_drawer_tag)); ?>"><?php echo htmlspecialchars($ppm_drawer_info['label']); ?></a></li>
         <?php endforeach; ?>
       </ul>

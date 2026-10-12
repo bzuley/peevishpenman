@@ -21,6 +21,9 @@ $paths = [
 
 // Every tag landing page, from the same tag list the tag pages use.
 foreach (array_keys(ppm_get_tags()) as $tag) {
+    if (empty(ppm_get_posts_by_tag($tag))) {
+        continue;
+    }
     $paths[] = '/article-tag?tag=' . rawurlencode($tag);
 }
 
