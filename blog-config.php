@@ -25,8 +25,8 @@ function ppm_get_tags() {
             'label' => 'Speculative Fiction',
             'intro' => 'Science fiction and post-apocalyptic fiction: robots, wastelands, imagined futures, and the research behind OA Allen\'s metaphysical science fiction novel The Bright Dark.',
         ],
-        'writing' => [
-            'label' => 'Writing',
+        'writingcraft' => [
+            'label' => 'Writing Craft',
             'intro' => 'Writing advice and the writing life: craft, grammar, editing, character archetypes, independent publishing, finding readers, and what it means to be the author of your own work.',
         ],
         'consciousness' => [
@@ -70,11 +70,12 @@ function ppm_tag_aliases() {
         'sciencefiction'        => 'speculativefiction',
         'postapocalypticscifi'  => 'speculativefiction',
         'metaphysicalscifi'     => 'speculativefiction',
-        'authorship'            => 'writing',
-        'independentpublishing' => 'writing',
-        'archetypes'            => 'writing',
-        'wordcraft'             => 'writing',
-        'selfpublishing'        => 'writing',
+        'writing'               => 'writingcraft',
+        'authorship'            => 'writingcraft',
+        'independentpublishing' => 'writingcraft',
+        'archetypes'            => 'writingcraft',
+        'wordcraft'             => 'writingcraft',
+        'selfpublishing'        => 'writingcraft',
         'origins'               => 'hiddenhistories',
         'meditation'            => 'consciousness',
         'worldbuilding'         => 'hiddenhistories',

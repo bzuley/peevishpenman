@@ -105,7 +105,7 @@
             href="/article-tag?tag=speculativefiction">Speculative Fiction</a>
 
           <a class="ppm-button ppm-button--ghost"
-            href="/article-tag?tag=writing">Writing</a>
+            href="/article-tag?tag=writingcraft">Writing Craft</a>
 
           <a class="ppm-button ppm-button--ghost"
             href="/article-tag?tag=hiddenhistories">Hidden Histories</a>
