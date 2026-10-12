@@ -1,6 +1,6 @@
 <?php
 $post_meta = [
-  'image'   => '/img/general/the_alter_of_science.png',
+  'image'   => '/img/general/the_alter_of_science.webp',
   'slug'    => 'everyone-runs-on-faith',
   'title'   => 'Everyone Runs on Faith, Even Scientists',
   'excerpt' => 'Ancient people weren\'t less intelligent, just less informed. On volcanoes, the problem of induction, and why faith in science resembles medieval faith.',

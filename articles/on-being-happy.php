@@ -1,6 +1,6 @@
 <?php
 $post_meta = [
-  'image'   => '/img/general/sunflowers_alchemy.png',
+  'image'   => '/img/general/sunflowers_alchemy.webp',
   'slug'    => 'on-being-happy',
   'title'   => 'On Being Happy',
   'excerpt' => 'A meditation on a father\'s turbulent past and peaceful present, painted in sailboats and calm seas, and what his happiness taught his daughter.',

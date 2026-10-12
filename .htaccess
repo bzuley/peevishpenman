@@ -90,6 +90,15 @@ RewriteRule ^articles/peevish-penman/meditation-and-closed-eye-visualizations/?$
 RewriteCond %{DOCUMENT_ROOT}/articles/$1.php -f
 RewriteRule ^articles/peevish-penman/([^/]+?)/?$ /articles/$1 [R=301,L]
 
+# Legacy Blogger post URLs (/YYYY/MM/<slug>.html, optionally with
+# Blogger's ?m=1 mobile flag) go to /articles/<slug> when that article
+# exists. Posts whose slug changed need their own line above this one.
+RewriteCond %{DOCUMENT_ROOT}/articles/$1.php -f
+RewriteRule ^\d{4}/\d{2}/([^/]+?)\.html$ /articles/$1 [R=301,L,QSD]
+
+# The contact page was removed; the About page is where readers reach OA Allen
+RewriteRule ^pages/contact(\.php)?/?$ /pages/about [R=301,L,NC]
+
 # The articles listing shares its clean URL with the articles/ post
 # directory, so the generic directory-checked rule below would treat
 # /articles as a directory request. Route it explicitly first, and stop

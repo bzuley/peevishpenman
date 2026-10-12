@@ -1,6 +1,6 @@
 <?php
 $post_meta = [
-  'image'   => '/img/archetypes/ruler_archetype.png',
+  'image'   => '/img/archetypes/ruler_archetype.webp',
   'slug'    => 'the-ruler',
   'title'   => 'The Ruler Archetype',
   'excerpt' => 'From Horatio Hornblower to Captain Janeway to Red Reznikov: the archetype of leadership, and why the Ruler\'s power is a relationship, not a possession.',

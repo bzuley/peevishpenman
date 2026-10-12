@@ -1,6 +1,6 @@
 <?php
 $post_meta = [
-  'image'   => '/img/general/artist_and_raven.png',
+  'image'   => '/img/general/artist_and_raven.webp',
   'slug'    => 'buy-artwork-from-family-or-friends',
   'title'   => 'How to Buy Artwork From Your Family or Friends Without Being a Dick',
   'excerpt' => 'A painter\'s survival guide to being asked for free murals: what commissioning art actually costs in skill, time, and materials.',

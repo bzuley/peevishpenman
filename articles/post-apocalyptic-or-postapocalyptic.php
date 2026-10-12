@@ -1,6 +1,6 @@
 <?php
 $post_meta = [
-  'image'   => '/img/general/wasteland_alas_babylon.png',
+  'image'   => '/img/general/wasteland_alas_babylon.webp',
   'slug'    => 'post-apocalyptic-or-postapocalyptic',
   'title'   => 'Post Apocalyptic or Post-Apocalyptic or Postapocalyptic?',
   'excerpt' => 'A tongue-in-cheek case for dropping the hyphen from "post-apocalyptic"—and why search engines and plain laziness might matter more than the rulebook.',
