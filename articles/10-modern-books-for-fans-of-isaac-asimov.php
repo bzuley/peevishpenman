@@ -95,7 +95,7 @@ ppm_require_published($post_meta);
 
       <p>The novel explores artificial intelligence and the relationship between human beings and their increasingly sophisticated creations. What makes it especially interesting for Asimov readers is its apparent preference for moral and intellectual problems over mechanical spectacle.</p>
 
-      <p>Kirkus Indie draws a direct comparison to Asimov&rsquo;s Elijah Baley novels, the detective stories in which robots, human prejudice, and social organization become inseparable. That is a much more useful recommendation than merely saying a book contains robots.</p>
+      <p><a href="https://www.kirkusreviews.com/book-reviews/joseph-love/homeland-95/" rel="noopener">Kirkus Indie</a> draws a direct comparison to Asimov&rsquo;s Elijah Baley novels, the detective stories in which robots, human prejudice, and social organization become inseparable. That is a much more useful recommendation than merely saying a book contains robots.</p>
 
       <p>Asimov understood that the most interesting thing about a robot isn&rsquo;t necessarily what it can do. It&rsquo;s what its existence forces us to reconsider about ourselves.</p>
 
@@ -111,7 +111,7 @@ ppm_require_published($post_meta);
 
       <p>Nancy Jane Moore&rsquo;s <em>The Weave</em>, published by independent feminist science fiction publisher Aqueduct Press, invites that kind of examination. Its speculative world brings questions of culture, technology, and contact into conversation with the traditions of classic science fiction.</p>
 
-      <p>A review in <em>Strange Horizons</em> explicitly invokes Asimov and Arthur C. Clarke when discussing the book&rsquo;s relationship to Golden Age conventions. Not every aspect of the comparison is complimentary, which is actually useful. Literary criticism should tell us something more interesting than whether a reviewer liked a book.</p>
+      <p>A <a href="https://strangehorizons.com/wordpress/non-fiction/reviews/the-weave-by-nancy-jane-moore/" rel="noopener">review in <em>Strange Horizons</em></a> explicitly invokes Asimov and Arthur C. Clarke when discussing the book&rsquo;s relationship to Golden Age conventions. Not every aspect of the comparison is complimentary, which is actually useful. Literary criticism should tell us something more interesting than whether a reviewer liked a book.</p>
 
       <p>The pleasure here is in encountering a writer who works within a recognizable speculative tradition while bringing different assumptions to it.</p>
 
@@ -125,7 +125,7 @@ ppm_require_published($post_meta);
 
       <p>Wick Welker&rsquo;s independently published <em>Refraction</em> makes use of that territory with a story involving ambitious science, terraforming, and intelligent machines.</p>
 
-      <p>One Goodreads reviewer described it as exceptionally reminiscent of Asimov, emphasizing its science-centered characters and large speculative ideas.</p>
+      <p>One <a href="https://www.goodreads.com/en/book/show/57944658-refraction" rel="noopener">Goodreads reviewer</a> described it as exceptionally reminiscent of Asimov, emphasizing its science-centered characters and large speculative ideas.</p>
 
       <p>That comparison points toward an important distinction. Some books use science as scenery. Others make scientific inquiry part of the narrative machinery. A character discovers something, follows its implications, and discovers that the implications are considerably less cooperative than expected.</p>
 
@@ -143,7 +143,7 @@ ppm_require_published($post_meta);
 
       <p>Joel R. Dennstedt&rsquo;s novel takes up familiar questions about artificial intelligence, memory, and personhood. Its robot-centered premise enters territory that Asimov helped establish: the uncomfortable possibility that creating an intelligent machine also creates responsibilities its makers would rather not recognize.</p>
 
-      <p>A Literary Titan review identifies the book as an homage to Asimov and also brings Martha Wells&rsquo;s Murderbot stories into the conversation.</p>
+      <p>A <a href="https://literarytitan.com/2026/06/24/i-robot-tessa/" rel="noopener">Literary Titan review</a> identifies the book as an homage to Asimov and also brings Martha Wells&rsquo;s Murderbot stories into the conversation.</p>
 
       <p>That combination is intriguing. Asimov&rsquo;s robots are frequently caught in logical and ethical dilemmas. Wells&rsquo;s artificial protagonists are often more concerned with autonomy, exploitation, and the exhausting behavior of human beings.</p>
 
@@ -161,7 +161,7 @@ ppm_require_published($post_meta);
 
       <p>C. S. Boyack&rsquo;s <em>The Experimental Notebook</em> offers a collection of speculative stories ranging across science fiction and the uncanny.</p>
 
-      <p>A review shared on Boyack&rsquo;s blog invokes both Edgar Allan Poe and Asimov. It&rsquo;s an interesting pairing: Poe for the strange atmosphere and Asimov for the speculative imagination.</p>
+      <p>A <a href="https://rosieamber.wordpress.com/2015/10/17/rosies-bookreview-team-rbrt-the-experimental-notebook-by-c-s-boyack-virgilante/" rel="noopener">review from Rosie&rsquo;s Book Review Team</a> invokes both Edgar Allan Poe and Asimov. It&rsquo;s an interesting pairing: Poe for the strange atmosphere and Asimov for the speculative imagination.</p>
 
       <p>Readers who enjoy the compact ingenuity of Asimov&rsquo;s shorter work may find this a more natural starting point than another enormous interstellar saga.</p>
 
@@ -179,7 +179,7 @@ ppm_require_published($post_meta);
 
       <p>Peter Dingus&rsquo;s <em>Proteus Rising</em> combines planetary politics with artificial intelligence, genetic engineering, and the sort of scientific ambition that tends to frighten governments.</p>
 
-      <p>In its review, Kirkus Indie explicitly compares Dingus to Asimov, Frederik Pohl, and Arthur C. Clarke, emphasizing the combination of scientific knowledge and speculative imagination. The review also notes that some of the scientific exposition slows the action.</p>
+      <p>In its <a href="https://www.kirkusreviews.com/book-reviews/peter-dingus/proteus-rising/" rel="noopener">review</a>, Kirkus Indie explicitly compares Dingus to Asimov, Frederik Pohl, and Arthur C. Clarke, emphasizing the combination of scientific knowledge and speculative imagination. The review also notes that some of the scientific exposition slows the action.</p>
 
       <p>For certain Asimov readers, that may sound less like a warning than an invitation.</p>
 
@@ -193,7 +193,7 @@ ppm_require_published($post_meta);
 
       <p>Sometimes a short story is enough.</p>
 
-      <p>Jefferson Smith&rsquo;s <em>Bodies of Evidence</em> belongs to the shorter end of the speculative-fiction spectrum. Its inclusion here comes from a book-blog comparison that associates Smith&rsquo;s storytelling with Asimov&rsquo;s talent for building a narrative around a central idea.</p>
+      <p>Jefferson Smith&rsquo;s <em>Bodies of Evidence</em> belongs to the shorter end of the speculative-fiction spectrum. Its inclusion here comes from a <a href="https://jparsonswrites.wordpress.com/2013/03/25/indie-review-bodies/" rel="noopener">book-blog review</a> that associates Smith&rsquo;s storytelling with Asimov&rsquo;s talent for building a narrative around a central idea.</p>
 
       <p>That is an interesting quality to look for in independent fiction. The shorter the story, the less room there is to disguise an uninteresting premise with elaborate scenery.</p>
 
@@ -211,7 +211,7 @@ ppm_require_published($post_meta);
 
       <p>In <em>I, Robot Alien</em>, Joel R. Dennstedt follows an extraterrestrial machine attempting to guide humanity back toward civilization over many generations. His interventions don&rsquo;t always work as intended. Helpful innovations can produce greed, violence, or entirely new varieties of foolishness.</p>
 
-      <p>Kirkus Indie identifies the book&rsquo;s acknowledged debt to Asimov and Robert Heinlein, including the Three Laws of Robotics.</p>
+      <p><a href="https://www.kirkusreviews.com/book-reviews/joel-r-dennstedt-1/i-robot-alien/" rel="noopener">Kirkus Indie</a> identifies the book&rsquo;s acknowledged debt to Asimov and Robert Heinlein, including the Three Laws of Robotics.</p>
 
       <p>This is one of the more entertaining possibilities raised by Asimov&rsquo;s work: even a machine with admirable intentions cannot guarantee admirable results. Human civilization is not a tidy engineering problem, no matter how much its engineers might wish otherwise.</p>
 
@@ -229,7 +229,7 @@ ppm_require_published($post_meta);
 
       <p>Herman Steuernagel&rsquo;s <em>Eclipse</em>, part of the Fractured Orbit series, enters that broad tradition of independently published space fiction.</p>
 
-      <p>Its connection to Asimov is less direct than the other books on this list. A review in <em>The Fantasy Review</em> mentions <em>Foundation</em> as part of the reviewer&rsquo;s reading background, rather than making a specific claim that <em>Eclipse</em> resembles Asimov&rsquo;s work.</p>
+      <p>Its connection to Asimov is less direct than the other books on this list. A <a href="https://thefantasyreviews.com/2023/08/17/6-science-fiction-books-better-than-foundation/" rel="noopener">review in <em>The Fantasy Review</em></a> mentions <em>Foundation</em> as part of the reviewer&rsquo;s reading background, rather than making a specific claim that <em>Eclipse</em> resembles Asimov&rsquo;s work.</p>
 
       <p>That distinction matters. An author&rsquo;s work shouldn&rsquo;t be credited with a comparison a reviewer never actually made.</p>
 
@@ -251,7 +251,7 @@ ppm_require_published($post_meta);
 
       <p>A sealed society, an inherited explanation of how the world works, and a growing suspicion that the explanation is incomplete: these are promising ingredients for speculative fiction.</p>
 
-      <p>Indie author Steven Konkoly compared Howey&rsquo;s storytelling to the traditions of Asimov, Heinlein, and Bradbury in an early review. The comparison is not about robots or galactic empires. It&rsquo;s about science fiction&rsquo;s ability to turn a compelling mystery into a larger examination of civilization and human behavior.</p>
+      <p>Indie author Steven Konkoly compared Howey&rsquo;s storytelling to the traditions of Asimov, Heinlein, and Bradbury in an <a href="https://thethrillermind.substack.com/p/hughhoweywool" rel="noopener">early review</a>. The comparison is not about robots or galactic empires. It&rsquo;s about science fiction&rsquo;s ability to turn a compelling mystery into a larger examination of civilization and human behavior.</p>
 
       <p><em>Wool</em> may be the most familiar title here, but it also demonstrates something worth remembering about independent publishing: a book doesn&rsquo;t have to begin with a major publisher to find an enormous audience.</p>
 
