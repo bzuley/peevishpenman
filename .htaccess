@@ -76,6 +76,13 @@ RewriteRule ^pages/wss-handbook(\.php)?/?$ /pages/writer-secret-society [R=301,L
 # The standalone newsletter page was removed; the sign-up form lives in the site footer
 RewriteRule ^pages/newsletter(\.php)?/?$ /#newsletter [R=301,L,NC,NE]
 
+# Old URLs from Search Console's 404 report
+RewriteRule ^projects/handbook/?$ /pages/writer-secret-society [R=301,L,NC]
+RewriteRule ^newsletter/?$ /#newsletter [R=301,L,NC,NE]
+RewriteRule ^contact/?$ /pages/about [R=301,L,NC]
+# No Asimov article exists on the new site; send readers to the listing
+RewriteRule ^blogs/peevish-penman/10-modern-books-for-fans-of-isaac-asimov/?$ /articles [R=301,L,NC]
+
 # "Blog" was renamed to "Articles" sitewide.
 # Each old URL, with or without .php or a trailing slash, goes to its
 # final clean URL in a single 301 hop.
