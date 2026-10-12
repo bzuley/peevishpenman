@@ -1,6 +1,6 @@
 <?php
 $post_meta = [
-  'image'   => '/img/general/holy_grail.png',
+  'image'   => '/img/general/holy_grail.webp',
   'slug'    => 'what-was-the-holy-grail',
   'title'   => 'What Was the Holy Grail Before It Was Holy?',
   'excerpt' => 'The first Grail story never calls it holy or even clearly a cup. How a golden serving dish became the cup of Christ—and what that teaches writers about myth.',

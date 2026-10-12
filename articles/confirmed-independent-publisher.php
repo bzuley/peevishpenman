@@ -1,6 +1,6 @@
 <?php
 $post_meta = [
-  'image'   => '/img/librarian.jpg',
+  'image'   => '/img/librarian.webp',
   'slug'    => 'confirmed-independent-publisher',
   'title'   => 'Confirmed Independent Publisher',
   'excerpt' => 'A librarian-turned-writer looks back at a bookmobile patron, a fake reptilian finance book, and five years of false starts before going independent.',

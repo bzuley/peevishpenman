@@ -1,6 +1,6 @@
 <?php
 $post_meta = [
-  'image'   => '/img/cev-hero.jpg',
+  'image'   => '/img/cev-hero.webp',
   'slug'    => 'closed-eye-visualizations',
   'title'   => 'Meditation - Closed Eye Visualizations',
   'excerpt' => 'Exploring closed-eye visualizations in meditation, from subtle patterns to vivid imagery: a personal account of CEVs, their neuroscience, and inner alchemy.',

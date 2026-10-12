@@ -1,6 +1,6 @@
 <?php
 $post_meta = [
-  'image'   => '/img/general/asherah.png',
+  'image'   => '/img/general/asherah.webp',
   'slug'    => 'what-the-knights-templar-found',
   'title'   => 'What the Knights Templar Found',
   'excerpt' => 'A documentary said the Knights Templar dug up brotherhood beneath the Temple Mount. I think they found Asherah, the Canaanite Queen of Heaven.',

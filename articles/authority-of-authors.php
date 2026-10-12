@@ -1,6 +1,6 @@
 <?php
 $post_meta = [
-  'image'   => '/img/pig_and_goose.png',
+  'image'   => '/img/pig_and_goose.webp',
   'slug'    => 'authority-of-authors',
   'title'   => 'The Authority of Authors',
   'excerpt' => 'Author and authority share a Latin root: someone who causes something to exist. A look at who controls the narrative and the power writers wield on the page.',

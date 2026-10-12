@@ -1,6 +1,6 @@
 <?php
 $post_meta = [
-  'image'   => '/img/first_robots.png',
+  'image'   => '/img/first_robots.webp',
   'slug'    => 'first-robots-in-fiction',
   'title'   => 'First Robots in Fiction',
   'excerpt' => 'Was Frankenstein’s creature the first robot in science fiction? Tik-Tok, Čapek, the golem and a long line of automata say the answer is much older and messier.',
@@ -31,14 +31,17 @@ ppm_require_published($post_meta);
   <meta property="og:description" content="<?php echo htmlspecialchars($post_meta['excerpt']); ?>">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://peevishpenman.com/articles/<?php echo htmlspecialchars($post_meta['slug']); ?>">
-  <meta property="og:image" content="https://peevishpenman.com<?php echo htmlspecialchars($post_meta['image']); ?>">
+  <meta property="og:image" content="https://peevishpenman.com/img/social/first-robots-in-fiction.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="<?php echo htmlspecialchars($post_meta['title']); ?>">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="<?php echo htmlspecialchars($post_meta['title']); ?>">
   <meta name="twitter:description" content="<?php echo htmlspecialchars($post_meta['excerpt']); ?>">
-  <meta name="twitter:image" content="https://peevishpenman.com<?php echo htmlspecialchars($post_meta['image']); ?>">
+  <meta name="twitter:image" content="https://peevishpenman.com/img/social/first-robots-in-fiction.jpg">
   <meta name="twitter:image:alt" content="<?php echo htmlspecialchars($post_meta['title']); ?>">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -62,6 +65,7 @@ ppm_require_published($post_meta);
   <figure class="ppm-article-hero">
     <img
       src="<?php echo htmlspecialchars($post_meta['image']); ?>"
+      width="1672" height="940"
       alt="Art deco illustration of a gleaming metal robot woman in the style of Metropolis, set against stylized skyscrapers"
     >
     <div class="ppm-article-hero-content">

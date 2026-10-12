@@ -1,6 +1,6 @@
 <?php
 $post_meta = [
-  'image'   => '/img/archetypes/magician_archetype.png',
+  'image'   => '/img/archetypes/magician_archetype.webp',
   'slug'    => 'the-magician',
   'title'   => 'The Magician: The Archetype of Transformation',
   'excerpt' => 'From Merlin\'s hidden knowledge to Frankenstein\'s overreach to Ren\'s inner alchemy: the archetype of transformation, and why good and evil were never the point.',

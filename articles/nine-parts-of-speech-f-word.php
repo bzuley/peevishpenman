@@ -1,6 +1,6 @@
 <?php
 $post_meta = [
-  'image'   => '/img/angry-writer.jpg',
+  'image'   => '/img/angry-writer.webp',
   'slug'    => 'nine-parts-of-speech-f-word',
   'title'   => 'The Nine Parts of Speech and the F Word',
   'excerpt' => 'A shamelessly profane grammar lesson proving that one very specific word can stand in for all nine parts of speech.',

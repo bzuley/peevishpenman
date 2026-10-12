@@ -1,6 +1,6 @@
 <?php
 $post_meta = [
-  'image'   => '/img/whirlwind.jpg',
+  'image'   => '/img/whirlwind.webp',
   'slug'    => 'wasteland',
   'title'   => 'Wasteland',
   'excerpt' => 'Merriam-Webster says a wasteland is barren and spiritually arid. So why does the word feel so good to write? A dig through etymology, Chernobyl, and 1838 law.',

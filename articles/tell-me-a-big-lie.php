@@ -1,6 +1,6 @@
 <?php
 $post_meta = [
-  'image'   => '/img/general/big_nose_liar.png',
+  'image'   => '/img/general/big_nose_liar.webp',
   'slug'    => 'tell-me-a-big-lie',
   'title'   => 'Tell Me a Big Lie',
   'excerpt' => 'A 2017 op-ed connecting "America First" rhetoric, The America We Deserve, and the Reform Party—daring readers to explain away what was standing in plain sight.',
