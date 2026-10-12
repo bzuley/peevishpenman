@@ -75,6 +75,9 @@ endif;
   <meta name="description" content="<?php echo htmlspecialchars($tag_intro); ?>">
   <meta name="author" content="OA Allen">
 
+  <?php if (empty($blog_items)): ?>
+  <meta name="robots" content="noindex, follow">
+  <?php endif; ?>
   <link rel="canonical" href="https://peevishpenman.com/article-tag?tag=<?php echo urlencode($tag); ?>">
 
   <!-- Open Graph -->
@@ -115,6 +118,22 @@ endif;
       <h1 class="bp-title"><?php echo htmlspecialchars($tag_label); ?> Posts</h1>
       <?php if ($tag_intro !== ''): ?>
         <p class="bp-desc"><?php echo htmlspecialchars($tag_intro); ?></p>
+      <?php endif; ?>
+      <?php
+        $tag_parent = $tag_info['parent'] ?? '';
+        $tag_subtopics = array_filter($tag_info['subtopics'] ?? [], fn($k) => isset(ppm_get_tags()[$k]));
+      ?>
+      <?php if ($tag_parent !== '' && isset(ppm_get_tags()[$tag_parent])): ?>
+        <p class="bp-desc"><a href="<?php echo htmlspecialchars(ppm_tag_url($tag_parent)); ?>">&larr; <?php echo htmlspecialchars(ppm_tag_label($tag_parent)); ?></a></p>
+      <?php endif; ?>
+      <?php if (!empty($tag_subtopics)): ?>
+        <nav class="ppm-topic-list" aria-label="<?php echo htmlspecialchars($tag_label); ?> topics">
+          <ul class="bp-tags">
+            <?php foreach ($tag_subtopics as $sub_key): ?>
+              <li class="bp-tag"><a href="<?php echo htmlspecialchars(ppm_tag_url($sub_key)); ?>"><?php echo htmlspecialchars(ppm_tag_label($sub_key)); ?></a></li>
+            <?php endforeach; ?>
+          </ul>
+        </nav>
       <?php endif; ?>
     </div>
 

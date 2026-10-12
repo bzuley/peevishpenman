@@ -28,6 +28,29 @@ function ppm_get_tags() {
         'writingcraft' => [
             'label' => 'Writing Craft',
             'intro' => 'Writing advice and the writing life: craft, grammar, editing, character archetypes, independent publishing, finding readers, and what it means to be the author of your own work.',
+            // Linked from this page. Entries with a 'parent' also roll up
+            // into it; Worldbuilding stays a top-level topic in the nav.
+            'subtopics' => ['grammarstyle', 'editing', 'independentpublishing', 'archetypes', 'worldbuilding'],
+        ],
+        'grammarstyle' => [
+            'label'  => 'Grammar & Style',
+            'parent' => 'writingcraft',
+            'intro'  => 'Grammar, usage, and style for writers: parts of speech, hyphens and spelling, profanity, and the small choices that decide how a sentence reads.',
+        ],
+        'editing' => [
+            'label'  => 'Editing',
+            'parent' => 'writingcraft',
+            'intro'  => 'Revising and editing your own work: tightening scenes, cutting what does not earn its place, and getting a manuscript or screenplay ready for readers.',
+        ],
+        'independentpublishing' => [
+            'label'  => 'Independent Publishing',
+            'parent' => 'writingcraft',
+            'intro'  => 'The independent author\'s path: going indie, finishing a book, finding readers, and what self-publishing actually costs and pays.',
+        ],
+        'archetypes' => [
+            'label'  => 'Archetypes',
+            'parent' => 'writingcraft',
+            'intro'  => 'A series on character archetypes, one at a time: where each comes from, iconic examples from fiction, and the ways writers misunderstand it.',
         ],
         'consciousness' => [
             'label' => 'Consciousness',
@@ -53,11 +76,21 @@ function ppm_get_tags() {
             'label' => 'Anomalous Phenomena',
             'intro' => 'The paranormal and the unexplained: ghosts, glowing orbs, visions, psychic experiences, unseen energies, and the phenomena science sets aside but speculative fiction takes seriously.',
         ],
-        'alternativerealities' => [
-            'label' => 'Alternative Realities',
-            'intro' => 'Fantasy in all its forms: magical worlds, wizards, Arthurian legend, Tolkien, alternate histories, parallel dimensions, and the imagined systems of reality that make invented worlds feel real.',
+        'worldbuilding' => [
+            'label' => 'Worldbuilding',
+            'intro' => 'Building invented worlds that hold together: fantasy settings, alternate histories, parallel dimensions, and the myth, history, and rules of reality behind them, from the strata of existence in The Bright Dark to what the Knights Templar might really have found.',
         ],
     ];
+}
+
+/**
+ * The tags shown in the nav bar, drawer and topic list: every tag that
+ * is not a sub-topic of another one.
+ */
+function ppm_get_nav_tags() {
+    return array_filter(ppm_get_tags(), function ($info) {
+        return empty($info['parent']);
+    });
 }
 
 /**
@@ -72,13 +105,11 @@ function ppm_tag_aliases() {
         'metaphysicalscifi'     => 'speculativefiction',
         'writing'               => 'writingcraft',
         'authorship'            => 'writingcraft',
-        'independentpublishing' => 'writingcraft',
-        'archetypes'            => 'writingcraft',
         'wordcraft'             => 'writingcraft',
-        'selfpublishing'        => 'writingcraft',
+        'selfpublishing'        => 'independentpublishing',
+        'alternativerealities'  => 'worldbuilding',
         'origins'               => 'hiddenhistories',
         'meditation'            => 'consciousness',
-        'worldbuilding'         => 'hiddenhistories',
         'colonization'          => 'hiddenhistories',
         'losttechnology'        => 'technology',
     ];
@@ -283,9 +314,16 @@ function ppm_truncate($text, $limit) {
  */
 function ppm_get_posts_by_tag($tag) {
     $tag = strtolower(trim($tag));
-    return array_values(array_filter(ppm_get_blog_posts(), function($post) use ($tag) {
+    // A parent tag also lists the posts of its sub-topics.
+    $wanted = [$tag];
+    foreach (ppm_get_tags() as $key => $info) {
+        if (($info['parent'] ?? '') === $tag) {
+            $wanted[] = $key;
+        }
+    }
+    return array_values(array_filter(ppm_get_blog_posts(), function($post) use ($wanted) {
         foreach ($post['tags'] as $post_tag) {
-            if (strtolower($post_tag) === $tag) {
+            if (in_array(strtolower($post_tag), $wanted, true)) {
                 return true;
             }
         }
