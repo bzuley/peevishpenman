@@ -105,7 +105,7 @@
             href="/article-tag?tag=speculativefiction">Speculative Fiction</a>
 
           <a class="ppm-button ppm-button--ghost"
-            href="/article-tag?tag=authorship">Authorship</a>
+            href="/article-tag?tag=writing">Writing</a>
 
           <a class="ppm-button ppm-button--ghost"
             href="/article-tag?tag=origins">Origins</a>
