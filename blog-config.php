@@ -17,7 +17,7 @@ const PPM_PUBLISH_TIMEZONE = 'America/New_York';
  * so a tag gets a landing page by being added here.
  */
 function ppm_get_tags() {
-    // The nine site categories, in nav order. Each intro states plainly
+    // The eight site categories, in nav order. Each intro states plainly
     // what the category covers, so readers and search engines both get
     // context for the shorter, more distinctive labels.
     return [
@@ -55,10 +55,6 @@ function ppm_get_tags() {
         'consciousness' => [
             'label' => 'Consciousness',
             'intro' => 'Essays on the mind and inner experience: meditation, closed-eye visualizations, inner alchemy, belief, and the parts of human awareness that science still struggles to measure.',
-        ],
-        'alchemy' => [
-            'label' => 'Alchemy',
-            'intro' => 'From Taoist inner alchemy and Hermetic laboratories to Isaac Newton\'s hidden manuscripts: the history, symbolism, and inner transformation of alchemy, and where it surfaces in OA Allen\'s metaphysical science fiction.',
         ],
         'hiddenhistories' => [
             'label' => 'Hidden Histories',
@@ -108,6 +104,7 @@ function ppm_tag_aliases() {
         'wordcraft'             => 'writingcraft',
         'selfpublishing'        => 'independentpublishing',
         'alternativerealities'  => 'worldbuilding',
+        'alchemy'               => 'consciousness',
         'origins'               => 'hiddenhistories',
         'meditation'            => 'consciousness',
         'colonization'          => 'hiddenhistories',
