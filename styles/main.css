@@ -2812,6 +2812,11 @@ html.ppm-nav-open {
   font-family: "IBM Plex Sans", system-ui, sans-serif;
 }
 
+.ppm-substack-icon {
+  vertical-align: -3px;
+  margin-right: 0.25rem;
+}
+
 .ppm-substack-alt a {
   color: inherit;
   text-decoration: underline;
