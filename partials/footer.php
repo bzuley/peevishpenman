@@ -107,6 +107,3 @@ $ppm_book_page = $ppm_book_page ?? false;
     </div>
   </div>
 </footer>
-
-</body>
-</html>
