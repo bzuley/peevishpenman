@@ -109,7 +109,7 @@ ppm_require_published($post_meta);
 
       <p>The monarch became more than an individual with authority. The role came to represent stability, continuity, law, hierarchy, and the maintenance of order. This is why stories about Rulers so often make the condition of the Ruler inseparable from the condition of the realm. A disputed monarch means a disputed kingdom. A missing monarch leaves a vacancy that must be filled. A monarch who can no longer maintain order may still possess the title while the realm falls apart around them.</p>
 
-      <p><a href="/articles/tell-me-a-big-lie">It's 2026. I'm American. Let me tell you what that's like—</a></p>
+      <p>It's 2026. I'm American. Let me tell you what that's like—</p>
 
       <p>Real events are considerably less cooperative with symbolism.</p>
 
@@ -201,7 +201,7 @@ ppm_require_published($post_meta);
 
       <p>Every Ruler therefore receives a mediated version of reality.</p>
 
-      <p>The Ruler depends on advisers who have their own loyalties, ambitions, prejudices, fears, and limitations. Some manipulate information deliberately. Others are simply wrong. A trusted adviser may protect the Ruler from bad information or become the reason the Ruler never receives good information at all.</p>
+      <p>The Ruler depends on advisers who have their own loyalties, ambitions, prejudices, fears, and limitations. Some <a href="/articles/tell-me-a-big-lie">manipulate information deliberately</a>. Others are simply wrong. A trusted adviser may protect the Ruler from bad information or become the reason the Ruler never receives good information at all.</p>
 
       <p>The more isolated the Ruler becomes, the more serious this problem gets.</p>
 

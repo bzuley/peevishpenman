@@ -176,7 +176,7 @@ $post_meta = [
       <ul>
         <li><strong>Familiarity:</strong> Information encountered repeatedly may begin to seem more credible. This is known as the illusory truth effect.</li>
         <li><strong>Confirmation bias:</strong> People tend to favor information consistent with their existing beliefs and may evaluate contradictory evidence more critically.</li>
-        <li><strong>Authority:</strong> Statements from someone perceived to have legitimate status can receive greater credibility, particularly in unfamiliar situations.</li>
+        <li><strong>Authority:</strong> Statements from someone perceived to have <a href="/articles/the-ruler">legitimate status</a> can receive greater credibility, particularly in unfamiliar situations.</li>
         <li><strong>Social agreement:</strong> When multiple people accept the same account, an individual may be less inclined to question it.</li>
         <li><strong>Emotional motivation:</strong> A reassuring explanation may be attractive because accepting the alternative would be frightening, humiliating, or costly.</li>
         <li><strong>Prior trust:</strong> Someone with a history of honesty may receive the benefit of the doubt even when making an unusual claim.</li>
@@ -196,7 +196,7 @@ $post_meta = [
 
       <p>This is especially useful in speculative fiction.</p>
 
-      <p>Imagine a colony whose inhabitants have been taught for generations that Earth was destroyed centuries ago. The claim is enormous, but for people born into the colony, it may be an accepted historical fact. Their institutions, education, and family histories all reinforce it.</p>
+      <p>Imagine a colony whose inhabitants have been taught for generations that Earth was destroyed centuries ago. The claim is enormous, but for people born into the colony, it may be an <a href="/articles/everyone-runs-on-faith">accepted historical fact</a>. Their institutions, education, and family histories all reinforce it.</p>
 
       <p>A visitor arrives and announces that Earth still exists.</p>
 
@@ -247,7 +247,7 @@ $post_meta = [
 
       <h3>5. Technically True Statements</h3>
 
-      <p>A character may deliberately encourage an incorrect inference while saying nothing false. It's most common with intelligent or cautious deceivers.</p>
+      <p>A character may deliberately encourage an incorrect inference while saying nothing false. It's most common with <a href="/articles/the-magician">intelligent or cautious deceivers</a>.</p>
 
       <blockquote><p>“I didn't see anyone use your gift card and no one has brought a coffee from that shop here.”</p></blockquote>
 
@@ -331,7 +331,7 @@ $post_meta = [
 
       <p>She broke a three month streak of radical honesty, because the simple fact is that some people just can't handle the truth.</p>
 
-      <p>Ultimately, truth builds trust and lies destroy it like one wrong move with a Jenga tower. But it's not always that simple and the grey area is the writer's domain, because sometimes lies speak hidden truths about power, motives, fear.</p>
+      <p>Ultimately, truth builds trust and lies destroy it like one wrong move with a Jenga tower. But it's not always that simple and the grey area is the writer's domain, because sometimes lies speak hidden truths about <a href="/articles/authority-of-authors">power</a>, motives, fear.</p>
 
       <p>And what we do with the truth defines our character and our characters.</p>
     </section>
