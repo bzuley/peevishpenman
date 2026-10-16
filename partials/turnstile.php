@@ -7,7 +7,7 @@
 //                       PPM_TURNSTILE_SECRET environment variable.
 // Until both are set, the check is off and sign-ups work as before.
 
-const PPM_TURNSTILE_SITE_KEY = '';
+const PPM_TURNSTILE_SITE_KEY = '0x4AAAAAAFYkke6hEGAljY6V';
 
 function ppm_turnstile_secret() {
     $env = getenv('PPM_TURNSTILE_SECRET');
