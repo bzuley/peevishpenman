@@ -3759,5 +3759,23 @@ html.ppm-nav-open {
 
 /* Cloudflare Turnstile widget in the newsletter forms; it only shows
    itself when it needs the visitor's input. */
-.ppm-turnstile { margin-top: 0.5rem; }
-.ppm-turnstile:empty { margin-top: 0; }
+.ppm-turnstile { align-self: center; }
+
+/* Takes no room in the form until the check has to be clicked. It then sits
+   between the email box and the button. */
+:not(.ppm-verify-visible) > .ppm-turnstile {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 0;
+  overflow: hidden;
+}
+
+.ppm-footer-newsletter-form.ppm-verify-visible {
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.ppm-footer-newsletter-form.ppm-verify-visible button {
+  align-self: center;
+}

@@ -16,6 +16,10 @@ function ppmTurnstileRender(form) {
         sitekey: box.dataset.ppmSitekey,
         theme: 'auto',
         appearance: 'interaction-only',
+        // Make room between the email box and the button only while the
+        // visitor actually has to click something.
+        'before-interactive-callback': () => box.parentElement.classList.add('ppm-verify-visible'),
+        'after-interactive-callback': () => box.parentElement.classList.remove('ppm-verify-visible'),
     });
 }
 
