@@ -2805,6 +2805,18 @@ html.ppm-nav-open {
   font-family: "IBM Plex Sans", system-ui, sans-serif;
 }
 
+.ppm-substack-alt {
+  font-size: 0.88rem;
+  color: var(--ppm-text-muted);
+  margin-top: 0.5rem;
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+}
+
+.ppm-substack-alt a {
+  color: inherit;
+  text-decoration: underline;
+}
+
 /* Footer Links */
 .ppm-footer-links {
   display: flex;
