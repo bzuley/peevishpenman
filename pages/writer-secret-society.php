@@ -382,7 +382,7 @@ body { padding-bottom: calc(104px + env(safe-area-inset-bottom)); }
   "bookEdition": "Third Edition",
   "author": { "@type": "Person", "name": "OA Allen", "url": "https://peevishpenman.com/pages/about" },
   "description": "Mystic wisdom, timeless methods, and practical inspiration for writers, from OA Allen. Free PDF and EPUB.",
-  "image": "https://peevishpenman.com/img/wss-cover.jpg",
+  "image": "https://peevishpenman.com/img/wss-cover.webp",
   "url": "https://peevishpenman.com/pages/writer-secret-society",
   "isAccessibleForFree": true,
   "workExample": [
@@ -428,7 +428,7 @@ body { padding-bottom: calc(104px + env(safe-area-inset-bottom)); }
         <p><strong>For Every Writer.</strong> "As writers we are no strangers to setbacks… each dismissal carrying within it the seeds for renewal, refinement, and eventually success."</p>
       </div>
       <div class="image">
-        <img src="/img/whirlwind.jpg" alt="Writer in a whirlwind of pages" width="640" height="640" loading="lazy">
+        <img src="/img/whirlwind.webp" alt="Writer in a whirlwind of pages" width="640" height="640" loading="lazy">
       </div>
     </section>
 
@@ -437,7 +437,7 @@ body { padding-bottom: calc(104px + env(safe-area-inset-bottom)); }
         <p><strong>Timeless Methods.</strong> "To cultivate the elusive condition known as luck, venture into uncharted territories… it's about recognizing the potential in every opportunity."</p>
       </div>
       <div class="image">
-        <img src="/img/book-boy.jpg" alt="Boy reading a book" width="960" height="960" loading="lazy">
+        <img src="/img/book-boy.webp" alt="Boy reading a book" width="960" height="960" loading="lazy">
       </div>
     </section>
 
@@ -446,7 +446,7 @@ body { padding-bottom: calc(104px + env(safe-area-inset-bottom)); }
         <p><strong>Practical Wisdom.</strong> "The first one hundred thousand words should be expelled from the mind rapidly then set aside so the education of the writer can begin." One member of the society <a class="ppm-inline-link" href="/articles/confirmed-independent-publisher">wrote hers off entirely</a> before figuring out what she actually had to say.</p>
       </div>
       <div class="image">
-        <img src="/img/librarian.jpg" alt="Austere librarian portrait" width="960" height="960" loading="lazy">
+        <img src="/img/librarian.webp" alt="Austere librarian portrait" width="960" height="960" loading="lazy">
       </div>
     </section>
 
@@ -454,7 +454,7 @@ body { padding-bottom: calc(104px + env(safe-area-inset-bottom)); }
 
     <section class="book">
       <p>Here, you are not just learning to write, but are being written into the very fabric of a writer's journey. Welcome to the society.</p>
-      <img src="/img/wss-cover.jpg" alt="The Handbook of the Writer Secret Society — cover" width="720" height="720" loading="lazy">
+      <img src="/img/wss-cover.webp" alt="The Handbook of the Writer Secret Society — cover" width="720" height="720" loading="lazy">
     </section>
 
     <section class="panel s–small">

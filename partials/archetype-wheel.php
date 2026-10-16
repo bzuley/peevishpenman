@@ -8,7 +8,7 @@ $archetype_series = ppm_get_archetype_posts();
 ?>
 <figure class="ppm-archetype-wheel">
   <img
-    src="/img/archetypes/archetype_wheel.png"
+    src="/img/archetypes/archetype_wheel.webp"
     alt="A wheel diagram showing all twelve character archetypes arranged in a circle"
     loading="lazy"
   >
