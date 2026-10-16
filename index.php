@@ -177,10 +177,10 @@
       <?php else: ?>
       <form action="/partials/newsletter-signup" method="POST" class="ppm-home-widget-form">
         <input type="email" name="email" placeholder="Your email" required aria-label="Email address">
+        <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/partials/turnstile.php'; ppm_turnstile_widget(); ?>
         <button type="submit" aria-label="Join the newsletter now">Join Now</button>
         <input type="hidden" name="form" value="home">
         <input type="text" name="website" class="ppm-signup-trap" tabindex="-1" autocomplete="off" aria-hidden="true">
-        <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/partials/turnstile.php'; ppm_turnstile_widget(); ?>
       </form>
 
       <?php if (($_GET['form'] ?? '') === 'home' && ($_GET['signup'] ?? '') === 'error'): ?>

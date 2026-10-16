@@ -54,11 +54,11 @@ $ppm_book_page = $ppm_book_page ?? false;
     <form action="/partials/newsletter-signup" method="POST" id="newsletter-form">
       <div class="ppm-footer-newsletter-form">
         <input type="email" name="email" placeholder="Your email" required aria-label="Email address">
+        <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/partials/turnstile.php'; ppm_turnstile_widget(); ?>
         <button type="submit" aria-label="Join the newsletter now">Join Now</button>
       </div>
       <input type="hidden" name="form" value="footer">
       <input type="text" name="website" class="ppm-signup-trap" tabindex="-1" autocomplete="off" aria-hidden="true">
-      <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/partials/turnstile.php'; ppm_turnstile_widget(); ?>
 
       <?php if (($_GET['form'] ?? '') === 'footer' && ($_GET['signup'] ?? '') === 'error'): ?>
         <p class="ppm-footer-message ppm-footer-message-error" role="alert">That didn&rsquo;t go through. Please check your email address and try again.</p>
