@@ -103,6 +103,17 @@ RewriteRule ^articles/peevish-penman/([^/]+?)/?$ /articles/$1 [R=301,L]
 RewriteCond %{DOCUMENT_ROOT}/articles/$1.php -f
 RewriteRule ^\d{4}/\d{2}/([^/]+?)\.html$ /articles/$1 [R=301,L,QSD]
 
+# Old Blogger-style label URLs (/tagged/<tag>) go to the tag landing page.
+# Retired tags go straight to the tag they were merged into (one hop);
+# any other tag goes to /article-tag, which 301s merged tags or answers
+# its own 404 for tags that do not exist.
+RewriteRule ^tagged/selfpublishing/?$ /article-tag?tag=independentpublishing [R=301,L,NC]
+RewriteRule ^tagged/sciencefiction/?$ /article-tag?tag=speculativefiction [R=301,L,NC]
+RewriteRule ^tagged/([A-Za-z0-9_-]+)/?$ /article-tag?tag=$1 [R=301,L,NC]
+
+# Old slug of the Magician archetype article
+RewriteRule ^(?:articles/)?magician-archetype/?$ /articles/the-magician [R=301,L,NC]
+
 # The contact page was removed; the About page is where readers reach OA Allen
 RewriteRule ^pages/contact(\.php)?/?$ /pages/about [R=301,L,NC]
 
