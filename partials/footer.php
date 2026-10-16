@@ -67,6 +67,7 @@ $ppm_book_page = $ppm_book_page ?? false;
     <?php endif; ?>
     
     <p class="ppm-footer-newsletter-meta">Two to four emails a year. Unsubscribe anytime.</p>
+    <p class="ppm-substack-alt">Prefer Substack? <a href="https://peevishpenman.substack.com/subscribe" target="_blank" rel="noopener">Subscribe there instead</a>.</p>
   </section>
 
   <!-- Footer Links -->

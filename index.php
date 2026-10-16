@@ -187,6 +187,7 @@
         <p class="ppm-footer-message ppm-footer-message-error" role="alert">That didn&rsquo;t go through. Please check your email address and try again.</p>
       <?php endif; ?>
       <?php endif; ?>
+      <p class="ppm-substack-alt">Prefer Substack? <a href="https://peevishpenman.substack.com/subscribe" target="_blank" rel="noopener">Subscribe there instead</a>.</p>
     </div>
     </aside>
   </section>
