@@ -91,7 +91,7 @@ ppm_require_published($post_meta);
     <section>
       <h2>Inner Alchemy and Outer Alchemy</h2>
 
-      <p>Alchemy is usually divided into two broad forms. <strong>Outer alchemy</strong> concerns the transformation of matter: metals, minerals, medicines, tinctures, laboratory processes, and, most famously, the attempt to transform base metals into gold. <strong>Inner alchemy</strong> turns the same idea inward. The material being transformed is the practitioner. Mind, spirit, consciousness, character, perception and even the body become the laboratory. The goal is not merely to possess gold, but to become something more refined.</p>
+      <p>Alchemy is usually divided into two broad forms. <strong>Outer alchemy</strong> concerns the transformation of matter: metals, minerals, medicines, tinctures, laboratory processes, and, most famously, the attempt to transform base metals into gold. <strong><a href="/articles/inner-alchemy-bain-marie">Inner alchemy</a></strong> turns the same idea inward. The material being transformed is the practitioner. Mind, spirit, consciousness, character, perception and even the body become the laboratory. The goal is not merely to possess gold, but to become something more refined.</p>
 
       <p>The most interesting case of a secret alchemist was one of the earliest.</p>
     </section>

@@ -77,6 +77,8 @@ ppm_require_published($post_meta);
 
       <p>The Three Laws of Robotics are a perfect example. On paper, they&rsquo;re sensible safeguards. In practice, they&rsquo;re an invitation to discover how many different ways a sensible rule can go wrong.</p>
 
+      <p>Asimov didn&rsquo;t invent the fictional robot, either. <a href="/articles/first-robots-in-fiction">The first robots in fiction</a> showed up long before he did.</p>
+
       <p>His <em>Foundation</em> stories perform a similar trick on a much larger scale. What happens when we treat civilization as something that can be studied, predicted, and perhaps manipulated? And what happens when actual people refuse to behave like the mathematics says they should?</p>
 
       <p>Independent science fiction is an excellent place to look for writers willing to ask equally inconvenient questions. Without the same commercial expectations as a major publishing imprint, indie authors can take their speculative premises in some wonderfully peculiar directions.</p>

@@ -97,13 +97,17 @@ ppm_require_published($post_meta);
     </section>
 
     <section>
-      <p><strong>1. Story structure:</strong> Have you hit all the turning points of the story? Have you pushed your protagonist to the point of torture? Is there too much fat and not enough action? Is your theme clear?</p>
+      <h2>1. Story Structure</h2>
+
+      <p>Have you hit all the turning points of the story? Have you pushed your protagonist to the point of torture? Is there too much fat and not enough action? Is your theme clear?</p>
 
       <p>Take a good look at the story foundation and be brutally honest. Often in a first draft, we beat the reader over the head. Have a writer or trusted advisor read it to identify holes. But to be honest, this step should happen long before you start the detailed editing. Just sayin’.</p>
     </section>
 
     <section>
-      <p><strong>2. Scenes:</strong> Each scene has to be meaningful, and hopefully, serve more than one purpose. If all it does is provide exposition of a character or a single plot point, it’s not developed enough.</p>
+      <h2>2. Scenes</h2>
+
+      <p>Each scene has to be meaningful, and hopefully, serve more than one purpose. If all it does is provide exposition of a character or a single plot point, it’s not developed enough.</p>
 
       <p>Take each scene one at a time and ask:</p>
 
@@ -121,38 +125,52 @@ ppm_require_published($post_meta);
     </section>
 
     <section>
-      <p><strong>3. Start late and leave early:</strong> Now you have the scenes you want, make them late for the party. Once you think you’ve entered the room late enough, enter even later.</p>
+      <h2>3. Start Late and Leave Early</h2>
+
+      <p>Now you have the scenes you want, make them late for the party. Once you think you’ve entered the room late enough, enter even later.</p>
 
       <p>Challenge each scene to serve its purpose in fewer words. Above all, choose the final line of the scene carefully. Does it leave the audience hanging, needing to know more? It should.</p>
     </section>
 
     <section>
-      <p><strong>4. Action should mean action:</strong> Scripts are entirely different than novels. Less is more. No flowery, self-indulgent, garbage prose. Get to the point. Fast. Cut those <a href="/articles/nine-parts-of-speech-f-word">adverbs and adjectives</a>. Only write what the audience can see on screen. Period.</p>
+      <h2>4. Action Should Mean Action</h2>
+
+      <p>Scripts are entirely different than novels. Less is more. No flowery, self-indulgent, garbage prose. Get to the point. Fast. Cut those <a href="/articles/nine-parts-of-speech-f-word">adverbs and adjectives</a>. Only write what the audience can see on screen. Period.</p>
     </section>
 
     <section>
-      <p><strong>5. Talk ain’t cheap:</strong> Read every piece of dialogue out loud. Most people write rambling dialogue in early drafts. Make it sound natural in as few words as possible.<br>
+      <h2>5. Talk Ain’t Cheap</h2>
+
+      <p>Read every piece of dialogue out loud. Most people write rambling dialogue in early drafts. Make it sound natural in as few words as possible.<br>
       If you can convey in ACTION what the character is spewing from their mouth, do it.</p>
     </section>
 
     <section>
-      <p><strong>6. Divide and conquer:</strong> Read every line of action and dialogue as a standalone to determine if it is imperative to either the subplot or the main plot. With a 120-page limit, there’s no room for fluff, except on the peanut butter sandwich.</p>
+      <h2>6. Divide and Conquer</h2>
+
+      <p>Read every line of action and dialogue as a standalone to determine if it is imperative to either the subplot or the main plot. With a 120-page limit, there’s no room for fluff, except on the peanut butter sandwich.</p>
 
       <p>Script consultant, Marcus Leary, once wrote a post advising screenwriters to use the 140-character Twitter rule when writing action and dialogue. Great advice: <a href="http://readerproof.blogspot.com/2010/06/twitter-pacing.html" rel="noopener">Marcus Leary on Twitter pacing</a>.</p>
     </section>
 
     <section>
-      <p><strong>7. Simon says, “go backwards”:</strong> Screenwriter Holly Nault Pillar taught me the trick of reading the script backwards, one line at a time. This way, you don’t get distracted and pulled into the story. You simply are an editor of words. Ask yourself, “Can this story be told without this line?” The fat will rise to the top.</p>
+      <h2>7. Simon Says, “Go Backwards”</h2>
+
+      <p>Screenwriter Holly Nault Pillar taught me the trick of reading the script backwards, one line at a time. This way, you don’t get distracted and pulled into the story. You simply are an editor of words. Ask yourself, “Can this story be told without this line?” The fat will rise to the top.</p>
     </section>
 
     <section>
-      <p><strong>8. Make it a silent movie:</strong> Remove all the dialogue… every single word. Then read the action as if it were a silent movie. This will force you to avoid the “talking heads” problem of exposition via dialogue. See what you can remove from speech and replace with action.</p>
+      <h2>8. Make It a Silent Movie</h2>
+
+      <p>Remove all the dialogue… every single word. Then read the action as if it were a silent movie. This will force you to avoid the “talking heads” problem of exposition via dialogue. See what you can remove from speech and replace with action.</p>
 
       <p>Once the script makes sense as a silent film, add back any dialogue that is needed. You’ll be shocked how much isn’t. Force yourself to be picky. Allow each character only one treat, e.g. a joke or throwaway line, but only one. Trust your audience to get it. Be careful not to use your only file of the script though! Create a new one just for this exercise. Tip credited to Doug Kissock.</p>
     </section>
 
     <section>
-      <p><strong>9. Wordsmithing:</strong> ScreenwritingU, a top screenwriting instruction site, discussed rewrites in a recent teleconference. Their wordsmithing tips apply to editing too:</p>
+      <h2>9. Wordsmithing</h2>
+
+      <p>ScreenwritingU, a top screenwriting instruction site, discussed rewrites in a recent teleconference. Their wordsmithing tips apply to editing too:</p>
 
       <p>Give more meaning with fewer words.</p>
 
@@ -160,16 +178,22 @@ ppm_require_published($post_meta);
     </section>
 
     <section>
-      <p><strong>10. Be quotable:</strong> Your script will pop if you create one or two lines an audience will be quoting for years. We’ve all heard Rhett Butler’s line, “Frankly, my dear, I don’t give a damn,” more times than Scarlett got married. You need to create that type of line in your own film.</p>
+      <h2>10. Be Quotable</h2>
+
+      <p>Your script will pop if you create one or two lines an audience will be quoting for years. We’ve all heard Rhett Butler’s line, “Frankly, my dear, I don’t give a damn,” more times than Scarlett got married. You need to create that type of line in your own film.</p>
 
       <p>ScreenwritingU recommends finding that opportunity by looking in the most emotional moments of your script. At the height of a moving scene, examine the dialogue. There’s your sweet spot. Make sure the line was set up beforehand and offers perspective, as well as heightening the emotion.</p>
     </section>
 
     <section>
-      <p><strong>11. You have one chance to make a first impression:</strong> The opening lines of your screenplay introduce you as a professional. That first page should show your voice, talent and ability to grab a reader. By “voice” I’m referring to the style of writing that sets you apart from others. What makes your voice different? Don’t imitate other styles, find one that flows from you naturally… and trust it.</p>
+      <h2>11. You Have One Chance to Make a First Impression</h2>
+
+      <p>The opening lines of your screenplay introduce you as a professional. That first page should show your voice, talent and ability to grab a reader. By “voice” I’m referring to the style of writing that sets you apart from others. What makes your voice different? Don’t imitate other styles, find one that flows from you naturally… and trust it.</p>
     </section>
 
     <section>
+      <h2>Patience Is the Perfect Alibi</h2>
+
       <p>Every successful murderer has patience. If I’m too exhausted to edit, I put it down for a few days. It’s okay to walk away. In fact, I encourage it. <a href="/articles/success-is-a-process">I never edit a piece I’ve just finished</a>. I’m amazed at the flaws I find a week later. If you are resistant to patience, remember, once a script is out the door and in a producer’s hands, you’ll be in their tracking system. Even if they pass on it, the company labels the quality of your writing. Don’t be a sloppy murderer. Impatience could cost you your career.</p>
 
       <p>By the way, four days after receiving the email, I had cut the 25 pages. The script is much tighter… and I didn’t leave fingerprints</p>

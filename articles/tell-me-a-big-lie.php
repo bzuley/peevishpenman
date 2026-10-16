@@ -2,7 +2,7 @@
 $post_meta = [
   'image'   => '/img/general/big_nose_liar.webp',
   'slug'    => 'tell-me-a-big-lie',
-  'title'   => 'Tell Me a Big Lie: How to Write Liars, Deception, and Broken Trust in Fiction',
+  'title'   => 'Tell Me a Big Lie: How to Write Liars and Deception in Fiction',
   'excerpt' => 'Types of lies, why people believe them, the big lie, and eleven ways to show a character is lying—a writer\'s guide to deception and broken trust in fiction.',
   'date'    => '2026-10-16',
   'added'   => '2026-10-16',

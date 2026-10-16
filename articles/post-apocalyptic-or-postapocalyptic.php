@@ -2,7 +2,7 @@
 $post_meta = [
   'image'   => '/img/general/wasteland_alas_babylon.webp',
   'slug'    => 'post-apocalyptic-or-postapocalyptic',
-  'title'   => 'Post Apocalyptic or Post-Apocalyptic or Postapocalyptic?',
+  'title'   => 'Post-Apocalyptic or Postapocalyptic?',
   'excerpt' => 'A tongue-in-cheek case for dropping the hyphen from "post-apocalyptic"—and why search engines and plain laziness might matter more than the rulebook.',
   'date'    => '2016-02-01',
   'added'   => '2026-09-26',
@@ -99,6 +99,8 @@ $post_meta = [
     </section>
 
     <section>
+      <h2>The Rules of Hyphenation</h2>
+
       <p>
         I understand why we hyphenate words. We're supposed to hyphenate "two or more words that come before a
         noun and act as a single idea." It's one of the rules. Another rule is to "only hyphenate words when it
@@ -130,6 +132,8 @@ $post_meta = [
     </section>
 
     <section>
+      <h2>Is &ldquo;Post&rdquo; a Preposition?</h2>
+
       <p>
         So what if the only reason to hyphenate "post-apocalyptic" is because we reject the
         post-as-a-preposition argument? Truly desperate people sometimes attempt to classify "post" in this
@@ -152,6 +156,8 @@ $post_meta = [
     </section>
 
     <section>
+      <h2>The Case for &ldquo;Postapocalyptic&rdquo;</h2>
+
       <p>
         No, it just doesn't work, and it doesn't rule out "postapocalyptic" as the obvious evolution of the term
         for common use. In fact, I've noticed—many times—that my spell check doesn't recognize
@@ -187,6 +193,8 @@ $post_meta = [
     </section>
 
     <section>
+      <h2>Apocalyptic, Post-Apocalyptic, or Dystopian?</h2>
+
       <p>
         Yet does the term "postapocalyptic" differ in use from the apocalyptic? NOT ENOUGH. Trust me. I write
         <a href="/pages/bright-dark">books that take place 500 years after the apocalypse</a>. I've been told I should call them dystopian
@@ -203,6 +211,8 @@ $post_meta = [
     </section>
 
     <section>
+      <h2>Why I Write &ldquo;Post Apocalyptic&rdquo;</h2>
+
       <p>
         Though no rules of grammar can support it, I typically use "post apocalyptic" rather than the spaceless
         and hyphenated alternatives. Though offensive and unjustifiable, it's the most technologically
