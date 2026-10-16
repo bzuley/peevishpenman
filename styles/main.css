@@ -2813,6 +2813,7 @@ html.ppm-nav-open {
 }
 
 .ppm-substack-icon {
+  display: inline-block;
   vertical-align: -3px;
   margin-right: 0.25rem;
 }
