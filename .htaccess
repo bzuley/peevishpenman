@@ -13,6 +13,16 @@ ErrorDocument 404 /404.php
 # year. Deliberately no includeSubDomains or preload.
 <IfModule mod_headers.c>
   Header always set Strict-Transport-Security "max-age=31536000"
+  # Browsers use each file's declared type instead of guessing one.
+  Header always set X-Content-Type-Options "nosniff"
+  # Only this site may show its pages in a frame (stops clickjacking).
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Content-Security-Policy "frame-ancestors 'self'"
+  # Other sites see where a visitor came from, not the full page URL.
+  # setifempty leaves pages that send their own (newsletter-admin) alone.
+  Header setifempty Referrer-Policy "strict-origin-when-cross-origin"
+  # Features the site never uses stay off.
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=(), usb=()"
 </IfModule>
 
 # Browser caching. CSS and JS are cached for a year: every page links them

@@ -1,7 +1,3 @@
-document.getElementById('ppm-menu-toggle')?.addEventListener('click', () => {
-    document.documentElement.classList.toggle('ppm-nav-open');
-});
-
 // Newsletter sign-up: submit in the background and swap the form for a
 // confirmation in place, so the page doesn't reload and jump around. Without
 // JavaScript the form still posts normally and the server redirects back.
