@@ -3739,3 +3739,7 @@ html.ppm-nav-open {
 :root[data-theme="light"] main.dc-page > section {
   border-color: rgba(11, 14, 19, 0.15);
 }
+
+/* Cloudflare Turnstile widget in the newsletter forms; it only shows
+   itself when it needs the visitor's input. */
+.ppm-turnstile { margin-top: 0.5rem; }
