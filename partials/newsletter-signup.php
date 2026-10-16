@@ -2,6 +2,7 @@
 // Newsletter sign-up handler: adds the visitor to the sign-up sheet
 // (see partials/newsletter-lib.php) and sends them back to the form.
 require_once __DIR__ . '/newsletter-lib.php';
+require_once __DIR__ . '/turnstile.php';
 
 // The page the visitor signed up on, if the Referer is this site; else ''.
 function ppm_signup_referer_path() {
@@ -46,9 +47,21 @@ if (($_POST['website'] ?? '') !== '') {
     ppm_signup_redirect('success', $form);
 }
 
+// "Verify you're human" check (Cloudflare Turnstile), when it's set up.
+if (!ppm_turnstile_ok($_POST['cf-turnstile-response'] ?? '', $_SERVER['REMOTE_ADDR'] ?? '')) {
+    ppm_signup_redirect('error', $form);
+}
+
 $email = ppm_newsletter_normalize_email($_POST['email'] ?? '');
 if ($email === null) {
     ppm_signup_redirect('error', $form);
+}
+
+// Throwaway-mailbox addresses and sign-up floods get the same "success"
+// answer as a real sign-up, so bots learn nothing, but nothing is saved.
+if (ppm_newsletter_blocked_domain($email) ||
+    !ppm_newsletter_rate_ok($_SERVER['REMOTE_ADDR'] ?? '')) {
+    ppm_signup_redirect('success', $form);
 }
 
 $saved = ppm_newsletter_subscribe($email, ppm_signup_referer_path());

@@ -44,6 +44,8 @@ document.addEventListener('submit', async (event) => {
         error.setAttribute('role', 'alert');
         error.textContent = 'That didn’t go through. Please check your email address and try again.';
         form.after(error);
+        // A Turnstile token works once, so get a fresh one for the retry.
+        if (window.turnstile) window.turnstile.reset(form.querySelector('.cf-turnstile'));
         if (button) button.disabled = false;
     }
 });

@@ -58,6 +58,7 @@ $ppm_book_page = $ppm_book_page ?? false;
       </div>
       <input type="hidden" name="form" value="footer">
       <input type="text" name="website" class="ppm-signup-trap" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/partials/turnstile.php'; ppm_turnstile_widget(); ?>
 
       <?php if (($_GET['form'] ?? '') === 'footer' && ($_GET['signup'] ?? '') === 'error'): ?>
         <p class="ppm-footer-message ppm-footer-message-error" role="alert">That didn&rsquo;t go through. Please check your email address and try again.</p>

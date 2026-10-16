@@ -24,6 +24,57 @@ function ppm_newsletter_normalize_email($email) {
     return $email;
 }
 
+// Domains of throwaway-mailbox services that bots use to sign up. Sign-ups
+// from them are quietly dropped. Add a domain here when more spam shows up.
+function ppm_newsletter_blocked_domain($email) {
+    static $blocked = [
+        'mailchuwee.com', 'sigismail.com',
+        'mailinator.com', 'guerrillamail.com', 'sharklasers.com', 'yopmail.com',
+        '10minutemail.com', 'tempmail.com', 'temp-mail.org', 'trashmail.com',
+        'getnada.com', 'throwawaymail.com', 'maildrop.cc', 'dispostable.com',
+    ];
+    $domain = substr(strrchr($email, '@'), 1);
+    foreach ($blocked as $b) {
+        if ($domain === $b || substr($domain, -strlen($b) - 1) === '.' . $b) {
+            return true;
+        }
+    }
+    return false;
+}
+
+// Allows a visitor (by IP) a few sign-ups per hour; bots that sweep in
+// dozens of addresses run into this. Returns false once the limit is hit.
+// Only a hash of the IP is kept, and entries expire after an hour.
+function ppm_newsletter_rate_ok($ip, $limit = 3, $window = 3600) {
+    if (!is_dir(PPM_NEWSLETTER_DIR) && !mkdir(PPM_NEWSLETTER_DIR, 0755, true)) {
+        return true;
+    }
+    $fh = fopen(PPM_NEWSLETTER_DIR . '/signup-rate.json', 'c+');
+    if ($fh === false) {
+        return true;
+    }
+    flock($fh, LOCK_EX);
+    $now = time();
+    $data = json_decode(stream_get_contents($fh), true);
+    $data = is_array($data) ? $data : [];
+    foreach ($data as $k => $times) {
+        $data[$k] = array_values(array_filter((array) $times, fn($t) => $t > $now - $window));
+        if (!$data[$k]) unset($data[$k]);
+    }
+    $key = hash('sha256', $ip);
+    $ok = count($data[$key] ?? []) < $limit;
+    if ($ok) {
+        $data[$key][] = $now;
+    }
+    rewind($fh);
+    ftruncate($fh, 0);
+    fwrite($fh, json_encode($data));
+    fflush($fh);
+    flock($fh, LOCK_UN);
+    fclose($fh);
+    return $ok;
+}
+
 // Strip characters that would make a spreadsheet run a cell as a formula.
 function ppm_newsletter_cell($value) {
     return preg_replace('/^[=+\-@\t\r]+/', '', (string) $value);
