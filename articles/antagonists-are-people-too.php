@@ -67,7 +67,7 @@ ppm_require_published($post_meta);
   <p class="ppm-article-kicker">Antagonists</p>
   <h1><?php echo htmlspecialchars($post_meta['title']); ?></h1>
   <div class="ppm-article-meta">
-    by <?php echo htmlspecialchars($post_meta['author']); ?> &middot;
+    by <strong class="ppm-article-author"><?php echo htmlspecialchars($post_meta['author']); ?></strong> &middot;
     <time datetime="<?php echo htmlspecialchars($post_meta['date']); ?>">
       <?php echo date('F j, Y', strtotime($post_meta['date'])); ?>
     </time>
