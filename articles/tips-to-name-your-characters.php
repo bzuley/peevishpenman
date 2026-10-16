@@ -84,61 +84,99 @@ ppm_require_published($post_meta);
     <section>
       <h2>Choose a Name That Means Something</h2>
 
-      <ol>
-        <li><strong>First and foremost, serendipity is your friend. If it works, well then, it works.</strong><br>
-        Trust your intuition.</li>
-        <li><strong>If you’re clever, you can name them for <a href="/article-tag?tag=archetypes">what they represent</a>.</strong><br>
-        “Butch” the butcher? Maybe, but be smart about it and check suggestion number ten.</li>
-        <li><strong>Find a book of names and consider the symbolism within the name.</strong><br>
-        Though I hope I never meet the nun named Chastity.</li>
-        <li><strong>One syllable, two at most for men. On occasion, females can get away with more.</strong><br>
-        Come on now, nobody wants to keep reading the name Bilbonicofillia.</li>
-        <li><strong>Consider the name a snapshot of your character.</strong><br>
-        Don’t name your killer Sally Jones. Think, Sal “The Blade” Jones.</li>
-        <li><strong>Their name should roll off the tongue.</strong><br>
-        See number 3.</li>
-      </ol>
+      <p><strong>1. First and foremost, serendipity is your friend. If it works, well then, it works.</strong></p>
+
+      <p>Trust your intuition.</p>
+    </section>
+
+    <section>
+      <p><strong>2. If you’re clever, you can name them for <a href="/article-tag?tag=archetypes">what they represent</a>.</strong></p>
+
+      <p>“Butch” the butcher? Maybe, but be smart about it and check suggestion number ten.</p>
+    </section>
+
+    <section>
+      <p><strong>3. Find a book of names and consider the symbolism within the name.</strong></p>
+
+      <p>Though I hope I never meet the nun named Chastity.</p>
+    </section>
+
+    <section>
+      <p><strong>4. One syllable, two at most for men. On occasion, females can get away with more.</strong></p>
+
+      <p>Come on now, nobody wants to keep reading the name Bilbonicofillia.</p>
+    </section>
+
+    <section>
+      <p><strong>5. Consider the name a snapshot of your character.</strong></p>
+
+      <p>Don’t name your killer Sally Jones. Think, Sal “The Blade” Jones.</p>
+    </section>
+
+    <section>
+      <p><strong>6. Their name should roll off the tongue.</strong></p>
+
+      <p>See number 3.</p>
     </section>
 
     <section>
       <h2>Fit the Name to the Time Period</h2>
 
-      <ol start="7">
-        <li><strong>Remember there were no surnames prior to the 12th Century. Even then, people were named for their place of birth or profession. For example, my last name is, “Schulze”, meaning sheriff or lawman in medieval Germany.</strong></li>
-        <li><strong>Insure their name is appropriate for the time period in which the story takes place.</strong>
+      <p><strong>7. Remember there were no surnames prior to the 12th Century. Even then, people were named for their place of birth or profession. For example, my last name is, “Schulze”, meaning sheriff or lawman in medieval Germany.</strong></p>
+    </section>
 
-          <p>There are ample websites to help you here. In my case, I write historical fiction set in the mid 19th century, so I walk Civil War cemeteries searching for names. I combine the first name from one marker and the last from another. Works every time. By the way, here’s a site that’ll help. <a href="https://www.ssa.gov/OACT/babynames" rel="noopener">www.ssa.gov/OACT/babynames</a>.</p>
-        </li>
-      </ol>
+    <section>
+      <p><strong>8. Insure their name is appropriate for the time period in which the story takes place.</strong></p>
+
+      <p>There are ample websites to help you here. In my case, I write historical fiction set in the mid 19th century, so I walk Civil War cemeteries searching for names. I combine the first name from one marker and the last from another. Works every time. By the way, here’s a site that’ll help. <a href="https://www.ssa.gov/OACT/babynames" rel="noopener">www.ssa.gov/OACT/babynames</a>.</p>
     </section>
 
     <section>
       <h2>Names to Avoid</h2>
 
-      <ol start="9">
-        <li><strong>Use only one exotic name per novel.</strong><br>
-        They get real weird real fast.</li>
-        <li><strong>Stay away from cute.</strong><br>
-        Really, how many Bambi’s have you actually met?</li>
-        <li><strong>Stay away from similar letters and spellings.</strong><br>
-        Imagine Tom and Thom sword fighting – Tom swung! Thom ducked!</li>
-        <li><strong>Avoid Alliteration. At least use it sparingly.</strong><br>
-        Thomas Tompkins won’t encourage readers to buzz your book.<br>
-        (Yes, Bilbo Baggins is an exception.)</li>
-        <li><strong>Don’t name fictional characters after famous people or characters.</strong><br>
-        Tom and Jerry will simply give your readers the wrong hook.</li>
-        <li><strong>Stay away from names that end in “s.”</strong><br>
-        Erasmus’s sour samples… See my point? See number six.</li>
-      </ol>
+      <p><strong>9. Use only one exotic name per novel.</strong></p>
+
+      <p>They get real weird real fast.</p>
+    </section>
+
+    <section>
+      <p><strong>10. Stay away from cute.</strong></p>
+
+      <p>Really, how many Bambi’s have you actually met?</p>
+    </section>
+
+    <section>
+      <p><strong>11. Stay away from similar letters and spellings.</strong></p>
+
+      <p>Imagine Tom and Thom sword fighting – Tom swung! Thom ducked!</p>
+    </section>
+
+    <section>
+      <p><strong>12. Avoid Alliteration. At least use it sparingly.</strong></p>
+
+      <p>Thomas Tompkins won’t encourage readers to buzz your book.</p>
+
+      <p>(Yes, Bilbo Baggins is an exception.)</p>
+    </section>
+
+    <section>
+      <p><strong>13. Don’t name fictional characters after famous people or characters.</strong></p>
+
+      <p>Tom and Jerry will simply give your readers the wrong hook.</p>
+    </section>
+
+    <section>
+      <p><strong>14. Stay away from names that end in “s.”</strong></p>
+
+      <p>Erasmus’s sour samples… See my point? See number six.</p>
     </section>
 
     <section>
       <h2>Keep a File of Names</h2>
 
-      <ol start="15">
-        <li><strong>Keep a file of names you run across that strike you.</strong><br>
-        You’ll thank me for that one someday.</li>
-      </ol>
+      <p><strong>15. Keep a file of names you run across that strike you.</strong></p>
+
+      <p>You’ll thank me for that one someday.</p>
 
       <p>I am certain there are a thousand other tips out there, but this should get you started.</p>
 
