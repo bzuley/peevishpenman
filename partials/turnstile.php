@@ -25,10 +25,12 @@ function ppm_turnstile_widget() {
         return;
     }
     if (!$script) {
-        echo '<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>' . "\n";
+        echo '<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" async defer></script>' . "\n";
         $script = true;
     }
-    echo '<div class="cf-turnstile ppm-turnstile" data-sitekey="' . htmlspecialchars(PPM_TURNSTILE_SITE_KEY) . '" data-theme="auto" data-appearance="interaction-only"></div>' . "\n";
+    // Not drawn until the visitor clicks into the email box (js/main.js), so
+    // the check never appears before they've started signing up.
+    echo '<div class="ppm-turnstile" data-ppm-sitekey="' . htmlspecialchars(PPM_TURNSTILE_SITE_KEY) . '"></div>' . "\n";
 }
 
 // True if the visitor passed the check. Also true when the check isn't set

@@ -3760,3 +3760,4 @@ html.ppm-nav-open {
 /* Cloudflare Turnstile widget in the newsletter forms; it only shows
    itself when it needs the visitor's input. */
 .ppm-turnstile { margin-top: 0.5rem; }
+.ppm-turnstile:empty { margin-top: 0; }

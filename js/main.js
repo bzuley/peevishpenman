@@ -6,6 +6,34 @@ document.getElementById('ppm-menu-toggle')?.addEventListener('click', () => {
 // confirmation in place, so the page doesn't reload and jump around. Without
 // JavaScript the form still posts normally and the server redirects back.
 // Listens on document because this script loads before the footer markup.
+// The "verify you're human" check is only drawn once the visitor starts on
+// the form, so it doesn't sit there before they've entered anything.
+function ppmTurnstileRender(form) {
+    const box = form.querySelector('.ppm-turnstile');
+    if (!box || box.dataset.rendered || !window.turnstile) return;
+    box.dataset.rendered = '1';
+    window.turnstile.render(box, {
+        sitekey: box.dataset.ppmSitekey,
+        theme: 'auto',
+        appearance: 'interaction-only',
+    });
+}
+
+document.addEventListener('focusin', (event) => {
+    const form = event.target.closest?.('form[action="/partials/newsletter-signup"]');
+    if (form) ppmTurnstileRender(form);
+});
+
+// Gives the check a few seconds to finish if the visitor submits right away.
+async function ppmTurnstileWait(form) {
+    if (!form.querySelector('.ppm-turnstile')) return;
+    for (let i = 0; i < 50; i++) {
+        ppmTurnstileRender(form);
+        if (form.querySelector('[name="cf-turnstile-response"]')?.value) return;
+        await new Promise((resolve) => setTimeout(resolve, 200));
+    }
+}
+
 document.addEventListener('submit', async (event) => {
     const form = event.target;
     if (!form.matches('form[action="/partials/newsletter-signup"]')) return;
@@ -13,6 +41,8 @@ document.addEventListener('submit', async (event) => {
 
     const button = form.querySelector('button[type="submit"]');
     if (button) button.disabled = true;
+
+    await ppmTurnstileWait(form);
 
     let ok = false;
     try {
@@ -45,7 +75,8 @@ document.addEventListener('submit', async (event) => {
         error.textContent = 'That didn’t go through. Please check your email address and try again.';
         form.after(error);
         // A Turnstile token works once, so get a fresh one for the retry.
-        if (window.turnstile) window.turnstile.reset(form.querySelector('.cf-turnstile'));
+        const box = form.querySelector('.ppm-turnstile');
+        if (window.turnstile && box?.dataset.rendered) window.turnstile.reset(box);
         if (button) button.disabled = false;
     }
 });
