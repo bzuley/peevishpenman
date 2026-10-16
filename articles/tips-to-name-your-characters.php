@@ -5,7 +5,7 @@ $post_meta = [
   'slug'    => 'tips-to-name-your-characters',
   'title'   => 'Tips to Name Your Characters',
   'excerpt' => 'C. Patrick Schulze shares fifteen tips for naming the characters in your novel, from medieval surnames and Civil War cemeteries to why you should skip the alliteration.',
-  'date'    => '2009-12-01',
+  'date'    => '2009-11-09',
   'added'   => '2026-10-16',
   // Comma-separated tags, e.g. 'independentpublishing, sciencefiction'.
   // Powers the quicklink buttons on index.php (see /article-tag.php).
