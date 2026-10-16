@@ -142,7 +142,6 @@ ppm_require_published($post_meta);
 
       <p>Another tip I can share is this: STOP. Get up and leave. Go for a walk. Listen to some music that isn't writerly; get a sheet of paper and a pencil and go to another room and MAKE YOURSELF draw a picture of what you're looking at. Pick your image and DO IT. You might surprise yourself with how good you might be or... you might confirm your opinion that you suck at illustration. I got an iPad for Christmas and last night I was feeling like fetid garbage and bored to tears so I drew this on it:</p>
 
-      <!-- TODO: Molly's iPad drawing belongs here; the image was not included in the pasted text. -->
 
       <p>And here I am today, all OTC'd up and ready to go. Don't judge. The point is: you're trying something new and you're developing new synapses in your brain which will help you be more creative. Other than that or saying have a go at performance art, I'm out of suggestions.</p>
     </section>

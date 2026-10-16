@@ -79,8 +79,7 @@ ppm_require_published($post_meta);
 
       <p>Having too many ideas is like having ADD. We go back and forth between ideas on a daily basis, can never concentrate on one idea for too long and then eventually we just <a href="/articles/success-is-a-process">give up on the whole writing thing</a> because we want to write them all at the very same time but know that's impossible.</p>
 
-      <!-- TODO: the original post had an image here, captioned: "Library" by Brute-ua.
-           The image was not included in the pasted text; add it with its credit. -->
+
     </section>
 
     <section>

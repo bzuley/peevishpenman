@@ -80,10 +80,6 @@ ppm_require_published($post_meta);
 
       <p>The best advice I ever got for writing was actually given to me as an actor and that is to SERVE THE STORY. Don't waste your readers time with clever phrasing and <a href="/articles/nine-parts-of-speech-f-word">flowery speech</a> that doesn't move things along. That's not clever and flowery. It's self-indulgent and annoying. It's like a crop duster doing aerial loops. It might be fun for you but you're getting pesticide all over the place.</p>
 
-      <!-- TODO: the original post had a photo here (a crop duster, floated right), file "large-melaugh27.jpg".
-           It could not be downloaded; add the image, with alt text, in this spot.
-           Original: https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4SpM5HsDtKGBQIpx3xHCjaA9KjeihgwUKYTqNnMwPYDL7Tlwm0MD4xQsuo9pRnMIwVQe8f-Ume5R-DfQ-cD4Q4zG3Tvvfa2Mc676VF9JdQaO7pOUXp2DH3GSL1gPQWXzIWUzJBdAlXII/s1600/large-melaugh27.jpg -->
-
       <p>Okay, maybe not, but you get the idea. Respect your readers; you come to them with a story to tell and they've given you their attention so you can tell it. So dust the damn crops already.</p>
     </section>
 
