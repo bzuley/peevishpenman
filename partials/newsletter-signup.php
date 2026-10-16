@@ -51,5 +51,12 @@ if ($email === null) {
     ppm_signup_redirect('error', $form);
 }
 
+// Throwaway-mailbox addresses and sign-up floods get the same "success"
+// answer as a real sign-up, so bots learn nothing, but nothing is saved.
+if (ppm_newsletter_blocked_domain($email) ||
+    !ppm_newsletter_rate_ok($_SERVER['REMOTE_ADDR'] ?? '')) {
+    ppm_signup_redirect('success', $form);
+}
+
 $saved = ppm_newsletter_subscribe($email, ppm_signup_referer_path());
 ppm_signup_redirect($saved ? 'success' : 'error', $form);
