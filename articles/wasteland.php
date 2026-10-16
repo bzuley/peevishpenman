@@ -197,7 +197,7 @@ $post_meta = [
 
       <p>It's the same territory—literal, this time—that I keep returning to in <a href="/pages/bright-dark">The Bright Dark</a>, where the Wastelands are a named place on the map, not just a mood. Enormous predators haunt them. Nobody remembers what they used to be. Miles of possibility, and most of it wants to eat you.</p>
 
-      <p>If you'd rather argue about the hyphen than the etymology, I've got a post for that too: <a href="/articles/post-apocalyptic-or-postapocalyptic">Post Apocalyptic or Post-Apocalyptic or Postapocalyptic?</a></p>
+      <p>If you'd rather argue about the hyphen than the etymology, I've got a post for that too: <a href="/articles/post-apocalyptic-or-postapocalyptic">Post-Apocalyptic or Postapocalyptic?</a></p>
     </section>
 
     <p class="ppm-article-disclaimer"><em><a href="/pages/about">OA Allen</a> is the author of <a href="/pages/bright-dark">The Bright Dark</a>.</em></p>

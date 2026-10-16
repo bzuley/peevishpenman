@@ -144,7 +144,7 @@ $post_meta = [
 
       <p>But even if we don't have a clear template for the Magician in literature, history provides numerous metaphors for becoming an alchemist.</p>
 
-      <p>In the ancient world, the <em>Corpus Hermeticum</em> described the process using the planets as stages of inner transformation. In medieval times, alchemists used stages of metallurgy to represent the purification of their inner selves. Gnostics and various religious movements all had their own spin on becoming a shaman, a scientist, an alchemist, or a magician.</p>
+      <p>In the ancient world, the <em>Corpus Hermeticum</em> described the process using the planets as stages of inner transformation. In medieval times, <a href="/articles/inner-alchemy-bain-marie">alchemists used stages of metallurgy</a> to represent the purification of their inner selves. Gnostics and various religious movements all had their own spin on becoming a shaman, a scientist, an alchemist, or a magician.</p>
 
       <p>Some traditions believed the process started with an awakening; others endured a long dark night of the soul.</p>
 

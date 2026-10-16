@@ -79,11 +79,21 @@ ppm_require_published($post_meta);
 
       <p>Many of them are published authors and have much more personal experience in the area than I do, so I’m deferring to their assessment of the topic. Instead, I thought I would take this time to write about what I am more familiar with, which are the comments left on my writing, both on the blog itself and through my social media connections.</p>
 
+    </section>
+
+    <section>
+      <h2>Anonymous Comments Are Honest Comments</h2>
+
       <p>As I’ve gained more readers, I’ve also seen an increase in comments left. It’s an interesting dynamic sometimes, as I allow for anonymous comments to be left on my blog.  I’ve found that people tend to be far more bold with what they say when they are able to hide their identity. Sometimes this makes them more crass, more offensive, more obnoxious. As the blog owner I reserve the right to refuse to publish those comments that cross a line, particularly if left anonymously. I refuse to allow my site to be used as a platform for people to declare hatred, bigotry, or display any other unpalatable opinions.</p>
 
       <p>Though allowing anonymous comments comes with it’s drawbacks, I’ve found many times that anonymous comments tend to be more honest, probably because of the secret nature of them. On Blogger, anonymous comments are truly anonymous, and there is no connection to any profiles or any way for me to ever know who left them. This secretive nature may encourage people to be more critical of my writing, or of the topics I write about, because there is no fear of the message being connected to them.</p>
 
       <p>As a writer, I appreciate the honesty.</p>
+
+    </section>
+
+    <section>
+      <h2>Comments on Facebook and Twitter</h2>
 
       <p>The comment universe on Facebook and Twitter is very different than what occurs on the blog itself primarily because of the fact that every comment is attached to the user’s profile and it is visible to anyone who uses those platforms. While that attachment certainly tempers the comments left by many people, there are always a few who say what they want regardless of the connection to them.</p>
 
@@ -94,6 +104,11 @@ ppm_require_published($post_meta);
       <p>The consequences of the comments on my writing on Facebook have been big ones for me personally at times. I’ve had friends get into arguments with one another. I’ve had friends and family get angry with me. I’ve had passionate debates with complete strangers. I’ve thought about giving it all up more than once.</p>
 
       <p>What keeps me going is the connections I make with my readers, my fans.</p>
+
+    </section>
+
+    <section>
+      <h2>Why Immediate Feedback Matters</h2>
 
       <p>The nature of any form of online <a href="/articles/love-of-money-self-publication">self-publishing</a>, blogging included, is that it allows me to have an immediate connection with my readers. Consequently, they can give me feedback on every single thing I ever write, for better or worse, in real time. There’s no time lag. There’s no editorial process to wait through. There’s not a long period of time between pushing the publish button and knowing what people think. If they love it, I know right away. If they hate it, I know that right away too.</p>
 

@@ -125,6 +125,9 @@ ppm_require_published($post_meta);
       <p>
         Which means Karel Čapek's <em>Rossum's Universal Robots</em> introduced the word “robot” to the world in 1920, but his artificial people were not substantially different from Tik-Tok in what they could do. Čapek wrote about a company that created artificial biological people to do manual labor. They developed consciousness and turned against their human creators. Yikes. Tik-Tok was self-aware and he assisted his companions. Whew!
       </p>
+      <p>
+        Two decades later, Isaac Asimov answered the robot-revolt story with his Three Laws of Robotics, and writers are still arguing with him. I rounded up <a href="/articles/10-modern-books-for-fans-of-isaac-asimov">ten modern books for fans of Isaac Asimov</a> that pick up where he left off.
+      </p>
     </section>
 
     <section>
@@ -157,7 +160,7 @@ ppm_require_published($post_meta);
       </p>
 
       <p>
-        Further back are the mechanical laborers in Mark Drinkwater’s <em>The United Worlds</em> (1834); Frankenstein’s creature (1818), if manufactured biological people count. I would not include Frankenstein’s creature, because then the homunculus, a miniature human being created through alchemy, would also count and we’d be going back to the 16th century. And there, we would need to start considering the golem. Though constructed of clay and animated by a divine name written in Hebrew and placed in his mouth, the workings of the golem were not explained. We would call it magic, because of the era of the writing, but it was based on the biblical description of making the first man. <strong>How do we know that language isn’t the source code of the universe?</strong>
+        Further back are the mechanical laborers in Mark Drinkwater’s <em>The United Worlds</em> (1834); Frankenstein’s creature (1818), if manufactured biological people count. I would not include Frankenstein’s creature, because then the homunculus, a miniature human being <a href="/articles/inner-alchemy-bain-marie">created through alchemy</a>, would also count and we’d be going back to the 16th century. And there, we would need to start considering the golem. Though constructed of clay and animated by a divine name written in Hebrew and placed in his mouth, the workings of the golem were not explained. We would call it magic, because of the era of the writing, but it was based on the biblical description of making the first man. <strong>How do we know that language isn’t the source code of the universe?</strong>
       </p>
 
       <p>The line between science and magic is never clear. Often, it’s just a matter of style.</p>

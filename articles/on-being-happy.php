@@ -116,6 +116,11 @@ $post_meta = [
         skies. Happiness.
       </p>
 
+    </section>
+
+    <section>
+      <h2>The Father I Didn&rsquo;t Know</h2>
+
       <p>
         The man I got to know as a young adult was not the man my mother said she knew years before. When her
         second husband dragged me down the wooden stairs by my arm and slapped my face over and over, I was
@@ -171,6 +176,8 @@ $post_meta = [
     </section>
 
     <section>
+      <h2>What My Father Taught Me About Happiness</h2>
+
       <p>
         I suppose what I learned from my father about happiness is that it has nothing to do with the material
         world. It cannot be found in advancing up the ladders of social hierarchies. It's not in a bottle. It
@@ -213,6 +220,11 @@ $post_meta = [
         this phenomenon for many centuries, although the new insight in physics that the world itself is like a
         hologram echoes <a href="/articles/newton-alchemist">many non-Western views about reality</a> that help our consciousness make more sense.
       </p>
+
+    </section>
+
+    <section>
+      <h2>Rocking a Sinking Boat</h2>
 
       <p>
         Earlier this year, I gave up trying to reconcile with my more difficult family members and protect what

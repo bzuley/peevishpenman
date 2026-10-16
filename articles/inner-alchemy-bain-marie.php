@@ -2,7 +2,7 @@
 $post_meta = [
   'image'   => '/img/inner-alchemy-bain-marie.webp',
   'slug'    => 'inner-alchemy-bain-marie',
-  'title'   => 'Inner Alchemy: How the Search for Immortality Gave Us Better Ways to Boil Water',
+  'title'   => 'Inner Alchemy: How Seeking Immortality Gave Us the Bain-Marie',
   'excerpt' => 'From Taoist immortals and Egyptian metallurgists to medieval laboratories and the invention of the bain-marie, alchemy has been quietly influencing the modern world for thousands of years.',
   'date'    => '2026-10-08',
   'added'   => '2026-10-08',
