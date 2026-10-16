@@ -169,7 +169,7 @@ $post_meta = [
 
       <p>In <em>The Lord of the Rings</em>, Aragorn's authority is partly inherited, but inheritance alone is not enough. His kingship has to be recognized through conduct, sacrifice, competence, and the willingness of others to follow him. Tolkien distinguishes between possessing a claim to authority and actually being worthy of it.</p>
 
-      <p>In <em>The Hunger Games</em>, the Capitol maintains authority through fear, spectacle, and control of the narrative. Katniss becomes dangerous when people begin reading her actions differently from the story the Capitol wants them to believe.</p>
+      <p>In <em>The Hunger Games</em>, the Capitol maintains authority through fear, spectacle, and control of the narrative. Katniss becomes dangerous when people begin reading her actions differently from <a href="/articles/tell-me-a-big-lie">the story the Capitol wants them to believe</a>.</p>
 
       <p>In the <em>Foundation</em> television series, the Cleons embody authority through continuity. Their genetic dynasty turns one ruler into an institution, making power appear permanent, inevitable, and larger than any individual man. Dawn. Day. Dusk. Rinse and repeat.</p>
 

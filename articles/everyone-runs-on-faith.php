@@ -242,7 +242,7 @@ ppm_require_published($post_meta);
         us. They were just working with less information, and a lot of faith. Same as us.
       </p>
 
-      <p>Political ideology runs on the same fuel. I watched that particular flavor of belief take hold in real time and wrote about it in <a href="/articles/tell-me-a-big-lie">Tell Me a Big Lie</a>.</p>
+      <p>Deception runs on the same fuel. A lie doesn't have to be convincing when the people hearing it already have reasons to believe it, which is why I spend as much time on the believers as the liars in <a href="/articles/tell-me-a-big-lie">Tell Me a Big Lie</a>.</p>
     </section>
 
     <section>
