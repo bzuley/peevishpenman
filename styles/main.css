@@ -1819,6 +1819,19 @@ html.ppm-nav-open {
   margin-bottom: 1.5rem;
 }
 
+/* Guest author's name in the meta line under the title: larger, bolder and
+   in the main text color, so a guest post always credits its writer. */
+.ppm-article-meta .ppm-article-author {
+  font-family: "Space Grotesk", system-ui, sans-serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--ppm-text-main);
+}
+
+.ppm-article-hero-content .ppm-article-meta .ppm-article-author {
+  color: inherit;
+}
+
 .ppm-article-hero {
   position: relative;
   margin: 0 -5vw 2rem;
