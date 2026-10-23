@@ -147,6 +147,7 @@ ppm_require_published($post_meta);
       <p><em>Cecilia Dominic writes best with a cat perched on the back of her chair and a glass of wine or cup of coffee in front of her. She posts genre fiction, thoughts on writing, and reviews of self-published books at <a href="http://ceciliadominic.blogspot.com" rel="noopener">http://ceciliadominic.blogspot.com</a>, and she blogs about food and wine at <a href="http://random-oenophile.blogspot.com" rel="noopener">http://random-oenophile.blogspot.com</a> She has written three novels, revised two, and published none, but not for lack of trying. She also writes short stories and flash fiction and is a regular contributor to the Decatur News Online and The Penny Dreadful websites. Cecilia lives in Decatur, Georgia with two cats and a husband.</em></p>
     </section>
 
+  <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/share.php'; ?>
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/byline.php'; ?>
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/related-posts.php'; ?>
   </article>

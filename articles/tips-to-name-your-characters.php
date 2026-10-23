@@ -200,6 +200,7 @@ ppm_require_published($post_meta);
       <p><em>A retired business coach, C. Patrick Schulze began writing quite late in life. In his mid forty’s, he first put pen to paper and to date has written for Williamsburg Living Magazine and has completed three manuscripts. His latest, “Born to be Brothers,” will be ready for querying in early 2010. He is the author of two blogs, <a href="http://thebusinessofwriting.wordpress.com/" rel="noopener">TheBusinessOfWriting.wordpress.com</a> and <a href="http://cpatrickschulze.blogspot.com/" rel="noopener">CPatrickSchulze.blogspot.com</a>. You can also find him at <a href="http://twitter.com/C.PatrickSchulze" rel="noopener">Twitter.com/C.PatrickSchulze</a>.</em></p>
     </section>
 
+  <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/share.php'; ?>
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/byline.php'; ?>
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/related-posts.php'; ?>
   </article>

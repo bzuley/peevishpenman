@@ -181,6 +181,7 @@ $post_meta = [
       <p>He's also the opposite end of the wheel from <a href="/articles/the-magician">The Magician</a>: one archetype holds the world together, the other keeps changing what it can become.</p>
     </section>
 
+  <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/share.php'; ?>
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/byline.php'; ?>
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/related-posts.php'; ?>
   </article>

@@ -145,3 +145,31 @@ function ppmConfetti(origin) {
     }
     requestAnimationFrame(frame);
 }
+
+// "Share this post" links: report each click to Google Analytics as a GA4
+// "share" event (method = network, item_id = post slug). The links
+// themselves carry UTM tags (partials/share.php), so the visits they bring
+// back are attributed to the network that sent them. "Copy link" copies
+// the same kind of UTM-tagged URL.
+document.addEventListener('click', async (event) => {
+    const control = event.target.closest?.('[data-ppm-share]');
+    if (!control) return;
+    const slug = control.closest('.ppm-share')?.dataset.ppmShareSlug;
+    if (typeof gtag === 'function') {
+        gtag('event', 'share', {
+            method: control.dataset.ppmShare,
+            content_type: 'article',
+            item_id: slug,
+        });
+    }
+    if (control.dataset.ppmShare !== 'copy_link') return;
+    const original = control.textContent;
+    try {
+        await navigator.clipboard.writeText(control.dataset.ppmShareUrl);
+        control.textContent = 'Link copied';
+    } catch (e) {
+        window.prompt('Copy this link:', control.dataset.ppmShareUrl);
+        return;
+    }
+    setTimeout(() => { control.textContent = original; }, 2000);
+});

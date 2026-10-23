@@ -202,6 +202,7 @@ $post_meta = [
 
     <p class="ppm-article-disclaimer"><em><a href="/pages/about">OA Allen</a> is the author of <a href="/pages/bright-dark">The Bright Dark</a>.</em></p>
 
+  <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/share.php'; ?>
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/byline.php'; ?>
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/related-posts.php'; ?>
   </article>

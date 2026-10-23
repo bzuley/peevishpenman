@@ -203,6 +203,7 @@ ppm_require_published($post_meta);
       <p><em>Jeanne has written several spec screenplays and adapted the 2009 Pulitzer Prize-winning book, Slavery by Another Name with its author, Douglas A. Blackmon, senior national correspondent of The Wall Street Journal.  Jeanne is an active blogger at <a href="http://jeannevb.com" rel="noopener">jeannevb.com</a> and launched her freelance career with an upcoming article in Writer’s Digest Magazine on the value of Twitter for writers.   Her Twitter presence is (in)famous, as she is moderator and pimp of the screenwriting chat, #scritpchat.  Together with Rachel Langer, she created a blog, SMwriters.com, dedicated to social media and writers.  After being sidetracked by screenwriting, her novel is back in progress.</em></p>
     </section>
 
+  <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/share.php'; ?>
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/byline.php'; ?>
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/related-posts.php'; ?>
   </article>

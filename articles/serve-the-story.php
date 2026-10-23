@@ -108,6 +108,7 @@ ppm_require_published($post_meta);
       <p>Visit Clark Brooks at the <a href="http://clarkjbrooks.blogspot.com/" rel="noopener">Ridiculously Inconsistent Trickle of Consciousness</a></p>
     </section>
 
+  <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/share.php'; ?>
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/byline.php'; ?>
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/related-posts.php'; ?>
   </article>
