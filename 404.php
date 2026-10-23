@@ -6,6 +6,7 @@ require_once __DIR__ . '/blog-config.php';
 
 http_response_code(404);
 header('X-Robots-Tag: noindex');
+$ppm_ga_not_found = true;
 
 $ppm_404_recent = array_slice(ppm_get_blog_posts(), 0, 3);
 ?>

@@ -22,6 +22,7 @@ $tag_intro = $tag_info['intro'] ?? '';
 if ($tag_info === null):
   http_response_code(404);
   header('X-Robots-Tag: noindex');
+  $ppm_ga_not_found = true;
 ?>
 <!DOCTYPE html>
 <html lang="en">
