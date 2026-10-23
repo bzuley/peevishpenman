@@ -178,7 +178,6 @@ ppm_require_published($post_meta);
       <p><em>With thanks to Jody Aberdeen, author of the sci-fi romance</em> Convergence<em>, and Rob Hines, whose advice first appeared as guest posts here on Peevish Penman.</em></p>
     </section>
 
-  <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/share.php'; ?>
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/byline.php'; ?>
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/related-posts.php'; ?>
   </article>

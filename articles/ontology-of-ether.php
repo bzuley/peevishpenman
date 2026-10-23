@@ -144,7 +144,6 @@ $post_meta = [
       <p>And never again would they tempt the forces of nature by thinking too deeply about anything.</p>
     </section>
 
-  <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/share.php'; ?>
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/byline.php'; ?>
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/related-posts.php'; ?>
   </article>

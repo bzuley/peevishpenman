@@ -135,7 +135,6 @@ ppm_require_published($post_meta);
       <p><em>Ariel Ceylan is a seventeen-year-old girl, a senior in high school, that has published her first book on September 24<sup>th</sup>, 2009 through Xlibris, a <a href="/articles/confirmed-independent-publisher">self-publishing</a> company.</em></p>
     </section>
 
-  <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/share.php'; ?>
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/byline.php'; ?>
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/related-posts.php'; ?>
   </article>

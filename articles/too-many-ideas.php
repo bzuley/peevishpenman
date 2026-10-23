@@ -119,7 +119,6 @@ ppm_require_published($post_meta);
       <p><em>from the PPM Archives Sept 2009</em></p>
     </section>
 
-  <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/share.php'; ?>
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/byline.php'; ?>
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/related-posts.php'; ?>
   </article>

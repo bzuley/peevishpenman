@@ -125,7 +125,6 @@ ppm_require_published($post_meta);
       <p>Well, at least not suck as much.</p>
     </section>
 
-  <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/share.php'; ?>
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/byline.php'; ?>
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/related-posts.php'; ?>
   </article>

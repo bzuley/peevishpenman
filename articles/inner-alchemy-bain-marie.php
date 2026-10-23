@@ -474,7 +474,6 @@ ppm_require_published($post_meta);
       <p>For readers inclined to follow the trail: Fabrizio Pregadio’s <em>Chinese Alchemy</em> provides a scholarly introduction to external and internal alchemy. Farzeen Baldrian-Hussein’s <em>Inner Alchemy: Notes on the Origin and Use of the Term neidan</em> examines the terminology. The Science History Institute’s <em>Al-Kimiya: Notes on Arabic Alchemy</em> explores the Arabic tradition and its transmission of knowledge.</p>
     </section>
 
-  <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/share.php'; ?>
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/byline.php'; ?>
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/related-posts.php'; ?>
   </article>

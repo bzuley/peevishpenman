@@ -333,7 +333,6 @@ ppm_require_published($post_meta);
       <p>Now, as I cradle my infant books in my file folders, I know if I can be a good parent to my son, I&rsquo;ve got a fair shot at being a good author, too.</p>
     </section>
 
-  <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/share.php'; ?>
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/byline.php'; ?>
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/related-posts.php'; ?>
   </article>

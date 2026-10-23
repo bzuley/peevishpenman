@@ -104,7 +104,6 @@ ppm_require_published($post_meta);
       <p><a href="/articles/success-is-a-process">Write, write, write.</a>  Then write some more.</p>
     </section>
 
-  <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/share.php'; ?>
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/byline.php'; ?>
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/related-posts.php'; ?>
   </article>
