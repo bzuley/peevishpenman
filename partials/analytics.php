@@ -5,20 +5,19 @@
 // lumping every 404 under one "Page Not Found" title.
 //
 // Beyond the plain page view, this sends GA4 as much context as it can:
-// what kind of page it is (and, for articles, the author, topics and
-// publish date), where the visitor really came from (including shares
+// for articles, the author, topics and publish date, where the visitor really came from (including shares
 // whose referrer was stripped), a first-visit record for each browser,
 // how far people read, what they click on, and how the page performed.
 // Custom parameters only show in reports once they're registered as custom
 // dimensions in GA (Admin > Custom definitions); see the list in
 // the note at the bottom of this file.
 $ppm_ga_script = $_SERVER['SCRIPT_NAME'] ?? '';
-$ppm_ga_ctx = ['content_group' => 'Other'];
+$ppm_ga_ctx = ['kind' => 'Other'];
 if (!empty($ppm_ga_not_found)) {
-  $ppm_ga_ctx['content_group'] = 'Not found';
+  $ppm_ga_ctx['kind'] = 'Not found';
 } elseif (strpos($ppm_ga_script, '/articles/') === 0 && !empty($post_meta['slug'])) {
   $ppm_ga_ctx = [
-    'content_group'     => 'Article',
+    'kind'              => 'Article',
     'content_id'        => $post_meta['slug'],
     'article_author'    => $post_meta['author'] ?? 'OA Allen',
     'article_type'      => !empty($post_meta['guest_post']) || ($post_meta['author'] ?? 'OA Allen') !== 'OA Allen' ? 'Guest post' : 'Own post',
@@ -27,15 +26,15 @@ if (!empty($ppm_ga_not_found)) {
     'article_has_image' => !empty($post_meta['image']) ? 'yes' : 'no',
   ];
 } elseif ($ppm_ga_script === '/index.php') {
-  $ppm_ga_ctx['content_group'] = 'Home';
+  $ppm_ga_ctx['kind'] = 'Home';
 } elseif ($ppm_ga_script === '/articles.php') {
-  $ppm_ga_ctx['content_group'] = 'Articles list';
+  $ppm_ga_ctx['kind'] = 'Articles list';
 } elseif ($ppm_ga_script === '/article-tag.php') {
-  $ppm_ga_ctx = ['content_group' => 'Topic', 'content_id' => strtolower(trim((string)($_GET['tag'] ?? '')))];
+  $ppm_ga_ctx = ['kind' => 'Topic', 'content_id' => strtolower(trim((string)($_GET['tag'] ?? '')))];
 } elseif ($ppm_ga_script === '/search.php') {
-  $ppm_ga_ctx = ['content_group' => 'Search', 'search_term' => trim((string)($_GET['q'] ?? ''))];
+  $ppm_ga_ctx = ['kind' => 'Search', 'search_term' => trim((string)($_GET['q'] ?? ''))];
 } elseif (strpos($ppm_ga_script, '/pages/') === 0) {
-  $ppm_ga_ctx = ['content_group' => 'Page', 'content_id' => basename($ppm_ga_script, '.php')];
+  $ppm_ga_ctx = ['kind' => 'Page', 'content_id' => basename($ppm_ga_script, '.php')];
 }
 $ppm_ga_ctx = array_filter($ppm_ga_ctx, fn($v) => $v !== '' && $v !== null);
 ?>
@@ -50,7 +49,9 @@ $ppm_ga_ctx = array_filter($ppm_ga_ctx, fn($v) => $v !== '' && $v !== null);
     var config = {};
     var userProps = {};
     var key;
-    for (key in ctx) config[key] = ctx[key];
+    // ctx.kind (what sort of page this is) steers the tracking below but is
+    // not reported: the page path and title already say which page it is.
+    for (key in ctx) { if (key !== 'kind') config[key] = ctx[key]; }
 
     function store(name, value) {
       try {
@@ -139,7 +140,6 @@ $ppm_ga_ctx = array_filter($ppm_ga_ctx, fn($v) => $v !== '' && $v !== null);
     function send(name, extra) {
       var p = {};
       if (ctx.content_id) p.content_id = ctx.content_id;
-      p.content_group = ctx.content_group;
       for (var k in extra) p[k] = extra[k];
       gtag('event', name, p);
     }
@@ -150,7 +150,7 @@ $ppm_ga_ctx = array_filter($ppm_ga_ctx, fn($v) => $v !== '' && $v !== null);
     // How far down an article people read, and whether they actually read it.
     // (This script runs in the page head, so wait for the article to exist.)
     function trackReading() {
-      var article = ctx.content_group === 'Article' ? document.querySelector('.ppm-article-inner') : null;
+      var article = ctx.kind === 'Article' ? document.querySelector('.ppm-article-inner') : null;
       if (!article) return;
       var marks = [25, 50, 75, 100], sentMarks = {}, visibleSeconds = 0, readSent = false, ticking = false, deepest = 0;
       var progress = function () {
@@ -251,7 +251,7 @@ $ppm_ga_ctx = array_filter($ppm_ga_ctx, fn($v) => $v !== '' && $v !== null);
 <?php
 // Custom dimensions to register in GA (Admin > Custom definitions), scope in
 // brackets. Without this step the data is collected but not shown in reports.
-//   Event:  content_group, content_id, article_author, article_type,
+//   Event:  content_id, article_author, article_type,
 //           article_tags, article_published, article_has_image,
 //           referrer_host, percent_scrolled, content_type, item_id,
 //           link_text, theme, image_url, error_message, error_source
