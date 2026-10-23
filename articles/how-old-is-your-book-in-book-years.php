@@ -1,7 +1,6 @@
 <?php
 $post_meta = [
-  // No hero image for this post; listings, cards and schema fall back.
-  'image'   => '',
+  'image'   => '/img/general/book_bandit.webp',
   'slug'    => 'how-old-is-your-book-in-book-years',
   'title'   => 'How Old Is Your Book in Book Years?',
   'excerpt' => 'Carrie Bailey on the life of a book, from conception to immortality, and what raising a son taught her about being an author.',
@@ -63,14 +62,24 @@ ppm_require_published($post_meta);
   <article class="ppm-article-inner">
 
 <header class="ppm-article-header">
-  <p class="ppm-article-kicker">Writing &amp; Parenting</p>
-  <h1><?php echo htmlspecialchars($post_meta['title']); ?></h1>
-  <div class="ppm-article-meta">
-    by <strong class="ppm-article-author"><?php echo htmlspecialchars($post_meta['author']); ?></strong> &middot;
-    <time datetime="<?php echo htmlspecialchars($post_meta['date']); ?>">
-      <?php echo date('F j, Y', strtotime($post_meta['date'])); ?>
-    </time>
-  </div>
+  <!-- Hero image with overlaid content -->
+  <figure class="ppm-article-hero">
+    <img
+      src="<?php echo htmlspecialchars($post_meta['image']); ?>"
+      width="1536" height="1024"
+      alt="A cross toddler in overalls sitting on a study floor, tearing pages out of a large old book and scattering torn paper around them, in sepia light from a window"
+    >
+    <div class="ppm-article-hero-content">
+      <p class="ppm-article-kicker">Writing &amp; Parenting</p>
+      <h1><?php echo htmlspecialchars($post_meta['title']); ?></h1>
+      <div class="ppm-article-meta">
+        by <strong class="ppm-article-author"><?php echo htmlspecialchars($post_meta['author']); ?></strong> &middot;
+        <time datetime="<?php echo htmlspecialchars($post_meta['date']); ?>">
+          <?php echo date('F j, Y', strtotime($post_meta['date'])); ?>
+        </time>
+      </div>
+    </div>
+  </figure>
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/article-tags.php'; ?>
 </header>
 
