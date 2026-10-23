@@ -62,7 +62,12 @@
         Google&rsquo;s gtag.js) to understand general traffic patterns, such
         as which pages are visited and how people find the site. Google
         Analytics may use cookies and collect information such as your IP
-        address, browser, and device type. See
+        address, browser, and device type. The site also reports to Google
+        Analytics how far you scroll through an article, which links on the
+        site you click, and how quickly pages load, and it keeps a small
+        note in your browser&rsquo;s local storage (the site you first
+        arrived from and how many times you have visited) so that returning
+        visitors can be told apart from new ones. See
         <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google&rsquo;s Privacy Policy</a>
         for details on how Google handles this data.
       </p>
