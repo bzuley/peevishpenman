@@ -26,7 +26,8 @@ MAX_BYTES = 250 * 1024
 # slug: (source image, vertical focus)
 CARDS = {
     'serve-the-story': ('img/general/serve_story.png', 0),
-    'too-many-ideas': ('img/general/astronaut_and_unicorn.png', 0.35),
+    'write-what-you-know': ('img/general/astronaut_and_unicorn.png', 0.35),
+    'reader-comments-honest-open-immediate': ('img/general/happy_and_angry_readers.png', 0.3),
     'tips-to-name-your-characters': ('img/general/speculative_fiction_fellowship.png', 0.2),
     '10-modern-books-for-fans-of-isaac-asimov': ('img/general/asimov.png', 0.15),
     'how-old-is-your-book-in-book-years': ('img/general/book_bandit.png', 0.4),
