@@ -255,7 +255,6 @@ $ppm_ga_ctx = array_filter($ppm_ga_ctx, fn($v) => $v !== '' && $v !== null);
 //           article_tags, article_published, article_has_image,
 //           referrer_host, percent_scrolled, content_type, item_id,
 //           link_text, theme, image_url, error_message, error_source
-//   User:   visitor_type, first_referrer_host, first_landing_page,
-//           first_source, color_theme, viewport_size
-//   Metric (event): lcp_ms, cls_x1000, ttfb_ms, seconds_on_page,
-//           visit_count (user)
+//   User:   visitor_type, visit_count, first_referrer_host,
+//           first_landing_page, first_source, color_theme, viewport_size
+//   Metric (event): lcp_ms, cls_x1000, ttfb_ms, seconds_on_page
