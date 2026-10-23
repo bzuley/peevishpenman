@@ -1,6 +1,7 @@
 <?php
 $post_meta = [
-  'image'   => '/img/general/astronaut_and_unicorn.webp',
+  // No hero image for this post; listings, cards and schema fall back.
+  'image'   => '',
   'slug'    => 'too-many-ideas',
   'title'   => 'Too Many Ideas',
   'excerpt' => 'Morgan Barnhart on suffering from Too Many Ideas, and the whiteboard trick that gets every idea out of your head and into plain sight so you can pick one and write.',
@@ -32,7 +33,7 @@ ppm_require_published($post_meta);
   <meta property="og:description" content="<?php echo htmlspecialchars($post_meta['excerpt']); ?>">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://peevishpenman.com/articles/<?php echo htmlspecialchars($post_meta['slug']); ?>">
-  <meta property="og:image" content="https://peevishpenman.com/img/social/too-many-ideas.jpg">
+  <meta property="og:image" content="https://peevishpenman.com/img/social/peevish-penman.jpg">
   <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -42,7 +43,7 @@ ppm_require_published($post_meta);
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="<?php echo htmlspecialchars($post_meta['title']); ?>">
   <meta name="twitter:description" content="<?php echo htmlspecialchars($post_meta['excerpt']); ?>">
-  <meta name="twitter:image" content="https://peevishpenman.com/img/social/too-many-ideas.jpg">
+  <meta name="twitter:image" content="https://peevishpenman.com/img/social/peevish-penman.jpg">
   <meta name="twitter:image:alt" content="<?php echo htmlspecialchars($post_meta['title']); ?>">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -62,24 +63,14 @@ ppm_require_published($post_meta);
   <article class="ppm-article-inner">
 
 <header class="ppm-article-header">
-  <!-- Hero image with overlaid content -->
-  <figure class="ppm-article-hero">
-    <img
-      src="<?php echo htmlspecialchars($post_meta['image']); ?>"
-      width="1536" height="1024"
-      alt="An astronaut on a rocky ridge fends off a rearing unicorn with its own horn, a huge moon behind them"
-    >
-    <div class="ppm-article-hero-content">
-      <p class="ppm-article-kicker">Writing Process</p>
-      <h1><?php echo htmlspecialchars($post_meta['title']); ?></h1>
-      <div class="ppm-article-meta">
-      by <strong class="ppm-article-author"><?php echo htmlspecialchars($post_meta['author']); ?></strong> &middot;
-      <time datetime="<?php echo htmlspecialchars($post_meta['date']); ?>">
-        <?php echo date('F j, Y', strtotime($post_meta['date'])); ?>
-      </time>
-      </div>
-    </div>
-  </figure>
+  <p class="ppm-article-kicker">Writing Process</p>
+  <h1><?php echo htmlspecialchars($post_meta['title']); ?></h1>
+  <div class="ppm-article-meta">
+    by <strong class="ppm-article-author"><?php echo htmlspecialchars($post_meta['author']); ?></strong> &middot;
+    <time datetime="<?php echo htmlspecialchars($post_meta['date']); ?>">
+      <?php echo date('F j, Y', strtotime($post_meta['date'])); ?>
+    </time>
+  </div>
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/article-tags.php'; ?>
 </header>
 
