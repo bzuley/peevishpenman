@@ -1,7 +1,6 @@
 <?php
 $post_meta = [
-  // No hero image for this post; listings, cards and schema fall back.
-  'image'   => '',
+  'image'   => '/img/general/astronaut_and_unicorn.webp',
   'slug'    => 'too-many-ideas',
   'title'   => 'Too Many Ideas',
   'excerpt' => 'Morgan Barnhart on suffering from Too Many Ideas, and the whiteboard trick that gets every idea out of your head and into plain sight so you can pick one and write.',
@@ -63,14 +62,24 @@ ppm_require_published($post_meta);
   <article class="ppm-article-inner">
 
 <header class="ppm-article-header">
-  <p class="ppm-article-kicker">Writing Process</p>
-  <h1><?php echo htmlspecialchars($post_meta['title']); ?></h1>
-  <div class="ppm-article-meta">
-    by <strong class="ppm-article-author"><?php echo htmlspecialchars($post_meta['author']); ?></strong> &middot;
-    <time datetime="<?php echo htmlspecialchars($post_meta['date']); ?>">
-      <?php echo date('F j, Y', strtotime($post_meta['date'])); ?>
-    </time>
-  </div>
+  <!-- Hero image with overlaid content -->
+  <figure class="ppm-article-hero">
+    <img
+      src="<?php echo htmlspecialchars($post_meta['image']); ?>"
+      width="1536" height="1024"
+      alt="An astronaut on a rocky ridge fends off a rearing unicorn with its own horn, a huge moon behind them"
+    >
+    <div class="ppm-article-hero-content">
+      <p class="ppm-article-kicker">Writing Process</p>
+      <h1><?php echo htmlspecialchars($post_meta['title']); ?></h1>
+      <div class="ppm-article-meta">
+      by <strong class="ppm-article-author"><?php echo htmlspecialchars($post_meta['author']); ?></strong> &middot;
+      <time datetime="<?php echo htmlspecialchars($post_meta['date']); ?>">
+        <?php echo date('F j, Y', strtotime($post_meta['date'])); ?>
+      </time>
+      </div>
+    </div>
+  </figure>
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/article-tags.php'; ?>
 </header>
 
