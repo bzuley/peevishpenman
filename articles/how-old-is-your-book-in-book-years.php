@@ -5,7 +5,7 @@ $post_meta = [
   'slug'    => 'how-old-is-your-book-in-book-years',
   'title'   => 'How Old Is Your Book in Book Years?',
   'excerpt' => 'Carrie Bailey on the life of a book, from conception to immortality, and what raising a son taught her about being an author.',
-  'date'    => '2011-01-01',
+  'date'    => '2013-04-09',
   'added'   => '2026-10-23',
   // Comma-separated tags, e.g. 'independentpublishing, sciencefiction'.
   // Powers the quicklink buttons on index.php (see /article-tag.php).
