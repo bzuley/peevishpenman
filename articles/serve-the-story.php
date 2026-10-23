@@ -1,7 +1,6 @@
 <?php
 $post_meta = [
-  // No hero image for this post; listings, cards and schema fall back.
-  'image'   => '',
+  'image'   => '/img/general/serve_story.webp',
   'slug'    => 'serve-the-story',
   'title'   => 'Serve the Story',
   'excerpt' => 'Clark Brooks delivers the best writing advice he ever got, from his acting days, with the speed, wit and candor of a stand-up comic: serve the story.',
@@ -34,7 +33,7 @@ ppm_require_published($post_meta);
   <meta property="og:description" content="<?php echo htmlspecialchars($post_meta['excerpt']); ?>">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://peevishpenman.com/articles/<?php echo htmlspecialchars($post_meta['slug']); ?>">
-  <meta property="og:image" content="https://peevishpenman.com/img/social/peevish-penman.jpg">
+  <meta property="og:image" content="https://peevishpenman.com/img/social/serve-the-story.jpg">
   <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -44,7 +43,7 @@ ppm_require_published($post_meta);
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="<?php echo htmlspecialchars($post_meta['title']); ?>">
   <meta name="twitter:description" content="<?php echo htmlspecialchars($post_meta['excerpt']); ?>">
-  <meta name="twitter:image" content="https://peevishpenman.com/img/social/peevish-penman.jpg">
+  <meta name="twitter:image" content="https://peevishpenman.com/img/social/serve-the-story.jpg">
   <meta name="twitter:image:alt" content="<?php echo htmlspecialchars($post_meta['title']); ?>">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -64,14 +63,24 @@ ppm_require_published($post_meta);
   <article class="ppm-article-inner">
 
 <header class="ppm-article-header">
-  <p class="ppm-article-kicker">Writing Advice</p>
-  <h1><?php echo htmlspecialchars($post_meta['title']); ?></h1>
-  <div class="ppm-article-meta">
-    by <strong class="ppm-article-author"><?php echo htmlspecialchars($post_meta['author']); ?></strong> &middot;
-    <time datetime="<?php echo htmlspecialchars($post_meta['date']); ?>">
-      <?php echo date('F j, Y', strtotime($post_meta['date'])); ?>
-    </time>
-  </div>
+  <!-- Hero image with overlaid content -->
+  <figure class="ppm-article-hero">
+    <img
+      src="<?php echo htmlspecialchars($post_meta['image']); ?>"
+      width="1536" height="1024"
+      alt="A smiling waiter in a vest and bow tie leans toward the camera, presenting a place card reading &quot;STORY&quot; on a silver serving tray in an elegant restaurant"
+    >
+    <div class="ppm-article-hero-content">
+      <p class="ppm-article-kicker">Writing Advice</p>
+      <h1><?php echo htmlspecialchars($post_meta['title']); ?></h1>
+      <div class="ppm-article-meta">
+      by <strong class="ppm-article-author"><?php echo htmlspecialchars($post_meta['author']); ?></strong> &middot;
+      <time datetime="<?php echo htmlspecialchars($post_meta['date']); ?>">
+        <?php echo date('F j, Y', strtotime($post_meta['date'])); ?>
+      </time>
+      </div>
+    </div>
+  </figure>
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/article-tags.php'; ?>
 </header>
 

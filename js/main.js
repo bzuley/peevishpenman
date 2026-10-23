@@ -68,6 +68,12 @@ document.addEventListener('submit', async (event) => {
             + '<a class="ppm-signup-preview" href="/pages/bright-dark-chapter-one">Start reading Chapter 1 of <em>The Bright Dark</em> &rarr;</a>';
         form.replaceWith(panel);
         ppmConfetti(panel);
+        if (typeof gtag === 'function') {
+            gtag('event', 'generate_lead', {
+                method: 'newsletter',
+                form_location: form.closest('footer') ? 'footer' : 'page',
+            });
+        }
     } else {
         const error = document.createElement('p');
         error.className = 'ppm-footer-message ppm-footer-message-error';

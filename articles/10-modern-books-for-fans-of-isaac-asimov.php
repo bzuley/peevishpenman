@@ -1,7 +1,6 @@
 <?php
 $post_meta = [
-  // No hero image for this post; listings, cards and schema fall back.
-  'image'   => '',
+  'image'   => '/img/general/asimov.webp',
   'slug'    => '10-modern-books-for-fans-of-isaac-asimov',
   'title'   => '10 Modern Books for Fans of Isaac Asimov',
   'excerpt' => 'Robots, impossible civilizations, troublesome ideas, and a few independent authors who deserve a place on your bookshelf.',
@@ -32,7 +31,7 @@ ppm_require_published($post_meta);
   <meta property="og:description" content="<?php echo htmlspecialchars($post_meta['excerpt']); ?>">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://peevishpenman.com/articles/<?php echo htmlspecialchars($post_meta['slug']); ?>">
-  <meta property="og:image" content="https://peevishpenman.com/img/social/peevish-penman.jpg">
+  <meta property="og:image" content="https://peevishpenman.com/img/social/10-modern-books-for-fans-of-isaac-asimov.jpg">
   <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -42,7 +41,7 @@ ppm_require_published($post_meta);
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="<?php echo htmlspecialchars($post_meta['title']); ?>">
   <meta name="twitter:description" content="<?php echo htmlspecialchars($post_meta['excerpt']); ?>">
-  <meta name="twitter:image" content="https://peevishpenman.com/img/social/peevish-penman.jpg">
+  <meta name="twitter:image" content="https://peevishpenman.com/img/social/10-modern-books-for-fans-of-isaac-asimov.jpg">
   <meta name="twitter:image:alt" content="<?php echo htmlspecialchars($post_meta['title']); ?>">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -62,13 +61,23 @@ ppm_require_published($post_meta);
   <article class="ppm-article-inner">
 
 <header class="ppm-article-header">
-  <p class="ppm-article-kicker">Reading List</p>
-  <h1><?php echo htmlspecialchars($post_meta['title']); ?></h1>
-  <div class="ppm-article-meta">
-    <time datetime="<?php echo htmlspecialchars($post_meta['date']); ?>">
-      <?php echo date('F j, Y', strtotime($post_meta['date'])); ?>
-    </time>
-  </div>
+  <!-- Hero image with overlaid content -->
+  <figure class="ppm-article-hero">
+    <img
+      src="<?php echo htmlspecialchars($post_meta['image']); ?>"
+      width="1536" height="1024"
+      alt="A bespectacled, bearded author sits at a typewriter with his chin on his fist, beside a stack of books titled Foundation, The Robots, The Caves of Steel and I, Robot, and a small robot figurine"
+    >
+    <div class="ppm-article-hero-content">
+      <p class="ppm-article-kicker">Reading List</p>
+      <h1><?php echo htmlspecialchars($post_meta['title']); ?></h1>
+      <div class="ppm-article-meta">
+      <time datetime="<?php echo htmlspecialchars($post_meta['date']); ?>">
+        <?php echo date('F j, Y', strtotime($post_meta['date'])); ?>
+      </time>
+      </div>
+    </div>
+  </figure>
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/article-tags.php'; ?>
 </header>
 

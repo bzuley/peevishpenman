@@ -1,7 +1,6 @@
 <?php
 $post_meta = [
-  // No hero image for this post; listings, cards and schema fall back.
-  'image'   => '',
+  'image'   => '/img/general/speculative_fiction_fellowship.webp',
   'slug'    => 'tips-to-name-your-characters',
   'title'   => 'Tips to Name Your Characters',
   'excerpt' => 'C. Patrick Schulze shares fifteen tips for naming the characters in your novel, from medieval surnames and Civil War cemeteries to why you should skip the alliteration.',
@@ -34,7 +33,7 @@ ppm_require_published($post_meta);
   <meta property="og:description" content="<?php echo htmlspecialchars($post_meta['excerpt']); ?>">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://peevishpenman.com/articles/<?php echo htmlspecialchars($post_meta['slug']); ?>">
-  <meta property="og:image" content="https://peevishpenman.com/img/social/peevish-penman.jpg">
+  <meta property="og:image" content="https://peevishpenman.com/img/social/tips-to-name-your-characters.jpg">
   <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -44,7 +43,7 @@ ppm_require_published($post_meta);
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="<?php echo htmlspecialchars($post_meta['title']); ?>">
   <meta name="twitter:description" content="<?php echo htmlspecialchars($post_meta['excerpt']); ?>">
-  <meta name="twitter:image" content="https://peevishpenman.com/img/social/peevish-penman.jpg">
+  <meta name="twitter:image" content="https://peevishpenman.com/img/social/tips-to-name-your-characters.jpg">
   <meta name="twitter:image:alt" content="<?php echo htmlspecialchars($post_meta['title']); ?>">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -64,14 +63,24 @@ ppm_require_published($post_meta);
   <article class="ppm-article-inner">
 
 <header class="ppm-article-header">
-  <p class="ppm-article-kicker">Characters &amp; Names</p>
-  <h1><?php echo htmlspecialchars($post_meta['title']); ?></h1>
-  <div class="ppm-article-meta">
-    by <strong class="ppm-article-author"><?php echo htmlspecialchars($post_meta['author']); ?></strong> &middot;
-    <time datetime="<?php echo htmlspecialchars($post_meta['date']); ?>">
-      <?php echo date('F j, Y', strtotime($post_meta['date'])); ?>
-    </time>
-  </div>
+  <!-- Hero image with overlaid content -->
+  <figure class="ppm-article-hero">
+    <img
+      src="<?php echo htmlspecialchars($post_meta['image']); ?>"
+      width="1536" height="1024"
+      alt="A varied company of science-fiction and fantasy characters, including a robot, a lizard-like alien, a wizard, an elf, a detective, a tentacled reader and a wolf, posed together on steps before a moon and a rocket-lit city"
+    >
+    <div class="ppm-article-hero-content">
+      <p class="ppm-article-kicker">Characters &amp; Names</p>
+      <h1><?php echo htmlspecialchars($post_meta['title']); ?></h1>
+      <div class="ppm-article-meta">
+      by <strong class="ppm-article-author"><?php echo htmlspecialchars($post_meta['author']); ?></strong> &middot;
+      <time datetime="<?php echo htmlspecialchars($post_meta['date']); ?>">
+        <?php echo date('F j, Y', strtotime($post_meta['date'])); ?>
+      </time>
+      </div>
+    </div>
+  </figure>
   <?php include $_SERVER['DOCUMENT_ROOT'].'/partials/article-tags.php'; ?>
 </header>
 
