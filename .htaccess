@@ -92,6 +92,16 @@ RewriteRule ^newsletter/?$ /#newsletter [R=301,L,NC,NE]
 RewriteRule ^contact/?$ /pages/about [R=301,L,NC]
 # Old Blogger-era URL of the Asimov reading list
 RewriteRule ^blogs/peevish-penman/10-modern-books-for-fans-of-isaac-asimov/?$ /articles/10-modern-books-for-fans-of-isaac-asimov [R=301,L,NC]
+# Blogger-era post that was never carried over to the new site
+RewriteRule ^2011/04/prince-talleyrand-on-cagliostro\.html$ /articles [R=301,L,NC,QSD]
+
+# Old Shopify store URLs (/products/<handle>, plus the .json/.js feeds
+# bots request) go to the matching book page. Any other product or
+# collection goes to the books page.
+RewriteRule ^products/waiting-on-delcath(\.json|\.js)?/?$ /pages/delcath-series#waiting-on-delcath [R=301,L,NC,NE,QSD]
+RewriteRule ^products/children-of-delcath(\.json|\.js)?/?$ /pages/delcath-series#children-of-delcath [R=301,L,NC,NE,QSD]
+RewriteRule ^products/reptilian-conspiracy-a-coloring-book(\.json|\.js)?/?$ /pages/coloring-book [R=301,L,NC,QSD]
+RewriteRule ^(products|collections)(/.*)?$ /pages/books [R=301,L,NC,QSD]
 
 # "Blog" was renamed to "Articles" sitewide.
 # Each old URL, with or without .php or a trailing slash, goes to its
