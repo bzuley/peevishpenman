@@ -69,11 +69,36 @@ $ppm_ga_ctx = array_filter($ppm_ga_ctx, fn($v) => $v !== '' && $v !== null);
     if (ref) refHost = ref.hostname === location.hostname ? '(internal)' : (ref.hostname || ref.protocol);
     config.referrer_host = refHost;
 
+    // How the page was opened: a normal visit, a reload, back/forward, or a
+    // prerender, so reloads can be told apart from new views in reports.
+    try {
+      var navEntry = performance.getEntriesByType('navigation')[0];
+      if (navEntry && navEntry.type) config.navigation_type = navEntry.type;
+    } catch (e) {}
+
+    // Visitors sent by one of the site's former domains. Those domains
+    // redirect here with ?from=<domain>, because the browser often drops the
+    // referrer along the way. Credit that domain, then take the marker out
+    // of the address bar so it isn't copied into links people share.
+    var fromDomain = (params.get('from') || '').toLowerCase().replace(/[^a-z0-9.-]/g, '').slice(0, 60);
+    if (fromDomain) {
+      if (!params.has('utm_source')) {
+        config.campaign_source = fromDomain;
+        config.campaign_medium = 'redirect';
+        config.campaign_name = '(old domain)';
+      }
+      try {
+        var cleanUrl = new URL(location.href);
+        cleanUrl.searchParams.delete('from');
+        history.replaceState(history.state, '', cleanUrl.pathname + cleanUrl.search + cleanUrl.hash);
+      } catch (e) {}
+    }
+
     // Visits that arrive without UTM tags: credit the network when the link
     // carries its click id, or when the referrer is an app (Android reports
     // the app's package name). GA's own source detection is left alone
     // whenever the link is already tagged or the referrer is a normal site.
-    if (!params.has('utm_source') && !params.has('gclid') && refHost !== '(internal)') {
+    if (!fromDomain && !params.has('utm_source') && !params.has('gclid') && refHost !== '(internal)') {
       var clickIds = {
         fbclid: ['facebook', 'social'], twclid: ['x', 'social'], igshid: ['instagram', 'social'],
         ttclid: ['tiktok', 'social'], li_fat_id: ['linkedin', 'social'], msclkid: ['bing', 'cpc'],
@@ -132,6 +157,7 @@ $ppm_ga_ctx = array_filter($ppm_ga_ctx, fn($v) => $v !== '' && $v !== null);
 <?php if (!empty($ppm_ga_not_found)): ?>
     var title = '404: ' + location.pathname + location.search;
     if (ref) title += ' (from ' + (ref.hostname || ref.protocol) + ')';
+    else if (fromDomain) title += ' (via ' + fromDomain + ')';
     config.page_title = title;
 <?php endif; ?>
     gtag('config', 'G-PJTW8FGPV8', config);
@@ -253,7 +279,7 @@ $ppm_ga_ctx = array_filter($ppm_ga_ctx, fn($v) => $v !== '' && $v !== null);
 // brackets. Without this step the data is collected but not shown in reports.
 //   Event:  content_id, article_author, article_type,
 //           article_tags, article_published, article_has_image,
-//           referrer_host, percent_scrolled, content_type, item_id,
+//           referrer_host, navigation_type, percent_scrolled, content_type, item_id,
 //           link_text, theme, image_url, error_message, error_source
 //   User:   visitor_type, visit_count, first_referrer_host,
 //           first_landing_page, first_source, color_theme, viewport_size

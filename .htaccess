@@ -120,6 +120,11 @@ RewriteRule ^articles/peevish-penman/([^/]+?)/?$ /articles/$1 [R=301,L]
 # Legacy Blogger post URLs (/YYYY/MM/<slug>.html, optionally with
 # Blogger's ?m=1 mobile flag) go to /articles/<slug> when that article
 # exists. Posts whose slug changed need their own line above this one.
+# The query string is dropped, except the ?from=<domain> marker a former
+# domain adds when it redirects here (Google Analytics credits that domain).
+RewriteCond %{DOCUMENT_ROOT}/articles/$1.php -f
+RewriteCond %{QUERY_STRING} (?:^|&)(from=[A-Za-z0-9.-]+)
+RewriteRule ^\d{4}/\d{2}/([^/]+?)\.html$ /articles/$1?%1 [R=301,L]
 RewriteCond %{DOCUMENT_ROOT}/articles/$1.php -f
 RewriteRule ^\d{4}/\d{2}/([^/]+?)\.html$ /articles/$1 [R=301,L,QSD]
 
