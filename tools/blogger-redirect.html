@@ -1,29 +1,8 @@
-<!--
-  Redirect for the old Blogger site (peevishpenman.blogspot.com).
-
-  Blogger can't do server-side redirects, so this runs in the theme instead.
-  Install: Blogger > Theme > Edit HTML, then paste the <script> block below
-  directly after <head> (it must run before anything else loads). Delete the
-  "<!-- ... -->" comment when pasting; Blogger doesn't need it.
-
-  How it works: an explicit map (POSTS) sends each Blogger post that has a
-  new home straight to its final URL in one hop. Every other post is gone
-  from the new site, so it lands on the article list instead of a 404.
-  Blogger-only URL shapes (/search/label/, /p/ pages, archives) are
-  translated too. Add new posts to POSTS and new pages to PAGES. Every
-  destination carries ?from=peevishpenman.blogspot.com so Google
-  Analytics credits this domain even when the browser drops the referrer,
-  same as the other old domains.
-
-  Blogger's own Custom redirects run first and still win for the URLs
-  they list; this covers everything they don't.
-
-  Not a replacement for Search Console's Change of Address, which only
-  works for domains you can verify; blogspot.com subdomains can't use it.
-  Search engines learn about the move slowly from JavaScript redirects.
--->
 <script type='text/javascript'>
 //<![CDATA[
+// Redirects the old Blogger site (peevishpenman.blogspot.com) to
+// peevishpenman.com. Paste right after <head> in Theme > Edit HTML.
+// Add posts to POSTS and pages to PAGES; unmapped posts go to /articles.
 (function () {
   var NEW_SITE = 'https://peevishpenman.com';
   var FROM = 'from=peevishpenman.blogspot.com';
