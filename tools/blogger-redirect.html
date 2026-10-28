@@ -1,0 +1,79 @@
+<!--
+  Redirect for the old Blogger site (peevishpenman.blogspot.com).
+
+  Blogger can't do server-side redirects, so this runs in the theme instead.
+  Install: Blogger > Theme > Edit HTML, then paste the <script> block below
+  directly after <head> (it must run before anything else loads). Delete the
+  "<!-- ... -->" comment when pasting; Blogger doesn't need it.
+
+  How it works: the old /YYYY/MM/<slug>.html post URLs are already mapped
+  by the main site's .htaccess, so those paths are passed straight to
+  peevishpenman.com. Blogger-only URL shapes (/search/label/, /p/ pages,
+  archives) are translated here. Add one-off exceptions
+  to PAGES. Every destination carries ?from=peevishpenman.blogspot.com so
+  Google Analytics credits this domain even when the browser drops the
+  referrer, same as the other old domains.
+
+  Not a replacement for Search Console's Change of Address, which only
+  works for domains you can verify; blogspot.com subdomains can't use it.
+  Search engines learn about the move slowly from JavaScript redirects.
+-->
+<script type='text/javascript'>
+//<![CDATA[
+(function () {
+  var NEW_SITE = 'https://peevishpenman.com';
+  var FROM = 'from=peevishpenman.blogspot.com';
+
+  // Old Blogger static pages (/p/<name>.html) that live at a new path.
+  // Any page not listed goes to the home page.
+  var PAGES = {
+    'pathfinder': '/pages/pathfinder',
+    'about': '/pages/about',
+    'about-me': '/pages/about',
+    'books': '/pages/books'
+  };
+
+  function withFrom(path) {
+    return NEW_SITE + path + (path.indexOf('?') < 0 ? '?' : '&') + FROM;
+  }
+
+  // Returns the new URL for a path on the old Blogger site.
+  function destination(path) {
+    var m;
+
+    // Posts: /2011/04/some-slug.html. The new site's .htaccess finds the
+    // matching article (and handles posts whose slug changed).
+    if (/^\/\d{4}\/\d{2}\/[^\/]+\.html$/.test(path)) return withFrom(path);
+
+    // Monthly and yearly archives: nothing to land on but the article list.
+    if (/^\/\d{4}(\/\d{2})?(\/|\/index\.html)?$/.test(path)) return withFrom('/articles');
+
+    // Labels: /search/label/Writing%20Tips -> /article-tag?tag=writingtips.
+    // The site's tag page turns merged tags into their new tag and 404s
+    // tags that don't exist.
+    if ((m = path.match(/^\/search\/label\/([^\/]+)\/?$/))) {
+      var tag = m[1];
+      try { tag = decodeURIComponent(tag); } catch (e) {}
+      return withFrom('/article-tag?tag=' + encodeURIComponent(tag.toLowerCase().replace(/[^a-z0-9]/g, '')));
+    }
+
+    // Static pages: /p/pathfinder.html
+    if ((m = path.match(/^\/p\/([^\/]+?)(?:\.html)?\/?$/))) {
+      return withFrom(PAGES[m[1].toLowerCase()] || '/');
+    }
+
+    // Search results and everything else (home page included).
+    if (/^\/search\/?$/.test(path)) return withFrom('/articles');
+    return withFrom('/');
+  }
+
+  // Don't redirect inside Blogger's own editor, theme designer or preview.
+  var host = location.hostname;
+  if (!/(^|\.)blogspot\.[a-z.]+$/.test(host)) return;
+  if (/^\/(b|blogger)\//.test(location.pathname)) return;
+
+  location.replace(destination(location.pathname));
+})();
+//]]>
+</script>
+<noscript><meta http-equiv='refresh' content='0; url=https://peevishpenman.com/?from=peevishpenman.blogspot.com'/></noscript>
