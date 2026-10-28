@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# Let cPanel's AutoSSL check the domain so the HTTPS certificate keeps renewing
+RewriteRule ^\.well-known/ - [L]
+
+# Send every Esoteric Philosophy URL to the same path on peevishpenman.com,
+# which maps the old Blogger /YYYY/MM/<slug>.html posts to /articles/<slug>.
+# The ?from= marker lets Google Analytics credit this domain even when the
+# browser drops the referrer on the redirect.
+RewriteRule ^(.*)$ https://peevishpenman.com/$1?from=esoteric-philosophy.com [R=301,L]

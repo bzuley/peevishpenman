@@ -1,0 +1,54 @@
+# OAALLEN.COM — PERMANENT 301 REDIRECTS
+# October 24, 2026
+#
+# Every destination carries ?from=oaallen.com so Google Analytics credits
+# this domain even when the browser drops the referrer on the redirect.
+
+RewriteEngine On
+
+# Let cPanel's AutoSSL check the domain so the HTTPS certificate keeps renewing
+RewriteRule ^\.well-known/ - [L]
+
+# ------------------------------------------
+# OLD SHOPIFY BLOG AND TOPICS
+# ------------------------------------------
+
+RewriteRule ^blogs/peevish-penman/tagged/selfpublishing/?$ https://peevishpenman.com/articles?from=oaallen.com [R=301,L]
+
+RewriteRule ^blogs/peevish-penman/tagged/archetypes/?$ https://peevishpenman.com/articles?from=oaallen.com [R=301,L]
+
+RewriteRule ^blogs/peevish-penman/tagged/sciencefiction/?$ https://peevishpenman.com/articles?from=oaallen.com [R=301,L]
+
+RewriteRule ^blogs/peevish-penman/?$ https://peevishpenman.com/articles?from=oaallen.com [R=301,L]
+
+# ------------------------------------------
+# AUTHOR AND BOOK PAGES
+# ------------------------------------------
+
+RewriteRule ^pages/about/?$ https://peevishpenman.com/pages/about?from=oaallen.com [R=301,L]
+
+RewriteRule ^pages/books/?$ https://peevishpenman.com/pages/books?from=oaallen.com [R=301,L]
+
+RewriteRule ^pages/peevish-penman/?$ https://peevishpenman.com/articles?from=oaallen.com [R=301,L]
+
+# ------------------------------------------
+# OLD SHOPIFY COLLECTIONS
+# ------------------------------------------
+
+RewriteRule ^collections/all/?$ https://peevishpenman.com/pages/books?from=oaallen.com [R=301,L]
+
+RewriteRule ^collections/oa-allen/?$ https://peevishpenman.com/pages/books?from=oaallen.com [R=301,L]
+
+# ------------------------------------------
+# OLD SHOPIFY PRODUCTS
+# ------------------------------------------
+
+RewriteRule ^products/waiting-on-delcath-[123]/?$ https://peevishpenman.com/pages/delcath-series?from=oaallen.com [R=301,L]
+
+RewriteRule ^products/reptilian-conspiracy-a-coloring-book/?$ https://peevishpenman.com/pages/books?from=oaallen.com [R=301,L]
+
+# ------------------------------------------
+# HOMEPAGE AND ALL OTHER URLS
+# ------------------------------------------
+
+RewriteRule ^ https://peevishpenman.com/?from=oaallen.com [R=301,L]
