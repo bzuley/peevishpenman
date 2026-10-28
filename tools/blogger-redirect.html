@@ -6,13 +6,17 @@
   directly after <head> (it must run before anything else loads). Delete the
   "<!-- ... -->" comment when pasting; Blogger doesn't need it.
 
-  How it works: the old /YYYY/MM/<slug>.html post URLs are already mapped
-  by the main site's .htaccess, so those paths are passed straight to
-  peevishpenman.com. Blogger-only URL shapes (/search/label/, /p/ pages,
-  archives) are translated here. Add one-off exceptions
-  to PAGES. Every destination carries ?from=peevishpenman.blogspot.com so
-  Google Analytics credits this domain even when the browser drops the
-  referrer, same as the other old domains.
+  How it works: an explicit map (POSTS) sends each Blogger post that has a
+  new home straight to its final URL in one hop. Every other post is gone
+  from the new site, so it lands on the article list instead of a 404.
+  Blogger-only URL shapes (/search/label/, /p/ pages, archives) are
+  translated too. Add new posts to POSTS and new pages to PAGES. Every
+  destination carries ?from=peevishpenman.blogspot.com so Google
+  Analytics credits this domain even when the browser drops the referrer,
+  same as the other old domains.
+
+  Blogger's own Custom redirects run first and still win for the URLs
+  they list; this covers everything they don't.
 
   Not a replacement for Search Console's Change of Address, which only
   works for domains you can verify; blogspot.com subdomains can't use it.
@@ -24,13 +28,34 @@
   var NEW_SITE = 'https://peevishpenman.com';
   var FROM = 'from=peevishpenman.blogspot.com';
 
+  // Blogger post slug (the part before .html, no date) -> new article slug.
+  // A post not listed here has no new page and goes to /articles.
+  var POSTS = {
+    'nine-parts-of-speech-and-f-word': 'nine-parts-of-speech-f-word',
+    'editing-is-murder': 'perfect-murder-editing-screenplay',
+    'the-connection-between-bloggers-and': 'reader-comments-honest-open-immediate',
+    'networking-tips-for-shy-writers-three': 'success-is-a-process',
+    'do-you-fear-success-or-failure': 'success-is-a-process',
+    'building-your-reader-army': 'success-is-a-process',
+    'tips-to-name-your-characters-by-c': 'tips-to-name-your-characters',
+    'problem-solving-breaking-down-to-build': 'break-it-down-to-build-it-up',
+    'too-many-ideas': 'too-many-ideas',
+    'how-can-he-get-away-with-that': 'clancy-gets-away-with-it',
+    'overcoming-procrastination': 'the-four-ps-of-procrastination',
+    'wrong-advice-by-kendra-redman': 'write-what-you-know',
+    'antagonist-by-ceylan': 'antagonists-are-people-too',
+    'serve-story': 'serve-the-story',
+    'how-old-is-your-book-in-book-years': 'how-old-is-your-book-in-book-years',
+    'by-rob-hines-thats-me': 'im-a-premise-writer'
+  };
+
   // Old Blogger static pages (/p/<name>.html) that live at a new path.
   // Any page not listed goes to the home page.
   var PAGES = {
     'pathfinder': '/pages/pathfinder',
-    'about': '/pages/about',
-    'about-me': '/pages/about',
-    'books': '/pages/books'
+    'writer-secret-society': '/pages/writer-secret-society',
+    'submission-guidelines': '/pages/writer-secret-society',
+    'about-us': '/pages/about'
   };
 
   function withFrom(path) {
@@ -41,9 +66,10 @@
   function destination(path) {
     var m;
 
-    // Posts: /2011/04/some-slug.html. The new site's .htaccess finds the
-    // matching article (and handles posts whose slug changed).
-    if (/^\/\d{4}\/\d{2}\/[^\/]+\.html$/.test(path)) return withFrom(path);
+    // Posts: /2011/04/some-slug.html
+    if ((m = path.match(/^\/\d{4}\/\d{2}\/([^\/]+)\.html$/))) {
+      return withFrom(POSTS.hasOwnProperty(m[1]) ? '/articles/' + POSTS[m[1]] : '/articles');
+    }
 
     // Monthly and yearly archives: nothing to land on but the article list.
     if (/^\/\d{4}(\/\d{2})?(\/|\/index\.html)?$/.test(path)) return withFrom('/articles');
