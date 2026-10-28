@@ -1,0 +1,8 @@
+RewriteEngine On
+
+# Let cPanel's AutoSSL check the domain so the HTTPS certificate keeps renewing
+RewriteRule ^\.well-known/ - [L]
+
+# Redirect all Book Maverick traffic to OA Allen's books, marked so Google
+# Analytics credits this domain even when the browser drops the referrer
+RewriteRule ^ https://peevishpenman.com/pages/books?from=bookmaverick.com [R=301,L]
