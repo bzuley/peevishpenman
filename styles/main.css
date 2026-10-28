@@ -1974,6 +1974,23 @@ html.ppm-nav-open {
   border-bottom-color: var(--ppm-hermes);
 }
 
+/* Desktop: let the bar run edge to edge, with single-line links at a
+   smaller size so it stays short. */
+@media (min-width: 741px) {
+  .ppm-jump-nav-inner {
+    max-width: none;
+    padding: 0 2rem;
+    gap: 1.75rem;
+  }
+
+  .ppm-jump-nav-link {
+    width: auto;
+    font-size: 0.85rem;
+    white-space: nowrap;
+    padding: 0.5rem 0.1rem;
+  }
+}
+
 @media (max-width: 740px) {
   .ppm-jump-nav-link {
     width: 8rem;
