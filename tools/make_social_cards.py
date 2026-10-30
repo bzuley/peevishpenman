@@ -31,6 +31,7 @@ CARDS = {
     'tips-to-name-your-characters': ('img/general/speculative_fiction_fellowship.png', 0.2),
     '10-modern-books-for-fans-of-isaac-asimov': ('img/general/asimov.png', 0.15),
     'how-old-is-your-book-in-book-years': ('img/general/book_bandit.png', 0.4),
+    'the-caregiver': ('img/archetypes/caregiver_archetype.webp', 0.2),
 }
 
 
