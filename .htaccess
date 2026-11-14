@@ -114,6 +114,16 @@ RewriteRule ^blog-tag(\.php)?/?$ /article-tag [R=301,L,NC,QSA]
 # Slugs that changed are mapped one by one; any other slug that matches
 # an existing article goes to /articles/<slug>.
 RewriteRule ^articles/peevish-penman/meditation-and-closed-eye-visualizations/?$ /articles/closed-eye-visualizations [R=301,L,NC]
+RewriteRule ^articles/peevish-penman/the-first-robots-in-science-fiction/?$ /articles/first-robots-in-fiction [R=301,L,NC]
+RewriteRule ^articles/peevish-penman/the-nine-parts-of-speech-and-the-f-word/?$ /articles/nine-parts-of-speech-f-word [R=301,L,NC]
+RewriteRule ^articles/peevish-penman/the-pros-and-cons-of-writing-on-a-typewriter-laptop-phone-and-vr-virtual-reality/?$ /articles/i-wrote-this-post-in-vr [R=301,L,NC]
+# Old-site posts that were never carried over go to the closest topic page.
+RewriteRule ^articles/peevish-penman/(the-villain-what-you-must-confront-to-write-this-archetype|the-creator)/?$ /article-tag?tag=archetypes [R=301,L,NC]
+RewriteRule ^articles/peevish-penman/the-cadillac-of-typewriters/?$ /article-tag?tag=technology [R=301,L,NC]
+RewriteRule ^articles/peevish-penman/review-three-body-problem-netflix-series-s01/?$ /article-tag?tag=speculativefiction [R=301,L,NC]
+# The old site's second blog, /articles/book-reviews, was not carried over.
+RewriteRule ^articles/book-reviews/introspection-on-the-self-publishing-process/?$ /article-tag?tag=independentpublishing [R=301,L,NC]
+RewriteRule ^articles/book-reviews(/.*)?$ /articles [R=301,L,NC]
 RewriteCond %{DOCUMENT_ROOT}/articles/$1.php -f
 RewriteRule ^articles/peevish-penman/([^/]+?)/?$ /articles/$1 [R=301,L]
 
@@ -135,6 +145,10 @@ RewriteRule ^\d{4}/\d{2}/([^/]+?)\.html$ /articles/$1 [R=301,L,QSD]
 # its own 404 for tags that do not exist.
 RewriteRule ^(?:articles/peevish-penman/)?tagged/selfpublishing/?$ /article-tag?tag=independentpublishing [R=301,L,NC]
 RewriteRule ^(?:articles/peevish-penman/)?tagged/sciencefiction/?$ /article-tag?tag=speculativefiction [R=301,L,NC]
+# The old site's "comics" tag has no articles or topic page on this site.
+RewriteRule ^(?:articles/peevish-penman/)?tagged/comics/?$ /articles [R=301,L,NC,QSD]
+RewriteCond %{QUERY_STRING} (?:^|&)tag=comics(?:&|$) [NC]
+RewriteRule ^article-tag(\.php)?/?$ /articles [R=301,L,NC,QSD]
 RewriteRule ^(?:articles/peevish-penman/)?tagged/([A-Za-z0-9_-]+)/?$ /article-tag?tag=$1 [R=301,L,NC]
 
 # Old slug of the Magician archetype article
