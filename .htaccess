@@ -145,6 +145,10 @@ RewriteRule ^\d{4}/\d{2}/([^/]+?)\.html$ /articles/$1 [R=301,L,QSD]
 # its own 404 for tags that do not exist.
 RewriteRule ^(?:articles/peevish-penman/)?tagged/selfpublishing/?$ /article-tag?tag=independentpublishing [R=301,L,NC]
 RewriteRule ^(?:articles/peevish-penman/)?tagged/sciencefiction/?$ /article-tag?tag=speculativefiction [R=301,L,NC]
+# The old site's "comics" tag has no articles or topic page on this site.
+RewriteRule ^(?:articles/peevish-penman/)?tagged/comics/?$ /articles [R=301,L,NC,QSD]
+RewriteCond %{QUERY_STRING} (?:^|&)tag=comics(?:&|$) [NC]
+RewriteRule ^article-tag(\.php)?/?$ /articles [R=301,L,NC,QSD]
 RewriteRule ^(?:articles/peevish-penman/)?tagged/([A-Za-z0-9_-]+)/?$ /article-tag?tag=$1 [R=301,L,NC]
 
 # Old slug of the Magician archetype article
